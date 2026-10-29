@@ -1,0 +1,5 @@
+# Ground detail refinement
+
+Built-in image tool. Source: `sintra-overhead-ground.png`. Requested 3072×2304; actual tool output 1448×1086. Coordinate layout and palette retained.
+
+Edit target: existing 4:3 semi-top-down game terrain map. UPSCALE AND REFINE this exact map into a high-resolution production texture, requested output resolution 3072 x 2304 pixels. Preserve the EXACT SAME coordinate layout, framing, river centerline, wooden bridge, stone bridge, ruins, trail loops and boulder positions. Do not add new large objects or trees. Sharpen and enrich the fine painterly gouache ground textures: small leaves, moss, pebbles, shallow water, wood grain and stone joints. Maintain existing subdued Sintra colors, semi-overhead camera and orthographic scale. This will be displayed enlarged to 4800x3600 in a game, so detailed crisp painted brushstrokes and edges are essential, avoid blurry smearing. Output the entire same map at 3072x2304, not an inset and no border, no labels or characters.

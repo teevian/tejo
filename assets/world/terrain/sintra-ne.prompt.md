@@ -1,0 +1,5 @@
+# Detailed Sintra terrain quadrant
+
+Generated with the built-in image tool from `../sintra-overhead-ground-detail.png`. Final runtime tile: `sintra-ne.png`.
+
+Edit target: full semi-overhead Sintra terrain map. Produce a detailed ENLARGED CROP of ONLY the northeast / upper-right QUARTER of the reference image, filling the entire new 4:3 image with that quadrant. Crop bounds: RIGHT half (x 50–100%) and TOP half (y 0–50%). Brook is near the LEFT side of this crop, wooden bridge at (17%,50%) of this crop; ruined chapel at (60%,80%) of this crop. This is one of four connected game terrain tiles. Preserve placement, geography and relative scale INSIDE THE CROP; do NOT squeeze the whole map into it. Double the visible detail resolution of that quadrant with crisp hand-painted gouache leaf, moss, stone and earth brushwork. Fixed oblique top-down 55-degree orthographic RPG angle, same exact painterly palette. Fill the whole image edge-to-edge with the cropped terrain. No frames, no text, no new objects, no people, no large trees, no sky. Match the crop's edges closely so four crops can join.

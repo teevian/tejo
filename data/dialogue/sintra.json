@@ -1,0 +1,319 @@
+{
+  "topics": [
+    {
+      "id": "castle_slope_humid",
+      "scene": "sintra_trail",
+      "near": "castle_slope",
+      "priority": 78,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Já se veem as ameias entre as árvores. Devemos estar perto da muralha."
+        },
+        {
+          "speaker": "partner",
+          "text": "Lá em baixo ficou o nevoeiro. Valeu a pena subir até aqui."
+        }
+      ]
+    },
+    {
+      "id": "moss_steps_humid",
+      "scene": "sintra_trail",
+      "near": "moss_steps",
+      "priority": 78,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "A encosta continua a subir. As pedras estão todas cobertas de musgo."
+        },
+        {
+          "speaker": "partner",
+          "text": "Podemos subir pelas escadas ou dar a volta pela mata."
+        }
+      ]
+    },
+    {
+      "id": "ravine_bridge_humid",
+      "scene": "sintra_trail",
+      "near": "ravine_bridge",
+      "priority": 78,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "O passadiço está mesmo por cima da ravina. Vamos um de cada vez?"
+        },
+        {
+          "speaker": "partner",
+          "text": "Vou atrás de ti. Do outro lado há umas escadas entre os fetos."
+        }
+      ]
+    },
+    {
+      "id": "ivy_hollow_humid",
+      "scene": "sintra_trail",
+      "near": "ivy_hollow",
+      "priority": 78,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Olha para os troncos. A hera sobe quase até aos ramos."
+        },
+        {
+          "speaker": "partner",
+          "text": "E este cheiro a terra molhada… Aqui parece outra serra."
+        }
+      ]
+    },
+    {
+      "id": "fern_glade_sintra",
+      "scene": "sintra_trail",
+      "near": "fern_glade",
+      "priority": 75,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Gosto de poder sair do trilho. Aqui entre os fetos o chão é tão macio."
+        },
+        {
+          "speaker": "partner",
+          "text": "Vamos por dentro da mata, então. Estou mesmo atrás de ti."
+        }
+      ]
+    },
+    {
+      "id": "stone_bridge_sintra",
+      "scene": "sintra_trail",
+      "near": "stone_bridge",
+      "priority": 75,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Esta ponte de pedra leva-nos ao outro lado da ribeira."
+        },
+        {
+          "speaker": "partner",
+          "text": "Podemos seguir por ali e voltar pela ponte de madeira. Assim fazemos a volta toda."
+        }
+      ]
+    },
+    {
+      "id": "lookout_sintra",
+      "scene": "sintra_trail",
+      "near": "granite_lookout",
+      "priority": 75,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Daqui vê-se a mata toda. Viemos mesmo lá de baixo."
+        },
+        {
+          "speaker": "partner",
+          "text": "E ainda há tanto por onde andar. Desta vez escolhes tu."
+        }
+      ]
+    },
+    {
+      "id": "ruins_sintra",
+      "scene": "sintra_trail",
+      "near": "chapel_ruins",
+      "priority": 75,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Estas paredes deviam fazer parte de uma capela. Há uma entrada pelo lado de lá."
+        },
+        {
+          "speaker": "partner",
+          "text": "Vamos dar a volta? Pode haver alguma coisa escondida no meio da hera."
+        }
+      ]
+    },
+    {
+      "id": "oak_sintra",
+      "scene": "sintra_trail",
+      "near": "cork_oak",
+      "priority": 70,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Depois daquela sombra toda, nem estava à espera desta vista."
+        },
+        {
+          "speaker": "partner",
+          "text": "E este sobreiro… Apetece sentar aqui e deixar o tempo passar."
+        }
+      ]
+    },
+    {
+      "id": "fountain_sintra",
+      "scene": "sintra_trail",
+      "near": "old_fountain",
+      "priority": 70,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Olha esta fonte no muro. Já deve estar aqui há imenso tempo."
+        },
+        {
+          "speaker": "partner",
+          "text": "A hera quase a escondia. Ainda bem que viemos por este caminho."
+        }
+      ]
+    },
+    {
+      "id": "stream_sintra",
+      "scene": "sintra_trail",
+      "near": "forest_stream",
+      "priority": 70,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Ouves a água? Há uma ribeira a passar por trás daqueles fetos."
+        },
+        {
+          "speaker": "partner",
+          "text": "É tão fresca aqui. Vamos ficar um instante a ouvir."
+        }
+      ]
+    },
+    {
+      "id": "bridge_te",
+      "scene": "sintra_trail",
+      "near": "log_bridge",
+      "initiator": 0,
+      "priority": 100,
+      "forbid_flags": [
+        "bridge_inspected"
+      ],
+      "set_flags": [
+        "bridge_inspected"
+      ],
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Espera, Jo. Daqui consigo ver onde os troncos da ponte assentam."
+        },
+        {
+          "speaker": 1,
+          "text": "Achas que aguentam? Com estas folhas não se vê bem."
+        },
+        {
+          "speaker": 0,
+          "text": "Os apoios estão inteiros. Vamos pelo meio, um de cada vez."
+        },
+        {
+          "speaker": 1,
+          "text": "Está bem. Vai tu primeiro, eu sigo-te."
+        }
+      ]
+    },
+    {
+      "id": "bridge_jo",
+      "scene": "sintra_trail",
+      "near": "log_bridge",
+      "initiator": 1,
+      "priority": 90,
+      "forbid_flags": [
+        "bridge_inspected"
+      ],
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Te, esta ponte parece um bocado solta. Consegues ver melhor os apoios?"
+        },
+        {
+          "speaker": 0,
+          "text": "Daqui não. Deixa-me chegar mais perto e dar uma vista de olhos."
+        }
+      ]
+    },
+    {
+      "id": "bridge_after",
+      "scene": "sintra_trail",
+      "near": "log_bridge",
+      "priority": 110,
+      "require_flags": [
+        "bridge_inspected"
+      ],
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Pelo meio da ponte, um de cada vez. Combinado?"
+        },
+        {
+          "speaker": "partner",
+          "text": "Combinado. E sem pressas."
+        }
+      ]
+    },
+    {
+      "id": "sintra_te",
+      "location": "serra_sintra",
+      "initiator": 0,
+      "priority": 10,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Ouve. Aqui dentro quase já não se ouve nada da estrada."
+        },
+        {
+          "speaker": 1,
+          "text": "Só as folhas. Parece que entrámos noutro sítio."
+        },
+        {
+          "speaker": 0,
+          "text": "Era mesmo disto que estava a precisar."
+        }
+      ]
+    },
+    {
+      "id": "sintra_jo",
+      "location": "serra_sintra",
+      "initiator": 1,
+      "priority": 10,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "A luz entre estas árvores… Espera, isto dava uma fotografia incrível."
+        },
+        {
+          "speaker": 0,
+          "text": "Tira. Temos tempo."
+        },
+        {
+          "speaker": 1,
+          "text": "Sabes que mais? Por agora prefiro ficar só a olhar."
+        }
+      ]
+    },
+    {
+      "id": "sintra_quiet",
+      "location": "serra_sintra",
+      "priority": 10,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Vamos mais um bocadinho por este caminho?"
+        },
+        {
+          "speaker": "partner",
+          "text": "Vamos. Gosto de estar aqui contigo."
+        }
+      ]
+    },
+    {
+      "id": "fallback",
+      "priority": -100,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Como estás?"
+        },
+        {
+          "speaker": "partner",
+          "text": "Bem. Vamos juntos."
+        }
+      ]
+    }
+  ]
+}
