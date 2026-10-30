@@ -40,6 +40,7 @@ var in_dialogue := false
 var facing := Vector2.DOWN
 var visual_facing := Vector2.DOWN
 var moving := false
+var turning := false
 var clock := 0.0
 var walked := 0.0
 var phone_state := PhoneState.NONE
@@ -255,7 +256,13 @@ func _update_jump(delta: float) -> void:
 
 func _update_art_motion(delta: float) -> void:
 	var turn := wrapf(facing.angle()-visual_facing.angle(),-PI,PI)
-	visual_facing = Vector2.from_angle(visual_facing.angle()+clampf(turn,-delta*12.0,delta*12.0))
+	var rotation := clampf(turn,-delta*7.0,delta*7.0)
+	turning = absf(turn)>0.04 and not jumping and not is_busy()
+	visual_facing = Vector2.from_angle(visual_facing.angle()+rotation)
+	# A stationary pivot needs footwork too. Moving turns keep the current
+	# distance-driven left/right phase instead of restarting on one foot.
+	if turning and not moving:
+		walked += absf(rotation)*24.0
 
 func _update_phone(delta: float, input: Vector2) -> void:
 	if controlled and not input.is_zero_approx():

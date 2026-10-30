@@ -32,4 +32,4 @@ func _draw() -> void:
 		draw_set_transform(Vector2.ZERO)
 	else:
 		var step: float = Art.STRIDE*0.25 if person.jumping else person.walked
-		Art.draw_pose(self,person.kind,person.visual_facing,person.moving or person.jumping,step)
+		Art.draw_pose(self,person.kind,person.visual_facing,person.moving or person.jumping or person.turning,step)
