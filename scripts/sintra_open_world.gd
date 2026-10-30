@@ -1,4 +1,7 @@
 extends Node2D
+const WorldScale = preload("res://scripts/world_scale.gd")
+const BENCH: Texture2D = preload("res://assets/world/two-seat-bench.png")
+const BENCH_REGION := Rect2(75,121,1619,658)
 const WORLD_SIZE := Vector2(4800, 5400)
 const CELL := 32.0
 const TERRAIN: Array[Texture2D] = [preload("res://assets/world/terrain/sintra-nw.png"),preload("res://assets/world/terrain/sintra-ne.png"),preload("res://assets/world/terrain/sintra-sw-humid.png"),preload("res://assets/world/terrain/sintra-se.png")]
@@ -21,6 +24,9 @@ var navigation := AStarGrid2D.new()
 var people: Array = []
 var masonry: Array[Node2D] = []
 var low_foliage: Array[Node2D] = []
+var boulders: Array[Dictionary] = []
+var interactions: Node2D
+var wildlife: Node2D
 const ARCH_CENTER := Vector2(3985,1360)
 var landmarks: Array[Dictionary] = [
 	{"id":"trailhead", "name":"Entrada da mata", "position":Vector2(850,2890), "radius":260.0},
@@ -62,9 +68,15 @@ func _ready() -> void:
 	_build_low_foliage()
 	_build_southern_forest()
 	_build_navigation()
+	interactions = preload("res://scripts/world_interactions.gd").new()
+	interactions.world = self
+	add_child(interactions)
 	var atmosphere := preload("res://scripts/forest_depth.gd").new()
 	atmosphere.world = self
 	add_child(atmosphere)
+	wildlife = preload("res://scripts/wildlife.gd").new()
+	wildlife.world = self
+	add_child(wildlife)
 
 func attach_people(value: Array) -> void:
 	people = value
@@ -145,7 +157,7 @@ func _build_forest() -> void:
 		_add_prop(at,kind,rng.randf_range(0.82,1.13))
 	# Landmark objects, open approach from multiple sides.
 	_add_prop(Vector2(1620,1010),4,1.0)
-	_add_prop(Vector2(4210,310),5,1.0)
+	_add_prop(Vector2(4100,490),5,1.0)
 	_add_prop(Vector2(4100,2840),1,1.5)
 	_add_prop(Vector2(1030,2860),5,0.9)
 	for at in [Vector2(340,2870),Vector2(2050,640),Vector2(3550,3000),Vector2(4330,2270),Vector2(1800,2900)]:
@@ -162,32 +174,42 @@ func _build_forest() -> void:
 func _add_prop(at: Vector2, kind: int, variation: float) -> void:
 	var prop := Prop.new()
 	prop.position = at
+	prop.set_meta("kind",kind)
 	prop.collision_layer = 1
 	prop.collision_mask = 2
 	var humid := kind < 2
-	var region := Rect2(kind*512,0,512,1024) if humid else PROP_REGIONS[kind]
-	var heights := [680.0,650.0,220.0,160.0,170.0,115.0]
-	var factor: float = heights[kind] * variation / region.size.y
+	var region := BENCH_REGION if kind==5 else (Rect2(kind*512,0,512,1024) if humid else PROP_REGIONS[kind])
+	var factor: float = WorldScale.BENCH_WIDTH/region.size.x if kind==5 else WorldScale.PROP_HEIGHTS[kind]*variation/region.size.y
 	var sprite := Sprite2D.new()
 	sprite.material = opaque_paint
-	sprite.texture = HUMID_TREES if humid else PROPS
+	sprite.texture = BENCH if kind==5 else (HUMID_TREES if humid else PROPS)
 	sprite.region_enabled = true
 	sprite.region_rect = region
 	sprite.region_filter_clip_enabled = true
 	sprite.centered = false
 	sprite.scale = Vector2.ONE * factor
-	sprite.position = Vector2(-region.size.x * factor * 0.5,-region.size.y * factor * 0.95)
+	sprite.position = Vector2(-region.size.x * factor * 0.5,-region.size.y * factor * (1.0 if kind==5 else 0.95))
 	prop.sprite = sprite
 	prop.half_width = region.size.x*factor*0.53
 	prop.height = region.size.y*factor
 	prop.add_child(sprite)
-	var radius := 18.0 if kind < 3 else (50.0 if kind in [3,4] else 33.0)
 	var collider := CollisionShape2D.new()
-	var shape := CircleShape2D.new()
-	shape.radius = radius*variation
-	collider.shape = shape
+	if kind==5:
+		var shape := RectangleShape2D.new()
+		shape.size = WorldScale.BENCH_FOOTPRINT.size
+		collider.shape = shape
+		collider.position = WorldScale.BENCH_FOOTPRINT.get_center()
+		blocked_rects.append(Rect2(at+WorldScale.BENCH_FOOTPRINT.position,WorldScale.BENCH_FOOTPRINT.size))
+		prop.set_meta("radius",WorldScale.BENCH_WIDTH*0.5-12)
+		prop.seat_offsets = WorldScale.BENCH_SEATS.duplicate()
+	else:
+		var radius := 18.0 if kind<3 else 40.0
+		var shape := CircleShape2D.new()
+		shape.radius = radius*variation
+		prop.set_meta("radius",shape.radius)
+		collider.shape = shape
+		circles.append(Vector3(at.x,at.y,shape.radius))
 	prop.add_child(collider)
-	circles.append(Vector3(at.x,at.y,shape.radius))
 	actors.add_child(prop)
 	props.append(prop)
 
@@ -203,6 +225,7 @@ func _add_circle(at: Vector2, radius: float) -> void:
 	body.add_child(collider)
 	add_child(body)
 	circles.append(Vector3(at.x,at.y,radius))
+	boulders.append({"position":at,"radius":radius,"node":body})
 
 func _add_wall(rect: Rect2) -> void:
 	var body := StaticBody2D.new()
@@ -369,7 +392,7 @@ func _build_low_foliage() -> void:
 		sprite.region_rect = PROP_REGIONS[2]
 		sprite.region_filter_clip_enabled = true
 		sprite.centered = false
-		var height := rng.randf_range(66,94)
+		var height := rng.randf_range(42,64)
 		var factor := height/PROP_REGIONS[2].size.y
 		sprite.scale = Vector2.ONE*factor
 		sprite.position = Vector2(-PROP_REGIONS[2].size.x*factor*0.5,-height*0.95)

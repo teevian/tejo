@@ -1,13 +1,37 @@
 extends CharacterBody2D
 const Art = preload("res://scripts/open_world_art.gd")
 const Body = preload("res://scripts/open_world_body.gd")
+const Inventory = preload("res://scripts/inventory.gd")
+const WorldScale = preload("res://scripts/world_scale.gd")
+const InteractionArt = preload("res://scripts/interaction_art.gd")
 var body: Node2D
 enum PhoneState { NONE, TAKING_OUT, READING, PUTTING_AWAY }
+enum ShoulderState { NONE, APPROACHING, TOUCHING }
 const PHONE_IDLE_SECONDS := 7.0
+const JUMP_DURATION := 0.7
+var inventory = Inventory.new()
+var shoulder_state := ShoulderState.NONE
+var shoulder_idle_time := 0.0
+var shoulder_side := 1.0
+var shoulder_goal := Vector2.ZERO
+var seated := false
+var seating := false
+var seat_id := ""
+var seat_slot := -1
+var seat_goal := Vector2.ZERO
+var collecting_time := 0.0
+var jumping := false
+var jump_time := 0.0
+var jump_from := Vector2.ZERO
+var jump_to := Vector2.ZERO
+var queued_jump: Dictionary = {}
 var kind := 0
 var controlled := false:
 	set(value):
 		controlled = value
+		cancel_shoulder()
+		if value:
+			queued_jump.clear()
 		if value and kind == 1:
 			_start_putting_phone_away()
 var partner: CharacterBody2D
@@ -15,7 +39,6 @@ var world: Node2D
 var in_dialogue := false
 var facing := Vector2.DOWN
 var visual_facing := Vector2.DOWN
-var gait_weight := 0.0
 var moving := false
 var clock := 0.0
 var walked := 0.0
@@ -52,30 +75,75 @@ func _physics_process(delta: float) -> void:
 		body.queue_redraw()
 		return
 	var input := Input.get_vector("walk_left", "walk_right", "walk_up", "walk_down")
+	if jumping:
+		_update_jump(delta)
+		return
+	if collecting_time>0:
+		collecting_time = maxf(0,collecting_time-delta)
+		velocity = Vector2.ZERO
+		moving = false
+		_refresh_art(delta)
+		return
+	if seated or seating:
+		if controlled and not input.is_zero_approx():
+			var old_seat := seat_id
+			stand_up()
+			if is_instance_valid(partner) and partner.seat_id==old_seat:
+				partner.stand_up()
+		elif not controlled and is_instance_valid(partner) and partner.seat_id!=seat_id and position.distance_to(partner.position)>150:
+			stand_up()
+		elif seated:
+			velocity = Vector2.ZERO
+			moving = false
+			_refresh_art(delta)
+			return
 	if kind == 1:
 		_update_phone(delta, input)
+	else:
+		_update_shoulder(delta,input)
 	var direction := Vector2.ZERO
 	var speed := 235.0 if kind == 0 else 245.0
-	if controlled:
+	if seating:
+		if position.distance_to(seat_goal)<7:
+			position = seat_goal
+			seating = false
+			seated = true
+			facing = Vector2.DOWN
+			velocity = Vector2.ZERO
+		else:
+			direction = _steer_towards(seat_goal)
+	elif not controlled and not queued_jump.is_empty():
+		if position.distance_to(queued_jump.from)<7:
+			var landing: Vector2 = queued_jump.to
+			position = queued_jump.from
+			queued_jump.clear()
+			start_jump(landing)
+			_update_jump(delta)
+			return
+		direction = _steer_towards(queued_jump.from)
+		speed = 300.0
+	elif controlled:
 		direction = input
 		if Input.is_action_pressed("sprint"):
 			speed *= 1.42
+	elif shoulder_state==ShoulderState.APPROACHING:
+		if position.distance_to(shoulder_goal)<6:
+			position = shoulder_goal
+			shoulder_state = ShoulderState.TOUCHING
+			facing = Vector2.DOWN
+			partner.facing = Vector2.DOWN
+			velocity = Vector2.ZERO
+		else:
+			direction = _steer_towards(shoulder_goal)
+			speed = 180.0
+	elif shoulder_state==ShoulderState.TOUCHING:
+		facing = Vector2.DOWN
 	elif is_instance_valid(partner) and phone_state != PhoneState.PUTTING_AWAY:
 		var gap := position.distance_to(partner.position)
 		if gap > 94:
 			speed = 355.0 if gap > 165 else 250.0
-			if world.can_walk_line(position, partner.position):
-				direction = position.direction_to(partner.position)
-				path.clear()
-			else:
-				route_time -= delta
-				if route_time <= 0 or path.is_empty():
-					path = world.find_path(position, partner.position)
-					route_time = 0.3
-				while not path.is_empty() and position.distance_to(path[0]) < 18:
-					path.remove_at(0)
-				if not path.is_empty():
-					direction = position.direction_to(path[0])
+			direction = _steer_towards(partner.position)
+	route_time -= delta
 	velocity = velocity.move_toward(direction * speed, 1600 * delta)
 	var previous := position
 	move_and_slide()
@@ -85,22 +153,117 @@ func _physics_process(delta: float) -> void:
 	if moving:
 		facing = velocity.normalized()
 		walked += travelled
+	_refresh_art(delta)
+
+func _steer_towards(goal: Vector2) -> Vector2:
+	if world.can_walk_line(position,goal):
+		path.clear()
+		return position.direction_to(goal)
+	if route_time<=0 or path.is_empty():
+		path = world.find_path(position,goal)
+		route_time = 0.3
+	while not path.is_empty() and position.distance_to(path[0])<12:
+		path.remove_at(0)
+	return position.direction_to(path[0]) if not path.is_empty() else Vector2.ZERO
+
+func _refresh_art(delta: float) -> void:
 	_update_art_motion(delta)
+	if not jumping:
+		body.position.y = 0.0
 	queue_redraw()
 	body.queue_redraw()
+
+func is_busy() -> bool:
+	return jumping or seated or seating or collecting_time>0
+
+func cancel_shoulder() -> void:
+	if shoulder_state!=ShoulderState.NONE:
+		path.clear()
+	shoulder_state = ShoulderState.NONE
+	shoulder_idle_time = 0
+
+func _update_shoulder(delta: float, input: Vector2) -> void:
+	var may_wait := not controlled and not is_busy() and is_instance_valid(partner) and not in_dialogue
+	if may_wait:
+		may_wait = partner.controlled and not partner.is_busy() and not partner.in_dialogue and partner.velocity.length()<1 and input.is_zero_approx() and not partner.moving
+	if not may_wait:
+		cancel_shoulder()
+		return
+	if shoulder_state==ShoulderState.NONE:
+		if velocity.length()>1 or position.distance_to(partner.position)>150:
+			shoulder_idle_time = 0
+			return
+		shoulder_idle_time += delta
+		if shoulder_idle_time<PHONE_IDLE_SECONDS:
+			return
+		for side in [1.0,-1.0]:
+			var goal: Vector2 = partner.position+WorldScale.SHOULDER_OFFSET*Vector2(-side,1)
+			if world.is_walkable(goal,18) and not world.find_path(position,goal).is_empty():
+				shoulder_side = side
+				shoulder_goal = goal
+				shoulder_state = ShoulderState.APPROACHING
+				path.clear()
+				return
+		shoulder_idle_time = 5.0
+
+func begin_sitting(id: String, goal: Vector2, slot := 0) -> bool:
+	if jumping or not world.is_walkable(goal,14) or world.find_path(position,goal).is_empty():
+		return false
+	stand_up()
+	cancel_shoulder()
+	_finish_phone()
+	queued_jump.clear()
+	seating = true
+	seat_id = id
+	seat_slot = slot
+	seat_goal = goal
+	path.clear()
+	route_time = 0
+	return true
+
+func stand_up() -> void:
+	seated = false
+	seating = false
+	seat_id = ""
+	seat_slot = -1
+	path.clear()
+	if is_instance_valid(body):
+		body.position.y = 0
+
+func start_jump(landing: Vector2) -> void:
+	stand_up()
+	cancel_shoulder()
+	_finish_phone()
+	jumping = true
+	jump_time = 0
+	jump_from = position
+	jump_to = landing
+	facing = position.direction_to(landing)
+	velocity = Vector2.ZERO
+	path.clear()
+
+func _update_jump(delta: float) -> void:
+	jump_time = minf(JUMP_DURATION,jump_time+delta)
+	var progress := jump_time/JUMP_DURATION
+	position = jump_from.lerp(jump_to,progress)
+	body.position.y = -sin(progress*PI)*58.0
+	moving = false
+	if progress>=1:
+		jumping = false
+		body.position.y = 0
+	_refresh_art(delta)
 
 func _update_art_motion(delta: float) -> void:
 	var turn := wrapf(facing.angle()-visual_facing.angle(),-PI,PI)
 	visual_facing = Vector2.from_angle(visual_facing.angle()+clampf(turn,-delta*12.0,delta*12.0))
-	gait_weight = move_toward(gait_weight,1.0 if moving else 0.0,delta*7.0)
 
 func _update_phone(delta: float, input: Vector2) -> void:
 	if controlled and not input.is_zero_approx():
 		_finish_phone()
 		return
-	var may_wait := not controlled and velocity.length() < 1 and is_instance_valid(partner)
+	var may_wait := not controlled and not is_busy() and velocity.length() < 1 and is_instance_valid(partner)
 	if may_wait:
-		may_wait = partner.controlled and partner.velocity.length() < 1 and input.is_zero_approx()
+		may_wait = partner.controlled and not partner.is_busy() and partner.velocity.length() < 1 and input.is_zero_approx()
 	if may_wait and phone_state == PhoneState.NONE:
 		phone_idle_time += delta
 		if phone_idle_time >= PHONE_IDLE_SECONDS:
@@ -136,9 +299,12 @@ func _finish_phone() -> void:
 
 func _draw() -> void:
 	draw_set_transform(Vector2(0,-2), 0, Vector2(1,0.38))
-	draw_circle(Vector2.ZERO, 32, Color(0.08,0.16,0.13,0.27))
+	draw_circle(Vector2.ZERO, 25, Color(0.08,0.16,0.13,0.27))
 	if selected_blend > 0.01:
-		draw_arc(Vector2.ZERO, 36, 0, TAU, 48, Color(1,0.88,0.6,selected_blend*0.8), 2, true)
+		draw_arc(Vector2.ZERO, 29, 0, TAU, 48, Color(1,0.88,0.6,selected_blend*0.8), 2, true)
 	draw_set_transform(Vector2.ZERO)
 	if controlled:
-		draw_colored_polygon(PackedVector2Array([Vector2(-5,-211),Vector2(5,-211),Vector2(0,-205)]),Color("edd8a0"))
+		var top: float = -InteractionArt.SEATED[kind].size.y*InteractionArt.SCALE-14 if seated else -Art.HEIGHTS[kind]-18
+		if jumping:
+			top += body.position.y
+		draw_colored_polygon(PackedVector2Array([Vector2(-5,top),Vector2(5,top),Vector2(0,top+6)]),Color("edd8a0"))

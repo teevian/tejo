@@ -1,83 +1,41 @@
 extends RefCounted
-# Five authored viewpoints, mirrored to eight directions. The same painted anatomy
-# is articulated through eight gait keys, interpolated continuously, not redrawn.
+# Five authored viewpoints, mirrored to eight directions. Each row contains
+# an idle pose followed by eight painted walking frames.
 const ATLASES: Array[Texture2D] = [preload("res://assets/characters/open_world/te-walk-v2.png"),preload("res://assets/characters/open_world/jo-walk-v2.png")]
-const SCALE := 0.48 # Phone art compatibility; walking has its own fixed stature.
-const HEIGHTS := [186.0,182.0]
+const WorldScale = preload("res://scripts/world_scale.gd")
+const HEIGHTS: Array[float] = WorldScale.PERSON_HEIGHTS
 const STRIDE := 176.0
 const GAIT_FRAMES := 8
-const TE: Array[Rect2] = [Rect2(22,16,115,211),Rect2(26,246,108,212),Rect2(35,470,93,217),Rect2(22,690,124,216),Rect2(22,916,115,211)]
-const JO: Array[Rect2] = [Rect2(35,36,113,219),Rect2(37,264,109,214),Rect2(49,481,85,224),Rect2(37,707,112,208),Rect2(36,919,114,207)]
-# Contact / down / passing / up, then the other leg. Continuous interpolation
-# preserves the phase when turning, so a direction change never restarts a step.
-const SWING := [0.0,0.7071,1.0,0.7071,0.0,-0.7071,-1.0,-0.7071]
+# Complete silhouette bounds: the atlas spacing is hand painted, not a uniform grid.
+const TE: Array[Rect2] = [
+	Rect2(23,16,114,211),Rect2(185,18,108,215),Rect2(343,17,112,221),Rect2(491,17,111,221),Rect2(644,13,105,224),Rect2(787,17,108,221),Rect2(944,16,112,220),Rect2(1099,17,111,221),Rect2(1251,17,105,222),
+	Rect2(26,245,108,213),Rect2(189,246,109,215),Rect2(345,248,116,215),Rect2(495,246,112,214),Rect2(649,245,102,216),Rect2(785,247,112,215),Rect2(945,247,116,215),Rect2(1098,248,115,212),Rect2(1256,243,98,220),
+	Rect2(35,469,93,218),Rect2(170,472,134,213),Rect2(334,472,129,214),Rect2(498,470,109,215),Rect2(641,467,100,220),Rect2(784,471,119,215),Rect2(938,472,120,214),Rect2(1095,471,118,216),Rect2(1241,469,111,211),
+	Rect2(22,689,124,217),Rect2(184,690,121,216),Rect2(346,692,119,219),Rect2(498,689,124,221),Rect2(654,687,108,220),Rect2(797,691,115,217),Rect2(952,690,116,221),Rect2(1104,693,123,218),Rect2(1253,688,110,220),
+	Rect2(22,915,115,212),Rect2(179,916,116,209),Rect2(337,915,115,216),Rect2(490,915,118,218),Rect2(639,915,118,217),Rect2(786,917,113,213),Rect2(942,915,115,212),Rect2(1097,917,118,215),Rect2(1246,915,112,213)]
+const JO: Array[Rect2] = [
+	Rect2(36,36,112,219),Rect2(177,35,111,224),Rect2(321,33,117,226),Rect2(469,33,121,226),Rect2(621,29,114,230),Rect2(768,30,122,229),Rect2(923,33,120,226),Rect2(1075,33,113,225),Rect2(1223,30,115,229),
+	Rect2(37,264,109,214),Rect2(187,263,103,215),Rect2(337,264,116,215),Rect2(487,263,114,216),Rect2(636,261,111,218),Rect2(788,262,115,217),Rect2(940,263,117,216),Rect2(1094,264,108,215),Rect2(1241,259,108,220),
+	Rect2(49,481,85,224),Rect2(178,481,120,216),Rect2(323,482,124,220),Rect2(475,484,127,219),Rect2(633,483,117,219),Rect2(784,481,117,219),Rect2(933,484,121,218),Rect2(1083,483,122,219),Rect2(1234,479,109,222),
+	Rect2(37,706,112,209),Rect2(187,706,120,212),Rect2(343,703,105,214),Rect2(485,707,111,211),Rect2(628,704,117,201),Rect2(780,702,116,215),Rect2(933,703,114,214),Rect2(1085,704,110,213),Rect2(1235,703,106,215),
+	Rect2(36,918,113,208),Rect2(185,919,116,211),Rect2(334,918,113,214),Rect2(482,919,114,213),Rect2(630,917,116,212),Rect2(780,917,118,216),Rect2(935,918,115,214),Rect2(1081,918,113,214),Rect2(1230,918,114,213)]
+
 static func direction_row(facing: Vector2) -> int:
 	var angle := atan2(absf(facing.x),facing.y)
 	return clampi(roundi(angle/(PI/4.0)),0,4)
-static func gait_sample(phase: float) -> float:
-	var cell := fposmod(phase,TAU)/TAU*GAIT_FRAMES
-	var index := int(cell)
-	var t := cell-float(index)
-	# Cubic Hermite tangents keep velocity continuous at every key, including wrap.
-	var a: float = SWING[index]
-	var b: float = SWING[(index+1)%8]
-	var m0: float = (b-SWING[(index+7)%8])*0.5
-	var m1: float = (SWING[(index+2)%8]-a)*0.5
-	return (2*t*t*t-3*t*t+1)*a+(t*t*t-2*t*t+t)*m0+(-2*t*t*t+3*t*t)*b+(t*t*t-t*t)*m1
-static func deform(uv: Vector2, size: Vector2, phase: float, row: int, amount: float) -> Vector2:
-	var point := Vector2((uv.x-0.5)*size.x,(uv.y-1.0)*size.y)
-	var right_view := sin(float(row)*PI/4.0)
-	var depth_view := cos(float(row)*PI/4.0)
-	var side := -1.0 if uv.x<0.5 else 1.0
-	var cycle := phase+(PI if side>0 else 0.0)
-	var swing := gait_sample(cycle)*amount
-	var lift := maxf(0.0,cos(cycle))*amount
-	# Pelvis and head stay fixed in size. Only rigid-length limb trajectories move.
-	if uv.y>0.62:
-		var leg := clampf((uv.y-0.62)/0.32,0,1)
-		var knee := smoothstep(0.0,0.55,leg)
-		var ankle := smoothstep(0.45,1.0,leg)
-		point.x += right_view*swing*(14.0*knee+17.0*ankle)
-		point.y += depth_view*swing*(4.0*knee+9.0*ankle)-lift*(3.0*knee+5.0*ankle)
-		# Heel-to-toe roll rotates the painted shoe as a unit, rather than resizing it.
-		if uv.y>0.94:
-			point.y += (uv.x-0.5)*right_view*swing*3.0
-	elif uv.y>0.30:
-		var edge := smoothstep(0.20,0.40,absf(uv.x-0.5))
-		var arm := smoothstep(0.30,0.62,uv.y)*edge
-		point.x -= right_view*swing*9.0*arm
-		point.y -= depth_view*swing*6.0*arm
-	# A two-pixel vertical weight transfer affects the whole figure, never its scale.
-	point.y -= (1.0-cos(phase*2.0))*0.65*amount
-	return point
-static func draw_pose(canvas: CanvasItem, kind: int, facing: Vector2, moving: bool, distance: float, weight := -1.0) -> void:
+
+static func frame_for(moving: bool, distance: float) -> int:
+	return 1+posmod(floori(distance/STRIDE*GAIT_FRAMES),GAIT_FRAMES) if moving else 0
+
+static func pose_region(kind: int, row: int, frame: int) -> Rect2:
+	return TE[row*(GAIT_FRAMES+1)+frame] if kind==0 else JO[row*(GAIT_FRAMES+1)+frame]
+
+static func draw_pose(canvas: CanvasItem, kind: int, facing: Vector2, moving: bool, distance: float, origin := Vector2.ZERO) -> void:
 	var row := direction_row(facing)
-	var region := TE[row] if kind==0 else JO[row]
-	# One isotropic calibration for each authored view, shared by every gait phase.
-	var size := region.size*(HEIGHTS[kind]/region.size.y)
-	var amount := (1.0 if moving else 0.0) if weight<0 else weight
-	var phase := fposmod(distance/STRIDE*TAU,TAU)
-	var vertices := PackedVector3Array()
-	var uvs := PackedVector2Array()
-	var indices := PackedInt32Array()
-	const COLS := 18
-	const ROWS := 32
-	for y in range(ROWS+1):
-		for x in range(COLS+1):
-			var uv := Vector2(float(x)/COLS,float(y)/ROWS)
-			var point := deform(uv,size,phase,row,amount)
-			if facing.x<0:
-				point.x = -point.x
-			vertices.append(Vector3(point.x,point.y,0))
-			uvs.append((region.position+uv*region.size)/ATLASES[kind].get_size())
-			if x<COLS and y<ROWS:
-				var a := y*(COLS+1)+x
-				indices.append_array(PackedInt32Array([a,a+1,a+COLS+1,a+1,a+COLS+2,a+COLS+1]))
-	var arrays := []
-	arrays.resize(Mesh.ARRAY_MAX)
-	arrays[Mesh.ARRAY_VERTEX]=vertices
-	arrays[Mesh.ARRAY_TEX_UV]=uvs
-	arrays[Mesh.ARRAY_INDEX]=indices
-	var mesh := ArrayMesh.new()
-	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
-	canvas.draw_mesh(mesh,ATLASES[kind])
+	var region := pose_region(kind,row,frame_for(moving,distance))
+	# Keep one uniform scale per character across every view and walking frame.
+	var scale_value: float = HEIGHTS[kind]/(TE[0].size.y if kind==0 else JO[0].size.y)
+	var anchor := Vector2(region.size.x*0.5,region.size.y)
+	canvas.draw_set_transform(origin,0,Vector2(-1 if facing.x<0 else 1,1))
+	canvas.draw_texture_rect_region(ATLASES[kind],Rect2(-anchor*scale_value,region.size*scale_value),region)
+	canvas.draw_set_transform(Vector2.ZERO)

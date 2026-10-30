@@ -85,7 +85,7 @@ func run_checks() -> void:
 	check(scene.hud.avatars[0].active and not scene.hud.avatars[1].active,"Only the selected avatar is outlined")
 	print("Checking free exploration, map, phone and conversation...")
 	# A physically colliding trunk has a tiny ground footprint, not its whole canopy.
-	var prop = scene.world.props[0]
+	var prop = scene.world.props.filter(func(item):return int(item.get_meta("kind"))<2)[0]
 	check(not scene.world.is_walkable(prop.position),"Tree trunk must collide")
 	check(prop.half_width > 50,"Tree canopy must extend beyond trunk collision")
 	place(prop.position+Vector2(0,-120),prop.position+Vector2(80,-120))

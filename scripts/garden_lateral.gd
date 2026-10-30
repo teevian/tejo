@@ -79,7 +79,6 @@ func _ready() -> void:
 	_add_dialogue_hotspot("old_fountain", Vector2(2230, 554), 145.0)
 	_add_dialogue_hotspot("cork_oak", Vector2(3010, 554), 190.0)
 	hud.person_selected.connect(_select_person)
-	hud.pause_requested.connect(_toggle_pause)
 	_select_person(0)
 	process_mode = Node.PROCESS_MODE_ALWAYS
 

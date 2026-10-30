@@ -2,6 +2,7 @@ extends Node2D
 ## Near branches sit above the actors; ground mist sits below them.
 ## Parallax follows camera position, never player proximity or opacity.
 const BRANCH: Texture2D = preload("res://assets/world/sintra-high-branch-complete.png")
+const WorldScale = preload("res://scripts/world_scale.gd")
 var world: Node2D
 var branches: Array[Dictionary] = []
 func _ready() -> void:
@@ -14,8 +15,8 @@ func _ready() -> void:
 		sprite.texture = BRANCH
 		sprite.material = near_focus
 		sprite.centered = false
-		sprite.position = anchors[i]-Vector2(470,810)
-		sprite.scale = Vector2.ONE*(0.73 if i%2==0 else 0.9)
+		sprite.scale = Vector2.ONE*WorldScale.NEAR_BRANCH_SCALES[i%2]
+		sprite.position = anchors[i]-Vector2(700,1100)*sprite.scale.x
 		sprite.flip_h = i%2==1
 		sprite.z_index = 8
 		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR

@@ -10,8 +10,7 @@ class Sheet:
 	func _draw() -> void:
 		for kind in 2:
 			for frame in 8:
-				draw_set_transform(Vector2(80+frame*160,270+kind*260))
-				Art.draw_pose(self,kind,direction,true,float(frame)*Art.STRIDE/8.0)
+				Art.draw_pose(self,kind,direction,true,float(frame)*Art.STRIDE/8.0,Vector2(80+frame*160,270+kind*260))
 			draw_set_transform(Vector2.ZERO)
 func _initialize() -> void:
 	call_deferred("run")

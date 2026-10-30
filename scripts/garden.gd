@@ -5,6 +5,7 @@ const HUD = preload("res://scripts/hud.gd")
 const DialogueDirector = preload("res://scripts/dialogue_director.gd")
 const DialoguePanel = preload("res://scripts/dialogue_panel.gd")
 const ExplorationMap = preload("res://scripts/exploration_map.gd")
+const InventoryPanel = preload("res://scripts/inventory_panel.gd")
 const WORLD_SIZE := World.WORLD_SIZE
 @export var scene_id := "sintra_trail"
 @export var location_id := "serra_sintra"
@@ -17,6 +18,10 @@ var dialogue = DialogueDirector.new()
 var dialogue_panel: Control
 var exploration_map: Control
 var discovery_clock := 0.0
+var inventory_panel: Control
+var interaction_clock := 0.0
+var day_cycle = preload("res://scripts/day_cycle.gd").new()
+var daylight: ShaderMaterial
 
 func _ready() -> void:
 	_setup_input()
@@ -34,21 +39,36 @@ func _ready() -> void:
 	people[0].partner = people[1]
 	people[1].partner = people[0]
 	world.attach_people(people)
+	world.wildlife.day_cycle = day_cycle
+	world.interactions.discovered.connect(_interaction_discovered)
 	camera = Camera2D.new()
 	camera.name = "ExplorationCamera"
 	camera.position = _camera_target()
 	add_child(camera)
 	camera.make_current()
+	# Grade the entire painted world, including custom shaders, below the UI.
+	var light_layer := CanvasLayer.new()
+	light_layer.layer = 3
+	add_child(light_layer)
+	var light_screen := ColorRect.new()
+	light_screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	light_screen.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	daylight = ShaderMaterial.new()
+	daylight.shader = preload("res://shaders/day_light.gdshader")
+	daylight.set_shader_parameter("daylight", day_cycle.light_color())
+	light_screen.material = daylight
+	light_layer.add_child(light_screen)
 	var layer := CanvasLayer.new()
 	layer.layer = 5
 	add_child(layer)
 	hud = HUD.new()
+	hud.day_cycle = day_cycle
+	day_cycle.time_changed.connect(hud.queue_redraw)
 	hud.open_world = true
 	hud.area_title = "Entrada da mata"
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	layer.add_child(hud)
 	hud.person_selected.connect(_select_person)
-	hud.pause_requested.connect(_toggle_pause)
 	dialogue_panel = DialoguePanel.new()
 	layer.add_child(dialogue_panel)
 	dialogue_panel.advance_requested.connect(_talk)
@@ -59,11 +79,16 @@ func _ready() -> void:
 	exploration_map.people = people
 	layer.add_child(exploration_map)
 	exploration_map.record_positions()
+	inventory_panel = InventoryPanel.new()
+	inventory_panel.people = people
+	layer.add_child(inventory_panel)
+	inventory_panel.drop_requested.connect(_drop_item)
 	_select_person(0)
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func _input(event: InputEvent) -> void:
-	if event.is_echo():
+	# Child initialization can pump input before the map and HUD exist.
+	if not is_node_ready() or event.is_echo():
 		return
 	if exploration_map.visible:
 		if event.is_action_pressed("map") or event.is_action_pressed("pause"):
@@ -81,6 +106,8 @@ func _input(event: InputEvent) -> void:
 		_select_person(1-selected)
 	elif event.is_action_pressed("map") and not get_tree().paused and not dialogue.is_active():
 		_toggle_map()
+	elif event.is_action_pressed("interact") and not get_tree().paused and not dialogue.is_active():
+		_interact()
 	else:
 		return
 	get_viewport().set_input_as_handled()
@@ -94,6 +121,10 @@ func _select_person(index: int) -> void:
 		people[i].path.clear()
 		people[i].route_time = 0
 	hud.select(index)
+	if is_instance_valid(inventory_panel):
+		inventory_panel.selected = index
+		inventory_panel.refresh()
+	_update_interaction_focus()
 
 func _toggle_pause() -> void:
 	get_tree().paused = not get_tree().paused
@@ -108,28 +139,38 @@ func _toggle_map() -> void:
 		person.velocity = Vector2.ZERO
 	if exploration_map.visible:
 		exploration_map.queue_redraw()
+	world.interactions.highlight({})
+	inventory_panel.visible = not exploration_map.visible
 
 func dialogue_context() -> Dictionary:
 	var nearby: Array[String] = []
 	for place in world.landmarks:
 		if people[selected].position.distance_to(place.position) < place.radius:
 			nearby.append(place.id)
-	return {"scene":scene_id,"location":location_id,"initiator":selected,"near":nearby}
+	return {"scene":scene_id,"location":location_id,"initiator":selected,"near":nearby,
+		"hour":day_cycle.minutes / 60.0,"day":day_cycle.day,"day_phase":day_cycle.phase()}
 
 func _talk() -> void:
 	if get_tree().paused or exploration_map.visible:
 		return
+	for person in people:
+		if person.jumping:
+			return
 	if dialogue.is_active():
 		dialogue.advance()
 		return
 	if dialogue.start(dialogue_context()):
 		for person in people:
+			person.cancel_shoulder()
+			person.stand_up()
 			person.in_dialogue = true
 			person.velocity = Vector2.ZERO
 			person.moving = false
 			person._finish_phone()
 			person.facing = person.position.direction_to(person.partner.position)
 		hud.dialogue_active = true
+		inventory_panel.hide()
+		world.interactions.highlight({})
 		hud.queue_redraw()
 
 func _end_dialogue() -> void:
@@ -138,15 +179,26 @@ func _end_dialogue() -> void:
 		person.in_dialogue = false
 		person.phone_idle_time = 0
 	hud.dialogue_active = false
+	inventory_panel.show()
 	hud.queue_redraw()
 
 func _camera_target() -> Vector2:
-	return (people[selected].position-Vector2(0,95)).clamp(Vector2(640,360),WORLD_SIZE-Vector2(640,360))
+	var point: Vector2 = people[selected].position
+	if people[0].seated and people[1].seated and people[0].seat_id==people[1].seat_id:
+		point = (people[0].position+people[1].position)*0.5
+	return (point-Vector2(0,Person.Art.HEIGHTS[selected]*0.52)).clamp(Vector2(640,360),WORLD_SIZE-Vector2(640,360))
 
 func _process(delta: float) -> void:
 	if get_tree().paused or people.is_empty() or exploration_map.visible:
 		return
+	day_cycle.advance(delta)
+	world.wildlife.step(delta)
+	daylight.set_shader_parameter("daylight", day_cycle.light_color())
 	camera.position = camera.position.lerp(_camera_target(),1-exp(-5*delta))
+	interaction_clock -= delta
+	if interaction_clock<=0:
+		interaction_clock = 0.12
+		_update_interaction_focus()
 	discovery_clock += delta
 	if discovery_clock >= 0.2:
 		discovery_clock = 0
@@ -156,8 +208,31 @@ func _process(delta: float) -> void:
 		hud.area_title = area
 		hud.queue_redraw()
 
+func _update_interaction_focus() -> void:
+	if people.is_empty() or not is_instance_valid(hud):
+		return
+	var target: Dictionary = {} if dialogue.is_active() or exploration_map.visible else world.interactions.nearest(people[selected])
+	world.interactions.highlight(target if not people[selected].is_busy() else {})
+	hud.queue_redraw()
+
+func _interact() -> void:
+	if not is_node_ready() or get_tree().paused or dialogue.is_active() or exploration_map.visible:
+		return
+	world.interactions.interact(people[selected])
+	_update_interaction_focus()
+
+func _drop_item(owner: int, index: int) -> void:
+	if owner!=selected or get_tree().paused or dialogue.is_active() or exploration_map.visible:
+		return
+	world.interactions.drop(people[owner],index)
+	_update_interaction_focus()
+
+func _interaction_discovered(flag: String) -> void:
+	dialogue.flags[flag] = true
+	dialogue.flag_changed.emit(flag,true)
+
 func _setup_input() -> void:
-	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"talk":[KEY_T],"map":[KEY_M],"swap":[KEY_TAB],"pause":[KEY_ESCAPE]}
+	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"talk":[KEY_T],"map":[KEY_M],"swap":[KEY_TAB],"pause":[KEY_ESCAPE],"interact":[KEY_SPACE]}
 	for action in bindings:
 		if not InputMap.has_action(action):
 			InputMap.add_action(action,0.2)
@@ -171,7 +246,7 @@ func _setup_input() -> void:
 		event.axis = binding[1]
 		event.axis_value = binding[2]
 		InputMap.action_add_event(binding[0],event)
-	for binding in [["talk",JOY_BUTTON_A],["swap",JOY_BUTTON_RIGHT_SHOULDER],["sprint",JOY_BUTTON_B],["map",JOY_BUTTON_BACK],["pause",JOY_BUTTON_START]]:
+	for binding in [["talk",JOY_BUTTON_A],["interact",JOY_BUTTON_X],["swap",JOY_BUTTON_RIGHT_SHOULDER],["sprint",JOY_BUTTON_B],["map",JOY_BUTTON_BACK],["pause",JOY_BUTTON_START]]:
 		var event := InputEventJoypadButton.new()
 		event.button_index = binding[1]
 		InputMap.action_add_event(binding[0],event)
