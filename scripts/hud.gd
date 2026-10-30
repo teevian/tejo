@@ -38,14 +38,15 @@ func centered(point: Vector2, value: String, size_value: int, color: Color) -> v
 
 func _draw() -> void:
 	if day_cycle != null:
-		draw_style_box(TejoPerson._box(Color("233e3e"),14),Rect2(24,24,222,94))
-		draw_circle(Vector2(49,52),11,Color("ead5a5"),false,1.5,true)
+		draw_style_box(TejoPerson._box(Color("233e3e"),14),Rect2(758,24,254,118))
+		draw_string(font,Vector2(776,51),"Serra de Sintra",HORIZONTAL_ALIGNMENT_LEFT,-1,20,Color("fff4db"))
+		draw_circle(Vector2(783,80),11,Color("ead5a5"),false,1.5,true)
 		var angle: float = day_cycle.minutes / 720.0 * TAU - PI / 2.0
-		draw_line(Vector2(49,52),Vector2(49,52)+Vector2.from_angle(angle)*6,Color("ead5a5"),2,true)
+		draw_line(Vector2(783,80),Vector2(783,80)+Vector2.from_angle(angle)*6,Color("ead5a5"),2,true)
 		angle = fmod(day_cycle.minutes,60.0) / 60.0 * TAU - PI / 2.0
-		draw_line(Vector2(49,52),Vector2(49,52)+Vector2.from_angle(angle)*9,Color("ead5a5"),1,true)
-		draw_string(font,Vector2(72,63),day_cycle.clock_text(),HORIZONTAL_ALIGNMENT_LEFT,-1,30,Color("fff4db"))
-		draw_string(font,Vector2(40,97),"%s · Dia %d" % [day_cycle.phase(),day_cycle.day],HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("ead5a5"))
+		draw_line(Vector2(783,80),Vector2(783,80)+Vector2.from_angle(angle)*9,Color("ead5a5"),1,true)
+		draw_string(font,Vector2(806,91),day_cycle.clock_text(),HORIZONTAL_ALIGNMENT_LEFT,-1,30,Color("fff4db"))
+		draw_string(font,Vector2(776,123),"%s · Dia %d" % [day_cycle.phase(),day_cycle.day],HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("ead5a5"))
 	if not paused:
 		return
 	draw_rect(Rect2(0,0,1280,720),Color(0.12,0.23,0.20,0.65))

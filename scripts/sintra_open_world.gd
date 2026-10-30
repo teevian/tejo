@@ -2,7 +2,11 @@ extends Node2D
 const WorldScale = preload("res://scripts/world_scale.gd")
 const BENCH: Texture2D = preload("res://assets/world/two-seat-bench.png")
 const BENCH_REGION := Rect2(75,121,1619,658)
-const WORLD_SIZE := Vector2(4800, 5400)
+const WORLD_SIZE := Vector2(12000, 7560) # Exactly twice the previous 8400×5400 area.
+const Heritage = preload("res://scripts/sintra_heritage.gd")
+const Discoveries = preload("res://scripts/sintra_discoveries.gd")
+const Expansion = preload("res://scripts/sintra_expansion.gd")
+const Scenery = preload("res://scripts/terrain_scenery.gd")
 const CELL := 32.0
 const TERRAIN: Array[Texture2D] = [preload("res://assets/world/terrain/sintra-nw.png"),preload("res://assets/world/terrain/sintra-ne.png"),preload("res://assets/world/terrain/sintra-sw-humid.png"),preload("res://assets/world/terrain/sintra-se.png")]
 const SOUTH: Texture2D = preload("res://assets/world/terrain/sintra-south.png")
@@ -27,6 +31,17 @@ var low_foliage: Array[Node2D] = []
 var boulders: Array[Dictionary] = []
 var interactions: Node2D
 var wildlife: Node2D
+var puppy: Node2D
+var terrain_layers: Array[Dictionary] = []
+var terrain_materials: Array[ShaderMaterial] = []
+var trail_routes: Array[Vector2] = []
+var pool_areas: Array[Rect2] = []
+var scenery_props: Array[StaticBody2D] = []
+var discovery_flowers: Array[Vector2] = []
+var scenery_objects: Array[StaticBody2D] = []
+var scenery_footprints: Array[Dictionary] = []
+var scenery_buckets: Dictionary = {}
+const SCENERY_BUCKET := 256.0
 const ARCH_CENTER := Vector2(3985,1360)
 var landmarks: Array[Dictionary] = [
 	{"id":"trailhead", "name":"Entrada da mata", "position":Vector2(850,2890), "radius":260.0},
@@ -45,6 +60,7 @@ var landmarks: Array[Dictionary] = [
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_PAUSABLE
+	landmarks.append_array(Heritage.landmarks())
 	opaque_paint = ShaderMaterial.new()
 	opaque_paint.shader = preload("res://shaders/opaque_cutout.gdshader")
 	var ground := Sprite2D.new()
@@ -63,10 +79,14 @@ func _ready() -> void:
 	actors.y_sort_enabled = true
 	add_child(actors)
 	_build_water()
+	Scenery.build_original(self)
 	_build_forest()
 	_build_masonry()
 	_build_low_foliage()
 	_build_southern_forest()
+	Expansion.build(self)
+	Heritage.build(self)
+	Discoveries.build(self)
 	_build_navigation()
 	interactions = preload("res://scripts/world_interactions.gd").new()
 	interactions.world = self
@@ -77,6 +97,11 @@ func _ready() -> void:
 	wildlife = preload("res://scripts/wildlife.gd").new()
 	wildlife.world = self
 	add_child(wildlife)
+	puppy = preload("res://scripts/capuchos_puppy.gd").new()
+	puppy.world = self
+	puppy.home = Heritage.landmarks()[3].position+Vector2(130,-35)
+	puppy.position = puppy.home
+	actors.add_child(puppy)
 
 func attach_people(value: Array) -> void:
 	people = value
@@ -88,6 +113,11 @@ func river_x(y: float) -> float:
 	return RIVER[-1].x
 
 func in_water(point: Vector2, margin := 0.0) -> bool:
+	for pool in pool_areas:
+		var offset := (point-pool.get_center())/(pool.size*.5+Vector2.ONE*margin)
+		if offset.length_squared()<1: return true
+	if point.y>5400:
+		return false
 	if point.y > 3600:
 		var deck_y := 4470.0 + (point.x-2940.0)*0.24
 		if absf(point.y-deck_y) < 105.0-margin:
@@ -129,6 +159,9 @@ func _build_forest() -> void:
 		if placed.size() >= 165:
 			break
 		var at := Vector2(rng.randf_range(100,4700),rng.randf_range(130,3500))
+		if Heritage.reserved(at,170):
+			continue
+		if not is_walkable(at,45): continue
 		if absf(at.x-river_x(at.y)) < 320:
 			continue
 		var clear := true
@@ -146,7 +179,6 @@ func _build_forest() -> void:
 			clear = false
 		if not clear:
 			continue
-		placed.append(at)
 		var kind := rng.randi_range(0,2)
 		if at.x > 3200 and rng.randf() < 0.65:
 			kind = 1
@@ -154,6 +186,10 @@ func _build_forest() -> void:
 			kind = 0
 		elif at.y > 1500 and at.y < 2300 and rng.randf() < 0.60:
 			kind = 2
+		# Keep tall crowns out of the chapel courtyard and its usable doorway.
+		if kind<2 and Rect2(at-Vector2(210,750),Vector2(420,750)).intersects(Rect2(3730,1030,1070,950)):
+			continue
+		placed.append(at)
 		_add_prop(at,kind,rng.randf_range(0.82,1.13))
 	# Landmark objects, open approach from multiple sides.
 	_add_prop(Vector2(1620,1010),4,1.0)
@@ -162,19 +198,18 @@ func _build_forest() -> void:
 	_add_prop(Vector2(1030,2860),5,0.9)
 	for at in [Vector2(340,2870),Vector2(2050,640),Vector2(3550,3000),Vector2(4330,2270),Vector2(1800,2900)]:
 		_add_prop(at,3,1.0)
-	# Large rocks visibly painted into the ground get foot-sized ellipses, not whole foliage blocks.
-	for obstacle in [Vector3(1039,726,140),Vector3(2204,165,110),Vector3(285,1077,95),Vector3(2221,1260,90),Vector3(472,2082,150),Vector3(1889,2794,145),Vector3(978,3524,170),Vector3(331,2960,125),Vector3(842,2579,45),Vector3(4422,381,180),Vector3(3477,530,115),Vector3(3428,2629,130)]:
-		_add_circle(Vector2(obstacle.x,obstacle.y),obstacle.z)
-	# Chapel walls, leaving the central door and the broken south wall open.
-	_add_wall(Rect2(3880,1260,38,170))
-	_add_wall(Rect2(4110,1120,38,100))
-	_add_wall(Rect2(4510,1390,38,160))
-	_add_wall(Rect2(4130,1660,175,35))
 
 func _add_prop(at: Vector2, kind: int, variation: float) -> void:
+	if kind==5:
+		for attempt in 48:
+			var candidate := at if attempt==0 else at+Vector2.from_angle(attempt*2.4)*(55+attempt*8)
+			if is_walkable(candidate,120) and is_walkable(candidate+Vector2(-52,22),20) and is_walkable(candidate+Vector2(52,22),20):
+				at = candidate
+				break
 	var prop := Prop.new()
 	prop.position = at
 	prop.set_meta("kind",kind)
+	prop.add_to_group("tree_canopy" if kind<2 else ("solid_rock" if kind==3 else "scenery_prop"))
 	prop.collision_layer = 1
 	prop.collision_mask = 2
 	var humid := kind < 2
@@ -213,20 +248,6 @@ func _add_prop(at: Vector2, kind: int, variation: float) -> void:
 	actors.add_child(prop)
 	props.append(prop)
 
-func _add_circle(at: Vector2, radius: float) -> void:
-	var body := StaticBody2D.new()
-	body.position = at
-	body.collision_layer = 1
-	body.collision_mask = 2
-	var collider := CollisionShape2D.new()
-	var shape := CircleShape2D.new()
-	shape.radius = radius
-	collider.shape = shape
-	body.add_child(collider)
-	add_child(body)
-	circles.append(Vector3(at.x,at.y,radius))
-	boulders.append({"position":at,"radius":radius,"node":body})
-
 func _add_wall(rect: Rect2) -> void:
 	var body := StaticBody2D.new()
 	body.collision_layer = 1
@@ -249,7 +270,50 @@ func is_walkable(at: Vector2, margin := 14.0) -> bool:
 	for rect in blocked_rects:
 		if rect.grow(margin).has_point(at):
 			return false
+	if scenery_blocks(at,margin):
+		return false
 	return true
+
+func register_scenery(item: StaticBody2D, category: String, polygons: Array[PackedVector2Array]) -> void:
+	item.scenery_kind = category
+	item.add_to_group(category)
+	actors.add_child(item)
+	scenery_objects.append(item)
+	for polygon in polygons:
+		if polygon.size()<3:
+			continue
+		item.add_footprint(polygon)
+		var bounds := Rect2(polygon[0],Vector2.ZERO)
+		for point in polygon:
+			bounds = bounds.expand(point)
+		var index := scenery_footprints.size()
+		scenery_footprints.append({"polygon":polygon,"bounds":bounds,"owner":item})
+		var first := Vector2i((bounds.position/SCENERY_BUCKET).floor())
+		var last := Vector2i((bounds.end/SCENERY_BUCKET).floor())
+		for x in range(first.x,last.x+1):
+			for y in range(first.y,last.y+1):
+				var key := Vector2i(x,y)
+				if not scenery_buckets.has(key): scenery_buckets[key] = []
+				scenery_buckets[key].append(index)
+
+func scenery_blocks(at: Vector2, margin: float) -> bool:
+	# Broad phase keeps the navigation bake and fauna queries local to nearby objects.
+	var first := Vector2i(((at-Vector2.ONE*margin)/SCENERY_BUCKET).floor())
+	var last := Vector2i(((at+Vector2.ONE*margin)/SCENERY_BUCKET).floor())
+	var visited: Dictionary = {}
+	for x in range(first.x,last.x+1):
+		for y in range(first.y,last.y+1):
+			for index in scenery_buckets.get(Vector2i(x,y),[]):
+				if visited.has(index): continue
+				visited[index] = true
+				var entry: Dictionary = scenery_footprints[index]
+				if not entry.bounds.grow(margin).has_point(at): continue
+				var polygon: PackedVector2Array = entry.polygon
+				if Geometry2D.is_point_in_polygon(at,polygon): return true
+				for i in polygon.size():
+					if at.distance_squared_to(Geometry2D.get_closest_point_to_segment(at,polygon[i],polygon[(i+1)%polygon.size()]))<margin*margin:
+						return true
+	return false
 
 func _build_navigation() -> void:
 	navigation.region = Rect2i(0,0,int(WORLD_SIZE.x/CELL),int(WORLD_SIZE.y/CELL))
@@ -290,6 +354,12 @@ func area_at(at: Vector2) -> String:
 	for place in landmarks:
 		if at.distance_to(place.position) < place.radius:
 			return place.name
+	if at.x>9000:
+		return "Urzes e granito da serra"
+	if at.y>5400:
+		return "Bosques do sul"
+	if at.x >= 4800:
+		return "Trilhos dos carvalhos"
 	if at.y > 3600:
 		return "Mata húmida da serra"
 	if at.x > 3200:
@@ -313,31 +383,11 @@ func _build_terrain() -> void:
 		tile.position = Vector2(index%2,floori(index/2.0))*extent
 		tile.z_index = -49
 		tile.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-		var shader := Shader.new()
-		shader.code = """shader_type canvas_item;
-uniform vec2 tile_origin;
-uniform bool southern_stream;
-void fragment() {
- vec2 sample_uv = UV;
- if (southern_stream) {
-  float bend = 0.055 * (1.0-smoothstep(0.0,0.28,UV.y));
-  float bank = smoothstep(0.0,0.12,UV.x)*(1.0-smoothstep(0.60,0.90,UV.x));
-  sample_uv.x -= bend*bank;
- }
- vec4 paint = texture(TEXTURE,clamp(sample_uv,vec2(0.0),vec2(1.0)));
- vec2 feather = vec2(64.0/2400.0,64.0/1800.0);
- float a=1.0;
- if (tile_origin.x>0.0) a*=smoothstep(-feather.x,feather.x,UV.x);
- if (tile_origin.x<1.0) a*=1.0-smoothstep(1.0-feather.x,1.0+feather.x,UV.x);
- if (tile_origin.y>0.0) a*=smoothstep(-feather.y,feather.y,UV.y);
- if (tile_origin.y<1.0) a*=1.0-smoothstep(1.0-feather.y,1.0+feather.y,UV.y);
- float damp = tile_origin.x<0.5 && tile_origin.y<0.5 ? 0.26 : 0.0;
- COLOR=vec4(mix(paint.rgb,paint.rgb*vec3(0.73,0.89,0.92),damp),paint.a*a);
-}"""
 		var material_value := ShaderMaterial.new()
-		material_value.shader = shader
+		material_value.shader = preload("res://shaders/terrain_ground.gdshader")
 		material_value.set_shader_parameter("tile_origin",Vector2(index%2,floori(index/2.0)))
 		material_value.set_shader_parameter("southern_stream",index==3)
+		terrain_materials.append(material_value)
 		tile.material = material_value
 		add_child(tile)
 
@@ -352,11 +402,17 @@ void fragment() {
 	south.material = blend
 	add_child(south)
 
-func _masonry_part(label: String, points: Array, ground_contact: Vector2) -> void:
+func _masonry_part(label: String, points: Array, ground_contact: Vector2, base: Array = []) -> void:
 	var item := PaintedOccluder.new()
 	item.name = label
-	item.configure(TERRAIN[1],PackedVector2Array(points),ground_contact,Vector2(2400,0),Vector2(2400,1800)/TERRAIN[1].get_size())
-	actors.add_child(item)
+	var pixel_scale := Vector2(2400,1800)/TERRAIN[1].get_size()
+	item.configure(TERRAIN[1],PackedVector2Array(points),ground_contact,Vector2(2400,0),pixel_scale)
+	var footprints: Array[PackedVector2Array] = []
+	if not base.is_empty():
+		var polygon := PackedVector2Array()
+		for point in base: polygon.append(Vector2(2400,0)+point*pixel_scale)
+		footprints.append(polygon)
+	register_scenery(item,"masonry",footprints)
 	masonry.append(item)
 
 func _build_masonry() -> void:
@@ -364,15 +420,15 @@ func _build_masonry() -> void:
 	_masonry_part("ChapelArchLintel",[
 		Vector2(900,749),Vector2(913,723),Vector2(936,701),Vector2(957,689),Vector2(980,693),Vector2(998,702),Vector2(1013,718),Vector2(1016,749),
 		Vector2(992,764),Vector2(991,746),Vector2(984,731),Vector2(973,726),Vector2(959,729),Vector2(948,739),Vector2(937,756),Vector2(933,777)],Vector2(958,834))
-	_masonry_part("ChapelArchLeftJamb",[Vector2(900,749),Vector2(933,777),Vector2(934,816),Vector2(910,831),Vector2(899,823)],Vector2(917,834))
-	_masonry_part("ChapelArchRightJamb",[Vector2(992,748),Vector2(1016,733),Vector2(1018,804),Vector2(1000,819),Vector2(987,813)],Vector2(1001,820))
+	_masonry_part("ChapelArchLeftJamb",[Vector2(900,749),Vector2(933,777),Vector2(934,816),Vector2(910,831),Vector2(899,823)],Vector2(917,834),[Vector2(901,800),Vector2(932,800),Vector2(934,829),Vector2(910,836),Vector2(899,827)])
+	_masonry_part("ChapelArchRightJamb",[Vector2(992,748),Vector2(1016,733),Vector2(1018,804),Vector2(1000,819),Vector2(987,813)],Vector2(1001,820),[Vector2(989,785),Vector2(1018,785),Vector2(1018,813),Vector2(999,823),Vector2(987,816)])
 	# Broken walls also have height, rather than being painted floor markings.
-	_masonry_part("ChapelWestWall",[Vector2(824,748),Vector2(850,754),Vector2(867,791),Vector2(882,789),Vector2(901,814),Vector2(904,863),Vector2(930,881),Vector2(928,907),Vector2(884,892),Vector2(832,856),Vector2(822,809)],Vector2(870,899))
-	_masonry_part("ChapelNorthWall",[Vector2(1027,735),Vector2(1069,700),Vector2(1071,666),Vector2(1095,652),Vector2(1143,668),Vector2(1142,728),Vector2(1160,741),Vector2(1160,774),Vector2(1127,755),Vector2(1116,746),Vector2(1092,748),Vector2(1030,785)],Vector2(1090,784))
-	_masonry_part("ChapelBrokenSouthWall",[Vector2(956,882),Vector2(981,888),Vector2(1005,898),Vector2(1015,929),Vector2(1014,978),Vector2(994,971),Vector2(989,948),Vector2(960,936)],Vector2(987,978))
-	# Contact footprints, not the lintel, block motion. The central opening stays open.
-	_add_wall(Rect2(3895,1320,48,80))
-	_add_wall(Rect2(4040,1290,44,65))
+	_masonry_part("ChapelWestWall",[Vector2(824,748),Vector2(850,754),Vector2(867,791),Vector2(882,789),Vector2(901,814),Vector2(904,863),Vector2(930,881),Vector2(928,907),Vector2(884,892),Vector2(832,856),Vector2(822,809)],Vector2(870,899),[Vector2(824,836),Vector2(850,845),Vector2(930,892),Vector2(928,913),Vector2(884,902),Vector2(822,860)])
+	_masonry_part("ChapelNorthWall",[Vector2(1027,735),Vector2(1069,700),Vector2(1071,666),Vector2(1095,652),Vector2(1143,668),Vector2(1142,728),Vector2(1160,741),Vector2(1160,774),Vector2(1127,755),Vector2(1116,746),Vector2(1092,748),Vector2(1030,785)],Vector2(1090,784),[Vector2(1027,767),Vector2(1092,731),Vector2(1116,730),Vector2(1160,759),Vector2(1160,782),Vector2(1110,751),Vector2(1030,794)])
+	_masonry_part("ChapelBrokenSouthWall",[Vector2(956,882),Vector2(981,888),Vector2(1005,898),Vector2(1015,929),Vector2(1014,978),Vector2(994,971),Vector2(989,948),Vector2(960,936)],Vector2(987,978),[Vector2(958,922),Vector2(990,935),Vector2(1015,963),Vector2(1014,982),Vector2(994,977),Vector2(989,950),Vector2(960,941)])
+	# Long diagonal walls are split into sections, each with its own foot depth.
+	_masonry_part("ChapelEastWallNorth",[Vector2(1134,731),Vector2(1162,742),Vector2(1223,782),Vector2(1225,831),Vector2(1195,815),Vector2(1133,777)],Vector2(1180,811),[Vector2(1134,766),Vector2(1225,817),Vector2(1225,835),Vector2(1133,784)])
+	_masonry_part("ChapelEastWallSouth",[Vector2(1220,780),Vector2(1260,802),Vector2(1290,840),Vector2(1315,848),Vector2(1320,888),Vector2(1350,887),Vector2(1365,864),Vector2(1373,874),Vector2(1373,936),Vector2(1331,921),Vector2(1330,901),Vector2(1220,833)],Vector2(1295,895),[Vector2(1220,818),Vector2(1338,885),Vector2(1373,916),Vector2(1373,940),Vector2(1330,927),Vector2(1330,904),Vector2(1220,840)])
 
 func _build_low_foliage() -> void:
 	var rng := RandomNumberGenerator.new()
@@ -381,25 +437,30 @@ func _build_low_foliage() -> void:
 		var at := Vector2(rng.randf_range(130,4670),rng.randf_range(130,3470))
 		if not is_walkable(at,30) or at.distance_to(ARCH_CENTER)<200:
 			continue
-		var plant := Node2D.new()
-		plant.name = "WalkThroughFern"
-		plant.position = at
-		plant.add_to_group("walkthrough_foliage")
-		var sprite := Sprite2D.new()
-		sprite.material = opaque_paint
-		sprite.texture = PROPS
-		sprite.region_enabled = true
-		sprite.region_rect = PROP_REGIONS[2]
-		sprite.region_filter_clip_enabled = true
-		sprite.centered = false
-		var height := rng.randf_range(42,64)
-		var factor := height/PROP_REGIONS[2].size.y
-		sprite.scale = Vector2.ONE*factor
-		sprite.position = Vector2(-PROP_REGIONS[2].size.x*factor*0.5,-height*0.95)
-		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-		plant.add_child(sprite)
-		actors.add_child(plant)
-		low_foliage.append(plant)
+		if Heritage.reserved(at,30):
+			continue
+		add_low_fern(at,rng.randf_range(42,64))
+
+func add_low_fern(at: Vector2, height: float, tint := Color.WHITE) -> void:
+	var plant := Node2D.new()
+	plant.name = "WalkThroughFern"
+	plant.position = at
+	plant.add_to_group("walkthrough_foliage")
+	var sprite := Sprite2D.new()
+	sprite.material = opaque_paint
+	sprite.texture = PROPS
+	sprite.region_enabled = true
+	sprite.region_rect = PROP_REGIONS[2]
+	sprite.region_filter_clip_enabled = true
+	sprite.centered = false
+	var factor := height/PROP_REGIONS[2].size.y
+	sprite.scale = Vector2.ONE*factor
+	sprite.position = Vector2(-PROP_REGIONS[2].size.x*factor*0.5,-height*0.95)
+	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	sprite.modulate = tint
+	plant.add_child(sprite)
+	actors.add_child(plant)
+	low_foliage.append(plant)
 
 func _build_southern_forest() -> void:
 	# Water footprints follow the sloping deck, so both banks and the bridge agree.
@@ -441,12 +502,9 @@ func _build_southern_forest() -> void:
 		for other in placed:
 			if at.distance_to(other)<220:
 				clear = false
-		if clear:
+		if clear and is_walkable(at,45):
 			_add_prop(at,rng.randi_range(0,2),rng.randf_range(0.85,1.25))
 			placed.append(at)
-	# Traced large granite bases. Low ivy remains freely traversable.
-	for rock in [Vector3(430,4100,135),Vector3(1740,4650,150),Vector3(530,5040,130),Vector3(3540,4090,120),Vector3(3660,4860,130)]:
-		_add_circle(Vector2(rock.x,rock.y),rock.z)
 	# Short retaining ledges have gaps at the painted stairs and at either end.
 	_add_wall(Rect2(3660,4280,210,30))
 	_add_wall(Rect2(4470,4280,160,30))

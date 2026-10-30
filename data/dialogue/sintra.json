@@ -1,6 +1,182 @@
 {
   "topics": [
     {
+      "id": "football_clearing_discovery",
+      "scene": "sintra_trail",
+      "near": "football_clearing",
+      "priority": 86,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Ainda há uma bola no meio do descampado."
+        },
+        {
+          "speaker": "partner",
+          "text": "Um último jogo? Só para ver se ainda rola."
+        }
+      ]
+    },
+    {
+      "id": "rest_clearing_discovery",
+      "scene": "sintra_trail",
+      "near": "rest_clearing",
+      "priority": 86,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Este banco está mesmo no sítio certo."
+        },
+        {
+          "speaker": "partner",
+          "text": "Ficamos aqui um bocadinho? Hoje não temos pressa."
+        }
+      ]
+    },
+    {
+      "id": "old_stones_discovery",
+      "scene": "sintra_trail",
+      "near": "old_stones",
+      "priority": 86,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Estas pedras fazem quase uma roda."
+        },
+        {
+          "speaker": "partner",
+          "text": "Talvez alguém também gostasse de parar aqui."
+        }
+      ]
+    },
+    {
+      "id": "white_bells_discovery",
+      "scene": "sintra_trail",
+      "near": "white_bells",
+      "priority": 86,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Olha estas flores. São diferentes de todas as que vimos."
+        },
+        {
+          "speaker": "partner",
+          "text": "E tão pequenas de perto. Vamos deixá-las ficar."
+        }
+      ]
+    },
+    {
+      "id": "forgotten_gate_discovery",
+      "scene": "sintra_trail",
+      "near": "forgotten_gate",
+      "priority": 86,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Há um portão, mas a mata já tomou conta do resto."
+        },
+        {
+          "speaker": "partner",
+          "text": "Parece uma entrada para um sítio que se esqueceu de fechar."
+        }
+      ]
+    },
+    {
+      "id": "pedras_irmas_heritage",
+      "scene": "sintra_trail",
+      "near": "pedras_irmas",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Estas duas pedras parecem estar a guardar o caminho."
+        },
+        {
+          "speaker": "partner",
+          "text": "E o musgo cobre-as quase por inteiro. Vamos passar pelo meio?"
+        }
+      ]
+    },
+    {
+      "id": "mata_reliquia_heritage",
+      "scene": "sintra_trail",
+      "near": "mata_reliquia",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Olha para estas raízes e para a hera nos troncos."
+        },
+        {
+          "speaker": "partner",
+          "text": "Aqui apetece mesmo andar devagar e ouvir a mata."
+        }
+      ]
+    },
+    {
+      "id": "adrenunes_heritage",
+      "scene": "sintra_trail",
+      "near": "adrenunes",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Aquela laje fica suspensa entre os blocos. Há uma passagem por baixo."
+        },
+        {
+          "speaker": "partner",
+          "text": "Daqui vê-se bem a entrada. Vamos aproximar-nos com calma."
+        }
+      ]
+    },
+    {
+      "id": "convento_capuchos_heritage",
+      "scene": "sintra_trail",
+      "near": "convento_capuchos",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Construíram as paredes mesmo à volta dos rochedos."
+        },
+        {
+          "speaker": "partner",
+          "text": "Até o telhado parece encontrar o seu lugar entre as pedras."
+        }
+      ]
+    },
+    {
+      "id": "tholos_monge_heritage",
+      "scene": "sintra_trail",
+      "near": "tholos_monge",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Ainda se percebe o círculo da câmara, mesmo sem a cobertura."
+        },
+        {
+          "speaker": "partner",
+          "text": "E o corredor de entrada. Vamos espreitar sem subir às pedras."
+        }
+      ]
+    },
+    {
+      "id": "pedra_amarela_heritage",
+      "scene": "sintra_trail",
+      "near": "pedra_amarela",
+      "priority": 85,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Estes líquenes amarelos sobressaem no granito."
+        },
+        {
+          "speaker": "partner",
+          "text": "Depois da sombra da mata, sabe bem parar aqui um bocadinho."
+        }
+      ]
+    },
+    {
       "id": "castle_slope_humid",
       "scene": "sintra_trail",
       "near": "castle_slope",

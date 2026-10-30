@@ -1,0 +1,18 @@
+# Extensão patrimonial da Serra de Sintra
+
+Ferramenta: image_gen integrada. Resultado: 1024×1536 px (pedido: 2048×3072). Arte final em `sintra-heritage.png`. Referência de estilo: `sintra-south.png`. As fotografias foram observadas; a geração recebeu a pintura e as quatro referências de Monge, Capuchos, Pedras Irmãs e Adrenunes (limite de cinco imagens). Pedra Amarela foi descrita a partir da fotografia observada.
+
+Interpretações pintadas dos locais; a disposição no mapa é adaptada ao jogo, não uma reprodução cartográfica ou levantamento arquitetónico.
+
+## Referências visuais
+
+- Adrenunes: https://heritage-navigator.com/en/sintra/site/anta-de-adrenunes
+- Tholos do Monge: https://prehistoricportugal.com/2025/01/tholos-do-monge/
+- Pedras Irmãs: https://www.geo.de/reisen/reise-inspiration/schwesterfelsen---steinernes-paar-im-maerchenwald_35877164-35877610.html
+- Mata Relíquia dos Capuchos: https://bilheteira.parquesdesintra.pt/info/a-mata-reliquia-do-convento-dos-capuchos/1330/en
+- Convento dos Capuchos: https://commons.wikimedia.org/wiki/File:Convento_dos_Capuchos_0616.jpg
+- Pedra Amarela: https://macanudos.org/2022/09/13/pedra-amarela-na-serra-de-sintra/
+
+## Prompt final
+
+Use case: stylized-concept. Create a single continuous tall 2:3 illustrated terrain map for a semi-top-down Godot exploration game. Requested resolution 2048x3072. First reference is the CURRENT GAME ART: match its richly detailed hand-painted gouache foliage, warm ochre paths, grey granite, ivy, moss, fine brush strokes and overhead camera exactly. The remaining four photographs are shape references for Monge, Capuchos, Pedras Irmas and Adrenunes respectively. Pedra Amarela is described from a separately viewed photograph. This is a playable terrain painting, no UI, no text, no borders, no sky/horizon, no people. Camera consistent steep overhead 3/4, orthographic. Six recognizable places in ONE continuous forest with connecting dirt paths, NOT panels. Exact composition normalized coordinates: upper left (0.27,0.20) Pedras Irmas, two huge rounded moss-covered granite boulders side by side with a walkable gap, thin woodland trunks behind; upper right (0.73,0.20) Mata Reliquia dos Capuchos, ancient twisted oak trunks covered in ivy surrounding an open fern glade with mossy roots and leaf litter; middle left (0.27,0.52) Gruta de Adrenunes, dramatic tall angular vertical granite slabs with one horizontal capstone over a dark narrow south-facing passage, low shrubs; middle right (0.73,0.52) Convento dos Capuchos accurately inspired by photo: humble low whitewashed weathered grey walls embedded among huge mossy granite boulders, red/brown terracotta roofs, very small bell arch, open sandy courtyard south of buildings, stone cross and trough, not a grand palace; lower left (0.27,0.83) Tholos do Monge, small ruined circular chamber of layered rough stone with roof missing, short open entrance corridor pointing south, grassy mound and discreet white geodetic pillar behind; lower right (0.73,0.83) Pedra Amarela, open upland with rounded grey granite slabs flecked with yellow lichens, low heath scrub. Each subject fills roughly 30% width and 14% height, with broad walkable space in front and around. Branching ochre trails run vertically at x=.27 and .73, connect horizontally between each pair, and enter west edge at y=.20,.52,.83 to connect to existing map. All edges mossy low forest ground, no major clipped objects. No rivers or ponds. Leave large canopy trees out: these are added as depth-sorted sprites. Beautiful coherent continuous landscape, tangible recognizable architectural and geological shapes, game art matching first reference, not photorealistic.

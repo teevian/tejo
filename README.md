@@ -6,7 +6,7 @@ Uma aventura a dois na Serra de Sintra, em Godot 4.7. A cena principal é agora 
 
 Abrir `project.godot` no Godot e carregar em **F5**. A cena principal é `scenes/garden.tscn`.
 
-O jogo começa às **08:00** e tem um relógio no canto superior esquerdo, com a hora, a fase e o número do dia. Cada segundo real equivale a um minuto do jogo (24 minutos por dia). As fases são madrugada (00:00–05:59), manhã (06:00–11:59), meio-dia (12:00–13:59), tarde (14:00–17:59), crepúsculo (18:00–19:59) e noite (20:00–23:59). A iluminação de todo o cenário e das personagens muda gradualmente, preservando a legibilidade da interface. A pausa e o mapa suspendem o relógio; as conversas decorrem com o tempo a avançar. A passagem da meia-noite incrementa o dia. O relógio central em `scripts/day_cycle.gd` fornece também a hora e a fase ao contexto das conversas.
+O jogo começa às **08:00** e tem um relógio no canto superior direito, junto aos retratos, com «Serra de Sintra», a hora, a fase e o número do dia. Cada segundo real equivale a um minuto do jogo (24 minutos por dia). As fases são madrugada (00:00–05:59), manhã (06:00–11:59), meio-dia (12:00–13:59), tarde (14:00–17:59), crepúsculo (18:00–19:59) e noite (20:00–23:59). A iluminação de todo o cenário e das personagens muda gradualmente, preservando a legibilidade da interface. A pausa e o mapa suspendem o relógio; as conversas decorrem com o tempo a avançar. A passagem da meia-noite incrementa o dia. O relógio central em `scripts/day_cycle.gd` fornece também a hora e a fase ao contexto das conversas.
 
 Verificação do ciclo: `Godot --headless --path . --script res://tests/day_cycle_test.gd`.
 
@@ -23,7 +23,7 @@ Verificação do ciclo: `Godot --headless --path . --script res://tests/day_cycl
 
 ## A zona aberta
 
-O mundo tem **4800 × 3600 unidades**, cerca de 19 ecrãs de área. Os trilhos são referências visuais: também se pode caminhar pela erva, entre árvores e por vegetação baixa. Só os troncos, pedras grandes, paredes e água bloqueiam os pés. A câmara segue ambos os eixos e para nos limites do mundo.
+O mundo tem **12000 × 7560 unidades**, incluindo a mata húmida a sul e os seis locais dispersos pela serra. Os trilhos são referências visuais: também se pode caminhar pela erva, entre árvores e por vegetação baixa. Só os troncos, pedras grandes, paredes e água bloqueiam os pés. A câmara segue ambos os eixos e para nos limites do mundo.
 
 Há duas pontes realmente atravessáveis sobre a ribeira, uma de madeira e outra de pedra; é possível fazer um circuito por ambas. Entrada da mata, bosque de eucaliptos, vale dos fetos, fonte escondida, margem da ribeira, ruínas da capela, miradouro do granito e clareira do sobreiro têm ambientes e pontos de interesse próprios. O terreno é composto por quatro pinturas detalhadas, ligadas com transições suaves. A floresta usa árvores e objetos independentes sobre esse terreno. Copas e personagens partilham ordenação por profundidade e mantêm a opacidade. A vegetação baixa permite passar entre folhas, que se sobrepõem aos pés e pernas; os arcos e paredes das ruínas têm camadas sólidas para permitir passar por baixo ou por trás.
 
@@ -85,7 +85,7 @@ Verificação gráfica dos personagens: executar Godot **sem `--headless`**, com
 
 Pré-visualizações: executar `tests/open_world_preview.gd` com janela gráfica. Guarda a entrada, ambas as pontes, ruínas, mapa com descoberta e uma vista geral de revisão totalmente revelada em `output/`; esta última usa apenas uma cena de teste descartável e não altera o estado de uma partida.
 
-A interface superior direita mostra apenas os retratos e nomes, com contorno verde e dourado no personagem selecionado. `tests/depth_preview.gd`, com janela gráfica, guarda a aproximação, passagem e saída do arco, vegetação e ambas as seleções dos avatares em `output/`.
+A interface superior direita reúne o relógio com «Serra de Sintra» e os retratos e nomes, com contorno verde e dourado no personagem selecionado. `tests/depth_preview.gd`, com janela gráfica, guarda a aproximação, passagem e saída do arco, vegetação e ambas as seleções dos avatares em `output/`.
 
 ### Bosque húmido e extensão sul
 
@@ -95,11 +95,11 @@ Verificação da extensão: `Godot --headless --fixed-fps 60 --path . --script r
 
 ### Fauna autónoma
 
-A floresta tem uma população persistente de pássaros, esquilos, três raposas, rãs e borboletas, distribuída pelas árvores, clareiras e margens reais do mapa. Os animais continuam a agir fora da câmara; aproximar-se deles altera o comportamento, e correr aumenta a distância a que os personagens os assustam.
+A floresta tem uma população persistente de pássaros, esquilos, seis raposas, rãs e borboletas, distribuída pelas árvores, clareiras e margens reais do mapa. Os animais continuam a agir fora da câmara; aproximar-se deles altera o comportamento, e correr aumenta a distância a que os personagens os assustam.
 
 - **Pássaros:** seis bandos de quatro e oito aves solitárias. Voam entre árvores, evitam sobrepor-se em voo, pousam, procuram alimento no chão e recolhem-se à noite. Um alarme faz levantar o bando.
 - **Esquilos:** exploram o chão, param para comer, fazem um pequeno salto de susto e fogem rapidamente de raposas e personagens, trepam ao tronco e desaparecem em cavidades visíveis. Só voltam a sair quando a ameaça se afasta; de noite ficam abrigados.
-- **Raposas:** alternam corridas rápidas, farejar e descanso. Ao ver um esquilo acessível, perseguem-no imediatamente, independentemente da fome; a aproximação dos personagens tem prioridade e provoca fuga. Ao arrancar de paradas para uma corrida, fazem um salto curto de mudança de direção. A sede continua a levá-las à margem para beber. São apenas três no mundo; a curiosidade pode levá-las a observar brevemente o jogador num canto visível do ecrã, a distância segura, antes de fugirem novamente.
+- **Raposas:** alternam corridas rápidas, farejar e descanso. Ao ver um esquilo acessível, perseguem-no imediatamente, independentemente da fome; a aproximação dos personagens tem prioridade e provoca fuga. Ao arrancar de paradas para uma corrida, fazem um salto curto de mudança de direção. A sede continua a levá-las à margem para beber. São seis no mundo; a curiosidade pode levá-las a observar brevemente o jogador num canto visível do ecrã, a distância segura, antes de fugirem novamente.
 - **Rãs:** saltam entre a margem e pequenas folhas flutuantes, mergulham perante uma ameaça e emergem quando há segurança. Reagem às borboletas próximas; o intervalo entre saltos é menor à noite.
 - **Borboletas:** alternam voo irregular e repouso nas flores, afastam-se dos personagens, raposas e tentativas de captura das rãs, e pousam durante a noite.
 
@@ -124,3 +124,40 @@ Verificações adicionais:
 - `Godot --headless --path . --script res://tests/wildlife_agility_test.gd`: velocidade, salto de arranque, caminhada sem salto, fuga segura, observação visível na periferia, intervalo entre encontros, perseguição imediata, susto do esquilo e seleção direcional.
 - `Godot --path . --script res://tests/wildlife_direction_rendering_test.gd` (com gráficos): verifica pixels realmente desenhados para todas as espécies e direções e diferenças entre poses. Guarda as grelhas em `output/wildlife-directions-*.png`.
 - `Godot --path . --script res://tests/wildlife_agility_preview.gd` (com gráficos): prepara, numa cena descartável, capturas da observação no canto, salto de mudança de direção, corrida e susto em `output/fox-*.png`.
+
+
+### Serra dispersa e cachorro dos Capuchos — 30 outubro
+
+O mapa tem **12000×7560 unidades**, exatamente o dobro da área da versão de 8400×5400. Os seis locais ficam separados por mais de 2400 unidades: **Pedras Irmãs** no noroeste, **Mata Relíquia dos Capuchos** nos bosques do norte, **Gruta de Adrenunes** no extremo nordeste, **Convento dos Capuchos** nos bosques centrais, **Tholos do Monge** a sudoeste e **Pedra Amarela** nas encostas do sudeste. Cada um tem descoberta, conversa, pintura própria, recortes de profundidade e bases sólidas com entradas livres. O mapa mantém descoberta progressiva e afasta as legendas para evitar sobreposições.
+
+As seis pinturas individuais têm 1254×1254 px para áreas de 1600×1600 (1400×1400 nas Pedras Irmãs): pelo menos 0,784 px por unidade, comparados com os 0,603 do terreno original. Foram criadas com a ferramenta de imagem integrada, usando a pintura original e as fotografias já consultadas. [Arte, referências e prompts](assets/world/heritage/ART.md). A organização do mundo está em `scripts/sintra_heritage.gd` e `scripts/sintra_expansion.gd`.
+
+Entre os locais há floresta com árvores independentes, hera, fetos, clareiras e caminhos, mais urzes e granito nas encostas expostas, pequenos charcos com rãs, folhas flutuantes e flores, bancos e objetos soltos. Novos bandos, esquilos, raposas e borboletas residem nas novas regiões e usam os mesmos comportamentos da floresta anterior. A vegetação próxima e a névoa acompanham os bosques húmidos.
+
+Junto ao Convento dos Capuchos vive um **cachorro pequeno, fofo e desconfiado**. Ladra e guarda um território limitado. Ração pode ser encontrada nos caminhos e junto aos bancos, incluindo uma pequena reserva a sul do convento. Ocupa porte 1 na bolsa. **Espaço**, com ração e a alguma distância do cachorro, deixa comida no chão; clicar na ração da bolsa perto do convento também funciona. Ambos devem recuar e ficar quietos. Ele só se aproxima para comer quando se sente seguro.
+
+Uma refeição não basta: depois de pelo menos duas ofertas, o cachorro passa a escolher aproximar-se de alguém parado. É ele que faz o caminho e cheira durante alguns segundos; avançar para ele interrompe a aproximação. Após encontros repetidos, fica junto da pessoa e pede contacto. **Espaço** aceita esse pedido com uma festa suave. Só a combinação de comida, aproximações voluntárias, cheiro e festas estabelece amizade. Um painel aparece apenas nas proximidades e indica o que ele comunica. A confiança e as descobertas mantêm-se durante a sessão, tal como o resto da partida.
+
+Aproximar-se à pressa provoca um recuo na confiança e uma reação defensiva. Quando tenta morder, o cachorro **persegue sempre Jo**, independentemente de quem está selecionado ou de quem se aproximou; Te nunca é o alvo. A investida fica limitada aos arredores do convento. Jo recua perante o pequeno puxão à bota. Depois de confiar nos dois, o cachorro mantém-se nos Capuchos e aceita festas.
+
+O relógio fica no canto superior direito, à esquerda dos retratos, com **Serra de Sintra**, hora, fase e dia. Pausa e mapa suspendem também o cachorro.
+
+Verificação: `tests/heritage_world_test.gd` cobre área duplicada, distância entre os locais, detalhe nativo, fauna e flora residentes, percursos seguros, descoberta, conversas e entradas. `tests/puppy_test.gd` percorre a sequência de comida/espera/cheiro/festas, testa as investidas só ao Jo e a suspensão no mapa e na pausa. Executar com `Godot --headless --path . --script res://tests/NOME.gd`. `tests/heritage_preview.gd` e `tests/puppy_preview.gd`, com gráficos, guardam capturas em `output/`. As cenas de revisão são descartáveis e não alteram uma partida.
+
+### Pequenas descobertas e rostos do cachorro
+
+As juntas do chão foram corrigidas para evitar faixas vazias entre pinturas. As zonas repetitivas da expansão têm agora três clareiras abertas: um descampado com uma bola de futebol antiga, uma clareira de descanso e um recanto de pedras redondas. Seis placas de madeira envelhecida indicam locais reais do mapa; seis bancos adicionais mantêm dois lugares utilizáveis. Flores brancas de campainha, plantas de folhas prateadas e flores violetas, troncos com cogumelos, um regador enferrujado, um abrigo de insetos e um portão esquecido marcam outros pontos do caminho. As reservas de vegetação deixam cada encontro visível e os percursos livres. Alguns recantos têm descoberta no mapa e conversas próprias.
+
+**Espaço junto à bola** dá-lhe um pontapé: ela rola, perde velocidade e ressalta perante obstáculos, permanecendo em terreno acessível. Mapa e pausa suspendem o movimento.
+
+O cachorro apresenta três rostos pintados conforme a confiança, mesmo quando está simplesmente parado: **zangado e defensivo**, **cauteloso**, e finalmente **fofo e confiante**. O painel próximo inclui um retrato ampliado da mesma expressão para tornar o olhar legível. A alimentação, o cheiro e as festas continuam a estabelecer a amizade; as investidas continuam sempre dirigidas a Jo.
+
+[Arte e prompts](assets/world/discoveries/ART.md). `tests/discoveries_test.gd` verifica percursos, descobertas, indicações, plantas, pontapé e suspensão da bola, e a seleção de rostos pela confiança. `tests/discoveries_preview.gd`, com gráficos, guarda os novos recantos e os três rostos em `output/discoveries-*.png`.
+
+### Profundidade e volumes do cenário
+
+O chão e a névoa ficam abaixo da camada ordenada pelos pés dos personagens. Pedras, troncos, ruínas e construções partilham essa ordenação: ocultam quem passa por trás e ficam por baixo de quem passa à frente. As copas e os fetos podem esconder parte do corpo; só os troncos e as bases sólidas bloqueiam a passagem. Galhos próximos continuam num primeiro plano separado.
+
+Os recortes reutilizam os pixels das pinturas à resolução original. `scripts/terrain_scenery.gd` define os contornos e as bases das pedras do terreno original, da expansão, das clareiras e dos monumentos; `scripts/sintra_heritage.gd` define árvores e arquitetura. A física, a grelha de navegação, os percursos do companheiro e a fauna consultam as mesmas bases poligonais, com pesquisa espacial por regiões. A expansão respeita o espelhamento das texturas; o rio respeita a deformação usada pela pintura. Portas, arcos e pórticos têm peças separadas e aberturas utilizáveis.
+
+`tests/scenery_depth_test.gd`, sem janela, verifica as bases na física real e na navegação, colisões do personagem e desvios do companheiro. `tests/scenery_rendering_test.gd`, com janela gráfica, compara os pixels de corpos e cenário nas duas ordens de profundidade e verifica a ocultação parcial pelos fetos. `tests/scenery_preview.gd` guarda capturas de revisão em `output/scenery-*.png`.

@@ -40,3 +40,14 @@ A névoa fica sobre o chão e sob os personagens. A encosta é sugerida pela pin
 ## Galhos sem cortes retangulares
 
 O primeiro plano usa agora [sintra-high-branch-complete.png](sintra-high-branch-complete.png), criado com a ferramenta integrada ([prompt](sintra-high-branch-complete.prompt.md)). A silhueta inteira, incluindo pontas de madeira e folhas, cabe dentro da imagem; as quatro bordas são transparentes. A versão antiga, desenhada até às margens, fica conservada mas não é usada. O movimento de paralaxe e o foco mantêm-se. `tests/branch_edges_preview.gd` verifica o alfa das quatro margens e captura três posições de câmara.
+
+
+## Serra dispersa — 30 outubro
+
+As pinturas atuais estão em [heritage/](heritage/ART.md), uma por local, e têm detalhe por unidade superior ao do terreno anterior. O mapa tem 12000×7560 unidades, o dobro da área de 8400×5400. O chão de expansão inclui bosque, hera, carvalhal, urzal e charcos em `expansion/`; árvores e fauna independentes preservam profundidade e comportamentos da floresta. [Prompts e parâmetros finais](heritage/ART.md).
+
+A primeira pintura conjunta, `terrain/sintra-heritage.png`, fica conservada como referência e deixou de ser usada no jogo. As seis localizações atuais estão distribuídas pelo mundo em `scripts/sintra_heritage.gd`, com bases sólidas e recortes de profundidade alinhados à arte individual.
+
+## Separação de chão, volumes e primeiro plano
+
+Os recortes de `scripts/terrain_scenery.gd` e `scripts/sintra_heritage.gd` usam as coordenadas das pinturas originais, sem alterar nem reduzir as imagens. Cada objeto tem uma silhueta visual e, quando sólido, uma base poligonal independente. A mesma base cria a colisão física e impede a navegação; a altura visual só participa na ordenação pelos pés. Rochas grandes não podem ser atravessadas, copas podem tapar o corpo sem bloquear toda a sua largura, e as aberturas de arcos e pórticos ficam separadas dos apoios. As pedras da expansão acompanham os espelhamentos de cada chão e deixam de existir nas regiões cobertas por outra pintura.

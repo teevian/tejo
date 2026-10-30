@@ -10,6 +10,9 @@ const ITEMS: Array[Dictionary] = [
 	{"type":"sticks","name":"Molho de ramos","porte":2,"art":5}]
 
 static func draw_item(canvas: CanvasItem, item: Dictionary, box: Rect2) -> void:
+	if item.get("type","")=="dog_food":
+		preload("res://scripts/puppy_art.gd").draw_food(canvas,box)
+		return
 	var region := REGIONS[int(item.art)]
 	var scale_value := minf(box.size.x/region.size.x,box.size.y/region.size.y)
 	var extent := region.size*scale_value

@@ -30,8 +30,8 @@ func run() -> void:
 	scene._toggle_map()
 	await capture("open-world-exploration-map")
 	# A separate fully revealed art/QA overview, never written to saved game progress.
-	for x in 40:
-		for y in 30:
+	for x in ceili(scene.world.WORLD_SIZE.x/120.0):
+		for y in ceili(scene.world.WORLD_SIZE.y/120.0):
 			scene.exploration_map.explored[Vector2i(x,y)] = true
 	for place in scene.world.landmarks:
 		scene.exploration_map.discovered[place.id] = true

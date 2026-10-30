@@ -21,6 +21,9 @@ func _ready() -> void:
 		targets.append({"id":"rock_"+str(targets.size()),"kind":"rock","label":"Pedra com musgo","position":rock.position,"reach":rock.radius+100.0,"radius":rock.radius,"node":rock.node})
 	for entry in [[Vector2(4190,1560),"Parede da capela"],[Vector2(3990,1435),"Arco antigo"],[Vector2(4260,5000),"Vestígios da muralha"]]:
 		targets.append({"id":"ruin_"+str(targets.size()),"kind":"ruin","label":entry[1],"position":entry[0],"reach":115.0,"radius":0.0})
+	for object in world.scenery_props:
+		var category: String = "football" if object.kind==3 else ("signpost" if object.kind==0 else "curiosity")
+		targets.append({"id":"discovery_"+str(targets.size()),"kind":category,"label":object.label,"position":object.position,"reach":100.0,"radius":object.contact_radius,"node":object})
 	# Visible, non-blocking objects distributed throughout both halves of the map.
 	var placements := [
 		[0,Vector2(945,2970)],[1,Vector2(715,3040)],[2,Vector2(1130,3030)],[4,Vector2(1260,3000)],
@@ -31,6 +34,16 @@ func _ready() -> void:
 		var at: Vector2 = find_drop_position(entry[1])
 		if at!=Vector2.INF:
 			spawn_pickup(ItemArt.ITEMS[entry[0]],at)
+
+	# Useful discoveries remain scattered along the new paths; food has real inventory cost.
+	for at in [Vector2(1130,3100),Vector2(2680,2240),Vector2(5860,2840),Vector2(7000,4860),Vector2(7025,4920),Vector2(7065,4960),Vector2(8340,5650),Vector2(2000,6390),Vector2(11260,4020)]:
+		var point := find_drop_position(at)
+		if point!=Vector2.INF:
+			spawn_pickup(preload("res://scripts/puppy_art.gd").FOOD,point)
+	for at in [Vector2(6100,2150),Vector2(8600,3400),Vector2(8700,6550),Vector2(1800,6750),Vector2(10840,4900)]:
+		for offset in [Vector2.ZERO,Vector2(85,40)]:
+			var point := find_drop_position(at+offset)
+			if point!=Vector2.INF: spawn_pickup(ItemArt.ITEMS[1 if offset==Vector2.ZERO else 0],point)
 
 func spawn_pickup(item: Dictionary, at: Vector2) -> Dictionary:
 	var node := Pickup.new()
@@ -63,7 +76,9 @@ func find_drop_position(nearby: Vector2, from := Vector2.INF) -> Vector2:
 
 func _reachable(person: CharacterBody2D, target: Dictionary) -> bool:
 	var point: Vector2 = target.position
-	if target.kind=="bench":
+	if target.has("node") and target.node.has_method("configure_mapped"):
+		point = _painted_contact(target.node,person.position)
+	elif target.kind=="bench":
 		point.x += clampf(person.position.x-point.x,-90,90)
 	elif target.radius>0:
 		point += point.direction_to(person.position)*(float(target.radius)+18.0)
@@ -71,6 +86,17 @@ func _reachable(person: CharacterBody2D, target: Dictionary) -> bool:
 	ray.exclude = [person.get_rid()]
 	var hit := world.get_world_2d().direct_space_state.intersect_ray(ray)
 	return hit.is_empty() or hit.collider==target.get("node")
+
+func _painted_contact(object: Node2D, from: Vector2) -> Vector2:
+	var closest := object.position
+	var distance := INF
+	for polygon in object.footprints:
+		for i in polygon.size():
+			var point := Geometry2D.get_closest_point_to_segment(from,polygon[i],polygon[(i+1)%polygon.size()])
+			if point.distance_squared_to(from)<distance:
+				distance = point.distance_squared_to(from)
+				closest = point
+	return closest
 
 func river_target(person: CharacterBody2D) -> Dictionary:
 	var y := person.position.y
@@ -94,19 +120,32 @@ func nearest(person: CharacterBody2D) -> Dictionary:
 	if not result.is_empty():
 		best = person.position.distance_to(result.position)+15.0
 	for target in targets:
+		if target.kind=="football": target.position = target.node.position
 		if target.kind=="pickup" and (not is_instance_valid(target.node) or not target.node.visible):
 			continue
 		var distance := person.position.distance_to(target.position)
-		if distance>float(target.reach):
+		var painted: bool = target.has("node") and target.node.has_method("configure_mapped")
+		if painted:
+			if not target.node.ground_bounds.grow(100).has_point(person.position): continue
+			distance = person.position.distance_to(_painted_contact(target.node,person.position))
+		if distance>(100.0 if painted else float(target.reach)):
 			continue
-		var score: float = maxf(0,distance-float(target.radius))
+		var score: float = distance if painted else maxf(0,distance-float(target.radius))
+		if target.kind=="bench":
+			var footprint := Rect2(target.position+world.WorldScale.BENCH_FOOTPRINT.position,world.WorldScale.BENCH_FOOTPRINT.size)
+			score = person.position.distance_to(person.position.clamp(footprint.position,footprint.end))
 		var direction: Vector2 = person.position.direction_to(target.position)
 		score += (1-person.facing.dot(direction))*14.0
 		if target.kind=="pickup":
-			score -= 18.0
+			# An item at the character's feet remains selectable beside a wide bench.
+			score -= 64.0 if distance<=55 else 18.0
 		if score<best and _reachable(person,target):
 			best = score
 			result = target
+	if is_instance_valid(world.puppy):
+		var puppy_target: Dictionary = world.puppy.target_for(person)
+		if not puppy_target.is_empty() and (result.is_empty() or result.kind!="pickup"):
+			return puppy_target
 	return result
 
 func prompt(person: CharacterBody2D, target: Dictionary) -> String:
@@ -119,6 +158,9 @@ func prompt(person: CharacterBody2D, target: Dictionary) -> String:
 	if target.is_empty():
 		return ""
 	match target.kind:
+		"football": return "Dar um pontapé na bola"
+		"signpost": return "Ler a placa antiga"
+		"puppy": return "Deixar comida / fazer festas ao cachorro"
 		"pickup": return "Apanhar "+str(target.label).to_lower()+" · porte "+str(target.item.porte)
 		"bench": return "Sentar os dois no banco"
 		"fountain": return "Beber da fonte"
@@ -142,6 +184,14 @@ func interact(person: CharacterBody2D) -> String:
 		friend.cancel_shoulder()
 		friend._finish_phone()
 	match target.kind:
+		"football":
+			target.node.kick(person)
+			return "A bola ainda rola, apesar de todos estes anos."
+		"signpost", "curiosity":
+			_discover(target.id)
+			return str(target.label)
+		"puppy":
+			return world.puppy.interact(person)
 		"pickup":
 			if not person.inventory.try_add(target.item):
 				return "A bolsa de %s está cheia: %d/5 de porte. Larga um objeto para levar este."%[person.name,person.inventory.used_porte()]
@@ -208,6 +258,9 @@ func drop(person: CharacterBody2D, index: int) -> String:
 	for friend in world.people:
 		friend.cancel_shoulder()
 		friend._finish_phone()
+	if item.type=="dog_food" and is_instance_valid(world.puppy) and world.puppy.food.is_empty() and at.distance_to(world.puppy.home)<850:
+		world.puppy.leave_food(at)
+		return world.puppy.feedback
 	spawn_pickup(item,at)
 	return "%s pousou %s. Podes voltar a apanhá-lo."%[person.name,str(item.name).to_lower()]
 

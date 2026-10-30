@@ -39,11 +39,23 @@ func _ready() -> void:
 			patch.position = leaf
 			patch.z_index = -6
 			world.add_child(patch)
+	for pool in world.pool_areas:
+		for side in [-1.0,1.0]:
+			var bank: Vector2 = pool.get_center()+Vector2(side*(pool.size.x*.5+34),0)
+			var leaf: Vector2 = pool.get_center()+Vector2(side*(pool.size.x*.5-45),0)
+			if not world.is_walkable(bank,10): continue
+			ponds.append({"bank":bank,"leaf":leaf})
+			flowers.append(bank+Vector2(0,65))
+			var patch := HabitatArt.new()
+			patch.position = leaf
+			patch.z_index = -6
+			world.add_child(patch)
 	for plant in world.low_foliage:
 		if rng.randf()<0.35:
 			flowers.append(plant.position)
 	# Ensure the first clearing already has a small, unforced community.
 	flowers.append_array([Vector2(680,2820),Vector2(1170,3030),Vector2(920,2640)])
+	flowers.append_array(world.discovery_flowers)
 	for at in flowers:
 		var bloom := HabitatArt.new()
 		bloom.kind = "flowers"
@@ -80,6 +92,35 @@ func _ready() -> void:
 		butterfly.anchor = flower
 		butterfly.altitude = rng.randf_range(14,32)
 		butterfly.set_state("flutter",rng.randf_range(2,8))
+
+	# Additional resident communities live in the expansion, including beyond the old boundary.
+	var outer_trees: Array[Dictionary] = []
+	for tree in trees:
+		if tree.foot.x>4900 or tree.foot.y>5500: outer_trees.append(tree)
+	for i in 28:
+		var home: Dictionary = outer_trees[(i*11)%outer_trees.size()]
+		var bird = spawn("bird",home.foot,home)
+		bird.flock = 6+i/4
+		bird.flock_slot = i%4
+		bird.altitude = -home.perch.y+42
+		bird.set_state("perch",rng.randf_range(3,18))
+	for i in 18:
+		var home: Dictionary = outer_trees[(i*13)%outer_trees.size()]
+		ensure_hollow(home)
+		var squirrel = spawn("squirrel",land_point(home.foot,140),home)
+		squirrel.set_state("forage",rng.randf_range(3,8))
+	for at in [Vector2(5700,3600),Vector2(10200,3100),Vector2(7200,6650)]:
+		var fox = spawn("fox",land_point(at,160),nearest_tree(at))
+		fox.set_state("wander",3)
+		fox.curiosity_cooldown = rng.randf_range(12,30)
+	var outer_flowers: Array[Vector2] = []
+	for flower in flowers:
+		if flower.x>4800 or flower.y>5400: outer_flowers.append(flower)
+	for i in 24:
+		var flower: Vector2 = outer_flowers[(i*7)%outer_flowers.size()]
+		var butterfly = spawn("butterfly",flower,{})
+		butterfly.anchor = flower
+		butterfly.set_state("flutter",rng.randf_range(3,10))
 
 func spawn(species: String, at: Vector2, home: Dictionary):
 	var animal = Animal.new()
@@ -281,6 +322,9 @@ func _sprite_covers(sprite: Sprite2D, point: Vector2) -> bool:
 func _covered_at(at: Vector2, point: Vector2) -> bool:
 	for prop in world.props:
 		if prop.position.y>at.y and _sprite_covers(prop.sprite,point):
+			return true
+	for object in world.scenery_objects:
+		if object.position.y>at.y and object.covers_point(point):
 			return true
 	for plant in world.low_foliage:
 		if plant.position.y>at.y and _sprite_covers(plant.get_child(0),point):

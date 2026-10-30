@@ -83,6 +83,10 @@ func _ready() -> void:
 	inventory_panel.people = people
 	layer.add_child(inventory_panel)
 	inventory_panel.drop_requested.connect(_drop_item)
+	var puppy_panel := preload("res://scripts/puppy_panel.gd").new()
+	puppy_panel.world = world
+	puppy_panel.scene = self
+	layer.add_child(puppy_panel)
 	_select_person(0)
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
@@ -193,6 +197,8 @@ func _process(delta: float) -> void:
 		return
 	day_cycle.advance(delta)
 	world.wildlife.step(delta)
+	world.puppy.step(delta)
+	world.Discoveries.step(world,delta)
 	daylight.set_shader_parameter("daylight", day_cycle.light_color())
 	camera.position = camera.position.lerp(_camera_target(),1-exp(-5*delta))
 	interaction_clock -= delta

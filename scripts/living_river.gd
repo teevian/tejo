@@ -11,7 +11,7 @@ func _ready() -> void:
 	var vertices := PackedVector3Array()
 	var coordinates := PackedVector2Array()
 	var indices := PackedInt32Array()
-	var steps := int(world.WORLD_SIZE.y/24.0)
+	var steps := int(5400.0/24.0)
 	for i in range(steps+1):
 		var y := float(i)*24.0
 		var width := lerpf(122.0,70.0,smoothstep(3500.0,3700.0,y))

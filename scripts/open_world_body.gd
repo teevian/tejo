@@ -14,7 +14,10 @@ func _ready() -> void:
 func _draw() -> void:
 	if not is_instance_valid(person):
 		return
-	if person.seated:
+	var puppy = person.world.puppy if "puppy" in person.world else null
+	if is_instance_valid(puppy) and puppy.state=="pet" and puppy.visitor==person:
+		preload("res://scripts/puppy_petting_art.gd").draw_pose(self,person,puppy)
+	elif person.seated:
 		InteractionArt.draw_seated(self,person.kind)
 	elif person.kind==0 and person.shoulder_state==person.ShoulderState.TOUCHING:
 		InteractionArt.draw_shoulder(self,person.shoulder_side)

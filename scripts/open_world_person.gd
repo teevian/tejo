@@ -20,6 +20,8 @@ var seat_id := ""
 var seat_slot := -1
 var seat_goal := Vector2.ZERO
 var collecting_time := 0.0
+var puppy_recoil := Vector2.ZERO
+var puppy_recoil_time := 0.0
 var jumping := false
 var jump_time := 0.0
 var jump_from := Vector2.ZERO
@@ -74,6 +76,14 @@ func _physics_process(delta: float) -> void:
 		queue_redraw()
 		_update_art_motion(delta)
 		body.queue_redraw()
+		return
+	if puppy_recoil_time>0:
+		puppy_recoil_time = maxf(0,puppy_recoil_time-delta)
+		velocity = puppy_recoil
+		if world.is_walkable(position+velocity*delta,14):
+			move_and_slide()
+		moving = false
+		_refresh_art(delta)
 		return
 	var input := Input.get_vector("walk_left", "walk_right", "walk_up", "walk_down")
 	if jumping:

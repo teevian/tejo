@@ -14,7 +14,7 @@ func run() -> void:
 	scene = load("res://scenes/garden.tscn").instantiate()
 	root.add_child(scene)
 	await frames(3)
-	check(scene.world.WORLD_SIZE==Vector2(4800,5400),"Expanded world must preserve old coordinates and add 50% area")
+	check(scene.world.WORLD_SIZE.x>=4800 and scene.world.WORLD_SIZE.y>=5400,"World must preserve the complete humid extension")
 	for landmark in scene.world.landmarks:
 		check(not scene.world.find_path(Vector2(850,2890),landmark.position).is_empty(),"No route to "+str(landmark.id))
 	var te = scene.people[0]
