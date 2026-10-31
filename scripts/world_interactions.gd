@@ -2,12 +2,21 @@ extends Node2D
 signal discovered(flag: String)
 const ItemArt = preload("res://scripts/item_art.gd")
 const Pickup = preload("res://scripts/world_pickup.gd")
+const Comments = preload("res://data/world_comments.json")
 const MAX_JUMP := 240.0
 var world: Node2D
 var targets: Array[Dictionary] = []
 var current_target: Dictionary = {}
 var discoveries: Dictionary = {}
 var next_id := 0
+var comment_visits: Dictionary = {}
+
+func comment(kind: String) -> String:
+	var choices: Array = Comments.data.get(kind,[])
+	if choices.is_empty(): return ""
+	var index := int(comment_visits.get(kind,0))
+	comment_visits[kind] = index+1
+	return choices[index%choices.size()]
 
 func _ready() -> void:
 	name = "WorldInteractions"
@@ -186,10 +195,13 @@ func interact(person: CharacterBody2D) -> String:
 	match target.kind:
 		"football":
 			target.node.kick(person)
-			return "A bola ainda rola, apesar de todos estes anos."
-		"signpost", "curiosity":
+			return comment("football")
+		"signpost":
 			_discover(target.id)
-			return str(target.label)
+			return comment("signpost") % " / ".join(target.node.labels)
+		"curiosity":
+			_discover(target.id)
+			return comment({1:"white_flower",2:"silver_plant",4:"hollow_log",5:"watering_can",6:"insect_hotel",7:"old_gate"}.get(target.node.kind,"tree"))
 		"puppy":
 			return world.puppy.interact(person)
 		"pickup":
@@ -198,7 +210,7 @@ func interact(person: CharacterBody2D) -> String:
 			target.node.hide()
 			person.collecting_time = 0.55
 			_discover("collected_"+str(target.item.type))
-			return "%s guardou %s. Porte %d/5."%[person.name,str(target.label).to_lower(),person.inventory.used_porte()]
+			return "%s guardou %s. Porte %d/5. %s"%[person.name,str(target.label).to_lower(),person.inventory.used_porte(),comment(str(target.item.type))]
 		"bench":
 			# Reserve both independent places only after both routes are validated.
 			for friend in world.people:
@@ -209,7 +221,7 @@ func interact(person: CharacterBody2D) -> String:
 					return "Não há passagem livre para os dois lugares deste banco."
 			for friend in world.people:
 				friend.begin_sitting(target.id,target.node.seat_position(friend.kind),friend.kind)
-			return "Sentamo-nos os dois. Espaço ou movimento para voltar ao caminho."
+			return comment("bench")
 		"river":
 			if target.can_jump:
 				var launch := person.position
@@ -232,20 +244,20 @@ func interact(person: CharacterBody2D) -> String:
 					target.gift_given = true
 					spawn_pickup(ItemArt.ITEMS[1],at)
 					return "Entre as raízes há uma pinha caída. Podes apanhá-la."
-			return "A casca é rugosa e fresca. O musgo cresce à sombra do tronco."
+			return comment("tree")
 		"rock":
 			_discover("examined_rock")
-			return "O granito está coberto de líquenes. Esta pedra é demasiado grande para levar; procura pedrinhas soltas."
+			return comment("rock")
 		"ruin":
 			_discover("ruins_examined")
-			return "Entre as pedras antigas ainda se veem marcas de ferramentas. Há pequenos fragmentos soltos no caminho."
+			return comment("ruin")
 		"fountain":
 			person.collecting_time = 0.65
 			_discover("fountain_water")
-			return "A água da fonte é fresca. Ficamos um momento a ouvir a água."
+			return comment("fountain")
 		"fern":
 			_discover("examined_ferns")
-			return "As folhas guardam gotas de água. Os rebentos novos ainda estão enrolados."
+			return comment("fern")
 	return ""
 
 func drop(person: CharacterBody2D, index: int) -> String:

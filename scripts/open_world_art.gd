@@ -1,8 +1,13 @@
 extends RefCounted
-# Five authored viewpoints, mirrored to eight directions. Each pose is a
-# complete painted sprite; no separated limbs or procedural deformation.
+# Five authored viewpoints, mirrored to eight directions. Te's gaits share
+# each view's resting head and torso, retaining the original painted limbs,
+# foot anchors and key timing. Jo uses the original complete painted sprites.
 const ATLASES: Array[Texture2D] = [preload("res://assets/characters/open_world/te-walk-v4.png"),preload("res://assets/characters/open_world/jo-walk-v5.png")]
 const WorldScale = preload("res://scripts/world_scale.gd")
+const TeFrontGait = preload("res://scripts/te_front_gait.gd")
+const TeNorthGait = preload("res://scripts/te_north_gait.gd")
+const TeSideGait = preload("res://scripts/te_side_gait.gd")
+const TeDiagonalGait = preload("res://scripts/te_diagonal_gait.gd")
 const HEIGHTS: Array[float] = WorldScale.PERSON_HEIGHTS
 const STRIDE := 112.0
 const GAIT_FRAMES := 8
@@ -37,5 +42,14 @@ static func draw_pose(canvas: CanvasItem, kind: int, facing: Vector2, moving: bo
 	var scale_value: float = HEIGHTS[kind]/(TE[0].size.y if kind==0 else JO[0].size.y)
 	var anchor := Vector2(region.size.x*0.5,region.size.y)
 	canvas.draw_set_transform(origin,0,Vector2(-1 if facing.x<0 else 1,1))
-	canvas.draw_texture_rect_region(ATLASES[kind],Rect2(-anchor*scale_value,region.size*scale_value),region)
+	if kind==0 and row==0 and moving:
+		TeFrontGait.draw_pose(canvas,region,scale_value)
+	elif kind==0 and row==4 and moving:
+		TeNorthGait.draw_pose(canvas,region,scale_value)
+	elif kind==0 and row==2 and moving:
+		TeSideGait.draw_pose(canvas,region,scale_value)
+	elif kind==0 and (row==1 or row==3) and moving:
+		TeDiagonalGait.draw_pose(canvas,row,region,scale_value)
+	else:
+		canvas.draw_texture_rect_region(ATLASES[kind],Rect2(-anchor*scale_value,region.size*scale_value),region)
 	canvas.draw_set_transform(Vector2.ZERO)

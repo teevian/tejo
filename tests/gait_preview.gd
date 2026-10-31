@@ -18,7 +18,9 @@ func run() -> void:
 	RenderingServer.set_default_clear_color(Color("56665c"))
 	var sheet := Sheet.new()
 	root.add_child(sheet)
-	for entry in [[Vector2.RIGHT,"side"],[Vector2.DOWN,"front"],[Vector2(1,-1).normalized(),"diagonal"]]:
+	for entry in [[Vector2.RIGHT,"side"],[Vector2.LEFT,"left"],[Vector2.DOWN,"front"],[Vector2.UP,"north"],
+		[Vector2(1,-1).normalized(),"diagonal"],[Vector2(-1,-1).normalized(),"northwest"],
+		[Vector2(1,1).normalized(),"southeast"],[Vector2(-1,1).normalized(),"southwest"]]:
 		sheet.direction=entry[0]
 		sheet.queue_redraw()
 		for i in 4:

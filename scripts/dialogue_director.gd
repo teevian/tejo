@@ -13,15 +13,16 @@ var line_index := 0
 var initiator := 0
 
 func _init() -> void:
-	var content = JSON.parse_string(FileAccess.get_file_as_string("res://data/dialogue/sintra.json"))
-	if content is Dictionary:
-		topics = content.get("topics", [])
+	for path in ["res://data/dialogue/sintra.json","res://data/dialogue/sintra_banter.json"]:
+		var content = JSON.parse_string(FileAccess.get_file_as_string(path))
+		if content is Dictionary:
+			topics.append_array(content.get("topics", []))
 
 func is_active() -> bool:
 	return not active_topic.is_empty()
 
 func matches(topic: Dictionary, context: Dictionary) -> bool:
-	for key in ["scene", "location", "initiator"]:
+	for key in ["scene", "location", "initiator", "day_phase", "puppy_mood"]:
 		if topic.has(key) and topic[key] != context.get(key):
 			return false
 	if topic.has("near") and not topic.near in context.get("near", []):

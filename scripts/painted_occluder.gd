@@ -61,9 +61,9 @@ func covers_point(point: Vector2) -> bool:
 	if cutout_mask==null: return true
 	var uv := (point-mask_world_rect.position)/mask_world_rect.size
 	var mask_image := _image(cutout_mask)
-	var mask := mask_image.get_pixelv(Vector2i(uv*mask_image.get_size()).clamp(Vector2i.ZERO,mask_image.get_size()-Vector2i.ONE))
+	var mask := mask_image.get_pixelv(Vector2i(uv*Vector2(mask_image.get_size())).clamp(Vector2i.ZERO,mask_image.get_size()-Vector2i.ONE))
 	var paint_image := _image(surface.texture)
-	var paint := paint_image.get_pixelv(Vector2i(uv*paint_image.get_size()).clamp(Vector2i.ZERO,paint_image.get_size()-Vector2i.ONE))
+	var paint := paint_image.get_pixelv(Vector2i(uv*Vector2(paint_image.get_size())).clamp(Vector2i.ZERO,paint_image.get_size()-Vector2i.ONE))
 	var green := paint.g-maxf(paint.r*.92,paint.b*.80)
 	var chroma := maxf(paint.r,maxf(paint.g,paint.b))-minf(paint.r,minf(paint.g,paint.b))
 	var leaf := smoothstep(-.006,.018,green)*smoothstep(.035,.085,chroma)

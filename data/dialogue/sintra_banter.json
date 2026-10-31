@@ -1,0 +1,1302 @@
+{
+  "topics": [
+    {
+      "id": "sisters_family",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "pedras_irmas",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Pedras Irmãs. Achas que discutem?"
+        },
+        {
+          "speaker": 0,
+          "text": "Se discutem, são boas a guardar silêncio."
+        },
+        {
+          "speaker": 1,
+          "text": "Eu também consigo ficar assim quieto."
+        },
+        {
+          "speaker": 0,
+          "text": "Já estragaste a demonstração."
+        }
+      ]
+    },
+    {
+      "id": "sisters_bag",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "pedras_irmas",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Estas ficam fora da bolsa."
+        },
+        {
+          "speaker": 1,
+          "text": "Mesmo se largarmos os ramos?"
+        },
+        {
+          "speaker": 0,
+          "text": "Jo, uma delas é do tamanho de uma casa."
+        },
+        {
+          "speaker": 1,
+          "text": "Está bem. Mas era uma boa recordação."
+        }
+      ]
+    },
+    {
+      "id": "oak_witness",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "mata_reliquia",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Esta árvore já deve ter ouvido muita conversa."
+        },
+        {
+          "speaker": 1,
+          "text": "Então hoje apanhou duas pessoas particularmente interessantes."
+        },
+        {
+          "speaker": 0,
+          "text": "Uma pessoa interessante e outra com uma pinha na bolsa."
+        },
+        {
+          "speaker": 1,
+          "text": "A pinha dá-me profundidade."
+        }
+      ]
+    },
+    {
+      "id": "oak_directions",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "mata_reliquia",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Se esta árvore falasse, pedia-lhe indicações."
+        },
+        {
+          "speaker": 0,
+          "text": "O que lhe dizias?"
+        },
+        {
+          "speaker": 1,
+          "text": "Desculpe, nasceu aqui?"
+        },
+        {
+          "speaker": 0,
+          "text": "É capaz de ainda demorar mais do que perguntar à placa."
+        }
+      ]
+    },
+    {
+      "id": "cave_echo",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "adrenunes",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Será que há eco?"
+        },
+        {
+          "speaker": 0,
+          "text": "Podes experimentar."
+        },
+        {
+          "speaker": 1,
+          "text": "Trouxemos lanche?"
+        },
+        {
+          "speaker": 0,
+          "text": "Esse eco sou eu: trouxemos, mas não comas já tudo."
+        }
+      ]
+    },
+    {
+      "id": "cave_ceiling",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "adrenunes",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Vamos espreitar a passagem?"
+        },
+        {
+          "speaker": 1,
+          "text": "Vou só baixar a cabeça. Por respeito pela geologia."
+        },
+        {
+          "speaker": 0,
+          "text": "Isso chama-se evitar uma cabeçada."
+        },
+        {
+          "speaker": 1,
+          "text": "O respeito tem várias formas."
+        }
+      ]
+    },
+    {
+      "id": "convent_architect",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "convento_capuchos",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "O arquiteto viu estas pedras e disse: fica assim mesmo."
+        },
+        {
+          "speaker": 0,
+          "text": "E conseguiu encaixar a casa à volta delas."
+        },
+        {
+          "speaker": 1,
+          "text": "Eu tentei isso com uma estante. Ficou a porta bloqueada."
+        },
+        {
+          "speaker": 0,
+          "text": "Acho que os monges tinham mais jeito."
+        }
+      ]
+    },
+    {
+      "id": "convent_silence",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "convento_capuchos",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Aqui apetece falar mais baixo."
+        },
+        {
+          "speaker": 1,
+          "text": "Também posso pensar mais baixo?"
+        },
+        {
+          "speaker": 0,
+          "text": "Podes tentar."
+        },
+        {
+          "speaker": 1,
+          "text": "Estou a pensar numa sandes. Em sussurro."
+        }
+      ]
+    },
+    {
+      "id": "monge_roof",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "tholos_monge",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Ainda se percebe bem a forma da câmara."
+        },
+        {
+          "speaker": 1,
+          "text": "Bastante arejada."
+        },
+        {
+          "speaker": 0,
+          "text": "Falta-lhe a cobertura, Jo."
+        },
+        {
+          "speaker": 1,
+          "text": "Eu estava a tentar ser positivo."
+        }
+      ]
+    },
+    {
+      "id": "monge_reviews",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "tholos_monge",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Uma estrela pela sombra. Cinco pela localização."
+        },
+        {
+          "speaker": 0,
+          "text": "Estás a avaliar um monumento?"
+        },
+        {
+          "speaker": 1,
+          "text": "É só uma avaliação entre nós."
+        },
+        {
+          "speaker": 0,
+          "text": "Então acrescenta: excelente companhia."
+        }
+      ]
+    },
+    {
+      "id": "yellow_name",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "pedra_amarela",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "O nome não engana."
+        },
+        {
+          "speaker": 1,
+          "text": "Gosto disso. Subimos imenso para confirmar uma cor."
+        },
+        {
+          "speaker": 0,
+          "text": "E para ver a paisagem."
+        },
+        {
+          "speaker": 1,
+          "text": "Sim, mas sobretudo amarelo. Amarelo de qualidade."
+        }
+      ]
+    },
+    {
+      "id": "yellow_paint",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "pedra_amarela",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Esta pedra está mais bem vestida do que eu."
+        },
+        {
+          "speaker": 0,
+          "text": "Os líquenes ajudam."
+        },
+        {
+          "speaker": 1,
+          "text": "Estava a pensar numa camisola nova, mas pronto."
+        },
+        {
+          "speaker": 0,
+          "text": "Essa demora menos tempo a crescer."
+        }
+      ]
+    },
+    {
+      "id": "football_offside",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "football_clearing",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Tu à baliza, eu a avançado."
+        },
+        {
+          "speaker": 0,
+          "text": "Onde é a baliza?"
+        },
+        {
+          "speaker": 1,
+          "text": "Entre aquelas duas árvores."
+        },
+        {
+          "speaker": 0,
+          "text": "Isso inclui metade da serra."
+        },
+        {
+          "speaker": 1,
+          "text": "Preciso de recuperar a confiança."
+        }
+      ]
+    },
+    {
+      "id": "football_team",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "football_clearing",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "A bola ainda dá para jogar."
+        },
+        {
+          "speaker": 1,
+          "text": "Fazemos dois contra os esquilos."
+        },
+        {
+          "speaker": 0,
+          "text": "Eles têm vantagem em altura?"
+        },
+        {
+          "speaker": 1,
+          "text": "Têm vantagem em fugir com o prémio."
+        }
+      ]
+    },
+    {
+      "id": "bench_achievement",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "rest_clearing",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Podíamos descansar aqui."
+        },
+        {
+          "speaker": 1,
+          "text": "Excelente. A minha modalidade favorita."
+        },
+        {
+          "speaker": 0,
+          "text": "Estivemos sentados há pouco."
+        },
+        {
+          "speaker": 1,
+          "text": "É preciso treinar com regularidade."
+        }
+      ]
+    },
+    {
+      "id": "bench_schedule",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "rest_clearing",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Qual é o plano depois deste banco?"
+        },
+        {
+          "speaker": 0,
+          "text": "Logo vemos."
+        },
+        {
+          "speaker": 1,
+          "text": "Gosto de um itinerário rigoroso."
+        },
+        {
+          "speaker": 0,
+          "text": "Inclui levantar-nos, eventualmente."
+        }
+      ]
+    },
+    {
+      "id": "stones_meeting",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "old_stones",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Parece que as pedras vieram todas reunir-se aqui."
+        },
+        {
+          "speaker": 1,
+          "text": "A reunião já devia ter acabado."
+        },
+        {
+          "speaker": 0,
+          "text": "Porquê?"
+        },
+        {
+          "speaker": 1,
+          "text": "Ninguém trouxe bolachas."
+        }
+      ]
+    },
+    {
+      "id": "stones_chairs",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "old_stones",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Uma sala de estar sem despesas de condomínio."
+        },
+        {
+          "speaker": 0,
+          "text": "Com um bocadinho de corrente de ar."
+        },
+        {
+          "speaker": 1,
+          "text": "E se chover?"
+        },
+        {
+          "speaker": 0,
+          "text": "Passa a ser uma piscina."
+        }
+      ]
+    },
+    {
+      "id": "bells_ring",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "white_bells",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Estas campainhas são mesmo bonitas."
+        },
+        {
+          "speaker": 1,
+          "text": "Toco para ver se está alguém em casa?"
+        },
+        {
+          "speaker": 0,
+          "text": "Não têm botão."
+        },
+        {
+          "speaker": 1,
+          "text": "Natureza: bonita, mas complicada para receber encomendas."
+        }
+      ]
+    },
+    {
+      "id": "bells_photo",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "white_bells",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Vou tirar uma fotografia às flores."
+        },
+        {
+          "speaker": 0,
+          "text": "Outra?"
+        },
+        {
+          "speaker": 1,
+          "text": "Esta é diferente. Tem uma flor ligeiramente mais à esquerda."
+        },
+        {
+          "speaker": 0,
+          "text": "Uma mudança radical."
+        }
+      ]
+    },
+    {
+      "id": "gate_security",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "forgotten_gate",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Um portão sem muro. Segurança impecável."
+        },
+        {
+          "speaker": 0,
+          "text": "As árvores tomaram conta do resto."
+        },
+        {
+          "speaker": 1,
+          "text": "Então pedimos licença a quem?"
+        },
+        {
+          "speaker": 0,
+          "text": "Ao musgo. Parece ser o responsável."
+        }
+      ]
+    },
+    {
+      "id": "gate_address",
+      "scene": "sintra_trail",
+      "priority": 86,
+      "near": "forgotten_gate",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "A quem pertenceria esta entrada?"
+        },
+        {
+          "speaker": 1,
+          "text": "Talvez a alguém que se esqueceu de construir o resto."
+        },
+        {
+          "speaker": 0,
+          "text": "Ou a mata cresceu entretanto."
+        },
+        {
+          "speaker": 1,
+          "text": "Muito ambiciosa, esta sebe."
+        }
+      ]
+    },
+    {
+      "id": "fountain_menu",
+      "scene": "sintra_trail",
+      "priority": 70,
+      "near": "old_fountain",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "O que recomendas nesta esplanada?"
+        },
+        {
+          "speaker": 0,
+          "text": "A vista."
+        },
+        {
+          "speaker": 1,
+          "text": "E para beber?"
+        },
+        {
+          "speaker": 0,
+          "text": "Trouxemos água."
+        },
+        {
+          "speaker": 1,
+          "text": "Serviço muito autónomo."
+        }
+      ]
+    },
+    {
+      "id": "fountain_lost",
+      "scene": "sintra_trail",
+      "priority": 70,
+      "near": "old_fountain",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Encontrámos a fonte escondida."
+        },
+        {
+          "speaker": 1,
+          "text": "Podemos dizer que foi fácil?"
+        },
+        {
+          "speaker": 0,
+          "text": "Estivemos vinte minutos a olhar para fetos."
+        },
+        {
+          "speaker": 1,
+          "text": "Exploração detalhada. É diferente."
+        }
+      ]
+    },
+    {
+      "id": "ferns_attention",
+      "scene": "sintra_trail",
+      "priority": 75,
+      "near": "fern_glade",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Estes fetos estão enormes."
+        },
+        {
+          "speaker": 0,
+          "text": "Aqui têm espaço e humidade."
+        },
+        {
+          "speaker": 1,
+          "text": "Eu tenho espaço em casa e a minha planta não faz isto."
+        },
+        {
+          "speaker": 0,
+          "text": "Talvez goste de ser regada."
+        }
+      ]
+    },
+    {
+      "id": "ruins_renovation",
+      "scene": "sintra_trail",
+      "priority": 75,
+      "near": "chapel_ruins",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Olha as marcas nas pedras."
+        },
+        {
+          "speaker": 1,
+          "text": "Dava uma bela casa."
+        },
+        {
+          "speaker": 0,
+          "text": "Faltam algumas paredes."
+        },
+        {
+          "speaker": 1,
+          "text": "Luminosidade natural. Estou a aprender a ver o lado bom."
+        }
+      ]
+    },
+    {
+      "id": "steps_count",
+      "scene": "sintra_trail",
+      "priority": 78,
+      "near": "moss_steps",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Já perdeste a conta aos degraus?"
+        },
+        {
+          "speaker": 0,
+          "text": "Ao décimo segundo."
+        },
+        {
+          "speaker": 1,
+          "text": "Eu perdi ao primeiro."
+        },
+        {
+          "speaker": 0,
+          "text": "Ainda estávamos no caminho."
+        },
+        {
+          "speaker": 1,
+          "text": "Foi uma perda de conta preventiva."
+        }
+      ]
+    },
+    {
+      "id": "ravine_sound",
+      "scene": "sintra_trail",
+      "priority": 78,
+      "near": "ravine_bridge",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Esta tábua faz um barulho diferente."
+        },
+        {
+          "speaker": 1,
+          "text": "É a ponte a cumprimentar-nos."
+        },
+        {
+          "speaker": 0,
+          "text": "E aquela?"
+        },
+        {
+          "speaker": 1,
+          "text": "Essa está a perguntar quando é que saímos."
+        }
+      ]
+    },
+    {
+      "id": "ivy_hair",
+      "scene": "sintra_trail",
+      "priority": 78,
+      "near": "ivy_hollow",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "A hera sobe por todo o lado."
+        },
+        {
+          "speaker": 0,
+          "text": "Deve dar muito trabalho desembaraçar estes troncos."
+        },
+        {
+          "speaker": 1,
+          "text": "Têm o mesmo problema que eu de manhã."
+        },
+        {
+          "speaker": 0,
+          "text": "Os troncos parecem mais conformados."
+        }
+      ]
+    },
+    {
+      "id": "lookout_break",
+      "scene": "sintra_trail",
+      "priority": 75,
+      "near": "granite_lookout",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Valeu a pena chegar até aqui."
+        },
+        {
+          "speaker": 1,
+          "text": "Concordo. Sobretudo agora que parámos de subir."
+        },
+        {
+          "speaker": 0,
+          "text": "Ainda temos de descer."
+        },
+        {
+          "speaker": 1,
+          "text": "Por favor, deixa-me viver este momento."
+        }
+      ]
+    },
+    {
+      "id": "bridge_after_banter",
+      "scene": "sintra_trail",
+      "priority": 110,
+      "near": "log_bridge",
+      "require_flags": [
+        "bridge_inspected"
+      ],
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Ponte inspecionada. Inspetor Te, podemos avançar?"
+        },
+        {
+          "speaker": 0,
+          "text": "Podemos. Sem saltinhos."
+        },
+        {
+          "speaker": 1,
+          "text": "E uma entrada dramática?"
+        },
+        {
+          "speaker": 0,
+          "text": "Também conta como saltinho."
+        }
+      ]
+    },
+    {
+      "id": "stream_subtitles",
+      "scene": "sintra_trail",
+      "priority": 70,
+      "near": "forest_stream",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Consigo ficar aqui a ouvir a água imenso tempo."
+        },
+        {
+          "speaker": 0,
+          "text": "Eu também."
+        },
+        {
+          "speaker": 1,
+          "text": "Era só arranjar legendas para os pássaros."
+        },
+        {
+          "speaker": 0,
+          "text": "A maior parte deve ser: saiam do meu ramo."
+        }
+      ]
+    },
+    {
+      "id": "oak_resting",
+      "scene": "sintra_trail",
+      "priority": 70,
+      "near": "cork_oak",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Esta sombra está mesmo boa."
+        },
+        {
+          "speaker": 1,
+          "text": "A árvore trabalhou muito para isto."
+        },
+        {
+          "speaker": 0,
+          "text": "Então aproveitamos?"
+        },
+        {
+          "speaker": 1,
+          "text": "Seria falta de consideração continuar a andar."
+        }
+      ]
+    },
+    {
+      "id": "dog_guard_banter",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "capuchos_puppy",
+      "puppy_mood": "guard",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "O segurança é pequeno, mas leva o cargo muito a sério."
+        },
+        {
+          "speaker": 0,
+          "text": "Vamos dar-lhe espaço."
+        },
+        {
+          "speaker": 1,
+          "text": "Achas que exige bilhete?"
+        },
+        {
+          "speaker": 0,
+          "text": "Para já, exige que pares de lhe chamar pequenino."
+        }
+      ]
+    },
+    {
+      "id": "dog_guard_boots",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "capuchos_puppy",
+      "puppy_mood": "guard",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Devagar. Deixa-o decidir se quer aproximar-se."
+        },
+        {
+          "speaker": 1,
+          "text": "As minhas botas apoiam essa decisão."
+        },
+        {
+          "speaker": 0,
+          "text": "Pousamos comida e recuamos."
+        },
+        {
+          "speaker": 1,
+          "text": "Primeira vez que negocio uma visita cultural com ração."
+        }
+      ]
+    },
+    {
+      "id": "dog_wary_banter",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "capuchos_puppy",
+      "puppy_mood": "wary",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Já não me olha como se eu fosse um problema."
+        },
+        {
+          "speaker": 0,
+          "text": "Ainda está a decidir."
+        },
+        {
+          "speaker": 1,
+          "text": "É justo. Eu também demoro a decidir onde almoçar."
+        },
+        {
+          "speaker": 0,
+          "text": "Então sabes que pressionar não ajuda."
+        }
+      ]
+    },
+    {
+      "id": "dog_friend_banter",
+      "scene": "sintra_trail",
+      "priority": 85,
+      "near": "capuchos_puppy",
+      "puppy_mood": "trusted",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Olha aquela cauda. Já nos reconhece."
+        },
+        {
+          "speaker": 1,
+          "text": "Fui promovido de intruso a pessoa com festas."
+        },
+        {
+          "speaker": 0,
+          "text": "Conquistaste a confiança dele."
+        },
+        {
+          "speaker": 1,
+          "text": "A distinção mais importante desta caminhada."
+        }
+      ]
+    },
+    {
+      "id": "banter_navigation",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Estamos perdidos?"
+        },
+        {
+          "speaker": 0,
+          "text": "Estamos a explorar."
+        },
+        {
+          "speaker": 1,
+          "text": "Qual é a diferença?"
+        },
+        {
+          "speaker": 0,
+          "text": "Na exploração ainda temos lanche."
+        }
+      ]
+    },
+    {
+      "id": "banter_pinecone",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "O que levas aí?"
+        },
+        {
+          "speaker": 1,
+          "text": "Uma pinha com potencial."
+        },
+        {
+          "speaker": 0,
+          "text": "Potencial para quê?"
+        },
+        {
+          "speaker": 1,
+          "text": "Ainda estamos numa fase muito inicial do projeto."
+        }
+      ]
+    },
+    {
+      "id": "banter_steps",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "O meu telemóvel diz que já demos imensos passos."
+        },
+        {
+          "speaker": 0,
+          "text": "O meu diz que está sem rede."
+        },
+        {
+          "speaker": 1,
+          "text": "O teu é menos encorajador."
+        },
+        {
+          "speaker": 0,
+          "text": "Em compensação, não está a julgar a nossa velocidade."
+        }
+      ]
+    },
+    {
+      "id": "banter_snack",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Estás muito calado."
+        },
+        {
+          "speaker": 1,
+          "text": "Estou a pensar no lanche."
+        },
+        {
+          "speaker": 0,
+          "text": "Já falaste no lanche há cinco minutos."
+        },
+        {
+          "speaker": 1,
+          "text": "Foi antes de pensar melhor no assunto."
+        }
+      ]
+    },
+    {
+      "id": "banter_moss",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Há musgo em todo o lado."
+        },
+        {
+          "speaker": 0,
+          "text": "Temos de admitir que a decoração é consistente."
+        },
+        {
+          "speaker": 1,
+          "text": "Achavas exagerado pôr isto na sala?"
+        },
+        {
+          "speaker": 0,
+          "text": "A senhoria talvez tivesse perguntas."
+        }
+      ]
+    },
+    {
+      "id": "banter_compass",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Podemos seguir por ali."
+        },
+        {
+          "speaker": 1,
+          "text": "Tens a certeza?"
+        },
+        {
+          "speaker": 0,
+          "text": "Não. Mas o caminho parece bonito."
+        },
+        {
+          "speaker": 1,
+          "text": "Finalmente, um critério em que confio."
+        }
+      ]
+    },
+    {
+      "id": "banter_photo",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Acho que já tenho umas cinquenta fotografias de árvores."
+        },
+        {
+          "speaker": 0,
+          "text": "Consegues distingui-las?"
+        },
+        {
+          "speaker": 1,
+          "text": "Claro. Esta é uma árvore. Aquela também."
+        },
+        {
+          "speaker": 0,
+          "text": "Bom arquivo."
+        }
+      ]
+    },
+    {
+      "id": "banter_quiet",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "É bom poder andar sem dizer nada."
+        },
+        {
+          "speaker": 1,
+          "text": "É mesmo."
+        },
+        {
+          "speaker": 0,
+          "text": "…"
+        },
+        {
+          "speaker": 1,
+          "text": "Posso só dizer que aquela pedra parece uma batata?"
+        }
+      ]
+    },
+    {
+      "id": "banter_socks",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Tenho uma folha dentro da bota."
+        },
+        {
+          "speaker": 0,
+          "text": "Queres parar para a tirar?"
+        },
+        {
+          "speaker": 1,
+          "text": "Não sei. Já fizemos algum caminho juntos."
+        },
+        {
+          "speaker": 0,
+          "text": "Vais apresentar-ma no fim?"
+        }
+      ]
+    },
+    {
+      "id": "banter_return",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Na volta podemos experimentar outro caminho."
+        },
+        {
+          "speaker": 1,
+          "text": "E se for mais comprido?"
+        },
+        {
+          "speaker": 0,
+          "text": "Encontramos mais coisas."
+        },
+        {
+          "speaker": 1,
+          "text": "Vou pedir um segundo lanche para esse cenário."
+        }
+      ]
+    },
+    {
+      "id": "morning_banter",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "day_phase": "Manhã",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Está uma manhã bonita."
+        },
+        {
+          "speaker": 1,
+          "text": "Ainda não falei com ninguém sobre trabalho. Ajuda."
+        },
+        {
+          "speaker": 0,
+          "text": "Nem precisas."
+        },
+        {
+          "speaker": 1,
+          "text": "Vou deixar essa conversa para uma árvore. Elas guardam segredo."
+        }
+      ]
+    },
+    {
+      "id": "afternoon_banter",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "day_phase": "Tarde",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "A tarde está a ficar com aquela luz de fotografia."
+        },
+        {
+          "speaker": 0,
+          "text": "Todas as luzes são de fotografia para ti."
+        },
+        {
+          "speaker": 1,
+          "text": "É um dom. E um problema de armazenamento."
+        },
+        {
+          "speaker": 0,
+          "text": "Mais uma árvore, então."
+        }
+      ]
+    },
+    {
+      "id": "night_banter",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "day_phase": "Noite",
+      "initiator": 0,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Já quase só se ouvem os bichos."
+        },
+        {
+          "speaker": 1,
+          "text": "E a minha barriga."
+        },
+        {
+          "speaker": 0,
+          "text": "Ia dizer que estava tudo muito tranquilo."
+        },
+        {
+          "speaker": 1,
+          "text": "Desculpa estragar a banda sonora."
+        }
+      ]
+    },
+    {
+      "id": "dusk_banter",
+      "scene": "sintra_trail",
+      "priority": 10,
+      "location": "serra_sintra",
+      "day_phase": "Crepúsculo",
+      "initiator": 1,
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "A luz está a desaparecer depressa."
+        },
+        {
+          "speaker": 0,
+          "text": "Podemos voltar por onde conhecemos."
+        },
+        {
+          "speaker": 1,
+          "text": "Boa. Explorar é ótimo, mas gosto de reconhecer uma ponte."
+        },
+        {
+          "speaker": 0,
+          "text": "Sobretudo antes de a atravessar."
+        }
+      ]
+    }
+  ]
+}

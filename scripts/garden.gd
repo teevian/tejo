@@ -137,6 +137,7 @@ func _toggle_pause() -> void:
 
 func _toggle_map() -> void:
 	exploration_map.visible = not exploration_map.visible
+	hud.map_open = exploration_map.visible
 	exploration_map.selected = selected
 	for person in people:
 		person.in_dialogue = exploration_map.visible
@@ -151,8 +152,13 @@ func dialogue_context() -> Dictionary:
 	for place in world.landmarks:
 		if people[selected].position.distance_to(place.position) < place.radius:
 			nearby.append(place.id)
+	var puppy_mood := ""
+	if is_instance_valid(world.puppy) and people[selected].position.distance_to(world.puppy.position)<420:
+		nearby.append("capuchos_puppy")
+		puppy_mood = preload("res://scripts/puppy_art.gd").expression(world.puppy)
+		if puppy_mood=="angry": puppy_mood = "guard"
 	return {"scene":scene_id,"location":location_id,"initiator":selected,"near":nearby,
-		"hour":day_cycle.minutes / 60.0,"day":day_cycle.day,"day_phase":day_cycle.phase()}
+		"hour":day_cycle.minutes / 60.0,"day":day_cycle.day,"day_phase":day_cycle.phase(),"puppy_mood":puppy_mood}
 
 func _talk() -> void:
 	if get_tree().paused or exploration_map.visible:
@@ -224,13 +230,13 @@ func _update_interaction_focus() -> void:
 func _interact() -> void:
 	if not is_node_ready() or get_tree().paused or dialogue.is_active() or exploration_map.visible:
 		return
-	world.interactions.interact(people[selected])
+	hud.show_comment(world.interactions.interact(people[selected]))
 	_update_interaction_focus()
 
 func _drop_item(owner: int, index: int) -> void:
 	if owner!=selected or get_tree().paused or dialogue.is_active() or exploration_map.visible:
 		return
-	world.interactions.drop(people[owner],index)
+	hud.show_comment(world.interactions.drop(people[owner],index))
 	_update_interaction_focus()
 
 func _interaction_discovered(flag: String) -> void:

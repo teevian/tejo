@@ -1,0 +1,71 @@
+{
+  "football": [
+    "A bola perdeu ar. O Jo mantém a ambição.",
+    "Um remate cheio de intenção. A direção fica para a próxima.",
+    "A bola ainda rola. Contrato profissional pendente."
+  ],
+  "signpost": [
+    "A placa aponta para %s. Pelo menos um de nós sabe para onde vai.",
+    "%s. A madeira já viu melhores dias, mas continua mais orientada do que nós.",
+    "Indicações para %s. Pela letra, o musgo ainda não assumiu a administração."
+  ],
+  "white_flower": [
+    "Campainhas sem botão. As borboletas parecem conhecer a entrada.",
+    "Uma flor diferente de todas as outras. O Jo acrescenta mais seis fotografias à coleção."
+  ],
+  "silver_plant": [
+    "Folhas prateadas. A planta veio mais arranjada para a caminhada do que nós.",
+    "Prata e violeta entre as urzes. Claramente há aqui uma direção artística."
+  ],
+  "hollow_log": [
+    "Um tronco com condomínio de cogumelos. Não tem elevador.",
+    "O tronco está oco. Os cogumelos ocuparam logo os melhores lugares."
+  ],
+  "watering_can": [
+    "Regador reformado. A chuva ficou com o cargo.",
+    "Um regador antigo, no meio de uma serra inteira de plantas. O trabalho nunca mais acabava."
+  ],
+  "insect_hotel": [
+    "Receção aberta 24 horas. Pequeno-almoço: pólen.",
+    "O abrigo de insetos tem melhor localização do que muitos alojamentos que já vimos."
+  ],
+  "old_gate": [
+    "Portão sem muro. Segurança muito baseada na confiança.",
+    "O portão ficou. A propriedade parece ter sido adquirida pela hera."
+  ],
+  "bench": [
+    "Dois lugares. Zero opiniões sobre quantos quilómetros faltam. Espaço para voltar ao caminho.",
+    "Pausa oficial da expedição. Espaço ou movimento para se levantarem os dois.",
+    "O banco aceita os dois sem reserva. Espaço para continuar quando apetecer."
+  ],
+  "tree": [
+    "A árvore não tem pressa. O musgo também não. Podemos aprender alguma coisa aqui.",
+    "Casca fresca e rugosa. O tronco não confirma nem desmente ter ouvido as nossas conversas.",
+    "A árvore continua no mesmo sítio. É um bom começo para servir de ponto de referência."
+  ],
+  "rock": [
+    "O granito tem líquenes e zero vontade de caber na bolsa.",
+    "Pedra examinada. Continua a ser uma pedra de grande convicção.",
+    "Esta fica aqui. A bolsa já tem ambições suficientes com as pedrinhas."
+  ],
+  "ruin": [
+    "Marcas de ferramentas nas pedras. A hera ficou com a manutenção do edifício.",
+    "Paredes antigas, teto muito arejado. O Jo chama-lhe potencial."
+  ],
+  "fountain": [
+    "Ficamos a ouvir a fonte. É a única pessoa da conversa que não interrompe.",
+    "A água continua a correr. O Te e o Jo aproveitam para deixar de o fazer."
+  ],
+  "fern": [
+    "O feto tem mais ramos do que o nosso plano para hoje.",
+    "Os rebentos novos ainda estão enrolados. Uma atitude compreensível de manhã.",
+    "Gotas nas folhas, musgo por baixo. A decoração vem incluída."
+  ],
+  "pebble": ["Uma serra inteira lá fora; esta foi a pedra escolhida."],
+  "pinecone": ["Uma pinha com potencial. O Jo ainda está a definir qual."],
+  "twig": ["Um ramo. A expedição começa a parecer uma mudança de casa."],
+  "stone": ["Um pequeno peso na bolsa. Uma grande responsabilidade geológica."],
+  "shard": ["A história cabe num bolso. Este fragmento também."],
+  "sticks": ["Mais ramos para uma coleção que ninguém se lembra de ter começado."],
+  "dog_food": ["Moeda de confiança do pequeno guardião dos Capuchos."]
+}

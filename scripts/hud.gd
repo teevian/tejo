@@ -11,6 +11,10 @@ var dialogue_active := false
 var avatars: Array[Button] = []
 var font: Font = ThemeDB.fallback_font
 var day_cycle: RefCounted
+var map_open := false
+var comment_time := 0.0
+var comment_panel: Panel
+var comment_label: Label
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -24,6 +28,42 @@ func _ready() -> void:
 		add_child(button)
 		avatars.append(button)
 	select(0)
+	comment_panel = Panel.new()
+	comment_panel.name = "PathComment"
+	comment_panel.position = Vector2(566,578)
+	comment_panel.size = Vector2(686,118)
+	comment_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	comment_panel.add_theme_stylebox_override("panel",TejoPerson._box(Color("233e3e"),12))
+	add_child(comment_panel)
+	var title := Label.new()
+	title.position = Vector2(18,10)
+	title.text = "NOTAS DO CAMINHO"
+	title.add_theme_font_size_override("font_size",13)
+	title.add_theme_color_override("font_color",Color("ead5a5"))
+	comment_panel.add_child(title)
+	comment_label = Label.new()
+	comment_label.position = Vector2(18,34)
+	comment_label.size = Vector2(650,76)
+	comment_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	comment_label.add_theme_font_size_override("font_size",18)
+	comment_label.add_theme_color_override("font_color",Color("fff4db"))
+	comment_panel.add_child(comment_label)
+	comment_panel.hide()
+
+func show_comment(value: String) -> void:
+	if value.is_empty(): return
+	comment_label.text = value
+	var height := 52+22*clampi(comment_label.get_line_count(),1,3)
+	comment_panel.size.y = height
+	comment_panel.position.y = 696-height
+	comment_label.size.y = height-38
+	comment_time = clampf(value.length()/18.0,4.5,9)
+	comment_panel.visible = not paused and not map_open and not dialogue_active
+
+func _process(delta: float) -> void:
+	if not is_instance_valid(comment_panel): return
+	comment_panel.visible = comment_time>0 and not paused and not map_open and not dialogue_active
+	if comment_panel.visible: comment_time = maxf(0,comment_time-delta)
 
 func select(index: int) -> void:
 	selected = index
