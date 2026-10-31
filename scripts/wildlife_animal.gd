@@ -54,6 +54,7 @@ func set_state(value: String, duration := 0.0) -> void:
 	state_time = 0.0
 	timer = duration
 	velocity = Vector2.ZERO
+	if art!=null: art.visible = state not in ["hidden","submerged","shelter"]
 
 func step(delta: float) -> void:
 	state_time += delta
@@ -66,31 +67,37 @@ func step(delta: float) -> void:
 	think_in -= delta
 	if think_in<=0:
 		think_in = (0.09 if species in ["fox","squirrel"] else 0.24)+ecosystem.rng.randf_range(0,0.04)
-		match species:
-			"bird": _bird_think()
-			"squirrel": _squirrel_think()
-			"fox": _fox_think()
-			"frog": _frog_think()
-			"butterfly": _butterfly_think()
+		think()
+	move(delta)
+	if velocity.length_squared()>1 and state not in ["bound","startled"]:
+		facing = velocity.normalized()
+	gait_distance += velocity.length()*delta
+	art.position = Vector2(0,-altitude)
+	art.visible = state not in ["hidden","submerged","shelter"]
+	z_index = 5 if (species=="bird" and state=="fly") or (species in ["bat","owl"] and state in ["fly","cruise","hunt","swoop","evade","return","emerge"]) else 0
+	queue_redraw()
+	art.queue_redraw()
+
+func think() -> void:
+	match species:
+		"bird": _bird_think()
+		"squirrel": _squirrel_think()
+		"fox": _fox_think()
+		"frog": _frog_think()
+		"butterfly": _butterfly_think()
+
+func move(delta: float) -> void:
 	match species:
 		"bird": _bird_move(delta)
 		"squirrel": _squirrel_move(delta)
 		"fox": _fox_move(delta)
 		"frog": _frog_move(delta)
 		"butterfly": _butterfly_move(delta)
-	if velocity.length_squared()>1 and state not in ["bound","startled"]:
-		facing = velocity.normalized()
-	gait_distance += velocity.length()*delta
-	art.position = Vector2(0,-altitude)
-	art.visible = state not in ["hidden","submerged"]
-	z_index = 5 if species=="bird" and state=="fly" else 0
-	queue_redraw()
-	art.queue_redraw()
 
 func _draw() -> void:
-	if state=="hidden":
+	if state in ["hidden","shelter"] or species=="firefly":
 		return
-	if state!="submerged" and altitude<180 and state not in ["perch","roost","climb","descend"]:
+	if state!="submerged" and altitude<180 and state not in ["perch","roost","watch","climb","descend"]:
 		var radius := 17.0 if species=="fox" else (8.0 if species=="squirrel" else 5.0)
 		draw_set_transform(Vector2(0,2),0,Vector2(1,0.35))
 		draw_circle(Vector2.ZERO,radius,Color(0.04,0.07,0.04,0.22*(1-altitude/240)))
@@ -163,7 +170,9 @@ func launch(destination: Dictionary, alarm := false, group := true) -> void:
 
 func _bird_think() -> void:
 	var danger = ecosystem.threat(position,145)
-	if danger!=null and state in ["forage","perch"] and cooldown<=0:
+	var owl = ecosystem.nearby_animal(position,["owl"],170,self)
+	if owl!=null and absf(owl.altitude-altitude)<100: danger = owl
+	if danger!=null and state in ["forage","perch","roost"] and cooldown<=0:
 		var away: Vector2 = danger.position.direction_to(position)
 		launch(ecosystem.nearest_tree(position+away*600),true)
 		return
@@ -459,10 +468,12 @@ func _frog_think() -> void:
 		return
 	# Passing insects make the frog turn and snap; butterflies veer away.
 	for other in ecosystem.animals:
-		if other.species=="butterfly" and position.distance_to(other.position)<60 and other.state=="flutter":
+		if other.species in ["butterfly","firefly"] and position.distance_to(other.position)<60 and other.altitude<45 and other.state in ["flutter","glimmer"] and cooldown<=0:
 			facing = position.direction_to(other.position)
 			other.startle(position)
 			set_state("snap",0.5)
+			cooldown = 2
+			if other.species=="firefly": ecosystem.note("insect_escapes")
 			return
 	if timer>0:
 		return

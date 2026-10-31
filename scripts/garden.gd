@@ -69,6 +69,7 @@ func _ready() -> void:
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	layer.add_child(hud)
 	hud.person_selected.connect(_select_person)
+	hud.debug_time_toggled.connect(_toggle_debug_time)
 	dialogue_panel = DialoguePanel.new()
 	layer.add_child(dialogue_panel)
 	dialogue_panel.advance_requested.connect(_talk)
@@ -89,6 +90,14 @@ func _ready() -> void:
 	layer.add_child(puppy_panel)
 	_select_person(0)
 	process_mode = Node.PROCESS_MODE_ALWAYS
+
+func _toggle_debug_time() -> void:
+	day_cycle.minutes = 1380.0 if world.wildlife.is_day() else 480.0
+	world.wildlife.sync_debug_time()
+	daylight.set_shader_parameter("daylight",day_cycle.light_color())
+	day_cycle.phase_changed.emit(day_cycle.phase())
+	day_cycle.time_changed.emit()
+	hud._sync_debug_time_button()
 
 func _input(event: InputEvent) -> void:
 	# Child initialization can pump input before the map and HUD exist.

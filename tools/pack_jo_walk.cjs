@@ -186,6 +186,12 @@ async function packJo(){
  await fs.writeFile(path.join(ROOT,'scripts/open_world_art.gd'),art);
  await fs.writeFile(path.join(DIR,'jo-walk-v9.recipe.json'),JSON.stringify({body:'sources/jo-body-v8.png',head:'sources/jo-heads-v9.png',factor:F,repairs:REPAIRS,headOffsets,views:report},null,2)+'\n');
  console.log('Baked 25 complete Jo sprites with a painted identity and authored continuous neck/collar transitions.');
+ // Rebuilding an older input must retain the current directional/head repair.
+ try {
+  await fs.access(path.join(DIR,'sources/te-neck-v10.raw.png'));
+  await fs.access(path.join(DIR,'sources/jo-neck-v10.raw.png'));
+ } catch(error) {if(error.code==='ENOENT')return;throw error;}
+ await require('./pack_character_necks.cjs').packCharacterNecks();
 }
 if(require.main===module)packJo().catch(e=>{console.error(e);process.exitCode=1;});
 module.exports={packJo};

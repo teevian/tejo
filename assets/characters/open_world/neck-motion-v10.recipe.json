@@ -1,0 +1,750 @@
+{
+  "version": 10,
+  "factor": 4,
+  "faceSource": "unchanged v9 atlas",
+  "repairEnd": 110,
+  "characters": {
+    "te": {
+      "source": "te-walk-v9.png",
+      "neck": "sources/te-neck-v10.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            400,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "registration": {
+            "error": 6.228209784579538,
+            "scale": 1.0098,
+            "ox": 182.7068,
+            "oy": 0.43199999999998795,
+            "dx": 1,
+            "dy": -2
+          }
+        },
+        {
+          "row": 0,
+          "key": 1,
+          "dx": 0.4842001662240676,
+          "dy": 0,
+          "degrees": -0.8,
+          "pivot": [
+            400,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76
+        },
+        {
+          "row": 0,
+          "key": 2,
+          "dx": 0.28736826259367376,
+          "dy": -2.6,
+          "degrees": 0.4,
+          "pivot": [
+            400,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76
+        },
+        {
+          "row": 0,
+          "key": 3,
+          "dx": -0.0988010770141301,
+          "dy": 0,
+          "degrees": 0.8,
+          "pivot": [
+            400,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76
+        },
+        {
+          "row": 0,
+          "key": 4,
+          "dx": -0.9364768067372778,
+          "dy": -2.6,
+          "degrees": -0.4,
+          "pivot": [
+            400,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76
+        },
+        {
+          "row": 1,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            416,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "registration": {
+            "error": 7.185712765008445,
+            "scale": 1.0265955390334571,
+            "ox": 173.75004832713756,
+            "oy": 17.69152267657995,
+            "dx": -3,
+            "dy": -4
+          }
+        },
+        {
+          "row": 1,
+          "key": 1,
+          "dx": -1.4110366910677157,
+          "dy": 0,
+          "degrees": -1.05,
+          "pivot": [
+            416,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73
+        },
+        {
+          "row": 1,
+          "key": 2,
+          "dx": -1.6695097558354972,
+          "dy": -2.6,
+          "degrees": 0.525,
+          "pivot": [
+            416,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73
+        },
+        {
+          "row": 1,
+          "key": 3,
+          "dx": -0.10664059082403127,
+          "dy": 0,
+          "degrees": 1.05,
+          "pivot": [
+            416,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73
+        },
+        {
+          "row": 1,
+          "key": 4,
+          "dx": -1.8763087949819577,
+          "dy": -2.6,
+          "degrees": -0.525,
+          "pivot": [
+            416,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73
+        },
+        {
+          "row": 2,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            404,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "registration": {
+            "error": 7.473855120890043,
+            "scale": 1.016044696969697,
+            "ox": 171.93005492424243,
+            "oy": 22.46493787878788,
+            "dx": 0,
+            "dy": -9
+          }
+        },
+        {
+          "row": 2,
+          "key": 1,
+          "dx": 0.36070303184179975,
+          "dy": 0,
+          "degrees": -1.35,
+          "pivot": [
+            404,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68
+        },
+        {
+          "row": 2,
+          "key": 2,
+          "dx": -0.12192344314151739,
+          "dy": -2.6,
+          "degrees": 0.675,
+          "pivot": [
+            404,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68
+        },
+        {
+          "row": 2,
+          "key": 3,
+          "dx": -4.300392501986729,
+          "dy": 0,
+          "degrees": 1.35,
+          "pivot": [
+            404,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68
+        },
+        {
+          "row": 2,
+          "key": 4,
+          "dx": -1.220103396680372,
+          "dy": -2.6,
+          "degrees": -0.675,
+          "pivot": [
+            404,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68
+        },
+        {
+          "row": 3,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            408,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "registration": {
+            "error": 5.382169951180001,
+            "scale": 0.994438306451613,
+            "ox": 213.65961310483868,
+            "oy": 27.9009943548387,
+            "dx": 1,
+            "dy": -3
+          }
+        },
+        {
+          "row": 3,
+          "key": 1,
+          "dx": 1.233017847792928,
+          "dy": 0,
+          "degrees": -1.05,
+          "pivot": [
+            408,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66
+        },
+        {
+          "row": 3,
+          "key": 2,
+          "dx": -1.0590219261895895,
+          "dy": -2.6,
+          "degrees": 0.525,
+          "pivot": [
+            408,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66
+        },
+        {
+          "row": 3,
+          "key": 3,
+          "dx": -1.3714834892007275,
+          "dy": 0,
+          "degrees": 1.05,
+          "pivot": [
+            408,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66
+        },
+        {
+          "row": 3,
+          "key": 4,
+          "dx": -0.5186070117825409,
+          "dy": -2.6,
+          "degrees": -0.525,
+          "pivot": [
+            408,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66
+        },
+        {
+          "row": 4,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            400,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "registration": {
+            "error": 4.722330110557632,
+            "scale": 1.0014872246696034,
+            "ox": 201.21296563876655,
+            "oy": -51.23944317180616,
+            "dx": 0,
+            "dy": -2
+          }
+        },
+        {
+          "row": 4,
+          "key": 1,
+          "dx": -0.8664180094278776,
+          "dy": 0,
+          "degrees": -0.8,
+          "pivot": [
+            400,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72
+        },
+        {
+          "row": 4,
+          "key": 2,
+          "dx": -0.5151416556441916,
+          "dy": -2.6,
+          "degrees": 0.4,
+          "pivot": [
+            400,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72
+        },
+        {
+          "row": 4,
+          "key": 3,
+          "dx": -0.07721248040156183,
+          "dy": 0,
+          "degrees": 0.8,
+          "pivot": [
+            400,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72
+        },
+        {
+          "row": 4,
+          "key": 4,
+          "dx": 0.18848345328812854,
+          "dy": -2.6,
+          "degrees": -0.4,
+          "pivot": [
+            400,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72
+        }
+      ]
+    },
+    "jo": {
+      "source": "jo-walk-v9.png",
+      "neck": "sources/jo-neck-v10.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            400,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "registration": {
+            "error": 4.749987094016789,
+            "scale": 0.8784309623430963,
+            "ox": 199.08244769874477,
+            "oy": 27.843200836820074,
+            "dx": 1,
+            "dy": 0
+          }
+        },
+        {
+          "row": 0,
+          "key": 1,
+          "dx": -2.8716039234615978,
+          "dy": 0,
+          "degrees": -0.8,
+          "pivot": [
+            400,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74
+        },
+        {
+          "row": 0,
+          "key": 2,
+          "dx": -3.4700464570091354,
+          "dy": -2.6,
+          "degrees": 0.4,
+          "pivot": [
+            400,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74
+        },
+        {
+          "row": 0,
+          "key": 3,
+          "dx": -4.119478312847806,
+          "dy": 0,
+          "degrees": 0.8,
+          "pivot": [
+            400,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74
+        },
+        {
+          "row": 0,
+          "key": 4,
+          "dx": -0.6408828650446026,
+          "dy": -2.6,
+          "degrees": -0.4,
+          "pivot": [
+            400,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74
+        },
+        {
+          "row": 1,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            416,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "registration": {
+            "error": 5.968975220743196,
+            "scale": 0.8863284132841328,
+            "ox": 227.43939114391145,
+            "oy": 50.73276752767529,
+            "dx": -1,
+            "dy": 1
+          }
+        },
+        {
+          "row": 1,
+          "key": 1,
+          "dx": -2.0463695190085045,
+          "dy": 0,
+          "degrees": -1.05,
+          "pivot": [
+            416,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72
+        },
+        {
+          "row": 1,
+          "key": 2,
+          "dx": 3.100915860497756,
+          "dy": -2.6,
+          "degrees": 0.525,
+          "pivot": [
+            416,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72
+        },
+        {
+          "row": 1,
+          "key": 3,
+          "dx": 0.9074944295900025,
+          "dy": 0,
+          "degrees": 1.05,
+          "pivot": [
+            416,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72
+        },
+        {
+          "row": 1,
+          "key": 4,
+          "dx": 5.446830088569513,
+          "dy": -2.6,
+          "degrees": -0.525,
+          "pivot": [
+            416,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72
+        },
+        {
+          "row": 2,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            404,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "registration": {
+            "error": 5.230830984201728,
+            "scale": 0.8742857142857142,
+            "ox": 204.0314285714286,
+            "oy": 56.73714285714286,
+            "dx": 0,
+            "dy": 2
+          }
+        },
+        {
+          "row": 2,
+          "key": 1,
+          "dx": 40.93255166362085,
+          "dy": 0,
+          "degrees": -1.35,
+          "pivot": [
+            404,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69
+        },
+        {
+          "row": 2,
+          "key": 2,
+          "dx": 29.560363185281453,
+          "dy": -2.6,
+          "degrees": 0.675,
+          "pivot": [
+            404,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69
+        },
+        {
+          "row": 2,
+          "key": 3,
+          "dx": 60,
+          "dy": 0,
+          "degrees": 1.35,
+          "pivot": [
+            404,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69
+        },
+        {
+          "row": 2,
+          "key": 4,
+          "dx": 31.228030756543145,
+          "dy": -2.6,
+          "degrees": -0.675,
+          "pivot": [
+            404,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69
+        },
+        {
+          "row": 3,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            408,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "registration": {
+            "error": 5.091663364378413,
+            "scale": 0.8683083032490975,
+            "ox": 229.02570685920577,
+            "oy": 60.5439046931408,
+            "dx": -1,
+            "dy": 4
+          }
+        },
+        {
+          "row": 3,
+          "key": 1,
+          "dx": -12,
+          "dy": 0,
+          "degrees": -1.05,
+          "pivot": [
+            408,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68
+        },
+        {
+          "row": 3,
+          "key": 2,
+          "dx": 4.280204219517478,
+          "dy": -2.6,
+          "degrees": 0.525,
+          "pivot": [
+            408,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68
+        },
+        {
+          "row": 3,
+          "key": 3,
+          "dx": 0.4075229932991111,
+          "dy": 0,
+          "degrees": 1.05,
+          "pivot": [
+            408,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68
+        },
+        {
+          "row": 3,
+          "key": 4,
+          "dx": -2.2428773821408408,
+          "dy": -2.6,
+          "degrees": -0.525,
+          "pivot": [
+            408,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68
+        },
+        {
+          "row": 4,
+          "key": 0,
+          "dx": 0,
+          "dy": 0,
+          "degrees": 0,
+          "pivot": [
+            400,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "registration": {
+            "error": 4.75264258007675,
+            "scale": 0.8806584362139918,
+            "ox": 226.36831275720164,
+            "oy": -25.024691358024683,
+            "dx": 0,
+            "dy": 3
+          }
+        },
+        {
+          "row": 4,
+          "key": 1,
+          "dx": -2.856949348450115,
+          "dy": 0,
+          "degrees": -0.8,
+          "pivot": [
+            400,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70
+        },
+        {
+          "row": 4,
+          "key": 2,
+          "dx": 2.311957034133087,
+          "dy": -2.6,
+          "degrees": 0.4,
+          "pivot": [
+            400,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70
+        },
+        {
+          "row": 4,
+          "key": 3,
+          "dx": -6.677345414956079,
+          "dy": 0,
+          "degrees": 0.8,
+          "pivot": [
+            400,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70
+        },
+        {
+          "row": 4,
+          "key": 4,
+          "dx": 12.385560909113405,
+          "dy": -2.6,
+          "degrees": -0.4,
+          "pivot": [
+            400,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70
+        }
+      ]
+    }
+  }
+}

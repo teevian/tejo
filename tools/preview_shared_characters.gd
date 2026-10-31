@@ -43,15 +43,19 @@ func run() -> void:
 	scene.camera.zoom = Vector2(2,2)
 	scene.camera.reset_smoothing()
 	pose(Vector2.DOWN,false,0)
-	await capture("res://output/characters-shared-rig-front.png")
+	var version := "v14" if "--motion-v14" in OS.get_cmdline_user_args() else "v13" if "--motion-v13" in OS.get_cmdline_user_args() else "v12" if "--motion-v12" in OS.get_cmdline_user_args() else "v11"
+	var motion := "--motion-v14" in OS.get_cmdline_user_args() or "--motion-v13" in OS.get_cmdline_user_args() or "--motion-v12" in OS.get_cmdline_user_args() or "--motion-v11" in OS.get_cmdline_user_args()
+	await capture("res://output/character-motion-%s-scene.png"%version if motion else ("res://output/character-neck-v10-scene.png" if "--neck-v10" in OS.get_cmdline_user_args() else "res://output/characters-shared-rig-front.png"))
 	for phase in 4:
 		pose(Vector2.RIGHT,true,float(phase)/4.0)
 		await capture("/tmp/tejo-shared-game-%02d.png"%phase)
 	if "--all-directions" in OS.get_cmdline_user_args():
-		DirAccess.make_dir_recursive_absolute("/tmp/tejo-neck-game")
+		var directory := "/tmp/tejo-motion-%s"%version if motion else "/tmp/tejo-neck-game"
+		var phases := 8 if motion else 4
+		DirAccess.make_dir_recursive_absolute(directory)
 		var directions := [Vector2.DOWN,Vector2(1,1).normalized(),Vector2.RIGHT,Vector2(1,-1).normalized(),Vector2.UP,Vector2(-1,-1).normalized(),Vector2.LEFT,Vector2(-1,1).normalized()]
-		for direction in directions.size():
-			for phase in 4:
-				pose(directions[direction],true,float(phase)/4.0)
-				await capture("/tmp/tejo-neck-game/d%d-p%d.png"%[direction,phase])
+		for direction in (1 if "--south-only" in OS.get_cmdline_user_args() else directions.size()):
+			for phase in phases:
+				pose(directions[direction],true,float(phase)/phases)
+				await capture(directory+"/d%d-p%d.png"%[direction,phase])
 	quit()

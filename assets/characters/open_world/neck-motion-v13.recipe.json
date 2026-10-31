@@ -1,0 +1,2209 @@
+{
+  "version": 13,
+  "factor": 4,
+  "frames": 9,
+  "headStates": 2,
+  "headAngles": [
+    -0.35,
+    0.35
+  ],
+  "axis": "subtle vertical yaw; original v9 face pixels; zero roll",
+  "sourceHeights": [
+    876,
+    852,
+    848,
+    848,
+    928
+  ],
+  "repairEnd": 110,
+  "gaitRepair": [
+    {
+      "key": 2,
+      "scale": 1.239038189533239,
+      "offset": [
+        138,
+        152
+      ],
+      "oldWaist": 124.25,
+      "newWaist": 130.5,
+      "lowerScale": 0.9340369393139841
+    },
+    {
+      "key": 4,
+      "scale": 1.2320675105485233,
+      "offset": [
+        139,
+        153
+      ],
+      "oldWaist": 129.5,
+      "newWaist": 126.25,
+      "lowerScale": 1.0363128491620113
+    }
+  ],
+  "characters": {
+    "te": {
+      "source": "te-walk-v9.png",
+      "neck": "sources/te-neck-v10.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 6.228209784579538,
+            "scale": 1.0098,
+            "ox": 182.7068,
+            "oy": 0.43199999999998795,
+            "dx": 1,
+            "dy": -2
+          }
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 72,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 7.185712765008445,
+            "scale": 1.0265955390334571,
+            "ox": 173.75004832713756,
+            "oy": 17.69152267657995,
+            "dx": -3,
+            "dy": -4
+          }
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 66,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 7.473855120890043,
+            "scale": 1.016044696969697,
+            "ox": 171.93005492424243,
+            "oy": 22.46493787878788,
+            "dx": 0,
+            "dy": -9
+          }
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 62,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.382169951180001,
+            "scale": 0.994438306451613,
+            "ox": 213.65961310483868,
+            "oy": 27.9009943548387,
+            "dx": 1,
+            "dy": -3
+          }
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 62,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 4.722330110557632,
+            "scale": 1.0014872246696034,
+            "ox": 201.21296563876655,
+            "oy": -51.23944317180616,
+            "dx": 0,
+            "dy": -2
+          }
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 64,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "jo": {
+      "source": "jo-walk-v9.png",
+      "neck": "sources/jo-neck-v10.raw.png",
+      "southBody": "sources/jo-south-gait-v12.png",
+      "profileShirt": "sources/jo-profile-shirt-v11.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 4.749987094016789,
+            "scale": 0.8784309623430963,
+            "ox": 199.08244769874477,
+            "oy": 27.843200836820074,
+            "dx": 1,
+            "dy": 0
+          }
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 64,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.968975220743196,
+            "scale": 0.8863284132841328,
+            "ox": 227.43939114391145,
+            "oy": 50.73276752767529,
+            "dx": -1,
+            "dy": 1
+          }
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 62,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 5,
+          "neutralShift": 5,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 6.991934367731184,
+            "scale": 0.38929774919614146,
+            "ox": 206.77085852090033,
+            "oy": 57.30297877813504,
+            "dx": 3,
+            "dy": 0
+          }
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 61,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -28,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.091663364378413,
+            "scale": 0.8683083032490975,
+            "ox": 229.02570685920577,
+            "oy": 60.5439046931408,
+            "dx": -1,
+            "dy": 4
+          }
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 60,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -2,
+          "neutralShift": -2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 4.75264258007675,
+            "scale": 0.8806584362139918,
+            "ox": 226.36831275720164,
+            "oy": -25.024691358024683,
+            "dx": 0,
+            "dy": 3
+          }
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 0,
+          "headYaw": -0.35,
+          "torsoYaw": -0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headState": 1,
+          "headYaw": 0.35,
+          "torsoYaw": 0.11666666666666665,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 62,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  }
+}

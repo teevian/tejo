@@ -113,7 +113,7 @@ func run() -> void:
 	tick(squirrel,0.12)
 	check(squirrel.altitude>10 and squirrel.art.pose_frame()==3,"Squirrel makes a visible startled hop with its own sprite")
 	tick(squirrel,0.15)
-	check(squirrel.state=="flee","Startled hop finishes in an escape")
+	check(squirrel.state in ["flee","climb"],"Startled hop finishes in an escape, or immediate climbing when already beside the refuge")
 	# All 8 facings select genuine front/back/diagonal source regions.
 	for species in ["fox","squirrel","bird","frog","butterfly"]:
 		var a = get_animal(species)

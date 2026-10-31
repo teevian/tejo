@@ -2,6 +2,7 @@ extends Node2D
 ## A bounded, persistent population. Decisions are staggered; animation stays smooth.
 const Animal = preload("res://scripts/wildlife_animal.gd")
 const HabitatArt = preload("res://scripts/wildlife_habitat.gd")
+const NocturnalAnimal = preload("res://scripts/nocturnal_animal.gd")
 var world: Node2D
 var day_cycle: RefCounted
 var animals: Array = []
@@ -12,7 +13,10 @@ var rng := RandomNumberGenerator.new()
 var elapsed := 0.0
 var hollows: Dictionary = {}
 var occlusion_images: Dictionary = {}
-var events := {"flights":0,"escapes":0,"hunts":0,"drinks":0,"dives":0,"emerges":0,"hides":0,"fox_bounds":0,"watches":0,"startles":0}
+var colonies: Array[Dictionary] = []
+var firefly_patches: Array[Dictionary] = []
+var night_glow: Node2D
+var events := {"flights":0,"escapes":0,"hunts":0,"drinks":0,"dives":0,"emerges":0,"hides":0,"fox_bounds":0,"watches":0,"startles":0,"bat_groups":0,"bat_hunts":0,"owl_flights":0,"owl_hunts":0,"aerial_escapes":0,"insect_escapes":0,"owl_glints":0,"snake_hunts":0,"snake_escapes":0}
 
 func _ready() -> void:
 	name = "WildlifeEcosystem"
@@ -23,7 +27,10 @@ func _ready() -> void:
 		var foot: Vector2 = prop.position + Vector2(0,42)
 		if not world.is_walkable(foot,8):
 			continue
-		trees.append({"node":prop,"foot":foot,"perch":Vector2(28,-prop.height*0.58),"hollow":Vector2(0,-78)})
+		# Owl talons sit on authored wood pixels, rather than an approximate canopy height.
+		var branch_pixel := Vector2(305,468) if int(prop.get_meta("kind"))==0 else Vector2(340,265)
+		var owl_perch: Vector2 = prop.sprite.position+branch_pixel*prop.sprite.scale
+		trees.append({"node":prop,"foot":foot,"perch":Vector2(28,-prop.height*0.58),"owl_perch":owl_perch,"hollow":Vector2(0,-78)})
 	# Quiet river edges, away from bridge decks. Leaves sit in the actual water.
 	for y in [510.0,1360.0,1680.0,1960.0,2640.0,3030.0,3330.0,3910.0,4700.0,5070.0]:
 		for side in [-1.0,1.0]:
@@ -121,9 +128,61 @@ func _ready() -> void:
 		var butterfly = spawn("butterfly",flower,{})
 		butterfly.anchor = flower
 		butterfly.set_state("flutter",rng.randf_range(3,10))
+	_build_nocturnal_community()
+
+func _build_nocturnal_community() -> void:
+	# Resident colonies share real hollows; they never spawn/despawn with the camera.
+	for at in [Vector2(920,2820),Vector2(1700,1700),Vector2(4000,4200),Vector2(5800,3500),Vector2(7700,1800),Vector2(10300,3500),Vector2(7200,6400)]:
+		var home := nearest_tree(at)
+		ensure_hollow(home)
+		var colony := {"home":home,"members":[],"timer":rng.randf_range(3,14)}
+		for slot in 4:
+			var bat = spawn("bat",home.foot,home)
+			bat.flock = colonies.size()
+			bat.flock_slot = slot
+			bat.altitude = 120
+			bat.set_state("shelter")
+			colony.members.append(bat)
+		colonies.append(colony)
+	for at in [Vector2(960,2800),Vector2(1650,1800),Vector2(3900,2900),Vector2(1400,4400),Vector2(4300,4800),Vector2(5600,3400),Vector2(7600,1600),Vector2(10200,3400),Vector2(6800,6500),Vector2(10500,6400),Vector2(600,2500),Vector2(2350,1600),Vector2(3050,4500),Vector2(9200,5400)]:
+		var home := nearest_tree(at)
+		var owl = spawn("owl",home.foot+Vector2(home.owl_perch.x,0),home)
+		owl.altitude = -home.owl_perch.y+42
+		owl.facing = Vector2.DOWN
+		owl.set_state("shelter")
+	# Include the entrance and distribute the remaining patches across the whole forest.
+	for i in 20:
+		var at: Vector2 = flowers[(i*flowers.size()/20)%flowers.size()]
+		if i==0: at = nearest_flower(Vector2(850,2890))
+		var patch := {"anchor":at,"members":[]}
+		for slot in 4:
+			var insect = spawn("firefly",at+Vector2(rng.randf_range(-45,45),rng.randf_range(-32,32)),{})
+			insect.anchor = insect.position
+			insect.altitude = 0
+			insect.pulse_rate = rng.randf_range(0.65,2.15)
+			insect.set_state("shelter")
+			patch.members.append(insect)
+		firefly_patches.append(patch)
+	# A few snakes occupy alternating banks along the real river, rather than pools.
+	for i in 8:
+		var pond: Dictionary = ponds[mini(i*2+i%2,ponds.size()-1)]
+		var at := land_point(pond.bank+Vector2(30 if i%2==0 else -30,25),60)
+		var snake = spawn("snake",at,{})
+		snake.pond = pond
+		snake.anchor = at
+		snake.set_state("shelter")
+	# Emission sits above the night grade and below the HUD, using the same camera.
+	var glow_layer := CanvasLayer.new()
+	glow_layer.name = "FireflyEmission"
+	glow_layer.layer = 4
+	glow_layer.follow_viewport_enabled = true
+	add_child(glow_layer)
+	night_glow = preload("res://scripts/firefly_glow.gd").new()
+	night_glow.ecosystem = self
+	glow_layer.add_child(night_glow)
 
 func spawn(species: String, at: Vector2, home: Dictionary):
-	var animal = Animal.new()
+	var animal = NocturnalAnimal.new() if species in ["bat","owl","firefly","snake"] else Animal.new()
 	animal.ecosystem = self
 	animal.species = species
 	animal.position = at
@@ -138,8 +197,140 @@ func spawn(species: String, at: Vector2, home: Dictionary):
 
 func step(delta: float) -> void:
 	elapsed += delta
+	for colony in colonies:
+		if not nocturnal_active():
+			continue
+		colony.timer -= delta
+		if colony.timer<=0:
+			release_colony(colony)
+			colony.timer = rng.randf_range(32,60)
 	for animal in animals:
 		animal.step(delta)
+	if night_glow!=null: night_glow.queue_redraw()
+
+func release_colony(colony: Dictionary) -> void:
+	var patch := nearest_flower(colony.home.foot)
+	var released := 0
+	for bat in colony.members:
+		if bat.state=="shelter":
+			bat.anchor = patch
+			bat.outing_time = rng.randf_range(16,25)
+			bat.set_state("emerge",bat.flock_slot*0.22)
+			released += 1
+	if released>1: note("bat_groups")
+
+func sync_debug_time() -> void:
+	# Debug jumps settle residents immediately, without advancing or resetting the game.
+	var night := not is_day()
+	for animal in animals:
+		animal.think_in = 0
+		match animal.species:
+			"bird":
+				animal.position = animal.home.foot+Vector2(animal.home.perch.x+(animal.flock_slot-1.5)*38,0)
+				animal.altitude = -animal.home.perch.y+42
+				animal.set_state("roost" if night else "perch",rng.randf_range(2,8))
+			"squirrel":
+				animal.route.clear()
+				animal.position = animal.home.foot if night else land_point(animal.home.foot,160)
+				animal.altitude = 120 if night else 0
+				animal.set_state("hidden" if night else "forage",rng.randf_range(2,6))
+			"butterfly":
+				animal.position = animal.anchor
+				animal.altitude = 8 if night else 24
+				animal.set_state("rest" if night else "flutter",4)
+			"bat":
+				animal.position = animal.home.foot
+				animal.altitude = 120
+				animal.set_state("shelter")
+			"owl":
+				animal.position = animal.home.foot+Vector2(animal.home.owl_perch.x,0)
+				animal.altitude = -animal.home.owl_perch.y+42
+				animal.facing = Vector2.DOWN
+				animal.head_yaw = 0
+				animal.eye_glint = 0
+				animal.eye_open = 1.0 if night else 0.0
+				animal.art.material.set_shader_parameter("eye_open",animal.eye_open)
+				animal.set_state("watch" if night else "shelter",rng.randf_range(12,24))
+			"firefly":
+				animal.position = animal.anchor
+				animal.altitude = 0
+				animal.glow = 1.0 if night else 0.0
+				animal.cooldown = 0
+				animal.set_state("glimmer" if night else "shelter")
+				animal._firefly_think()
+			"snake":
+				animal.position = animal.anchor
+				animal.altitude = 0
+				animal.route.clear()
+				animal.set_state("coil" if night else "shelter",2)
+			"fox":
+				if night and animal.state in ["sleep","to_den"]: animal.set_state("listen",2)
+		animal.art.position = Vector2(0,-animal.altitude)
+		animal.z_index = 0
+		animal.art.queue_redraw()
+		animal.queue_redraw()
+	for colony in colonies:
+		colony.timer = rng.randf_range(32,60) if night else rng.randf_range(3,14)
+		if night: release_colony(colony)
+	if night_glow!=null: night_glow.queue_redraw()
+
+func nocturnal_activity() -> float:
+	if day_cycle==null: return 0.0
+	var hour: float = day_cycle.minutes/60.0
+	return smoothstep(18.5,20.0,hour) if hour>=12 else 1.0-smoothstep(5.0,6.0,hour)
+
+func nocturnal_active() -> bool:
+	return nocturnal_activity()>0.12
+
+func nearest_flower(at: Vector2) -> Vector2:
+	var best: Vector2 = flowers[0]
+	var distance := INF
+	for flower in flowers:
+		var d: float = at.distance_squared_to(flower)
+		if d<distance:
+			distance = d
+			best = flower
+	return best
+
+func next_owl_tree(owl: Node2D, toward: Vector2) -> Dictionary:
+	var best: Dictionary = {}
+	var score := INF
+	for tree in trees:
+		var distance: float = owl.position.distance_to(tree.foot)
+		if tree==owl.home or distance<150 or distance>1000: continue
+		var occupied := false
+		for animal in animals:
+			if animal!=owl and animal.species=="owl" and animal.home==tree:
+				occupied = true
+				break
+		if occupied: continue
+		var candidate: float = tree.foot.distance_squared_to(toward)
+		if candidate<score:
+			score = candidate
+			best = tree
+	return best
+
+func nearby_animal(at: Vector2, species_list: Array, radius: float, except: Node2D = null):
+	var closest = null
+	var distance := radius*radius
+	for animal in animals:
+		if animal==except or animal.species not in species_list or animal.state in ["hidden","shelter","submerged","roost","rest","climb","descend","return","emerge"]: continue
+		var d: float = at.distance_squared_to(animal.position)
+		if d<distance:
+			distance = d
+			closest = animal
+	return closest
+
+func river_prey(at: Vector2, territory: Vector2, radius: float):
+	var closest = null
+	var distance := radius*radius
+	for animal in animals:
+		if animal.species!="frog" or animal.state not in ["bank","snap"] or animal.position.distance_to(territory)>230: continue
+		var d: float = at.distance_squared_to(animal.position)
+		if d<distance and world.can_walk_line(at,animal.position):
+			distance = d
+			closest = animal
+	return closest
 
 func is_day() -> bool:
 	return day_cycle == null or (day_cycle.minutes>=360 and day_cycle.minutes<1200)
@@ -179,7 +370,7 @@ func land_point(at: Vector2, radius: float) -> Vector2:
 		return at
 	return world.navigation.get_point_position(world._nearest_cell(at))
 
-func threat(at: Vector2, radius: float, include_fox := true):
+func threat(at: Vector2, radius: float, include_predators := true, except: Node2D = null):
 	var closest = null
 	var distance := radius*radius
 	for person in world.people:
@@ -189,9 +380,10 @@ func threat(at: Vector2, radius: float, include_fox := true):
 		if d<distance*reach*reach:
 			distance = d
 			closest = person
-	if include_fox:
+	if include_predators:
 		for animal in animals:
-			if animal.species=="fox" and animal.state!="sleep":
+			if animal==except: continue
+			if (animal.species=="fox" and animal.state!="sleep") or (animal.species=="owl" and animal.state=="swoop" and animal.altitude<100) or (animal.species=="snake" and animal.state=="stalk"):
 				var d: float = at.distance_squared_to(animal.position)
 				if d<distance:
 					distance = d

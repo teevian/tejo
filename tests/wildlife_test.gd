@@ -29,8 +29,8 @@ func run() -> void:
 	scene.set_process(false)
 	eco = scene.world.wildlife
 	var count: int = eco.animals.size()
-	check(count>200 and count<260,"Bounded population across the whole forest")
-	for species in ["bird","squirrel","fox","frog","butterfly"]:
+	check(count>320 and count<400,"Bounded day and night populations across the whole forest")
+	for species in ["bird","squirrel","fox","frog","butterfly","bat","owl","firefly","snake"]:
 		check(animal(species)!=null,"Missing species: "+species)
 	for person in scene.people:
 		person.set_physics_process(false)

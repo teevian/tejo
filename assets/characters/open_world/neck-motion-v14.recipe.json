@@ -1,0 +1,1471 @@
+{
+  "version": 14,
+  "frames": 9,
+  "factor": 4,
+  "headStates": 2,
+  "headAngles": [
+    -2,
+    2
+  ],
+  "sourceHeights": [
+    876,
+    852,
+    848,
+    848,
+    928
+  ],
+  "characters": {
+    "te": {
+      "source": "te-walk-v9.png",
+      "body": "sources/te-natural-body-v9.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 71,
+          "collar": 75,
+          "pivot": [
+            382,
+            464
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "headEnd": 66,
+          "collar": 70,
+          "pivot": [
+            394,
+            468
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "headEnd": 59,
+          "collar": 67,
+          "pivot": [
+            426,
+            460
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "headEnd": 62,
+          "collar": 66,
+          "pivot": [
+            400,
+            456
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "headEnd": 63,
+          "collar": 71,
+          "pivot": [
+            406,
+            396
+          ]
+        }
+      ]
+    },
+    "jo": {
+      "source": "jo-walk-v9.png",
+      "body": "sources/jo-body-v8.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "headEnd": 63,
+          "collar": 73,
+          "pivot": [
+            399,
+            456
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "headEnd": 63,
+          "collar": 72,
+          "pivot": [
+            401,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": 5,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "headEnd": 61,
+          "collar": 71,
+          "pivot": [
+            429,
+            476
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -28,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "headEnd": 60,
+          "collar": 68,
+          "pivot": [
+            392,
+            464
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "headState": -1,
+          "headYaw": 0,
+          "armWidthNormalization": true,
+          "sourceShift": -2,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "headState": 0,
+          "headYaw": -2,
+          "armWidthNormalization": true,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "headState": 1,
+          "headYaw": 2,
+          "armWidthNormalization": true,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "headEnd": 61,
+          "collar": 69,
+          "pivot": [
+            406,
+            388
+          ]
+        }
+      ]
+    }
+  }
+}

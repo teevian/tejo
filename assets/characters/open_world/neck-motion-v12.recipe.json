@@ -1,0 +1,2278 @@
+{
+  "version": 12,
+  "factor": 4,
+  "frames": 9,
+  "axis": "vertical yaw; zero roll",
+  "sourceHeights": [
+    876,
+    852,
+    848,
+    848,
+    928
+  ],
+  "repairEnd": 110,
+  "gaitRepair": [
+    {
+      "key": 2,
+      "scale": 1.239038189533239,
+      "offset": [
+        138,
+        152
+      ],
+      "oldWaist": 124.25,
+      "newWaist": 130.5,
+      "lowerScale": 0.9340369393139841
+    },
+    {
+      "key": 4,
+      "scale": 1.2320675105485233,
+      "offset": [
+        139,
+        153
+      ],
+      "oldWaist": 129.5,
+      "newWaist": 126.25,
+      "lowerScale": 1.0363128491620113
+    }
+  ],
+  "characters": {
+    "te": {
+      "source": "te-walk-v9.png",
+      "neck": "sources/te-posture-v12.raw.png",
+      "yaw": "sources/te-yaw-v12.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": {
+            "slot": 2,
+            "referenceYaw": 0,
+            "residualYaw": 0
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 7.530197742447469,
+            "scale": 0.98175,
+            "ox": 188.779625,
+            "oy": 11.81049999999999,
+            "dx": 1,
+            "dy": -1
+          }
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 1.7731212399680372,
+          "torsoYaw": 0.5910404133226791,
+          "yawMix": {
+            "slot": 3,
+            "referenceYaw": 3,
+            "residualYaw": -1.2268787600319628
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.8897367891781869,
+          "dy": -1.8249999999999886,
+          "roll": 0,
+          "headYaw": 5.306935511301285,
+          "torsoYaw": 1.768978503767095,
+          "yawMix": {
+            "slot": 4,
+            "referenceYaw": 6,
+            "residualYaw": -0.693064488698715
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 1.4653846153846075,
+          "dy": -3.6500000000000057,
+          "roll": 0,
+          "headYaw": 5.732018934753636,
+          "torsoYaw": 1.9106729782512122,
+          "yawMix": {
+            "slot": 4,
+            "referenceYaw": 6,
+            "residualYaw": -0.26798106524636367
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 1.8897367891781869,
+          "dy": -1.8249999999999886,
+          "roll": 0,
+          "headYaw": 2.799363406006689,
+          "torsoYaw": 0.9331211353355631,
+          "yawMix": {
+            "slot": 3,
+            "referenceYaw": 3,
+            "residualYaw": -0.2006365939933108
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -1.7731212399680356,
+          "torsoYaw": -0.5910404133226785,
+          "yawMix": {
+            "slot": 1,
+            "referenceYaw": -3,
+            "residualYaw": 1.2268787600319644
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -0.8897367891781869,
+          "dy": -1.8249999999999886,
+          "roll": 0,
+          "headYaw": -5.306935511301285,
+          "torsoYaw": -1.768978503767095,
+          "yawMix": {
+            "slot": 0,
+            "referenceYaw": -6,
+            "residualYaw": 0.693064488698715
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -1.9653846153846075,
+          "dy": -3.6500000000000057,
+          "roll": 0,
+          "headYaw": -5.732018934753636,
+          "torsoYaw": -1.9106729782512122,
+          "yawMix": {
+            "slot": 0,
+            "referenceYaw": -6,
+            "residualYaw": 0.26798106524636367
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -0.8897367891781869,
+          "dy": -1.8249999999999886,
+          "roll": 0,
+          "headYaw": -2.79936340600669,
+          "torsoYaw": -0.9331211353355634,
+          "yawMix": {
+            "slot": 1,
+            "referenceYaw": -3,
+            "residualYaw": 0.2006365939933099
+          },
+          "pivot": [
+            382,
+            468
+          ],
+          "faceEnd": 67,
+          "neckBase": 76,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 8.261084878265205,
+            "scale": 0.9956054347826087,
+            "ox": 180.53492010869567,
+            "oy": 30.685552173913038,
+            "dx": -3,
+            "dy": -2
+          }
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 3.35166180865275,
+          "dy": -1.7750000000000057,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 4.411538461538441,
+          "dy": -3.5500000000000114,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": 2.35166180865275,
+          "dy": -1.7750000000000057,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -3.35166180865275,
+          "dy": -1.7750000000000057,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -3.9115384615384414,
+          "dy": -3.5500000000000114,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -18,
+          "neutralShift": -18,
+          "dx": -2.35166180865275,
+          "dy": -1.7750000000000057,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            398,
+            480
+          ],
+          "faceEnd": 62,
+          "neckBase": 73,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 8.302085788046991,
+            "scale": 0.982548717948718,
+            "ox": 178.8916358974359,
+            "oy": 36.65259487179486,
+            "dx": 0,
+            "dy": -6
+          }
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 3.345315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 3.9025641025640994,
+          "dy": -3.5333333333333314,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 2.345315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": -2.845315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": -3.9025641025640994,
+          "dy": -3.5333333333333314,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": 2,
+          "neutralShift": 2,
+          "dx": -2.345315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            406,
+            464
+          ],
+          "faceEnd": 58,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 6.637534217852901,
+            "scale": 0.9604743083003953,
+            "ox": 234.70750988142294,
+            "oy": 44.086956521739125,
+            "dx": 2,
+            "dy": 0
+          }
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 2.845315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 3.4025641025640994,
+          "dy": -3.5333333333333314,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": 1.8453159785651678,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -3.345315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -3.9025641025640994,
+          "dy": -3.5333333333333314,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -20,
+          "neutralShift": -20,
+          "dx": -2.345315978565168,
+          "dy": -1.76666666666668,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            388,
+            456
+          ],
+          "faceEnd": 58,
+          "neckBase": 66,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.416512325332644,
+            "scale": 0.9668376068376069,
+            "ox": 214.15162393162393,
+            "oy": -38.85982905982908,
+            "dx": -1,
+            "dy": -1
+          }
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 2.472232580316586,
+          "dy": -1.9333333333333371,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 3.0820512820512818,
+          "dy": -3.86666666666666,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": 1.4722325803165859,
+          "dy": -1.9333333333333371,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -3.472232580316586,
+          "dy": -1.9333333333333371,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -4.082051282051282,
+          "dy": -3.86666666666666,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": 6,
+          "neutralShift": 6,
+          "dx": -2.472232580316586,
+          "dy": -1.9333333333333371,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            406,
+            400
+          ],
+          "faceEnd": 61,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        }
+      ]
+    },
+    "jo": {
+      "source": "jo-walk-v9.png",
+      "neck": "sources/jo-neck-v10.raw.png",
+      "yaw": "sources/jo-yaw-v12.raw.png",
+      "southBody": "sources/jo-south-gait-v12.png",
+      "profileShirt": "sources/jo-profile-shirt-v11.raw.png",
+      "poses": [
+        {
+          "row": 0,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": {
+            "slot": 2,
+            "referenceYaw": 0,
+            "residualYaw": 0
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 4.749987094016789,
+            "scale": 0.8784309623430963,
+            "ox": 199.08244769874477,
+            "oy": 27.843200836820074,
+            "dx": 1,
+            "dy": 0
+          }
+        },
+        {
+          "row": 0,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 1.7731212399680372,
+          "torsoYaw": 0.5910404133226791,
+          "yawMix": {
+            "slot": 3,
+            "referenceYaw": 3,
+            "residualYaw": -1.2268787600319628
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0.9169865301424807,
+          "dy": -1.8607843137255031,
+          "roll": 0,
+          "headYaw": 5.306935511301285,
+          "torsoYaw": 1.768978503767095,
+          "yawMix": {
+            "slot": 4,
+            "referenceYaw": 6,
+            "residualYaw": -0.693064488698715
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": 1.5039215686274474,
+          "dy": -3.721568627450978,
+          "roll": 0,
+          "headYaw": 5.732018934753636,
+          "torsoYaw": 1.9106729782512122,
+          "yawMix": {
+            "slot": 4,
+            "referenceYaw": 6,
+            "residualYaw": -0.26798106524636367
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -1,
+          "neutralShift": -1,
+          "dx": 1.4169865301424807,
+          "dy": -1.8607843137255031,
+          "roll": 0,
+          "headYaw": 2.799363406006689,
+          "torsoYaw": 0.9331211353355631,
+          "yawMix": {
+            "slot": 3,
+            "referenceYaw": 3,
+            "residualYaw": -0.2006365939933108
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -1.7731212399680356,
+          "torsoYaw": -0.5910404133226785,
+          "yawMix": {
+            "slot": 1,
+            "referenceYaw": -3,
+            "residualYaw": 1.2268787600319644
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 1,
+          "neutralShift": -1,
+          "dx": -0.9169865301424807,
+          "dy": -1.8607843137255031,
+          "roll": 0,
+          "headYaw": -5.306935511301285,
+          "torsoYaw": -1.768978503767095,
+          "yawMix": {
+            "slot": 0,
+            "referenceYaw": -6,
+            "residualYaw": 0.693064488698715
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "dx": -1.5039215686274474,
+          "dy": -3.721568627450978,
+          "roll": 0,
+          "headYaw": -5.732018934753636,
+          "torsoYaw": -1.9106729782512122,
+          "yawMix": {
+            "slot": 0,
+            "referenceYaw": -6,
+            "residualYaw": 0.26798106524636367
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 0,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -3,
+          "neutralShift": -1,
+          "dx": -1.4169865301424807,
+          "dy": -1.8607843137255031,
+          "roll": 0,
+          "headYaw": -2.79936340600669,
+          "torsoYaw": -0.9331211353355634,
+          "yawMix": {
+            "slot": 1,
+            "referenceYaw": -3,
+            "residualYaw": 0.2006365939933099
+          },
+          "pivot": [
+            399,
+            460
+          ],
+          "faceEnd": 59,
+          "neckBase": 74,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.968975220743196,
+            "scale": 0.8863284132841328,
+            "ox": 227.43939114391145,
+            "oy": 50.73276752767529,
+            "dx": -1,
+            "dy": 1
+          }
+        },
+        {
+          "row": 1,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -19,
+          "neutralShift": -19,
+          "dx": 3.3781649813714125,
+          "dy": -1.80980392156863,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "dx": 3.9490196078431268,
+          "dy": -3.61960784313726,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -25,
+          "neutralShift": -19,
+          "dx": 2.3781649813714125,
+          "dy": -1.80980392156863,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -21,
+          "neutralShift": -19,
+          "dx": -2.3781649813714125,
+          "dy": -1.80980392156863,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "dx": -2.9490196078431268,
+          "dy": -3.61960784313726,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 1,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -27,
+          "neutralShift": -19,
+          "dx": -1.3781649813714125,
+          "dy": -1.80980392156863,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            397,
+            476
+          ],
+          "faceEnd": 58,
+          "neckBase": 72,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": 5,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 6.991934367731184,
+            "scale": 0.38929774919614146,
+            "ox": 206.77085852090033,
+            "oy": 57.30297877813504,
+            "dx": 3,
+            "dy": 0
+          }
+        },
+        {
+          "row": 2,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "dx": 0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -31,
+          "neutralShift": 5,
+          "dx": 2.8716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "dx": 3.4398692810457305,
+          "dy": -3.6026143790849687,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -19,
+          "neutralShift": 5,
+          "dx": 1.8716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -49,
+          "neutralShift": 5,
+          "dx": -3.3716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "dx": -3.9398692810457305,
+          "dy": -3.6026143790849687,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 2,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -23,
+          "neutralShift": 5,
+          "dx": -2.3716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            409,
+            468
+          ],
+          "faceEnd": 57,
+          "neckBase": 69,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -28,
+          "neutralShift": -28,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 5.091663364378413,
+            "scale": 0.8683083032490975,
+            "ox": 229.02570685920577,
+            "oy": 60.5439046931408,
+            "dx": -1,
+            "dy": 4
+          }
+        },
+        {
+          "row": 3,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "dx": 1,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": -22,
+          "neutralShift": -28,
+          "dx": 2.8716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "dx": 3.4398692810457305,
+          "dy": -3.6026143790849687,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -38,
+          "neutralShift": -28,
+          "dx": 2.3716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": -32,
+          "neutralShift": -28,
+          "dx": -2.8716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "dx": -3.4398692810457305,
+          "dy": -3.6026143790849687,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 3,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -30,
+          "neutralShift": -28,
+          "dx": -1.8716947232429106,
+          "dy": -1.8013071895424844,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            380,
+            464
+          ],
+          "faceEnd": 56,
+          "neckBase": 68,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 0,
+          "key": 0,
+          "sourceShift": -2,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0,
+          "torsoYaw": 0,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ],
+          "registration": {
+            "error": 4.75264258007675,
+            "scale": 0.8806584362139918,
+            "ox": 226.36831275720164,
+            "oy": -25.024691358024683,
+            "dx": 0,
+            "dy": 3
+          }
+        },
+        {
+          "row": 4,
+          "frame": 1,
+          "key": 1,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "dx": 0,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": 0.8865606199840186,
+          "torsoYaw": 0.29552020666133955,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            0,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 2,
+          "key": 1,
+          "sourceShift": 0,
+          "neutralShift": -2,
+          "dx": 2.501099885813005,
+          "dy": -1.9712418300653525,
+          "roll": 0,
+          "headYaw": 2.6534677556506425,
+          "torsoYaw": 0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            0.2474873734152916,
+            -0.32499999999999996
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 3,
+          "key": 2,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "dx": 3.122875816993485,
+          "dy": -3.942483660130719,
+          "roll": 0,
+          "headYaw": 2.866009467376818,
+          "torsoYaw": 0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 4,
+          "key": 2,
+          "sourceShift": -4,
+          "neutralShift": -2,
+          "dx": 2.001099885813005,
+          "dy": -1.9712418300653667,
+          "roll": 0,
+          "headYaw": 1.3996817030033446,
+          "torsoYaw": 0.46656056766778153,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            0.24748737341529164,
+            -0.32500000000000007
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 5,
+          "key": 3,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "dx": -0.5,
+          "dy": 0,
+          "roll": 0,
+          "headYaw": -0.8865606199840178,
+          "torsoYaw": -0.29552020666133927,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            4.286263797015736e-17,
+            0
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 6,
+          "key": 3,
+          "sourceShift": 4,
+          "neutralShift": -2,
+          "dx": -3.001099885813005,
+          "dy": -1.9712418300653525,
+          "roll": 0,
+          "headYaw": -2.6534677556506425,
+          "torsoYaw": -0.8844892518835475,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            -0.2474873734152916,
+            -0.3249999999999999
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 7,
+          "key": 4,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "dx": -3.622875816993485,
+          "dy": -3.942483660130719,
+          "roll": 0,
+          "headYaw": -2.866009467376818,
+          "torsoYaw": -0.9553364891256061,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            -0.35,
+            -0.65
+          ]
+        },
+        {
+          "row": 4,
+          "frame": 8,
+          "key": 4,
+          "sourceShift": -12,
+          "neutralShift": -2,
+          "dx": -2.501099885813005,
+          "dy": -1.9712418300653667,
+          "roll": 0,
+          "headYaw": -1.399681703003345,
+          "torsoYaw": -0.4665605676677817,
+          "yawMix": null,
+          "pivot": [
+            398,
+            392
+          ],
+          "faceEnd": 58,
+          "neckBase": 70,
+          "crownWorld": [
+            -0.24748737341529167,
+            -0.3250000000000002
+          ]
+        }
+      ]
+    }
+  }
+}

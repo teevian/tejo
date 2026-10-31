@@ -1,6 +1,7 @@
 extends Control
 
 signal person_selected(index: int)
+signal debug_time_toggled
 
 const AvatarButton = preload("res://scripts/avatar_button.gd")
 var open_world := false
@@ -15,10 +16,23 @@ var map_open := false
 var comment_time := 0.0
 var comment_panel: Panel
 var comment_label: Label
+var debug_time_button: Button
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	if day_cycle!=null and OS.is_debug_build():
+		debug_time_button = Button.new()
+		debug_time_button.name = "DebugDayNight"
+		debug_time_button.toggle_mode = true
+		debug_time_button.position = Vector2(944,67)
+		debug_time_button.size = Vector2(56,26)
+		debug_time_button.tooltip_text = "Debug: alternar dia / noite"
+		debug_time_button.add_theme_font_size_override("font_size",12)
+		debug_time_button.add_theme_color_override("font_color",Color("b9c4ab"))
+		debug_time_button.toggled.connect(func(_pressed: bool): debug_time_toggled.emit())
+		add_child(debug_time_button)
+		_sync_debug_time_button()
 	for i in 2:
 		var button := AvatarButton.new()
 		button.kind = i
@@ -61,9 +75,16 @@ func show_comment(value: String) -> void:
 	comment_panel.visible = not paused and not map_open and not dialogue_active
 
 func _process(delta: float) -> void:
+	_sync_debug_time_button()
 	if not is_instance_valid(comment_panel): return
 	comment_panel.visible = comment_time>0 and not paused and not map_open and not dialogue_active
 	if comment_panel.visible: comment_time = maxf(0,comment_time-delta)
+
+func _sync_debug_time_button() -> void:
+	if debug_time_button==null: return
+	var night: bool = day_cycle.minutes<360 or day_cycle.minutes>=1200
+	debug_time_button.set_pressed_no_signal(night)
+	debug_time_button.text = "Noite" if night else "Dia"
 
 func select(index: int) -> void:
 	selected = index
