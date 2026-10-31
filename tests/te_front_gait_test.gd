@@ -1,6 +1,9 @@
 ## Requires graphics: checks stable facial/torso pixels and the original limb motion.
 extends SceneTree
-const Art = preload("res://scripts/open_world_art.gd")
+# The incoming gait is the independent reference for the baked atlas.
+# te_walk_consistency_test verifies its final, slightly slimmer rendition.
+const Art = preload("res://tools/pulled_walk_reference.gd")
+const ORIGINAL_ATLAS = preload("res://assets/characters/open_world/te-walk-v4.png")
 const ORIGINAL: Array[Rect2] = [
 	Rect2(42,26,96,219),Rect2(223,26,94,219),Rect2(223,26,94,219),
 	Rect2(399,26,102,219),Rect2(399,26,102,219),Rect2(583,26,94,219),
@@ -24,7 +27,7 @@ class Board:
 			var distance := maxf(0,frame-1)*Art.STRIDE/8.0
 			var at := Vector2(80+160*frame,210)
 			var region: Rect2 = ORIGINAL[frame]
-			draw_texture_rect_region(Art.ATLASES[0],Rect2(at-Vector2(region.size.x*.5,region.size.y)*factor,region.size*factor),region)
+			draw_texture_rect_region(ORIGINAL_ATLAS,Rect2(at-Vector2(region.size.x*.5,region.size.y)*factor,region.size*factor),region)
 			Art.draw_pose(self,0,Vector2.DOWN,frame>0,distance,at+Vector2(0,240))
 			Art.draw_pose(self,0,Vector2.DOWN,false,0,at+Vector2(0,480))
 func _initialize() -> void:

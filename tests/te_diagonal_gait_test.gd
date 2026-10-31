@@ -1,6 +1,9 @@
 ## Graphics regression for all four diagonals: stable identity and original gait.
 extends SceneTree
-const Art = preload("res://scripts/open_world_art.gd")
+# The incoming gait is the independent reference for the baked atlas.
+# te_walk_consistency_test verifies its final, slightly slimmer rendition.
+const Art = preload("res://tools/pulled_walk_reference.gd")
+const ORIGINAL_ATLAS = preload("res://assets/characters/open_world/te-walk-v4.png")
 const ORIGINAL: Array = [
 	[Rect2(44,292,92,213),Rect2(218,292,105,213),Rect2(218,292,105,213),
 	 Rect2(405,292,90,213),Rect2(405,292,90,213),Rect2(562,292,136,213),
@@ -35,7 +38,7 @@ class Board:
 					var at := Vector2(80+160*frame,210+view_index*1440+side*720)
 					var region: Rect2 = ORIGINAL[view_index][frame]
 					draw_set_transform(at,0,Vector2(-1 if side==1 else 1,1))
-					draw_texture_rect_region(Art.ATLASES[0],Rect2(-Vector2(region.size.x*.5,region.size.y)*factor,region.size*factor),region)
+					draw_texture_rect_region(ORIGINAL_ATLAS,Rect2(-Vector2(region.size.x*.5,region.size.y)*factor,region.size*factor),region)
 					draw_set_transform(Vector2.ZERO)
 					Art.draw_pose(self,0,facing,frame>0,maxf(0,frame-1)*112.0/8.0,at+Vector2(0,240))
 					Art.draw_pose(self,0,facing,false,0,at+Vector2(0,480))

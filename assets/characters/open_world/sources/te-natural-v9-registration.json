@@ -1,0 +1,430 @@
+{
+  "poses": [
+    {
+      "row": 0,
+      "key": 0,
+      "sourceBounds": {
+        "left": 219,
+        "top": 167,
+        "right": 588,
+        "bottom": 1048,
+        "width": 370,
+        "height": 882,
+        "center": 403.5
+      },
+      "scale": 0.9931972789115646,
+      "headCenter": 419,
+      "left": 218,
+      "width": 367
+    },
+    {
+      "row": 0,
+      "key": 1,
+      "sourceBounds": {
+        "left": 225,
+        "top": 166,
+        "right": 579,
+        "bottom": 1057,
+        "width": 355,
+        "height": 892,
+        "center": 402
+      },
+      "scale": 0.9820627802690582,
+      "headCenter": 419,
+      "left": 231,
+      "width": 349
+    },
+    {
+      "row": 0,
+      "key": 2,
+      "sourceBounds": {
+        "left": 217,
+        "top": 167,
+        "right": 601,
+        "bottom": 1062,
+        "width": 385,
+        "height": 896,
+        "center": 409
+      },
+      "scale": 0.9776785714285714,
+      "headCenter": 419,
+      "left": 219,
+      "width": 376
+    },
+    {
+      "row": 0,
+      "key": 3,
+      "sourceBounds": {
+        "left": 231,
+        "top": 168,
+        "right": 586,
+        "bottom": 1062,
+        "width": 356,
+        "height": 895,
+        "center": 408.5
+      },
+      "scale": 0.9787709497206704,
+      "headCenter": 419,
+      "left": 228,
+      "width": 348
+    },
+    {
+      "row": 0,
+      "key": 4,
+      "sourceBounds": {
+        "left": 228,
+        "top": 167,
+        "right": 579,
+        "bottom": 1059,
+        "width": 352,
+        "height": 893,
+        "center": 403.5
+      },
+      "scale": 0.9809630459126539,
+      "headCenter": 419,
+      "left": 226,
+      "width": 345
+    },
+    {
+      "row": 1,
+      "key": 0,
+      "sourceBounds": {
+        "left": 216,
+        "top": 175,
+        "right": 588,
+        "bottom": 1067,
+        "width": 373,
+        "height": 893,
+        "center": 402
+      },
+      "scale": 0.9540873460246361,
+      "headCenter": 420.5,
+      "left": 228,
+      "width": 356
+    },
+    {
+      "row": 1,
+      "key": 1,
+      "sourceBounds": {
+        "left": 189,
+        "top": 174,
+        "right": 623,
+        "bottom": 1067,
+        "width": 435,
+        "height": 894,
+        "center": 406
+      },
+      "scale": 0.9530201342281879,
+      "headCenter": 420.5,
+      "left": 199,
+      "width": 415
+    },
+    {
+      "row": 1,
+      "key": 2,
+      "sourceBounds": {
+        "left": 211,
+        "top": 174,
+        "right": 597,
+        "bottom": 1068,
+        "width": 387,
+        "height": 895,
+        "center": 404
+      },
+      "scale": 0.9519553072625698,
+      "headCenter": 420.5,
+      "left": 218,
+      "width": 368
+    },
+    {
+      "row": 1,
+      "key": 3,
+      "sourceBounds": {
+        "left": 145,
+        "top": 174,
+        "right": 665,
+        "bottom": 1067,
+        "width": 521,
+        "height": 894,
+        "center": 405
+      },
+      "scale": 0.9530201342281879,
+      "headCenter": 420.5,
+      "left": 153,
+      "width": 497
+    },
+    {
+      "row": 1,
+      "key": 4,
+      "sourceBounds": {
+        "left": 211,
+        "top": 175,
+        "right": 631,
+        "bottom": 1066,
+        "width": 421,
+        "height": 892,
+        "center": 421
+      },
+      "scale": 0.9551569506726457,
+      "headCenter": 420.5,
+      "left": 205,
+      "width": 402
+    },
+    {
+      "row": 2,
+      "key": 0,
+      "sourceBounds": {
+        "left": 254,
+        "top": 176,
+        "right": 555,
+        "bottom": 1073,
+        "width": 302,
+        "height": 898,
+        "center": 404.5
+      },
+      "scale": 0.9443207126948775,
+      "headCenter": 399.5,
+      "left": 257,
+      "width": 285
+    },
+    {
+      "row": 2,
+      "key": 1,
+      "sourceBounds": {
+        "left": 145,
+        "top": 173,
+        "right": 694,
+        "bottom": 1074,
+        "width": 550,
+        "height": 902,
+        "center": 419.5
+      },
+      "scale": 0.9401330376940134,
+      "headCenter": 399.5,
+      "left": 158,
+      "width": 517
+    },
+    {
+      "row": 2,
+      "key": 2,
+      "sourceBounds": {
+        "left": 237,
+        "top": 173,
+        "right": 558,
+        "bottom": 1072,
+        "width": 322,
+        "height": 900,
+        "center": 397.5
+      },
+      "scale": 0.9422222222222222,
+      "headCenter": 399.5,
+      "left": 241,
+      "width": 303
+    },
+    {
+      "row": 2,
+      "key": 3,
+      "sourceBounds": {
+        "left": 122,
+        "top": 172,
+        "right": 677,
+        "bottom": 1082,
+        "width": 556,
+        "height": 911,
+        "center": 399.5
+      },
+      "scale": 0.9308452250274424,
+      "headCenter": 399.5,
+      "left": 126,
+      "width": 518
+    },
+    {
+      "row": 2,
+      "key": 4,
+      "sourceBounds": {
+        "left": 211,
+        "top": 172,
+        "right": 618,
+        "bottom": 1076,
+        "width": 408,
+        "height": 905,
+        "center": 414.5
+      },
+      "scale": 0.9370165745856354,
+      "headCenter": 399.5,
+      "left": 212,
+      "width": 382
+    },
+    {
+      "row": 3,
+      "key": 0,
+      "sourceBounds": {
+        "left": 230,
+        "top": 171,
+        "right": 570,
+        "bottom": 1053,
+        "width": 341,
+        "height": 883,
+        "center": 400
+      },
+      "scale": 0.9603624009060022,
+      "headCenter": 423,
+      "left": 245,
+      "width": 327
+    },
+    {
+      "row": 3,
+      "key": 1,
+      "sourceBounds": {
+        "left": 199,
+        "top": 170,
+        "right": 624,
+        "bottom": 1064,
+        "width": 426,
+        "height": 895,
+        "center": 411.5
+      },
+      "scale": 0.9474860335195531,
+      "headCenter": 423,
+      "left": 213,
+      "width": 404
+    },
+    {
+      "row": 3,
+      "key": 2,
+      "sourceBounds": {
+        "left": 189,
+        "top": 169,
+        "right": 621,
+        "bottom": 1060,
+        "width": 433,
+        "height": 892,
+        "center": 405
+      },
+      "scale": 0.9506726457399103,
+      "headCenter": 423,
+      "left": 196,
+      "width": 412
+    },
+    {
+      "row": 3,
+      "key": 3,
+      "sourceBounds": {
+        "left": 146,
+        "top": 167,
+        "right": 662,
+        "bottom": 1059,
+        "width": 517,
+        "height": 893,
+        "center": 404
+      },
+      "scale": 0.9496080627099664,
+      "headCenter": 423,
+      "left": 171,
+      "width": 491
+    },
+    {
+      "row": 3,
+      "key": 4,
+      "sourceBounds": {
+        "left": 171,
+        "top": 169,
+        "right": 666,
+        "bottom": 1061,
+        "width": 496,
+        "height": 893,
+        "center": 418.5
+      },
+      "scale": 0.9496080627099664,
+      "headCenter": 423,
+      "left": 180,
+      "width": 471
+    },
+    {
+      "row": 4,
+      "key": 0,
+      "sourceBounds": {
+        "left": 206,
+        "top": 74,
+        "right": 601,
+        "bottom": 1006,
+        "width": 396,
+        "height": 933,
+        "center": 403.5
+      },
+      "scale": 0.9946409431939979,
+      "headCenter": 396,
+      "left": 204,
+      "width": 394
+    },
+    {
+      "row": 4,
+      "key": 1,
+      "sourceBounds": {
+        "left": 198,
+        "top": 76,
+        "right": 601,
+        "bottom": 1026,
+        "width": 404,
+        "height": 951,
+        "center": 399.5
+      },
+      "scale": 0.9758149316508938,
+      "headCenter": 396,
+      "left": 202,
+      "width": 394
+    },
+    {
+      "row": 4,
+      "key": 2,
+      "sourceBounds": {
+        "left": 190,
+        "top": 76,
+        "right": 620,
+        "bottom": 1018,
+        "width": 431,
+        "height": 943,
+        "center": 405
+      },
+      "scale": 0.9840933191940615,
+      "headCenter": 396,
+      "left": 182,
+      "width": 424
+    },
+    {
+      "row": 4,
+      "key": 3,
+      "sourceBounds": {
+        "left": 199,
+        "top": 76,
+        "right": 610,
+        "bottom": 1026,
+        "width": 412,
+        "height": 951,
+        "center": 404.5
+      },
+      "scale": 0.9758149316508938,
+      "headCenter": 396,
+      "left": 199,
+      "width": 402
+    },
+    {
+      "row": 4,
+      "key": 4,
+      "sourceBounds": {
+        "left": 194,
+        "top": 75,
+        "right": 609,
+        "bottom": 1020,
+        "width": 416,
+        "height": 946,
+        "center": 401.5
+      },
+      "scale": 0.9809725158562368,
+      "headCenter": 396,
+      "left": 199,
+      "width": 408
+    }
+  ],
+  "hairPixels": 382610
+}

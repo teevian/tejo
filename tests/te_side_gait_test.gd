@@ -1,6 +1,9 @@
 ## Graphics regression: actual right/left pixels, mirrored anatomy and old feet.
 extends SceneTree
-const Art = preload("res://scripts/open_world_art.gd")
+# The incoming gait is the independent reference for the baked atlas.
+# te_walk_consistency_test verifies its final, slightly slimmer rendition.
+const Art = preload("res://tools/pulled_walk_reference.gd")
+const ORIGINAL_ATLAS = preload("res://assets/characters/open_world/te-walk-v4.png")
 const ORIGINAL: Array[Rect2] = [
 	Rect2(57,553,67,212),Rect2(199,553,142,212),Rect2(199,553,142,212),
 	Rect2(412,553,76,212),Rect2(412,553,76,212),Rect2(557,553,146,212),
@@ -26,7 +29,7 @@ class Board:
 		var factor := Art.HEIGHTS[0]/219.0
 		var region: Rect2 = ORIGINAL[frame]
 		draw_set_transform(at,0,Vector2(-1 if flip else 1,1))
-		draw_texture_rect_region(Art.ATLASES[0],Rect2((shift-Vector2(region.size.x*.5,region.size.y))*factor,region.size*factor),region)
+		draw_texture_rect_region(ORIGINAL_ATLAS,Rect2((shift-Vector2(region.size.x*.5,region.size.y))*factor,region.size*factor),region)
 		draw_set_transform(Vector2.ZERO)
 	func _draw() -> void:
 		for side in 2:

@@ -1,0 +1,27 @@
+# Shared Te / Jo walk v7
+
+Historical local experiment, superseded by v8 after pulling
+`10593d9`. The current runtime uses the incoming Te body/walk, refined by 5% in
+width, with the selected local face in a matching painted finish. Jo uses v5.
+The current corrected runtime is documented in `te-walk-v9.prompt.md`.
+The description below records the earlier v7 state, not the current runtime.
+
+Both characters use one body pose geometry with matching cranial dimensions. Original facial contours are retained for each identity. Body/limb alpha masks, anchors, display height (153), phase order and stride are identical.
+
+Final runtime atlases: `te-walk-v7.png` and `jo-walk-v7.png`. Both are 600 × 1400 with three poses per row (neutral, contact A, contact B), across front, front-right, right, rear-right and back views. One common `POSES` and `ANCHORS` table in `scripts/open_world_art.gd` is mirrored to eight directions.
+
+Authoritative skeleton: Jo v6. Collar and waist heights are registered to the neutral pose so that the neck/torso proportions remain stable across the contacts. Each view uses one head across all phases. The user explicitly selected `sources/te-heads-v7.png` on 2026-10-31 (the five-view head strip shown in their screenshot). Te uses those exact source pixels for all five views, including rear views. The earlier Te v6 face is superseded. The selected face, nose, jaw and hair are retained while the cranial width matches Jo's. Reference-shirt fragments and exterior hair-edge flecks are removed.
+
+`tools/pack_shared_walk.cjs` deterministically bakes complete sprites from the common body geometry and the selected head source, changes clothing colour, removes cutout debris and updates the shared pose table. The head, nape and garment now use authored contours, rather than cutting the head to a skin-colour mask. The entire collar area is cleared of old face/hair/skin paint and rebuilt with a continuous neckline. Neck shading is interpolated from clean neutral-pose skin samples below the old jaw and hairline, keeping its colour stable throughout the walk. Te's source collar is excluded from the bare neck. Pixel-centre coverage and a small concave-jaw seam fill prevent transparent slits between layers. All of this is baked into each complete PNG. The runtime draws exactly one atlas region per person; it does not draw, position or animate a separate head. It uses Node and sharp. The previous `pack_te_walk.cjs` entry point delegates to this shared builder to prevent a separate body anatomy from being reintroduced. No image generation was used for this update.
+
+Validation: `te_walk_consistency_test.gd` checks that every full sprite is a single connected opaque component, that join scanlines contain no cuts or pinholes, that bare neck patches contain no old collar/hair paint, and that garment patches below the neckline contain no leftover skin islands. It also checks equal display scale, matching cranial width, identical body alpha silhouettes and arm/leg position/paint for both characters in every frame, fixed face/hair paint within each view, opposing forearm swings, and no bright Te hair-edge flecks. `character_rendering_test.gd` compares actual rendered body silhouette pixels for every phase in all eight directions while allowing each face contour. `walk_cycle_test.gd` checks alternating planted feet for both characters.
+
+Actual game comparison: `output/characters-shared-rig-front.png` and `output/characters-shared-rig-walk.gif`.
+
+Neck/collar visual review: run `tools/preview_shared_characters.gd` with `-- --all-directions` to capture both actual game characters in all eight directions and all three unique poses, then run `tools/preview_character_necks.cjs` to assemble the enlarged source review and animated game review. Outputs: `output/character-neck-review.png`, `output/character-neck-walk.gif` and `output/character-neck-scene-review.png`.
+
+## Selected head source — original generation prompt (built-in image_gen)
+
+Use case: identity-preserve. Edit target image 1 is a template strip of FIVE game character HEADS. Reference image 2 is Te's face identity. Reference image 3 is latest Te game sprites, for Te facial traits only.
+Make Te's heads fit this SAME five-head template. Change ONLY facial identity to Te: his familiar dark brown tousled short hair, slight stubble, subtly squarer jaw and neutral expression. KEEP THE EXACT HEAD SIZE, CRANIAL VOLUME, NECK WIDTH, CAMERA ANGLE AND PLACEMENT of every head in image1. Same painted game illustration style as template, not photorealism. The heads must look like Te and use Jo's same head/body design proportions.
+One horizontal row, FIVE equal cells in order FRONT, FRONT-RIGHT THREE-QUARTER, RIGHT SIDE (same elevated angle as template), REAR-RIGHT THREE-QUARTER, BACK. Match each template view, do not duplicate front or turn side head differently. Keep each neck/collar endpoint aligned to its template. No bodies or extra heads. Hair must be DARK BROWN with soft even diffuse lighting: no rim light, no luminous dots, no white/golden outline pixels, no glow, no bright hair-edge flecks. Remove the red/yellow/grey cutout debris of the template. Actual transparent alpha background. Opaque cleanly painted head interiors, clean natural contour. If collar fragments remain, charcoal black rather than burgundy. This is for two characters using one common body skeleton, so matching head size and geometry is mandatory.

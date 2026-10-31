@@ -1,0 +1,96 @@
+{
+  "body": "sources/jo-body-v8.png",
+  "head": "sources/jo-heads-v9.png",
+  "factor": 4,
+  "repairs": [
+    84,
+    84,
+    88,
+    84,
+    84
+  ],
+  "headOffsets": [
+    0,
+    -2,
+    0,
+    -2,
+    2,
+    0,
+    0,
+    6,
+    2,
+    8,
+    0,
+    36,
+    24,
+    54,
+    28,
+    0,
+    -6,
+    10,
+    4,
+    2,
+    0,
+    -2,
+    2,
+    -6,
+    10
+  ],
+  "views": [
+    {
+      "view": 0,
+      "cranialWidth": 53,
+      "headHeight": 73,
+      "repairEnd": 84,
+      "neckBase": 73,
+      "neckSpan": [
+        89.5,
+        110
+      ]
+    },
+    {
+      "view": 1,
+      "cranialWidth": 60,
+      "headHeight": 72,
+      "repairEnd": 84,
+      "neckBase": 69.75,
+      "neckSpan": [
+        88.75,
+        115
+      ]
+    },
+    {
+      "view": 2,
+      "cranialWidth": 61,
+      "headHeight": 70,
+      "repairEnd": 88,
+      "neckBase": 66.75,
+      "neckSpan": [
+        84,
+        105.75
+      ]
+    },
+    {
+      "view": 3,
+      "cranialWidth": 61,
+      "headHeight": 68,
+      "repairEnd": 84,
+      "neckBase": 65.75,
+      "neckSpan": [
+        85.25,
+        115
+      ]
+    },
+    {
+      "view": 4,
+      "cranialWidth": 54,
+      "headHeight": 68,
+      "repairEnd": 84,
+      "neckBase": 68.25,
+      "neckSpan": [
+        85.5,
+        113
+      ]
+    }
+  ]
+}

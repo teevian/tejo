@@ -1,0 +1,47 @@
+{
+  "incomingCommit": "10593d9",
+  "body": "sources/te-pulled-10593d9.png",
+  "bodyWidth": 0.95,
+  "faceIdentity": "sources/te-heads-v7.png",
+  "paintedFace": "sources/te-heads-painted-v8.png",
+  "factor": 4,
+  "repairEnds": [
+    84,
+    80,
+    76,
+    76,
+    78
+  ],
+  "views": [
+    {
+      "view": 0,
+      "cranialWidth": 58,
+      "headHeight": 73,
+      "unchangedBodyBelow": 84
+    },
+    {
+      "view": 1,
+      "cranialWidth": 70,
+      "headHeight": 70,
+      "unchangedBodyBelow": 80
+    },
+    {
+      "view": 2,
+      "cranialWidth": 68,
+      "headHeight": 66,
+      "unchangedBodyBelow": 76
+    },
+    {
+      "view": 3,
+      "cranialWidth": 61,
+      "headHeight": 64,
+      "unchangedBodyBelow": 76
+    },
+    {
+      "view": 4,
+      "cranialWidth": 56,
+      "headHeight": 66,
+      "unchangedBodyBelow": 78
+    }
+  ]
+}
