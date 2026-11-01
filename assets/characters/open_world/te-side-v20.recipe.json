@@ -1,0 +1,120 @@
+{
+  "wholePaintings": true,
+  "sharedScale": 1.014799154334038,
+  "frames": [
+    {
+      "source": {
+        "left": 56,
+        "top": 26,
+        "width": 312,
+        "height": 477
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        22,
+        39
+      ],
+      "bounds": {
+        "left": 25,
+        "top": 43,
+        "width": 312,
+        "height": 477
+      }
+    },
+    {
+      "source": {
+        "left": 445,
+        "top": 26,
+        "width": 282,
+        "height": 476
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        43,
+        39
+      ],
+      "bounds": {
+        "left": 46,
+        "top": 43,
+        "width": 281,
+        "height": 477
+      }
+    },
+    {
+      "source": {
+        "left": 824,
+        "top": 26,
+        "width": 229,
+        "height": 486
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        73,
+        29
+      ],
+      "bounds": {
+        "left": 76,
+        "top": 33,
+        "width": 227,
+        "height": 487
+      }
+    },
+    {
+      "source": {
+        "left": 62,
+        "top": 515,
+        "width": 316,
+        "height": 477
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        27,
+        38
+      ],
+      "bounds": {
+        "left": 30,
+        "top": 43,
+        "width": 316,
+        "height": 477
+      }
+    },
+    {
+      "source": {
+        "left": 449,
+        "top": 514,
+        "width": 268,
+        "height": 479
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        41,
+        36
+      ],
+      "bounds": {
+        "left": 44,
+        "top": 41,
+        "width": 266,
+        "height": 479
+      }
+    },
+    {
+      "source": {
+        "left": 827,
+        "top": 517,
+        "width": 208,
+        "height": 474
+      },
+      "scale": 1.014799154334038,
+      "placement": [
+        76,
+        41
+      ],
+      "bounds": {
+        "left": 79,
+        "top": 46,
+        "width": 206,
+        "height": 474
+      }
+    }
+  ]
+}

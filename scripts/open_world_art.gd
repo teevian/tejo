@@ -2,6 +2,7 @@ extends RefCounted
 # Original faces, a continuous neck/collar and normalized arm widths.
 # Runtime draws one complete sprite; no separate head/neck layers.
 const ATLASES: Array[Texture2D] = [preload("res://assets/characters/open_world/te-walk-v14.png"),preload("res://assets/characters/open_world/jo-walk-v14.png")]
+const TE_SOUTH: Texture2D = preload("res://assets/characters/open_world/te-south-forearm-balance.png")
 const WorldScale = preload("res://scripts/world_scale.gd")
 const HEIGHTS: Array[float] = WorldScale.PERSON_HEIGHTS
 const STRIDE := 112.0
@@ -54,5 +55,10 @@ static func draw_pose(canvas: CanvasItem, kind: int, facing: Vector2, moving: bo
 	var scale_value: float = pose_scale(kind,row)
 	var anchor := TE_ANCHORS[row*9+frame] if kind==0 else JO_ANCHORS[row*9+frame]
 	canvas.draw_set_transform(origin,0,Vector2(-1 if facing.x<0 else 1,1))
-	canvas.draw_texture_rect_region(ATLASES[kind],Rect2(-anchor*scale_value,region.size*scale_value),region)
+	if kind==0 and row==0:
+		var south_scale := HEIGHTS[0]/438.0
+		var south_frame := 1+floori(float(frame-1)/2.0) if moving else 0
+		canvas.draw_texture_rect_region(TE_SOUTH,Rect2(Vector2(-200,-520)*south_scale,Vector2(400,560)*south_scale),Rect2(south_frame*400,0,400,560))
+	else:
+		canvas.draw_texture_rect_region(ATLASES[kind],Rect2(-anchor*scale_value,region.size*scale_value),region)
 	canvas.draw_set_transform(Vector2.ZERO)

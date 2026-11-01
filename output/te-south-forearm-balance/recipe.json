@@ -1,0 +1,40 @@
+{
+  "sourceWholeAtlas": "first-pass-atlas.png",
+  "paintedRetouch": "forearm-panels-edited.raw.png",
+  "columns": 5,
+  "cell": [
+    400,
+    560
+  ],
+  "retouchedPoses": [
+    2,
+    3
+  ],
+  "untouchedCompletePoses": [
+    0,
+    1,
+    4
+  ],
+  "preservedAboveRow": 304,
+  "retouchRegistration": {
+    "pose2": [
+      7,
+      4
+    ],
+    "pose3": [
+      0,
+      4
+    ],
+    "anchorRows": [
+      320,
+      350
+    ]
+  },
+  "runtimeWholeSprites": true,
+  "softBoundaryRows": [
+    304,
+    324,
+    403,
+    419
+  ]
+}

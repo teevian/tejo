@@ -1,0 +1,74 @@
+{
+  "file": "/Users/tmvaz/github/tejo/assets/characters/open_world/te-south-north-matched.png",
+  "forearmWidthRatios": [
+    1.2,
+    1.1219512195121952
+  ],
+  "idleElbows": [
+    95,
+    288
+  ],
+  "measurements": [
+    {
+      "frame": 1,
+      "arms": [
+        40,
+        46
+      ],
+      "elbowEnvelope": [
+        102,
+        288
+      ],
+      "crown": 82,
+      "ground": 526,
+      "headCenter": 195.5,
+      "headWidth": 129
+    },
+    {
+      "frame": 2,
+      "arms": [
+        42,
+        45
+      ],
+      "elbowEnvelope": [
+        100,
+        286
+      ],
+      "crown": 82,
+      "ground": 526,
+      "headCenter": 194,
+      "headWidth": 130
+    },
+    {
+      "frame": 3,
+      "arms": [
+        36,
+        41
+      ],
+      "elbowEnvelope": [
+        104,
+        282
+      ],
+      "crown": 82,
+      "ground": 516,
+      "headCenter": 196.5,
+      "headWidth": 131
+    },
+    {
+      "frame": 4,
+      "arms": [
+        35,
+        41
+      ],
+      "elbowEnvelope": [
+        105,
+        284
+      ],
+      "crown": 82,
+      "ground": 515,
+      "headCenter": 197,
+      "headWidth": 130
+    }
+  ]
+}
+PASS: level head, consistent forearms and head size, bounded foot stride depth

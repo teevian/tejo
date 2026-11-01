@@ -1,0 +1,74 @@
+{
+  "wholePaintings": true,
+  "registration": "whole-pose level crown and original waist; projected feet retain stride depth",
+  "columns": 5,
+  "sourceHeight": 438,
+  "waistTarget": 192,
+  "crownTarget": 82,
+  "frames": [
+    {
+      "frame": 0,
+      "unchangedWholePose": "assets/characters/open_world/te-south-level-yaw.png"
+    },
+    {
+      "frame": 1,
+      "scale": 0.9977220956719818,
+      "placement": [
+        99,
+        80
+      ],
+      "bounds": {
+        "left": 2,
+        "top": 2,
+        "width": 189,
+        "height": 444
+      },
+      "pelvis": 93.5
+    },
+    {
+      "frame": 2,
+      "scale": 0.9977220956719818,
+      "placement": [
+        97,
+        80
+      ],
+      "bounds": {
+        "left": 3,
+        "top": 2,
+        "width": 188,
+        "height": 444
+      },
+      "pelvis": 95
+    },
+    {
+      "frame": 3,
+      "scale": 0.9977220956719818,
+      "placement": [
+        98,
+        79
+      ],
+      "bounds": {
+        "left": 3,
+        "top": 3,
+        "width": 183,
+        "height": 434
+      },
+      "pelvis": 94
+    },
+    {
+      "frame": 4,
+      "scale": 0.9977220956719818,
+      "placement": [
+        100,
+        80
+      ],
+      "bounds": {
+        "left": 3,
+        "top": 2,
+        "width": 183,
+        "height": 433
+      },
+      "pelvis": 92.5
+    }
+  ]
+}

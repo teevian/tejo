@@ -111,6 +111,6 @@ func _draw() -> void:
 	if not paused:
 		return
 	draw_rect(Rect2(0,0,1280,720),Color(0.12,0.23,0.20,0.65))
-	draw_style_box(TejoPerson._box(Color("f1e6c7"),18),Rect2(415,265,450,190))
-	centered(Vector2(640,350),"Em pausa",27,Color("355b50"))
-	centered(Vector2(640,401),"Esc para continuar",13,Color("7a856b"))
+	draw_style_box(TejoPerson._box(Color("f1e6c7"),18),Rect2(415,245 if open_world else 265,450,290 if open_world else 190))
+	centered(Vector2(640,320 if open_world else 350),"Em pausa",27,Color("355b50"))
+	centered(Vector2(640,370 if open_world else 401),"Esc para continuar",13,Color("7a856b"))

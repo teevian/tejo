@@ -1,0 +1,52 @@
+{
+  "base": "te-walk-v14.png",
+  "cell": [
+    400,
+    560
+  ],
+  "ground": [
+    200,
+    520
+  ],
+  "height": 438,
+  "wholeSprites": true,
+  "source": "output/te-original-neck-shoulders/edited.raw.png",
+  "frames": [
+    {
+      "frame": 0,
+      "editedPixels": 4610
+    },
+    {
+      "frame": 1,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 2,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 3,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 4,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 5,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 6,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 7,
+      "editedPixels": 20224
+    },
+    {
+      "frame": 8,
+      "editedPixels": 20224
+    }
+  ]
+}

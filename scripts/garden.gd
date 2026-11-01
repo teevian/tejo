@@ -22,6 +22,12 @@ var inventory_panel: Control
 var interaction_clock := 0.0
 var day_cycle = preload("res://scripts/day_cycle.gd").new()
 var daylight: ShaderMaterial
+var climbing_scene: Node2D
+var climbing_sign: Node2D
+var climbing_button: Button
+var walking_test_button: Button
+var walking_test_scene: Node2D
+var suspended_exploration: Array[Dictionary] = []
 
 func _ready() -> void:
 	_setup_input()
@@ -89,6 +95,8 @@ func _ready() -> void:
 	puppy_panel.scene = self
 	layer.add_child(puppy_panel)
 	_select_person(0)
+	_setup_climbing_entrance()
+	_setup_walking_test_entry()
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func _toggle_debug_time() -> void:
@@ -143,6 +151,8 @@ func _toggle_pause() -> void:
 	get_tree().paused = not get_tree().paused
 	hud.paused = get_tree().paused
 	hud.queue_redraw()
+	climbing_button.visible = get_tree().paused
+	walking_test_button.visible = get_tree().paused
 
 func _toggle_map() -> void:
 	exploration_map.visible = not exploration_map.visible
@@ -208,6 +218,8 @@ func _camera_target() -> Vector2:
 	return (point-Vector2(0,Person.Art.HEIGHTS[selected]*0.52)).clamp(Vector2(640,360),WORLD_SIZE-Vector2(640,360))
 
 func _process(delta: float) -> void:
+	if is_instance_valid(climbing_button): climbing_button.visible = get_tree().paused
+	if is_instance_valid(walking_test_button): walking_test_button.visible = get_tree().paused
 	if get_tree().paused or people.is_empty() or exploration_map.visible:
 		return
 	day_cycle.advance(delta)
@@ -234,10 +246,17 @@ func _update_interaction_focus() -> void:
 		return
 	var target: Dictionary = {} if dialogue.is_active() or exploration_map.visible else world.interactions.nearest(people[selected])
 	world.interactions.highlight(target if not people[selected].is_busy() else {})
+	if is_instance_valid(climbing_sign):
+		climbing_sign.highlighted = not dialogue.is_active() and not exploration_map.visible and not people[selected].is_busy() and people[selected].position.distance_to(climbing_sign.position)<145
+		if climbing_sign.highlighted: world.interactions.highlight({})
+		climbing_sign.queue_redraw()
 	hud.queue_redraw()
 
 func _interact() -> void:
 	if not is_node_ready() or get_tree().paused or dialogue.is_active() or exploration_map.visible:
+		return
+	if is_instance_valid(climbing_sign) and not people[selected].is_busy() and people[selected].position.distance_to(climbing_sign.position)<145:
+		_enter_climbing()
 		return
 	hud.show_comment(world.interactions.interact(people[selected]))
 	_update_interaction_focus()
@@ -251,6 +270,121 @@ func _drop_item(owner: int, index: int) -> void:
 func _interaction_discovered(flag: String) -> void:
 	dialogue.flags[flag] = true
 	dialogue.flag_changed.emit(flag,true)
+
+func _setup_climbing_entrance() -> void:
+	climbing_sign = preload("res://scripts/climbing_trail_sign.gd").new()
+	climbing_sign.name = "ClimbingTrailEntrance"
+	# Place the entrance on free ground beside the existing granite lookout.
+	climbing_sign.position = world.interactions.find_drop_position(Vector2(4180,650))
+	if climbing_sign.position==Vector2.INF: climbing_sign.position = Vector2(4230,700)
+	world.actors.add_child(climbing_sign)
+	world.landmarks.append({"id":"climbing_approach","name":"Escalada · Penedo da Amizade","position":climbing_sign.position,"radius":220.0})
+	climbing_button = Button.new()
+	climbing_button.text = "Escalar o Penedo da Amizade"
+	climbing_button.position = Vector2(490,410)
+	climbing_button.size = Vector2(300,42)
+	climbing_button.add_theme_font_size_override("font_size",17)
+	climbing_button.add_theme_stylebox_override("normal",TejoPerson._box(Color("355b50"),8))
+	climbing_button.add_theme_stylebox_override("hover",TejoPerson._box(Color("527461"),8))
+	climbing_button.add_theme_color_override("font_color",Color("f2e6c7"))
+	climbing_button.pressed.connect(_enter_climbing)
+	hud.add_child(climbing_button)
+	climbing_button.hide()
+
+func _enter_climbing() -> void:
+	if dialogue.is_active() or exploration_map.visible or people.any(func(person): return person.jumping): return
+	get_tree().paused = false
+	hud.paused = false
+	climbing_button.hide()
+	walking_test_button.hide()
+	for person in people: person.velocity = Vector2.ZERO
+	if not is_instance_valid(climbing_scene):
+		climbing_scene = load("res://scenes/rock_climbing.tscn").instantiate()
+		get_tree().root.add_child(climbing_scene)
+		climbing_scene.return_requested.connect(_return_from_climbing)
+	else:
+		climbing_scene.show()
+		climbing_scene.process_mode = Node.PROCESS_MODE_ALWAYS
+		for child in climbing_scene.get_children():
+			if child is CanvasLayer: child.show()
+		climbing_scene.camera.make_current()
+	_suspend_exploration()
+
+func _suspend_exploration() -> void:
+	# Several forest children explicitly use PAUSABLE/ALWAYS, so suspending only
+	# their parent would leave wildlife, comments or gestures running off-screen.
+	suspended_exploration.clear()
+	for node in find_children("*","",true,false):
+		suspended_exploration.append({"node":node,"mode":node.process_mode})
+		node.process_mode = Node.PROCESS_MODE_DISABLED
+	hide()
+	for child in get_children():
+		if child is CanvasLayer: child.hide()
+	process_mode = Node.PROCESS_MODE_DISABLED
+
+func _return_from_climbing() -> void:
+	climbing_scene.hide()
+	climbing_scene.process_mode = Node.PROCESS_MODE_DISABLED
+	for child in climbing_scene.get_children():
+		if child is CanvasLayer: child.hide()
+	_resume_exploration()
+
+func _resume_exploration() -> void:
+	show()
+	for saved in suspended_exploration:
+		if is_instance_valid(saved.node): saved.node.process_mode = saved.mode
+	suspended_exploration.clear()
+	for child in get_children():
+		if child is CanvasLayer: child.show()
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	camera.make_current()
+	RenderingServer.set_default_clear_color(Color("304632"))
+
+func _setup_walking_test_entry() -> void:
+	walking_test_button = Button.new()
+	walking_test_button.name = "WalkingTestButton"
+	walking_test_button.text = "Testar caminhada · só chão"
+	walking_test_button.position = Vector2(490,466)
+	walking_test_button.size = Vector2(300,42)
+	walking_test_button.add_theme_font_size_override("font_size",17)
+	walking_test_button.add_theme_stylebox_override("normal",TejoPerson._box(Color("355b50"),8))
+	walking_test_button.add_theme_stylebox_override("hover",TejoPerson._box(Color("527461"),8))
+	walking_test_button.add_theme_color_override("font_color",Color("f2e6c7"))
+	walking_test_button.pressed.connect(_enter_walking_test)
+	hud.add_child(walking_test_button)
+	walking_test_button.hide()
+
+func _enter_walking_test() -> void:
+	if dialogue.is_active() or exploration_map.visible or people.any(func(person): return person.jumping): return
+	get_tree().paused = false
+	hud.paused = false
+	climbing_button.hide()
+	walking_test_button.hide()
+	for person in people: person.velocity = Vector2.ZERO
+	if not is_instance_valid(walking_test_scene):
+		walking_test_scene = load("res://scenes/walking_test.tscn").instantiate()
+		get_tree().root.add_child(walking_test_scene)
+		walking_test_scene.return_requested.connect(_return_from_walking_test)
+	else:
+		walking_test_scene.show()
+		walking_test_scene.process_mode = Node.PROCESS_MODE_ALWAYS
+		walking_test_scene.world.process_mode = Node.PROCESS_MODE_PAUSABLE
+		for child in walking_test_scene.get_children():
+			if child is CanvasLayer: child.show()
+		walking_test_scene.camera.make_current()
+	_suspend_exploration()
+
+func _return_from_walking_test() -> void:
+	walking_test_scene.hide()
+	walking_test_scene.process_mode = Node.PROCESS_MODE_DISABLED
+	walking_test_scene.world.process_mode = Node.PROCESS_MODE_DISABLED
+	for child in walking_test_scene.get_children():
+		if child is CanvasLayer: child.hide()
+	_resume_exploration()
+
+func _exit_tree() -> void:
+	if is_instance_valid(climbing_scene): climbing_scene.queue_free()
+	if is_instance_valid(walking_test_scene): walking_test_scene.queue_free()
 
 func _setup_input() -> void:
 	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"talk":[KEY_T],"map":[KEY_M],"swap":[KEY_TAB],"pause":[KEY_ESCAPE],"interact":[KEY_SPACE]}

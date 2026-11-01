@@ -1,0 +1,10 @@
+# Te — contrapeso ligeiro à frente da cintura
+
+Aplicado apenas ao Te a caminhar para sul: a mão que avança passa discretamente sobre a borda exterior dos calções, perto da cintura; o braço oposto recua junto à anca. Amplitude reduzida face à primeira proposta de contrabalanço. Sprites completos e estatura alinhada com a pose parada.
+
+Fonte final: edited.raw.png. Referência final: output/te-south-counterbalance/edited.raw.png, com redução da amplitude dos braços. first.raw.png e second.raw.png são tentativas descartadas. Preparação: tools/preview_te_counterbalance.cjs output/te-south-subtle-forward. Atlas ativo: assets/characters/open_world/te-south-subtle-forward.png. Validação: estatura parado/caminhar e teste gráfico dos personagens. Pré-visualização capturada no motor: no-jogo.gif.
+
+Modo: ferramenta integrada image_gen, edição com transparência. Pedido final:
+
+Precise arm-only edit of this reference. Keep the SAME advancing arm and SAME retreating arm in each of the four complete walking sprites. REDUCE THE EXISTING FORWARD ARM SWING BY HALF. The reference has correct alternating contralateral swing but too much amplitude. Straighten each bent elbow about halfway toward a relaxed hanging arm: lower the advancing hand, move it toward its same-side outside hip, until it only slightly overlaps the outer edge of the upper shorts. The advancing hand should remain just below shirt hem, low by waistband, not in front of abdomen. Preserve which arm is in front: TOP TWO screen-right arm forward, screen-left arm back; BOTTOM TWO screen-left arm forward, screen-right arm back. Do not reverse these. Retain small front/back depth motion, avoid sideways swaying/arms spread. Keep original full forearm thickness as shown here; do not make arms thinner. Small relaxed counterbalance only, no running arm pump. Preserve ALL other original pixels/appearance, head, face, hair, neck, torso, shoulder widths, shorts, leg poses, shoes, body proportions and height, 2x2 composition. Four complete intact sprites, transparent background, no labels or shadows.
+

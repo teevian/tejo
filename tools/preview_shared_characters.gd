@@ -43,8 +43,8 @@ func run() -> void:
 	scene.camera.zoom = Vector2(2,2)
 	scene.camera.reset_smoothing()
 	pose(Vector2.DOWN,false,0)
-	var version := "v14" if "--motion-v14" in OS.get_cmdline_user_args() else "v13" if "--motion-v13" in OS.get_cmdline_user_args() else "v12" if "--motion-v12" in OS.get_cmdline_user_args() else "v11"
-	var motion := "--motion-v14" in OS.get_cmdline_user_args() or "--motion-v13" in OS.get_cmdline_user_args() or "--motion-v12" in OS.get_cmdline_user_args() or "--motion-v11" in OS.get_cmdline_user_args()
+	var version := "v15" if "--motion-v15" in OS.get_cmdline_user_args() else "v14" if "--motion-v14" in OS.get_cmdline_user_args() else "v13" if "--motion-v13" in OS.get_cmdline_user_args() else "v12" if "--motion-v12" in OS.get_cmdline_user_args() else "v11"
+	var motion := "--motion-v15" in OS.get_cmdline_user_args() or "--motion-v14" in OS.get_cmdline_user_args() or "--motion-v13" in OS.get_cmdline_user_args() or "--motion-v12" in OS.get_cmdline_user_args() or "--motion-v11" in OS.get_cmdline_user_args()
 	await capture("res://output/character-motion-%s-scene.png"%version if motion else ("res://output/character-neck-v10-scene.png" if "--neck-v10" in OS.get_cmdline_user_args() else "res://output/characters-shared-rig-front.png"))
 	for phase in 4:
 		pose(Vector2.RIGHT,true,float(phase)/4.0)

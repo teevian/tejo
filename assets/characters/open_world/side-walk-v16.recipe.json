@@ -1,0 +1,182 @@
+{
+  "version": 16,
+  "scope": "lateral only",
+  "cell": [
+    400,
+    560
+  ],
+  "ground": [
+    200,
+    520
+  ],
+  "head": "exact v15 neutral face and neck through y145",
+  "gait": "8 complete painted poses, rigid whole-sprite rendering",
+  "characters": {
+    "te": [
+      {
+        "frame": 0,
+        "bounds": {
+          "left": 140,
+          "top": 40,
+          "width": 121,
+          "height": 480
+        }
+      },
+      {
+        "frame": 1,
+        "bounds": {
+          "left": 91,
+          "top": 40,
+          "width": 218,
+          "height": 480
+        }
+      },
+      {
+        "frame": 2,
+        "bounds": {
+          "left": 112,
+          "top": 40,
+          "width": 176,
+          "height": 480
+        }
+      },
+      {
+        "frame": 3,
+        "bounds": {
+          "left": 117,
+          "top": 40,
+          "width": 153,
+          "height": 480
+        }
+      },
+      {
+        "frame": 4,
+        "bounds": {
+          "left": 112,
+          "top": 40,
+          "width": 188,
+          "height": 480
+        }
+      },
+      {
+        "frame": 5,
+        "bounds": {
+          "left": 68,
+          "top": 40,
+          "width": 238,
+          "height": 480
+        }
+      },
+      {
+        "frame": 6,
+        "bounds": {
+          "left": 111,
+          "top": 40,
+          "width": 190,
+          "height": 480
+        }
+      },
+      {
+        "frame": 7,
+        "bounds": {
+          "left": 123,
+          "top": 40,
+          "width": 140,
+          "height": 480
+        }
+      },
+      {
+        "frame": 8,
+        "bounds": {
+          "left": 91,
+          "top": 40,
+          "width": 215,
+          "height": 480
+        }
+      }
+    ],
+    "jo": [
+      {
+        "frame": 0,
+        "bounds": {
+          "left": 149,
+          "top": 40,
+          "width": 106,
+          "height": 480
+        }
+      },
+      {
+        "frame": 1,
+        "bounds": {
+          "left": 84,
+          "top": 40,
+          "width": 262,
+          "height": 480
+        }
+      },
+      {
+        "frame": 2,
+        "bounds": {
+          "left": 121,
+          "top": 40,
+          "width": 165,
+          "height": 480
+        }
+      },
+      {
+        "frame": 3,
+        "bounds": {
+          "left": 149,
+          "top": 40,
+          "width": 127,
+          "height": 480
+        }
+      },
+      {
+        "frame": 4,
+        "bounds": {
+          "left": 123,
+          "top": 40,
+          "width": 172,
+          "height": 480
+        }
+      },
+      {
+        "frame": 5,
+        "bounds": {
+          "left": 72,
+          "top": 40,
+          "width": 265,
+          "height": 480
+        }
+      },
+      {
+        "frame": 6,
+        "bounds": {
+          "left": 129,
+          "top": 40,
+          "width": 162,
+          "height": 480
+        }
+      },
+      {
+        "frame": 7,
+        "bounds": {
+          "left": 149,
+          "top": 40,
+          "width": 134,
+          "height": 480
+        }
+      },
+      {
+        "frame": 8,
+        "bounds": {
+          "left": 116,
+          "top": 40,
+          "width": 197,
+          "height": 480
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "version": 17,
+  "character": "Te",
+  "approvedPreview": "output/te-propostas-rpg/te-escolhido-antebracos-laterais-v2.png",
+  "cell": [
+    400,
+    560
+  ],
+  "columns": 7,
+  "walkFrames": 6,
+  "sourceHeight": 480,
+  "ground": [
+    200,
+    520
+  ],
+  "directions": [
+    "down",
+    "right (mirror for left)"
+  ],
+  "wholePaintings": true,
+  "poses": [
+    {
+      "row": 0,
+      "frame": 0,
+      "source": {
+        "left": 359,
+        "top": 29,
+        "width": 337,
+        "height": 896
+      },
+      "scale": 0.5381165919282511,
+      "placement": [
+        109,
+        40
+      ],
+      "bounds": {
+        "left": 110,
+        "top": 42,
+        "width": 179,
+        "height": 478
+      }
+    },
+    {
+      "row": 0,
+      "frame": 1,
+      "source": {
+        "left": 74,
+        "top": 47,
+        "width": 184,
+        "height": 442
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        99,
+        38
+      ],
+      "bounds": {
+        "left": 103,
+        "top": 43,
+        "width": 195,
+        "height": 477
+      }
+    },
+    {
+      "row": 0,
+      "frame": 2,
+      "source": {
+        "left": 324,
+        "top": 48,
+        "width": 179,
+        "height": 444
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        104,
+        36
+      ],
+      "bounds": {
+        "left": 108,
+        "top": 41,
+        "width": 189,
+        "height": 479
+      }
+    },
+    {
+      "row": 0,
+      "frame": 3,
+      "source": {
+        "left": 569,
+        "top": 47,
+        "width": 172,
+        "height": 441
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        106,
+        40
+      ],
+      "bounds": {
+        "left": 110,
+        "top": 44,
+        "width": 181,
+        "height": 476
+      }
+    },
+    {
+      "row": 0,
+      "frame": 4,
+      "source": {
+        "left": 818,
+        "top": 49,
+        "width": 178,
+        "height": 443
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        102,
+        37
+      ],
+      "bounds": {
+        "left": 106,
+        "top": 42,
+        "width": 188,
+        "height": 478
+      }
+    },
+    {
+      "row": 0,
+      "frame": 5,
+      "source": {
+        "left": 1067,
+        "top": 50,
+        "width": 182,
+        "height": 442
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        105,
+        39
+      ],
+      "bounds": {
+        "left": 109,
+        "top": 44,
+        "width": 192,
+        "height": 476
+      }
+    },
+    {
+      "row": 0,
+      "frame": 6,
+      "source": {
+        "left": 1318,
+        "top": 47,
+        "width": 182,
+        "height": 438
+      },
+      "scale": 1.095890410958904,
+      "placement": [
+        105,
+        43
+      ],
+      "bounds": {
+        "left": 109,
+        "top": 48,
+        "width": 193,
+        "height": 472
+      }
+    },
+    {
+      "row": 1,
+      "frame": 0,
+      "source": {
+        "left": 945,
+        "top": 30,
+        "width": 236,
+        "height": 901
+      },
+      "scale": 0.5351170568561873,
+      "placement": [
+        137,
+        39
+      ],
+      "bounds": {
+        "left": 138,
+        "top": 41,
+        "width": 123,
+        "height": 479
+      }
+    },
+    {
+      "row": 1,
+      "frame": 1,
+      "source": {
+        "left": 60,
+        "top": 523,
+        "width": 238,
+        "height": 414
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        45,
+        40
+      ],
+      "bounds": {
+        "left": 49,
+        "top": 46,
+        "width": 271,
+        "height": 474
+      }
+    },
+    {
+      "row": 1,
+      "frame": 2,
+      "source": {
+        "left": 320,
+        "top": 525,
+        "width": 216,
+        "height": 414
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        54,
+        39
+      ],
+      "bounds": {
+        "left": 57,
+        "top": 44,
+        "width": 246,
+        "height": 476
+      }
+    },
+    {
+      "row": 1,
+      "frame": 3,
+      "source": {
+        "left": 565,
+        "top": 523,
+        "width": 220,
+        "height": 416
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        52,
+        37
+      ],
+      "bounds": {
+        "left": 55,
+        "top": 43,
+        "width": 252,
+        "height": 477
+      }
+    },
+    {
+      "row": 1,
+      "frame": 4,
+      "source": {
+        "left": 809,
+        "top": 524,
+        "width": 221,
+        "height": 425
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        58,
+        26
+      ],
+      "bounds": {
+        "left": 61,
+        "top": 31,
+        "width": 253,
+        "height": 489
+      }
+    },
+    {
+      "row": 1,
+      "frame": 5,
+      "source": {
+        "left": 1061,
+        "top": 526,
+        "width": 226,
+        "height": 417
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        52,
+        37
+      ],
+      "bounds": {
+        "left": 56,
+        "top": 41,
+        "width": 257,
+        "height": 479
+      }
+    },
+    {
+      "row": 1,
+      "frame": 6,
+      "source": {
+        "left": 1302,
+        "top": 525,
+        "width": 222,
+        "height": 415
+      },
+      "scale": 1.166464155528554,
+      "placement": [
+        58,
+        38
+      ],
+      "bounds": {
+        "left": 61,
+        "top": 43,
+        "width": 253,
+        "height": 477
+      }
+    }
+  ]
+}

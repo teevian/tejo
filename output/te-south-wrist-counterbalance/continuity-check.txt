@@ -1,0 +1,54 @@
+{
+  "file": "/Users/tmvaz/github/tejo/assets/characters/open_world/te-south-wrist-counterbalance.png",
+  "forearmWidthRatios": [
+    1.075,
+    1.0476190476190477
+  ],
+  "measurements": [
+    {
+      "frame": 1,
+      "arms": [
+        43,
+        42
+      ],
+      "crown": 82,
+      "ground": 526,
+      "headCenter": 199.5,
+      "headWidth": 131
+    },
+    {
+      "frame": 2,
+      "arms": [
+        42,
+        43
+      ],
+      "crown": 82,
+      "ground": 526,
+      "headCenter": 199,
+      "headWidth": 130
+    },
+    {
+      "frame": 3,
+      "arms": [
+        41,
+        44
+      ],
+      "crown": 82,
+      "ground": 520,
+      "headCenter": 198.5,
+      "headWidth": 133
+    },
+    {
+      "frame": 4,
+      "arms": [
+        40,
+        42
+      ],
+      "crown": 82,
+      "ground": 519,
+      "headCenter": 198.5,
+      "headWidth": 133
+    }
+  ]
+}
+PASS: level head, consistent forearms and head size, bounded foot stride depth

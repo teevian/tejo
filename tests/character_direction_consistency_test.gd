@@ -67,11 +67,11 @@ func run() -> void:
 						if image.get_pixelv(origin+Vector2i(x,y)).a>0.5:
 							top = mini(top,y)
 							bottom = maxi(bottom,y)
-				tops.append(top)
 				floors.append(bottom)
 				check(bottom>top,"Missing rendered character")
 				var row := Art.direction_row(DIRECTIONS[direction])
-				var limit := floori(200-Art.HEIGHTS[kind]+140*Art.pose_scale(kind,row))
+				tops.append(top)
+				var limit := top+floori(45*Art.pose_scale(kind,row))
 				var left := CELL.x
 				var right := -1
 				for y in range(top,limit):
@@ -80,22 +80,21 @@ func run() -> void:
 							left = mini(left,x)
 							right = maxi(right,x)
 				check(absf((left+right)*.5-80)<1.6,"Rendered head position jumps: person %d direction %d phase %d"%[kind,direction,frame])
-			check(tops.max()-tops.min()<=2,"Rendered height changes with direction: person %d phase %d"%[kind,frame])
+
+			# The approved whole Te paintings include up to 2.5% natural height
+			# variation; avoid forcing them into a fixed bust to match old atlas keys.
+			var height_tolerance := ceili(Art.HEIGHTS[kind]*.025) if kind==0 else 2
+			check(tops.max()-tops.min()<=height_tolerance,"Rendered height changes with direction: person %d phase %d"%[kind,frame])
 			check(floors.max()-floors.min()<=1,"Rendered ground baseline moves with direction")
 		for direction in 8:
-			var heads: Array[Image] = []
-			for frame in range(1,9):
-				var origin := Vector2i(frame,kind*8+direction)*CELL+Vector2i(32,36)
-				var head := image.get_region(Rect2i(origin,Vector2i(96,44)))
-				var state := int((frame-1)/4)
-				if frame==1 or frame==5:
-					heads.append(head)
-				else:
-					# Atlas UV rounding can differ by a colour level between cells.
-					check(mean_difference(head,heads[state])<0.0001,"Walking added a third rendered head state")
-			var difference := mean_difference(heads[0],heads[1])
-			check(difference>0.0001 and difference<0.025,"The two rendered head states must differ only very slightly")
-	image.save_png("res://output/character-motion-v14-directions.png")
+			# The selected Te drawings contain complete independently painted faces.
+			# Exact new texture/idle/mirror matching is covered by te_rpg_integration_test.
+			if kind==0 and Art.TeRpg.supports(Art.direction_row(DIRECTIONS[direction])): continue
+			var first := image.get_region(Rect2i(Vector2i(1,kind*8+direction)*CELL+Vector2i(32,30),Vector2i(96,37)))
+			for frame in range(2,9):
+				var head := image.get_region(Rect2i(Vector2i(frame,kind*8+direction)*CELL+Vector2i(32,30),Vector2i(96,37)))
+				check(mean_difference(head,first)<0.0001,"Approved face must stay steady between walking phases")
+	image.save_png("res://output/sprites-v15/direcoes-no-motor.png")
 	if not failed:
-		print("PASS: rendered height, head position and ground baseline agree across eight directions; exactly two walking head images")
+		print("PASS: rendered height, head position and ground baseline agree across eight directions; steady original faces in unchanged directions; whole approved Te paintings in down/lateral")
 	quit(1 if failed else 0)

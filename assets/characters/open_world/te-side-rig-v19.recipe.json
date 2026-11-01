@@ -1,0 +1,16 @@
+{
+  "version": 19,
+  "original": "te-rpg-v17.png row 1 idle",
+  "underpainting": {
+    "left": 362,
+    "top": 91,
+    "width": 337,
+    "height": 1276
+  },
+  "scale": 0.37735849056603776,
+  "placement": [
+    138,
+    39
+  ],
+  "geometry": "Rigid bone transforms: no scale, no independently generated walking frames"
+}

@@ -1,0 +1,332 @@
+{
+  "version": 18,
+  "character": "Te",
+  "cell": [
+    400,
+    560
+  ],
+  "columns": 7,
+  "walkFrames": 6,
+  "sourceHeight": 480,
+  "ground": [
+    200,
+    520
+  ],
+  "directions": [
+    "down",
+    "right (mirror for left)"
+  ],
+  "phases": [
+    "idle",
+    "contact_a",
+    "passing_a",
+    "reaching_b",
+    "contact_b",
+    "passing_b",
+    "reaching_a"
+  ],
+  "poses": [
+    {
+      "row": 0,
+      "frame": 0,
+      "phase": "idle",
+      "bounds": {
+        "left": 110,
+        "top": 42,
+        "width": 179,
+        "height": 478
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 0,
+        "frame": 0
+      },
+      "preserved": true
+    },
+    {
+      "row": 0,
+      "frame": 1,
+      "phase": "contact_a",
+      "bounds": {
+        "left": 103,
+        "top": 43,
+        "width": 195,
+        "height": 477
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 0,
+        "frame": 1
+      },
+      "preserved": true
+    },
+    {
+      "row": 0,
+      "frame": 2,
+      "phase": "passing_a",
+      "source": {
+        "file": "te-rpg-v18-down-pass.raw.png",
+        "left": 313,
+        "top": 31,
+        "width": 379,
+        "height": 947,
+        "figure": 0,
+        "mirrored": false
+      },
+      "scale": 0.5090137857900318,
+      "placement": [
+        101,
+        40
+      ],
+      "bounds": {
+        "left": 102,
+        "top": 42,
+        "width": 191,
+        "height": 478
+      }
+    },
+    {
+      "row": 0,
+      "frame": 3,
+      "phase": "reaching_b",
+      "source": {
+        "file": "te-rpg-v18-down-reach.raw.png",
+        "left": 313,
+        "top": 19,
+        "width": 364,
+        "height": 955,
+        "figure": 0,
+        "mirrored": true
+      },
+      "scale": 0.5047318611987381,
+      "placement": [
+        108,
+        39
+      ],
+      "bounds": {
+        "left": 109,
+        "top": 41,
+        "width": 182,
+        "height": 479
+      }
+    },
+    {
+      "row": 0,
+      "frame": 4,
+      "phase": "contact_b",
+      "bounds": {
+        "left": 110,
+        "top": 44,
+        "width": 181,
+        "height": 476
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 0,
+        "frame": 3
+      },
+      "preserved": true
+    },
+    {
+      "row": 0,
+      "frame": 5,
+      "phase": "passing_b",
+      "source": {
+        "file": "te-rpg-v18-down-pass.raw.png",
+        "left": 833,
+        "top": 31,
+        "width": 385,
+        "height": 946,
+        "figure": 1,
+        "mirrored": false
+      },
+      "scale": 0.5095541401273885,
+      "placement": [
+        104,
+        39
+      ],
+      "bounds": {
+        "left": 105,
+        "top": 40,
+        "width": 194,
+        "height": 480
+      }
+    },
+    {
+      "row": 0,
+      "frame": 6,
+      "phase": "reaching_a",
+      "source": {
+        "file": "te-rpg-v18-down-reach.raw.png",
+        "left": 858,
+        "top": 19,
+        "width": 366,
+        "height": 955,
+        "figure": 1,
+        "mirrored": false
+      },
+      "scale": 0.5047318611987381,
+      "placement": [
+        105,
+        39
+      ],
+      "bounds": {
+        "left": 106,
+        "top": 41,
+        "width": 183,
+        "height": 479
+      }
+    },
+    {
+      "row": 1,
+      "frame": 0,
+      "phase": "idle",
+      "bounds": {
+        "left": 138,
+        "top": 41,
+        "width": 123,
+        "height": 479
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 1,
+        "frame": 0
+      },
+      "preserved": true
+    },
+    {
+      "row": 1,
+      "frame": 1,
+      "phase": "contact_a",
+      "bounds": {
+        "left": 49,
+        "top": 46,
+        "width": 271,
+        "height": 474
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 1,
+        "frame": 1
+      },
+      "preserved": true
+    },
+    {
+      "row": 1,
+      "frame": 2,
+      "phase": "passing_a",
+      "source": {
+        "file": "te-rpg-v18-side-pass.raw.png",
+        "left": 882,
+        "top": 30,
+        "width": 348,
+        "height": 920,
+        "figure": 1,
+        "mirrored": false
+      },
+      "scale": 0.5240174672489083,
+      "placement": [
+        102,
+        39
+      ],
+      "bounds": {
+        "left": 103,
+        "top": 41,
+        "width": 180,
+        "height": 479
+      }
+    },
+    {
+      "row": 1,
+      "frame": 3,
+      "phase": "reaching_b",
+      "source": {
+        "file": "te-rpg-v18-side-reach.raw.png",
+        "left": 238,
+        "top": 37,
+        "width": 437,
+        "height": 916,
+        "figure": 0,
+        "mirrored": false
+      },
+      "scale": 0.5263157894736842,
+      "placement": [
+        104,
+        39
+      ],
+      "bounds": {
+        "left": 105,
+        "top": 41,
+        "width": 228,
+        "height": 479
+      }
+    },
+    {
+      "row": 1,
+      "frame": 4,
+      "phase": "contact_b",
+      "bounds": {
+        "left": 61,
+        "top": 31,
+        "width": 253,
+        "height": 489
+      },
+      "source": {
+        "atlas": "te-rpg-v17.png",
+        "row": 1,
+        "frame": 4
+      },
+      "preserved": true
+    },
+    {
+      "row": 1,
+      "frame": 5,
+      "phase": "passing_b",
+      "source": {
+        "file": "te-rpg-v18-side-pass.raw.png",
+        "left": 327,
+        "top": 30,
+        "width": 330,
+        "height": 902,
+        "figure": 0,
+        "mirrored": false
+      },
+      "scale": 0.534521158129176,
+      "placement": [
+        123,
+        39
+      ],
+      "bounds": {
+        "left": 124,
+        "top": 40,
+        "width": 173,
+        "height": 480
+      }
+    },
+    {
+      "row": 1,
+      "frame": 6,
+      "phase": "reaching_a",
+      "source": {
+        "file": "te-rpg-v18-side-reach.raw.png",
+        "left": 916,
+        "top": 36,
+        "width": 455,
+        "height": 907,
+        "figure": 1,
+        "mirrored": false
+      },
+      "scale": 0.53156146179402,
+      "placement": [
+        98,
+        40
+      ],
+      "bounds": {
+        "left": 100,
+        "top": 42,
+        "width": 239,
+        "height": 478
+      }
+    }
+  ]
+}

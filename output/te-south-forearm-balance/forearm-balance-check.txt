@@ -1,0 +1,90 @@
+{
+  "file": "/Users/tmvaz/github/tejo/assets/characters/open_world/te-south-forearm-balance.png",
+  "handRanges": [
+    11,
+    10
+  ],
+  "elbowRanges": [
+    4,
+    4
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "shoulders": [
+        217,
+        215
+      ],
+      "arms": [
+        {
+          "handBottom": 386,
+          "handX": 117,
+          "elbowX": 117
+        },
+        {
+          "handBottom": 376,
+          "handX": 255,
+          "elbowX": 265
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "shoulders": [
+        219,
+        219
+      ],
+      "arms": [
+        {
+          "handBottom": 380,
+          "handX": 119,
+          "elbowX": 115.5
+        },
+        {
+          "handBottom": 380,
+          "handX": 266,
+          "elbowX": 269
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "shoulders": [
+        216,
+        218
+      ],
+      "arms": [
+        {
+          "handBottom": 375,
+          "handX": 126,
+          "elbowX": 118.5
+        },
+        {
+          "handBottom": 386,
+          "handX": 264,
+          "elbowX": 266.5
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "shoulders": [
+        217,
+        217
+      ],
+      "arms": [
+        {
+          "handBottom": 380,
+          "handX": 116,
+          "elbowX": 114.5
+        },
+        {
+          "handBottom": 380,
+          "handX": 265,
+          "elbowX": 267.5
+        }
+      ]
+    }
+  ]
+}
+PASS: both forearms alternate through passing poses, shoulders level and elbows stable

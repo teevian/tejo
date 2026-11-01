@@ -23,6 +23,7 @@ func add_pose(view: SubViewport, kind: int, direction: Vector2, frame: int, cell
 	person.facing = direction
 	person.visual_facing = direction
 	person.moving = frame>0
+	person.velocity = direction*235 if frame>0 else Vector2.ZERO
 	person.walked = maxf(0,float(frame-1))*Art.STRIDE/Art.GAIT_FRAMES
 	person.position = Vector2(cell*CELL)+Vector2(80,220)
 	# Exercise the real character and its body without movement or a game world.
