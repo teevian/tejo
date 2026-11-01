@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "changedPixels": 22650,
+  "changesOutsideLocalRegion": 0,
+  "measurements": [
+    {
+      "frame": 1,
+      "elbowShift": -3,
+      "handAndForearmPreserved": true
+    },
+    {
+      "frame": 2,
+      "elbowShift": 1,
+      "handAndForearmPreserved": true
+    },
+    {
+      "frame": 3,
+      "elbowShift": 3,
+      "handAndForearmPreserved": true
+    },
+    {
+      "frame": 4,
+      "elbowShift": -1,
+      "handAndForearmPreserved": true
+    }
+  ]
+}

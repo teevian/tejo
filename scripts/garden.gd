@@ -28,8 +28,10 @@ var climbing_button: Button
 var walking_test_button: Button
 var walking_test_scene: Node2D
 var suspended_exploration: Array[Dictionary] = []
+var _initialization_complete := false
 
 func _ready() -> void:
+	_initialization_complete = false
 	_setup_input()
 	RenderingServer.set_default_clear_color(Color("304632"))
 	world = World.new()
@@ -98,6 +100,7 @@ func _ready() -> void:
 	_setup_climbing_entrance()
 	_setup_walking_test_entry()
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	_initialization_complete = true
 
 func _toggle_debug_time() -> void:
 	day_cycle.minutes = 1380.0 if world.wildlife.is_day() else 480.0
@@ -108,8 +111,9 @@ func _toggle_debug_time() -> void:
 	hud._sync_debug_time_button()
 
 func _input(event: InputEvent) -> void:
-	# Child initialization can pump input before the map and HUD exist.
-	if not is_node_ready() or event.is_echo():
+	# Godot marks this node ready before _ready() returns. Rendering child nodes
+	# can pump input while the world, map and HUD are still being constructed.
+	if not _initialization_complete or event.is_echo():
 		return
 	if exploration_map.visible:
 		if event.is_action_pressed("map") or event.is_action_pressed("pause"):
@@ -218,6 +222,8 @@ func _camera_target() -> Vector2:
 	return (point-Vector2(0,Person.Art.HEIGHTS[selected]*0.52)).clamp(Vector2(640,360),WORLD_SIZE-Vector2(640,360))
 
 func _process(delta: float) -> void:
+	if not _initialization_complete:
+		return
 	if is_instance_valid(climbing_button): climbing_button.visible = get_tree().paused
 	if is_instance_valid(walking_test_button): walking_test_button.visible = get_tree().paused
 	if get_tree().paused or people.is_empty() or exploration_map.visible:
@@ -253,7 +259,7 @@ func _update_interaction_focus() -> void:
 	hud.queue_redraw()
 
 func _interact() -> void:
-	if not is_node_ready() or get_tree().paused or dialogue.is_active() or exploration_map.visible:
+	if not _initialization_complete or get_tree().paused or dialogue.is_active() or exploration_map.visible:
 		return
 	if is_instance_valid(climbing_sign) and not people[selected].is_busy() and people[selected].position.distance_to(climbing_sign.position)<145:
 		_enter_climbing()

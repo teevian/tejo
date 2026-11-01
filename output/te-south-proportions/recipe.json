@@ -1,0 +1,59 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-natural-arms.png",
+  "canvas": [
+    2000,
+    560
+  ],
+  "completePaintings": true,
+  "registration": "whole-pose height and head centre; uniform scaling only",
+  "frames": [
+    {
+      "frame": 1,
+      "uniformScale": 0.7419898819561551,
+      "placement": [
+        100,
+        80
+      ],
+      "wholePose": true,
+      "oldShoulderSpan": 170,
+      "newShoulderSpan": 158,
+      "headWidth": 129
+    },
+    {
+      "frame": 2,
+      "uniformScale": 0.7391304347826086,
+      "placement": [
+        100,
+        80
+      ],
+      "wholePose": true,
+      "oldShoulderSpan": 170,
+      "newShoulderSpan": 158,
+      "headWidth": 130
+    },
+    {
+      "frame": 3,
+      "uniformScale": 0.755632582322357,
+      "placement": [
+        97,
+        80
+      ],
+      "wholePose": true,
+      "oldShoulderSpan": 170,
+      "newShoulderSpan": 161,
+      "headWidth": 132
+    },
+    {
+      "frame": 4,
+      "uniformScale": 0.7517361111111112,
+      "placement": [
+        101,
+        80
+      ],
+      "wholePose": true,
+      "oldShoulderSpan": 170,
+      "newShoulderSpan": 159,
+      "headWidth": 132
+    }
+  ]
+}

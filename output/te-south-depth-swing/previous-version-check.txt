@@ -1,0 +1,109 @@
+{
+  "file": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-anchored-arms.png",
+  "elbowDrift": [
+    0,
+    0
+  ],
+  "contourDrift": [
+    0,
+    0
+  ],
+  "forwardInwardOffsets": [
+    3,
+    4
+  ],
+  "forwardProjectedAngles": [
+    3.3664606634298013,
+    4.573921259900861
+  ],
+  "rearWidths": [
+    28,
+    27
+  ],
+  "passingWidths": [
+    27,
+    27
+  ],
+  "frames": [
+    [
+      {
+        "elbowX": 116,
+        "handX": 115,
+        "handY": 373,
+        "handBottom": 385,
+        "inwardOffset": -1,
+        "projectedAngle": 0.8303154862580109,
+        "forearmWidth": 28
+      },
+      {
+        "elbowX": 266,
+        "handX": 262,
+        "handY": 354,
+        "handBottom": 366,
+        "inwardOffset": 4,
+        "projectedAngle": 4.573921259900861,
+        "forearmWidth": 33
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 117,
+        "handY": 367,
+        "handBottom": 379,
+        "inwardOffset": 1,
+        "projectedAngle": 0.9093804491991414,
+        "forearmWidth": 27
+      },
+      {
+        "elbowX": 266,
+        "handX": 266,
+        "handY": 366,
+        "handBottom": 378,
+        "inwardOffset": 0,
+        "projectedAngle": 0,
+        "forearmWidth": 27
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 119,
+        "handY": 355,
+        "handBottom": 366,
+        "inwardOffset": 3,
+        "projectedAngle": 3.3664606634298013,
+        "forearmWidth": 35
+      },
+      {
+        "elbowX": 266,
+        "handX": 265,
+        "handY": 373,
+        "handBottom": 385,
+        "inwardOffset": 1,
+        "projectedAngle": 0.8303154862580109,
+        "forearmWidth": 27
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 118,
+        "handY": 367,
+        "handBottom": 379,
+        "inwardOffset": 2,
+        "projectedAngle": 1.8183029644518331,
+        "forearmWidth": 27
+      },
+      {
+        "elbowX": 266,
+        "handX": 265,
+        "handY": 366,
+        "handBottom": 378,
+        "inwardOffset": 1,
+        "projectedAngle": 0.9240453527727062,
+        "forearmWidth": 27
+      }
+    ]
+  ]
+}

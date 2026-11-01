@@ -1,0 +1,1 @@
+PASS: idle and all pixels above row 310 and below row 404 preserved exactly

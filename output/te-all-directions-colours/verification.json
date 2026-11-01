@@ -1,0 +1,455 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-walk-v14.png",
+  "destination": "/Users/teevian/github/tejo/assets/characters/open_world/te-walk-v14-palette.png",
+  "dimensions": [
+    7200,
+    5600
+  ],
+  "shirtAndShoeTarget": [
+    53,
+    52,
+    53
+  ],
+  "shortsTarget": [
+    193,
+    192,
+    194
+  ],
+  "samples": [
+    null,
+    {
+      "shirt": 63.4882,
+      "shorts": 209.67159999999998,
+      "shoes": 52.072199999999995,
+      "soles": 184.4974
+    },
+    {
+      "shirt": 62.2756,
+      "shorts": 204.0968,
+      "shoes": 51.9318,
+      "soles": 188.996
+    },
+    {
+      "shirt": 62.9908,
+      "shorts": 213.53119999999998,
+      "shoes": 51.004,
+      "soles": 182
+    },
+    {
+      "shirt": 63.416000000000004,
+      "shorts": 208.0246,
+      "shoes": 48.072199999999995,
+      "soles": 180.28079999999997
+    }
+  ],
+  "verification": {
+    "alphaChanges": 0,
+    "outsideMaterialRGBChanges": 0,
+    "changedPixels": 3476618,
+    "sourceSHA256": "ad953e6cabe7d543c3bbbf7510ba7d427675cfdee8bca8279332ce6f27479b70",
+    "outputSHA256": "724a1a99dc22157eebf227837957f9e92ba52a8e8ab394c56e6cfc085f8bfdbd",
+    "roundTripAlphaChanges": 0,
+    "headAndFaceRGBChanges": 0,
+    "strongWarmSkinRGBChanges": 0,
+    "originalSouthRowRGBChanges": 0,
+    "onlyAtlasReferenceChanged": true
+  },
+  "frames": [
+    {
+      "row": 1,
+      "frame": 0,
+      "index": 9,
+      "counts": {
+        "shirt": 58574,
+        "shorts": 20663,
+        "shoes": 20923,
+        "soles": 3309
+      }
+    },
+    {
+      "row": 1,
+      "frame": 1,
+      "index": 10,
+      "counts": {
+        "shirt": 58900,
+        "shorts": 12873,
+        "shoes": 16958,
+        "soles": 3185
+      }
+    },
+    {
+      "row": 1,
+      "frame": 2,
+      "index": 11,
+      "counts": {
+        "shirt": 58900,
+        "shorts": 12873,
+        "shoes": 16958,
+        "soles": 3185
+      }
+    },
+    {
+      "row": 1,
+      "frame": 3,
+      "index": 12,
+      "counts": {
+        "shirt": 58620,
+        "shorts": 16588,
+        "shoes": 17374,
+        "soles": 2846
+      }
+    },
+    {
+      "row": 1,
+      "frame": 4,
+      "index": 13,
+      "counts": {
+        "shirt": 58620,
+        "shorts": 16588,
+        "shoes": 17374,
+        "soles": 2846
+      }
+    },
+    {
+      "row": 1,
+      "frame": 5,
+      "index": 14,
+      "counts": {
+        "shirt": 62110,
+        "shorts": 15276,
+        "shoes": 20518,
+        "soles": 3767
+      }
+    },
+    {
+      "row": 1,
+      "frame": 6,
+      "index": 15,
+      "counts": {
+        "shirt": 62110,
+        "shorts": 15276,
+        "shoes": 20518,
+        "soles": 3767
+      }
+    },
+    {
+      "row": 1,
+      "frame": 7,
+      "index": 16,
+      "counts": {
+        "shirt": 59691,
+        "shorts": 16776,
+        "shoes": 14535,
+        "soles": 1791
+      }
+    },
+    {
+      "row": 1,
+      "frame": 8,
+      "index": 17,
+      "counts": {
+        "shirt": 59691,
+        "shorts": 16776,
+        "shoes": 14535,
+        "soles": 1791
+      }
+    },
+    {
+      "row": 2,
+      "frame": 0,
+      "index": 18,
+      "counts": {
+        "shirt": 34794,
+        "shorts": 8130,
+        "shoes": 17543,
+        "soles": 2656
+      }
+    },
+    {
+      "row": 2,
+      "frame": 1,
+      "index": 19,
+      "counts": {
+        "shirt": 33307,
+        "shorts": 11850,
+        "shoes": 22597,
+        "soles": 5715
+      }
+    },
+    {
+      "row": 2,
+      "frame": 2,
+      "index": 20,
+      "counts": {
+        "shirt": 33307,
+        "shorts": 11850,
+        "shoes": 22597,
+        "soles": 5715
+      }
+    },
+    {
+      "row": 2,
+      "frame": 3,
+      "index": 21,
+      "counts": {
+        "shirt": 36440,
+        "shorts": 12613,
+        "shoes": 22137,
+        "soles": 3845
+      }
+    },
+    {
+      "row": 2,
+      "frame": 4,
+      "index": 22,
+      "counts": {
+        "shirt": 36440,
+        "shorts": 12613,
+        "shoes": 22137,
+        "soles": 3845
+      }
+    },
+    {
+      "row": 2,
+      "frame": 5,
+      "index": 23,
+      "counts": {
+        "shirt": 36425,
+        "shorts": 27447,
+        "shoes": 23027,
+        "soles": 4868
+      }
+    },
+    {
+      "row": 2,
+      "frame": 6,
+      "index": 24,
+      "counts": {
+        "shirt": 36425,
+        "shorts": 27447,
+        "shoes": 23027,
+        "soles": 4868
+      }
+    },
+    {
+      "row": 2,
+      "frame": 7,
+      "index": 25,
+      "counts": {
+        "shirt": 33614,
+        "shorts": 17193,
+        "shoes": 23085,
+        "soles": 3647
+      }
+    },
+    {
+      "row": 2,
+      "frame": 8,
+      "index": 26,
+      "counts": {
+        "shirt": 33614,
+        "shorts": 17193,
+        "shoes": 23085,
+        "soles": 3647
+      }
+    },
+    {
+      "row": 3,
+      "frame": 0,
+      "index": 27,
+      "counts": {
+        "shirt": 56425,
+        "shorts": 19990,
+        "shoes": 16603,
+        "soles": 3691
+      }
+    },
+    {
+      "row": 3,
+      "frame": 1,
+      "index": 28,
+      "counts": {
+        "shirt": 56801,
+        "shorts": 13816,
+        "shoes": 13680,
+        "soles": 2922
+      }
+    },
+    {
+      "row": 3,
+      "frame": 2,
+      "index": 29,
+      "counts": {
+        "shirt": 56801,
+        "shorts": 13816,
+        "shoes": 13680,
+        "soles": 2922
+      }
+    },
+    {
+      "row": 3,
+      "frame": 3,
+      "index": 30,
+      "counts": {
+        "shirt": 56837,
+        "shorts": 16519,
+        "shoes": 19937,
+        "soles": 3538
+      }
+    },
+    {
+      "row": 3,
+      "frame": 4,
+      "index": 31,
+      "counts": {
+        "shirt": 56837,
+        "shorts": 16519,
+        "shoes": 19937,
+        "soles": 3538
+      }
+    },
+    {
+      "row": 3,
+      "frame": 5,
+      "index": 32,
+      "counts": {
+        "shirt": 58370,
+        "shorts": 16559,
+        "shoes": 19788,
+        "soles": 3966
+      }
+    },
+    {
+      "row": 3,
+      "frame": 6,
+      "index": 33,
+      "counts": {
+        "shirt": 58370,
+        "shorts": 16559,
+        "shoes": 19788,
+        "soles": 3966
+      }
+    },
+    {
+      "row": 3,
+      "frame": 7,
+      "index": 34,
+      "counts": {
+        "shirt": 59260,
+        "shorts": 16838,
+        "shoes": 18479,
+        "soles": 3565
+      }
+    },
+    {
+      "row": 3,
+      "frame": 8,
+      "index": 35,
+      "counts": {
+        "shirt": 59260,
+        "shorts": 16838,
+        "shoes": 18479,
+        "soles": 3565
+      }
+    },
+    {
+      "row": 4,
+      "frame": 0,
+      "index": 36,
+      "counts": {
+        "shirt": 76017,
+        "shorts": 27140,
+        "shoes": 20248,
+        "soles": 3592
+      }
+    },
+    {
+      "row": 4,
+      "frame": 1,
+      "index": 37,
+      "counts": {
+        "shirt": 75559,
+        "shorts": 21224,
+        "shoes": 15221,
+        "soles": 2326
+      }
+    },
+    {
+      "row": 4,
+      "frame": 2,
+      "index": 38,
+      "counts": {
+        "shirt": 75559,
+        "shorts": 21224,
+        "shoes": 15221,
+        "soles": 2326
+      }
+    },
+    {
+      "row": 4,
+      "frame": 3,
+      "index": 39,
+      "counts": {
+        "shirt": 76014,
+        "shorts": 22184,
+        "shoes": 22090,
+        "soles": 2806
+      }
+    },
+    {
+      "row": 4,
+      "frame": 4,
+      "index": 40,
+      "counts": {
+        "shirt": 76014,
+        "shorts": 22184,
+        "shoes": 22090,
+        "soles": 2806
+      }
+    },
+    {
+      "row": 4,
+      "frame": 5,
+      "index": 41,
+      "counts": {
+        "shirt": 75667,
+        "shorts": 20751,
+        "shoes": 15152,
+        "soles": 2233
+      }
+    },
+    {
+      "row": 4,
+      "frame": 6,
+      "index": 42,
+      "counts": {
+        "shirt": 75667,
+        "shorts": 20751,
+        "shoes": 15152,
+        "soles": 2233
+      }
+    },
+    {
+      "row": 4,
+      "frame": 7,
+      "index": 43,
+      "counts": {
+        "shirt": 76993,
+        "shorts": 22526,
+        "shoes": 20959,
+        "soles": 3096
+      }
+    },
+    {
+      "row": 4,
+      "frame": 8,
+      "index": 44,
+      "counts": {
+        "shirt": 76993,
+        "shorts": 22526,
+        "shoes": 20959,
+        "soles": 3096
+      }
+    }
+  ]
+}

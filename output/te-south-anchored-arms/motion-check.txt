@@ -1,0 +1,94 @@
+{
+  "file": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-anchored-arms.png",
+  "handRanges": [
+    18,
+    18
+  ],
+  "elbowRanges": [
+    0,
+    0
+  ],
+  "elbowContourDrift": [
+    0,
+    0
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "shoulders": [
+        217,
+        215
+      ],
+      "arms": [
+        {
+          "handBottom": 385,
+          "handX": 116,
+          "elbowX": 116
+        },
+        {
+          "handBottom": 367,
+          "handX": 263,
+          "elbowX": 266.5
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "shoulders": [
+        220,
+        219
+      ],
+      "arms": [
+        {
+          "handBottom": 379,
+          "handX": 117,
+          "elbowX": 116
+        },
+        {
+          "handBottom": 378,
+          "handX": 267,
+          "elbowX": 266.5
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "shoulders": [
+        216,
+        217
+      ],
+      "arms": [
+        {
+          "handBottom": 367,
+          "handX": 119,
+          "elbowX": 116
+        },
+        {
+          "handBottom": 385,
+          "handX": 267,
+          "elbowX": 266.5
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "shoulders": [
+        219,
+        217
+      ],
+      "arms": [
+        {
+          "handBottom": 379,
+          "handX": 117,
+          "elbowX": 116
+        },
+        {
+          "handBottom": 379,
+          "handX": 265,
+          "elbowX": 266.5
+        }
+      ]
+    }
+  ]
+}
+PASS: both forearms alternate through passing poses, shoulders level and elbows stable

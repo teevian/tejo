@@ -1,0 +1,74 @@
+{
+  "file": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-anchored-arms.png",
+  "forearmWidthRatios": [
+    1,
+    1
+  ],
+  "idleElbows": [
+    95,
+    288
+  ],
+  "measurements": [
+    {
+      "frame": 1,
+      "arms": [
+        44,
+        44
+      ],
+      "elbowEnvelope": [
+        95,
+        288
+      ],
+      "crown": 82,
+      "ground": 522,
+      "headCenter": 199.5,
+      "headWidth": 129
+    },
+    {
+      "frame": 2,
+      "arms": [
+        44,
+        44
+      ],
+      "elbowEnvelope": [
+        95,
+        288
+      ],
+      "crown": 82,
+      "ground": 524,
+      "headCenter": 200,
+      "headWidth": 130
+    },
+    {
+      "frame": 3,
+      "arms": [
+        44,
+        44
+      ],
+      "elbowEnvelope": [
+        95,
+        288
+      ],
+      "crown": 82,
+      "ground": 518,
+      "headCenter": 199,
+      "headWidth": 132
+    },
+    {
+      "frame": 4,
+      "arms": [
+        44,
+        44
+      ],
+      "elbowEnvelope": [
+        95,
+        288
+      ],
+      "crown": 82,
+      "ground": 515,
+      "headCenter": 200,
+      "headWidth": 132
+    }
+  ]
+}
+PASS: level head, consistent forearms and head size, bounded foot stride depth

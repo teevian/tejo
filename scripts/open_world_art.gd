@@ -1,8 +1,8 @@
 extends RefCounted
 # Original faces, a continuous neck/collar and normalized arm widths.
 # Runtime draws one complete sprite; no separate head/neck layers.
-const ATLASES: Array[Texture2D] = [preload("res://assets/characters/open_world/te-walk-v14.png"),preload("res://assets/characters/open_world/jo-walk-v14.png")]
-const TE_SOUTH: Texture2D = preload("res://assets/characters/open_world/te-south-forearm-balance.png")
+const ATLASES: Array[Texture2D] = [preload("res://assets/characters/open_world/te-walk-v14-palette.png"),preload("res://assets/characters/open_world/jo-walk-v14.png")]
+const TE_SOUTH: Texture2D = preload("res://assets/characters/open_world/te-south-final-details.png")
 const WorldScale = preload("res://scripts/world_scale.gd")
 const HEIGHTS: Array[float] = WorldScale.PERSON_HEIGHTS
 const STRIDE := 112.0

@@ -13,8 +13,10 @@ var continue_button: Button
 var return_button: Button
 var reset_button: Button
 var selector_buttons: Array[Button] = []
+var _initialization_complete := false
 
 func _ready() -> void:
+	_initialization_complete = false
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	_setup_input()
 	RenderingServer.set_default_clear_color(Color("304632"))
@@ -38,6 +40,7 @@ func _ready() -> void:
 	_build_interface()
 	_select_person(0)
 	camera.position = _camera_target()
+	_initialization_complete = true
 
 func _setup_input() -> void:
 	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"swap":[KEY_TAB],"pause":[KEY_ESCAPE]}
@@ -117,7 +120,8 @@ func _build_interface() -> void:
 	pause_menu.hide()
 
 func _input(event: InputEvent) -> void:
-	if not is_node_ready() or event.is_echo(): return
+	# is_node_ready() is already true while _ready() is still building children.
+	if not _initialization_complete or event.is_echo(): return
 	if event.is_action_pressed("pause"):
 		_toggle_pause()
 	elif event.is_action_pressed("swap") and not get_tree().paused:
@@ -160,6 +164,7 @@ func _camera_target() -> Vector2:
 	return target.clamp(half,Floor.WORLD_SIZE-half)
 
 func _process(delta: float) -> void:
+	if not _initialization_complete: return
 	if get_tree().paused or people.is_empty(): return
 	camera.position = camera.position.lerp(_camera_target(),1-exp(-8*delta))
 

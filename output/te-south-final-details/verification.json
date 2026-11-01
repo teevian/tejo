@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "limbSilhouetteChanges": 0,
+  "faceHairChanges": 0,
+  "elbowsHandsAndForearmWidthsPreserved": true,
+  "frames": [
+    {
+      "frame": 0,
+      "neckWidthBeforeAfter": [
+        36,
+        35
+      ],
+      "arms": [
+        {
+          "elbowX": 116,
+          "handX": 118,
+          "handY": 378
+        },
+        {
+          "elbowX": 266,
+          "handX": 264,
+          "handY": 378
+        }
+      ],
+      "shoulderEdges": [
+        109,
+        277
+      ],
+      "whiteSolePixels": 0
+    },
+    {
+      "frame": 1,
+      "neckWidthBeforeAfter": [
+        28,
+        26
+      ],
+      "arms": [
+        {
+          "elbowX": 124.5,
+          "handX": 123,
+          "handY": 369
+        },
+        {
+          "elbowX": 263.5,
+          "handX": 251,
+          "handY": 350
+        }
+      ],
+      "shoulderEdges": [
+        110,
+        273
+      ],
+      "whiteSolePixels": 0
+    },
+    {
+      "frame": 2,
+      "neckWidthBeforeAfter": [
+        29,
+        27
+      ],
+      "arms": [
+        {
+          "elbowX": 124.5,
+          "handX": 134,
+          "handY": 353
+        },
+        {
+          "elbowX": 266.5,
+          "handX": 269,
+          "handY": 364
+        }
+      ],
+      "shoulderEdges": [
+        117,
+        276
+      ],
+      "whiteSolePixels": 0
+    },
+    {
+      "frame": 3,
+      "neckWidthBeforeAfter": [
+        38,
+        36
+      ],
+      "arms": [
+        {
+          "elbowX": 123.5,
+          "handX": 137,
+          "handY": 347
+        },
+        {
+          "elbowX": 264.5,
+          "handX": 269,
+          "handY": 357
+        }
+      ],
+      "shoulderEdges": [
+        114,
+        276
+      ],
+      "whiteSolePixels": 0
+    },
+    {
+      "frame": 4,
+      "neckWidthBeforeAfter": [
+        36,
+        34
+      ],
+      "arms": [
+        {
+          "elbowX": 124,
+          "handX": 125,
+          "handY": 359
+        },
+        {
+          "elbowX": 263.5,
+          "handX": 251,
+          "handY": 349
+        }
+      ],
+      "shoulderEdges": [
+        110,
+        274
+      ],
+      "whiteSolePixels": 0
+    }
+  ]
+}

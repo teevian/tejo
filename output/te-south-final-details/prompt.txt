@@ -1,0 +1,6 @@
+Use case: precise-object-edit. Edit the attached full-body game sprite in place, preserving the exact character identity, proportions, pose, hands, arms, legs, shoes, shading, scale, placement, transparent background and 400x560 composition. Only finish these wardrobe/neck details:
+1. Make the visible neck very slightly slimmer, about 5% narrower at the base, without changing face, head size or posture.
+2. The sneakers have NO white sole trim. Repaint every white sole/rim to the SAME dark charcoal colour as the final T-shirt, retaining the outsole shape, edge definition and subtle shading.
+3. Change the cream/white shorts to LIGHT NEUTRAL GREY (base approximately #bec0c2), retaining all fabric creases and shadows, no beige tint.
+4. Darken the T-shirt a little to the current sneaker-upper colour: charcoal approximately #353435, keeping visible fabric shading and folds.
+Do not change the silhouette or position of arms, wrists, fingers, hands, knees, feet or the standing pose. Do not change shoulder width in this standing reference. No added details, no logos or text. Genuine transparent background. Return only the same one complete standing sprite with the small neck and material edits.

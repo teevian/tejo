@@ -1,0 +1,73 @@
+{
+  "checks": "PASS: narrower shoulders, thicker forearms in every phase, preserved face/hair and resting sprite, stable body heights and ground anchors",
+  "measurements": [
+    {
+      "frame": 1,
+      "beforeForearmSkinWidths": [
+        23,
+        35
+      ],
+      "afterForearmSkinWidths": [
+        27,
+        38
+      ],
+      "shoulders": [
+        170,
+        158
+      ],
+      "crown": 82,
+      "ground": 522
+    },
+    {
+      "frame": 2,
+      "beforeForearmSkinWidths": [
+        31,
+        19
+      ],
+      "afterForearmSkinWidths": [
+        38,
+        27
+      ],
+      "shoulders": [
+        170,
+        158
+      ],
+      "crown": 82,
+      "ground": 524
+    },
+    {
+      "frame": 3,
+      "beforeForearmSkinWidths": [
+        39,
+        19
+      ],
+      "afterForearmSkinWidths": [
+        44,
+        22
+      ],
+      "shoulders": [
+        170,
+        161
+      ],
+      "crown": 82,
+      "ground": 518
+    },
+    {
+      "frame": 4,
+      "beforeForearmSkinWidths": [
+        20,
+        32
+      ],
+      "afterForearmSkinWidths": [
+        24,
+        38
+      ],
+      "shoulders": [
+        170,
+        159
+      ],
+      "crown": 82,
+      "ground": 516
+    }
+  ]
+}

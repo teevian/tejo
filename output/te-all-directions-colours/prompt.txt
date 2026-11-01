@@ -1,0 +1,5 @@
+Mode: built-in ImageGen. Edit target: reference-views.png; colour reference: approved-palette.png.
+
+Edit the FIRST image using the SECOND image only as an exact clothing colour reference. Preserve the four original character sprites, their pixel positions, anatomy, poses, silhouettes, faces, skin, hair, outlines, folds, shadows and layout. Recolour ONLY the T-shirts to the approved reference dark charcoal (base RGB 53,52,53), the shorts to the approved reference light neutral gray (base RGB 193,192,194), and the sneakers including every white sole to the same dark charcoal as the reference T-shirt. Preserve texture, seams and shading. No white shoe soles. No new details. Do not reshape or redraw anything. Transparent background. This image will serve as a colour reference for a lossless material recolouring of the original animation.
+
+Production finishing: transfer only material RGB colours to the original native-resolution atlas. Preserve original alpha and all non-material pixels exactly. Do not use regenerated anatomy or geometry. South remains the approved, unchanged source.

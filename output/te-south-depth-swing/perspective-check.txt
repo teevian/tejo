@@ -1,0 +1,110 @@
+{
+  "file": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-depth-swing.png",
+  "elbowDrift": [
+    0,
+    0
+  ],
+  "contourDrift": [
+    0,
+    0
+  ],
+  "forwardInwardOffsets": [
+    17,
+    17
+  ],
+  "forwardProjectedAngles": [
+    21.5713071912546,
+    21.5713071912546
+  ],
+  "rearWidths": [
+    22,
+    22
+  ],
+  "passingWidths": [
+    27.5,
+    23.5
+  ],
+  "frames": [
+    [
+      {
+        "elbowX": 116,
+        "handX": 115,
+        "handY": 356,
+        "handBottom": 369,
+        "inwardOffset": -1,
+        "projectedAngle": 1.101706115206375,
+        "forearmWidth": 22
+      },
+      {
+        "elbowX": 266,
+        "handX": 249,
+        "handY": 347,
+        "handBottom": 359,
+        "inwardOffset": 17,
+        "projectedAngle": 21.5713071912546,
+        "forearmWidth": 40
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 118,
+        "handY": 361,
+        "handBottom": 373,
+        "inwardOffset": 2,
+        "projectedAngle": 2.009553813021139,
+        "forearmWidth": 24
+      },
+      {
+        "elbowX": 266,
+        "handX": 263,
+        "handY": 362,
+        "handBottom": 374,
+        "inwardOffset": 3,
+        "projectedAngle": 2.96093613416375,
+        "forearmWidth": 23
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 133,
+        "handY": 347,
+        "handBottom": 359,
+        "inwardOffset": 17,
+        "projectedAngle": 21.5713071912546,
+        "forearmWidth": 41
+      },
+      {
+        "elbowX": 266,
+        "handX": 266,
+        "handY": 364,
+        "handBottom": 376,
+        "inwardOffset": 0,
+        "projectedAngle": 0,
+        "forearmWidth": 22
+      }
+    ],
+    [
+      {
+        "elbowX": 116,
+        "handX": 121,
+        "handY": 355,
+        "handBottom": 367,
+        "inwardOffset": 5,
+        "projectedAngle": 5.59933933652057,
+        "forearmWidth": 31
+      },
+      {
+        "elbowX": 266,
+        "handX": 261,
+        "handY": 362,
+        "handBottom": 374,
+        "inwardOffset": 5,
+        "projectedAngle": 4.927109947649014,
+        "forearmWidth": 24
+      }
+    ]
+  ]
+}
+PASS: fixed elbows, angled inward forward wrists, narrower receding forearms and intermediate angles

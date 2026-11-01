@@ -1,0 +1,12 @@
+Edit image 1, an exactly 580x360 transparent 2x2 grid of four front-view walking torso/arm/shorts crops (each 290x180). Image 2 is the same character's natural walking NORTH, and image 3 is his actual SIDE walk. These are motion/anatomy references.
+
+Correct the FRONT walk to have a natural WHOLE ARM pendulum swing driven from the shoulder like the north and side references. The current elbows are anatomically too low and unnaturally bolted in place. Redraw BOTH UPPER ARMS and LOWER ARMS as a connected natural motion, including the sleeve response. Place the elbows about 12–15 original-grid pixels HIGHER, around the lower ribs rather than down at the waist. Allow each elbow to move a modest 5–8 pixels forward/back in projection as its upper arm rotates at the shoulder. Upper arms must visibly change inclination across the four phases. Keep them close to the torso, no sideways chicken-wing flare, shrugging or robotic hinged fists.
+
+TOP LEFT: picture-right arm swings forward: upper arm inclines forward, elbow rises a little and comes subtly toward the torso; forearm rotates forward and inward, wrist/fist angled near the waist. Picture-left arm swings behind: upper arm inclines back, elbow slightly lower than the forward one, forearm recedes and appears slightly slimmer.
+TOP RIGHT: both arms pass naturally toward their opposite phases, with modest intermediate upper-arm tilt and elbow position.
+BOTTOM LEFT: opposite phase to TOP LEFT. Picture-left whole arm swings forward, elbow naturally higher, forearm forward/inward near waist; picture-right whole arm swings behind.
+BOTTOM RIGHT: natural passing phase completing the cycle.
+
+Use the same relaxed range and anatomical consistency as the north/side walk. Maintain upper/lower arm physical lengths and slightly slim forearms; depth projection changes with rotation, never telescoping or inflating. Keep fist physical size consistent and change visible planes with wrist rotation. IMPORTANT: DO NOT preserve identical elbows or upper arms across panels. Every walking arm should move coherently from the shoulder. Balanced contralateral gait matching the existing legs.
+
+Preserve character identity, warm skin palette, charcoal shirt and white shorts, exact torso positions, clothing outside sleeve/arm occlusion, legs, crop scale, all panel boundaries and 2x2 layout. Same painted game style and transparent background. Return only the edited four-panel crop sheet, no text or guides.

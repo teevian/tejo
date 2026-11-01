@@ -1,0 +1,82 @@
+[
+  [
+    {
+      "elbowX": 122.5,
+      "handX": 120,
+      "handY": 367,
+      "handBottom": 379,
+      "inwardOffset": -2.5,
+      "projectedAngle": 2.2724497327829347,
+      "forearmWidth": 23
+    },
+    {
+      "elbowX": 263.5,
+      "handX": 247,
+      "handY": 350,
+      "handBottom": 362,
+      "inwardOffset": 16.5,
+      "projectedAngle": 19.732689499661006,
+      "forearmWidth": 35
+    }
+  ],
+  [
+    {
+      "elbowX": 122,
+      "handX": 131,
+      "handY": 346,
+      "handBottom": 358,
+      "inwardOffset": 9,
+      "projectedAngle": 12.094757077012103,
+      "forearmWidth": 31
+    },
+    {
+      "elbowX": 262.5,
+      "handX": 264,
+      "handY": 354,
+      "handBottom": 366,
+      "inwardOffset": -1.5,
+      "projectedAngle": 1.7183580016554572,
+      "forearmWidth": 19
+    }
+  ],
+  [
+    {
+      "elbowX": 124.5,
+      "handX": 137,
+      "handY": 344,
+      "handBottom": 356,
+      "inwardOffset": 12.5,
+      "projectedAngle": 17.354024636261325,
+      "forearmWidth": 39
+    },
+    {
+      "elbowX": 261.5,
+      "handX": 267,
+      "handY": 355,
+      "handBottom": 368,
+      "inwardOffset": -5.5,
+      "projectedAngle": 6.155168343274003,
+      "forearmWidth": 19
+    }
+  ],
+  [
+    {
+      "elbowX": 124,
+      "handX": 125,
+      "handY": 356,
+      "handBottom": 368,
+      "inwardOffset": 1,
+      "projectedAngle": 1.101706115206375,
+      "forearmWidth": 20
+    },
+    {
+      "elbowX": 261,
+      "handX": 248,
+      "handY": 346,
+      "handBottom": 357,
+      "inwardOffset": 13,
+      "projectedAngle": 17.19854122006587,
+      "forearmWidth": 32
+    }
+  ]
+]

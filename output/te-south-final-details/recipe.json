@@ -1,0 +1,107 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-subtle-shoulder.png",
+  "shirtAndSoleTarget": [
+    53,
+    52,
+    53
+  ],
+  "shortsTarget": [
+    193,
+    192,
+    194
+  ],
+  "neckMaximumWidthScale": 0.95,
+  "limbPositionsPreserved": true,
+  "frames": [
+    {
+      "frame": 0,
+      "recedingShoulderSide": null,
+      "recedingShoulderHorizontalCorrection": 0,
+      "beforeShoulderEdges": [
+        109,
+        277
+      ],
+      "afterShoulderEdges": [
+        109,
+        277
+      ],
+      "materialPixels": {
+        "shirt": 16799,
+        "shorts": 5114,
+        "soles": 618
+      }
+    },
+    {
+      "frame": 1,
+      "recedingShoulderSide": 0,
+      "recedingShoulderHorizontalCorrection": -7.2,
+      "beforeShoulderEdges": [
+        118,
+        273
+      ],
+      "afterShoulderEdges": [
+        110,
+        273
+      ],
+      "materialPixels": {
+        "shirt": 14653,
+        "shorts": 4015,
+        "soles": 399
+      }
+    },
+    {
+      "frame": 2,
+      "recedingShoulderSide": 1,
+      "recedingShoulderHorizontalCorrection": 3.2,
+      "beforeShoulderEdges": [
+        117,
+        273
+      ],
+      "afterShoulderEdges": [
+        117,
+        276
+      ],
+      "materialPixels": {
+        "shirt": 14904,
+        "shorts": 4450,
+        "soles": 461
+      }
+    },
+    {
+      "frame": 3,
+      "recedingShoulderSide": 1,
+      "recedingShoulderHorizontalCorrection": 3.2,
+      "beforeShoulderEdges": [
+        114,
+        273
+      ],
+      "afterShoulderEdges": [
+        114,
+        276
+      ],
+      "materialPixels": {
+        "shirt": 14518,
+        "shorts": 3897,
+        "soles": 436
+      }
+    },
+    {
+      "frame": 4,
+      "recedingShoulderSide": 0,
+      "recedingShoulderHorizontalCorrection": -5.6000000000000005,
+      "beforeShoulderEdges": [
+        116,
+        274
+      ],
+      "afterShoulderEdges": [
+        110,
+        274
+      ],
+      "materialPixels": {
+        "shirt": 14887,
+        "shorts": 4028,
+        "soles": 563
+      }
+    }
+  ]
+}

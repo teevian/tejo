@@ -117,7 +117,7 @@ Executar Godot com `--headless --fixed-fps 60 --path . --script res://tests/open
 
 Os testes anteriores `dialogue_test.gd`, `phone_idle_test.gd` e `world_exploration_test.gd` apontam para a cena lateral preservada, para continuarem a verificar essa versão.
 
-`Godot --headless --fixed-fps 60 --path . --script res://tests/startup_input_test.gd` reproduz eventos recebidos antes de o mapa existir, verifica que não causam erros e confirma os controlos após o arranque.
+`Godot --headless --fixed-fps 60 --path . --script res://tests/startup_input_test.gd` reproduz eventos de rato, teclado e comando antes e durante a construção das três cenas, incluindo quando o Godot já indica que estão prontas mas o mapa e a interface ainda não existem. Verifica que os eventos e as atualizações aguardam pelo fim da inicialização, sem erros nem alterações ao estado inicial, e confirma os controlos após o arranque.
 
 `Godot --headless --fixed-fps 60 --path . --script res://tests/interactions_test.gd` verifica as combinações de porte, bolsas separadas, apanhar/largar/recuperar, árvores, pedras, fetos, fonte, ruínas, bancos e ocupação, o gesto do Te e a sua interrupção, saltos e acompanhamento, distâncias de partida, aterragens bloqueadas e bloqueio de ações em pausa/mapa/conversas. Pode também ser executado sem `--headless` para validar a integração com o motor gráfico.
 

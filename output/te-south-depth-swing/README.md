@@ -1,0 +1,9 @@
+# Te a sul — rotação dos antebraços em perspetiva
+
+Os antebraços avançam em diagonal para a cintura e os punhos mudam de orientação. A pintura inclui a mudança das faces visíveis da mão e do volume do antebraço. O braço recuado tem uma secção projetada menor. As fases intermédias têm ângulos menos acentuados.
+
+Atlas aplicado em `scripts/open_world_art.gd`: `assets/characters/open_world/te-south-depth-swing.png`. A ferramenta integrada ImageGen editou `target.png` com `angle-guide.png` e a referência de norte realmente usada no jogo. Pedido completo em `prompt.txt`; pintura original em `edited.raw.png`. Preparação reproduzível: `tools/bake_te_depth_swing.cjs`. O registo é uma translação horizontal rígida de cada braço para o cotovelo comum. Não há escala ou deformação vertical do antebraço pintado. O recorte abrange a cintura para permitir a oclusão da roupa pela mão rodada.
+
+`tools/check_te_depth_swing.cjs` segue o braço completo, incluindo a mão diagonal sobre a roupa. Verifica a posição e o contorno proximais do cotovelo, o avanço para dentro e para cima da mão, os ângulos intermédios e a secção menor do braço recuado. A versão anterior falha por manter as mãos demasiado alinhadas na vertical. A nova passa com 17 píxeis de deslocação para dentro em ambos os avanços, ângulo projetado de aproximadamente 22 graus e zero deslocação dos cotovelos. Estas medidas são da projeção 2D, não de um modelo 3D.
+
+`caminhada.gif` e `antebracos.gif` mostram os sprites com a transformação de transparência do shader do jogo aplicada à pré-visualização. `sul-norte.gif` permite comparar as direções. São pré-visualizações do atlas; não foram capturadas no motor nesta sessão. `perspective-check.txt` guarda a verificação geométrica; `previous-version-check.txt` guarda as medições da versão anterior rejeitada.

@@ -53,17 +53,28 @@ function shoulder(data,side){
 }
 const span=a=>Math.max(...a)-Math.min(...a);
 async function main(){
- const file=path.resolve(process.argv[2]||'assets/characters/open_world/te-south-forearm-balance.png'),frames=[];
+ const file=path.resolve(process.argv[2]||'assets/characters/open_world/te-south-forearm-balance.png'),frames=[],contours=[];
  for(let f=1;f<=4;f++){
   const data=await sharp(file).extract({left:f*400,top:0,width:400,height:560}).ensureAlpha().raw().toBuffer();
   frames.push({frame:f,shoulders:[shoulder(data,0),shoulder(data,1)],arms:[arm(data,0),arm(data,1)]});
+  contours.push([0,1].map(s=>Array.from({length:27},(_,i)=>{
+   const xs=[];
+   for(let x=s?225:75;x<(s?325:165);x++){
+    const k=((300+i)*400+x)*4;
+    if(data[k+3]>127&&data[k]-data[k+1]>25&&data[k+1]-data[k+2]>12)xs.push(x);
+   }
+   if(!xs.length)throw Error('Cannot measure the elbow contour');
+   return [xs[0],xs.at(-1)];
+  })));
  }
  const handRanges=[0,1].map(s=>span(frames.map(f=>f.arms[s].handBottom))),elbowRanges=[0,1].map(s=>span(frames.map(f=>f.arms[s].elbowX)));
- console.log(JSON.stringify({file,handRanges,elbowRanges,frames},null,2));
+ const elbowContourDrift=[0,1].map(s=>Math.max(...Array.from({length:27},(_,y)=>Math.max(...[0,1].map(e=>span(contours.map(c=>c[s][y][e])))))));
+ console.log(JSON.stringify({file,handRanges,elbowRanges,elbowContourDrift,frames},null,2));
  if(handRanges.some(r=>r<10||r>24))throw Error('Each forearm must swing visibly but subtly; neither hand may stay parked');
  if(Math.max(...handRanges)/Math.min(...handRanges)>1.25)throw Error('Forearm swing amplitudes are unbalanced');
  // The skin/cloth edge is a pixel proxy, with about one pixel of uncertainty.
- if(elbowRanges.some(r=>r>5))throw Error('Elbows move sideways instead of staying under the shoulders');
+ if(elbowRanges.some(r=>r>(process.argv.includes('--anchored')?1:5)))throw Error('Elbows move sideways instead of staying under the shoulders');
+ if(process.argv.includes('--anchored')&&elbowContourDrift.some(r=>r>1))throw Error('Elbow silhouettes change shape between poses');
  if(frames.some(f=>Math.abs(f.shoulders[0]-f.shoulders[1])>3)||[0,1].some(s=>span(frames.map(f=>f.shoulders[s]))>4))throw Error('Shoulders hike or tilt instead of staying almost level');
  const a=frames[0].arms,c=frames[2].arms;
  if(a[0].handBottom-a[1].handBottom<8||c[1].handBottom-c[0].handBottom<8)throw Error('The two forearms do not take turns advancing');
@@ -73,4 +84,5 @@ async function main(){
  }
  console.log('PASS: both forearms alternate through passing poses, shoulders level and elbows stable');
 }
-main().catch(error=>{console.error(error.message);process.exitCode=1});
+module.exports={arm};
+if(require.main===module)main().catch(error=>{console.error(error.message);process.exitCode=1});

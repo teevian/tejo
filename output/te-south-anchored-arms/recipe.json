@@ -1,0 +1,82 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-forearm-balance.png",
+  "commonElbowSource": 0,
+  "elbowPivots": [
+    116,
+    267
+  ],
+  "stationaryRows": [
+    225,
+    326
+  ],
+  "registration": [
+    {
+      "frame": 1,
+      "shifts": [
+        [
+          -2,
+          4
+        ],
+        [
+          -1.5,
+          0
+        ]
+      ],
+      "handTargets": [
+        385,
+        367
+      ]
+    },
+    {
+      "frame": 2,
+      "shifts": [
+        [
+          -2.5,
+          -1
+        ],
+        [
+          -5.5,
+          -3
+        ]
+      ],
+      "handTargets": [
+        379,
+        379
+      ]
+    },
+    {
+      "frame": 3,
+      "shifts": [
+        [
+          -1,
+          4
+        ],
+        [
+          -2,
+          6
+        ]
+      ],
+      "handTargets": [
+        367,
+        385
+      ]
+    },
+    {
+      "frame": 4,
+      "shifts": [
+        [
+          -1,
+          1
+        ],
+        [
+          -5.5,
+          -1
+        ]
+      ],
+      "handTargets": [
+        379,
+        379
+      ]
+    }
+  ]
+}

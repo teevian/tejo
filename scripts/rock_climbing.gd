@@ -36,8 +36,10 @@ var rope_taut := false
 var summit_reveal := 0.0
 var recoveries := 0
 var overlap_order := 1.0
+var _initialization_complete := false
 
 func _ready() -> void:
+	_initialization_complete = false
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	motion.scene = self
 	space.scene = self
@@ -79,6 +81,7 @@ func _ready() -> void:
 	dialogue_panel.advance_requested.connect(_talk)
 	_select_person(0)
 	hud.message("Q / E: rodar o penedo. A perspetiva abre caminhos. Cima salta ou escala.",6.0)
+	_initialization_complete = true
 
 func _setup_input() -> void:
 	var bindings := {"walk_left":[KEY_LEFT,KEY_A],"walk_right":[KEY_RIGHT,KEY_D],"walk_up":[KEY_UP,KEY_W],"walk_down":[KEY_DOWN,KEY_S],"interact":[KEY_SPACE],"talk":[KEY_T],"swap":[KEY_TAB],"pause":[KEY_ESCAPE],"rotate_left":[KEY_Q],"rotate_right":[KEY_E]}
@@ -103,7 +106,8 @@ func any_busy() -> bool:
 	return people.any(func(person): return person.busy() or person.jump_buffer>0) or rock_falling or space.rotating
 
 func _input(event: InputEvent) -> void:
-	if not is_node_ready() or event.is_echo(): return
+	# is_node_ready() is already true while _ready() is still building children.
+	if not _initialization_complete or event.is_echo(): return
 	if event.is_action_pressed("pause"):
 		if not dialogue_lines.is_empty():
 			_end_talk()
@@ -396,6 +400,7 @@ func descend() -> bool:
 	return true
 
 func _physics_process(delta: float) -> void:
+	if not _initialization_complete: return
 	if get_tree().paused or not dialogue_lines.is_empty() or space.rotating: return
 	clock += delta
 	rope_taut = false
@@ -554,6 +559,7 @@ func camera_target() -> Vector2:
 	return Vector2(x,clampf(y-150,1000,4480))
 
 func _process(delta: float) -> void:
+	if not _initialization_complete: return
 	if get_tree().paused: return
 	space.step_turn(delta)
 	# Keep both existing paintings legible when depth projects them onto one point.

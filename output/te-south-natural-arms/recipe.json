@@ -1,0 +1,70 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-depth-swing.png",
+  "wholeArmMotion": true,
+  "registration": [
+    {
+      "frame": 1,
+      "translation": [
+        -8,
+        9
+      ],
+      "registration": "shirt centre and sleeve attachment",
+      "sourceShirt": {
+        "x": 137,
+        "y": 112
+      },
+      "paintedShirt": {
+        "x": 145.5,
+        "y": 107
+      }
+    },
+    {
+      "frame": 2,
+      "translation": [
+        -13,
+        6
+      ],
+      "registration": "shirt centre and sleeve attachment",
+      "sourceShirt": {
+        "x": 137,
+        "y": 119
+      },
+      "paintedShirt": {
+        "x": 150,
+        "y": 109
+      }
+    },
+    {
+      "frame": 3,
+      "translation": [
+        -30,
+        11
+      ],
+      "registration": "shirt centre and sleeve attachment",
+      "sourceShirt": {
+        "x": 137,
+        "y": 112
+      },
+      "paintedShirt": {
+        "x": 167.5,
+        "y": 102
+      }
+    },
+    {
+      "frame": 4,
+      "translation": [
+        -12,
+        7
+      ],
+      "registration": "shirt centre and sleeve attachment",
+      "sourceShirt": {
+        "x": 137,
+        "y": 110
+      },
+      "paintedShirt": {
+        "x": 149.5,
+        "y": 109
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source": "/Users/teevian/github/tejo/assets/characters/open_world/te-south-anchored-arms.png",
+  "elbowPivots": [
+    116,
+    266
+  ],
+  "preservedThroughRow": 310,
+  "authoredPerspective": true,
+  "runtimeWholeSprites": true,
+  "registration": [
+    {
+      "frame": 1,
+      "horizontalTranslation": [
+        -11.5,
+        -14.5
+      ],
+      "verticalTranslation": 0,
+      "scale": 1
+    },
+    {
+      "frame": 2,
+      "horizontalTranslation": [
+        -9,
+        -12.5
+      ],
+      "verticalTranslation": 0,
+      "scale": 1
+    },
+    {
+      "frame": 3,
+      "horizontalTranslation": [
+        -13,
+        -15
+      ],
+      "verticalTranslation": 0,
+      "scale": 1
+    },
+    {
+      "frame": 4,
+      "horizontalTranslation": [
+        -8,
+        -14
+      ],
+      "verticalTranslation": 0,
+      "scale": 1
+    }
+  ]
+}
