@@ -13,7 +13,7 @@ var line_index := 0
 var initiator := 0
 
 func _init() -> void:
-	for path in ["res://data/dialogue/sintra.json","res://data/dialogue/sintra_banter.json"]:
+	for path in ["res://data/dialogue/sintra.json","res://data/dialogue/sintra_banter.json","res://data/dialogue/sintra_village.json"]:
 		var content = JSON.parse_string(FileAccess.get_file_as_string(path))
 		if content is Dictionary:
 			topics.append_array(content.get("topics", []))

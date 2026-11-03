@@ -1,0 +1,4040 @@
+{
+  "world_size": [
+    22400,
+    16000
+  ],
+  "previous_area": 35840000,
+  "adaptation": "Núcleo baseado nas ligações OSM documentadas. Habitação, pátios e ruas de ligação são uma interpretação jogável das 42 fotografias do utilizador, sem pretensão cadastral.",
+  "routes": [
+    {
+      "id": "palace_republic",
+      "name": "Praça da República",
+      "points": [
+        [
+          9640,
+          2370
+        ],
+        [
+          9320,
+          2940
+        ],
+        [
+          9640,
+          4068
+        ]
+      ],
+      "width": 380,
+      "surface": "stone",
+      "source_way": 30799076
+    },
+    {
+      "id": "padarias",
+      "name": "Rua das Padarias",
+      "points": [
+        [
+          9640,
+          4068
+        ],
+        [
+          9928,
+          5139
+        ],
+        [
+          9672,
+          6069
+        ],
+        [
+          9000,
+          6720
+        ]
+      ],
+      "width": 314,
+      "surface": "stone",
+      "source_way": 169733101
+    },
+    {
+      "id": "ferraria",
+      "name": "Rua da Ferraria",
+      "points": [
+        [
+          9000,
+          6720
+        ],
+        [
+          10056,
+          6906
+        ],
+        [
+          10920,
+          7278
+        ],
+        [
+          11816,
+          8070
+        ]
+      ],
+      "width": 297,
+      "surface": "stone",
+      "source_way": 50464096
+    },
+    {
+      "id": "costa_castelo",
+      "name": "Rua da Costa do Castelo",
+      "points": [
+        [
+          10056,
+          6906
+        ],
+        [
+          10280,
+          8580
+        ],
+        [
+          9896,
+          9558
+        ]
+      ],
+      "width": 280,
+      "surface": "stone",
+      "source_way": 50464097
+    },
+    {
+      "id": "marechal",
+      "name": "Rua Marechal Saldanha",
+      "points": [
+        [
+          11816,
+          8070
+        ],
+        [
+          11336,
+          8580
+        ],
+        [
+          10280,
+          8580
+        ]
+      ],
+      "width": 314,
+      "surface": "stone",
+      "source_way": 172389669
+    },
+    {
+      "id": "pipa",
+      "name": "Rua da Fonte da Pipa",
+      "points": [
+        [
+          9000,
+          6720
+        ],
+        [
+          8520,
+          7602
+        ],
+        [
+          8392,
+          8580
+        ],
+        [
+          8968,
+          9834
+        ],
+        [
+          9224,
+          10440
+        ]
+      ],
+      "width": 272,
+      "surface": "stone",
+      "source_way": 60099539
+    },
+    {
+      "id": "ferreira",
+      "name": "Largo Ferreira de Castro",
+      "points": [
+        [
+          10280,
+          8580
+        ],
+        [
+          9896,
+          9558
+        ],
+        [
+          9640,
+          10674
+        ]
+      ],
+      "width": 346,
+      "surface": "stone",
+      "source_way": 169049311
+    },
+    {
+      "id": "navarro",
+      "name": "Rua Maria Eugénia Reis Ferreira Navarro",
+      "points": [
+        [
+          9224,
+          10440
+        ],
+        [
+          9640,
+          10674
+        ]
+      ],
+      "width": 297,
+      "surface": "stone",
+      "source_way": 169735022
+    },
+    {
+      "id": "felix_nunes",
+      "name": "Escadinhas Félix Nunes",
+      "points": [
+        [
+          9000,
+          6720
+        ],
+        [
+          8200,
+          5511
+        ],
+        [
+          7688,
+          4164
+        ]
+      ],
+      "width": 232,
+      "surface": "steps",
+      "source_way": 60099542
+    },
+    {
+      "id": "martinho_link",
+      "name": "Adro de São Martinho",
+      "points": [
+        [
+          9320,
+          2940
+        ],
+        [
+          8520,
+          4068
+        ],
+        [
+          7688,
+          4164
+        ],
+        [
+          6856,
+          5046
+        ]
+      ],
+      "width": 297,
+      "surface": "stone",
+      "source_way": 50464093
+    },
+    {
+      "id": "biquinha",
+      "name": "Rua da Biquinha",
+      "points": [
+        [
+          7688,
+          4164
+        ],
+        [
+          6664,
+          3279
+        ],
+        [
+          5512,
+          3465
+        ],
+        [
+          4744,
+          4860
+        ],
+        [
+          4360,
+          5697
+        ]
+      ],
+      "width": 297,
+      "surface": "stone",
+      "source_way": 142171097
+    },
+    {
+      "id": "gilvicente",
+      "name": "Rua Gil Vicente",
+      "points": [
+        [
+          7688,
+          4164
+        ],
+        [
+          7112,
+          5466
+        ],
+        [
+          5736,
+          6582
+        ],
+        [
+          4520,
+          6720
+        ]
+      ],
+      "width": 314,
+      "surface": "stone",
+      "source_way": 96516358
+    },
+    {
+      "id": "briamante",
+      "name": "Escadinhas do Briamante",
+      "points": [
+        [
+          4360,
+          5697
+        ],
+        [
+          4520,
+          6720
+        ]
+      ],
+      "width": 232,
+      "surface": "steps",
+      "source_way": 179201294
+    },
+    {
+      "id": "pedroso",
+      "name": "Rua Consiglieri Pedroso",
+      "points": [
+        [
+          7688,
+          4164
+        ],
+        [
+          7560,
+          6300
+        ],
+        [
+          7080,
+          7788
+        ],
+        [
+          5928,
+          8115
+        ],
+        [
+          4520,
+          8394
+        ],
+        [
+          3784,
+          9834
+        ],
+        [
+          3880,
+          10887
+        ]
+      ],
+      "width": 440,
+      "surface": "stone",
+      "source_way": 169148286
+    },
+    {
+      "id": "assembleia",
+      "name": "Escadinhas da Assembleia",
+      "points": [
+        [
+          5736,
+          6582
+        ],
+        [
+          5928,
+          8115
+        ]
+      ],
+      "width": 224,
+      "surface": "steps",
+      "source_way": 151662373
+    },
+    {
+      "id": "byron",
+      "name": "Escadinhas Lord Byron",
+      "points": [
+        [
+          4520,
+          6720
+        ],
+        [
+          4328,
+          7788
+        ],
+        [
+          3784,
+          9834
+        ]
+      ],
+      "width": 232,
+      "surface": "steps",
+      "source_way": 142171095
+    },
+    {
+      "id": "duche",
+      "name": "Volta do Duche",
+      "points": [
+        [
+          9320,
+          2940
+        ],
+        [
+          11208,
+          4023
+        ],
+        [
+          13128,
+          4908
+        ],
+        [
+          15528,
+          5184
+        ],
+        [
+          17672,
+          4767
+        ],
+        [
+          18568,
+          3651
+        ],
+        [
+          18536,
+          2490
+        ],
+        [
+          17352,
+          1770
+        ]
+      ],
+      "width": 440,
+      "surface": "stone",
+      "source_way": 23688927
+    },
+    {
+      "id": "monserrate",
+      "name": "Rua Visconde de Monserrate",
+      "points": [
+        [
+          11208,
+          4023
+        ],
+        [
+          11272,
+          5280
+        ],
+        [
+          12360,
+          5976
+        ],
+        [
+          13672,
+          6768
+        ],
+        [
+          15368,
+          7884
+        ],
+        [
+          17000,
+          8814
+        ],
+        [
+          18280,
+          9975
+        ]
+      ],
+      "width": 440,
+      "surface": "stone",
+      "source_way": 30798919
+    },
+    {
+      "id": "terreirinho",
+      "name": "Arco do Terreirinho",
+      "points": [
+        [
+          9928,
+          5139
+        ],
+        [
+          10632,
+          5883
+        ],
+        [
+          10056,
+          6906
+        ]
+      ],
+      "width": 224,
+      "surface": "steps",
+      "source_way": 51391749
+    },
+    {
+      "id": "audiencia",
+      "name": "Escadinhas da Audiência",
+      "points": [
+        [
+          10632,
+          5883
+        ],
+        [
+          11272,
+          5280
+        ]
+      ],
+      "width": 224,
+      "surface": "steps",
+      "source_way": 51391754
+    },
+    {
+      "id": "miradouro",
+      "name": "Miradouro da Ferraria",
+      "points": [
+        [
+          10920,
+          7278
+        ],
+        [
+          11560,
+          6954
+        ]
+      ],
+      "width": 240,
+      "surface": "steps",
+      "source_way": 50464094
+    },
+    {
+      "id": "arco_teixeira",
+      "name": "Rua do Arco do Teixeira",
+      "points": [
+        [
+          9640,
+          4068
+        ],
+        [
+          10280,
+          3606
+        ],
+        [
+          11208,
+          4023
+        ]
+      ],
+      "width": 240,
+      "surface": "steps",
+      "source_way": 172229296
+    },
+    {
+      "id": "liberdade",
+      "name": "Parque da Liberdade",
+      "points": [
+        [
+          17672,
+          4767
+        ],
+        [
+          18632,
+          6162
+        ],
+        [
+          19208,
+          7650
+        ],
+        [
+          18376,
+          8814
+        ],
+        [
+          17000,
+          8814
+        ]
+      ],
+      "width": 352,
+      "surface": "earth",
+      "source_way": 50465653
+    },
+    {
+      "id": "sassetti_entry",
+      "name": "Rua Victor Carlos Sassetti",
+      "points": [
+        [
+          9640,
+          10674
+        ],
+        [
+          8648,
+          10905
+        ],
+        [
+          7848,
+          11169
+        ]
+      ],
+      "width": 336,
+      "surface": "earth",
+      "source_way": 169844125
+    },
+    {
+      "id": "sassetti_path",
+      "name": "Caminhos da Vila Sassetti",
+      "points": [
+        [
+          7848,
+          11169
+        ],
+        [
+          8040,
+          11553
+        ],
+        [
+          8808,
+          11784
+        ],
+        [
+          8136,
+          12117
+        ],
+        [
+          8584,
+          12513
+        ],
+        [
+          8040,
+          12894
+        ],
+        [
+          8936,
+          13227
+        ],
+        [
+          9288,
+          13443
+        ],
+        [
+          8680,
+          13740
+        ],
+        [
+          8680,
+          14040
+        ]
+      ],
+      "width": 352,
+      "surface": "earth",
+      "source_way": 1186823306
+    },
+    {
+      "id": "sassetti_stairs",
+      "name": "Escadas dos jardins da Vila Sassetti",
+      "points": [
+        [
+          7848,
+          11169
+        ],
+        [
+          7016,
+          11469
+        ],
+        [
+          6856,
+          11751
+        ],
+        [
+          7400,
+          12000
+        ],
+        [
+          8136,
+          12117
+        ]
+      ],
+      "width": 256,
+      "surface": "steps",
+      "source_way": 685844669
+    },
+    {
+      "id": "poente_01",
+      "name": "Casario da Biquinha",
+      "points": [
+        [
+          5512,
+          3465
+        ],
+        [
+          4700,
+          3650
+        ],
+        [
+          3400,
+          3900
+        ],
+        [
+          1800,
+          4400
+        ],
+        [
+          1150,
+          5600
+        ],
+        [
+          1600,
+          6600
+        ],
+        [
+          4520,
+          6720
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_02",
+      "name": "Casario da Biquinha",
+      "points": [
+        [
+          3400,
+          3900
+        ],
+        [
+          3600,
+          5050
+        ],
+        [
+          3350,
+          6250
+        ],
+        [
+          4520,
+          6720
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_03",
+      "name": "Pátios da Vila Velha",
+      "points": [
+        [
+          1800,
+          4400
+        ],
+        [
+          2350,
+          5100
+        ],
+        [
+          3600,
+          5050
+        ],
+        [
+          4700,
+          4850
+        ],
+        [
+          6664,
+          3279
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_04",
+      "name": "Pátios da Vila Velha",
+      "points": [
+        [
+          1600,
+          6600
+        ],
+        [
+          1950,
+          7850
+        ],
+        [
+          3100,
+          8150
+        ],
+        [
+          4250,
+          7850
+        ],
+        [
+          5736,
+          6582
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_05",
+      "name": "Travessa das varandas",
+      "points": [
+        [
+          3350,
+          6250
+        ],
+        [
+          3100,
+          7150
+        ],
+        [
+          3100,
+          8150
+        ],
+        [
+          2888,
+          9120
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_06",
+      "name": "Pátios da Vila Velha",
+      "points": [
+        [
+          1150,
+          5600
+        ],
+        [
+          2400,
+          6000
+        ],
+        [
+          3350,
+          6250
+        ]
+      ],
+      "width": 220,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_07",
+      "name": "Escadinhas dos vasos",
+      "points": [
+        [
+          2350,
+          5100
+        ],
+        [
+          2400,
+          6000
+        ],
+        [
+          3100,
+          7150
+        ]
+      ],
+      "width": 210,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_08",
+      "name": "Rua das casas brancas",
+      "points": [
+        [
+          2888,
+          9120
+        ],
+        [
+          1600,
+          9300
+        ],
+        [
+          1100,
+          10350
+        ],
+        [
+          2300,
+          11000
+        ],
+        [
+          3880,
+          10887
+        ]
+      ],
+      "width": 330,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_09",
+      "name": "Rua das casas brancas",
+      "points": [
+        [
+          1950,
+          7850
+        ],
+        [
+          1600,
+          9300
+        ],
+        [
+          900,
+          8950
+        ],
+        [
+          950,
+          7700
+        ],
+        [
+          1600,
+          6600
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_10",
+      "name": "Largo das hortênsias",
+      "points": [
+        [
+          3100,
+          8150
+        ],
+        [
+          4400,
+          9200
+        ],
+        [
+          5300,
+          9950
+        ],
+        [
+          5600,
+          10900
+        ],
+        [
+          3880,
+          10887
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_11",
+      "name": "Largo das hortênsias",
+      "points": [
+        [
+          5928,
+          8115
+        ],
+        [
+          6500,
+          9150
+        ],
+        [
+          5300,
+          9950
+        ],
+        [
+          3900,
+          10100
+        ],
+        [
+          2300,
+          11000
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "poente_12",
+      "name": "Casas da encosta",
+      "points": [
+        [
+          4400,
+          9200
+        ],
+        [
+          4250,
+          7850
+        ],
+        [
+          5200,
+          7300
+        ],
+        [
+          5736,
+          6582
+        ]
+      ],
+      "width": 230,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_01",
+      "name": "Travessa dos artesãos",
+      "points": [
+        [
+          6856,
+          5046
+        ],
+        [
+          7000,
+          6000
+        ],
+        [
+          6700,
+          7150
+        ],
+        [
+          6500,
+          8100
+        ],
+        [
+          7080,
+          7788
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_02",
+      "name": "Travessa dos artesãos",
+      "points": [
+        [
+          7000,
+          6000
+        ],
+        [
+          8000,
+          5820
+        ],
+        [
+          9672,
+          6069
+        ]
+      ],
+      "width": 240,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_03",
+      "name": "Beco das flores",
+      "points": [
+        [
+          8520,
+          4068
+        ],
+        [
+          8100,
+          4750
+        ],
+        [
+          8000,
+          5820
+        ]
+      ],
+      "width": 215,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_04",
+      "name": "Casario de São Martinho",
+      "points": [
+        [
+          6700,
+          7150
+        ],
+        [
+          7900,
+          7340
+        ],
+        [
+          8392,
+          8580
+        ]
+      ],
+      "width": 230,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_05",
+      "name": "Rua das oficinas",
+      "points": [
+        [
+          6500,
+          9150
+        ],
+        [
+          7600,
+          9650
+        ],
+        [
+          8968,
+          9834
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "centro_06",
+      "name": "Pátio da calçada",
+      "points": [
+        [
+          4520,
+          8394
+        ],
+        [
+          5200,
+          8350
+        ],
+        [
+          6500,
+          8100
+        ]
+      ],
+      "width": 230,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_01",
+      "name": "Rua do mercado",
+      "points": [
+        [
+          10056,
+          6906
+        ],
+        [
+          11100,
+          7220
+        ],
+        [
+          11900,
+          7800
+        ],
+        [
+          13700,
+          8300
+        ],
+        [
+          15368,
+          7884
+        ]
+      ],
+      "width": 380,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_02",
+      "name": "Rua do mercado",
+      "points": [
+        [
+          11900,
+          7800
+        ],
+        [
+          11900,
+          8900
+        ],
+        [
+          9896,
+          9558
+        ]
+      ],
+      "width": 300,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_03",
+      "name": "Travessa das louças",
+      "points": [
+        [
+          11100,
+          7220
+        ],
+        [
+          11400,
+          6450
+        ],
+        [
+          12360,
+          5976
+        ]
+      ],
+      "width": 220,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_04",
+      "name": "Beco dos tecidos",
+      "points": [
+        [
+          11900,
+          8900
+        ],
+        [
+          13200,
+          9400
+        ],
+        [
+          14600,
+          9200
+        ],
+        [
+          15000,
+          8450
+        ],
+        [
+          13700,
+          8300
+        ]
+      ],
+      "width": 240,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_05",
+      "name": "Pátios de habitação",
+      "points": [
+        [
+          13200,
+          9400
+        ],
+        [
+          13300,
+          10500
+        ],
+        [
+          12100,
+          10900
+        ],
+        [
+          9640,
+          10674
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "mercado_06",
+      "name": "Escadinhas do mercado",
+      "points": [
+        [
+          13700,
+          8300
+        ],
+        [
+          13600,
+          7200
+        ],
+        [
+          13672,
+          6768
+        ]
+      ],
+      "width": 220,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_01",
+      "name": "Casas do Duche",
+      "points": [
+        [
+          17352,
+          1770
+        ],
+        [
+          16100,
+          1400
+        ],
+        [
+          14500,
+          1550
+        ],
+        [
+          12900,
+          1600
+        ],
+        [
+          12000,
+          2400
+        ],
+        [
+          13128,
+          4908
+        ]
+      ],
+      "width": 330,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_02",
+      "name": "Casas do Duche",
+      "points": [
+        [
+          14500,
+          1550
+        ],
+        [
+          14550,
+          2800
+        ],
+        [
+          15900,
+          3250
+        ],
+        [
+          18568,
+          3651
+        ]
+      ],
+      "width": 300,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_03",
+      "name": "Pátios do Duche",
+      "points": [
+        [
+          12900,
+          1600
+        ],
+        [
+          13000,
+          3000
+        ],
+        [
+          13800,
+          3900
+        ],
+        [
+          15528,
+          5184
+        ]
+      ],
+      "width": 250,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_04",
+      "name": "Pátios do Duche",
+      "points": [
+        [
+          12000,
+          2400
+        ],
+        [
+          13000,
+          3000
+        ],
+        [
+          14550,
+          2800
+        ]
+      ],
+      "width": 230,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_05",
+      "name": "Largo das varandas",
+      "points": [
+        [
+          17352,
+          1770
+        ],
+        [
+          18800,
+          1300
+        ],
+        [
+          20400,
+          1700
+        ],
+        [
+          21300,
+          2900
+        ],
+        [
+          20900,
+          4300
+        ],
+        [
+          17672,
+          4767
+        ]
+      ],
+      "width": 340,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_06",
+      "name": "Largo das varandas",
+      "points": [
+        [
+          20400,
+          1700
+        ],
+        [
+          20000,
+          3100
+        ],
+        [
+          18700,
+          3500
+        ],
+        [
+          17900,
+          2500
+        ],
+        [
+          17352,
+          1770
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_07",
+      "name": "Rua dos azulejos",
+      "points": [
+        [
+          20000,
+          3100
+        ],
+        [
+          20900,
+          4300
+        ],
+        [
+          20400,
+          5500
+        ],
+        [
+          19000,
+          5900
+        ],
+        [
+          17672,
+          4767
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_08",
+      "name": "Rua dos azulejos",
+      "points": [
+        [
+          18700,
+          3500
+        ],
+        [
+          19000,
+          4650
+        ],
+        [
+          19000,
+          5900
+        ]
+      ],
+      "width": 230,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_09",
+      "name": "Escadinhas dos azulejos",
+      "points": [
+        [
+          15900,
+          3250
+        ],
+        [
+          16700,
+          3650
+        ],
+        [
+          18700,
+          3500
+        ]
+      ],
+      "width": 210,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "norte_10",
+      "name": "Pátios da fonte",
+      "points": [
+        [
+          15528,
+          5184
+        ],
+        [
+          16000,
+          5750
+        ],
+        [
+          16900,
+          6500
+        ],
+        [
+          18632,
+          6162
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_01",
+      "name": "Casario da encosta",
+      "points": [
+        [
+          18280,
+          9975
+        ],
+        [
+          19700,
+          10800
+        ],
+        [
+          21000,
+          11900
+        ],
+        [
+          21000,
+          13500
+        ],
+        [
+          19800,
+          14500
+        ],
+        [
+          18000,
+          14700
+        ],
+        [
+          16300,
+          14100
+        ],
+        [
+          15100,
+          12900
+        ],
+        [
+          13300,
+          12400
+        ],
+        [
+          12100,
+          10900
+        ]
+      ],
+      "width": 330,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_02",
+      "name": "Casario da encosta",
+      "points": [
+        [
+          19700,
+          10800
+        ],
+        [
+          18200,
+          11300
+        ],
+        [
+          17000,
+          12000
+        ],
+        [
+          16300,
+          13100
+        ],
+        [
+          16300,
+          14100
+        ]
+      ],
+      "width": 270,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_03",
+      "name": "Pátios das portadas",
+      "points": [
+        [
+          21000,
+          11900
+        ],
+        [
+          19500,
+          12400
+        ],
+        [
+          18200,
+          12800
+        ],
+        [
+          17000,
+          12000
+        ],
+        [
+          15100,
+          12900
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_04",
+      "name": "Pátios das portadas",
+      "points": [
+        [
+          19800,
+          14500
+        ],
+        [
+          19500,
+          13500
+        ],
+        [
+          18200,
+          12800
+        ],
+        [
+          18200,
+          11300
+        ]
+      ],
+      "width": 240,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_05",
+      "name": "Rua dos jardins",
+      "points": [
+        [
+          16300,
+          14100
+        ],
+        [
+          14700,
+          14400
+        ],
+        [
+          12900,
+          14000
+        ],
+        [
+          11300,
+          13200
+        ],
+        [
+          10900,
+          11900
+        ],
+        [
+          9640,
+          10674
+        ]
+      ],
+      "width": 280,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_06",
+      "name": "Rua dos jardins",
+      "points": [
+        [
+          11300,
+          13200
+        ],
+        [
+          13300,
+          12400
+        ],
+        [
+          14700,
+          14400
+        ]
+      ],
+      "width": 240,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_07",
+      "name": "Escadinhas da encosta",
+      "points": [
+        [
+          13300,
+          10500
+        ],
+        [
+          13300,
+          11400
+        ],
+        [
+          13300,
+          12400
+        ]
+      ],
+      "width": 210,
+      "surface": "steps",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_08",
+      "name": "Travessa das portadas",
+      "points": [
+        [
+          14600,
+          9200
+        ],
+        [
+          15700,
+          10200
+        ],
+        [
+          17000,
+          12000
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_09",
+      "name": "Casario da encosta",
+      "points": [
+        [
+          15700,
+          10200
+        ],
+        [
+          18200,
+          11300
+        ]
+      ],
+      "width": 230,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_10",
+      "name": "Pátios do jardim",
+      "points": [
+        [
+          10900,
+          11900
+        ],
+        [
+          10000,
+          12500
+        ],
+        [
+          8808,
+          11784
+        ]
+      ],
+      "width": 250,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "sul_11",
+      "name": "Pátios do jardim",
+      "points": [
+        [
+          11300,
+          13200
+        ],
+        [
+          10400,
+          14200
+        ],
+        [
+          8680,
+          13740
+        ]
+      ],
+      "width": 250,
+      "surface": "earth",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_SaoMartinho",
+      "name": "Igreja de São Martinho",
+      "points": [
+        [
+          6856,
+          5046
+        ],
+        [
+          6536,
+          4618
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_Valencas",
+      "name": "Palácio Valenças",
+      "points": [
+        [
+          13672,
+          6768
+        ],
+        [
+          13768,
+          6244
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_Lawrences",
+      "name": "Lawrence’s Hotel",
+      "points": [
+        [
+          2888,
+          9120
+        ],
+        [
+          2888,
+          9130
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_Piriquita",
+      "name": "Piriquita",
+      "points": [
+        [
+          9928,
+          5139
+        ],
+        [
+          10250,
+          4880
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_Sassetti",
+      "name": "Vila Sassetti",
+      "points": [
+        [
+          8136,
+          12117
+        ],
+        [
+          7722,
+          12117
+        ],
+        [
+          7722,
+          12313
+        ],
+        [
+          7128,
+          12313
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "approach_MoorishFountain",
+      "name": "Fonte Mourisca",
+      "points": [
+        [
+          15528,
+          5184
+        ],
+        [
+          15720,
+          4711
+        ]
+      ],
+      "width": 260,
+      "surface": "stone",
+      "authored_extension": true
+    },
+    {
+      "id": "byron_doorstep",
+      "name": "Passagem Lord Byron",
+      "points": [
+        [
+          4700,
+          6760
+        ],
+        [
+          4800,
+          6380
+        ]
+      ],
+      "width": 220,
+      "surface": "stone",
+      "authored_extension": true
+    }
+  ],
+  "plazas": [
+    {
+      "id": "palace_square",
+      "name": "Largo Rainha D. Amélia",
+      "rect": [
+        8646,
+        1950,
+        2500,
+        680
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "republic_square",
+      "name": "Praça da República",
+      "rect": [
+        8750,
+        3000,
+        1400,
+        570
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "martinho_terrace",
+      "name": "Adro de São Martinho",
+      "rect": [
+        6100,
+        4570,
+        1000,
+        620
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "ferraria_terrace",
+      "name": "Miradouro da Ferraria",
+      "rect": [
+        11200,
+        6670,
+        850,
+        450
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "ferreira_square",
+      "name": "Largo Ferreira de Castro",
+      "rect": [
+        9500,
+        9360,
+        900,
+        660
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "liberdade_garden",
+      "name": "Parque da Liberdade",
+      "rect": [
+        17864,
+        7173,
+        1664,
+        1140
+      ],
+      "surface": "earth"
+    },
+    {
+      "id": "sassetti_garden",
+      "name": "Jardins da Vila Sassetti",
+      "rect": [
+        7560,
+        11643,
+        2080,
+        1230
+      ],
+      "surface": "earth"
+    },
+    {
+      "id": "market_square",
+      "name": "Largo da Feira",
+      "rect": [
+        11100,
+        7410,
+        1500,
+        1050
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "western_court",
+      "name": "Largo das Hortênsias",
+      "rect": [
+        4800,
+        9670,
+        1000,
+        720
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "tile_square",
+      "name": "Largo dos Azulejos",
+      "rect": [
+        18450,
+        4350,
+        1000,
+        770
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "residential_court",
+      "name": "Pátio das Portadas",
+      "rect": [
+        17680,
+        12400,
+        1040,
+        760
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "garden_court",
+      "name": "Largo dos Jardins",
+      "rect": [
+        12500,
+        12100,
+        1030,
+        760
+      ],
+      "surface": "stone"
+    },
+    {
+      "id": "byron_court",
+      "name": "Recanto Lord Byron",
+      "rect": [
+        4300,
+        6480,
+        850,
+        600
+      ],
+      "surface": "stone"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "village_palace",
+      "name": "Palácio Nacional de Sintra",
+      "position": [
+        9896,
+        2190
+      ],
+      "radius": 470
+    },
+    {
+      "id": "village_republic",
+      "name": "Praça da República",
+      "position": [
+        9352,
+        3279
+      ],
+      "radius": 430
+    },
+    {
+      "id": "village_piriquita",
+      "name": "Piriquita · Rua das Padarias",
+      "position": [
+        9928,
+        4581
+      ],
+      "radius": 310
+    },
+    {
+      "id": "village_martinho",
+      "name": "Igreja de São Martinho",
+      "position": [
+        6856,
+        5046
+      ],
+      "radius": 350
+    },
+    {
+      "id": "village_ferraria",
+      "name": "Rua da Ferraria",
+      "position": [
+        10600,
+        7140
+      ],
+      "radius": 290
+    },
+    {
+      "id": "village_miradouro",
+      "name": "Miradouro da Ferraria",
+      "position": [
+        11720,
+        6954
+      ],
+      "radius": 300
+    },
+    {
+      "id": "village_valencas",
+      "name": "Palácio Valenças",
+      "position": [
+        13800,
+        6720
+      ],
+      "radius": 420
+    },
+    {
+      "id": "village_lawrence",
+      "name": "Lawrence’s Hotel",
+      "position": [
+        3880,
+        9186
+      ],
+      "radius": 350
+    },
+    {
+      "id": "village_mourisca",
+      "name": "Fonte Mourisca · Volta do Duche",
+      "position": [
+        15720,
+        5184
+      ],
+      "radius": 300
+    },
+    {
+      "id": "village_liberdade",
+      "name": "Parque da Liberdade",
+      "position": [
+        18600,
+        7650
+      ],
+      "radius": 650
+    },
+    {
+      "id": "village_pipa",
+      "name": "Fonte da Pipa",
+      "position": [
+        8424,
+        8532
+      ],
+      "radius": 260
+    },
+    {
+      "id": "village_ferreira",
+      "name": "Largo Ferreira de Castro",
+      "position": [
+        9896,
+        9696
+      ],
+      "radius": 450
+    },
+    {
+      "id": "village_sassetti_entry",
+      "name": "Entrada da Vila Sassetti",
+      "position": [
+        9000,
+        10854
+      ],
+      "radius": 320
+    },
+    {
+      "id": "village_sassetti",
+      "name": "Jardins da Vila Sassetti",
+      "position": [
+        8232,
+        12150
+      ],
+      "radius": 650
+    },
+    {
+      "id": "village_market",
+      "name": "Largo da Feira",
+      "position": [
+        11850,
+        8100
+      ],
+      "radius": 600
+    },
+    {
+      "id": "village_western_court",
+      "name": "Largo das Hortênsias",
+      "position": [
+        5300,
+        10100
+      ],
+      "radius": 450
+    },
+    {
+      "id": "village_tiles",
+      "name": "Largo dos Azulejos",
+      "position": [
+        19000,
+        4900
+      ],
+      "radius": 450
+    },
+    {
+      "id": "village_residential",
+      "name": "Pátio das Portadas",
+      "position": [
+        18200,
+        13000
+      ],
+      "radius": 450
+    },
+    {
+      "id": "village_gardens",
+      "name": "Largo dos Jardins",
+      "position": [
+        13000,
+        12750
+      ],
+      "radius": 450
+    },
+    {
+      "id": "village_byron",
+      "name": "Recanto Lord Byron",
+      "position": [
+        4800,
+        6380
+      ],
+      "radius": 350
+    }
+  ],
+  "monuments": [
+    {
+      "id": "NationalPalace",
+      "label": "Palácio Nacional de Sintra",
+      "atlas": "palace",
+      "type": 0,
+      "at": [
+        9896,
+        1935
+      ],
+      "width": 2500,
+      "bases": [
+        [
+          8646,
+          1440,
+          2500,
+          174
+        ],
+        [
+          8646,
+          1614,
+          573,
+          278
+        ],
+        [
+          10573,
+          1614,
+          573,
+          278
+        ],
+        [
+          9544,
+          1683,
+          90,
+          181
+        ],
+        [
+          9983,
+          1683,
+          90,
+          181
+        ]
+      ]
+    },
+    {
+      "id": "SaoMartinho",
+      "label": "Igreja de São Martinho",
+      "atlas": "landmarks",
+      "type": 0,
+      "at": [
+        6536,
+        4488
+      ],
+      "width": 680,
+      "bases": [
+        [
+          6223,
+          3819,
+          626,
+          669
+        ]
+      ]
+    },
+    {
+      "id": "Valencas",
+      "label": "Palácio Valenças",
+      "atlas": "landmarks",
+      "type": 1,
+      "at": [
+        13768,
+        6114
+      ],
+      "width": 940,
+      "bases": [
+        [
+          13336,
+          5312,
+          865,
+          802
+        ]
+      ]
+    },
+    {
+      "id": "Lawrences",
+      "label": "Lawrence’s Hotel",
+      "atlas": "landmarks",
+      "type": 2,
+      "at": [
+        2888,
+        9000
+      ],
+      "width": 900,
+      "bases": [
+        [
+          2474,
+          8372,
+          828,
+          628
+        ]
+      ]
+    },
+    {
+      "id": "Piriquita",
+      "label": "Piriquita",
+      "atlas": "landmarks",
+      "type": 3,
+      "at": [
+        10250,
+        4750
+      ],
+      "width": 490,
+      "bases": [
+        [
+          10025,
+          4219,
+          451,
+          531
+        ]
+      ]
+    },
+    {
+      "id": "Sassetti",
+      "label": "Vila Sassetti",
+      "atlas": "landmarks",
+      "type": 4,
+      "at": [
+        7128,
+        12183
+      ],
+      "width": 900,
+      "bases": [
+        [
+          6714,
+          11453,
+          828,
+          730
+        ]
+      ]
+    },
+    {
+      "id": "MoorishFountain",
+      "label": "Fonte Mourisca",
+      "atlas": "landmarks",
+      "type": 5,
+      "at": [
+        15720,
+        4581
+      ],
+      "width": 570,
+      "bases": [
+        [
+          15458,
+          4213,
+          524,
+          368
+        ]
+      ]
+    }
+  ],
+  "urban_zones": [
+    [
+      700,
+      3400,
+      10800,
+      7700
+    ],
+    [
+      7100,
+      1700,
+      4300,
+      2700
+    ],
+    [
+      6000,
+      3000,
+      10000,
+      7600
+    ],
+    [
+      12000,
+      1100,
+      9600,
+      5300
+    ],
+    [
+      11500,
+      6000,
+      6000,
+      4900
+    ],
+    [
+      10600,
+      10200,
+      10800,
+      4850
+    ],
+    [
+      16500,
+      9650,
+      4100,
+      1250
+    ]
+  ],
+  "garden_zones": [
+    [
+      6550,
+      11000,
+      4050,
+      4300
+    ],
+    [
+      17400,
+      6700,
+      3300,
+      3500
+    ]
+  ],
+  "street_objects": [
+    {
+      "kind": 8,
+      "at": [
+        10370,
+        2510
+      ],
+      "width": 380,
+      "solid": true
+    },
+    {
+      "kind": 7,
+      "at": [
+        9050,
+        3470
+      ],
+      "width": 190,
+      "solid": true
+    },
+    {
+      "kind": 8,
+      "at": [
+        8424,
+        8532
+      ],
+      "width": 220,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        8250,
+        2680
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        8660,
+        2680
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        10840,
+        2680
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        11250,
+        2680
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        11720,
+        7170
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 6,
+      "at": [
+        19600,
+        5500
+      ],
+      "width": 400,
+      "solid": true
+    },
+    {
+      "kind": 0,
+      "at": [
+        11290,
+        7560
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 1,
+      "at": [
+        11290,
+        8350
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 1,
+      "at": [
+        11640,
+        7560
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        11640,
+        8350
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        11990,
+        7560
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 0,
+      "at": [
+        11990,
+        8350
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 0,
+      "at": [
+        12340,
+        7560
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 1,
+      "at": [
+        12340,
+        8350
+      ],
+      "width": 270,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        8650,
+        3690
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        10400,
+        3850
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        10630,
+        3850
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        4850,
+        6790
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        18550,
+        4740
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        19150,
+        4740
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        17880,
+        12750
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        18480,
+        12750
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        12650,
+        12400
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 3,
+      "at": [
+        13300,
+        12400
+      ],
+      "width": 250,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        9615,
+        2731
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        9345,
+        2579
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        9548,
+        6701
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        9508,
+        6925
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11665,
+        8409
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11487,
+        8241
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10216,
+        9119
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        9960,
+        9019
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        8532,
+        6160
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        8668,
+        6071
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        7102,
+        3807
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        7250,
+        3636
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        4520,
+        6196
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        4360,
+        6221
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        5908,
+        7339
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        5756,
+        7358
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10356,
+        3321
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10172,
+        3642
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10336,
+        5458
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10224,
+        5564
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11202,
+        7040
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11278,
+        7192
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        5128,
+        3655
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        5084,
+        3460
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        2154,
+        4688
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        1996,
+        4812
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        3321,
+        6727
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        3129,
+        6673
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        2445,
+        5546
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        2305,
+        5554
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        1872,
+        8598
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        1678,
+        8552
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        6302,
+        8584
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        6126,
+        8681
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        7027,
+        5508
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        6829,
+        5538
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        8372,
+        4447
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        8248,
+        4371
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        7089,
+        9314
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        7011,
+        9486
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10623,
+        6915
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10533,
+        7211
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11180,
+        6808
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        11320,
+        6862
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13345,
+        9941
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13155,
+        9959
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16689,
+        1710
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16763,
+        1460
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13040,
+        2294
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        12860,
+        2306
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        18034,
+        1407
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        18118,
+        1663
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        20526,
+        3643
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        20374,
+        3757
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16331,
+        3387
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16269,
+        3513
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        19055,
+        10275
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        18925,
+        10500
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        20280,
+        12240
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        20220,
+        12060
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        15519,
+        14353
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        15481,
+        14147
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13370,
+        10950
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13230,
+        10950
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16982,
+        10677
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        16918,
+        10823
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13627,
+        6489
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        13813,
+        6523
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10029,
+        4935
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        10149,
+        5084
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        15536,
+        4912
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 4,
+      "at": [
+        15712,
+        4983
+      ],
+      "width": 70,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        10100,
+        4620
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        10200,
+        4665
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        10040,
+        4900
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        10140,
+        4945
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        9520,
+        5530
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        9620,
+        5575
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        9310,
+        6100
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        9410,
+        6145
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        11100,
+        7000
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        11200,
+        7045
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        13700,
+        7000
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        13800,
+        7045
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        4300,
+        6840
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        4400,
+        6885
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        5240,
+        5050
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        5340,
+        5095
+      ],
+      "width": 100,
+      "solid": true
+    },
+    {
+      "kind": 2,
+      "at": [
+        19860,
+        4580
+      ],
+      "width": 140,
+      "solid": true
+    },
+    {
+      "kind": 10,
+      "at": [
+        19960,
+        4625
+      ],
+      "width": 100,
+      "solid": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "palace_arcade",
+      "kind": "observation",
+      "label": "Arcadas do Palácio",
+      "position": [
+        9775,
+        2250
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "As duas chaminés elevam-se sobre os telhados. Sob as arcadas, a sombra guarda a frescura da pedra."
+    },
+    {
+      "id": "piriquita_facade",
+      "kind": "observation",
+      "label": "Fachada da Piriquita",
+      "position": [
+        10312,
+        4722
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Azulejos amarelos, portas brancas e o nome por cima. O cheiro a massa quente parece acompanhar a rua toda."
+    },
+    {
+      "id": "martinho_view",
+      "kind": "observation",
+      "label": "Adro de São Martinho",
+      "position": [
+        6536,
+        5232
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Do adro, a vila aparece entre telhados. A torre da igreja ajuda-nos a encontrar outra vez o caminho."
+    },
+    {
+      "id": "valencas_loggia",
+      "kind": "observation",
+      "label": "Loggia do Palácio Valenças",
+      "position": [
+        13768,
+        6720
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "O rosa do palácio e os arcos de pedra clara recortam-se contra o verde do parque."
+    },
+    {
+      "id": "lawrence_facade",
+      "kind": "observation",
+      "label": "Lawrence’s Hotel",
+      "position": [
+        3880,
+        9186
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Janelas de cantaria, portadas verdes e um nome antigo. Aqui apetece abrandar o passo e inventar uma história."
+    },
+    {
+      "id": "mourisca_tiles",
+      "kind": "observation",
+      "label": "Azulejos da Fonte Mourisca",
+      "position": [
+        15720,
+        5184
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "O arco de ferradura envolve três arcos mais pequenos. A água e o padrão dos azulejos convidam a ficar."
+    },
+    {
+      "id": "ferraria_view",
+      "kind": "observation",
+      "label": "Miradouro da Ferraria",
+      "position": [
+        11720,
+        7044
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Um intervalo entre as casas abre a vista. As escadinhas trouxeram-nos acima da azáfama do largo."
+    },
+    {
+      "id": "sassetti_tower",
+      "kind": "observation",
+      "label": "Torre da Vila Sassetti",
+      "position": [
+        8168,
+        12183
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "A torre redonda parece nascer do jardim. Mais acima, as curvas do caminho desaparecem entre os carvalhos."
+    },
+    {
+      "id": "serra_directions",
+      "kind": "observation",
+      "label": "Indicações da encosta",
+      "position": [
+        8680,
+        13494
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Castelo dos Mouros e Pena, pela encosta. Para a nossa mata, seguimos juntos o caminho da serra."
+    },
+    {
+      "id": "western_directions",
+      "kind": "observation",
+      "label": "Caminho dos Pisões",
+      "position": [
+        3880,
+        10689
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Para oeste, a estrada continua para a Regaleira, Seteais e Monserrate. Hoje ficamos a descobrir os recantos da vila."
+    },
+    {
+      "id": "market_ceramics",
+      "kind": "observation",
+      "label": "Bancas de cerâmica",
+      "position": [
+        11800,
+        8020
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Entre a loiça azul e branca, os cestos e os tecidos, cada banca guarda um pequeno mundo de desenhos."
+    },
+    {
+      "id": "tile_frontages",
+      "kind": "observation",
+      "label": "Casas de azulejos",
+      "position": [
+        19000,
+        4900
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "As fachadas mudam de cor a cada esquina. Os ferros das varandas desenham sombras finas na calçada."
+    },
+    {
+      "id": "residential_patios",
+      "kind": "observation",
+      "label": "Pátios de habitação",
+      "position": [
+        18200,
+        13000
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "Portadas abertas, vasos à porta e escadas gastas. Entre as lojas, a vila continua a ser uma casa."
+    },
+    {
+      "id": "byron_corner",
+      "kind": "observation",
+      "label": "Recanto Lord Byron",
+      "position": [
+        4800,
+        6380
+      ],
+      "reach": 180,
+      "radius": 0,
+      "text": "A casa cor-de-rosa separa dois caminhos. Podemos escolher a sombra das escadas ou continuar pela rua."
+    }
+  ],
+  "menu_spawn": [
+    9775,
+    2250
+  ],
+  "forest_access": [
+    8680,
+    13740
+  ],
+  "earth_test": [
+    8648,
+    12450
+  ],
+  "stone_test": [
+    9640,
+    4068
+  ],
+  "districts": [
+    {
+      "name": "Casario da Biquinha",
+      "rect": [
+        500,
+        3200,
+        5800,
+        8100
+      ]
+    },
+    {
+      "name": "Vila Velha · comércio e habitação",
+      "rect": [
+        6300,
+        2800,
+        6500,
+        7900
+      ]
+    },
+    {
+      "name": "Casas do Duche",
+      "rect": [
+        12000,
+        900,
+        9850,
+        5900
+      ]
+    },
+    {
+      "name": "Casario da encosta",
+      "rect": [
+        10500,
+        10000,
+        11100,
+        5200
+      ]
+    },
+    {
+      "name": "Jardins da Vila Sassetti",
+      "rect": [
+        6100,
+        10800,
+        4500,
+        4700
+      ]
+    },
+    {
+      "name": "Parque da Liberdade",
+      "rect": [
+        17000,
+        6650,
+        4000,
+        3600
+      ]
+    }
+  ],
+  "arcade_floor": [
+    8646,
+    1562,
+    2500,
+    399
+  ],
+  "arcade_approaches": [
+    [
+      9358,
+      2048
+    ],
+    [
+      9792,
+      2048
+    ],
+    [
+      10278,
+      2048
+    ]
+  ],
+  "arcade_openings": [
+    [
+      9358,
+      1709
+    ],
+    [
+      9792,
+      1709
+    ],
+    [
+      10278,
+      1709
+    ]
+  ],
+  "feature_frontages": [
+    {
+      "id": "LordByronCorner",
+      "label": "Recanto Lord Byron",
+      "atlas": "urban",
+      "type": 3,
+      "at": [
+        4380,
+        6340
+      ],
+      "width": 450
+    }
+  ],
+  "building_count": 547,
+  "benches": [
+    [
+      8630,
+      2520
+    ],
+    [
+      11000,
+      2530
+    ],
+    [
+      11720,
+      6858
+    ],
+    [
+      10184,
+      9975
+    ],
+    [
+      18792,
+      7140
+    ],
+    [
+      8520,
+      12048
+    ],
+    [
+      5290,
+      10220
+    ],
+    [
+      19000,
+      5020
+    ],
+    [
+      18200,
+      13030
+    ],
+    [
+      13000,
+      12750
+    ]
+  ],
+  "plaques": [
+    {
+      "text": "Praça da República",
+      "at": [
+        9640,
+        2370
+      ]
+    },
+    {
+      "text": "Rua da Ferraria",
+      "at": [
+        9000,
+        6720
+      ]
+    },
+    {
+      "text": "Rua Marechal Saldanha",
+      "at": [
+        11816,
+        8070
+      ]
+    },
+    {
+      "text": "Largo Ferreira de Castro",
+      "at": [
+        10280,
+        8580
+      ]
+    },
+    {
+      "text": "Escadinhas Félix Nunes",
+      "at": [
+        9000,
+        6720
+      ]
+    },
+    {
+      "text": "Rua da Biquinha",
+      "at": [
+        7688,
+        4164
+      ]
+    },
+    {
+      "text": "Escadinhas do Briamante",
+      "at": [
+        4360,
+        5697
+      ]
+    },
+    {
+      "text": "Escadinhas da Assembleia",
+      "at": [
+        5736,
+        6582
+      ]
+    },
+    {
+      "text": "Volta do Duche",
+      "at": [
+        9320,
+        2940
+      ]
+    },
+    {
+      "text": "Arco do Terreirinho",
+      "at": [
+        9928,
+        5139
+      ]
+    },
+    {
+      "text": "Miradouro da Ferraria",
+      "at": [
+        10920,
+        7278
+      ]
+    },
+    {
+      "text": "Parque da Liberdade",
+      "at": [
+        17672,
+        4767
+      ]
+    },
+    {
+      "text": "Caminhos da Vila Sassetti",
+      "at": [
+        7848,
+        11169
+      ]
+    }
+  ],
+  "bunting": [
+    {
+      "a": [
+        9450,
+        4600
+      ],
+      "b": [
+        10050,
+        4620
+      ]
+    },
+    {
+      "a": [
+        9360,
+        5650
+      ],
+      "b": [
+        9960,
+        5690
+      ]
+    },
+    {
+      "a": [
+        11000,
+        7730
+      ],
+      "b": [
+        12660,
+        7730
+      ]
+    },
+    {
+      "a": [
+        18280,
+        4730
+      ],
+      "b": [
+        19550,
+        4770
+      ]
+    },
+    {
+      "a": [
+        4520,
+        6350
+      ],
+      "b": [
+        5070,
+        6370
+      ]
+    }
+  ],
+  "pickups": [
+    {
+      "item": 0,
+      "at": [
+        8392,
+        12150
+      ]
+    },
+    {
+      "item": 1,
+      "at": [
+        18952,
+        7698
+      ]
+    }
+  ]
+}

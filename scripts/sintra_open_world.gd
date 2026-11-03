@@ -19,6 +19,7 @@ const PROP_REGIONS: Array[Rect2] = [Rect2(0,0,512,620),Rect2(512,0,555,620),Rect
 const BRIDGES: Array[Vector2] = [Vector2(3070,920),Vector2(2930,2280)]
 # Stream centreline traced from the painting; coordinates use the full world size.
 const RIVER: Array[Vector2] = [Vector2(2960,0),Vector2(3050,400),Vector2(3070,920),Vector2(3110,1250),Vector2(3140,1800),Vector2(3040,2000),Vector2(2930,2280),Vector2(2860,2700),Vector2(2820,3100),Vector2(2780,3600),Vector2(2800,4050),Vector2(2940,4470),Vector2(2920,4900),Vector2(3080,5400)]
+var region_title := "Serra de Sintra"
 var opaque_paint: ShaderMaterial
 var actors: Node2D
 var props: Array = []
@@ -200,53 +201,7 @@ func _build_forest() -> void:
 		_add_prop(at,3,1.0)
 
 func _add_prop(at: Vector2, kind: int, variation: float) -> void:
-	if kind==5:
-		for attempt in 48:
-			var candidate := at if attempt==0 else at+Vector2.from_angle(attempt*2.4)*(55+attempt*8)
-			if is_walkable(candidate,120) and is_walkable(candidate+Vector2(-52,22),20) and is_walkable(candidate+Vector2(52,22),20):
-				at = candidate
-				break
-	var prop := Prop.new()
-	prop.position = at
-	prop.set_meta("kind",kind)
-	prop.add_to_group("tree_canopy" if kind<2 else ("solid_rock" if kind==3 else "scenery_prop"))
-	prop.collision_layer = 1
-	prop.collision_mask = 2
-	var humid := kind < 2
-	var region := BENCH_REGION if kind==5 else (Rect2(kind*512,0,512,1024) if humid else PROP_REGIONS[kind])
-	var factor: float = WorldScale.BENCH_WIDTH/region.size.x if kind==5 else WorldScale.PROP_HEIGHTS[kind]*variation/region.size.y
-	var sprite := Sprite2D.new()
-	sprite.material = opaque_paint
-	sprite.texture = BENCH if kind==5 else (HUMID_TREES if humid else PROPS)
-	sprite.region_enabled = true
-	sprite.region_rect = region
-	sprite.region_filter_clip_enabled = true
-	sprite.centered = false
-	sprite.scale = Vector2.ONE * factor
-	sprite.position = Vector2(-region.size.x * factor * 0.5,-region.size.y * factor * (1.0 if kind==5 else 0.95))
-	prop.sprite = sprite
-	prop.half_width = region.size.x*factor*0.53
-	prop.height = region.size.y*factor
-	prop.add_child(sprite)
-	var collider := CollisionShape2D.new()
-	if kind==5:
-		var shape := RectangleShape2D.new()
-		shape.size = WorldScale.BENCH_FOOTPRINT.size
-		collider.shape = shape
-		collider.position = WorldScale.BENCH_FOOTPRINT.get_center()
-		blocked_rects.append(Rect2(at+WorldScale.BENCH_FOOTPRINT.position,WorldScale.BENCH_FOOTPRINT.size))
-		prop.set_meta("radius",WorldScale.BENCH_WIDTH*0.5-12)
-		prop.seat_offsets = WorldScale.BENCH_SEATS.duplicate()
-	else:
-		var radius := 18.0 if kind<3 else 40.0
-		var shape := CircleShape2D.new()
-		shape.radius = radius*variation
-		prop.set_meta("radius",shape.radius)
-		collider.shape = shape
-		circles.append(Vector3(at.x,at.y,shape.radius))
-	prop.add_child(collider)
-	actors.add_child(prop)
-	props.append(prop)
+	preload("res://scripts/exploration_props.gd").add(self,at,kind,variation)
 
 func _add_wall(rect: Rect2) -> void:
 	var body := StaticBody2D.new()
@@ -316,39 +271,16 @@ func scenery_blocks(at: Vector2, margin: float) -> bool:
 	return false
 
 func _build_navigation() -> void:
-	navigation.region = Rect2i(0,0,int(WORLD_SIZE.x/CELL),int(WORLD_SIZE.y/CELL))
-	navigation.cell_size = Vector2.ONE*CELL
-	navigation.offset = Vector2.ONE*CELL*0.5
-	navigation.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES
-	navigation.default_compute_heuristic = AStarGrid2D.HEURISTIC_OCTILE
-	navigation.default_estimate_heuristic = AStarGrid2D.HEURISTIC_OCTILE
-	navigation.update()
-	for x in navigation.region.size.x:
-		for y in navigation.region.size.y:
-			var id := Vector2i(x,y)
-			navigation.set_point_solid(id,not is_walkable(navigation.get_point_position(id),23))
+	preload("res://scripts/exploration_navigation.gd").bake(self)
 
 func _nearest_cell(at: Vector2) -> Vector2i:
-	var cell := Vector2i(at/CELL).clamp(Vector2i.ZERO,navigation.region.size-Vector2i.ONE)
-	if not navigation.is_point_solid(cell):
-		return cell
-	for radius in range(1,14):
-		for x in range(-radius,radius+1):
-			for y in range(-radius,radius+1):
-				var test := cell+Vector2i(x,y)
-				if navigation.region.has_point(test) and not navigation.is_point_solid(test):
-					return test
-	return cell
+	return preload("res://scripts/exploration_navigation.gd").nearest(self,at)
 
 func find_path(from: Vector2, to: Vector2) -> PackedVector2Array:
-	return navigation.get_point_path(_nearest_cell(from),_nearest_cell(to))
+	return preload("res://scripts/exploration_navigation.gd").find_path(self,from,to)
 
 func can_walk_line(from: Vector2, to: Vector2) -> bool:
-	var steps := maxi(1,ceili(from.distance_to(to)/16.0))
-	for i in range(steps+1):
-		if not is_walkable(from.lerp(to,float(i)/steps),16):
-			return false
-	return true
+	return preload("res://scripts/exploration_navigation.gd").can_walk_line(self,from,to)
 
 func area_at(at: Vector2) -> String:
 	for place in landmarks:
@@ -509,3 +441,24 @@ func _build_southern_forest() -> void:
 	_add_wall(Rect2(3660,4280,210,30))
 	_add_wall(Rect2(4470,4280,160,30))
 	_add_wall(Rect2(4440,5280,340,35))
+
+func step_environment(delta: float, cycle: RefCounted) -> void:
+	wildlife.day_cycle = cycle
+	wildlife.step(delta)
+	puppy.step(delta)
+	Discoveries.step(self,delta)
+
+func allows_ground_rest(_at: Vector2) -> bool:
+	return true
+
+func draw_exploration_map(canvas: Control, paper: Rect2) -> void:
+	var map_scale := paper.size/WORLD_SIZE
+	for index in 4:
+		var origin := Vector2(index%2,floori(index/2.0))*Vector2(2400,1800)
+		canvas.draw_texture_rect(TERRAIN[index],Rect2(paper.position+origin*map_scale,Vector2(2400,1800)*map_scale),false,Color(0.91,0.92,0.79))
+	canvas.draw_texture_rect(SOUTH,Rect2(paper.position+Vector2(0,3600)*map_scale,Vector2(4800,1800)*map_scale),false)
+	for layer in terrain_layers:
+		canvas.draw_texture_rect(layer.texture,Rect2(paper.position+layer.rect.position*map_scale,layer.rect.size*map_scale),false)
+	for i in Heritage.IDS.size():
+		var rect: Rect2 = Heritage.site_rect(i)
+		canvas.draw_texture_rect(Heritage.TEXTURES[i],Rect2(paper.position+rect.position*map_scale,rect.size*map_scale),false)

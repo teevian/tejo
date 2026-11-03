@@ -11,6 +11,9 @@ var sprite: Node2D
 var paint_rect: Rect2
 var ball_velocity := Vector2.ZERO
 var contact_radius := 0.0
+var juggling = preload("res://scripts/football_juggling.gd").new()
+var ball_accumulator := 0.0
+var ball_paint_scale := Vector2.ONE
 
 func _ready() -> void:
 	name = "Discovery_"+str(kind)
@@ -21,12 +24,14 @@ func _ready() -> void:
 	var factor := paint_height/source.size.y
 	paint_rect = Rect2(-Vector2(source.size.x*.5,source.size.y)*factor,source.size*factor)
 	if kind==3:
+		juggling.ball = self
 		var ball := Sprite2D.new()
 		ball.texture = ATLAS
 		ball.region_enabled = true
 		ball.region_rect = source
 		ball.region_filter_clip_enabled = true
 		ball.scale = Vector2.ONE*factor
+		ball_paint_scale = ball.scale
 		ball.position = Vector2(0,-paint_height*.5)
 		sprite = ball
 	else:
@@ -68,8 +73,9 @@ func footprint(offset: Vector2, radius: float) -> void:
 func _draw() -> void:
 	if kind==3:
 		draw_set_transform(Vector2(0,1),0,Vector2(1,.35))
-		draw_circle(Vector2.ZERO,12,Color(0.06,0.08,0.04,.20))
+		draw_circle(Vector2.ZERO,12+minf(5,juggling.height*0.02),Color(0.06,0.08,0.04,.20/(1+juggling.height*0.005)))
 		draw_set_transform(Vector2.ZERO)
+		juggling.draw_counter(self)
 
 func draw_sign_labels(canvas: CanvasItem) -> void:
 	if labels.size()!=2: return
@@ -82,11 +88,29 @@ func draw_sign_labels(canvas: CanvasItem) -> void:
 		canvas.draw_string(font,at,labels[i],HORIZONTAL_ALIGNMENT_LEFT,-1,14,Color("352e23"))
 
 func kick(person: Node2D) -> void:
+	if juggling.height>10: return
+	juggling.stop()
 	var direction: Vector2 = person.position.direction_to(position)
 	if direction.is_zero_approx(): direction = person.facing
 	ball_velocity = direction*275
 
 func step_ball(delta: float) -> void:
+	if get_tree().paused: return
+	if "people" in world and world.people.any(func(person): return person.in_dialogue): return
+	# Fixed steps keep timing windows and gravity stable at different display rates.
+	ball_accumulator += minf(delta,0.25)
+	while ball_accumulator>=1.0/120.0:
+		juggling.step(1.0/120.0)
+		ball_accumulator -= 1.0/120.0
+	if is_instance_valid(sprite):
+		sprite.position = Vector2(0,-paint_height*0.5-juggling.height)
+		sprite.rotation += juggling.spin*delta
+		var pulse: float = juggling.hit_flash/0.12
+		sprite.scale = ball_paint_scale*Vector2(1+pulse*0.10,1-pulse*0.08)
+	z_index = 1 if juggling.height>0 else 0
+	queue_redraw()
+
+func move_ball(delta: float, friction: float) -> void:
 	if ball_velocity.length()<2:
 		ball_velocity = Vector2.ZERO
 		return
@@ -101,4 +125,4 @@ func step_ball(delta: float) -> void:
 		position = candidate
 		remaining -= distance
 		sprite.rotation += distance/15
-	ball_velocity *= exp(-delta*1.45)
+	ball_velocity *= exp(-delta*friction)

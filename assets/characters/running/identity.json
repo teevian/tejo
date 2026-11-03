@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "head_scale": 1,
+  "reference_column": 0,
+  "references": [
+    "assets/characters/open_world/te-walk-friendly-painted-face.png",
+    "assets/characters/open_world/jo-walk-south-painted-face.png"
+  ],
+  "placements": [
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 0,
+      "translation": [
+        87,
+        11
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 1,
+      "translation": [
+        90,
+        25
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 2,
+      "translation": [
+        89,
+        15
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 3,
+      "translation": [
+        88,
+        12
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 4,
+      "translation": [
+        90,
+        26
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 0,
+      "key": 5,
+      "translation": [
+        88,
+        1
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 0,
+      "translation": [
+        97,
+        13
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 1,
+      "translation": [
+        94,
+        27
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 2,
+      "translation": [
+        94,
+        21
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 3,
+      "translation": [
+        97,
+        14
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 4,
+      "translation": [
+        94,
+        20
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 1,
+      "key": 5,
+      "translation": [
+        95,
+        22
+      ],
+      "feature_max_y": 200
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 0,
+      "translation": [
+        113,
+        21
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 1,
+      "translation": [
+        110,
+        23
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 2,
+      "translation": [
+        113,
+        29
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 3,
+      "translation": [
+        112,
+        23
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 4,
+      "translation": [
+        107,
+        22
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 2,
+      "key": 5,
+      "translation": [
+        115,
+        -4
+      ],
+      "feature_max_y": 187
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 0,
+      "translation": [
+        109,
+        18
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 1,
+      "translation": [
+        104,
+        30
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 2,
+      "translation": [
+        108,
+        4
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 3,
+      "translation": [
+        109,
+        16
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 4,
+      "translation": [
+        107,
+        33
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 3,
+      "key": 5,
+      "translation": [
+        106,
+        6
+      ],
+      "feature_max_y": 188
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 0,
+      "translation": [
+        86,
+        7
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 1,
+      "translation": [
+        86,
+        31
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 2,
+      "translation": [
+        89,
+        -13
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 3,
+      "translation": [
+        89,
+        8
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 4,
+      "translation": [
+        86,
+        31
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 0,
+      "row": 4,
+      "key": 5,
+      "translation": [
+        89,
+        -10
+      ],
+      "feature_max_y": 186
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 0,
+      "translation": [
+        87,
+        13
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 1,
+      "translation": [
+        87,
+        28
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 2,
+      "translation": [
+        86,
+        17
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 3,
+      "translation": [
+        84,
+        14
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 4,
+      "translation": [
+        88,
+        25
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 0,
+      "key": 5,
+      "translation": [
+        85,
+        4
+      ],
+      "feature_max_y": 209
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 0,
+      "translation": [
+        98,
+        4
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 1,
+      "translation": [
+        95,
+        18
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 2,
+      "translation": [
+        96,
+        16
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 3,
+      "translation": [
+        99,
+        9
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 4,
+      "translation": [
+        94,
+        11
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 1,
+      "key": 5,
+      "translation": [
+        97,
+        20
+      ],
+      "feature_max_y": 206
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 0,
+      "translation": [
+        111,
+        2
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 1,
+      "translation": [
+        112,
+        4
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 2,
+      "translation": [
+        108,
+        13
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 3,
+      "translation": [
+        115,
+        -3
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 4,
+      "translation": [
+        111,
+        2
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 2,
+      "key": 5,
+      "translation": [
+        115,
+        -27
+      ],
+      "feature_max_y": 208
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 0,
+      "translation": [
+        110,
+        -1
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 1,
+      "translation": [
+        109,
+        19
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 2,
+      "translation": [
+        110,
+        -18
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 3,
+      "translation": [
+        110,
+        -2
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 4,
+      "translation": [
+        109,
+        19
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 3,
+      "key": 5,
+      "translation": [
+        108,
+        -18
+      ],
+      "feature_max_y": 202
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 0,
+      "translation": [
+        89,
+        -8
+      ],
+      "feature_max_y": 194
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 1,
+      "translation": [
+        87,
+        24
+      ],
+      "feature_max_y": 194
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 2,
+      "translation": [
+        91,
+        -30
+      ],
+      "feature_max_y": 194
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 3,
+      "translation": [
+        91,
+        -9
+      ],
+      "feature_max_y": 194
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 4,
+      "translation": [
+        88,
+        24
+      ],
+      "feature_max_y": 194
+    },
+    {
+      "kind": 1,
+      "row": 4,
+      "key": 5,
+      "translation": [
+        92,
+        -29
+      ],
+      "feature_max_y": 194
+    }
+  ],
+  "palette": [
+    {
+      "character": "te",
+      "row": 0,
+      "part": "shorts",
+      "pixels": 21656,
+      "reference_pixels": 5387,
+      "median_target": [
+        194,
+        187,
+        185
+      ]
+    },
+    {
+      "character": "te",
+      "row": 0,
+      "part": "shoes",
+      "pixels": 19719,
+      "reference_pixels": 4981,
+      "median_target": [
+        45,
+        43,
+        43
+      ]
+    },
+    {
+      "character": "te",
+      "row": 1,
+      "part": "shorts",
+      "pixels": 20009,
+      "reference_pixels": 5601,
+      "median_target": [
+        191,
+        186,
+        185
+      ]
+    },
+    {
+      "character": "te",
+      "row": 1,
+      "part": "shoes",
+      "pixels": 32502,
+      "reference_pixels": 6327,
+      "median_target": [
+        54,
+        51,
+        52
+      ]
+    },
+    {
+      "character": "te",
+      "row": 2,
+      "part": "shorts",
+      "pixels": 23258,
+      "reference_pixels": 1827,
+      "median_target": [
+        183,
+        179,
+        178
+      ]
+    },
+    {
+      "character": "te",
+      "row": 2,
+      "part": "shoes",
+      "pixels": 32500,
+      "reference_pixels": 5540,
+      "median_target": [
+        49,
+        47,
+        47
+      ]
+    },
+    {
+      "character": "te",
+      "row": 3,
+      "part": "shorts",
+      "pixels": 20891,
+      "reference_pixels": 5444,
+      "median_target": [
+        185,
+        181,
+        181
+      ]
+    },
+    {
+      "character": "te",
+      "row": 3,
+      "part": "shoes",
+      "pixels": 32162,
+      "reference_pixels": 5253,
+      "median_target": [
+        51,
+        49,
+        49
+      ]
+    },
+    {
+      "character": "te",
+      "row": 4,
+      "part": "shorts",
+      "pixels": 24240,
+      "reference_pixels": 5537,
+      "median_target": [
+        186,
+        179,
+        178
+      ]
+    },
+    {
+      "character": "te",
+      "row": 4,
+      "part": "shoes",
+      "pixels": 24022,
+      "reference_pixels": 5242,
+      "median_target": [
+        43,
+        41,
+        41
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 0,
+      "part": "shorts",
+      "pixels": 20385,
+      "reference_pixels": 3909,
+      "median_target": [
+        207,
+        181,
+        157
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 0,
+      "part": "shoes",
+      "pixels": 18696,
+      "reference_pixels": 4698,
+      "median_target": [
+        202,
+        178,
+        161
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 1,
+      "part": "shorts",
+      "pixels": 16975,
+      "reference_pixels": 3224,
+      "median_target": [
+        209,
+        186,
+        164
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 1,
+      "part": "shoes",
+      "pixels": 27930,
+      "reference_pixels": 5346,
+      "median_target": [
+        210,
+        189,
+        173
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 2,
+      "part": "shorts",
+      "pixels": 19119,
+      "reference_pixels": 1291,
+      "median_target": [
+        212,
+        185,
+        157
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 2,
+      "part": "shoes",
+      "pixels": 26595,
+      "reference_pixels": 4927,
+      "median_target": [
+        207,
+        181,
+        161
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 3,
+      "part": "shorts",
+      "pixels": 21011,
+      "reference_pixels": 3201,
+      "median_target": [
+        203,
+        176,
+        148
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 3,
+      "part": "shoes",
+      "pixels": 28632,
+      "reference_pixels": 4408,
+      "median_target": [
+        203,
+        179,
+        160
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 4,
+      "part": "shorts",
+      "pixels": 18868,
+      "reference_pixels": 4908,
+      "median_target": [
+        211,
+        187,
+        164
+      ]
+    },
+    {
+      "character": "jo",
+      "row": 4,
+      "part": "shoes",
+      "pixels": 16284,
+      "reference_pixels": 4060,
+      "median_target": [
+        208,
+        184,
+        168
+      ]
+    }
+  ]
+}

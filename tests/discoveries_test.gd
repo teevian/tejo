@@ -36,8 +36,8 @@ func run() -> void:
 	scene.people[0].facing = Vector2.RIGHT
 	scene._interact()
 	for i in 50: world.Discoveries.step(world,.02)
-	check(ball.position.x>start.x+60,"Old football can be kicked and rolls")
-	check(world.is_walkable(ball.position,17),"Rolling ball remains on accessible ground")
+	check(scene.people[0].is_juggling() and ball.juggling.height>0,"Te lifts the existing football into a juggling arc")
+	check(world.is_walkable(ball.position,17),"Football remains over accessible ground")
 	var time: Vector2 = ball.position
 	scene._toggle_map()
 	scene._process(3)
@@ -58,5 +58,5 @@ func run() -> void:
 	check(art.expression(pup)=="angry","Setbacks return the face to a defensive expression")
 	pup.friendly = true
 	check(art.expression(pup)=="trusted","Established friendship keeps original cute face")
-	if not failed: print("PASS: distinct reachable encounters, signs, unusual plants, local conversations, kickable ball and modal pause, trust-dependent facial art")
+	if not failed: print("PASS: distinct reachable encounters, signs, unusual plants, local conversations, juggling ball and modal pause, trust-dependent facial art")
 	quit(1 if failed else 0)

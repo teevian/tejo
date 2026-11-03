@@ -244,7 +244,7 @@ func _start_climb(person, edge: Dictionary, action: String, companion := false, 
 	if not platforms[edge.to].enabled or not rope_allows(person,target,int(edge.to)):
 		hud.message("A corda está esticada. Aproxima o companheiro antes de continuar.")
 		return false
-	var seconds: float = {"climb":0.34,"boost":0.90,"pull":0.85,"chimney":1.35,"rope":1.15}.get(action,0.40)
+	var seconds: float = {"climb":0.34,"boost":0.90,"ride":1.15,"pull":0.85,"chimney":1.35,"rope":1.15}.get(action,0.40)
 	var world_start: Vector3 = space.world_point(person)
 	var world_target: Vector3 = space.point_for(person,target,int(edge.to))
 	person.travel(target,int(edge.to),action,seconds+(0.10 if companion else 0.0))
@@ -277,6 +277,7 @@ func interact() -> void:
 			rock_falling = true
 			rock_time = 0
 			person.pose = "support"
+			person.play_gesture("push",1.5)
 			hud.message("A pedra rola para a saliência de baixo. Agora há dois degraus.")
 		else: hud.message("A pedra solta está junto à borda direita.")
 		return
@@ -287,6 +288,7 @@ func interact() -> void:
 		return
 	if person.shelf==7 and not flags.get("balance_locked",false):
 		if space.prop_near(person,7,750,95):
+			person.play_gesture("push",0.45)
 			flags.balance_locked = true
 			platforms[Route.BALANCE_STEP].enabled = true
 			for climber in people:
@@ -329,8 +331,9 @@ func interact() -> void:
 		friend.position.x = edge_x(person,edge.dir)-edge.dir*36
 		friend.pose = "support"
 		friend.anchor = "support"
-		_start_climb(person,edge,"boost",false,1.8)
-		hud.message("%s dá pé a %s. Falta encontrar uma passagem para os dois."%[friend.name,person.name])
+		var lift := "ride" if edge.mode=="rock" else "boost"
+		_start_climb(person,edge,lift,false,1.8)
+		hud.message(("%s leva %s às costas para alcançar o rebordo." if lift=="ride" else "%s dá pé a %s. Falta encontrar uma passagem para os dois.")%[friend.name,person.name])
 	elif edge.mode=="chimney":
 		if not _support_ready(person,friend,edge):
 			hud.message("Juntem-se junto à fenda. Só conseguem subir apoiados um no outro.")
@@ -443,10 +446,71 @@ func _physics_process(delta: float) -> void:
 			if person.pose=="support" and person.anchor in ["","support"]: person.pose = "idle"
 			if person.anchor=="support": person.anchor = ""
 	motion.constrain_rope()
+	_sync_climbing_poses()
 	var checkpoint_y := float(platforms[checkpoint].y)
 	if people.all(func(person): return not person.grounded and person.position.y>checkpoint_y+480) or people.any(func(person): return person.position.y>4770): recover_pair()
 	_check_progress()
 	space.sync_people()
+
+func _sync_climbing_poses() -> void:
+	# Both halves use the traversal's phase and authored contact points. These
+	# offsets affect drawings only; collision feet and rope constraints stay live.
+	for person in people:
+		person.assist_action = ""
+		person.assist_progress = -1
+		person.choreography_offset = Vector2.ZERO
+		person.z_index = 5+person.kind
+		if person.grounded and person.gesture_time>0 and person.gesture=="push":
+			for stone in boulders:
+				if person.shelf!=stone.parent or absf(person.position.x-float(stone.x))>float(stone.radius)+85: continue
+				var side := -1.0 if person.position.x<float(stone.x) else 1.0
+				var palm: Vector2 = person.position+person.contact_point("hand")
+				person.choreography_offset.x = float(stone.x)+side*float(stone.radius)*0.90-palm.x
+				break
+	for climber in people:
+		var helper = people[1-climber.kind]
+		if not helper.grounded: continue
+		if climber.traversing() and climber.pose in ["boost","ride","pull"] and helper.anchor=="support":
+			var phase: float = climber.progress
+			helper.assist_action = {"boost":"legup","ride":"carry","pull":"help"}[climber.pose]
+			helper.assist_progress = phase
+			helper.face = climber.face if climber.pose!="pull" else (-1.0 if climber.start.x<helper.position.x else 1.0)
+			if climber.pose=="boost": helper.face = -climber.face
+			if climber.pose=="pull": climber.face = -helper.face
+			var own_point := "hip" if climber.pose=="ride" else ("hand" if climber.pose=="pull" else "foot")
+			var helper_point := "back" if climber.pose=="ride" else "hand"
+			var grip: Vector2 = helper.position+helper.contact_point(helper_point)
+			var held: Vector2 = climber.position+climber.contact_point(own_point)
+			var weight: float = 1-smoothstep(0.40 if climber.pose=="ride" else 0.22,0.75 if climber.pose=="ride" else 0.55,phase)
+			if climber.pose=="pull": weight *= smoothstep(0,0.10,phase)
+			climber.choreography_offset = (grip-held)*weight
+			climber.z_index = 8
+			helper.queue_redraw()
+		elif climber.hanging or (climber.traversing() and climber.pose=="rope"):
+			helper.assist_action = "haul" if climber.traversing() else "belay"
+			helper.face = -1 if climber.position.x<helper.position.x else 1
+			helper.queue_redraw()
+	if people.all(func(person): return person.traversing() and person.pose=="chimney"):
+		# Foot roots can cross in projection while the bent bodies face outward.
+		# Register the actual backs rather than letting faces overlap at the centre.
+		var middle: Vector2 = (people[0].position+people[1].position)*0.5
+		var back_height := 0.0
+		for person in people:
+			person.face = -1 if person.start.x<people[1-person.kind].start.x else 1
+			back_height += person.contact_point("back").y*0.5
+		for person in people:
+			var back: Vector2 = person.position+person.contact_point("back")
+			person.choreography_offset = middle+Vector2(person.face*3,back_height)-back
+
+func visual_rope_points() -> PackedVector2Array:
+	var a: Vector2 = people[0].position+people[0].rope_grip()
+	var b: Vector2 = people[1].position+people[1].rope_grip()
+	var slack := minf(25,maxf(0,Route.ROPE_LENGTH-a.distance_to(b))*0.20)
+	var points := PackedVector2Array()
+	for index in 25:
+		var t := float(index)/24
+		points.append(a.lerp(b,t)+Vector2(0,sin(t*PI)*slack))
+	return points
 
 func _walk(person, direction: float, delta: float) -> void:
 	motion.walk(person,direction,delta)
@@ -528,6 +592,12 @@ func recover_pair() -> void:
 		person.velocity = Vector2.ZERO
 		person.jump_buffer = 0
 		person.pose = "idle"
+		person.choreography_offset = Vector2.ZERO
+		person.assist_action = ""
+		person.assist_progress = -1
+		person.gesture_time = 0
+		person.landing_time = 0
+		person.hang_time = 0
 	hud.message("Recuperaram o último apoio seguro. Atenção às pedras fissuradas.")
 
 func _check_progress() -> void:
@@ -565,10 +635,12 @@ func _process(delta: float) -> void:
 	# Keep both existing paintings legible when depth projects them onto one point.
 	var dx: float = people[0].position.x-people[1].position.x
 	if absf(dx)>2: overlap_order = signf(dx)
-	var overlap := maxf(0,52-absf(dx))*0.5*clampf(1-absf(people[0].position.y-people[1].position.y)/90,0,1)
+	var paired: bool = people.any(func(person): return person.anchor=="support" or (person.traversing() and person.pose=="chimney"))
+	var overlap := 0.0 if paired else maxf(0,52-absf(dx))*0.5*clampf(1-absf(people[0].position.y-people[1].position.y)/90,0,1)
 	for i in 2:
 		var offset := Vector2(overlap*overlap_order*(1 if i==0 else -1),0)
 		people[i].view_offset = people[i].view_offset.lerp(offset,1-exp(-14*delta))
+		if paired: people[i].view_offset = Vector2.ZERO
 	if completed: summit_reveal = minf(1,summit_reveal+delta*0.75)
 	var separation: float = absf(people[0].position.y-people[1].position.y)
 	var horizontal: float = absf(people[0].position.x-people[1].position.x)
@@ -679,6 +751,13 @@ func restart() -> void:
 		person.moving = false
 		person.distance = 0
 		person.view_offset = Vector2.ZERO
+		person.choreography_offset = Vector2.ZERO
+		person.assist_action = ""
+		person.assist_progress = -1
+		person.landing_time = 0
+		person.gesture_time = 0
+		person.air_time = 0
+		person.hang_time = 0
 		person.modulate = Color.WHITE
 		person.position = Vector2(370-i*95,Route.START_Y)
 		person.blocked_dir = 0

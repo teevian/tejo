@@ -6,6 +6,8 @@ signal debug_time_toggled
 const AvatarButton = preload("res://scripts/avatar_button.gd")
 var open_world := false
 var area_title := "Trilho dos eucaliptos"
+var region_title := "Serra de Sintra"
+var interaction_prompt := ""
 var selected := 0
 var paused := false
 var dialogue_active := false
@@ -100,7 +102,7 @@ func centered(point: Vector2, value: String, size_value: int, color: Color) -> v
 func _draw() -> void:
 	if day_cycle != null:
 		draw_style_box(TejoPerson._box(Color("233e3e"),14),Rect2(758,24,254,118))
-		draw_string(font,Vector2(776,51),"Serra de Sintra",HORIZONTAL_ALIGNMENT_LEFT,-1,20,Color("fff4db"))
+		draw_string(font,Vector2(776,51),region_title,HORIZONTAL_ALIGNMENT_LEFT,-1,20,Color("fff4db"))
 		draw_circle(Vector2(783,80),11,Color("ead5a5"),false,1.5,true)
 		var angle: float = day_cycle.minutes / 720.0 * TAU - PI / 2.0
 		draw_line(Vector2(783,80),Vector2(783,80)+Vector2.from_angle(angle)*6,Color("ead5a5"),2,true)
@@ -109,8 +111,17 @@ func _draw() -> void:
 		draw_string(font,Vector2(806,91),day_cycle.clock_text(),HORIZONTAL_ALIGNMENT_LEFT,-1,30,Color("fff4db"))
 		draw_string(font,Vector2(776,123),"%s · Dia %d" % [day_cycle.phase(),day_cycle.day],HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("ead5a5"))
 	if not paused:
+		if open_world and not map_open and not dialogue_active:
+			draw_style_box(TejoPerson._box(Color("233e3e"),10),Rect2(24,24,430,69))
+			draw_string(font,Vector2(42,50),region_title.to_upper(),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("ead5a5"))
+			draw_string(font,Vector2(42,77),area_title,HORIZONTAL_ALIGNMENT_LEFT,-1,20,Color("fff4db"))
+			draw_string_outline(font,Vector2(28,701),"Setas · andar   Tab · trocar   T · conversar   M · mapa   Esc · pausa",HORIZONTAL_ALIGNMENT_LEFT,-1,13,4,Color("233e3e"))
+			draw_string(font,Vector2(28,701),"Setas · andar   Tab · trocar   T · conversar   M · mapa   Esc · pausa",HORIZONTAL_ALIGNMENT_LEFT,-1,13,Color("fff4db"))
+			if not interaction_prompt.is_empty():
+				draw_style_box(TejoPerson._box(Color("233e3e"),8),Rect2(24,460,500,40))
+				draw_string(font,Vector2(40,486),"Espaço · "+interaction_prompt,HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("fff4db"))
 		return
 	draw_rect(Rect2(0,0,1280,720),Color(0.12,0.23,0.20,0.65))
-	draw_style_box(TejoPerson._box(Color("f1e6c7"),18),Rect2(415,245 if open_world else 265,450,290 if open_world else 190))
+	draw_style_box(TejoPerson._box(Color("f1e6c7"),18),Rect2(415,245 if open_world else 265,450,400 if open_world else 190))
 	centered(Vector2(640,320 if open_world else 350),"Em pausa",27,Color("355b50"))
 	centered(Vector2(640,370 if open_world else 401),"Esc para continuar",13,Color("7a856b"))

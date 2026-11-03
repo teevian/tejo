@@ -43,7 +43,8 @@ func _ready() -> void:
 	_initialization_complete = true
 
 func _setup_input() -> void:
-	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"swap":[KEY_TAB],"pause":[KEY_ESCAPE]}
+	if InputMap.has_action("sprint"): InputMap.erase_action("sprint")
+	var bindings := {"walk_left":[KEY_A,KEY_LEFT],"walk_right":[KEY_D,KEY_RIGHT],"walk_up":[KEY_W,KEY_UP],"walk_down":[KEY_S,KEY_DOWN],"swap":[KEY_TAB],"pause":[KEY_ESCAPE]}
 	for action in bindings:
 		if InputMap.has_action(action): continue
 		InputMap.add_action(action,0.2)
@@ -59,7 +60,7 @@ func _build_interface() -> void:
 	add_child(layer)
 	var info := Label.new()
 	info.position = Vector2(24,18)
-	info.text = "Teste de caminhada · só chão\nWASD / Setas: mover   ·   Shift: correr   ·   Tab: trocar   ·   Esc: menu"
+	info.text = "Teste de caminhada · só chão\nWASD / Setas: mover   ·   Duplo toque na direção: correr   ·   Tab: trocar   ·   Esc: menu"
 	info.add_theme_font_size_override("font_size",18)
 	info.add_theme_color_override("font_color",Color("2d483b"))
 	info.add_theme_color_override("font_shadow_color",Color(0,0,0,0))
@@ -131,6 +132,7 @@ func _input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
 
 func _toggle_pause() -> void:
+	for person in people: person.run_input.reset()
 	get_tree().paused = not get_tree().paused
 	pause_menu.visible = get_tree().paused
 	for button in selector_buttons: button.disabled = get_tree().paused
@@ -154,6 +156,7 @@ func reset_positions() -> void:
 		person.moving = false
 		person.turning = false
 		person.walked = 0
+		person.run_input.reset()
 		person.body.queue_redraw()
 	camera.position = _camera_target()
 	if get_tree().paused: _toggle_pause()

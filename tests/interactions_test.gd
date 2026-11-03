@@ -16,7 +16,7 @@ class ErrorLog:
 
 func _initialize() -> void:
 	call_deferred("run")
-	create_timer(40.0,true,false,true).timeout.connect(func():
+	create_timer(90.0,true,false,true).timeout.connect(func():
 		push_error("Interaction checks timed out")
 		quit(1))
 
@@ -40,8 +40,8 @@ func space() -> void:
 
 func place(a: Vector2, b: Vector2) -> void:
 	for person in scene.people:
-		person.stand_up()
-		person.cancel_shoulder()
+		person.stand_up(true)
+		person.cancel_sand_drawing()
 		person._finish_phone()
 		person.collecting_time = 0
 		person.queued_jump.clear()
@@ -51,6 +51,7 @@ func place(a: Vector2, b: Vector2) -> void:
 		person.in_dialogue = false
 	te.position = a
 	jo.position = b
+	scene._reset_rest_wait()
 
 func approach(kind: String) -> Dictionary:
 	for target in scene.world.interactions.targets:
@@ -88,10 +89,12 @@ func run() -> void:
 	await frames(3)
 	var manager = scene.world.interactions
 	check(scene.inventory_panel.entries.slice(0,5).all(func(entry):return entry.visible) and scene.inventory_panel.entries.slice(5,10).all(func(entry):return not entry.visible),"Only Te's selected inventory must be visible")
+	var body_image := Image.new()
+	body_image.load_png_from_buffer(FileAccess.get_file_as_bytes(Art.ATLASES[0].resource_path))
+	var body_width: float = body_image.get_region(Rect2i(Art.pose_region(0,0,0))).get_used_rect().size.x*Art.pose_scale(0,0)
 	for target in manager.targets:
 		if target.kind=="bench":
 			var width: float = target.node.sprite.region_rect.size.x*target.node.sprite.scale.x
-			var body_width: float = Art.TE[0].size.x/Art.TE[0].size.y*Art.HEIGHTS[0]
 			check(width>body_width*2+30,"The bench must be wide enough for two adult bodies and space between them")
 			check(target.node.seat_offsets.size()==2,"Every bench must expose exactly two places")
 			for slot in 2:
@@ -164,8 +167,22 @@ func run() -> void:
 	check(scene.world.is_walkable(te.position,12),"Seating must leave the feet on clear ground")
 	check(scene.world.is_walkable(jo.position,12),"The second seat must also leave feet on clear ground")
 	for person in scene.people:
-		var effective_height: float = InteractionArt.SEATED[person.kind].size.y*InteractionArt.SCALE-person.body.position.y
+		var effective_height: float = -InteractionArt.seated_rect(person.kind,person.seated_pose).position.y-person.body.position.y
 		check(effective_height<Art.HEIGHTS[person.kind]*0.9,"Sitting must lower the head relative to standing")
+	# Advance the actual shared controller without waiting two wall-clock minutes.
+	scene.seated_posture_time = 0.0
+	scene._advance_seated_posture(29.9)
+	check(te.seated_pose==0 and jo.seated_pose==0,"Both keep the initial posture before 30 seconds")
+	scene._toggle_pause()
+	var frozen_time: float = scene.seated_posture_time
+	scene._advance_seated_posture(30.0)
+	check(scene.seated_posture_time==frozen_time,"Pause must freeze the shared bench posture clock")
+	scene._toggle_pause()
+	for expected in [1,2,0]:
+		scene._advance_seated_posture(0.2 if expected==1 else 30.0)
+		check(te.seated_pose==expected and jo.seated_pose==expected,"Both must change together through all three bench postures and wrap")
+	scene._update_ground_rest(41.0)
+	check(te.seated and jo.seated and not te.ground_rest and not jo.ground_rest,"Bench rest must not trigger ground sitting")
 	scene._select_person(1)
 	check(te.seated and jo.seated,"Switching selection must preserve both seats")
 	space()
@@ -174,6 +191,7 @@ func run() -> void:
 	space()
 	await frames(120)
 	check(te.seated and jo.seated,"The two places can be used again")
+	check(te.seated_pose==0 and jo.seated_pose==0,"Sitting again must restart the paired posture cycle")
 	space()
 	check(not te.seated and not te.seating and not jo.seated and not jo.seating,"Space must stand the pair up again")
 	space()
@@ -182,28 +200,97 @@ func run() -> void:
 	await frames(4)
 	Input.action_release("walk_left")
 	check(not te.seated and not te.seating and not jo.seated and not jo.seating,"Movement must stand both up and respond immediately")
-	# Idle behaviour mirrors Jo's seven-second phone delay.
-	place(Vector2(770,2920),Vector2(850,2890))
+	# Shared rest uses the real clear-ground approach; timing barriers have their
+	# own full regression in rest_sequence_test.gd.
+	var rest_spot := Vector2.ZERO
+	for y in range(2900,3300,40):
+		for x in range(650,1150,40):
+			var candidate := Vector2(x,y)
+			if scene._ground_rest_clear(candidate) and scene._ground_rest_clear(candidate+Vector2(132,0)) and scene.world.can_walk_line(candidate,candidate+Vector2(132,0)):
+				rest_spot = candidate
+				break
+		if rest_spot!=Vector2.ZERO: break
+	check(rest_spot!=Vector2.ZERO,"Find clear space for the real ground-rest interaction")
+	place(rest_spot,rest_spot+Vector2(104,0))
+	scene._select_person(0)
+	scene.rest_sequence.stage = "companion"
+	scene.rest_sequence.elapsed = scene.rest_sequence.seat_delay-0.1
+	scene._update_ground_rest(0.05)
+	check(not te.ground_rest and not jo.ground_rest,"Ground sitting must await the common sampled deadline")
+	var quiet: float = scene.rest_sequence.elapsed
+	scene._toggle_pause()
+	scene._update_ground_rest(50)
+	check(scene.rest_sequence.elapsed==quiet,"Pause must freeze the common sitting timer")
+	scene._toggle_pause()
+	scene.exploration_map.show()
+	scene._update_ground_rest(50)
+	check(scene.rest_sequence.elapsed==quiet,"The map must freeze the common sitting timer")
+	scene.exploration_map.hide()
+	Input.action_press("walk_right")
+	scene._update_ground_rest(1)
+	Input.action_release("walk_right")
+	check(scene.rest_sequence.stage=="idle","A movement request must reset the quiet wait")
+	scene.rest_sequence.stage = "companion"
+	scene.rest_sequence.elapsed = scene.rest_sequence.seat_delay
+	var before_rest := [te.position,jo.position]
+	scene._update_ground_rest(0)
+	check(te.ground_rest and jo.ground_rest,"The common deadline must reserve both ground-rest places")
+	check(te.position==before_rest[0] and jo.position==before_rest[1],"Automatic rest must not teleport either character")
+	for person in scene.people:
+		for depth in [0.0,-50.0,-100.0]:
+			check(scene.world.is_walkable(person.seat_goal+Vector2(0,depth),42),"Both seated and supine bodies need clear ground along their full length")
+	await frames(120)
+	check(te.ground_seated and jo.ground_seated and not te.seated and not jo.seated,"The final ground sprites remain outside the bench cycle")
+	check(te.phone_state==te.PhoneState.NONE and jo.phone_state==jo.PhoneState.NONE and te.sand_state==te.SandState.NONE,"Paired rest must replace both individual idle actions")
 	scene._select_person(1)
-	await frames(540)
-	check(te.shoulder_state==te.ShoulderState.TOUCHING,"Te must approach idle Jo and put a hand on his shoulder")
-	check(te.position.distance_to(te.shoulder_goal)<7 and not te.moving,"The shoulder gesture must settle at contact")
-	check(jo.phone_state==jo.PhoneState.NONE,"Selected Jo must not use his phone during the gesture")
+	check(te.ground_seated and jo.ground_seated,"Selection changes must preserve ground rest")
+	space()
+	check(not te.ground_rest and not jo.ground_rest,"Space stands both up")
+	await frames(75)
+	# Te's equivalent idle action is independent ground drawing, after 7–10 seconds.
+	place(rest_spot,rest_spot+Vector2(104,0))
+	scene._select_person(1)
+	jo.facing = Vector2.LEFT
+	var jo_waiting_position := jo.position
+	await frames(400)
+	check(te.sand_state==te.SandState.NONE,"Te must wait at least seven seconds before drawing")
+	await frames(300)
+	check(te.sand_state==te.SandState.DRAWING,"Idle Te must sit on the ground and draw in sand while waiting for Jo")
+	check(te.position.distance_to(te.sand_goal)<7 and not te.moving,"Drawing must settle at a clear ground spot")
+	check(jo.position==jo_waiting_position and jo.facing==Vector2.LEFT,"Te drawing must not move or turn Jo")
+	check(scene.world.is_walkable(te.sand_goal,46),"Folded legs and sand drawing require clear ground")
+	check(jo.phone_state==jo.PhoneState.NONE,"Selected Jo must not use his phone during Te's idle action")
 	scene._toggle_pause()
 	var held := te.position
+	var held_drawing_time: float = te.sand_time
 	await frames(15)
-	check(te.position==held,"Pause must freeze the shoulder gesture")
+	check(te.position==held and te.sand_time==held_drawing_time,"Pause must freeze the drawing and its animation")
 	scene._toggle_pause()
+	scene._toggle_map()
+	await frames(15)
+	check(te.sand_time==held_drawing_time,"The map must suspend the drawing animation")
+	scene._toggle_map()
 	Input.action_press("walk_up")
 	await frames(3)
 	Input.action_release("walk_up")
-	check(te.shoulder_state==te.ShoulderState.NONE,"Jo's movement must cancel the gesture")
-	place(Vector2(770,2920),Vector2(850,2890))
-	te.shoulder_idle_time = 7
+	check(te.sand_state==te.SandState.NONE,"Jo's first movement must stand Te up and cancel drawing")
+	place(rest_spot,rest_spot+Vector2(104,0))
+	te.sand_idle_time = 10
 	await frames(100)
-	check(te.shoulder_state==te.ShoulderState.TOUCHING,"The gesture can restart after another quiet wait")
+	check(te.sand_state==te.SandState.DRAWING,"Drawing can restart after a fresh quiet wait")
 	scene._select_person(0)
-	check(te.shoulder_state==te.ShoulderState.NONE,"Selecting Te must cancel the idle gesture")
+	check(te.sand_state==te.SandState.NONE and te.sand_time==0,"Selecting Te must immediately cancel drawing")
+	# The common paired-rest deadline supersedes individual sand drawing.
+	place(rest_spot,rest_spot+Vector2(104,0))
+	scene._select_person(1)
+	te.sand_idle_time = 10
+	await frames(30)
+	scene.rest_sequence.stage = "companion"
+	scene.rest_sequence.elapsed = scene.rest_sequence.seat_delay
+	scene._update_ground_rest(0)
+	await frames(120)
+	check(te.ground_seated and jo.ground_seated and te.sand_state==te.SandState.NONE,"Paired ground rest must replace individual sand drawing at the shared sitting deadline")
+	scene._select_person(0)
 	# Broad water is inspected; only the narrow southern stream can be jumped.
 	var center: float = scene.world.river_x(1700)
 	place(Vector2(center-165,1700),Vector2(center-245,1700))
@@ -257,5 +344,5 @@ func run() -> void:
 	OS.remove_logger(logger)
 	check(logger.errors.is_empty(),"Runtime errors: "+str(logger.errors))
 	if not failed:
-		print("PASS: coherent scales, two-seat benches and paired approach/stand, distant companion/camera, inventory, world interactions, shoulder idle, safe jumps, modal input blocking")
+		print("PASS: coherent scales, two-seat benches, three shared bench postures, shared ground rest and paired approach/stand, distant companion/camera, inventory, world interactions, sand-drawing idle, safe jumps, modal input blocking")
 	quit(1 if failed else 0)

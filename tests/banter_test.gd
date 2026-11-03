@@ -58,8 +58,10 @@ func run() -> void:
 	scene._interact()
 	check(scene.hud.comment_panel.visible and not scene.hud.comment_label.text.is_empty(),"Interaction comments are actually visible in the game")
 	var first: String = scene.hud.comment_label.text
-	scene._interact()
-	check(scene.hud.comment_label.text!=first,"Repeated actions rotate comments")
+	# A second football press is now a juggling attempt, not a new comment.
+	var comments: String = scene.world.interactions.comment("football")
+	check(scene.world.interactions.comment("football")!=comments,"Repeated comments still rotate")
+	check(not first.is_empty(),"The new football controls have a visible explanation")
 	var remaining: float = scene.hud.comment_time
 	scene._toggle_map()
 	scene.hud._process(2)

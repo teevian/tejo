@@ -35,7 +35,7 @@ func _draw() -> void:
 	draw_arc(scene.space.prop(13,820,-53),19,0,TAU,25,Color("d5ad70"),4,true)
 	for climber in scene.people:
 		if climber.anchor=="rope":
-			draw_line(scene.space.prop(13,820,-53),climber.position+climber.view_offset+Vector2(0,-62),Color("ddbc83"),2.5,true)
+			draw_line(scene.space.prop(13,820,-53),climber.position+climber.rope_grip(),Color("ddbc83"),2.5,true)
 	# Small chalk chevrons mark sheltered openings without replacing the rock art
 	# with a door. Both ends remain at their actual 3D coordinates while turning.
 	for tunnel in Route.TUNNELS:
@@ -48,9 +48,9 @@ func _draw() -> void:
 	var scout: Vector2 = scene.space.prop(28,650,-48)
 	draw_arc(scout,18,0,TAU,25,Color("d5ad70"),3,true)
 	for climber in scene.people:
-		if climber.anchor=="belay": draw_line(scout,climber.position+Vector2(0,-62),Color("ddbc83"),2.5,true)
+		if climber.anchor=="belay": draw_line(scout,climber.position+climber.rope_grip(),Color("ddbc83"),2.5,true)
 	if scene.people.size()==2:
-		var rope: PackedVector2Array = scene.rope_points()
+		var rope: PackedVector2Array = scene.visual_rope_points()
 		draw_polyline(rope,Color("524433"),4,true)
 		draw_polyline(rope,Color("e9b77d") if scene.rope_taut else Color("d8b97b"),2,true)
 	# Discreet trail marker at the foot; summit cairn and flag reward the ascent.

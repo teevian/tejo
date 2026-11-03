@@ -1,0 +1,62 @@
+{
+  "approved": "2026-11-01",
+  "instruction": "Sprites direcionais finais aprovados pelo utilizador. Não alterar sem pedido direto. Versões antigas e material de geração removidos por pedido expresso.",
+  "files": [
+    {
+      "character": "Te",
+      "path": "assets/characters/open_world/te-walk-friendly-painted-face.png",
+      "sha256": "26e863085c6b3e63bc540c7860ed015d488737504d48bdcdd4cbab692932ed61",
+      "dimensions": [
+        2000,
+        2800
+      ]
+    },
+    {
+      "character": "Jo",
+      "path": "assets/characters/open_world/jo-walk-south-painted-face.png",
+      "sha256": "df1b474f3b63a9cdc9bf92f9d03e79e740df97bdac13b702dfff2b9e917306ef",
+      "dimensions": [
+        2000,
+        2800
+      ]
+    }
+  ],
+  "layout": {
+    "cell": [
+      400,
+      560
+    ],
+    "rows": [
+      "south",
+      "southeast",
+      "east",
+      "northeast",
+      "north"
+    ],
+    "frameColumns": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4
+    ],
+    "footAnchor": [
+      200,
+      520
+    ],
+    "sourceHeight": 438,
+    "personHeights": [
+      156,
+      153
+    ],
+    "stride": 112,
+    "gaitFrames": 8,
+    "leftDirections": "mirror"
+  },
+  "renderScript": "scripts/open_world_art.gd",
+  "renderScriptSha256": "5a1d8359aa6846c6598d6570d5870e67d74b9db3fcda0a68c156fa16147749f9"
+}

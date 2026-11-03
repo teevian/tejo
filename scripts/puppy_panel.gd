@@ -24,6 +24,9 @@ func _ready() -> void:
 	add_child(milestones)
 func _process(_delta: float) -> void:
 	var pup = world.puppy
+	if not is_instance_valid(pup):
+		hide()
+		return
 	visible = not scene.exploration_map.visible and not scene.dialogue.is_active() and not get_tree().paused
 	visible = visible and scene.people[scene.selected].position.distance_to(pup.position)<850
 	if not visible: return
@@ -32,6 +35,7 @@ func _process(_delta: float) -> void:
 	milestones.text = "%s Comida   ·   %s Aproximação e cheiro   ·   %s Festas"%["✓" if pup.meals>=2 else "○","✓" if pup.sniffs>=2 else "○","✓" if pup.pets>=1 else "○"]
 	queue_redraw()
 func _draw() -> void:
+	if not is_instance_valid(world.puppy): return
 	draw_style_box(TejoPerson._box(Color("233e3e"),14),Rect2(Vector2.ZERO,size))
 	draw_style_box(TejoPerson._box(Color("526950"),3),Rect2(16,141,480,5))
 	draw_style_box(TejoPerson._box(Color("e8d19c"),3),Rect2(16,141,maxf(2,480*world.puppy.trust),5))

@@ -1,0 +1,349 @@
+{
+  "topics": [
+    {
+      "id": "village_chimneys",
+      "scene": "sintra_village",
+      "near": "village_palace",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Estas chaminés parecem duas pessoas de gorro branco."
+        },
+        {
+          "speaker": 1,
+          "text": "Então já somos quatro a passear pela vila."
+        },
+        {
+          "speaker": 0,
+          "text": "Elas é que escolheram um sítio melhor para ver tudo."
+        }
+      ],
+      "set_flags": [
+        "village_palace_seen"
+      ],
+      "forbid_flags": [
+        "village_palace_seen"
+      ]
+    },
+    {
+      "id": "village_piriquita",
+      "scene": "sintra_village",
+      "near": "village_piriquita",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Acho que consigo orientar-me pelo cheiro dos travesseiros."
+        },
+        {
+          "speaker": 1,
+          "text": "Finalmente encontrámos um mapa que te interessa."
+        },
+        {
+          "speaker": 0,
+          "text": "E tem a vantagem de acabar num lanche."
+        }
+      ],
+      "set_flags": [
+        "village_pastry_talk"
+      ],
+      "forbid_flags": [
+        "village_pastry_talk"
+      ]
+    },
+    {
+      "id": "village_steps",
+      "scene": "sintra_village",
+      "near": "village_ferraria",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Esta rua conseguiu meter uma curva dentro de outra curva."
+        },
+        {
+          "speaker": 1,
+          "text": "Assim temos sempre uma desculpa para ir devagar."
+        }
+      ]
+    },
+    {
+      "id": "village_republic",
+      "scene": "sintra_village",
+      "near": "village_republic",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Do largo vê-se quase o passeio todo que ainda nos espera."
+        },
+        {
+          "speaker": 1,
+          "text": "Quase. Os recantos estão a esconder-se atrás das casas."
+        }
+      ],
+      "set_flags": [
+        "village_square_talk"
+      ],
+      "forbid_flags": [
+        "village_square_talk"
+      ]
+    },
+    {
+      "id": "village_martinho",
+      "scene": "sintra_village",
+      "near": "village_martinho",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Gosto deste adro. É uma varanda em cima dos telhados."
+        },
+        {
+          "speaker": 1,
+          "text": "Uma varanda onde cabe uma pausa para os dois."
+        }
+      ]
+    },
+    {
+      "id": "village_valencas",
+      "scene": "sintra_village",
+      "near": "village_valencas",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "O palácio parece ter vestido a cor das flores."
+        },
+        {
+          "speaker": 1,
+          "text": "E deixou os arcos abertos para o jardim respirar."
+        }
+      ]
+    },
+    {
+      "id": "village_mourisca",
+      "scene": "sintra_village",
+      "near": "village_mourisca",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Um arco grande a guardar três arcos pequenos."
+        },
+        {
+          "speaker": 1,
+          "text": "Até a fonte arranjou companhia."
+        }
+      ]
+    },
+    {
+      "id": "village_lawrence",
+      "scene": "sintra_village",
+      "near": "village_lawrence",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Quantas histórias terão passado por estas janelas?"
+        },
+        {
+          "speaker": 1,
+          "text": "Pelo menos mais uma, se contarmos esta nossa volta."
+        }
+      ]
+    },
+    {
+      "id": "village_liberdade",
+      "scene": "sintra_village",
+      "near": "village_liberdade",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "O barulho das ruas ficou logo mais longe."
+        },
+        {
+          "speaker": 1,
+          "text": "É o jardim a pedir que falemos baixinho."
+        }
+      ]
+    },
+    {
+      "id": "village_sassetti_entry",
+      "scene": "sintra_village",
+      "near": "village_sassetti_entry",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Ainda há pouco eram montras. Agora são portões e árvores."
+        },
+        {
+          "speaker": 1,
+          "text": "A vila já nos está a passar a mão à serra."
+        }
+      ],
+      "set_flags": [
+        "village_garden_entered"
+      ],
+      "forbid_flags": [
+        "village_garden_entered"
+      ]
+    },
+    {
+      "id": "village_sassetti_tower",
+      "scene": "sintra_village",
+      "near": "village_sassetti",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "A torre redonda parece ter crescido entre as pedras."
+        },
+        {
+          "speaker": 1,
+          "text": "Se calhar foi o jardim que a desenhou."
+        },
+        {
+          "speaker": 0,
+          "text": "Vou tentar desenhá-la quando encontrarmos um bocadinho de terra."
+        }
+      ],
+      "set_flags": [
+        "village_tower_talk"
+      ],
+      "forbid_flags": [
+        "village_tower_talk"
+      ]
+    },
+    {
+      "id": "village_ferreira",
+      "scene": "sintra_village",
+      "near": "village_ferreira",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Seguimos pelas escadas ou damos a volta?"
+        },
+        {
+          "speaker": 1,
+          "text": "Pelo caminho onde ainda não parámos."
+        }
+      ]
+    },
+    {
+      "id": "village_companionship",
+      "scene": "sintra_village",
+      "priority": 5,
+      "lines": [
+        {
+          "speaker": "initiator",
+          "text": "Vamos por esta rua?"
+        },
+        {
+          "speaker": "partner",
+          "text": "Vamos. Se tiver um recanto bonito, paramos."
+        }
+      ]
+    },
+    {
+      "id": "village_market_detail",
+      "scene": "sintra_village",
+      "near": "village_market",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Entre os azulejos e os cestos, já não sei para onde olhar."
+        },
+        {
+          "speaker": 1,
+          "text": "Começa pelas laranjas. Eu guardo-te as louças azuis."
+        },
+        {
+          "speaker": 0,
+          "text": "E depois trocamos. Esta feira pede duas voltas."
+        }
+      ],
+      "set_flags": [
+        "village_market_talk"
+      ],
+      "forbid_flags": [
+        "village_market_talk"
+      ]
+    },
+    {
+      "id": "village_tiles_detail",
+      "scene": "sintra_village",
+      "near": "village_tiles",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Até as paredes têm os seus desenhos."
+        },
+        {
+          "speaker": 1,
+          "text": "Então hoje não te falta assunto para o caderno."
+        },
+        {
+          "speaker": 0,
+          "text": "O lápis vai andar mais do que nós."
+        }
+      ],
+      "set_flags": [
+        "village_tiles_talk"
+      ],
+      "forbid_flags": [
+        "village_tiles_talk"
+      ]
+    },
+    {
+      "id": "village_homes_detail",
+      "scene": "sintra_village",
+      "near": "village_residential",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Gosto destes vasos a guardar cada porta."
+        },
+        {
+          "speaker": 1,
+          "text": "É uma maneira bonita de dizer que há alguém em casa."
+        }
+      ],
+      "set_flags": [
+        "village_homes_talk"
+      ],
+      "forbid_flags": [
+        "village_homes_talk"
+      ]
+    },
+    {
+      "id": "village_byron_detail",
+      "scene": "sintra_village",
+      "near": "village_byron",
+      "priority": 90,
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "Esta esquina quer dar-nos dois passeios."
+        },
+        {
+          "speaker": 1,
+          "text": "Escolhemos um. O outro fica guardado para a volta."
+        }
+      ],
+      "set_flags": [
+        "village_byron_talk"
+      ],
+      "forbid_flags": [
+        "village_byron_talk"
+      ]
+    }
+  ]
+}

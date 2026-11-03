@@ -89,7 +89,7 @@ func run() -> void:
 	check(not paused and not test.pause_menu.visible,"Reset must close the menu and resume the test")
 	check(test.people[0].position==test.STARTS[0] and test.people[1].position==test.STARTS[1],"Reset must restore both characters")
 	await frames(450)
-	check(test.people[1].phone_state==0 and test.people[0].shoulder_state==0,"Idle phone/shoulder gestures must not interrupt sprite comparisons")
+	check(test.people[1].phone_state==0 and test.people[0].sand_state==0,"Idle phone/sand-drawing gestures must not interrupt sprite comparisons")
 	check(garden.day_cycle.minutes==minutes and animal.position==animal_position,"Forest time and wildlife must remain frozen")
 	check(garden.people[0].position==original_positions[0] and garden.people[1].position==original_positions[1],"Forest positions must remain intact")
 	press(KEY_ESCAPE)

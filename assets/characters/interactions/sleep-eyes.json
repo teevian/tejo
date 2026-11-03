@@ -1,0 +1,289 @@
+{
+  "cell": [
+    640,
+    560
+  ],
+  "anchor": [
+    320,
+    520
+  ],
+  "poses": [
+    "supine",
+    "left",
+    "right"
+  ],
+  "patches": [
+    {
+      "character": "te",
+      "kind": "supine",
+      "source": "te-rest-look.png",
+      "rect": [
+        1166,
+        806,
+        44,
+        22
+      ],
+      "registration": {
+        "error": 19.193633952254643,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "left-0",
+      "source": "te-rest-side.png",
+      "rect": [
+        814,
+        267,
+        31,
+        27
+      ],
+      "registration": {
+        "error": 21.68796992481203,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "left-1",
+      "source": "te-rest-side.png",
+      "rect": [
+        1408,
+        308,
+        28,
+        25
+      ],
+      "registration": {
+        "error": 18.38375350140056,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "left-2",
+      "source": "te-rest-side.png",
+      "rect": [
+        2033,
+        341,
+        32,
+        28
+      ],
+      "registration": {
+        "error": 19.025641025641026,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "right-0",
+      "source": "te-rest-side.png",
+      "rect": [
+        1035,
+        812,
+        33,
+        27
+      ],
+      "registration": {
+        "error": 18.971014492753625,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "right-1",
+      "source": "te-rest-side.png",
+      "rect": [
+        1654,
+        862,
+        33,
+        30
+      ],
+      "registration": {
+        "error": 17.697068403908794,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "right-2",
+      "source": "te-rest-side.png",
+      "rect": [
+        2312,
+        870,
+        30,
+        31
+      ],
+      "registration": {
+        "error": 16.353801169590643,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "te",
+      "kind": "side-supine",
+      "source": "te-rest-side.png",
+      "rect": [
+        286,
+        246,
+        44,
+        22
+      ],
+      "registration": {
+        "error": 20.021220159151195,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "supine",
+      "source": "jo-rest-look.png",
+      "rect": [
+        1144,
+        806,
+        52,
+        32
+      ],
+      "registration": {
+        "error": 19.690355329949238,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "left-0",
+      "source": "jo-rest-side.png",
+      "rect": [
+        899,
+        269,
+        37,
+        30
+      ],
+      "registration": {
+        "error": 17.00716845878136,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "left-1",
+      "source": "jo-rest-side.png",
+      "rect": [
+        1489,
+        305,
+        37,
+        30
+      ],
+      "registration": {
+        "error": 14.402826855123674,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "left-2",
+      "source": "jo-rest-side.png",
+      "rect": [
+        2127,
+        341,
+        37,
+        32
+      ],
+      "registration": {
+        "error": 18.60082304526749,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "right-0",
+      "source": "jo-rest-side.png",
+      "rect": [
+        950,
+        826,
+        40,
+        34
+      ],
+      "registration": {
+        "error": 18.322314049586776,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "right-1",
+      "source": "jo-rest-side.png",
+      "rect": [
+        1664,
+        856,
+        37,
+        31
+      ],
+      "registration": {
+        "error": 17.513698630136986,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "right-2",
+      "source": "jo-rest-side.png",
+      "rect": [
+        2348,
+        900,
+        35,
+        28
+      ],
+      "registration": {
+        "error": 13.093877551020409,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "character": "jo",
+      "kind": "side-supine",
+      "source": "jo-rest-side.png",
+      "rect": [
+        266,
+        252,
+        50,
+        32
+      ],
+      "registration": {
+        "error": 18.17094017094017,
+        "s": 1,
+        "dx": 0,
+        "dy": 0
+      }
+    }
+  ]
+}

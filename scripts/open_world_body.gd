@@ -2,6 +2,7 @@ extends Node2D
 const Art = preload("res://scripts/open_world_art.gd")
 const PhoneArt = preload("res://scripts/jo_phone_art.gd")
 const InteractionArt = preload("res://scripts/interaction_art.gd")
+const RunningArt = preload("res://scripts/running_art.gd")
 var person: CharacterBody2D
 
 func _ready() -> void:
@@ -17,10 +18,16 @@ func _draw() -> void:
 	var puppy = person.world.puppy if is_instance_valid(person.world) and "puppy" in person.world else null
 	if is_instance_valid(puppy) and puppy.state=="pet" and puppy.visitor==person:
 		preload("res://scripts/puppy_petting_art.gd").draw_pose(self,person,puppy)
+	elif not person.football_action.is_empty():
+		preload("res://scripts/football_art.gd").draw_person(self,person)
+	elif not person.rest_transition.is_empty():
+		person.RestArt.draw_transition(self,person)
+	elif person.ground_seated:
+		InteractionArt.draw_ground(self,person.kind,person.ground_pose,person.rest_gaze.key,person.is_sleeping())
 	elif person.seated:
-		InteractionArt.draw_seated(self,person.kind)
-	elif person.kind==0 and person.shoulder_state==person.ShoulderState.TOUCHING:
-		InteractionArt.draw_shoulder(self,person.shoulder_side)
+		InteractionArt.draw_seated(self,person.kind,person.seated_pose)
+	elif person.kind==0 and person.sand_state==person.SandState.DRAWING:
+		InteractionArt.draw_sand(self,person.sand_time)
 	elif person.kind==0 and person.collecting_time>0:
 		InteractionArt.draw_pickup(self)
 	elif person.kind == 1 and person.phone_state != person.PhoneState.NONE and not person.moving:
@@ -29,10 +36,9 @@ func _draw() -> void:
 			person.PhoneState.TAKING_OUT: frame = mini(3,int(person.phone_time/0.72*4))
 			person.PhoneState.READING: frame = 4+int(person.phone_time*2)%4
 			person.PhoneState.PUTTING_AWAY: frame = mini(3,int(person.phone_stow_start*(1-clampf(person.phone_time/0.36,0,1))*4))
-		var factor: float = Art.HEIGHTS[1]/JoArt.HEIGHT
-		draw_set_transform(Vector2.ZERO,0,Vector2.ONE*factor)
-		PhoneArt.draw_pose(self,frame)
-		draw_set_transform(Vector2.ZERO)
+		PhoneArt.draw_pose(self,frame,Art.HEIGHTS[1])
+	elif person.is_running():
+		RunningArt.draw_pose(self,person.kind,person.visual_facing,person.run_distance)
 	else:
 		var step: float = Art.STRIDE*0.25 if person.jumping else person.walked
 		Art.draw_pose(self,person.kind,person.visual_facing,person.moving or person.jumping or person.turning,step)

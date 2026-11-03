@@ -48,6 +48,8 @@ func advance(person, direction: float, delta: float) -> void:
 				person.shelf = ground
 				person.last_shelf = ground
 				person.grounded = true
+				person.landing_time = 0.24
+				person.landing_soft = false
 				person.hanging = false
 				person.velocity.y = 0
 				person.ground_slope = float(scene.platforms[ground].get("slope",0))
@@ -59,6 +61,10 @@ func depart(person) -> void:
 	person.shelf = -1
 	person.anchor = ""
 	person.pose = "idle"
+	person.air_time = 0
+	person.hang_time = 0
+	person.landing_time = 0
+	person.gesture_time = 0
 
 func jump(person) -> void:
 	if person.traversing() or (not person.grounded and person.coyote<=0): return
@@ -95,6 +101,7 @@ func walk(person, direction: float, delta: float) -> void:
 		var contact := float(stone.x)+side*(float(stone.radius)+RADIUS)
 		if (side>0 and next_x<contact and previous>=contact-2) or (side<0 and next_x>contact and previous<=contact+2):
 			if person.grounded and person.shelf==stone.parent and absf(direction)>0.1:
+				person.play_gesture("push",0.15)
 				move_boulder(stone,direction*112*delta)
 			next_x = float(stone.x)+side*(float(stone.radius)+RADIUS)
 	var proposed := Vector2(next_x,person.position.y)

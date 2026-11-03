@@ -141,6 +141,10 @@ func run() -> void:
 	var drawn := 0.0
 	for i in points.size()-1: drawn += points[i].distance_to(points[i+1])
 	check(drawn<=scene.Route.ROPE_LENGTH+0.1,"The visible rope must obey the same maximum length")
+	var visible: PackedVector2Array = scene.visual_rope_points()
+	var visible_length := 0.0
+	for i in visible.size()-1: visible_length += visible[i].distance_to(visible[i+1])
+	check(visible_length<=scene.Route.ROPE_LENGTH+0.1,"The animated hand grips must keep the arrested rope within its physical limit")
 	await capture("rope-catch")
 	press(KEY_UP)
 	await frames(70)

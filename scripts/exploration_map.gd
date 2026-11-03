@@ -33,16 +33,7 @@ func _draw() -> void:
 	paper.set_border_width_all(2)
 	paper.border_color = Color("a8ad85")
 	draw_style_box(paper,PAPER.grow(10))
-	var map_scale: Vector2 = PAPER.size/world.WORLD_SIZE
-	for index in 4:
-		var origin := Vector2(index%2,floori(index/2.0))*Vector2(2400,1800)
-		draw_texture_rect(world.TERRAIN[index],Rect2(PAPER.position+origin*map_scale,Vector2(2400,1800)*map_scale),false,Color(0.91,0.92,0.79))
-	draw_texture_rect(world.SOUTH,Rect2(PAPER.position+Vector2(0,3600)*map_scale,Vector2(4800,1800)*map_scale),false)
-	for layer in world.terrain_layers:
-		draw_texture_rect(layer.texture,Rect2(PAPER.position+layer.rect.position*map_scale,layer.rect.size*map_scale),false)
-	for i in world.Heritage.IDS.size():
-		var rect: Rect2 = world.Heritage.site_rect(i)
-		draw_texture_rect(world.Heritage.TEXTURES[i],Rect2(PAPER.position+rect.position*map_scale,rect.size*map_scale),false)
+	world.draw_exploration_map(self,PAPER)
 	var cell_size: Vector2 = PAPER.size / (world.WORLD_SIZE/TILE)
 	for x in ceili(world.WORLD_SIZE.x/TILE):
 		for y in ceili(world.WORLD_SIZE.y/TILE):
@@ -77,5 +68,5 @@ func _draw() -> void:
 		var point: Vector2 = PAPER.position + people[i].position/world.WORLD_SIZE*PAPER.size
 		draw_circle(point,7 if i==selected else 4,Color("f3dda0") if i==selected else Color("b7c8b8"))
 		draw_circle(point,2,Color("324b3c"))
-	draw_string(font,Vector2(240,45),"SERRA DE SINTRA  /  O nosso caminho",HORIZONTAL_ALIGNMENT_LEFT,-1,21,Color("e9dfc3"))
+	draw_string(font,Vector2(240,45),world.region_title.to_upper()+"  /  O nosso caminho",HORIZONTAL_ALIGNMENT_LEFT,-1,21,Color("e9dfc3"))
 	draw_string(font,Vector2(240,706),"O mapa revela-se à medida que exploras.                         M ou Esc · voltar",HORIZONTAL_ALIGNMENT_LEFT,-1,14,Color("c5cbb0"))

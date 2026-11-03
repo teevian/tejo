@@ -100,8 +100,8 @@ func run_checks() -> void:
 	for person in scene.people:
 		person.in_dialogue = false
 	place(Vector2(850,2890),Vector2(770,2920))
-	await frames(500)
-	check(jo.phone_state == jo.PhoneState.READING,"Jo's seven-second phone idle should work in the open world")
+	await frames(660)
+	check(jo.phone_state == jo.PhoneState.READING,"Jo's sampled 7–10 second phone idle should work in the open world")
 	Input.action_press("walk_up")
 	await frames(2)
 	Input.action_release("walk_up")

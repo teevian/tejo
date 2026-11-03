@@ -4,10 +4,14 @@ const ItemArt = preload("res://scripts/item_art.gd")
 const Pickup = preload("res://scripts/world_pickup.gd")
 const Comments = preload("res://data/world_comments.json")
 const MAX_JUMP := 240.0
+var include_forest_content := true
+var authored_targets: Array[Dictionary] = []
+var pickup_placements: Array[Dictionary] = []
 var world: Node2D
 var targets: Array[Dictionary] = []
 var current_target: Dictionary = {}
 var discoveries: Dictionary = {}
+var id_prefix := ""
 var next_id := 0
 var comment_visits: Dictionary = {}
 
@@ -28,11 +32,16 @@ func _ready() -> void:
 		targets.append({"id":"prop_"+str(targets.size()),"kind":category,"label":label,"position":prop.position,"reach":float(prop.get_meta("radius"))+105.0,"radius":float(prop.get_meta("radius")),"node":prop})
 	for rock in world.boulders:
 		targets.append({"id":"rock_"+str(targets.size()),"kind":"rock","label":"Pedra com musgo","position":rock.position,"reach":rock.radius+100.0,"radius":rock.radius,"node":rock.node})
-	for entry in [[Vector2(4190,1560),"Parede da capela"],[Vector2(3990,1435),"Arco antigo"],[Vector2(4260,5000),"Vestígios da muralha"]]:
-		targets.append({"id":"ruin_"+str(targets.size()),"kind":"ruin","label":entry[1],"position":entry[0],"reach":115.0,"radius":0.0})
 	for object in world.scenery_props:
 		var category: String = "football" if object.kind==3 else ("signpost" if object.kind==0 else "curiosity")
 		targets.append({"id":"discovery_"+str(targets.size()),"kind":category,"label":object.label,"position":object.position,"reach":100.0,"radius":object.contact_radius,"node":object})
+	targets.append_array(authored_targets)
+	for entry in pickup_placements:
+		spawn_pickup(entry.item,entry.position)
+	if not include_forest_content:
+		return
+	for entry in [[Vector2(4190,1560),"Parede da capela"],[Vector2(3990,1435),"Arco antigo"],[Vector2(4260,5000),"Vestígios da muralha"]]:
+		targets.append({"id":"ruin_"+str(targets.size()),"kind":"ruin","label":entry[1],"position":entry[0],"reach":115.0,"radius":0.0})
 	# Visible, non-blocking objects distributed throughout both halves of the map.
 	var placements := [
 		[0,Vector2(945,2970)],[1,Vector2(715,3040)],[2,Vector2(1130,3030)],[4,Vector2(1260,3000)],
@@ -59,7 +68,7 @@ func spawn_pickup(item: Dictionary, at: Vector2) -> Dictionary:
 	node.item = item.duplicate(true)
 	node.position = at
 	world.actors.add_child(node)
-	var id := "pickup_"+str(next_id)
+	var id := id_prefix+"pickup_"+str(next_id)
 	next_id += 1
 	if not node.item.has("id"):
 		node.item.id = id
@@ -160,6 +169,9 @@ func nearest(person: CharacterBody2D) -> Dictionary:
 func prompt(person: CharacterBody2D, target: Dictionary) -> String:
 	if person.jumping or person.collecting_time>0:
 		return ""
+	if person.is_juggling(): return "Dar um toque na bola"
+	if person.ground_rest:
+		return "Cancelar a aproximação" if person.seating else "Levantar os dois do chão"
 	if person.seating:
 		return "Cancelar a aproximação ao banco"
 	if person.seated:
@@ -167,7 +179,7 @@ func prompt(person: CharacterBody2D, target: Dictionary) -> String:
 	if target.is_empty():
 		return ""
 	match target.kind:
-		"football": return "Dar um pontapé na bola"
+		"football": return "Levantar a bola e dar toques"
 		"signpost": return "Ler a placa antiga"
 		"puppy": return "Deixar comida / fazer festas ao cachorro"
 		"pickup": return "Apanhar "+str(target.label).to_lower()+" · porte "+str(target.item.porte)
@@ -180,7 +192,10 @@ func prompt(person: CharacterBody2D, target: Dictionary) -> String:
 func interact(person: CharacterBody2D) -> String:
 	if person.jumping or person.collecting_time>0:
 		return ""
-	if person.seated or person.seating:
+	if person.is_juggling():
+		person.football_ball.juggling.request_touch()
+		return ""
+	if person.seated or person.ground_rest or person.ground_seated or person.seating:
 		var bench_id: String = person.seat_id
 		for friend in world.people:
 			if friend.seat_id==bench_id:
@@ -190,12 +205,16 @@ func interact(person: CharacterBody2D) -> String:
 	if target.is_empty():
 		return "Aproxima-te de um objeto para interagir."
 	for friend in world.people:
-		friend.cancel_shoulder()
+		friend.cancel_sand_drawing()
 		friend._finish_phone()
 	match target.kind:
+		"observation":
+			_discover(target.id)
+			return target.text
 		"football":
-			target.node.kick(person)
-			return comment("football")
+			if target.node.juggling.height>10: return "A bola ainda está no ar."
+			if not target.node.juggling.start(person): return "Aproxima-te da bola no chão."
+			return "O Te tenta dois toques… depois a bola foge! Setas e Espaço para acompanhar." if person.kind==0 else "Setas para acompanhar a bola; Espaço no momento do toque."
 		"signpost":
 			_discover(target.id)
 			return comment("signpost") % " / ".join(target.node.labels)
@@ -268,7 +287,7 @@ func drop(person: CharacterBody2D, index: int) -> String:
 		return "Não há espaço livre aqui para pousar o objeto."
 	var item: Dictionary = person.inventory.take(index)
 	for friend in world.people:
-		friend.cancel_shoulder()
+		friend.cancel_sand_drawing()
 		friend._finish_phone()
 	if item.type=="dog_food" and is_instance_valid(world.puppy) and world.puppy.food.is_empty() and at.distance_to(world.puppy.home)<850:
 		world.puppy.leave_food(at)
