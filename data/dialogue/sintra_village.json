@@ -344,6 +344,60 @@
       "forbid_flags": [
         "village_byron_talk"
       ]
+    },
+    {
+      "id": "bond_viewpoint",
+      "scene": "sintra_village",
+      "min_bond": 60,
+      "near": "village_miradouro",
+      "priority": 110,
+      "forbid_flags": [
+        "bond_viewpoint_done"
+      ],
+      "set_flags": [
+        "bond_viewpoint_done"
+      ],
+      "lines": [
+        {
+          "speaker": 0,
+          "text": "No início eu estava sempre a olhar para o mapa."
+        },
+        {
+          "speaker": 1,
+          "text": "Agora consegues perder-te sem ajuda."
+        },
+        {
+          "speaker": 0,
+          "text": "Agora sei com quem quero encontrar o caminho."
+        }
+      ]
+    },
+    {
+      "id": "bond_evening",
+      "scene": "sintra_village",
+      "min_bond": 80,
+      "day_phase": "Noite",
+      "priority": 105,
+      "forbid_flags": [
+        "bond_evening_done"
+      ],
+      "set_flags": [
+        "bond_evening_done"
+      ],
+      "lines": [
+        {
+          "speaker": 1,
+          "text": "Já reparaste que hoje não perguntámos o que íamos fazer a seguir?"
+        },
+        {
+          "speaker": 0,
+          "text": "Havia música. Depois havia bolo. Pareceu-me um plano sólido."
+        },
+        {
+          "speaker": 1,
+          "text": "Para amanhã chega termos outra vez os dois."
+        }
+      ]
     }
   ]
 }

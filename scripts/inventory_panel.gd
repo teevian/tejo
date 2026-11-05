@@ -1,5 +1,6 @@
 extends Control
 signal drop_requested(owner: int, index: int)
+signal food_requested(owner: int, index: int)
 const ItemArt = preload("res://scripts/item_art.gd")
 var people: Array = []
 var selected := 0
@@ -36,7 +37,11 @@ func _ready() -> void:
 			var entry := Entry.new()
 			entry.position = Vector2(12+index*44,32)
 			entry.size = Vector2(38,40)
-			entry.pressed.connect(func():drop_requested.emit(owner,index))
+			entry.pressed.connect(func():
+				if preload("res://scripts/bakery_catalog.gd").food(entry.item): food_requested.emit(owner,index)
+				else: drop_requested.emit(owner,index))
+			entry.gui_input.connect(func(event):
+				if event is InputEventMouseButton and event.pressed and event.button_index==MOUSE_BUTTON_RIGHT: drop_requested.emit(owner,index); entry.accept_event())
 			add_child(entry)
 			entries.append(entry)
 	refresh()
@@ -49,6 +54,7 @@ func refresh() -> void:
 			entry.disabled = entry.item.is_empty()
 			entry.visible = owner==selected
 			entry.tooltip_text = "" if entry.item.is_empty() else "%s · porte %d\nBolsa de %s · clicar para pousar no chão"%[entry.item.name,entry.item.porte,people[owner].name]
+			if preload("res://scripts/bakery_catalog.gd").food(entry.item): entry.tooltip_text = entry.item.name+" · clicar para comer, dar ou partilhar\nBotão direito: pousar no chão"
 			entry.queue_redraw()
 	queue_redraw()
 

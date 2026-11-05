@@ -535,3 +535,5 @@ layout['pickups']=[dict(item=0,at=point([2310,4650])),dict(item=1,at=point([5610
 save('layout.json',layout)
 save('frontages.json',dict(buildings=houses,seed=11032026,description='Fachadas contíguas e lotes fechados; todas as bases respeitam ruas e largos públicos.'))
 print('Area:',22400*16000/(6400*5600),'Buildings:',layout['building_count'],'Routes:',len(layout['routes']),'Plazas:',len(layout['plazas']),'Street objects:',len(layout['street_objects']))
+from revise_village_spaces import revise
+revise()

@@ -1,0 +1,876 @@
+{
+  "description": "Trinta habitantes e visitantes, mais cinco amigos do Te e do Jo a partir das referências do utilizador. Idades e atividades são ficcionais; as presenças das figuras públicas são cenas fictícias do jogo.",
+  "residents": [
+    {
+      "id": "harry_kane",
+      "name": "Harry Kane",
+      "age": 33,
+      "gender": "man",
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        10120,
+        2360
+      ],
+      "height": 163,
+      "activity": "a fotografar o Palácio",
+      "greeting": "Harry Kane baixa a máquina e acena. Hoje, nas suas férias pela vila, o plano é passear sem pressa e provar um travesseiro.",
+      "route_offsets": [
+        [
+          -170,
+          15
+        ],
+        [
+          140,
+          30
+        ]
+      ],
+      "speed": 64,
+      "public_figure": true,
+      "mirror": false,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "rogerio_colaco",
+      "name": "Rogério Colaço",
+      "age": 58,
+      "gender": "man",
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        9330,
+        2350
+      ],
+      "height": 154,
+      "activity": "a consultar o mapa",
+      "greeting": "Rogério Colaço fecha o mapa por um momento e cumprimenta a dupla. Entre a cantaria e as arcadas, até um passeio pode despertar perguntas de engenheiro.",
+      "route_offsets": [
+        [
+          -75,
+          0
+        ],
+        [
+          100,
+          10
+        ]
+      ],
+      "speed": 50,
+      "public_figure": true,
+      "mirror": true,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "arlindo_oliveira",
+      "name": "Arlindo Oliveira",
+      "age": 63,
+      "gender": "man",
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        11540,
+        6890
+      ],
+      "height": 156,
+      "activity": "a ler à sombra",
+      "greeting": "Arlindo Oliveira marca a página com um dedo. O livro pode esperar: as ruas de Sintra também merecem ser lidas.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": true,
+      "mirror": false,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "ines_lynce",
+      "name": "Inês Lynce",
+      "age": 54,
+      "gender": "woman",
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        11860,
+        6910
+      ],
+      "height": 148,
+      "activity": "a tomar notas",
+      "greeting": "Inês Lynce levanta os olhos do caderno e sorri. Aponta uma varanda: há sempre mais um detalhe para reparar, mesmo num caminho conhecido.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": true,
+      "mirror": false,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "teresa",
+      "name": "Teresa · guia da vila",
+      "age": 46,
+      "gender": "woman",
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        9490,
+        2470
+      ],
+      "height": 151,
+      "activity": "a orientar visitantes",
+      "greeting": "Teresa desdobra o roteiro e aponta um caminho entre as casas. Pelas ruas pequenas descobrem-se os pormenores que escapam aos passeios apressados.",
+      "route_offsets": [
+        [
+          -130,
+          20
+        ],
+        [
+          120,
+          -10
+        ]
+      ],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "lurdes",
+      "name": "Dona Lurdes",
+      "age": 78,
+      "gender": "woman",
+      "atlas": 2,
+      "column": 0,
+      "home": [
+        8930,
+        2460
+      ],
+      "height": 143,
+      "activity": "a tricotar",
+      "greeting": "Dona Lurdes conta mais uma malha antes de levantar a cabeça. O cachecol já vai comprido; a conversa é que nunca tem pressa.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "antonio",
+      "name": "Senhor António",
+      "age": 82,
+      "gender": "man",
+      "atlas": 2,
+      "column": 1,
+      "home": [
+        5180,
+        10040
+      ],
+      "height": 148,
+      "activity": "a passear de bengala",
+      "greeting": "O senhor António pousa a bengala e acena. Conhece uma sombra para cada hora do dia e um recanto para cada história.",
+      "route_offsets": [
+        [
+          -65,
+          5
+        ],
+        [
+          85,
+          0
+        ]
+      ],
+      "speed": 30,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "celeste",
+      "name": "Dona Celeste",
+      "age": 75,
+      "gender": "woman",
+      "atlas": 2,
+      "column": 2,
+      "home": [
+        18780,
+        4790
+      ],
+      "height": 147,
+      "activity": "a ler no largo",
+      "greeting": "Dona Celeste guarda o lugar com o indicador e sorri. Um bom capítulo fica ainda melhor com uma pausa na praça.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "manuel",
+      "name": "Senhor Manuel",
+      "age": 72,
+      "gender": "man",
+      "atlas": 2,
+      "column": 3,
+      "home": [
+        9060,
+        2550
+      ],
+      "height": 149,
+      "activity": "a ler o jornal",
+      "greeting": "O senhor Manuel baixa o jornal para deixar ver o sorriso por baixo do bigode. As notícias da rua interessam-lhe tanto como as do papel.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "emilia",
+      "name": "Dona Emília",
+      "age": 70,
+      "gender": "woman",
+      "atlas": 2,
+      "column": 4,
+      "home": [
+        18320,
+        12920
+      ],
+      "height": 144,
+      "activity": "a regar os gerânios",
+      "greeting": "Dona Emília endireita o regador. Cada vaso desta rua tem o seu nome; os gerânios são os mais vaidosos.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "matilde",
+      "name": "Matilde",
+      "age": 8,
+      "gender": "girl",
+      "atlas": 3,
+      "column": 0,
+      "home": [
+        9560,
+        3400
+      ],
+      "height": 92,
+      "activity": "a jogar à macaca",
+      "greeting": "Matilde mostra o quadrado onde é preciso cair só com um pé. O traço de giz é torto, mas as regras são muito sérias.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "age": 10,
+      "gender": "boy",
+      "atlas": 3,
+      "column": 1,
+      "home": [
+        9900,
+        9760
+      ],
+      "height": 104,
+      "activity": "a brincar com a bola",
+      "greeting": "Tomás prende a bola debaixo da sapatilha e espreita o largo. Está a treinar para não acertar em nenhum vaso.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "age": 11,
+      "gender": "girl",
+      "atlas": 3,
+      "column": 2,
+      "home": [
+        18600,
+        7690
+      ],
+      "height": 107,
+      "activity": "a fazer bolas de sabão",
+      "greeting": "Aisha sopra devagar e segue as bolas de sabão com os olhos. Uma delas quase conseguiu chegar à varanda.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "leonor",
+      "name": "Leonor",
+      "age": 38,
+      "gender": "woman",
+      "atlas": 3,
+      "column": 3,
+      "home": [
+        9690,
+        3440
+      ],
+      "height": 149,
+      "activity": "a fotografar a família",
+      "greeting": "Leonor baixa o telemóvel e ri-se. Ainda não conseguiu uma fotografia em que toda a gente fique quieta.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "miguel",
+      "name": "Miguel",
+      "age": 40,
+      "gender": "man",
+      "atlas": 3,
+      "column": 4,
+      "home": [
+        10080,
+        9800
+      ],
+      "height": 158,
+      "activity": "a desenhar o largo",
+      "greeting": "Miguel roda o caderno para mostrar o desenho. Os telhados cabem na folha; a bola do Tomás insiste em fugir da composição.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "fatima",
+      "name": "Fátima · fruta",
+      "age": 49,
+      "gender": "woman",
+      "atlas": 4,
+      "column": 0,
+      "home": [
+        11290,
+        7690
+      ],
+      "height": 150,
+      "activity": "a escolher laranjas",
+      "greeting": "Fátima levanta uma laranja e mostra a casca brilhante. Escolhe cada peça como quem compõe as cores de um quadro.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "nuno",
+      "name": "Nuno · cerâmica",
+      "age": 32,
+      "gender": "man",
+      "atlas": 4,
+      "column": 1,
+      "home": [
+        11640,
+        7690
+      ],
+      "height": 159,
+      "activity": "a limpar uma jarra",
+      "greeting": "Nuno termina de passar o pano na jarra azul e branca. Gira-a um pouco para mostrar como a luz muda o desenho.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "silvia",
+      "name": "Sílvia · azulejos",
+      "age": 45,
+      "gender": "woman",
+      "atlas": 4,
+      "column": 2,
+      "home": [
+        11990,
+        8030
+      ],
+      "height": 151,
+      "activity": "a pintar cerâmica",
+      "greeting": "Sílvia suspende o pincel acima do prato. Uma folha de azul ainda está por pintar; o resto parece um pequeno jardim.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "luis",
+      "name": "Luís · padaria",
+      "age": 52,
+      "gender": "man",
+      "atlas": 4,
+      "column": 3,
+      "home": [
+        10210,
+        4885
+      ],
+      "height": 155,
+      "activity": "a preparar pão",
+      "greeting": "Luís ajeita um pão no saco de papel e cumprimenta a dupla. A montra já convida ao lanche, mesmo antes de se sentir o cheiro.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "samira",
+      "name": "Samira · tecidos",
+      "age": 29,
+      "gender": "woman",
+      "atlas": 4,
+      "column": 4,
+      "home": [
+        12340,
+        8030
+      ],
+      "height": 150,
+      "activity": "a dobrar tecidos",
+      "greeting": "Samira alisa o tecido com a palma da mão. Mostra uma dobra azul que lembra os padrões das fachadas.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "yuki",
+      "name": "Yuki",
+      "age": 27,
+      "gender": "woman",
+      "atlas": 5,
+      "column": 0,
+      "home": [
+        15780,
+        5240
+      ],
+      "height": 145,
+      "activity": "a fotografar azulejos",
+      "greeting": "Yuki confere a fotografia e procura outro enquadramento. Os azulejos já renderam mais imagens do que ela tinha planeado.",
+      "route_offsets": [
+        [
+          -130,
+          15
+        ],
+        [
+          120,
+          -15
+        ]
+      ],
+      "speed": 56,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "amadou",
+      "name": "Amadou",
+      "age": 35,
+      "gender": "man",
+      "atlas": 5,
+      "column": 1,
+      "home": [
+        19700,
+        1525
+      ],
+      "height": 168,
+      "activity": "a descobrir o caminho",
+      "greeting": "Amadou roda o mapa e depois olha para os telhados. Às vezes a melhor direção é a rua que ainda não se viu.",
+      "route_offsets": [
+        [
+          -180,
+          -30
+        ],
+        [
+          170,
+          35
+        ]
+      ],
+      "speed": 62,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "ingrid",
+      "name": "Ingrid",
+      "age": 58,
+      "gender": "woman",
+      "atlas": 5,
+      "column": 2,
+      "home": [
+        18820,
+        7790
+      ],
+      "height": 153,
+      "activity": "a observar aves",
+      "greeting": "Ingrid baixa os binóculos e aponta discretamente a copa de uma árvore. O passeio também se faz de pequenos silêncios.",
+      "route_offsets": [
+        [
+          -85,
+          15
+        ],
+        [
+          100,
+          -20
+        ]
+      ],
+      "speed": 44,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "ravi",
+      "name": "Ravi",
+      "age": 28,
+      "gender": "man",
+      "atlas": 5,
+      "column": 3,
+      "home": [
+        3400,
+        3900
+      ],
+      "height": 157,
+      "activity": "a comparar os mapas",
+      "greeting": "Ravi alterna entre o mapa do telemóvel e o largo à sua frente. Uma ruela bonita acabou de lhe alterar o itinerário.",
+      "route_offsets": [
+        [
+          -140,
+          25
+        ],
+        [
+          140,
+          -20
+        ]
+      ],
+      "speed": 60,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "camila",
+      "name": "Camila",
+      "age": 29,
+      "gender": "woman",
+      "atlas": 5,
+      "column": 4,
+      "home": [
+        8660,
+        13720
+      ],
+      "height": 154,
+      "activity": "a alongar antes da corrida",
+      "greeting": "Camila termina um alongamento e ergue a garrafa de água. Na encosta, as pernas pedem uma pausa antes dos olhos.",
+      "route_offsets": [
+        [
+          -170,
+          15
+        ],
+        [
+          160,
+          -15
+        ]
+      ],
+      "speed": 88,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "duarte",
+      "name": "Duarte",
+      "age": 35,
+      "gender": "man",
+      "atlas": 6,
+      "column": 0,
+      "home": [
+        18040,
+        13040
+      ],
+      "height": 159,
+      "activity": "a ler e passear no pátio",
+      "greeting": "Duarte fecha o livro sobre o colo e faz um sinal de olá. Prefere o caminho que passa pelo pátio e pelas suas fachadas de azulejo.",
+      "route_offsets": [
+        [
+          -130,
+          0
+        ],
+        [
+          120,
+          0
+        ]
+      ],
+      "speed": 45,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 8.0
+    },
+    {
+      "id": "beatriz",
+      "name": "Beatriz",
+      "age": 22,
+      "gender": "non_binary",
+      "atlas": 6,
+      "column": 1,
+      "home": [
+        4800,
+        6380
+      ],
+      "height": 151,
+      "activity": "a desenhar as fachadas",
+      "greeting": "Beatriz mede uma janela com o lápis e volta ao caderno. Nesta esquina ainda faltam dois telhados e uma bandeirinha.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 9.7
+    },
+    {
+      "id": "farid",
+      "name": "Farid",
+      "age": 42,
+      "gender": "man",
+      "atlas": 6,
+      "column": 2,
+      "home": [
+        8950,
+        3350
+      ],
+      "height": 157,
+      "activity": "a tocar guitarra",
+      "greeting": "Farid deixa a última nota soar antes de sorrir. A melodia continua baixinho, ao ritmo dos passos que passam no largo.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 11.4
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa · jardins",
+      "age": 54,
+      "gender": "woman",
+      "atlas": 6,
+      "column": 3,
+      "home": [
+        5420,
+        10130
+      ],
+      "height": 154,
+      "activity": "a varrer o passeio",
+      "greeting": "Rosa encosta a vassoura por um instante. O vento volta sempre a trazer folhas, mas também traz sombra fresca para o largo.",
+      "route_offsets": [
+        [
+          -85,
+          0
+        ],
+        [
+          90,
+          10
+        ]
+      ],
+      "speed": 42,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 13.1
+    },
+    {
+      "id": "joao",
+      "name": "João · entregas",
+      "age": 25,
+      "gender": "man",
+      "atlas": 6,
+      "column": 4,
+      "home": [
+        19500,
+        12400
+      ],
+      "height": 156,
+      "activity": "a procurar uma morada",
+      "greeting": "João confirma o número no papel e ajeita a encomenda. A próxima porta fica depois de mais uma curva.",
+      "route_offsets": [
+        [
+          -150,
+          30
+        ],
+        [
+          170,
+          -30
+        ]
+      ],
+      "speed": 66,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 14.8
+    },
+    {
+      "id": "gil",
+      "name": "Gil",
+      "age": 22,
+      "gender": "man",
+      "atlas": 7,
+      "column": 0,
+      "home": [
+        10250,
+        4690
+      ],
+      "height": 157,
+      "activity": "a provar um travesseiro",
+      "greeting": "Gil reconhece o Te e o Jo e ergue o saco da Piriquita, a sorrir. Ainda há tempo para um travesseiro antes de continuarem o passeio.",
+      "route_offsets": [
+        [
+          -110,
+          10
+        ],
+        [
+          105,
+          -10
+        ]
+      ],
+      "speed": 56,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 9.0,
+      "friend_of": [
+        "te",
+        "jo"
+      ],
+      "reference_images": [
+        1
+      ]
+    },
+    {
+      "id": "tiago",
+      "name": "Tiago",
+      "age": 22,
+      "gender": "man",
+      "atlas": 7,
+      "column": 1,
+      "home": [
+        9840,
+        3180
+      ],
+      "height": 158,
+      "activity": "a combinar o percurso",
+      "greeting": "Tiago dobra o mapa e cumprimenta o Te e o Jo. Aponta o caminho do largo: os amigos estão espalhados pela vila, e há muito para ver entre um encontro e outro.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 10.5,
+      "friend_of": [
+        "te",
+        "jo"
+      ],
+      "reference_images": [
+        2
+      ]
+    },
+    {
+      "id": "alexandre",
+      "name": "Alexandre",
+      "age": 22,
+      "gender": "man",
+      "atlas": 7,
+      "column": 2,
+      "home": [
+        12820,
+        12360
+      ],
+      "height": 160,
+      "activity": "a fotografar o jardim",
+      "greeting": "Alexandre baixa a máquina ao reconhecer o Te e o Jo. Mostra-lhes o enquadramento: conseguiu apanhar as flores e os telhados na mesma fotografia.",
+      "route_offsets": [],
+      "speed": 55,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 12.0,
+      "friend_of": [
+        "te",
+        "jo"
+      ],
+      "reference_images": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "martim",
+      "name": "Martim",
+      "age": 22,
+      "gender": "man",
+      "atlas": 8,
+      "column": 0,
+      "home": [
+        6620,
+        4920
+      ],
+      "height": 159,
+      "activity": "a beber um café",
+      "greeting": "Martim ergue a chávena para cumprimentar o Te e o Jo. O café está quase a acabar, mas a conversa pode ficar mais um bocadinho na esplanada.",
+      "route_offsets": [
+        [
+          -95,
+          5
+        ],
+        [
+          100,
+          -10
+        ]
+      ],
+      "speed": 48,
+      "public_figure": false,
+      "mirror": false,
+      "wait_seconds": 13.5,
+      "friend_of": [
+        "te",
+        "jo"
+      ],
+      "reference_images": [
+        4
+      ]
+    },
+    {
+      "id": "afonso",
+      "name": "Afonso",
+      "age": 22,
+      "gender": "man",
+      "atlas": 8,
+      "column": 1,
+      "home": [
+        12190,
+        7770
+      ],
+      "height": 158,
+      "activity": "a escolher um azulejo",
+      "greeting": "Afonso vira o azulejo para mostrar o desenho ao Te e ao Jo. Os tons de azul lembram-lhe as fachadas que viram pelo caminho; guarda-o com cuidado no saco.",
+      "route_offsets": [
+        [
+          -100,
+          10
+        ],
+        [
+          110,
+          -10
+        ]
+      ],
+      "speed": 52,
+      "public_figure": false,
+      "mirror": true,
+      "wait_seconds": 11.0,
+      "friend_of": [
+        "te",
+        "jo"
+      ],
+      "reference_images": [
+        5
+      ]
+    }
+  ]
+}

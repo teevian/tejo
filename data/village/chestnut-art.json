@@ -1,0 +1,76 @@
+{
+  "stall": [
+    {
+      "path": "res://assets/world/village/chestnut-stall-final.png",
+      "rect": [
+        50,
+        5,
+        626,
+        715
+      ],
+      "foot": [
+        313.0,
+        715
+      ],
+      "height_ratio": 1.0
+    },
+    {
+      "path": "res://assets/world/village/chestnut-stall-final.png",
+      "rect": [
+        775,
+        5,
+        625,
+        715
+      ],
+      "foot": [
+        312.5,
+        715
+      ],
+      "height_ratio": 1.0
+    },
+    {
+      "path": "res://assets/world/village/chestnut-stall-final.png",
+      "rect": [
+        1499,
+        5,
+        625,
+        715
+      ],
+      "foot": [
+        312.5,
+        715
+      ],
+      "height_ratio": 1.0
+    }
+  ],
+  "food": [
+    {
+      "path": "res://assets/items/chestnut-portions.png",
+      "rect": [
+        348,
+        10,
+        415,
+        702
+      ],
+      "foot": [
+        184.0,
+        702
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/chestnut-portions.png",
+      "rect": [
+        1434,
+        10,
+        415,
+        702
+      ],
+      "foot": [
+        184.0,
+        702
+      ],
+      "height_ratio": 1
+    }
+  ]
+}

@@ -118,8 +118,10 @@ func _draw() -> void:
 			draw_string_outline(font,Vector2(28,701),"Setas · andar   Tab · trocar   T · conversar   M · mapa   Esc · pausa",HORIZONTAL_ALIGNMENT_LEFT,-1,13,4,Color("233e3e"))
 			draw_string(font,Vector2(28,701),"Setas · andar   Tab · trocar   T · conversar   M · mapa   Esc · pausa",HORIZONTAL_ALIGNMENT_LEFT,-1,13,Color("fff4db"))
 			if not interaction_prompt.is_empty():
-				draw_style_box(TejoPerson._box(Color("233e3e"),8),Rect2(24,460,500,40))
-				draw_string(font,Vector2(40,486),"Espaço · "+interaction_prompt,HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("fff4db"))
+				var prompt: String = "Espaço · "+interaction_prompt
+				var prompt_size: Vector2 = font.get_multiline_string_size(prompt,HORIZONTAL_ALIGNMENT_LEFT,468,16,4)
+				draw_style_box(TejoPerson._box(Color("233e3e"),8),Rect2(24,460,500,maxf(40,prompt_size.y+20)))
+				draw_multiline_string(font,Vector2(40,486),prompt,HORIZONTAL_ALIGNMENT_LEFT,468,16,4,Color("fff4db"))
 		return
 	draw_rect(Rect2(0,0,1280,720),Color(0.12,0.23,0.20,0.65))
 	draw_style_box(TejoPerson._box(Color("f1e6c7"),18),Rect2(415,245 if open_world else 265,450,400 if open_world else 190))

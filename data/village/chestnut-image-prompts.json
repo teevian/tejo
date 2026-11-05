@@ -1,0 +1,31 @@
+{
+  "mode": "built-in ImageGen",
+  "final_assets": ["assets/world/village/chestnut-stall-final.png", "assets/items/chestnut-portions.png"],
+  "note": "Only the final PNGs are kept in the project. Intermediate generation outputs remain in the built-in ImageGen output directory; requests below preserve the exact generation and transparency correction history.",
+  "requests": [
+    {
+      "key": "stall",
+      "ref": "/Users/tmvaz/github/tejo/assets/world/village/bakery-counter.png",
+      "target": "assets/world/village/chestnut-stall.png",
+      "prompt": "Use case: stylized-concept. Game sprite atlas, THREE columns in one row with generous transparent gutters, exact same fixed camera, scale, alignment and cart design in all three cells. Reference image is STYLE ONLY: match its warm Portuguese gouache and colored pencil painted game art, fine paper texture, legible slightly elevated front three-quarter perspective. New subject: a small traditional Portuguese street chestnut vendor's dark red wooden wheeled cart, black iron roasting drum and brazier, chestnuts in tray, paper cones and small butter dish. Cart should have modest readable sign CASTANHAS. Cell 1: open cart with older stocky chestnut seller behind it, grey moustache, flat cap, blue wool cardigan, tan apron, neutral concentrated expression, one hand turning roasting pan. Cell 2: identical cart, identical seller, only his arms change to fill a paper cone, eyes looking down at work. Cell 3: exact same cart with brazier extinguished, wooden top cover closed, NO seller, small sign FECHADO. All three carts' wheels rest at identical image y baseline, no ground plane or scenic background, no cast shadows outside object, no enormous smoke cloud, preserve fully transparent background. No other people or objects. Render whole cart, no clipped wheels or hats. Complete isolated production sprite atlas, not a mockup."
+    },
+    {
+      "key": "food",
+      "ref": "/Users/tmvaz/github/tejo/assets/items/bakery-food.png",
+      "target": "assets/items/chestnut-portions.png",
+      "prompt": "Use case: stylized-concept. Game inventory sprite atlas, exactly TWO equal columns on one row, two isolated food items, transparent background and generous transparent gutter between them. Reference image STYLE ONLY: match warm Portuguese gouache and colored pencil with fine texture. Left cell: a folded kraft paper cone filled with freshly roasted Portuguese chestnuts, dark brown charred split shells showing golden chestnut interiors, a little coarse salt. Right cell: same paper cone same size, filled with peeled golden roasted chestnuts with a small pat of yellow butter visibly melting over the top. Butter variant must clearly read differently. Slightly elevated front view, appetizing understated handmade illustration, whole objects fully visible, no text, labels, hands, utensils, background, border, drop shadows, scenery, or extra items. Genuine transparent background."
+    },
+    {
+      "key": "stall-background-extraction",
+      "ref": "assets/world/village/chestnut-stall.png",
+      "target": "assets/world/village/chestnut-stall-clean.png",
+      "prompt": "Use case: background-extraction. Edit the supplied chestnut cart sprite atlas. Preserve exactly the three carts, both vendor poses, all proportions, colours, textures, signs, three-column layout and image size. Remove ALL pale gray, white, cream, beige and pink background haze including the background INSIDE each cart canopy, BETWEEN canopy posts and vendor, around his head, through the empty closed cart upper section, between wheels and underneath the cart. Those empty regions must be truly fully transparent alpha zero. Keep the actual painted canopy fabric, vendor, wooden cart and wheels opaque, retain their original painted edges. NO replacement white backdrop, no frosted panes, no glow, no rectangle behind sprite. These are open street carts with clear air between their posts. Final is identical production atlas with clean real transparency everywhere there is empty air. Do not add or rearrange anything."
+    },
+    {
+      "key": "stall-final",
+      "ref": "assets/world/village/chestnut-stall-clean.png",
+      "target": "assets/world/village/chestnut-stall-final.png",
+      "prompt": "Use case: precise-object-edit. The supplied transparent three-column chestnut cart game atlas is almost finished. Remove the single stray WHITE BLOB in the TOP GUTTER just LEFT of the MIDDLE cart's canopy: it touches the top border above the middle cart's left pillar. Replace only that accidental white blob with fully transparent empty air. Preserve all three carts and both vendors exactly. Keep every existing transparent hole and transparent backdrop. No white or pale haze anywhere outside the painted objects. Do not modify text, proportions, poses or layout. Genuine transparent PNG, whole identical sprite sheet."
+    }
+  ]
+}

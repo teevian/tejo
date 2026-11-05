@@ -1,0 +1,614 @@
+{
+  "characters": {
+    "gil": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          176,
+          15,
+          84,
+          243
+        ],
+        "foot": [
+          46.0,
+          243
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          175,
+          270,
+          120,
+          241
+        ],
+        "foot": [
+          43.0,
+          241
+        ],
+        "height_ratio": 0.9917695473251029
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          154,
+          523,
+          151,
+          242
+        ],
+        "foot": [
+          53.0,
+          242
+        ],
+        "height_ratio": 0.9958847736625515
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          161,
+          778,
+          134,
+          236
+        ],
+        "foot": [
+          52.5,
+          236
+        ],
+        "height_ratio": 0.9711934156378601
+      }
+    ],
+    "tiago": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          452,
+          17,
+          90,
+          241
+        ],
+        "foot": [
+          48.5,
+          241
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          443,
+          271,
+          135,
+          241
+        ],
+        "foot": [
+          58.5,
+          241
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          431,
+          526,
+          157,
+          238
+        ],
+        "foot": [
+          54.0,
+          238
+        ],
+        "height_ratio": 0.9875518672199171
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          408,
+          777,
+          131,
+          239
+        ],
+        "foot": [
+          81.5,
+          239
+        ],
+        "height_ratio": 0.991701244813278
+      }
+    ],
+    "alexandre": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          719,
+          15,
+          94,
+          244
+        ],
+        "foot": [
+          52.5,
+          244
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          719,
+          272,
+          123,
+          239
+        ],
+        "foot": [
+          48.5,
+          239
+        ],
+        "height_ratio": 0.9795081967213115
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          695,
+          524,
+          129,
+          241
+        ],
+        "foot": [
+          66.5,
+          241
+        ],
+        "height_ratio": 0.9877049180327869
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          698,
+          778,
+          152,
+          238
+        ],
+        "foot": [
+          54.5,
+          238
+        ],
+        "height_ratio": 0.9754098360655737
+      }
+    ],
+    "martim": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          992,
+          14,
+          93,
+          247
+        ],
+        "foot": [
+          55.0,
+          247
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          988,
+          270,
+          113,
+          241
+        ],
+        "foot": [
+          55.0,
+          241
+        ],
+        "height_ratio": 0.9757085020242915
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          948,
+          522,
+          147,
+          242
+        ],
+        "foot": [
+          80.0,
+          242
+        ],
+        "height_ratio": 0.979757085020243
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          956,
+          776,
+          161,
+          241
+        ],
+        "foot": [
+          56.0,
+          241
+        ],
+        "height_ratio": 0.9757085020242915
+      }
+    ],
+    "afonso": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          1272,
+          18,
+          89,
+          243
+        ],
+        "foot": [
+          44.5,
+          243
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          1263,
+          273,
+          132,
+          239
+        ],
+        "foot": [
+          50.5,
+          239
+        ],
+        "height_ratio": 0.9835390946502057
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          1239,
+          525,
+          159,
+          241
+        ],
+        "foot": [
+          63.0,
+          241
+        ],
+        "height_ratio": 0.9917695473251029
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-friends.png",
+        "rect": [
+          1229,
+          781,
+          134,
+          236
+        ],
+        "foot": [
+          77.0,
+          236
+        ],
+        "height_ratio": 0.9711934156378601
+      }
+    ],
+    "yuki": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          90,
+          23,
+          125,
+          351
+        ],
+        "foot": [
+          71.0,
+          351
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          81,
+          397,
+          177,
+          346
+        ],
+        "foot": [
+          76.5,
+          346
+        ],
+        "height_ratio": 0.9857549857549858
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          35,
+          766,
+          212,
+          330
+        ],
+        "foot": [
+          122.5,
+          330
+        ],
+        "height_ratio": 0.9401709401709402
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          48,
+          1107,
+          199,
+          333
+        ],
+        "foot": [
+          137.5,
+          333
+        ],
+        "height_ratio": 0.9487179487179487
+      }
+    ],
+    "camila": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          346,
+          21,
+          129,
+          356
+        ],
+        "foot": [
+          75.0,
+          356
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          339,
+          392,
+          169,
+          353
+        ],
+        "foot": [
+          83.5,
+          353
+        ],
+        "height_ratio": 0.9915730337078652
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          301,
+          757,
+          190,
+          339
+        ],
+        "foot": [
+          111.5,
+          339
+        ],
+        "height_ratio": 0.952247191011236
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          296,
+          1110,
+          223,
+          330
+        ],
+        "foot": [
+          127.0,
+          330
+        ],
+        "height_ratio": 0.9269662921348315
+      }
+    ],
+    "beatriz": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          603,
+          24,
+          126,
+          351
+        ],
+        "foot": [
+          70.0,
+          351
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          593,
+          395,
+          170,
+          348
+        ],
+        "foot": [
+          83.5,
+          348
+        ],
+        "height_ratio": 0.9914529914529915
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          549,
+          767,
+          203,
+          327
+        ],
+        "foot": [
+          126.0,
+          327
+        ],
+        "height_ratio": 0.9316239316239316
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          608,
+          1117,
+          152,
+          322
+        ],
+        "foot": [
+          55.5,
+          322
+        ],
+        "height_ratio": 0.9173789173789174
+      }
+    ],
+    "samira": [
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          875,
+          24,
+          110,
+          350
+        ],
+        "foot": [
+          61.0,
+          350
+        ],
+        "height_ratio": 1.0
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          870,
+          395,
+          165,
+          348
+        ],
+        "foot": [
+          68.5,
+          348
+        ],
+        "height_ratio": 0.9942857142857143
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          831,
+          771,
+          197,
+          325
+        ],
+        "foot": [
+          119.5,
+          325
+        ],
+        "height_ratio": 0.9285714285714286
+      },
+      {
+        "path": "res://assets/characters/villagers/nightlife-guests.png",
+        "rect": [
+          857,
+          1111,
+          165,
+          328
+        ],
+        "foot": [
+          58.5,
+          328
+        ],
+        "height_ratio": 0.9371428571428572
+      }
+    ],
+    "nuno": [
+      {
+        "path": "res://assets/world/village/nightlife-bar.png",
+        "rect": [
+          673,
+          517,
+          174,
+          466
+        ],
+        "foot": [
+          98.5,
+          466
+        ],
+        "height_ratio": 1
+      },
+      {
+        "path": "res://assets/world/village/nightlife-bar.png",
+        "rect": [
+          1140,
+          517,
+          274,
+          467
+        ],
+        "foot": [
+          104.5,
+          467
+        ],
+        "height_ratio": 1
+      }
+    ]
+  },
+  "props": [
+    {
+      "path": "res://assets/world/village/nightlife-bar.png",
+      "rect": [
+        99,
+        116,
+        380,
+        322
+      ],
+      "foot": [
+        190.0,
+        322
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/nightlife-bar.png",
+      "rect": [
+        647,
+        81,
+        250,
+        365
+      ],
+      "foot": [
+        125.0,
+        365
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/nightlife-bar.png",
+      "rect": [
+        1190,
+        63,
+        164,
+        384
+      ],
+      "foot": [
+        82.0,
+        384
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/nightlife-bar.png",
+      "rect": [
+        116,
+        582,
+        323,
+        395
+      ],
+      "foot": [
+        161.5,
+        395
+      ],
+      "height_ratio": 1
+    }
+  ]
+}

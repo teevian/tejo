@@ -8,7 +8,11 @@ A cena principal continua a ser `scenes/garden.tscn`. O menu **Esc → Explorar 
 
 `scenes/sintra_village.tscn` abre a mesma região diretamente, junto ao Palácio, para revisão no editor/F6. Usa o mesmo controlador de exploração, sem construir a serra. Controlos: setas/WASD, duplo toque para correr, Tab para trocar, T para conversar, Espaço para interagir, M para o mapa e Esc para pausa. O botão de escalada continua associado à serra.
 
-O retângulo da região tem **22 400 × 16 000 unidades**: 358 400 000 unidades quadradas, **exatamente dez vezes a área anterior** de 6400 × 5600. A escala dos personagens mantém-se. A vila contém **547 construções**, incluindo sete peças emblemáticas e 540 fachadas de comércio/habitação, **78 percursos** e **13 largos, praças e jardins públicos**, além do piso das arcadas. Há dez bancos de dois lugares, catorze observações e dezassete conversas. O novo Largo da Feira tem bancas de fruta, loiça, azulejos, tecidos e lembranças; os pátios de habitação, esplanadas, vasos, balaustradas, pelourinho, fontes, candeeiros e bandeirinhas dão identidade aos bairros.
+O retângulo da região tem **22 400 × 16 000 unidades**: 358 400 000 unidades quadradas, **exatamente dez vezes a área anterior** de 6400 × 5600. A escala dos personagens mantém-se. A vila contém **659 construções**, incluindo sete peças emblemáticas, 540 fachadas de comércio/habitação e 112 casas adossadas nos interiores dos quarteirões, **78 percursos** e **13 largos, praças e jardins públicos**, além do piso das arcadas. Há dez bancos de dois lugares, dezoito observações e dezassete conversas. O novo Largo da Feira tem bancas de fruta, loiça, azulejos, tecidos e lembranças; os pátios de habitação, esplanadas, vasos, balaustradas, pelourinho, fontes, candeeiros e bandeirinhas dão identidade aos bairros.
+
+A vila tem **45 pessoas diferentes**: os 35 habitantes e amigos anteriores, incluindo quatro participações conhecidas, e dez novas pessoas para os grupos e atividades de rua. Ver [Pessoas da Vila](PESSOAS_DA_VILA.md) para o elenco, as zonas, os cumprimentos e a verificação.
+
+Visitas guiadas, montras, família, escuteiros, Nannarella, polícia, concerto e luzes noturnas: [Vida da Vila](VIDA_DA_VILA.md).
 
 ## Continuidade da sessão
 
@@ -41,11 +45,11 @@ O norte fica aproximadamente para cima. O Palácio está a norte do núcleo come
 
 Preservam-se as ligações Padarias–Ferraria, Costa do Castelo–Ferreira de Castro, Fonte da Pipa–Navarro–acesso Sassetti, Biquinha/Gil Vicente/Consiglieri Pedroso, Terreirinho/Audiência e o ramo oriental Duche/Visconde de Monserrate. As curvas pequenas e sequências de escadas foram reduzidas a troços legíveis. A ampliação prolonga as ligações do núcleo e acrescenta circuitos de habitação a poente, no Duche e na encosta sul. Os lotes fecham-se em filas de fachadas, com ruas laterais e pátios; o terreno mineral dos quarteirões substitui as antigas faixas de floresta entre lojas. As praças mantêm dimensões próprias, sem aumentar todos os seus elementos na proporção do mapa. Os números de portas e a quantidade de fachadas não reproduzem um cadastro.
 
-O Parque da Liberdade liga os seus acessos; os jardins da Sassetti conservam uma bifurcação e uma escadaria. A vegetação concentra-se nestes jardins e nos limites da vila. A aproximação à Sassetti contorna a base do edifício, em vez de a atravessar. O percurso além da placa superior é comprimido até à mata já existente: não representa um acesso real direto a todos os locais dispersos da serra. Nenhum monumento anterior foi deslocado. Regaleira, Seteais, Monserrate, Castelo e Pena são apenas sugeridos por observações/indicações; os locais já existentes na serra mantêm-se.
+O Parque da Liberdade liga os seus acessos; os jardins da Sassetti conservam uma bifurcação e caminhos de encosta. A vegetação concentra-se nestes jardins e nos limites da vila. A aproximação à Sassetti contorna a base do edifício, em vez de a atravessar. O percurso além da placa superior é comprimido até à mata já existente: não representa um acesso real direto a todos os locais dispersos da serra. Nenhum monumento anterior foi deslocado. Regaleira, Seteais, Monserrate, Castelo e Pena são apenas sugeridos por observações/indicações; os locais já existentes na serra mantêm-se.
 
 O Largo da Feira, Largo das Hortênsias, Largo dos Azulejos, Pátio das Portadas e Largo dos Jardins dão destinos aos novos circuitos; as designações dos espaços adicionais identificam a interpretação do jogo. A passagem Lord Byron chega à fachada cor-de-rosa por um pequeno recanto próprio.
 
-As silhuetas dos edifícios são interpretações pintadas, sem interiores visitáveis. As três arcadas do Palácio têm chão, aberturas e pilares físicos separados. Outros portais representados como fechados permanecem sólidos. Escadas são chão contínuo, sem plataformas nem física de escalada. O perímetro navegável corresponde aos caminhos e espaços públicos representados; os intervalos de vegetação e propriedades ficam fora da circulação.
+As silhuetas dos edifícios são interpretações pintadas, sem interiores visitáveis. As três arcadas do Palácio têm chão, aberturas e pilares físicos separados. Outros portais representados como fechados permanecem sólidos. As escadas novas ligam patamares com cotas diferentes, muros sólidos e aproximações livres. O perímetro inclui toda a calçada representada, incluindo os pátios entre edifícios; a vegetação exterior conserva os seus limites.
 
 ## Organização e arte
 
@@ -55,7 +59,7 @@ A navegação e as colisões consultam índices espaciais locais. A grelha tem 3
 
 As capturas atuais da serra foram observadas no motor antes da implementação. Os pedidos e referências da arte inicial constam de `assets/world/village/ART.md`; os três novos assets, dimensões, referências das fotografias e pedidos finais completos constam de `assets/world/village/URBAN_ART.md`. As novas fachadas têm dois a quatro pisos e escala de portas própria, sem aumentar os personagens. Bancos, árvores, fetos e objetos de inventário reutilizam a arte existente. As placas são elementos de interface do cenário, ao estilo das indicações anteriores. A iluminação passa pelo mesmo filtro de dia/noite, incluindo personagens. O descanso/desenho no chão só começa em terra dos jardins ou caminhos florestais, com espaço disponível; nunca na calçada ou em escadas. Os contornos da calçada são desenhados antes de todos os pisos, para não surgirem costuras a atravessar cruzamentos ou praças.
 
-Os dois atlas direcionais aprovados, o manifesto, `world_scale.gd` e `open_world_art.gd` foram preservados. A única alteração de comportamento do personagem é consultar a superfície antes de procurar um lugar para desenhar. A espera do Te continua a ser sentar-se a desenhar.
+Os dois atlas direcionais aprovados, o manifesto, `world_scale.gd` e `open_world_art.gd` foram preservados. O personagem consulta a superfície antes de procurar um lugar para desenhar e abranda nos novos degraus. A espera do Te continua a ser sentar-se a desenhar.
 
 ## Verificação
 
@@ -68,3 +72,25 @@ Os dois atlas direcionais aprovados, o manifesto, `world_scale.gd` e `open_world
 - `node tools/check_approved_characters.cjs`: SHA-256, dimensões, pasta final, geometria e escala dos sprites aprovados.
 
 Exemplo: `Godot --headless --path . --fixed-fps 60 --script res://tests/village_walking_test.gd`. Para capturas: `Godot --path . --script res://tests/village_preview.gd`. As revisões usam cenas descartáveis: não alteram a partida. O plano mais aberto do Palácio muda temporariamente o zoom só nessa revisão.
+
+As pessoas seguem o relógio partilhado: horários de trabalho e pausa, refeições, passeios e recolher. Há percursos reais entre destinos, crianças acompanhadas e um encontro dos cinco amigos ao fim da tarde. [Horários dos 35 personagens](ROTINAS_DA_VILA.md).
+
+## Calçada, vistas laterais e patamares — revisão de 3 de novembro
+
+Toda a pedra visível nos quarteirões urbanos integra agora o chão transitável. As bases dos edifícios, o mobiliário sólido e os muros continuam a impedir atravessar objetos; a escolha de textura do pavimento não bloqueia a circulação. As áreas de jardim sobrepõem-se à calçada de fundo e conservam os caminhos próprios. A margem do perímetro físico fica fora do piso público para não criar barreiras nas esquinas da grelha.
+
+As antigas faixas de escadaria foram retiradas integralmente. Há quatro novos acessos: Patamar das Hortênsias, dos Azulejos, das Portadas e dos Jardins. Cada um tem um lanço de nove degraus, desnível de 72 unidades, chegada superior murada com vasos e observação dos telhados, e patamar inferior. Os lanços não se cruzam; a dupla pode subi-los e descê-los com os controlos normais. As bancas e mesas deixam livres esses acessos.
+
+Há 206 fachadas originais de lado, entre casas, prédios e lojas, mais as vistas laterais dos novos aglomerados, usando oito pinturas novas. A orientação acompanha o lado da rua e as entradas ficam junto à fachada correspondente. Os restantes edifícios mantêm vistas frontais e os monumentos conservam as suas pinturas próprias. `tools/revise_village_spaces.py` aplica estas escolhas também após reconstruir o mapa com `build_village_layout.py`.
+
+`tests/village_spaces_test.gd` audita a calçada, verifica ambos os sentidos das fachadas e sobe e desce as quatro escadas com movimento real e acompanhamento do Jo. `tests/village_revision_preview.gd` guarda as capturas com o prefixo `output/village-revised-`.
+
+## Ruas com passeios e quarteirões compactos
+
+As 78 ligações e a posição das fachadas originais foram conservadas. As ruas de pedra têm agora uma faixa central de granito cinzento, com cerca de 62% da largura do percurso, ladeada por calçada clara junto às casas. Os fiados de pedra acompanham a direção e as curvas de cada rua. Os bordos são desenhados antes de todos os pisos: os cruzamentos ficam abertos, sem linhas a atravessar a ligação entre ruas. Os largos têm uma área central própria e um passeio periférico. Os losangos tradicionais ficam apenas em dois painéis emoldurados, no Palácio e na República.
+
+O pavimento é construído por malhas com coordenadas locais ao percurso e pelo shader `village_paving.gdshader`, que usa o grão da pedra existente. Não foi acrescentada uma imagem gerada nem alterada a arte dos personagens. A calçada clara continua nos pátios visíveis e nos patamares; todas as variantes de pedra continuam a permitir andar.
+
+`block-infill.json` acrescenta 112 casas adossadas em 60 aglomerados, com volumes e telhados sobrepostos em profundidade. As bases sólidas sobrepõem-se aos lotes existentes e mantêm uma folga de 64 unidades às ruas. Largos, jardins, arcadas, patamares, entradas públicas e possíveis alojamentos das rotinas são protegidos na autoria. As casas de interior não substituem as portas usadas pelos habitantes. `tools/densify_village_blocks.py` regenera esta implantação de forma determinística e é chamado pela reconstrução geral da vila.
+
+As capturas `output/village-streets-*.png` mostram uma rua comercial, um cruzamento, os aglomerados, uma vista mais aberta e o mercado. São produzidas por `tests/village_streets_preview.gd`. A circulação, os 35 horários completos, as bases físicas, os acessos e a ordenação visual são verificados pelos testes existentes da vila.

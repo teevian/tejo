@@ -1,0 +1,2552 @@
+{
+  "characters": {
+    "rosario_merenda": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            34,
+            16,
+            410,
+            419
+          ],
+          "foot": [
+            187.0,
+            419
+          ],
+          "height_ratio": 0.75
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            72,
+            449,
+            371,
+            438
+          ],
+          "foot": [
+            143.0,
+            438
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            18,
+            15,
+            405,
+            430
+          ],
+          "foot": [
+            198.5,
+            430
+          ],
+          "height_ratio": 0.73
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            29,
+            450,
+            379,
+            426
+          ],
+          "foot": [
+            179.0,
+            426
+          ],
+          "height_ratio": 0.78
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            34,
+            37,
+            197,
+            353
+          ],
+          "foot": [
+            102.0,
+            353
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            26,
+            406,
+            215,
+            358
+          ],
+          "foot": [
+            122.0,
+            358
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            33,
+            787,
+            209,
+            361
+          ],
+          "foot": [
+            99.5,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            32,
+            1160,
+            221,
+            360
+          ],
+          "foot": [
+            107.0,
+            360
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "nelson_termos": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            511,
+            21,
+            324,
+            415
+          ],
+          "foot": [
+            170.0,
+            415
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            508,
+            460,
+            325,
+            424
+          ],
+          "foot": [
+            174.5,
+            424
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            465,
+            11,
+            347,
+            422
+          ],
+          "foot": [
+            131.0,
+            422
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            460,
+            449,
+            354,
+            427
+          ],
+          "foot": [
+            159.0,
+            427
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            292,
+            30,
+            199,
+            363
+          ],
+          "foot": [
+            93.0,
+            363
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            275,
+            399,
+            207,
+            360
+          ],
+          "foot": [
+            117.0,
+            360
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            281,
+            779,
+            188,
+            369
+          ],
+          "foot": [
+            52.0,
+            369
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            278,
+            1152,
+            201,
+            369
+          ],
+          "foot": [
+            96.5,
+            369
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "iris_merenda": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            931,
+            8,
+            334,
+            428
+          ],
+          "foot": [
+            165.5,
+            428
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            937,
+            454,
+            327,
+            429
+          ],
+          "foot": [
+            162.0,
+            429
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            908,
+            7,
+            400,
+            430
+          ],
+          "foot": [
+            204.0,
+            430
+          ],
+          "height_ratio": 0.76
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            895,
+            437,
+            412,
+            446
+          ],
+          "foot": [
+            188.0,
+            446
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            550,
+            27,
+            188,
+            367
+          ],
+          "foot": [
+            97.0,
+            367
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            545,
+            399,
+            215,
+            360
+          ],
+          "foot": [
+            113.0,
+            360
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            555,
+            782,
+            184,
+            366
+          ],
+          "foot": [
+            77.5,
+            366
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            553,
+            1158,
+            197,
+            363
+          ],
+          "foot": [
+            84.0,
+            363
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "leo_merenda": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            1368,
+            59,
+            342,
+            370
+          ],
+          "foot": [
+            65.5,
+            370
+          ],
+          "height_ratio": 0.78
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-01.png",
+          "rect": [
+            1398,
+            468,
+            251,
+            412
+          ],
+          "foot": [
+            120.5,
+            412
+          ],
+          "height_ratio": 0.72
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            1363,
+            14,
+            352,
+            409
+          ],
+          "foot": [
+            195.5,
+            409
+          ],
+          "height_ratio": 0.76
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-01.png",
+          "rect": [
+            1386,
+            452,
+            314,
+            425
+          ],
+          "foot": [
+            157.5,
+            425
+          ],
+          "height_ratio": 0.74
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            787,
+            77,
+            199,
+            308
+          ],
+          "foot": [
+            158.0,
+            308
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            773,
+            443,
+            223,
+            316
+          ],
+          "foot": [
+            188.5,
+            316
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            787,
+            818,
+            202,
+            300
+          ],
+          "foot": [
+            90.0,
+            300
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-01.png",
+          "rect": [
+            789,
+            1190,
+            204,
+            321
+          ],
+          "foot": [
+            85.5,
+            321
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "ernesto_pombos": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            59,
+            36,
+            325,
+            460
+          ],
+          "foot": [
+            114.0,
+            460
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            84,
+            521,
+            210,
+            489
+          ],
+          "foot": [
+            112.0,
+            489
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            65,
+            16,
+            301,
+            481
+          ],
+          "foot": [
+            109.5,
+            481
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            68,
+            523,
+            226,
+            490
+          ],
+          "foot": [
+            123.0,
+            490
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            27,
+            45,
+            199,
+            336
+          ],
+          "foot": [
+            110.0,
+            336
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            25,
+            414,
+            209,
+            336
+          ],
+          "foot": [
+            114.0,
+            336
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            31,
+            786,
+            180,
+            354
+          ],
+          "foot": [
+            77.0,
+            354
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            27,
+            1170,
+            207,
+            351
+          ],
+          "foot": [
+            91.5,
+            351
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "olinda_pasteis": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            479,
+            30,
+            220,
+            465
+          ],
+          "foot": [
+            105.5,
+            465
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            439,
+            529,
+            298,
+            479
+          ],
+          "foot": [
+            120.0,
+            479
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            467,
+            15,
+            232,
+            484
+          ],
+          "foot": [
+            109.0,
+            484
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            414,
+            522,
+            307,
+            490
+          ],
+          "foot": [
+            142.5,
+            490
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            292,
+            40,
+            197,
+            341
+          ],
+          "foot": [
+            101.5,
+            341
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            286,
+            410,
+            218,
+            342
+          ],
+          "foot": [
+            109.5,
+            342
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            270,
+            784,
+            213,
+            356
+          ],
+          "foot": [
+            60.5,
+            356
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            273,
+            1167,
+            217,
+            355
+          ],
+          "foot": [
+            94.0,
+            355
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "beatriz_fila": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            843,
+            17,
+            246,
+            481
+          ],
+          "foot": [
+            82.5,
+            481
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            821,
+            524,
+            244,
+            489
+          ],
+          "foot": [
+            109.5,
+            489
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            805,
+            16,
+            275,
+            483
+          ],
+          "foot": [
+            112.0,
+            483
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            812,
+            518,
+            245,
+            499
+          ],
+          "foot": [
+            111.0,
+            499
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            558,
+            32,
+            156,
+            351
+          ],
+          "foot": [
+            85.5,
+            351
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            547,
+            402,
+            195,
+            351
+          ],
+          "foot": [
+            105.0,
+            351
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            550,
+            783,
+            159,
+            356
+          ],
+          "foot": [
+            41.5,
+            356
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            554,
+            1166,
+            167,
+            355
+          ],
+          "foot": [
+            74.0,
+            355
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "ricardo_tempos": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            1219,
+            16,
+            225,
+            482
+          ],
+          "foot": [
+            103.5,
+            482
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-02.png",
+          "rect": [
+            1202,
+            516,
+            226,
+            495
+          ],
+          "foot": [
+            106.5,
+            495
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            1183,
+            15,
+            224,
+            484
+          ],
+          "foot": [
+            137.5,
+            484
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-02.png",
+          "rect": [
+            1218,
+            521,
+            220,
+            493
+          ],
+          "foot": [
+            115.5,
+            493
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            796,
+            35,
+            172,
+            348
+          ],
+          "foot": [
+            100.0,
+            348
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            798,
+            404,
+            196,
+            348
+          ],
+          "foot": [
+            106.0,
+            348
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            783,
+            778,
+            189,
+            362
+          ],
+          "foot": [
+            56.5,
+            362
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-02.png",
+          "rect": [
+            794,
+            1163,
+            186,
+            359
+          ],
+          "foot": [
+            83.5,
+            359
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "estela_cliente": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            81,
+            19,
+            219,
+            477
+          ],
+          "foot": [
+            119.0,
+            477
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            60,
+            527,
+            293,
+            480
+          ],
+          "foot": [
+            132.0,
+            480
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            57,
+            21,
+            259,
+            477
+          ],
+          "foot": [
+            130.5,
+            477
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            55,
+            529,
+            241,
+            479
+          ],
+          "foot": [
+            134.5,
+            479
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            50,
+            29,
+            182,
+            325
+          ],
+          "foot": [
+            87.5,
+            325
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            48,
+            391,
+            191,
+            324
+          ],
+          "foot": [
+            141.5,
+            324
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            42,
+            752,
+            176,
+            321
+          ],
+          "foot": [
+            82.5,
+            321
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            36,
+            1112,
+            181,
+            310
+          ],
+          "foot": [
+            101.0,
+            310
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "odete_janela": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            437,
+            15,
+            238,
+            482
+          ],
+          "foot": [
+            133.0,
+            482
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            438,
+            530,
+            257,
+            479
+          ],
+          "foot": [
+            125.0,
+            479
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            451,
+            17,
+            198,
+            480
+          ],
+          "foot": [
+            109.0,
+            480
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            445,
+            521,
+            223,
+            487
+          ],
+          "foot": [
+            111.5,
+            487
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            313,
+            32,
+            183,
+            321
+          ],
+          "foot": [
+            84.5,
+            321
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            303,
+            394,
+            198,
+            321
+          ],
+          "foot": [
+            107.5,
+            321
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            304,
+            753,
+            172,
+            320
+          ],
+          "foot": [
+            77.5,
+            320
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            298,
+            1113,
+            187,
+            314
+          ],
+          "foot": [
+            90.0,
+            314
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "fausto_merceeiro": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            822,
+            17,
+            277,
+            481
+          ],
+          "foot": [
+            127.5,
+            481
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            820,
+            524,
+            259,
+            486
+          ],
+          "foot": [
+            133.0,
+            486
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            801,
+            17,
+            281,
+            483
+          ],
+          "foot": [
+            126.0,
+            483
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            783,
+            524,
+            326,
+            485
+          ],
+          "foot": [
+            136.5,
+            485
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            559,
+            32,
+            212,
+            324
+          ],
+          "foot": [
+            107.0,
+            324
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            554,
+            394,
+            223,
+            322
+          ],
+          "foot": [
+            122.0,
+            322
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            558,
+            753,
+            204,
+            321
+          ],
+          "foot": [
+            88.5,
+            321
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            554,
+            1114,
+            214,
+            312
+          ],
+          "foot": [
+            102.5,
+            312
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "toni_matraquilhos": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            1189,
+            24,
+            315,
+            470
+          ],
+          "foot": [
+            128.5,
+            470
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-03.png",
+          "rect": [
+            1243,
+            517,
+            198,
+            493
+          ],
+          "foot": [
+            101.0,
+            493
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            1173,
+            16,
+            277,
+            480
+          ],
+          "foot": [
+            137.5,
+            480
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-03.png",
+          "rect": [
+            1211,
+            513,
+            265,
+            497
+          ],
+          "foot": [
+            106.5,
+            497
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            844,
+            29,
+            191,
+            327
+          ],
+          "foot": [
+            100.0,
+            327
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            830,
+            392,
+            217,
+            324
+          ],
+          "foot": [
+            121.5,
+            324
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            844,
+            751,
+            188,
+            323
+          ],
+          "foot": [
+            79.0,
+            323
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-03.png",
+          "rect": [
+            830,
+            1112,
+            212,
+            312
+          ],
+          "foot": [
+            99.0,
+            312
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "dora_matraquilhos": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            55,
+            19,
+            247,
+            484
+          ],
+          "foot": [
+            89.5,
+            484
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            34,
+            520,
+            329,
+            497
+          ],
+          "foot": [
+            156.5,
+            497
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            50,
+            32,
+            294,
+            469
+          ],
+          "foot": [
+            96.0,
+            469
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            53,
+            515,
+            281,
+            500
+          ],
+          "foot": [
+            151.5,
+            500
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            36,
+            17,
+            180,
+            338
+          ],
+          "foot": [
+            95.0,
+            338
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            42,
+            380,
+            190,
+            337
+          ],
+          "foot": [
+            105.5,
+            337
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            36,
+            739,
+            191,
+            341
+          ],
+          "foot": [
+            87.5,
+            341
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            36,
+            1102,
+            192,
+            335
+          ],
+          "foot": [
+            59.0,
+            335
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "simao_marcador": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            469,
+            13,
+            184,
+            493
+          ],
+          "foot": [
+            93.5,
+            493
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            451,
+            518,
+            235,
+            498
+          ],
+          "foot": [
+            117.0,
+            498
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            471,
+            15,
+            181,
+            488
+          ],
+          "foot": [
+            104.5,
+            488
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            480,
+            522,
+            175,
+            492
+          ],
+          "foot": [
+            94.5,
+            492
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            314,
+            18,
+            170,
+            338
+          ],
+          "foot": [
+            88.0,
+            338
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            307,
+            384,
+            180,
+            329
+          ],
+          "foot": [
+            97.5,
+            329
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            315,
+            743,
+            173,
+            337
+          ],
+          "foot": [
+            74.0,
+            337
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            317,
+            1105,
+            167,
+            333
+          ],
+          "foot": [
+            47.5,
+            333
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "vasco_rifas": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            841,
+            12,
+            245,
+            495
+          ],
+          "foot": [
+            96.5,
+            495
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            814,
+            526,
+            252,
+            488
+          ],
+          "foot": [
+            131.5,
+            488
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            788,
+            15,
+            283,
+            488
+          ],
+          "foot": [
+            165.5,
+            488
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            768,
+            521,
+            290,
+            492
+          ],
+          "foot": [
+            178.5,
+            492
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            587,
+            18,
+            173,
+            337
+          ],
+          "foot": [
+            91.5,
+            337
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            587,
+            382,
+            177,
+            334
+          ],
+          "foot": [
+            99.0,
+            334
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            590,
+            742,
+            177,
+            337
+          ],
+          "foot": [
+            72.5,
+            337
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            586,
+            1104,
+            172,
+            334
+          ],
+          "foot": [
+            48.5,
+            334
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "lia_rifas": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            1203,
+            22,
+            215,
+            484
+          ],
+          "foot": [
+            98.5,
+            484
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-04.png",
+          "rect": [
+            1152,
+            535,
+            278,
+            478
+          ],
+          "foot": [
+            179.0,
+            478
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            1234,
+            22,
+            209,
+            481
+          ],
+          "foot": [
+            98.5,
+            481
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-04.png",
+          "rect": [
+            1152,
+            530,
+            299,
+            483
+          ],
+          "foot": [
+            198.5,
+            483
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            868,
+            23,
+            168,
+            335
+          ],
+          "foot": [
+            87.5,
+            335
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            868,
+            388,
+            178,
+            331
+          ],
+          "foot": [
+            100.0,
+            331
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            870,
+            752,
+            178,
+            328
+          ],
+          "foot": [
+            69.5,
+            328
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-04.png",
+          "rect": [
+            868,
+            1112,
+            170,
+            326
+          ],
+          "foot": [
+            44.5,
+            326
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "raul_comprador": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            55,
+            23,
+            256,
+            475
+          ],
+          "foot": [
+            143.5,
+            475
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            60,
+            529,
+            252,
+            481
+          ],
+          "foot": [
+            138.0,
+            481
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            44,
+            13,
+            280,
+            494
+          ],
+          "foot": [
+            165.5,
+            494
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            47,
+            518,
+            282,
+            500
+          ],
+          "foot": [
+            163.0,
+            500
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            34,
+            20,
+            199,
+            361
+          ],
+          "foot": [
+            106.0,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            31,
+            400,
+            218,
+            361
+          ],
+          "foot": [
+            108.5,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            20,
+            783,
+            187,
+            361
+          ],
+          "foot": [
+            88.0,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            19,
+            1162,
+            189,
+            367
+          ],
+          "foot": [
+            93.0,
+            367
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "margarida_testes": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            416,
+            40,
+            314,
+            459
+          ],
+          "foot": [
+            164.5,
+            459
+          ],
+          "height_ratio": 0.88
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            410,
+            537,
+            320,
+            472
+          ],
+          "foot": [
+            170.5,
+            472
+          ],
+          "height_ratio": 0.88
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            412,
+            16,
+            299,
+            492
+          ],
+          "foot": [
+            127.0,
+            492
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            391,
+            612,
+            296,
+            390
+          ],
+          "foot": [
+            154.0,
+            390
+          ],
+          "height_ratio": 0.74
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            284,
+            21,
+            183,
+            361
+          ],
+          "foot": [
+            105.5,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            284,
+            401,
+            187,
+            362
+          ],
+          "foot": [
+            103.5,
+            362
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            284,
+            785,
+            173,
+            360
+          ],
+          "foot": [
+            77.0,
+            360
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            284,
+            1162,
+            175,
+            367
+          ],
+          "foot": [
+            77.0,
+            367
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "sara_aluna": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            822,
+            12,
+            215,
+            489
+          ],
+          "foot": [
+            123.5,
+            489
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            820,
+            518,
+            241,
+            494
+          ],
+          "foot": [
+            127.0,
+            494
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            768,
+            62,
+            305,
+            417
+          ],
+          "foot": [
+            184.5,
+            417
+          ],
+          "height_ratio": 0.76
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            800,
+            515,
+            281,
+            504
+          ],
+          "foot": [
+            138.0,
+            504
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            543,
+            14,
+            185,
+            367
+          ],
+          "foot": [
+            103.5,
+            367
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            537,
+            394,
+            204,
+            368
+          ],
+          "foot": [
+            116.0,
+            368
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            558,
+            784,
+            172,
+            359
+          ],
+          "foot": [
+            74.5,
+            359
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            553,
+            1160,
+            171,
+            369
+          ],
+          "foot": [
+            76.0,
+            369
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "ruben_esplanada": {
+      "frames": [
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            1171,
+            20,
+            326,
+            479
+          ],
+          "foot": [
+            175.0,
+            479
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-activity-05.png",
+          "rect": [
+            1168,
+            533,
+            336,
+            479
+          ],
+          "foot": [
+            177.5,
+            479
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            1156,
+            67,
+            346,
+            428
+          ],
+          "foot": [
+            175.0,
+            428
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-reaction-05.png",
+          "rect": [
+            1177,
+            513,
+            309,
+            508
+          ],
+          "foot": [
+            142.0,
+            508
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            787,
+            16,
+            196,
+            366
+          ],
+          "foot": [
+            106.5,
+            366
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            787,
+            399,
+            205,
+            366
+          ],
+          "foot": [
+            115.5,
+            366
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            789,
+            783,
+            211,
+            361
+          ],
+          "foot": [
+            87.5,
+            361
+          ],
+          "height_ratio": 1
+        },
+        {
+          "path": "res://assets/characters/villagers/neighbours-walk-05.png",
+          "rect": [
+            784,
+            1161,
+            219,
+            368
+          ],
+          "foot": [
+            90.0,
+            368
+          ],
+          "height_ratio": 1
+        }
+      ]
+    }
+  },
+  "props": [
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        16,
+        85,
+        428,
+        325
+      ],
+      "foot": [
+        214.0,
+        325
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        607,
+        41,
+        125,
+        348
+      ],
+      "foot": [
+        62.5,
+        348
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        938,
+        56,
+        302,
+        348
+      ],
+      "foot": [
+        151.0,
+        348
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        1330,
+        29,
+        426,
+        407
+      ],
+      "foot": [
+        213.0,
+        407
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        17,
+        481,
+        423,
+        390
+      ],
+      "foot": [
+        211.5,
+        390
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        497,
+        493,
+        343,
+        348
+      ],
+      "foot": [
+        171.5,
+        348
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        937,
+        498,
+        327,
+        344
+      ],
+      "foot": [
+        163.5,
+        344
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-objects.png",
+      "rect": [
+        1330,
+        474,
+        410,
+        384
+      ],
+      "foot": [
+        205.0,
+        384
+      ],
+      "height_ratio": 1
+    }
+  ],
+  "pigeon": [
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        59,
+        97,
+        330,
+        298
+      ],
+      "foot": [
+        212.5,
+        298
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        506,
+        142,
+        326,
+        253
+      ],
+      "foot": [
+        217.0,
+        253
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        926,
+        22,
+        368,
+        326
+      ],
+      "foot": [
+        83.0,
+        326
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        1344,
+        164,
+        384,
+        245
+      ],
+      "foot": [
+        266.5,
+        245
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        38,
+        465,
+        375,
+        358
+      ],
+      "foot": [
+        348.0,
+        358
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        457,
+        608,
+        397,
+        244
+      ],
+      "foot": [
+        266.5,
+        244
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        924,
+        540,
+        370,
+        302
+      ],
+      "foot": [
+        233.5,
+        302
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/world/village/neighbours-pigeon.png",
+      "rect": [
+        1356,
+        575,
+        387,
+        253
+      ],
+      "foot": [
+        233.5,
+        253
+      ],
+      "height_ratio": 1
+    }
+  ]
+}

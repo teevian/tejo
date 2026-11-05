@@ -11,6 +11,7 @@ func frames(n: int) -> void:
 func release() -> void:
 	for action in ["walk_left","walk_right","walk_up","walk_down"]: Input.action_release(action)
 func walk_to(goal: Vector2, label: String) -> bool:
+	print("Walking to ",label)
 	var leader: CharacterBody2D = scene.people[scene.selected]
 	var path: PackedVector2Array = scene.world.find_path(leader.position,goal)
 	check(not path.is_empty(),"A route exists to "+label)
@@ -36,6 +37,11 @@ func walk_to(goal: Vector2, label: String) -> bool:
 	await frames(90)
 	check(leader.position.distance_to(goal)<90,"Leader reaches "+label)
 	var friend: CharacterBody2D = scene.people[1-scene.selected]
+	# A companion can use a different clear side of a garden entrance. Verify
+	# that they finish the actual approach, rather than sampling one fixed frame.
+	for tick in 300:
+		if friend.position.distance_to(leader.position)<200: break
+		await physics_frame
 	check(friend.position.distance_to(leader.position)<260,"Companion follows through "+label+" gap="+str(friend.position.distance_to(leader.position)))
 	return true
 func run() -> void:

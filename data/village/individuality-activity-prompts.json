@@ -1,0 +1,361 @@
+[
+  {
+    "key": "residents-01",
+    "file": "individual-residents-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-01.png",
+    "columns": 5,
+    "ids": [
+      "harry_kane",
+      "rogerio_colaco",
+      "arlindo_oliveira",
+      "ines_lynce",
+      "teresa"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-02",
+    "file": "individual-residents-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-02.png",
+    "columns": 5,
+    "ids": [
+      "lurdes",
+      "antonio",
+      "celeste",
+      "manuel",
+      "emilia"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-03",
+    "file": "individual-residents-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-03.png",
+    "columns": 5,
+    "ids": [
+      "matilde",
+      "tomas",
+      "aisha",
+      "leonor",
+      "miguel"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-04",
+    "file": "individual-residents-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-04.png",
+    "columns": 5,
+    "ids": [
+      "fatima",
+      "nuno",
+      "silvia",
+      "luis",
+      "samira"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-05",
+    "file": "individual-residents-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-05.png",
+    "columns": 5,
+    "ids": [
+      "yuki",
+      "amadou",
+      "ingrid",
+      "ravi",
+      "camila"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-06",
+    "file": "individual-residents-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-06.png",
+    "columns": 5,
+    "ids": [
+      "duarte",
+      "beatriz",
+      "farid",
+      "rosa",
+      "joao"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-07",
+    "file": "individual-residents-07.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-07.png",
+    "columns": 3,
+    "ids": [
+      "gil",
+      "tiago",
+      "alexandre"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 3 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 3 columns and TWO rows only, 6 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "residents-08",
+    "file": "individual-residents-08.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-08.png",
+    "columns": 2,
+    "ids": [
+      "martim",
+      "afonso"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 2 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 2 columns and TWO rows only, 4 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "street-01",
+    "file": "individual-street-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/street-people-01.png",
+    "columns": 5,
+    "ids": [
+      "ines_escuteira",
+      "pedro_escuteiro",
+      "joana_escuteira",
+      "sofia_policia",
+      "enzo_gelados"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "street-02",
+    "file": "individual-street-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/street-people-02.png",
+    "columns": 5,
+    "ids": [
+      "clara_violinista",
+      "oliver_turista",
+      "helena_turista",
+      "mariana_montras",
+      "daniel_familia"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-01",
+    "file": "individual-festival-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-01.png",
+    "columns": 5,
+    "ids": [
+      "vera_cinema",
+      "goncalo_chamada",
+      "ana_fruta",
+      "quim_doces",
+      "rafa_toques"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-02",
+    "file": "individual-festival-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-02.png",
+    "columns": 5,
+    "ids": [
+      "to_tuktuk",
+      "maya_tuktuk",
+      "joaquim_carruagem",
+      "bea_cao",
+      "idalina_xadrez"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-03",
+    "file": "individual-festival-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-03.png",
+    "columns": 5,
+    "ids": [
+      "luz_cinefila",
+      "kenji_visitante",
+      "noor_visitante",
+      "artur_cinema",
+      "emma_visitante"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-04",
+    "file": "individual-festival-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-04.png",
+    "columns": 5,
+    "ids": [
+      "camilo_cinema",
+      "emi_cinema",
+      "luca_visitante",
+      "deborah_visitante",
+      "yara_cinema"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-05",
+    "file": "individual-festival-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-05.png",
+    "columns": 5,
+    "ids": [
+      "mateo_turista",
+      "zoe_turista",
+      "chika_turista",
+      "omar_turista",
+      "greta_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-06",
+    "file": "individual-festival-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-06.png",
+    "columns": 5,
+    "ids": [
+      "bruno_fotografo",
+      "dora_turista",
+      "salim_turista",
+      "eva_historia",
+      "inga_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-07",
+    "file": "individual-festival-07.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-07.png",
+    "columns": 5,
+    "ids": [
+      "adelia_pombos",
+      "basilio_guarda_chuva",
+      "carolina_aguarela",
+      "oscar_bolas_sabao",
+      "cris_magia"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-08",
+    "file": "individual-festival-08.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-08.png",
+    "columns": 5,
+    "ids": [
+      "zeca_sapateiro",
+      "susana_bicicletas",
+      "rita_flores",
+      "nicolau_reparador",
+      "emmanuel_poeta"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-09",
+    "file": "individual-festival-09.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-09.png",
+    "columns": 5,
+    "ids": [
+      "hugo_toques",
+      "salma_toques",
+      "bento_toques",
+      "filipe_arbitro",
+      "lia_comentadora"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "festival-10",
+    "file": "individual-festival-10.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-10.png",
+    "columns": 5,
+    "ids": [
+      "lucia_turista",
+      "andres_turista",
+      "valentina_turista",
+      "sam_gaita",
+      "kaz_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-01",
+    "file": "individual-living-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-01.png",
+    "columns": 5,
+    "ids": [
+      "alzira",
+      "augusto",
+      "sven",
+      "dinis",
+      "celso"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-02",
+    "file": "individual-living-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-02.png",
+    "columns": 5,
+    "ids": [
+      "plutonio",
+      "serafim",
+      "anibal",
+      "ofelia",
+      "baltasar"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-03",
+    "file": "individual-living-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-03.png",
+    "columns": 5,
+    "ids": [
+      "ema",
+      "amadeu",
+      "dario",
+      "lurdes_sardinha",
+      "horacio"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-04",
+    "file": "individual-living-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-04.png",
+    "columns": 5,
+    "ids": [
+      "amalia",
+      "vitoria",
+      "nelson",
+      "rute",
+      "irene"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-05",
+    "file": "individual-living-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-05.png",
+    "columns": 5,
+    "ids": [
+      "jacinta",
+      "alvaro",
+      "teodoro",
+      "milena",
+      "bia"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  },
+  {
+    "key": "living-06",
+    "file": "individual-living-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-06.png",
+    "columns": 5,
+    "ids": [
+      "joana",
+      "joel",
+      "monica",
+      "tomas_postais",
+      "olga"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint the SAME 5 individuals from the reference as a candid activity sprite sheet for the existing warm gouache/pencil Sintra RPG. Preserve exact faces, hair, clothing, body proportions, identity, carried props and column order. EXACTLY 5 columns and TWO rows only, 10 COMPLETE head-to-feet figures. No walking rows.\nRow 1: each person's habitual activity from the reference, genuinely focused, neutral relaxed closed mouth, no smile. Original seated people remain seated, original standing people remain standing. No new furniture.\nRow 2: SAME person and clothes in a noticeably different natural resting/conversational gesture, three-quarter or profile: someone listens with a hand by ear, someone checks the time, a tired worker rests their arms, a reader lowers a book, a tourist thoughtfully checks directions. Vary which gesture each person makes; do NOT give everybody a hand to chin/ear. Eyes look at their work or partner, never all at viewer. Neutral, weary, curious, absorbed or slightly impatient expressions, never universal grins. No extra props or invented clothing. Gil holds a small BROWN baked Sintra travesseiro pastry or its paper bag, NEVER a pillow/cushion.\nMANDATORY: Every figure must show its ENTIRE body including lower legs and all shoes. NO waist-up portraits, no knee/shin/foot cropping. Fit each body INSIDE its cell, shrink figures to leave generous clear gutters and bottom margin. Never cut off the second row. Consistent character size between the two poses. TRUE transparent background: empty pixels alpha ZERO. No paper, glow, haze, coloured background noise, scenery, floor, drop shadows, captions or grid lines. Keep exact original gouache/pencil rendering style. No Te or Jo. Landscape sheet."
+  }
+]

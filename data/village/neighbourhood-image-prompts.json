@@ -1,0 +1,132 @@
+[
+  {
+    "key": "activity-01",
+    "file": "neighbours-activity-01.png",
+    "ids": [
+      "rosario_merenda",
+      "nelson_termos",
+      "iris_merenda",
+      "leo_merenda"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: stout Portuguese woman, short dark curls, coral cardigan, olive skirt, picnic apron. Poses: ajoelhada a distribuir sandes; depois ergue a caixa vazia, expressão ofendida. COLUMN 2: balding lanky man, thick dark moustache, pale blue short sleeve shirt, beige fishing waistcoat, brown trousers, thermos flask. Poses: sentado no chão tenta abrir o termo; depois aponta para a tampa com convicção. COLUMN 3: young Black Portuguese woman, braided bun, mustard dungarees, plum T-shirt, round glasses, small sketchbook. Poses: sentada de pernas cruzadas desenha a merenda; depois esconde uma sandes atrás do caderno, culpada. COLUMN 4: small mixed-race boy, unruly dark hair, turquoise dinosaur T-shirt, rust shorts, red trainers, magnifying glass. Poses: agachado segue uma formiga com lupa; depois segura uma migalha como um troféu, concentrado. "
+  },
+  {
+    "key": "reaction-01",
+    "file": "neighbours-reaction-01.png",
+    "ids": [
+      "rosario_merenda",
+      "nelson_termos",
+      "iris_merenda",
+      "leo_merenda"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: stout Portuguese woman, short dark curls, coral cardigan, olive skirt, picnic apron. Poses: sentada conta talheres com um dedo; depois protege a travessa com ar desconfiado. COLUMN 2: balding lanky man, thick dark moustache, pale blue short sleeve shirt, beige fishing waistcoat, brown trousers, thermos flask. Poses: ajoelhado verte uma gota do termo, desapontado; depois segura uma chávena vazia, incrédulo. COLUMN 3: young Black Portuguese woman, braided bun, mustard dungarees, plum T-shirt, round glasses, small sketchbook. Poses: ajoelhada apanha um guardanapo; depois observa a caixa vazia sem levantar os olhos do desenho. COLUMN 4: small mixed-race boy, unruly dark hair, turquoise dinosaur T-shirt, rust shorts, red trainers, magnifying glass. Poses: sentado explica um percurso de formigas com um dedo; depois protege uma sandes, olhos arregalados. "
+  },
+  {
+    "key": "activity-02",
+    "file": "neighbours-activity-02.png",
+    "ids": [
+      "ernesto_pombos",
+      "olinda_pasteis",
+      "beatriz_fila",
+      "ricardo_tempos"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: thin elderly Portuguese man, bushy white eyebrows, flat cap, moss cardigan, cream shirt, charcoal trousers, worn leather satchel, tiny folded letter. Poses: curvado estende um bilhete minúsculo na mão, muito sério; depois toma notas numa caderneta, sobrancelha levantada. COLUMN 2: stocky light-brown-skinned baker, greying dark bob, flour-dusted burgundy apron, striped cream shirt, navy trousers, flour on cheek. Poses: de pé dobra uma resposta em papel, divertida sem sorrir; depois oferece uma migalha de pão. COLUMN 3: tall slim young Portuguese woman, dark ponytail, teal Instituto Superior Tecnico hoodie without lettering, black trousers, orange trainers, clipboard with hand drawn queue arrows. Poses: aponta um diagrama com lápis, concentração intensa; depois mede um intervalo com cronómetro, sobrolho franzido. COLUMN 4: young South Asian Portuguese man, wavy hair, short beard, square glasses, ochre zip jacket, navy chinos, small stopwatch. Poses: regista tempos numa folha, impassível; depois ergue o cronómetro e observa uma pessoa que conversa. "
+  },
+  {
+    "key": "reaction-02",
+    "file": "neighbours-reaction-02.png",
+    "ids": [
+      "ernesto_pombos",
+      "olinda_pasteis",
+      "beatriz_fila",
+      "ricardo_tempos"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: thin elderly Portuguese man, bushy white eyebrows, flat cap, moss cardigan, cream shirt, charcoal trousers, worn leather satchel, tiny folded letter. Poses: aponta com solenidade para um destino; depois cruza os braços e observa uma migalha com profunda desilusão. COLUMN 2: stocky light-brown-skinned baker, greying dark bob, flour-dusted burgundy apron, striped cream shirt, navy trousers, flour on cheek. Poses: lê um bilhete de óculos na ponta do nariz, cética; depois mostra a conta dos bolos com uma mão na cintura. COLUMN 3: tall slim young Portuguese woman, dark ponytail, teal Instituto Superior Tecnico hoodie without lettering, black trousers, orange trainers, clipboard with hand drawn queue arrows. Poses: olha para a fila em choque, mão na testa; depois segura uma encomenda incompleta e confere a folha, envergonhada. COLUMN 4: young South Asian Portuguese man, wavy hair, short beard, square glasses, ochre zip jacket, navy chinos, small stopwatch. Poses: guarda o cronómetro no bolso, cansado; depois come tranquilamente um travesseiro de papel na mão. "
+  },
+  {
+    "key": "activity-03",
+    "file": "neighbours-activity-03.png",
+    "ids": [
+      "estela_cliente",
+      "odete_janela",
+      "fausto_merceeiro",
+      "toni_matraquilhos"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: short older Portuguese woman, short silver hair, turquoise coat, patterned scarf, burgundy handbag, sensible shoes. Poses: de braços cruzados vigia a fila, impaciente; depois aponta para o seu lugar sem largar a mala. COLUMN 2: older Portuguese woman, sharp hazel eyes, dark silver bun, lilac cardigan, white blouse, forest green skirt, gold earrings, little television remote. Poses: mão apoiada no parapeito imaginário à cintura e indicador em riste, expressão corretiva; depois mão em concha ao ouvido, desconfiada. COLUMN 3: broad olive-skinned Portuguese grocer, receding curly dark hair, neat moustache, blue work apron, green shirt, grey trousers, wooden produce crate. Poses: segura uma caixa de fruta e olha para cima, apreensivo; depois conta discretamente três laranjas. COLUMN 4: wiry older Portuguese man, slick grey hair, drooping moustache, maroon tracksuit, gold chain, white bandage on right wrist, pointed trainers. Poses: inclinado para a frente agarra dois punhos de matraquilhos separados, olhar competitivo; depois braços cruzados protege mão ligada. "
+  },
+  {
+    "key": "reaction-03",
+    "file": "neighbours-reaction-03.png",
+    "ids": [
+      "estela_cliente",
+      "odete_janela",
+      "fausto_merceeiro",
+      "toni_matraquilhos"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: short older Portuguese woman, short silver hair, turquoise coat, patterned scarf, burgundy handbag, sensible shoes. Poses: ergue a senha com triunfo contido; depois come um travesseiro muito devagar olhando para os estudantes. COLUMN 2: older Portuguese woman, sharp hazel eyes, dark silver bun, lilac cardigan, white blouse, forest green skirt, gold earrings, little television remote. Poses: braços cruzados e olhar lateral penetrante; depois baixa os óculos para ler o comando da televisão, absorta. COLUMN 3: broad olive-skinned Portuguese grocer, receding curly dark hair, neat moustache, blue work apron, green shirt, grey trousers, wooden produce crate. Poses: tapa a caixa com um pano, assobia inocentemente; depois acena para uma janela com resignação. COLUMN 4: wiry older Portuguese man, slick grey hair, drooping moustache, maroon tracksuit, gold chain, white bandage on right wrist, pointed trainers. Poses: ergue um dedo a contestar um golo, indignado; depois estica cuidadosamente o pulso, preocupado. "
+  },
+  {
+    "key": "activity-04",
+    "file": "neighbours-activity-04.png",
+    "ids": [
+      "dora_matraquilhos",
+      "simao_marcador",
+      "vasco_rifas",
+      "lia_rifas"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: tall athletic older Black woman, close cropped salt and pepper hair, bottle green polo, cream trousers, red canvas shoes, rolled sleeves. Poses: agarrada aos punhos de matraquilhos, expressão calma e firme; depois afasta as mãos e ergue uma sobrancelha. COLUMN 2: thin freckled teenager, shaggy auburn hair, oversized yellow football shirt, grey shorts, green trainers, pocket score notebook. Poses: anota o resultado num bloco, língua entre os dentes; depois ergue a mão para assinalar golo. COLUMN 3: earnest slim teenage scout, curly black hair, beige scout shirt, olive shorts, yellow green neckerchief, long socks, oversized rubber stamp and ledger. Poses: carimba uma ficha com solenidade, sobrancelhas cerradas; depois procura uma caneta nos bolsos com pânico. COLUMN 4: short East Asian Portuguese teenage scout, straight black bob, beige scout shirt, olive skirt over leggings, red yellow neckerchief, raffle ticket booklet. Poses: destaca uma rifa com gesto rápido, concentrada; depois aponta para o bloco do colega com ar cético. "
+  },
+  {
+    "key": "reaction-04",
+    "file": "neighbours-reaction-04.png",
+    "ids": [
+      "dora_matraquilhos",
+      "simao_marcador",
+      "vasco_rifas",
+      "lia_rifas"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: tall athletic older Black woman, close cropped salt and pepper hair, bottle green polo, cream trousers, red canvas shoes, rolled sleeves. Poses: inclina-se para rematar com precisão, concentrada; depois mostra a bola na palma, desafiante. COLUMN 2: thin freckled teenager, shaggy auburn hair, oversized yellow football shirt, grey shorts, green trainers, pocket score notebook. Poses: mostra dois números com os dedos, impassível; depois esconde um sorriso atrás do bloco. COLUMN 3: earnest slim teenage scout, curly black hair, beige scout shirt, olive shorts, yellow green neckerchief, long socks, oversized rubber stamp and ledger. Poses: apresenta uma ficha de três páginas em pose oficial; depois observa a colega a vender rifas com total incredulidade. COLUMN 4: short East Asian Portuguese teenage scout, straight black bob, beige scout shirt, olive skirt over leggings, red yellow neckerchief, raffle ticket booklet. Poses: conta rifas vendidas, satisfeita sem sorriso aberto; depois empresta uma caneta com paciência esgotada. "
+  },
+  {
+    "key": "activity-05",
+    "file": "neighbours-activity-05.png",
+    "ids": [
+      "raul_comprador",
+      "margarida_testes",
+      "sara_aluna",
+      "ruben_esplanada"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: heavyset middle aged man, dark curly hair, short stubble, purple delivery polo, tan trousers, shopping tote and reading glasses. Poses: lê uma ficha de olhos semicerrados, perplexo; depois procura a carteira sem largar o saco. COLUMN 2: middle aged Portuguese professor, short greying auburn bob, angular red glasses, navy linen jacket, cream blouse, terracotta trousers, red pen, pile of exam papers. Poses: sentada corrige um teste com caneta vermelha e expressão severa; depois sentada levanta os olhos para corrigir uma conversa alheia. COLUMN 3: young Portuguese woman, curly chestnut hair tied messily, denim jacket, sage T-shirt, black jeans, canvas tote with books. Poses: lê uma folha de teste e franze o sobrolho; depois aponta discretamente para uma conta com lápis. COLUMN 4: young Black Portuguese waiter, short twists, clean shaven, white rolled sleeve shirt, deep teal waist apron, charcoal trousers, tray with espresso cup. Poses: equilibra um tabuleiro e observa folhas na mesa, exausto; depois tenta pousar uma chávena sem espaço. "
+  },
+  {
+    "key": "reaction-05",
+    "file": "neighbours-reaction-05.png",
+    "ids": [
+      "raul_comprador",
+      "margarida_testes",
+      "sara_aluna",
+      "ruben_esplanada"
+    ],
+    "columns": 4,
+    "rows": 2,
+    "prompt": "Use case: illustration-story. Production transparent sprite atlas for the existing Portuguese Sintra gouache and coloured-pencil game. Match the attached reference only for painted shading, fine pencil outline, slightly large expressive heads, full believable limbs, warm softly textured fabric and semi overhead game camera. All characters are NEW identities. Genuine transparent alpha, no coloured background, no haze, no floor, no shadows, no labels, no text, no logos. Equal width four columns. EXACTLY two rows. In each cell ONE entirely separate full-body person with BOTH feet and all props completely inside cell. Generous transparent gutters and margins. No cell overlap, no cropped hands, shoes or heads. Each column is one consistent person, precisely same face, hair, outfit, proportions in both rows. Natural neutral, impatient, focused or puzzled facial expressions, not universal happy smiles. Make the specific gestures and facial changes clearly readable at small game scale. Row 1 is the first stated pose. Row 2 is the second stated pose. The four columns left to right are: COLUMN 1: heavyset middle aged man, dark curly hair, short stubble, purple delivery polo, tan trousers, shopping tote and reading glasses. Poses: segura uma rifa minúscula e uma ficha enorme, incrédulo; depois aponta para o relógio com expressão resignada. COLUMN 2: middle aged Portuguese professor, short greying auburn bob, angular red glasses, navy linen jacket, cream blouse, terracotta trousers, red pen, pile of exam papers. Poses: de pé agarra folhas a voar, expressão alarmada; depois de cócoras recolhe um teste amarrotado, constrangida. COLUMN 3: young Portuguese woman, curly chestnut hair tied messily, denim jacket, sage T-shirt, black jeans, canvas tote with books. Poses: agacha-se para apanhar uma folha, preocupada; depois mostra uma correção no papel com ar determinado. COLUMN 4: young Black Portuguese waiter, short twists, clean shaven, white rolled sleeve shirt, deep teal waist apron, charcoal trousers, tray with espresso cup. Poses: apanha uma folha com a mão livre, olhos arregalados; depois oferece um pisa-papéis improvisado com ar pragmático. "
+  }
+]

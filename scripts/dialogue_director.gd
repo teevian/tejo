@@ -3,6 +3,7 @@ extends RefCounted
 ## Effects are committed only after the last line, never when cancelled.
 signal line_changed(line: Dictionary, initiator: int)
 signal ended
+signal completed(topic_id: String)
 signal flag_changed(flag: String, value: bool)
 
 var topics: Array = []
@@ -22,6 +23,7 @@ func is_active() -> bool:
 	return not active_topic.is_empty()
 
 func matches(topic: Dictionary, context: Dictionary) -> bool:
+	if float(context.get("bond",0))<float(topic.get("min_bond",0)): return false
 	for key in ["scene", "location", "initiator", "day_phase", "puppy_mood"]:
 		if topic.has(key) and topic[key] != context.get(key):
 			return false
@@ -65,6 +67,7 @@ func advance() -> void:
 	for flag in active_topic.get("set_flags", []):
 		flags[flag] = true
 		flag_changed.emit(flag, true)
+	completed.emit(str(active_topic.id))
 	cancel()
 
 func cancel() -> void:

@@ -1,0 +1,65 @@
+{
+  "description": "Quatro patamares de vizinhança com desnível explícito, entrada inferior, lanço único e chegada superior. Substituem integralmente as antigas faixas de textura steps.",
+  "terraces": [
+    {
+      "id": "hortensias",
+      "name": "Patamar das Hortênsias",
+      "platform": [
+        5440,
+        9690,
+        300,
+        180
+      ],
+      "stair_width": 164,
+      "run": 216,
+      "steps": 9,
+      "rise": 72,
+      "landing": 112
+    },
+    {
+      "id": "azulejos",
+      "name": "Patamar dos Azulejos",
+      "platform": [
+        19080,
+        4375,
+        300,
+        180
+      ],
+      "stair_width": 164,
+      "run": 216,
+      "steps": 9,
+      "rise": 72,
+      "landing": 112
+    },
+    {
+      "id": "portadas",
+      "name": "Patamar das Portadas",
+      "platform": [
+        17700,
+        12420,
+        300,
+        180
+      ],
+      "stair_width": 164,
+      "run": 216,
+      "steps": 9,
+      "rise": 72,
+      "landing": 112
+    },
+    {
+      "id": "jardins",
+      "name": "Patamar dos Jardins",
+      "platform": [
+        13150,
+        12120,
+        300,
+        180
+      ],
+      "stair_width": 164,
+      "run": 216,
+      "steps": 9,
+      "rise": 72,
+      "landing": 112
+    }
+  ]
+}

@@ -245,6 +245,7 @@ func _physics_process(delta: float) -> void:
 			wants_to_run = gap > 165
 			direction = _steer_towards(partner.position)
 	route_time -= delta
+	if world.has_method("walking_multiplier"): speed *= world.walking_multiplier(position)
 	velocity = velocity.move_toward(direction * speed, 1600 * delta)
 	var previous := position
 	move_and_slide()

@@ -1,0 +1,2071 @@
+{
+  "version": 1,
+  "people": [
+    {
+      "id": "alzira",
+      "name": "Alzira",
+      "age": 81,
+      "role": "window",
+      "zone": "padarias",
+      "living_art": 1,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        9970,
+        4600
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "observar a vila e lembrar os seus pequenos escândalos",
+      "greeting": "Eu não espreito. Faço o inventário da rua.",
+      "purpose": "observar a vila e lembrar os seus pequenos escândalos",
+      "appearance": "tiny elderly Portuguese woman, silver bun, red glasses, plum cardigan, cream blouse, navy skirt, gossip notebook",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.25,
+        "stride_length": 52,
+        "idle_hold": [
+          2,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "augusto"
+        ],
+        "lines": [
+          "Eu não espreito. Faço o inventário da rua.",
+          "Observar a vila e lembrar os seus pequenos escândalos."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "augusto",
+      "name": "Augusto",
+      "age": 46,
+      "role": "post",
+      "zone": "ferraria",
+      "living_art": 1,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        11600,
+        6970
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "entregar cartas em portas reais apesar de se perder sempre",
+      "greeting": "O número está certo. A rua é que se mudou.",
+      "purpose": "entregar cartas em portas reais apesar de se perder sempre",
+      "appearance": "disheveled brown-skinned postman, curly hair, red postal jacket, beige trousers, leather mailbag, letters",
+      "personality": {
+        "style": "map",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.35,
+        "stride_length": 61,
+        "idle_hold": [
+          3,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "sven"
+        ],
+        "lines": [
+          "O número está certo. A rua é que se mudou.",
+          "Entregar cartas em portas reais apesar de se perder sempre."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "sven",
+      "name": "Sven",
+      "age": 37,
+      "role": "lost",
+      "zone": "byron",
+      "living_art": 1,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        4700,
+        6750
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "chegar à Pena sem voltar a confundir o palácio com a padaria",
+      "greeting": "Desta vez estou quase. Reconheço esta subida de ontem.",
+      "purpose": "chegar à Pena sem voltar a confundir o palácio com a padaria",
+      "appearance": "tall pale blond tourist, green bucket hat, orange windbreaker, khaki shorts, enormous folded map",
+      "personality": {
+        "style": "map",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.45,
+        "stride_length": 70,
+        "idle_hold": [
+          4,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "dinis"
+        ],
+        "lines": [
+          "Desta vez estou quase. Reconheço esta subida de ontem.",
+          "Chegar à pena sem voltar a confundir o palácio com a padaria."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "dinis",
+      "name": "Dinis",
+      "age": 35,
+      "role": "late",
+      "zone": "republic",
+      "living_art": 1,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        9540,
+        3300
+      ],
+      "height": 155,
+      "speed": 165,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "correr para compromissos e deixar sempre alguma coisa para trás",
+      "greeting": "Estou atrasado para uma coisa que ainda não confirmei!",
+      "purpose": "correr para compromissos e deixar sempre alguma coisa para trás",
+      "appearance": "thin olive-skinned man, unruly dark hair, blue suit jacket, mismatched brown and red shoes, parcel and wristwatch",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.55,
+        "stride_length": 79,
+        "idle_hold": [
+          2,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "celso"
+        ],
+        "lines": [
+          "Estou atrasado para uma coisa que ainda não confirmei!",
+          "Correr para compromissos e deixar sempre alguma coisa para trás."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "celso",
+      "name": "Celso",
+      "age": 60,
+      "role": "sweep",
+      "zone": "market",
+      "living_art": 1,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        11930,
+        8030
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "cuidar das ruas e guardar os objetos que encontra",
+      "greeting": "Varro a rua, não varro a memória. Esta tampa já cá esteve.",
+      "purpose": "cuidar das ruas e guardar os objetos que encontra",
+      "appearance": "stocky older Black municipal worker, gray beard, orange reflective vest, dark green overalls, broom and dustpan",
+      "personality": {
+        "style": "garden",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.65,
+        "stride_length": 88,
+        "idle_hold": [
+          3,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "plutonio"
+        ],
+        "lines": [
+          "Varro a rua, não varro a memória. Esta tampa já cá esteve.",
+          "Cuidar das ruas e guardar os objetos que encontra."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "plutonio",
+      "name": "Plutónio",
+      "age": 41,
+      "role": "cameo",
+      "zone": "duche",
+      "living_art": 2,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        15580,
+        5160
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "participação ficcional numa roda de ritmo original",
+      "greeting": "Nesta roda, cada pessoa inventa o seu ritmo.",
+      "purpose": "participação ficcional numa roda de ritmo original",
+      "appearance": "stylized recognizable Portuguese rapper Plutonio, medium brown skin, neatly braided dark hair, trimmed beard, small gold earrings, black unbranded hoodie, cream trousers, microphone",
+      "personality": {
+        "style": "guitar",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.75,
+        "stride_length": 52,
+        "idle_hold": [
+          4,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "serafim"
+        ],
+        "lines": [
+          "Nesta roda, cada pessoa inventa o seu ritmo.",
+          "Participação ficcional numa roda de ritmo original."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "serafim",
+      "name": "Serafim",
+      "age": 67,
+      "role": "keys",
+      "zone": "ferreira",
+      "living_art": 2,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        9950,
+        9600
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "encontrar a chave certa para uma caixa comunitária",
+      "greeting": "Esta chave abre qualquer coisa. Ainda estou a descobrir o quê.",
+      "purpose": "encontrar a chave certa para uma caixa comunitária",
+      "appearance": "short elderly locksmith, white mustache, brown vest, blue work shirt, huge bunch of brass keys",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.25,
+        "stride_length": 61,
+        "idle_hold": [
+          2,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "anibal"
+        ],
+        "lines": [
+          "Esta chave abre qualquer coisa. Ainda estou a descobrir o quê.",
+          "Encontrar a chave certa para uma caixa comunitária."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "anibal",
+      "name": "Aníbal",
+      "age": 72,
+      "role": "steps",
+      "zone": "hortensias",
+      "living_art": 2,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        5250,
+        10010
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "comparar contagens nas quatro escadas verdadeiras",
+      "greeting": "Ontem contei outra vez. A escada recusou-se a colaborar.",
+      "purpose": "comparar contagens nas quatro escadas verdadeiras",
+      "appearance": "elderly man, balding white fringe, yellow checked coat, gray trousers, mechanical click counter and pencil",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.35,
+        "stride_length": 70,
+        "idle_hold": [
+          3,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "ofelia"
+        ],
+        "lines": [
+          "Ontem contei outra vez. A escada recusou-se a colaborar.",
+          "Comparar contagens nas quatro escadas verdadeiras."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "ofelia",
+      "name": "Ofélia",
+      "age": 55,
+      "role": "prophecy",
+      "zone": "azulejos",
+      "living_art": 2,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        19000,
+        4840
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "prever pequenos acontecimentos e conferir o resultado",
+      "greeting": "Hoje alguém vai perder uma coisa redonda. Pode ser a paciência.",
+      "purpose": "prever pequenos acontecimentos e conferir o resultado",
+      "appearance": "woman with long silver braid, teal dress, orange shawl, tiny notebook and spectacles",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.45,
+        "stride_length": 79,
+        "idle_hold": [
+          4,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "baltasar"
+        ],
+        "lines": [
+          "Hoje alguém vai perder uma coisa redonda. Pode ser a paciência.",
+          "Prever pequenos acontecimentos e conferir o resultado."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "baltasar",
+      "name": "Baltasar",
+      "age": 58,
+      "role": "houses",
+      "zone": "lawrence",
+      "living_art": 2,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        3880,
+        9200
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "apresentar aos visitantes as casas de mau feitio",
+      "greeting": "Esta fachada não é fria. É só muito reservada.",
+      "purpose": "apresentar aos visitantes as casas de mau feitio",
+      "appearance": "tall white man, curly gray hair, burgundy corduroy jacket, mustard trousers, ear trumpet",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.55,
+        "stride_length": 88,
+        "idle_hold": [
+          2,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "ema"
+        ],
+        "lines": [
+          "Esta fachada não é fria. É só muito reservada.",
+          "Apresentar aos visitantes as casas de mau feitio."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "ema",
+      "name": "Ema",
+      "age": 29,
+      "role": "note",
+      "zone": "duche",
+      "living_art": 3,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        15580,
+        5160
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "recolher três sons reais para completar uma melodia original",
+      "greeting": "Falta uma nota. Suspeito que se escondeu na água.",
+      "purpose": "recolher três sons reais para completar uma melodia original",
+      "appearance": "young Black female musician, short natural hair, blue long coat, red scarf, small flute and music notebook",
+      "personality": {
+        "style": "guitar",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.65,
+        "stride_length": 52,
+        "idle_hold": [
+          3,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "amadeu"
+        ],
+        "lines": [
+          "Falta uma nota. Suspeito que se escondeu na água.",
+          "Recolher três sons reais para completar uma melodia original."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "amadeu",
+      "name": "Amadeu",
+      "age": 64,
+      "role": "collector",
+      "zone": "portadas",
+      "living_art": 3,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        18100,
+        12980
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "completar coleções de objetos aparentemente inúteis",
+      "greeting": "Isto não é lixo. É uma coleção à espera de desculpa.",
+      "purpose": "completar coleções de objetos aparentemente inúteis",
+      "appearance": "elderly olive-skinned man, shaggy beard, patchwork waistcoat, beige trousers, box of bottle caps and bent spoons",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.75,
+        "stride_length": 61,
+        "idle_hold": [
+          4,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "dario"
+        ],
+        "lines": [
+          "Isto não é lixo. É uma coleção à espera de desculpa.",
+          "Completar coleções de objetos aparentemente inúteis."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "dario",
+      "name": "Dário",
+      "age": 49,
+      "role": "cat_owner",
+      "zone": "pipa",
+      "living_art": 3,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        8400,
+        8500
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "provar que o gato Sardinha mora em sua casa",
+      "greeting": "Ele dorme cá. Isso é praticamente uma escritura.",
+      "purpose": "provar que o gato Sardinha mora em sua casa",
+      "appearance": "round brown-skinned man, dark mustache, turquoise sweater, brown trousers, cat food bowl",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.25,
+        "stride_length": 70,
+        "idle_hold": [
+          2,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "lurdes_sardinha"
+        ],
+        "lines": [
+          "Ele dorme cá. Isso é praticamente uma escritura.",
+          "Provar que o gato sardinha mora em sua casa."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "lurdes_sardinha",
+      "name": "Lurdes",
+      "age": 57,
+      "role": "cat_neighbor",
+      "zone": "pipa",
+      "living_art": 3,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        8400,
+        8500
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "reivindicar o gato que visita toda a vizinhança",
+      "greeting": "O Sardinha tem a minha chave. Metaforicamente.",
+      "purpose": "reivindicar o gato que visita toda a vizinhança",
+      "appearance": "stout Portuguese woman, dark bun, red patterned dress, green apron, bowl of cat food",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.35,
+        "stride_length": 79,
+        "idle_hold": [
+          3,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "horacio"
+        ],
+        "lines": [
+          "O Sardinha tem a minha chave. Metaforicamente.",
+          "Reivindicar o gato que visita toda a vizinhança."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "horacio",
+      "name": "Horácio",
+      "age": 70,
+      "role": "clock",
+      "zone": "martinho",
+      "living_art": 3,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        6650,
+        4900
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "comparar fusos e reparar um mecanismo parado",
+      "greeting": "Este está certo em Tóquio. O outro está de férias.",
+      "purpose": "comparar fusos e reparar um mecanismo parado",
+      "appearance": "elderly East Asian watchmaker, round glasses, white hair, navy waistcoat, loupe, two pocket watches",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.45,
+        "stride_length": 88,
+        "idle_hold": [
+          4,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "amalia"
+        ],
+        "lines": [
+          "Este está certo em Tóquio. O outro está de férias.",
+          "Comparar fusos e reparar um mecanismo parado."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "amalia",
+      "name": "Amália",
+      "age": 42,
+      "role": "painter",
+      "zone": "valencas",
+      "living_art": 4,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        13700,
+        6630
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "pintar pistas com um detalhe impossível em cada quadro",
+      "greeting": "A árvore azul é invenção. O banco por trás dela existe.",
+      "purpose": "pintar pistas com um detalhe impossível em cada quadro",
+      "appearance": "white painter, auburn curls, purple beret, ochre smock, green trousers, sketch board and paintbrush",
+      "personality": {
+        "style": "painting",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.55,
+        "stride_length": 52,
+        "idle_hold": [
+          2,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "vitoria"
+        ],
+        "lines": [
+          "A árvore azul é invenção. O banco por trás dela existe.",
+          "Pintar pistas com um detalhe impossível em cada quadro."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "vitoria",
+      "name": "Vitória",
+      "age": 44,
+      "role": "info",
+      "zone": "palace",
+      "living_art": 4,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        9800,
+        2390
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "trocar recomendações por relatos de visitas reais",
+      "greeting": "Nunca lá fui, mas sei explicar três maneiras de chegar.",
+      "purpose": "trocar recomendações por relatos de visitas reais",
+      "appearance": "brown-skinned woman, dark bob, mint blazer, cream trousers, tourist leaflets and badge",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.65,
+        "stride_length": 61,
+        "idle_hold": [
+          3,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "nelson"
+        ],
+        "lines": [
+          "Nunca lá fui, mas sei explicar três maneiras de chegar.",
+          "Trocar recomendações por relatos de visitas reais."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "nelson",
+      "name": "Nelson",
+      "age": 31,
+      "role": "jobs",
+      "zone": "market",
+      "living_art": 4,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        11930,
+        8030
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "experimentar uma profissão diferente em cada dia",
+      "greeting": "Hoje sou especialista. Amanhã logo se vê em quê.",
+      "purpose": "experimentar uma profissão diferente em cada dia",
+      "appearance": "young man, dark curly hair, red cap, blue dungarees, reversible yellow apron, stack of newspapers",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.75,
+        "stride_length": 70,
+        "idle_hold": [
+          4,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "rute"
+        ],
+        "lines": [
+          "Hoje sou especialista. Amanhã logo se vê em quê.",
+          "Experimentar uma profissão diferente em cada dia."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "rute",
+      "name": "Rute",
+      "age": 33,
+      "role": "photo",
+      "zone": "liberdade",
+      "living_art": 4,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        18400,
+        7770
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "conseguir um retrato sem uma interrupção inesperada",
+      "greeting": "Podem ficar quietos? Até os pombos sabem que é agora.",
+      "purpose": "conseguir um retrato sem uma interrupção inesperada",
+      "appearance": "Black woman, short braids, coral jacket, charcoal trousers, large vintage camera and tripod strap",
+      "personality": {
+        "style": "camera",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.25,
+        "stride_length": 79,
+        "idle_hold": [
+          2,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "irene"
+        ],
+        "lines": [
+          "Podem ficar quietos? Até os pombos sabem que é agora.",
+          "Conseguir um retrato sem uma interrupção inesperada."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "irene",
+      "name": "Irene",
+      "age": 74,
+      "role": "plants",
+      "zone": "azulejos",
+      "living_art": 4,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        19000,
+        4840
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "regar as plantas e avisar quem passa por baixo",
+      "greeting": "Esta begónia bebe mais água do que o meu cunhado.",
+      "purpose": "regar as plantas e avisar quem passa por baixo",
+      "appearance": "elderly white woman, curly silver hair, green cardigan, floral skirt, copper watering can",
+      "personality": {
+        "style": "garden",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.35,
+        "stride_length": 88,
+        "idle_hold": [
+          3,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "jacinta"
+        ],
+        "lines": [
+          "Esta begónia bebe mais água do que o meu cunhado.",
+          "Regar as plantas e avisar quem passa por baixo."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "jacinta",
+      "name": "Jacinta",
+      "age": 50,
+      "role": "barter",
+      "zone": "portadas",
+      "living_art": 5,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        18100,
+        12980
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "trocar objetos com regras claras e histórias improváveis",
+      "greeting": "Dinheiro não. Uma tampa com história, talvez.",
+      "purpose": "trocar objetos com regras claras e histórias improváveis",
+      "appearance": "brown-skinned woman, dark curls, blue turban, bright orange coat, linen trousers, balance scale and wooden trinkets",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.45,
+        "stride_length": 52,
+        "idle_hold": [
+          4,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "alvaro"
+        ],
+        "lines": [
+          "Dinheiro não. Uma tampa com história, talvez.",
+          "Trocar objetos com regras claras e histórias improváveis."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "alvaro",
+      "name": "Álvaro",
+      "age": 48,
+      "role": "detective",
+      "zone": "ferreira",
+      "living_art": 5,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        9950,
+        9600
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "investigar quem anda a alimentar o gato de toda a rua",
+      "greeting": "Há três taças e um gato. Os números não batem certo.",
+      "purpose": "investigar quem anda a alimentar o gato de toda a rua",
+      "appearance": "lean white man, sandy mustache, tan detective coat, green scarf, magnifying glass and tiny notebook",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.55,
+        "stride_length": 61,
+        "idle_hold": [
+          2,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "teodoro"
+        ],
+        "lines": [
+          "Há três taças e um gato. Os números não batem certo.",
+          "Investigar quem anda a alimentar o gato de toda a rua."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "teodoro",
+      "name": "Teodoro",
+      "age": 77,
+      "role": "bench",
+      "zone": "liberdade",
+      "living_art": 5,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        18400,
+        7770
+      ],
+      "height": 143,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "sentar-se no mesmo banco depois de almoço",
+      "greeting": "O banco não tem dono. Mas conhece os meus horários.",
+      "purpose": "sentar-se no mesmo banco depois de almoço",
+      "appearance": "elderly Black man, white flat cap, dark red cardigan, gray trousers, folded newspaper",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.65,
+        "stride_length": 70,
+        "idle_hold": [
+          3,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "milena"
+        ],
+        "lines": [
+          "O banco não tem dono. Mas conhece os meus horários.",
+          "Sentar-se no mesmo banco depois de almoço."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "milena",
+      "name": "Milena",
+      "age": 28,
+      "role": "echo",
+      "zone": "sassetti",
+      "living_art": 5,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        8470,
+        12150
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "arquivar os ecos diferentes das ruas de Sintra",
+      "greeting": "Esta rua devolve a última sílaba com sotaque.",
+      "purpose": "arquivar os ecos diferentes das ruas de Sintra",
+      "appearance": "young East Asian woman, short dark bob, yellow raincoat, navy trousers, portable recorder and headphones",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.75,
+        "stride_length": 79,
+        "idle_hold": [
+          4,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "bia"
+        ],
+        "lines": [
+          "Esta rua devolve a última sílaba com sotaque.",
+          "Arquivar os ecos diferentes das ruas de sintra."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "bia",
+      "name": "Bia",
+      "age": 26,
+      "role": "boxes",
+      "zone": "market",
+      "living_art": 5,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        11930,
+        8030
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "entregar mercadoria sem trocar as etiquetas",
+      "greeting": "A caixa diz frágil. Eu também, nesta subida.",
+      "purpose": "entregar mercadoria sem trocar as etiquetas",
+      "appearance": "athletic brown-skinned woman, dark ponytail, blue work cap, striped shirt, green cargo trousers, two small boxes",
+      "personality": {
+        "style": "bread",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.25,
+        "stride_length": 88,
+        "idle_hold": [
+          2,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "joana"
+        ],
+        "lines": [
+          "A caixa diz frágil. Eu também, nesta subida.",
+          "Entregar mercadoria sem trocar as etiquetas."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "joana",
+      "name": "Joana",
+      "age": 38,
+      "role": "clean",
+      "zone": "padarias",
+      "living_art": 6,
+      "atlas": 1,
+      "column": 0,
+      "home": [
+        9970,
+        4600
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "limpar montras antes da chegada dos clientes",
+      "greeting": "Limpo as marcas de dedos. As opiniões ficam.",
+      "purpose": "limpar montras antes da chegada dos clientes",
+      "appearance": "white woman, short red hair, blue apron, cream shirt, gray trousers, window squeegee and cloth",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.35,
+        "stride_length": 52,
+        "idle_hold": [
+          3,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "joel"
+        ],
+        "lines": [
+          "Limpo as marcas de dedos. As opiniões ficam.",
+          "Limpar montras antes da chegada dos clientes."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "joel",
+      "name": "Joel",
+      "age": 52,
+      "role": "shutters",
+      "zone": "ferreira",
+      "living_art": 6,
+      "atlas": 1,
+      "column": 1,
+      "home": [
+        9950,
+        9600
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "abrir portadas e chamar os vizinhos à rua",
+      "greeting": "Se a portada range, a rua já sabe que acordei.",
+      "purpose": "abrir portadas e chamar os vizinhos à rua",
+      "appearance": "Black man, short gray curls, yellow polo, navy trousers, shutter handle and small cloth",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.45,
+        "stride_length": 61,
+        "idle_hold": [
+          4,
+          7
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "monica"
+        ],
+        "lines": [
+          "Se a portada range, a rua já sabe que acordei.",
+          "Abrir portadas e chamar os vizinhos à rua."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "monica",
+      "name": "Mónica",
+      "age": 45,
+      "role": "rug",
+      "zone": "byron",
+      "living_art": 6,
+      "atlas": 1,
+      "column": 2,
+      "home": [
+        4700,
+        6750
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "sacudir tapetes sem acertar nos passantes",
+      "greeting": "Aviso sempre primeiro. Quase sempre.",
+      "purpose": "sacudir tapetes sem acertar nos passantes",
+      "appearance": "Latina woman, brown braid, rust blouse, blue skirt, rolled patterned rug",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.55,
+        "stride_length": 70,
+        "idle_hold": [
+          2,
+          8
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "tomas_postais"
+        ],
+        "lines": [
+          "Aviso sempre primeiro. Quase sempre.",
+          "Sacudir tapetes sem acertar nos passantes."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "tomas_postais",
+      "name": "Tomás",
+      "age": 22,
+      "role": "postcards",
+      "zone": "republic",
+      "living_art": 6,
+      "atlas": 1,
+      "column": 3,
+      "home": [
+        9540,
+        3300
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "escrever postais que chegam antes de ele voltar",
+      "greeting": "Este postal viaja melhor do que eu.",
+      "purpose": "escrever postais que chegam antes de ele voltar",
+      "appearance": "young pale man, freckles, messy dark hair, green jacket, mustard trousers, postcards and fountain pen",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.65,
+        "stride_length": 79,
+        "idle_hold": [
+          3,
+          5
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "olga"
+        ],
+        "lines": [
+          "Este postal viaja melhor do que eu.",
+          "Escrever postais que chegam antes de ele voltar."
+        ],
+        "approach_distance": 75
+      }
+    },
+    {
+      "id": "olga",
+      "name": "Olga",
+      "age": 63,
+      "role": "hiker",
+      "zone": "sassetti",
+      "living_art": 6,
+      "atlas": 1,
+      "column": 4,
+      "home": [
+        8470,
+        12150
+      ],
+      "height": 155,
+      "speed": 72,
+      "mirror": true,
+      "route_offsets": [
+        [
+          -110,
+          25
+        ],
+        [
+          110,
+          25
+        ]
+      ],
+      "activity": "verificar trilhos e avisar visitantes sobre as subidas",
+      "greeting": "A serra não foge. Não é preciso correr atrás dela.",
+      "purpose": "verificar trilhos e avisar visitantes sobre as subidas",
+      "appearance": "older white female hiker, short gray hair, purple fleece, olive trousers, walking poles and blue backpack",
+      "personality": {
+        "style": "notes",
+        "sociability": 0.55,
+        "curiosity": 0.72,
+        "restlessness": 0.75,
+        "stride_length": 88,
+        "idle_hold": [
+          4,
+          6
+        ],
+        "gesture_hold": [
+          0.8,
+          2.4
+        ],
+        "friends": [
+          "alzira"
+        ],
+        "lines": [
+          "A serra não foge. Não é preciso correr atrás dela.",
+          "Verificar trilhos e avisar visitantes sobre as subidas."
+        ],
+        "approach_distance": 75
+      }
+    }
+  ],
+  "zones": {
+    "palace": [
+      9800,
+      2390
+    ],
+    "republic": [
+      9540,
+      3300
+    ],
+    "padarias": [
+      9970,
+      4600
+    ],
+    "martinho": [
+      6650,
+      4900
+    ],
+    "ferraria": [
+      11600,
+      6970
+    ],
+    "valencas": [
+      13700,
+      6630
+    ],
+    "duche": [
+      15580,
+      5160
+    ],
+    "liberdade": [
+      18400,
+      7770
+    ],
+    "pipa": [
+      8400,
+      8500
+    ],
+    "ferreira": [
+      9950,
+      9600
+    ],
+    "sassetti": [
+      8470,
+      12150
+    ],
+    "market": [
+      11930,
+      8030
+    ],
+    "hortensias": [
+      5250,
+      10010
+    ],
+    "azulejos": [
+      19000,
+      4840
+    ],
+    "portadas": [
+      18100,
+      12980
+    ],
+    "jardins": [
+      13000,
+      12500
+    ],
+    "byron": [
+      4700,
+      6750
+    ],
+    "lawrence": [
+      3880,
+      9200
+    ]
+  },
+  "events": [
+    {
+      "id": "panela",
+      "title": "A orquestra das panelas",
+      "zone": "market",
+      "cast": [
+        "nelson",
+        "bia"
+      ],
+      "effect": "rhythm",
+      "object": "spoon",
+      "line": "As caixas viraram bateria; falta acertar a última batida.",
+      "every": 2,
+      "start": 600,
+      "end": 730
+    },
+    {
+      "id": "jornal",
+      "title": "O jornal do próximo domingo",
+      "zone": "republic",
+      "cast": [
+        "nelson",
+        "tomas_postais"
+      ],
+      "effect": "swap",
+      "object": "newspaper",
+      "line": "Trocaram os jornais: o passatempo ainda não tem solução.",
+      "every": 1,
+      "start": 500,
+      "end": 650
+    },
+    {
+      "id": "fuso",
+      "title": "O minuto que sobrou",
+      "zone": "martinho",
+      "cast": [
+        "horacio",
+        "dinis"
+      ],
+      "effect": "clock",
+      "object": "clock",
+      "line": "Um relógio adianta-se; Dinis insiste que a praça está atrasada.",
+      "every": 3,
+      "start": 900,
+      "end": 1000
+    },
+    {
+      "id": "retrato",
+      "title": "O retrato do banco vazio",
+      "zone": "liberdade",
+      "cast": [
+        "rute",
+        "teodoro"
+      ],
+      "effect": "photo",
+      "object": "postcard",
+      "line": "A fotografia fica pronta precisamente quando o modelo se levanta.",
+      "every": 1,
+      "start": 850,
+      "end": 1000
+    },
+    {
+      "id": "sombra",
+      "title": "A sombra tem prioridade",
+      "zone": "valencas",
+      "cast": [
+        "amalia",
+        "baltasar"
+      ],
+      "effect": "paint",
+      "object": "postcard",
+      "line": "Amália pinta uma sombra; Baltasar pede licença à parede.",
+      "every": 3,
+      "start": 900,
+      "end": 1080
+    },
+    {
+      "id": "tampa",
+      "title": "O campeonato das tampas",
+      "zone": "portadas",
+      "cast": [
+        "amadeu",
+        "jacinta"
+      ],
+      "effect": "trade",
+      "object": "cap",
+      "line": "Uma tampa desliza até à linha de giz. A vencedora fica exposta.",
+      "every": 1,
+      "start": 960,
+      "end": 1150
+    },
+    {
+      "id": "eco",
+      "title": "O eco que ficou sem resposta",
+      "zone": "sassetti",
+      "cast": [
+        "milena",
+        "olga"
+      ],
+      "effect": "sound",
+      "object": "recorder",
+      "line": "Uma chamada, uma pausa: os dois comparam o eco da serra.",
+      "every": 2,
+      "start": 840,
+      "end": 1080
+    },
+    {
+      "id": "nome",
+      "title": "A casa de nome trocado",
+      "zone": "ferreira",
+      "cast": [
+        "baltasar",
+        "augusto"
+      ],
+      "effect": "sign",
+      "object": "parcel",
+      "line": "O carteiro entrega a etiqueta à casa errada e corrige-a.",
+      "every": 1,
+      "start": 840,
+      "end": 1010
+    },
+    {
+      "id": "flor",
+      "title": "O aniversário da begónia",
+      "zone": "azulejos",
+      "cast": [
+        "irene",
+        "ofelia"
+      ],
+      "effect": "water",
+      "object": "flower",
+      "line": "A planta ganha um laço e os vizinhos cantam-lhe os parabéns.",
+      "every": 3,
+      "start": 1020,
+      "end": 1150
+    },
+    {
+      "id": "carta",
+      "title": "O postal para amanhã",
+      "zone": "republic",
+      "cast": [
+        "tomas_postais",
+        "augusto"
+      ],
+      "effect": "deliver",
+      "object": "postcard",
+      "line": "O remetente aparece no local antes do seu postal.",
+      "every": 1,
+      "start": 640,
+      "end": 730
+    },
+    {
+      "id": "chave",
+      "title": "A chave sem fechadura",
+      "zone": "ferreira",
+      "cast": [
+        "serafim",
+        "alvaro"
+      ],
+      "effect": "keys",
+      "object": "key",
+      "line": "Encontram a fechadura numa caixa comunitária, nunca numa casa alheia.",
+      "every": 2,
+      "start": 600,
+      "end": 730
+    },
+    {
+      "id": "carimbo",
+      "title": "A licença para olhar para cima",
+      "zone": "palace",
+      "cast": [
+        "vitoria",
+        "sven"
+      ],
+      "effect": "stamp",
+      "object": "map",
+      "line": "O roteiro ganha um carimbo depois de ambos observarem a chaminé.",
+      "every": 1,
+      "start": 600,
+      "end": 750
+    },
+    {
+      "id": "vassoura",
+      "title": "A vassoura diplomática",
+      "zone": "market",
+      "cast": [
+        "celso",
+        "nelson"
+      ],
+      "effect": "sweep",
+      "object": "leaf",
+      "line": "Negociam quem recolhe o papel que acabou de cair.",
+      "every": 1,
+      "start": 960,
+      "end": 1140
+    },
+    {
+      "id": "sapato",
+      "title": "A reunião dos sapatos trocados",
+      "zone": "pipa",
+      "cast": [
+        "dinis",
+        "serafim"
+      ],
+      "effect": "shoe",
+      "object": "shoe",
+      "line": "Dinis descobre que trouxe os sapatos certos, mas dos dias errados.",
+      "every": 2,
+      "start": 1020,
+      "end": 1140
+    },
+    {
+      "id": "sardinha",
+      "title": "A assembleia do Sardinha",
+      "zone": "pipa",
+      "cast": [
+        "dario",
+        "lurdes_sardinha"
+      ],
+      "effect": "cat",
+      "object": "bowl",
+      "line": "As taças passam a ter horários e o gato vota com as patas.",
+      "every": 1,
+      "start": 570,
+      "end": 720
+    },
+    {
+      "id": "rima",
+      "title": "A rima com queijada",
+      "zone": "duche",
+      "cast": [
+        "ema",
+        "plutonio"
+      ],
+      "effect": "rhythm",
+      "object": "spoon",
+      "line": "A roda troca uma palavra por uma batida completamente original.",
+      "every": 3,
+      "start": 1060,
+      "end": 1160
+    },
+    {
+      "id": "mapa",
+      "title": "O mapa ao contrário do avesso",
+      "zone": "byron",
+      "cast": [
+        "sven",
+        "vitoria"
+      ],
+      "effect": "map",
+      "object": "map",
+      "line": "A legenda vira para o lado certo. Sven roda o corpo em vez do mapa.",
+      "every": 1,
+      "start": 900,
+      "end": 1100
+    },
+    {
+      "id": "fila",
+      "title": "A fila para a fotografia da fila",
+      "zone": "valencas",
+      "cast": [
+        "joana",
+        "rute"
+      ],
+      "effect": "queue",
+      "object": "camera",
+      "line": "Três vizinhos esperam pela montra limpa para fazer o retrato.",
+      "every": 1,
+      "start": 600,
+      "end": 730
+    },
+    {
+      "id": "nuvem",
+      "title": "O quadro de uma nuvem que passou",
+      "zone": "jardins",
+      "cast": [
+        "amalia",
+        "milena"
+      ],
+      "effect": "paint",
+      "object": "postcard",
+      "line": "O quadro conserva uma nuvem; Milena grava quem lhe diz adeus.",
+      "every": 2,
+      "start": 960,
+      "end": 1140
+    },
+    {
+      "id": "duvida",
+      "title": "O número do degrau de desempate",
+      "zone": "hortensias",
+      "cast": [
+        "anibal",
+        "alvaro"
+      ],
+      "effect": "count",
+      "object": "counter",
+      "line": "Contam a mesma escada pelo outro lado, sem inventar degraus.",
+      "every": 1,
+      "start": 850,
+      "end": 1080
+    },
+    {
+      "id": "troco",
+      "title": "O troco que era um botão",
+      "zone": "portadas",
+      "cast": [
+        "jacinta",
+        "amadeu"
+      ],
+      "effect": "trade",
+      "object": "button",
+      "line": "Uma troca falha e os dois devolvem os objetos antes de renegociar.",
+      "every": 2,
+      "start": 1050,
+      "end": 1150
+    },
+    {
+      "id": "silencio",
+      "title": "O minuto de silêncio para ouvir a fonte",
+      "zone": "duche",
+      "cast": [
+        "ema",
+        "tomas_postais"
+      ],
+      "effect": "sound",
+      "object": "bottle",
+      "line": "Os vizinhos pousam os papéis e ouvem a água da Fonte Mourisca.",
+      "every": 1,
+      "start": 900,
+      "end": 1080
+    },
+    {
+      "id": "tapete",
+      "title": "O tapete que virou mapa",
+      "zone": "byron",
+      "cast": [
+        "monica",
+        "sven"
+      ],
+      "effect": "rug",
+      "object": "map",
+      "line": "O padrão do tapete parece uma rua. Sven toma notas, Mónica corrige.",
+      "every": 2,
+      "start": 600,
+      "end": 720
+    },
+    {
+      "id": "abertura",
+      "title": "A abertura solene da portada",
+      "zone": "ferreira",
+      "cast": [
+        "joel",
+        "baltasar"
+      ],
+      "effect": "shutter",
+      "object": "key",
+      "line": "Uma portada presa cede com ajuda; os dois fazem uma vénia à casa.",
+      "every": 1,
+      "start": 500,
+      "end": 650
+    }
+  ],
+  "cameo": {
+    "enabled": true,
+    "name": "Plutónio",
+    "fallback": "Prumo",
+    "public_release_authorized": false,
+    "official": false,
+    "reference": "https://www.ricardoagency.pt/plutonio-2/",
+    "visual_reference": "https://jorgefernandes.net/artistas/plutonio",
+    "music": "Original synthesized rhythm only; no recordings, lyrics or melodies by the artist."
+  }
+}

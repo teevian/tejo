@@ -103,6 +103,10 @@ func _reachable(person: CharacterBody2D, target: Dictionary) -> bool:
 	var ray := PhysicsRayQueryParameters2D.create(person.position,point,1)
 	ray.exclude = [person.get_rid()]
 	var hit := world.get_world_2d().direct_space_state.intersect_ray(ray)
+	if target.kind=="resident" and not hit.is_empty() and hit.collider.has_meta("festival_counter") and person.position.distance_to(point)<190: return true
+	if target.kind=="resident" and not hit.is_empty() and hit.collider.has_meta("street_kind"):
+		# A greeting can cross a market counter, while walls still block it.
+		if int(hit.collider.get_meta("street_kind")) in [0,1,2] and person.position.distance_to(point)<155: return true
 	return hit.is_empty() or hit.collider==target.get("node")
 
 func _painted_contact(object: Node2D, from: Vector2) -> Vector2:
@@ -138,11 +142,17 @@ func nearest(person: CharacterBody2D) -> Dictionary:
 	if not result.is_empty():
 		best = person.position.distance_to(result.position)+15.0
 	for target in targets:
-		if target.kind=="football": target.position = target.node.position
+		if target.kind=="living_scene":
+			if not target.node.available(): continue
+			target.position = target.node.interaction_position()
+		if target.kind=="resident" and not target.node.available(): continue
+		if target.kind=="street_scene" and not target.node.available(): continue
+		if target.kind in ["football","resident"]: target.position = target.node.position
+		if target.kind=="street_scene": target.position = target.node.position+Vector2(0,35)
 		if target.kind=="pickup" and (not is_instance_valid(target.node) or not target.node.visible):
 			continue
 		var distance := person.position.distance_to(target.position)
-		var painted: bool = target.has("node") and target.node.has_method("configure_mapped")
+		var painted: bool = target.has("node") and target.node.has_method("configure_mapped") and not target.node.footprints.is_empty()
 		if painted:
 			if not target.node.ground_bounds.grow(100).has_point(person.position): continue
 			distance = person.position.distance_to(_painted_contact(target.node,person.position))
@@ -179,6 +189,8 @@ func prompt(person: CharacterBody2D, target: Dictionary) -> String:
 	if target.is_empty():
 		return ""
 	match target.kind:
+		"resident": return target.node.interaction_prompt() if target.node.has_method("interaction_prompt") else "Cumprimentar "+str(target.label)+" · "+str(target.node.activity_label())
+		"street_scene","living_scene": return target.node.interaction_prompt()
 		"football": return "Levantar a bola e dar toques"
 		"signpost": return "Ler a placa antiga"
 		"puppy": return "Deixar comida / fazer festas ao cachorro"
@@ -208,6 +220,12 @@ func interact(person: CharacterBody2D) -> String:
 		friend.cancel_sand_drawing()
 		friend._finish_phone()
 	match target.kind:
+		"street_scene","living_scene":
+			_discover(target.id)
+			return target.node.interact(person)
+		"resident":
+			_discover("met_"+target.node.entry.id)
+			return target.node.greet()
 		"observation":
 			_discover(target.id)
 			return target.text
@@ -231,6 +249,7 @@ func interact(person: CharacterBody2D) -> String:
 			_discover("collected_"+str(target.item.type))
 			return "%s guardou %s. Porte %d/5. %s"%[person.name,str(target.label).to_lower(),person.inventory.used_porte(),comment(str(target.item.type))]
 		"bench":
+			if world.get("living_life")!=null: world.living_life.yield_bench(target.node)
 			# Reserve both independent places only after both routes are validated.
 			for friend in world.people:
 				var seat: Vector2 = target.node.seat_position(friend.kind)
@@ -308,6 +327,8 @@ func highlight(target: Dictionary) -> void:
 func _draw() -> void:
 	if current_target.is_empty():
 		return
+	if current_target.kind=="resident" and not current_target.node.available(): return
+	if current_target.kind=="street_scene" and not current_target.node.available(): return
 	var at: Vector2 = current_target.position
 	draw_arc(at,18,0,TAU,32,Color(0.95,0.85,0.58,0.8),1.5,true)
 	var marker := at+Vector2(0,-27)

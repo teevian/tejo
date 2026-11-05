@@ -1,0 +1,167 @@
+[
+  {
+    "key": "canes-01",
+    "file": "individual-canes-01.png",
+    "columns": 4,
+    "rows": 4,
+    "ids": [
+      "antonio",
+      "helena_turista"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/people-02.png",
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/street-people-02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Production hand-painted Sintra RPG sprite atlas. Preserve exact identity, clothes, facial anatomy, hair, age and gouache-pencil style of the referenced people. TRUE transparent background, all empty pixels alpha zero, no white paper, no coloured alpha noise, no floor, drop shadow, text, labels or watermarks. Generous clear gutters. Every full body, shoe and prop entirely inside its own cell. Candid neutral/concentrated expressions, relaxed closed mouths, no grins. Exactly FOUR columns and FOUR rows. Sixteen full-body walking frames of TWO cane-using elderly people. Antonio is column 2 in reference 1, white beard/gray flat cap/olive vest/brown trousers/brown cane. Helena is column 3 in reference 2, elderly woman with white bob/straw hat/glasses/plum jacket/cream trousers/RED cane. Columns 1 and 2 are the FIRST person front three-quarter towards lower right and rear three-quarter towards upper right respectively; columns 3 and 4 are the SECOND person in those same two views. Each column has a FOUR-PHASE cautious cane-supported gait down the rows. Row 1: STOP, cane tip firmly planted forward, supporting hand and shoulder leaning weight onto cane, feet close together. Row 2: weight remains on planted cane, opposite foot makes a SHORT step. Row 3: both feet settle, slightly bent tired posture supported by cane. Row 4: cane advances a little as rear foot follows into next cycle. Every cane reaches ground at foot level, never carried horizontally or waved. Small restrained steps, no athletic stride or bouncing. Anatomically coherent hand-to-cane contact. Keep the SAME exact person and view in each column, no view changes within a column. Square sheet."
+  },
+  {
+    "key": "canes-02",
+    "file": "individual-canes-02.png",
+    "columns": 4,
+    "rows": 4,
+    "ids": [
+      "artur_cinema",
+      "salim_turista"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-03.png",
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-06.png"
+    ],
+    "prompt": "Use case: identity-preserve. Production hand-painted Sintra RPG sprite atlas. Preserve exact identity, clothes, facial anatomy, hair, age and gouache-pencil style of the referenced people. TRUE transparent background, all empty pixels alpha zero, no white paper, no coloured alpha noise, no floor, drop shadow, text, labels or watermarks. Generous clear gutters. Every full body, shoe and prop entirely inside its own cell. Candid neutral/concentrated expressions, relaxed closed mouths, no grins. Exactly FOUR columns and FOUR rows. Sixteen full-body walking frames of TWO cane-using elderly people. Artur is column 4 in reference 1, white hair/flat cap/green cardigan/brown corduroy trousers/brown cane. Salim is column 3 in reference 2, elderly man with white beard/tan brimmed hat/pale blue shirt/brown trousers/carved walking stick. Columns 1 and 2 are the FIRST person front three-quarter towards lower right and rear three-quarter towards upper right respectively; columns 3 and 4 are the SECOND person in those same two views. Each column has a FOUR-PHASE cautious cane-supported gait down the rows. Row 1: STOP, cane tip firmly planted forward, supporting hand and shoulder leaning weight onto cane, feet close together. Row 2: weight remains on planted cane, opposite foot makes a SHORT step. Row 3: both feet settle, slightly bent tired posture supported by cane. Row 4: cane advances a little as rear foot follows into next cycle. Every cane reaches ground at foot level, never carried horizontally or waved. Small restrained steps, no athletic stride or bouncing. Anatomically coherent hand-to-cane contact. Keep the SAME exact person and view in each column, no view changes within a column. Square sheet."
+  },
+  {
+    "key": "bench",
+    "file": "individual-teodoro.png",
+    "columns": 2,
+    "rows": 2,
+    "ids": [
+      "teodoro"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/living-teodoro.png"
+    ],
+    "prompt": "Use case: identity-preserve. Production hand-painted Sintra RPG sprite atlas. Preserve exact identity, clothes, facial anatomy, hair, age and gouache-pencil style of the referenced people. TRUE transparent background, all empty pixels alpha zero, no white paper, no coloured alpha noise, no floor, drop shadow, text, labels or watermarks. Generous clear gutters. Every full body, shoe and prop entirely inside its own cell. Candid neutral/concentrated expressions, relaxed closed mouths, no grins. Exactly TWO columns and TWO rows of Teodoro, the SAME elderly Black man shown in the input, white flat cap, gray moustache, burgundy cardigan, gray trousers and newspaper. Preserve four original poses and layout, change expression ONLY: top-left reading with focused neutral face, top-right looking aside with a tired raised eyebrow; bottom-left checking watch with mild impatience; bottom-right arms folded, toe tapping, closed mouth and slightly knitted brows. No smile. Invisible bench remains invisible."
+  },
+  {
+    "key": "prumo",
+    "file": "individual-prumo.png",
+    "columns": 2,
+    "rows": 3,
+    "ids": [
+      "prumo"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/living-prumo.png"
+    ],
+    "prompt": "Use case: identity-preserve. Production hand-painted Sintra RPG sprite atlas. Preserve exact identity, clothes, facial anatomy, hair, age and gouache-pencil style of the referenced people. TRUE transparent background, all empty pixels alpha zero, no white paper, no coloured alpha noise, no floor, drop shadow, text, labels or watermarks. Generous clear gutters. Every full body, shoe and prop entirely inside its own cell. Candid neutral/concentrated expressions, relaxed closed mouths, no grins. Exactly TWO columns and THREE rows, six complete sprites of the SAME original percussionist Prumo in the reference, sandy curls/red cap/purple hoodie/teal trousers/drum. Top-left neutral relaxed stance, top-right absorbed in playing drum; middle row alternating walking steps towards lower-right seen from FRONT three-quarter; bottom row alternating walking steps towards upper-right seen from BACK. No grins. Same character, clothing and full body in all six cells."
+  },
+  {
+    "key": "terraces",
+    "file": "individual-terraces.png",
+    "columns": 4,
+    "rows": 2,
+    "ids": [],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/world/village/living-objects.png"
+    ],
+    "prompt": "Use case: illustration-story. Production transparent object sprite atlas for the supplied warm hand-painted Sintra RPG style. Exactly FOUR columns by TWO rows, eight isolated complete props in generous equal cells. Top row left to right: round green metal Portuguese cafe table set with two coffee cups and bread rolls; same round table set with two soup bowls/spoons/water glasses; empty green slatted folding cafe chair facing front three-quarter; same chair viewed from back three-quarter. Bottom row: complete tall cream-and-burgundy striped cafe parasol on a slender pole and heavy round base; small standing cafe chalkboard with a hand-painted cup and bread illustration but NO text; a picnic basket with cloth, thermos and wrapped bread; empty wooden garden bench with green metal legs seen from front three-quarter. No people, floor or ground shadows. Match supplied existing props gouache, pencil contours, restrained rich colours, 2D RPG three-quarter perspective. Every object fits wholly inside its cell, umbrella fully visible. TRUE alpha transparency with empty pixels alpha zero, no white paper or checkerboard, no text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-01-breakfast",
+    "file": "individual-meals-01.png",
+    "columns": 4,
+    "rows": 2,
+    "ids": [
+      "lurdes",
+      "antonio",
+      "celeste",
+      "manuel"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-01.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the TOP TWO breakfast rows of these SAME 4 seated people into a NEW production sprite sheet with EXACTLY 4 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated holding cup and bread. Row 2: same seated body sipping the cup. Children have juice. ALL 8 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-01-lunch",
+    "file": "individual-lunch-01.png",
+    "columns": 4,
+    "rows": 2,
+    "ids": [
+      "lurdes",
+      "antonio",
+      "celeste",
+      "manuel"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-01.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the BOTTOM TWO lunch rows of these SAME 4 seated people into a NEW production sprite sheet with EXACTLY 4 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated with soup bowl and spoon at mouth. Row 2: SAME seated body with bowl and spoon lowered, listening or chewing. ALL 8 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-02-breakfast",
+    "file": "individual-meals-02.png",
+    "columns": 4,
+    "rows": 2,
+    "ids": [
+      "matilde",
+      "tomas",
+      "leonor",
+      "miguel"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the TOP TWO breakfast rows of these SAME 4 seated people into a NEW production sprite sheet with EXACTLY 4 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated holding cup and bread. Row 2: same seated body sipping the cup. Children have juice. ALL 8 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-02-lunch",
+    "file": "individual-lunch-02.png",
+    "columns": 4,
+    "rows": 2,
+    "ids": [
+      "matilde",
+      "tomas",
+      "leonor",
+      "miguel"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-02.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the BOTTOM TWO lunch rows of these SAME 4 seated people into a NEW production sprite sheet with EXACTLY 4 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated with soup bowl and spoon at mouth. Row 2: SAME seated body with bowl and spoon lowered, listening or chewing. ALL 8 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-03-breakfast",
+    "file": "individual-meals-03.png",
+    "columns": 5,
+    "rows": 2,
+    "ids": [
+      "gil",
+      "tiago",
+      "alexandre",
+      "martim",
+      "afonso"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-03.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the TOP TWO breakfast rows of these SAME 5 seated people into a NEW production sprite sheet with EXACTLY 5 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated holding cup and bread. Row 2: same seated body sipping the cup. Children have juice. ALL 10 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  },
+  {
+    "key": "meals-03-lunch",
+    "file": "individual-lunch-03.png",
+    "columns": 5,
+    "rows": 2,
+    "ids": [
+      "gil",
+      "tiago",
+      "alexandre",
+      "martim",
+      "afonso"
+    ],
+    "references": [
+      "/Users/tmvaz/github/tejo/assets/characters/villagers/individual-meals-03.png"
+    ],
+    "prompt": "Use case: identity-preserve. Repaint ONLY the BOTTOM TWO lunch rows of these SAME 5 seated people into a NEW production sprite sheet with EXACTLY 5 columns and TWO rows only. Preserve exact faces, clothes, hair, body proportions, character order, candid neutral expressions and painted gouache pencil style. Row 1: seated with soup bowl and spoon at mouth. Row 2: SAME seated body with bowl and spoon lowered, listening or chewing. ALL 10 figures must be COMPLETE from head through knees down to BOTH WHOLE SHOES. Reconstruct any lower legs and shoes missing in the source. Fit the ENTIRE figure inside each cell, with wide transparent gutters and generous bottom margin. Shrink figures rather than crop ANY shoe. Seat is INVISIBLE, no bench/chair. EXACTLY TWO rows, no additional figures. TRUE transparent empty pixels alpha ZERO; no backdrop, haze, white paper, floor, shadows, coloured noise, text or watermark. Landscape sheet."
+  }
+]

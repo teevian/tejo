@@ -18,6 +18,7 @@ var count := 0
 var best := 0
 var last_count := 0
 var attempts := 0
+var round_serial := 0
 var hit_flash := 0.0
 var spin := 0.0
 var last_contact := ""
@@ -58,6 +59,7 @@ func active() -> bool:
 func start(person: CharacterBody2D) -> bool:
 	if person.is_busy() or height>10 or person.position.distance_to(ball.position)>68 or not ball.world.can_walk_line(person.position,ball.position): return false
 	stop()
+	round_serial += 1
 	owner = person
 	owner.football_ball = ball
 	owner.play_football("lift",0,0.56,1.0 if ball.position.x>=person.position.x else -1.0)
@@ -74,6 +76,10 @@ func start(person: CharacterBody2D) -> bool:
 	return true
 
 func stop() -> void:
+	if active() and count>0 and is_instance_valid(ball.world):
+		var scene: Node = ball.world.get_parent()
+		if scene.has_method("record_shared_activity"):
+			scene.record_shared_activity("football",str(ball.get_instance_id())+":"+str(round_serial),2,owner.position,75 if count>=2 else 0)
 	if active() and owner.football_ball==ball: owner.football_ball = null
 	last_count = count
 	best = maxi(best,count)

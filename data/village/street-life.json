@@ -1,0 +1,934 @@
+{
+  "description": "Dez novas pessoas com horários, grupos e interações. As 35 pessoas anteriores mantêm os seus quotidianos.",
+  "people": [
+    {
+      "id": "ines_escuteira",
+      "name": "Inês · escuteira",
+      "age": 14,
+      "street_art": 1,
+      "atlas": 1,
+      "column": 0,
+      "height": 139,
+      "home": [
+        8800,
+        3280
+      ],
+      "role": "scout",
+      "activity": "a vender rifas",
+      "greeting": "Estamos a juntar fundos para uma atividade de Minecraft do agrupamento. Queres uma rifa? Boa caça aos creepers!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a montar a mesa de rifas",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "17:45",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a arrumar a mesa com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a preparar a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a descansar",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        -75,
+        60
+      ]
+    },
+    {
+      "id": "pedro_escuteiro",
+      "name": "Pedro · escuteiro",
+      "age": 15,
+      "street_art": 1,
+      "atlas": 1,
+      "column": 1,
+      "height": 145,
+      "home": [
+        8800,
+        3280
+      ],
+      "role": "scout",
+      "activity": "a vender rifas",
+      "greeting": "Estamos a juntar fundos para uma atividade de Minecraft do agrupamento. Queres uma rifa? Boa caça aos creepers!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a montar a mesa de rifas",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "17:45",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a arrumar a mesa com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a preparar a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a descansar",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        75,
+        60
+      ]
+    },
+    {
+      "id": "joana_escuteira",
+      "name": "Joana · dirigente",
+      "age": 28,
+      "street_art": 1,
+      "atlas": 1,
+      "column": 2,
+      "height": 157,
+      "home": [
+        8800,
+        3280
+      ],
+      "role": "scout",
+      "activity": "a vender rifas",
+      "greeting": "Estamos a juntar fundos para uma atividade de Minecraft do agrupamento. Queres uma rifa? Boa caça aos creepers!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a montar a mesa de rifas",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a vender rifas para a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "17:45",
+          "place": "raffles",
+          "mode": "activity",
+          "activity": "a arrumar a mesa com o agrupamento",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a preparar a atividade de Minecraft",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a descansar",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        10,
+        -30
+      ]
+    },
+    {
+      "id": "sofia_policia",
+      "name": "Agente Sofia",
+      "age": 35,
+      "street_art": 1,
+      "atlas": 1,
+      "column": 3,
+      "height": 159,
+      "home": [
+        9600,
+        2440
+      ],
+      "role": "police",
+      "activity": "a patrulhar a vila",
+      "greeting": "Olá! As ruas são para passear com calma. O Palácio fica a norte; para gelados, procurem a banca Nannarella no largo.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a descansar depois do turno",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a patrulhar o largo",
+          "stroll": false
+        },
+        {
+          "at": "10:30",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a dar indicações aos visitantes",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "market",
+          "mode": "activity",
+          "activity": "a acompanhar o movimento da feira",
+          "stroll": false
+        },
+        {
+          "at": "17:30",
+          "place": "church",
+          "mode": "activity",
+          "activity": "a patrulhar junto ao concerto",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a fazer a ronda da noite",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a fazer a última ronda",
+          "stroll": false
+        },
+        {
+          "at": "23:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a regressar a casa",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "enzo_gelados",
+      "name": "Enzo · Nannarella",
+      "age": 44,
+      "street_art": 1,
+      "atlas": 1,
+      "column": 4,
+      "height": 159,
+      "home": [
+        10830,
+        2440
+      ],
+      "role": "gelato",
+      "activity": "a servir gelados Nannarella",
+      "greeting": "Hoje temos pistácio, morango e stracciatella. Qual vai ser?",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a preparar os gelados",
+          "stroll": false
+        },
+        {
+          "at": "10:30",
+          "place": "icecream_vendor",
+          "mode": "activity",
+          "activity": "a abrir a banca",
+          "stroll": false
+        },
+        {
+          "at": "11:00",
+          "place": "icecream_vendor",
+          "mode": "activity",
+          "activity": "a servir gelados Nannarella",
+          "stroll": false
+        },
+        {
+          "at": "14:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a fazer a pausa do almoço",
+          "stroll": false
+        },
+        {
+          "at": "15:00",
+          "place": "icecream_vendor",
+          "mode": "activity",
+          "activity": "a servir gelados Nannarella",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "icecream_vendor",
+          "mode": "activity",
+          "activity": "a fechar a banca",
+          "stroll": false
+        },
+        {
+          "at": "20:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a jantar",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "clara_violinista",
+      "name": "Clara · violino",
+      "age": 27,
+      "street_art": 2,
+      "atlas": 1,
+      "column": 0,
+      "height": 158,
+      "home": [
+        6760,
+        4980
+      ],
+      "role": "musician",
+      "activity": "a tocar violino",
+      "greeting": "O Farid e eu tocamos juntos das seis às nove. Podem ficar a ouvir: a próxima é uma melodia nossa.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "10:00",
+          "place": "window_ceramics",
+          "mode": "activity",
+          "activity": "a passear pelas lojas",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a ensaiar",
+          "stroll": false
+        },
+        {
+          "at": "17:30",
+          "place": "concert_player",
+          "mode": "activity",
+          "activity": "a afinar o violino",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "concert_player",
+          "mode": "activity",
+          "activity": "a tocar no concerto de rua",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a jantar depois do concerto",
+          "stroll": false
+        },
+        {
+          "at": "23:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "oliver_turista",
+      "name": "Oliver · visitante",
+      "age": 48,
+      "street_art": 2,
+      "atlas": 1,
+      "column": 1,
+      "height": 158,
+      "home": [
+        9600,
+        2520
+      ],
+      "role": "tourist",
+      "activity": "a seguir a guia",
+      "greeting": "Estamos com a Teresa. Já vimos as chaminés do Palácio; a seguir há travesseiros e histórias pelas ruelas!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "guide_palace",
+          "mode": "activity",
+          "activity": "a acompanhar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "13:30",
+          "place": "guide_bakery",
+          "mode": "activity",
+          "activity": "a acompanhar a guia nas Padarias",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "guide_viewpoint",
+          "mode": "activity",
+          "activity": "a ouvir a guia no miradouro",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "guide_republic",
+          "mode": "activity",
+          "activity": "a terminar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "concert_audience",
+          "mode": "activity",
+          "activity": "a ouvir o concerto de rua",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        -120,
+        125
+      ],
+      "follow": "teresa"
+    },
+    {
+      "id": "helena_turista",
+      "name": "Helena · visitante",
+      "age": 71,
+      "street_art": 2,
+      "atlas": 1,
+      "column": 2,
+      "height": 150,
+      "home": [
+        9760,
+        2520
+      ],
+      "role": "tourist",
+      "activity": "a fotografar a visita",
+      "greeting": "A Teresa disse para olhar para cima. Ainda bem: estas varandas merecem uma fotografia!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "guide_palace",
+          "mode": "activity",
+          "activity": "a acompanhar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "13:30",
+          "place": "guide_bakery",
+          "mode": "activity",
+          "activity": "a acompanhar a guia nas Padarias",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "guide_viewpoint",
+          "mode": "activity",
+          "activity": "a ouvir a guia no miradouro",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "guide_republic",
+          "mode": "activity",
+          "activity": "a terminar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "concert_audience",
+          "mode": "activity",
+          "activity": "a ouvir o concerto de rua",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        30,
+        175
+      ],
+      "follow": "teresa"
+    },
+    {
+      "id": "mariana_montras",
+      "name": "Mariana",
+      "age": 29,
+      "street_art": 2,
+      "atlas": 1,
+      "column": 3,
+      "height": 155,
+      "home": [
+        9950,
+        4860
+      ],
+      "role": "shopper",
+      "activity": "a ver as montras",
+      "greeting": "Entrei só para espreitar a loiça… mas este azul e branco está a tentar convencer-me.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "guide_palace",
+          "mode": "activity",
+          "activity": "a acompanhar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "window_ceramics",
+          "mode": "activity",
+          "activity": "a admirar a montra de cerâmica",
+          "stroll": false
+        },
+        {
+          "at": "15:15",
+          "place": "window_crafts",
+          "mode": "activity",
+          "activity": "a comparar o artesanato da montra",
+          "stroll": false
+        },
+        {
+          "at": "16:30",
+          "place": "window_bakery",
+          "mode": "activity",
+          "activity": "a escolher bolos na montra",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "concert_audience",
+          "mode": "activity",
+          "activity": "a ouvir o concerto e bater palmas",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a jantar",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        145,
+        120
+      ],
+      "follow": "teresa"
+    },
+    {
+      "id": "daniel_familia",
+      "name": "Daniel · família da Matilde",
+      "age": 35,
+      "street_art": 2,
+      "atlas": 1,
+      "column": 4,
+      "height": 161,
+      "home": [
+        9690,
+        3440
+      ],
+      "role": "family",
+      "activity": "a passear em família",
+      "greeting": "A Matilde quer mostrar-nos cada recanto. Vamos os três devagar, com tempo para parar e olhar.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8,
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "family_home",
+          "mode": "inside",
+          "activity": "a dormir em família",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "family_home",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "family_regular",
+          "mode": "activity",
+          "activity": "a passear com a Leonor e a Matilde",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "family_meal",
+          "mode": "inside",
+          "activity": "a almoçar em família",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "family_republic",
+          "mode": "activity",
+          "activity": "a passear em família",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "family_palace",
+          "mode": "activity",
+          "activity": "a passear em família junto ao Palácio",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "family_home",
+          "mode": "inside",
+          "activity": "a jantar em família",
+          "stroll": false
+        },
+        {
+          "at": "20:45",
+          "place": "family_home",
+          "mode": "inside",
+          "activity": "a descansar em família",
+          "stroll": false
+        }
+      ],
+      "offset": [
+        -140,
+        45
+      ],
+      "follow": "leonor"
+    }
+  ],
+  "props": [
+    {
+      "kind": "icecream",
+      "at": [
+        10670,
+        2430
+      ],
+      "width": 235
+    },
+    {
+      "kind": "raffles",
+      "at": [
+        8850,
+        3090
+      ],
+      "width": 195
+    },
+    {
+      "kind": "concert",
+      "at": [
+        6880,
+        4990
+      ],
+      "width": 180
+    }
+  ]
+}

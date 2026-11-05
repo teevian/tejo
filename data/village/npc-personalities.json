@@ -1,0 +1,1102 @@
+{
+  "description": "Traços ficcionais para ritmos, gestos, escolhas e memórias dos 45 habitantes. Sem alterações aos protagonistas aprovados.",
+  "people": {
+    "harry_kane": {
+      "style": "camera",
+      "description": "descontraído e curioso",
+      "sociability": 0.7,
+      "curiosity": 0.75,
+      "restlessness": 0.35,
+      "stride_length": 52,
+      "idle_hold": [
+        3.8,
+        9.55
+      ],
+      "gesture_hold": [
+        0.45,
+        1.68
+      ],
+      "friends": [
+        "yuki",
+        "alexandre"
+      ],
+      "lines": [
+        "Estas varandas merecem uma fotografia.",
+        "Hoje só quero passear sem pressa."
+      ]
+    },
+    "rogerio_colaco": {
+      "style": "map",
+      "description": "observador e conversador",
+      "sociability": 0.76,
+      "curiosity": 0.85,
+      "restlessness": 0.3,
+      "stride_length": 47,
+      "idle_hold": [
+        3.9,
+        9.9
+      ],
+      "gesture_hold": [
+        0.45,
+        1.58
+      ],
+      "friends": [
+        "arlindo_oliveira",
+        "ines_lynce"
+      ],
+      "lines": [
+        "Ainda há uma rua que não descobrimos.",
+        "Até a calçada tem coisas para nos ensinar."
+      ]
+    },
+    "arlindo_oliveira": {
+      "style": "reader",
+      "description": "reservado, com humor seco",
+      "sociability": 0.34,
+      "curiosity": 0.7,
+      "restlessness": 0.16,
+      "stride_length": 44,
+      "idle_hold": [
+        4.18,
+        10.88
+      ],
+      "gesture_hold": [
+        0.45,
+        2.26
+      ],
+      "friends": [
+        "rogerio_colaco",
+        "ines_lynce"
+      ],
+      "lines": [
+        "Guardei a página. Agora posso ouvir a história.",
+        "Há bons capítulos que começam num banco de jardim."
+      ]
+    },
+    "ines_lynce": {
+      "style": "notes",
+      "description": "atenta e imaginativa",
+      "sociability": 0.58,
+      "curiosity": 0.88,
+      "restlessness": 0.28,
+      "stride_length": 46,
+      "idle_hold": [
+        3.94,
+        10.04
+      ],
+      "gesture_hold": [
+        0.45,
+        1.87
+      ],
+      "friends": [
+        "arlindo_oliveira",
+        "rogerio_colaco"
+      ],
+      "lines": [
+        "Vou anotar esse pormenor antes que me esqueça.",
+        "Estas fachadas estão cheias de padrões."
+      ]
+    },
+    "teresa": {
+      "style": "guide",
+      "description": "expansiva e paciente",
+      "sociability": 0.95,
+      "curiosity": 0.85,
+      "restlessness": 0.48,
+      "stride_length": 49,
+      "idle_hold": [
+        3.54,
+        8.64
+      ],
+      "gesture_hold": [
+        0.45,
+        1.28
+      ],
+      "friends": [
+        "oliver_turista",
+        "helena_turista",
+        "mariana_montras"
+      ],
+      "lines": [
+        "Olhem para as varandas, mesmo por cima de nós.",
+        "Esperamos por todos antes de continuar."
+      ]
+    },
+    "lurdes": {
+      "style": "knit",
+      "description": "afável e meticulosa",
+      "sociability": 0.79,
+      "curiosity": 0.38,
+      "restlessness": 0.12,
+      "stride_length": 39,
+      "idle_hold": [
+        4.26,
+        11.16
+      ],
+      "gesture_hold": [
+        0.45,
+        1.54
+      ],
+      "friends": [
+        "manuel",
+        "celeste"
+      ],
+      "lines": [
+        "Esta volta do ponto precisa de alguma paciência.",
+        "Senta-te um bocadinho; a vila não foge."
+      ]
+    },
+    "antonio": {
+      "style": "cane",
+      "description": "calmo, conhece os vizinhos",
+      "sociability": 0.77,
+      "curiosity": 0.46,
+      "restlessness": 0.1,
+      "stride_length": 38,
+      "idle_hold": [
+        4.3,
+        11.3
+      ],
+      "gesture_hold": [
+        0.45,
+        1.57
+      ],
+      "friends": [
+        "emilia",
+        "celeste"
+      ],
+      "lines": [
+        "Já regaste os vasos hoje?",
+        "Gosto de ver esta rua acordar devagar."
+      ]
+    },
+    "celeste": {
+      "style": "reader",
+      "description": "curiosa, gosta de partilhar histórias",
+      "sociability": 0.68,
+      "curiosity": 0.79,
+      "restlessness": 0.18,
+      "stride_length": 40,
+      "idle_hold": [
+        4.14,
+        10.74
+      ],
+      "gesture_hold": [
+        0.45,
+        1.71
+      ],
+      "friends": [
+        "antonio",
+        "lurdes"
+      ],
+      "lines": [
+        "Este livro fez-me lembrar uma história daqui.",
+        "Queres ouvir só mais uma página?"
+      ]
+    },
+    "manuel": {
+      "style": "newspaper",
+      "description": "sociável, atento ao movimento",
+      "sociability": 0.81,
+      "curiosity": 0.6,
+      "restlessness": 0.12,
+      "stride_length": 41,
+      "idle_hold": [
+        4.26,
+        11.16
+      ],
+      "gesture_hold": [
+        0.45,
+        1.5
+      ],
+      "friends": [
+        "lurdes",
+        "antonio"
+      ],
+      "lines": [
+        "Já viste o movimento da praça hoje?",
+        "As notícias podem esperar por um café."
+      ]
+    },
+    "emilia": {
+      "style": "garden",
+      "description": "cuidadosa e orgulhosa dos gerânios",
+      "sociability": 0.72,
+      "curiosity": 0.55,
+      "restlessness": 0.22,
+      "stride_length": 40,
+      "idle_hold": [
+        4.06,
+        10.46
+      ],
+      "gesture_hold": [
+        0.45,
+        1.65
+      ],
+      "friends": [
+        "rosa",
+        "antonio"
+      ],
+      "lines": [
+        "Os gerânios agradecem uma rega sem pressa.",
+        "Trouxe uma dica para os teus vasos."
+      ]
+    },
+    "matilde": {
+      "style": "hop",
+      "description": "irrequieta e brincalhona",
+      "sociability": 0.87,
+      "curiosity": 0.95,
+      "restlessness": 0.93,
+      "stride_length": 32,
+      "idle_hold": [
+        2.64,
+        5.49
+      ],
+      "gesture_hold": [
+        0.45,
+        1.41
+      ],
+      "friends": [
+        "leonor",
+        "daniel_familia",
+        "tomas"
+      ],
+      "lines": [
+        "Olha, consigo saltar sem pisar a risca!",
+        "Agora faz tu a pose!"
+      ]
+    },
+    "tomas": {
+      "style": "ball",
+      "description": "competitivo mas generoso",
+      "sociability": 0.78,
+      "curiosity": 0.82,
+      "restlessness": 0.89,
+      "stride_length": 35,
+      "idle_hold": [
+        2.72,
+        5.77
+      ],
+      "gesture_hold": [
+        0.45,
+        1.55
+      ],
+      "friends": [
+        "miguel",
+        "matilde"
+      ],
+      "lines": [
+        "Queres dar um toque na bola?",
+        "Eu espero por ti para a próxima jogada."
+      ]
+    },
+    "aisha": {
+      "style": "bubbles",
+      "description": "inventiva e delicada",
+      "sociability": 0.7,
+      "curiosity": 0.94,
+      "restlessness": 0.64,
+      "stride_length": 33,
+      "idle_hold": [
+        3.22,
+        7.52
+      ],
+      "gesture_hold": [
+        0.45,
+        1.68
+      ],
+      "friends": [
+        "ingrid",
+        "matilde"
+      ],
+      "lines": [
+        "Aquela bolha foi quase até ao telhado!",
+        "Se soprarmos devagar dura mais tempo."
+      ]
+    },
+    "leonor": {
+      "style": "camera",
+      "description": "protetora, divertida e paciente",
+      "sociability": 0.73,
+      "curiosity": 0.76,
+      "restlessness": 0.38,
+      "stride_length": 47,
+      "idle_hold": [
+        3.74,
+        9.34
+      ],
+      "gesture_hold": [
+        0.45,
+        1.63
+      ],
+      "friends": [
+        "matilde",
+        "daniel_familia"
+      ],
+      "lines": [
+        "Fiquem aí um instante para a fotografia.",
+        "Há tempo para ver tudo, Matilde."
+      ]
+    },
+    "miguel": {
+      "style": "drawing",
+      "description": "tranquilo e encorajador",
+      "sociability": 0.58,
+      "curiosity": 0.86,
+      "restlessness": 0.24,
+      "stride_length": 47,
+      "idle_hold": [
+        4.02,
+        10.32
+      ],
+      "gesture_hold": [
+        0.45,
+        1.87
+      ],
+      "friends": [
+        "tomas",
+        "beatriz"
+      ],
+      "lines": [
+        "Mostra-me como desenhavas esta janela.",
+        "A bola espera; primeiro olhamos para o caminho."
+      ]
+    },
+    "fatima": {
+      "style": "fruit",
+      "description": "extrovertida, reconhece os clientes",
+      "sociability": 0.94,
+      "curiosity": 0.5,
+      "restlessness": 0.48,
+      "stride_length": 46,
+      "idle_hold": [
+        3.54,
+        8.64
+      ],
+      "gesture_hold": [
+        0.45,
+        1.3
+      ],
+      "friends": [
+        "nuno",
+        "samira",
+        "silvia"
+      ],
+      "lines": [
+        "Estas laranjas estão mesmo doces.",
+        "Levo-te uma para a pausa."
+      ]
+    },
+    "nuno": {
+      "style": "pottery",
+      "description": "orgulhoso do ofício e um pouco tímido",
+      "sociability": 0.65,
+      "curiosity": 0.69,
+      "restlessness": 0.3,
+      "stride_length": 46,
+      "idle_hold": [
+        3.9,
+        9.9
+      ],
+      "gesture_hold": [
+        0.45,
+        1.76
+      ],
+      "friends": [
+        "silvia",
+        "fatima",
+        "afonso"
+      ],
+      "lines": [
+        "Esta peça foi pintada à mão.",
+        "Repara no azul junto à borda."
+      ]
+    },
+    "silvia": {
+      "style": "painting",
+      "description": "concentrada e perfeccionista",
+      "sociability": 0.42,
+      "curiosity": 0.9,
+      "restlessness": 0.25,
+      "stride_length": 44,
+      "idle_hold": [
+        4.0,
+        10.25
+      ],
+      "gesture_hold": [
+        0.45,
+        2.13
+      ],
+      "friends": [
+        "nuno",
+        "beatriz"
+      ],
+      "lines": [
+        "Espera só um instante que esta tinta ainda está fresca.",
+        "Este azul muda muito com a luz."
+      ]
+    },
+    "luis": {
+      "style": "bread",
+      "description": "bem-disposto e despachado",
+      "sociability": 0.87,
+      "curiosity": 0.43,
+      "restlessness": 0.57,
+      "stride_length": 51,
+      "idle_hold": [
+        3.36,
+        8.01
+      ],
+      "gesture_hold": [
+        0.45,
+        1.41
+      ],
+      "friends": [
+        "gil",
+        "fatima"
+      ],
+      "lines": [
+        "Saiu pão há pouco; ainda está morno.",
+        "Combinamos a pausa quando acabar esta fornada."
+      ]
+    },
+    "samira": {
+      "style": "textile",
+      "description": "acolhedora e cuidadosa",
+      "sociability": 0.84,
+      "curiosity": 0.66,
+      "restlessness": 0.32,
+      "stride_length": 44,
+      "idle_hold": [
+        3.86,
+        9.76
+      ],
+      "gesture_hold": [
+        0.45,
+        1.46
+      ],
+      "friends": [
+        "fatima",
+        "nuno"
+      ],
+      "lines": [
+        "Podes sentir a diferença deste tecido.",
+        "Essa cor fica bonita com a loiça azul."
+      ]
+    },
+    "yuki": {
+      "style": "camera",
+      "description": "silenciosa e muito observadora",
+      "sociability": 0.38,
+      "curiosity": 0.97,
+      "restlessness": 0.39,
+      "stride_length": 46,
+      "idle_hold": [
+        3.72,
+        9.27
+      ],
+      "gesture_hold": [
+        0.45,
+        2.19
+      ],
+      "friends": [
+        "harry_kane",
+        "alexandre"
+      ],
+      "lines": [
+        "A luz mudou; vou tentar outra fotografia.",
+        "Este pormenor dos azulejos quase passou despercebido."
+      ]
+    },
+    "amadou": {
+      "style": "map",
+      "description": "aventureiro e prestável",
+      "sociability": 0.83,
+      "curiosity": 0.92,
+      "restlessness": 0.68,
+      "stride_length": 55,
+      "idle_hold": [
+        3.14,
+        7.24
+      ],
+      "gesture_hold": [
+        0.45,
+        1.47
+      ],
+      "friends": [
+        "ravi",
+        "teresa"
+      ],
+      "lines": [
+        "Conheces um caminho bonito por aqui?",
+        "Se quiseres, vemos o mapa juntos."
+      ]
+    },
+    "ingrid": {
+      "style": "birds",
+      "description": "paciente e entusiasta da natureza",
+      "sociability": 0.55,
+      "curiosity": 0.92,
+      "restlessness": 0.25,
+      "stride_length": 43,
+      "idle_hold": [
+        4.0,
+        10.25
+      ],
+      "gesture_hold": [
+        0.45,
+        1.92
+      ],
+      "friends": [
+        "aisha",
+        "rosa"
+      ],
+      "lines": [
+        "Ouviste aquele pássaro?",
+        "Vamos parar um instante para o observar."
+      ]
+    },
+    "ravi": {
+      "style": "map",
+      "description": "metódico, perde-se com bom humor",
+      "sociability": 0.74,
+      "curiosity": 0.94,
+      "restlessness": 0.42,
+      "stride_length": 47,
+      "idle_hold": [
+        3.66,
+        9.06
+      ],
+      "gesture_hold": [
+        0.45,
+        1.62
+      ],
+      "friends": [
+        "amadou",
+        "oliver_turista"
+      ],
+      "lines": [
+        "No mapa parecia uma linha reta!",
+        "Perdermo-nos um bocadinho também faz parte."
+      ]
+    },
+    "camila": {
+      "style": "runner",
+      "description": "enérgica e otimista",
+      "sociability": 0.68,
+      "curiosity": 0.66,
+      "restlessness": 0.94,
+      "stride_length": 64,
+      "idle_hold": [
+        2.62,
+        5.42
+      ],
+      "gesture_hold": [
+        0.45,
+        1.71
+      ],
+      "friends": [
+        "rosa",
+        "amadou"
+      ],
+      "lines": [
+        "Mais uma volta e faço uma pausa.",
+        "Este caminho tem uma subida que se sente!"
+      ]
+    },
+    "duarte": {
+      "style": "wheelchair",
+      "description": "independente, atento e irónico",
+      "sociability": 0.61,
+      "curiosity": 0.85,
+      "restlessness": 0.25,
+      "stride_length": 48,
+      "idle_hold": [
+        4.0,
+        10.25
+      ],
+      "gesture_hold": [
+        0.45,
+        1.82
+      ],
+      "friends": [
+        "celeste",
+        "beatriz"
+      ],
+      "lines": [
+        "Gosto desta vista; dá vontade de ficar a ler.",
+        "Faço uma pausa, mas não perco a conversa."
+      ]
+    },
+    "beatriz": {
+      "style": "drawing",
+      "description": "criativa e distraída",
+      "sociability": 0.62,
+      "curiosity": 0.97,
+      "restlessness": 0.4,
+      "stride_length": 44,
+      "idle_hold": [
+        3.7,
+        9.2
+      ],
+      "gesture_hold": [
+        0.45,
+        1.81
+      ],
+      "friends": [
+        "miguel",
+        "silvia",
+        "martim"
+      ],
+      "lines": [
+        "Preciso só de mais um traço para acabar a varanda.",
+        "Que cor escolherias para esta fachada?"
+      ]
+    },
+    "farid": {
+      "style": "guitar",
+      "description": "generoso, improvisador e bem-disposto",
+      "sociability": 0.94,
+      "curiosity": 0.82,
+      "restlessness": 0.6,
+      "stride_length": 52,
+      "idle_hold": [
+        3.3,
+        7.8
+      ],
+      "gesture_hold": [
+        0.45,
+        1.3
+      ],
+      "friends": [
+        "clara_violinista",
+        "martim"
+      ],
+      "lines": [
+        "Vamos tentar esta melodia de outra maneira.",
+        "Obrigado por ficarem a ouvir!"
+      ]
+    },
+    "rosa": {
+      "style": "garden",
+      "description": "prática e atenta a quem passa",
+      "sociability": 0.74,
+      "curiosity": 0.69,
+      "restlessness": 0.46,
+      "stride_length": 47,
+      "idle_hold": [
+        3.58,
+        8.78
+      ],
+      "gesture_hold": [
+        0.45,
+        1.62
+      ],
+      "friends": [
+        "emilia",
+        "ingrid"
+      ],
+      "lines": [
+        "Deixo a passagem livre e já volto aos vasos.",
+        "As plantas também gostam desta luz."
+      ]
+    },
+    "joao": {
+      "style": "parcel",
+      "description": "apressado mas simpático",
+      "sociability": 0.7,
+      "curiosity": 0.55,
+      "restlessness": 0.84,
+      "stride_length": 61,
+      "idle_hold": [
+        2.82,
+        6.12
+      ],
+      "gesture_hold": [
+        0.45,
+        1.68
+      ],
+      "friends": [
+        "luis",
+        "nuno"
+      ],
+      "lines": [
+        "Tenho uma entrega para esta loja.",
+        "Só preciso que confirmes a morada."
+      ]
+    },
+    "gil": {
+      "style": "snack",
+      "description": "brincalhão e guloso",
+      "sociability": 0.97,
+      "curiosity": 0.73,
+      "restlessness": 0.67,
+      "stride_length": 53,
+      "idle_hold": [
+        3.16,
+        7.31
+      ],
+      "gesture_hold": [
+        0.45,
+        1.25
+      ],
+      "friends": [
+        "tiago",
+        "alexandre",
+        "martim",
+        "afonso"
+      ],
+      "lines": [
+        "Provei um travesseiro e já estou a pensar no seguinte.",
+        "Vamos buscar um gelado para o caminho?"
+      ]
+    },
+    "tiago": {
+      "style": "map",
+      "description": "organizado, põe o grupo a mexer",
+      "sociability": 0.83,
+      "curiosity": 0.87,
+      "restlessness": 0.56,
+      "stride_length": 50,
+      "idle_hold": [
+        3.38,
+        8.08
+      ],
+      "gesture_hold": [
+        0.45,
+        1.47
+      ],
+      "friends": [
+        "gil",
+        "alexandre",
+        "martim",
+        "afonso"
+      ],
+      "lines": [
+        "Primeiro combinamos o caminho, depois perdemo-nos.",
+        "Esperamos pelo resto do grupo aqui."
+      ]
+    },
+    "alexandre": {
+      "style": "camera",
+      "description": "observador com comentários rápidos",
+      "sociability": 0.7,
+      "curiosity": 0.95,
+      "restlessness": 0.45,
+      "stride_length": 51,
+      "idle_hold": [
+        3.6,
+        8.85
+      ],
+      "gesture_hold": [
+        0.45,
+        1.68
+      ],
+      "friends": [
+        "gil",
+        "tiago",
+        "martim",
+        "afonso"
+      ],
+      "lines": [
+        "Fiquem aí, esta fotografia vai ficar boa.",
+        "A luz está mesmo certa agora."
+      ]
+    },
+    "martim": {
+      "style": "coffee",
+      "description": "calmo e bem-humorado",
+      "sociability": 0.84,
+      "curiosity": 0.69,
+      "restlessness": 0.26,
+      "stride_length": 46,
+      "idle_hold": [
+        3.98,
+        10.18
+      ],
+      "gesture_hold": [
+        0.45,
+        1.46
+      ],
+      "friends": [
+        "gil",
+        "tiago",
+        "alexandre",
+        "afonso"
+      ],
+      "lines": [
+        "Essa história pede um café.",
+        "Podemos ouvir mais uma música antes de ir."
+      ]
+    },
+    "afonso": {
+      "style": "collector",
+      "description": "curioso, demora-se nos detalhes",
+      "sociability": 0.66,
+      "curiosity": 0.98,
+      "restlessness": 0.42,
+      "stride_length": 49,
+      "idle_hold": [
+        3.66,
+        9.06
+      ],
+      "gesture_hold": [
+        0.45,
+        1.74
+      ],
+      "friends": [
+        "gil",
+        "tiago",
+        "alexandre",
+        "martim"
+      ],
+      "lines": [
+        "Já viram este desenho no azulejo?",
+        "É só mais uma montra, prometo."
+      ]
+    },
+    "ines_escuteira": {
+      "style": "raffle",
+      "description": "entusiasta e corajosa a abordar pessoas",
+      "sociability": 0.96,
+      "curiosity": 0.81,
+      "restlessness": 0.71,
+      "stride_length": 43,
+      "idle_hold": [
+        3.08,
+        7.03
+      ],
+      "gesture_hold": [
+        0.45,
+        1.26
+      ],
+      "friends": [
+        "pedro_escuteiro",
+        "joana_escuteira"
+      ],
+      "lines": [
+        "Uma rifa para a nossa atividade de Minecraft?",
+        "Depois mostro-vos o que vamos construir."
+      ]
+    },
+    "pedro_escuteiro": {
+      "style": "raffle",
+      "description": "engenhoso, tímido no primeiro contacto",
+      "sociability": 0.61,
+      "curiosity": 0.94,
+      "restlessness": 0.58,
+      "stride_length": 44,
+      "idle_hold": [
+        3.34,
+        7.94
+      ],
+      "gesture_hold": [
+        0.45,
+        1.82
+      ],
+      "friends": [
+        "ines_escuteira",
+        "joana_escuteira"
+      ],
+      "lines": [
+        "Podes escolher o número da rifa.",
+        "Já tenho ideias para a nossa construção no Minecraft."
+      ]
+    },
+    "joana_escuteira": {
+      "style": "leader",
+      "description": "paciente e encorajadora",
+      "sociability": 0.83,
+      "curiosity": 0.74,
+      "restlessness": 0.39,
+      "stride_length": 48,
+      "idle_hold": [
+        3.72,
+        9.27
+      ],
+      "gesture_hold": [
+        0.45,
+        1.47
+      ],
+      "friends": [
+        "ines_escuteira",
+        "pedro_escuteiro"
+      ],
+      "lines": [
+        "Muito bem, agora deixamos a passagem livre.",
+        "É bom ver-vos a organizar a atividade juntos."
+      ]
+    },
+    "sofia_policia": {
+      "style": "police",
+      "description": "atenta, prestável e serena",
+      "sociability": 0.79,
+      "curiosity": 0.78,
+      "restlessness": 0.48,
+      "stride_length": 55,
+      "idle_hold": [
+        3.54,
+        8.64
+      ],
+      "gesture_hold": [
+        0.45,
+        1.54
+      ],
+      "friends": [
+        "teresa",
+        "joao"
+      ],
+      "lines": [
+        "Precisam de ajuda com o caminho?",
+        "O grupo está por ali; eu mostro a direção."
+      ]
+    },
+    "enzo_gelados": {
+      "style": "gelato",
+      "description": "expansivo, lembra-se dos gostos",
+      "sociability": 0.96,
+      "curiosity": 0.73,
+      "restlessness": 0.43,
+      "stride_length": 45,
+      "idle_hold": [
+        3.64,
+        8.99
+      ],
+      "gesture_hold": [
+        0.45,
+        1.26
+      ],
+      "friends": [
+        "gil",
+        "fatima"
+      ],
+      "lines": [
+        "Pistácio, morango ou stracciatella?",
+        "Espero que gostes; escolhi uma bela bola!"
+      ]
+    },
+    "clara_violinista": {
+      "style": "violin",
+      "description": "concentrada, expressiva quando toca",
+      "sociability": 0.72,
+      "curiosity": 0.89,
+      "restlessness": 0.45,
+      "stride_length": 48,
+      "idle_hold": [
+        3.6,
+        8.85
+      ],
+      "gesture_hold": [
+        0.45,
+        1.65
+      ],
+      "friends": [
+        "farid",
+        "beatriz"
+      ],
+      "lines": [
+        "Seguimos a guitarra e depois entro eu.",
+        "Obrigada pelas palmas!"
+      ]
+    },
+    "oliver_turista": {
+      "style": "map",
+      "description": "curioso, faz muitas perguntas",
+      "sociability": 0.77,
+      "curiosity": 0.97,
+      "restlessness": 0.46,
+      "stride_length": 47,
+      "idle_hold": [
+        3.58,
+        8.78
+      ],
+      "gesture_hold": [
+        0.45,
+        1.57
+      ],
+      "friends": [
+        "teresa",
+        "helena_turista",
+        "mariana_montras"
+      ],
+      "lines": [
+        "Esta rua chama-se como?",
+        "Vou guardar esse pormenor no mapa."
+      ]
+    },
+    "helena_turista": {
+      "style": "camera",
+      "description": "afável e muito paciente",
+      "sociability": 0.79,
+      "curiosity": 0.92,
+      "restlessness": 0.18,
+      "stride_length": 39,
+      "idle_hold": [
+        4.14,
+        10.74
+      ],
+      "gesture_hold": [
+        0.45,
+        1.54
+      ],
+      "friends": [
+        "teresa",
+        "oliver_turista"
+      ],
+      "lines": [
+        "Ficamos aqui um instante para uma fotografia?",
+        "Tenho de mostrar esta varanda lá em casa."
+      ]
+    },
+    "mariana_montras": {
+      "style": "shopper",
+      "description": "entusiasmada, indecisa nas compras",
+      "sociability": 0.88,
+      "curiosity": 0.96,
+      "restlessness": 0.5,
+      "stride_length": 48,
+      "idle_hold": [
+        3.5,
+        8.5
+      ],
+      "gesture_hold": [
+        0.45,
+        1.39
+      ],
+      "friends": [
+        "helena_turista",
+        "samira",
+        "nuno"
+      ],
+      "lines": [
+        "Entrei só para ver… mas olha esta peça.",
+        "Qual destas cores escolherias?"
+      ]
+    },
+    "daniel_familia": {
+      "style": "family",
+      "description": "divertido, acompanha o ritmo da criança",
+      "sociability": 0.87,
+      "curiosity": 0.78,
+      "restlessness": 0.46,
+      "stride_length": 48,
+      "idle_hold": [
+        3.58,
+        8.78
+      ],
+      "gesture_hold": [
+        0.45,
+        1.41
+      ],
+      "friends": [
+        "leonor",
+        "matilde"
+      ],
+      "lines": [
+        "Matilde, vamos todos na fotografia?",
+        "Hoje és tu que nos mostras o caminho."
+      ]
+    }
+  }
+}

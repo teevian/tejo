@@ -1,0 +1,5866 @@
+{
+  "description": "50 novas identidades com quotidianos, propósitos, visitantes e atividades distribuídas pela vila.",
+  "places": {
+    "palace": {
+      "at": [
+        9800,
+        2390
+      ],
+      "name": "Palace"
+    },
+    "republic": {
+      "at": [
+        9540,
+        3300
+      ],
+      "name": "Republic"
+    },
+    "padarias": {
+      "at": [
+        9970,
+        4600
+      ],
+      "name": "Padarias"
+    },
+    "martinho": {
+      "at": [
+        6650,
+        4900
+      ],
+      "name": "Martinho"
+    },
+    "ferraria": {
+      "at": [
+        11600,
+        6970
+      ],
+      "name": "Ferraria"
+    },
+    "valencas": {
+      "at": [
+        13700,
+        6630
+      ],
+      "name": "Valencas"
+    },
+    "duche": {
+      "at": [
+        15580,
+        5160
+      ],
+      "name": "Duche"
+    },
+    "liberdade": {
+      "at": [
+        18400,
+        7770
+      ],
+      "name": "Liberdade"
+    },
+    "pipa": {
+      "at": [
+        8400,
+        8500
+      ],
+      "name": "Pipa"
+    },
+    "ferreira": {
+      "at": [
+        9950,
+        9600
+      ],
+      "name": "Ferreira"
+    },
+    "sassetti": {
+      "at": [
+        8470,
+        12150
+      ],
+      "name": "Sassetti"
+    },
+    "market": {
+      "at": [
+        11930,
+        8030
+      ],
+      "name": "Market"
+    },
+    "hortensias": {
+      "at": [
+        5250,
+        10010
+      ],
+      "name": "Largo das Hortênsias"
+    },
+    "azulejos": {
+      "at": [
+        19000,
+        4840
+      ],
+      "name": "Largo dos Azulejos"
+    },
+    "portadas": {
+      "at": [
+        18100,
+        12980
+      ],
+      "name": "Pátio das Portadas"
+    },
+    "jardins": {
+      "at": [
+        13000,
+        12500
+      ],
+      "name": "Largo dos Jardins"
+    },
+    "byron": {
+      "at": [
+        4700,
+        6750
+      ],
+      "name": "Byron"
+    },
+    "lawrence": {
+      "at": [
+        3880,
+        9200
+      ],
+      "name": "Lawrence"
+    },
+    "cinema": {
+      "at": [
+        5260,
+        10040
+      ],
+      "name": "cinema ao ar livre · Hortênsias"
+    },
+    "fruit": {
+      "at": [
+        18060,
+        12850
+      ],
+      "name": "banca de fruta da Dona Ana"
+    },
+    "sweets": {
+      "at": [
+        12950,
+        12380
+      ],
+      "name": "roulotte do Quim"
+    },
+    "football": {
+      "at": [
+        13040,
+        12570
+      ],
+      "name": "campeonato de toques · Jardins"
+    },
+    "chess": {
+      "at": [
+        18500,
+        7820
+      ],
+      "name": "mesa de xadrez do parque"
+    },
+    "flowers": {
+      "at": [
+        18900,
+        4770
+      ],
+      "name": "flores da Rita"
+    }
+  },
+  "people": [
+    {
+      "id": "vera_cinema",
+      "name": "Vera",
+      "age": 39,
+      "role": "projectionist",
+      "festival_art": 1,
+      "atlas": 1,
+      "column": 0,
+      "height": 153,
+      "home": [
+        5080,
+        10010
+      ],
+      "activity": "a preparar e apresentar o cinema da vila",
+      "greeting": "Vera: Já confirmei o projetor três vezes. A quarta é por superstição.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 8.0,
+      "purpose": "preparar e apresentar o cinema da vila",
+      "appearance": "Portuguese woman, curly red bob, round glasses, purple dungarees over cream tee, film reel and clipboard",
+      "tourist": false,
+      "personality": {
+        "style": "notes",
+        "description": "preparar e apresentar o cinema da vila",
+        "sociability": 0.35,
+        "curiosity": 0.45,
+        "restlessness": 0.14,
+        "stride_length": 40,
+        "idle_hold": [
+          3.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "luz_cinefila"
+        ],
+        "lines": [
+          "Já confirmei o projetor três vezes. A quarta é por superstição.",
+          "Hoje há cinema debaixo das estrelas, mesmo sem teto de sala."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "cinema",
+          "activity": "a preparar e apresentar o cinema da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "cinema",
+          "activity": "a preparar e apresentar o cinema da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a preparar e apresentar o cinema da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:00",
+          "place": "cinema",
+          "activity": "a projetar a curta da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:30",
+          "place": "home",
+          "activity": "a descansar depois de arrumar o cinema",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "goncalo_chamada",
+      "name": "Gonçalo",
+      "age": 34,
+      "role": "phone",
+      "festival_art": 1,
+      "atlas": 1,
+      "column": 1,
+      "height": 156,
+      "home": [
+        13615,
+        6672
+      ],
+      "activity": "a combinar um encontro por telefone",
+      "greeting": "Gonçalo: Estou mesmo ao pé da árvore. Qual árvore? Essa é a parte difícil.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 75,
+      "wait_seconds": 9.7,
+      "purpose": "combinar um encontro por telefone",
+      "appearance": "slim olive-skinned man, shaved head, mustard rain jacket, navy jeans, phone to ear",
+      "tourist": false,
+      "personality": {
+        "style": "phone",
+        "description": "combinar um encontro por telefone",
+        "sociability": 0.43,
+        "curiosity": 0.55,
+        "restlessness": 0.26,
+        "stride_length": 41,
+        "idle_hold": [
+          4.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "chika_turista"
+        ],
+        "lines": [
+          "Estou mesmo ao pé da árvore. Qual árvore? Essa é a parte difícil.",
+          "Mãe, já almocei. Sim, também comi sopa."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:12",
+          "place": "valencas",
+          "activity": "a combinar um encontro por telefone",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:13",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "duche",
+          "activity": "a continuar o passeio e combinar um encontro por telefone",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "valencas",
+          "activity": "a combinar um encontro por telefone",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "valencas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "ana_fruta",
+      "name": "Dona Ana",
+      "age": 62,
+      "role": "fruit_vendor",
+      "festival_art": 1,
+      "atlas": 1,
+      "column": 2,
+      "height": 159,
+      "home": [
+        18100,
+        13064
+      ],
+      "activity": "a vender fruta e guardar as melhores maçãs para os vizinhos",
+      "greeting": "Dona Ana: Esta maçã estala só de olhar para ela.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 11.4,
+      "purpose": "vender fruta e guardar as melhores maçãs para os vizinhos",
+      "appearance": "stout older Black Portuguese woman, gray braids, green patterned dress, orange apron, basket of apples",
+      "tourist": false,
+      "personality": {
+        "style": "fruit",
+        "description": "vender fruta e guardar as melhores maçãs para os vizinhos",
+        "sociability": 0.52,
+        "curiosity": 0.65,
+        "restlessness": 0.38,
+        "stride_length": 42,
+        "idle_hold": [
+          5.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "carolina_aguarela"
+        ],
+        "lines": [
+          "Esta maçã estala só de olhar para ela.",
+          "A fruta não precisa de embrulho bonito, precisa de estar boa."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "fruit",
+          "activity": "a vender fruta e guardar as melhores maçãs para os vizinhos",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "fruit",
+          "activity": "a vender fruta e guardar as melhores maçãs para os vizinhos",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "fruit",
+          "activity": "a vender fruta e guardar as melhores maçãs para os vizinhos",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "quim_doces",
+      "name": "Quim",
+      "age": 51,
+      "role": "sweets_vendor",
+      "festival_art": 1,
+      "atlas": 1,
+      "column": 3,
+      "height": 162,
+      "home": [
+        13085,
+        12500
+      ],
+      "activity": "a abrir a roulotte de doces e servir farturas",
+      "greeting": "Quim: Uma fartura resolve metade dos problemas. A outra metade pede canela.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 13.1,
+      "purpose": "abrir a roulotte de doces e servir farturas",
+      "appearance": "stocky man, salt-and-pepper mustache, white bakery cap, burgundy striped shirt, cream apron, tray of pastries",
+      "tourist": false,
+      "personality": {
+        "style": "bread",
+        "description": "abrir a roulotte de doces e servir farturas",
+        "sociability": 0.6,
+        "curiosity": 0.75,
+        "restlessness": 0.5,
+        "stride_length": 43,
+        "idle_hold": [
+          3.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "filipe_arbitro"
+        ],
+        "lines": [
+          "Uma fartura resolve metade dos problemas. A outra metade pede canela.",
+          "Trouxe guardanapos a mais. Sei como isto acaba."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "sweets",
+          "activity": "a abrir a roulotte de doces e servir farturas",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "sweets",
+          "activity": "a abrir a roulotte de doces e servir farturas",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "sweets",
+          "activity": "a abrir a roulotte de doces e servir farturas",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "rafa_toques",
+      "name": "Rafa",
+      "age": 27,
+      "role": "organizer",
+      "festival_art": 1,
+      "atlas": 1,
+      "column": 4,
+      "height": 153,
+      "home": [
+        13170,
+        12542
+      ],
+      "activity": "a organizar o campeonato de toques e anunciar resultados",
+      "greeting": "Rafa: Aqui conta a habilidade, mas também vale rir quando a bola foge.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 90,
+      "wait_seconds": 14.8,
+      "purpose": "organizar o campeonato de toques e anunciar resultados",
+      "appearance": "athletic brown-skinned man, short curls, coral sports jacket, black shorts, clipboard, whistle around neck",
+      "tourist": false,
+      "personality": {
+        "style": "notes",
+        "description": "organizar o campeonato de toques e anunciar resultados",
+        "sociability": 0.69,
+        "curiosity": 0.85,
+        "restlessness": 0.62,
+        "stride_length": 44,
+        "idle_hold": [
+          4.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "lia_comentadora"
+        ],
+        "lines": [
+          "Aqui conta a habilidade, mas também vale rir quando a bola foge.",
+          "Te e Jo, há sempre lugar para mais uma tentativa!"
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "football",
+          "activity": "a organizar o campeonato de toques e anunciar resultados",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "football",
+          "activity": "a organizar o campeonato de toques e anunciar resultados",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "football",
+          "activity": "a organizar o campeonato de toques e anunciar resultados",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "to_tuktuk",
+      "name": "Tó",
+      "age": 56,
+      "role": "driver",
+      "festival_art": 2,
+      "atlas": 1,
+      "column": 0,
+      "height": 156,
+      "home": [
+        9630,
+        2474
+      ],
+      "activity": "a guiar o tuk-tuk verde e meter conversa com o Te e o Jo",
+      "greeting": "Tó: Olhem quem são eles! Já vos contei a história desta curva?",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 16.5,
+      "purpose": "guiar o tuk-tuk verde e meter conversa com o Te e o Jo",
+      "appearance": "cheerful Portuguese man, gray mustache, flat cap, teal vest over pale shirt, tan trousers, car keys",
+      "tourist": false,
+      "personality": {
+        "style": "map",
+        "description": "guiar o tuk-tuk verde e meter conversa com o Te e o Jo",
+        "sociability": 0.78,
+        "curiosity": 0.45,
+        "restlessness": 0.74,
+        "stride_length": 45,
+        "idle_hold": [
+          5.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "maya_tuktuk"
+        ],
+        "lines": [
+          "Olhem quem são eles! Já vos contei a história desta curva?",
+          "Prometo que é só uma pergunta. Talvez duas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "palace",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "palace",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "palace",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "vehicle": "tuk_green"
+    },
+    {
+      "id": "maya_tuktuk",
+      "name": "Maya",
+      "age": 32,
+      "role": "driver",
+      "festival_art": 2,
+      "atlas": 1,
+      "column": 1,
+      "height": 159,
+      "home": [
+        15495,
+        5160
+      ],
+      "activity": "a conduzir visitas de tuk-tuk e explicar os recantos da vila",
+      "greeting": "Maya: A melhor paragem nem sempre aparece no roteiro.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 75,
+      "wait_seconds": 8.0,
+      "purpose": "conduzir visitas de tuk-tuk e explicar os recantos da vila",
+      "appearance": "South Asian woman, dark braid, ochre utility jacket, blue scarf, black trousers, map and car keys",
+      "tourist": false,
+      "personality": {
+        "style": "map",
+        "description": "conduzir visitas de tuk-tuk e explicar os recantos da vila",
+        "sociability": 0.86,
+        "curiosity": 0.55,
+        "restlessness": 0.14,
+        "stride_length": 46,
+        "idle_hold": [
+          3.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "to_tuktuk"
+        ],
+        "lines": [
+          "A melhor paragem nem sempre aparece no roteiro.",
+          "Hoje faço a volta das fontes e das histórias pequenas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "duche",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "duche",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "duche",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "vehicle": "tuk_yellow"
+    },
+    {
+      "id": "joaquim_carruagem",
+      "name": "Joaquim",
+      "age": 68,
+      "role": "carriage_driver",
+      "festival_art": 2,
+      "atlas": 1,
+      "column": 2,
+      "height": 162,
+      "home": [
+        18400,
+        7812
+      ],
+      "activity": "a conduzir a carroça turística e dar descanso ao cavalo",
+      "greeting": "Joaquim: O Castanho conhece este passeio melhor do que eu.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 9.7,
+      "purpose": "conduzir a carroça turística e dar descanso ao cavalo",
+      "appearance": "elderly man, silver beard, brown felt hat, tweed waistcoat, white shirt, brown trousers, coiled reins",
+      "tourist": false,
+      "personality": {
+        "style": "map",
+        "description": "conduzir a carroça turística e dar descanso ao cavalo",
+        "sociability": 0.35,
+        "curiosity": 0.65,
+        "restlessness": 0.26,
+        "stride_length": 47,
+        "idle_hold": [
+          4.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [],
+        "lines": [
+          "O Castanho conhece este passeio melhor do que eu.",
+          "A próxima paragem também é para beber água."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "liberdade",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "liberdade",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "liberdade",
+          "activity": "a conduzir visitas pela vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "vehicle": "carriage"
+    },
+    {
+      "id": "bea_cao",
+      "name": "Bea",
+      "age": 25,
+      "role": "dog_walker",
+      "festival_art": 2,
+      "atlas": 1,
+      "column": 3,
+      "height": 153,
+      "home": [
+        8555,
+        12234
+      ],
+      "activity": "a passear a cadela Bolacha e deixá-la cheirar os jardins",
+      "greeting": "Bea: A Bolacha escolhe o percurso. Eu só seguro na trela.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 85,
+      "wait_seconds": 11.4,
+      "purpose": "passear a cadela Bolacha e deixá-la cheirar os jardins",
+      "appearance": "young white woman with freckles and auburn ponytail, blue denim overalls, yellow tee, green leash handle",
+      "tourist": false,
+      "personality": {
+        "style": "dog",
+        "description": "passear a cadela Bolacha e deixá-la cheirar os jardins",
+        "sociability": 0.43,
+        "curiosity": 0.75,
+        "restlessness": 0.38,
+        "stride_length": 48,
+        "idle_hold": [
+          5.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [],
+        "lines": [
+          "A Bolacha escolhe o percurso. Eu só seguro na trela.",
+          "Se houver um cheiro interessante, a nossa agenda muda."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:12",
+          "place": "sassetti",
+          "activity": "a passear a cadela Bolacha e deixá-la cheirar os jardins",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:26",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "activity": "a continuar o passeio e passear a cadela Bolacha e deixá-la cheirar os jardins",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "sassetti",
+          "activity": "a passear a cadela Bolacha e deixá-la cheirar os jardins",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "sassetti",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "dog": "bolacha"
+    },
+    {
+      "id": "idalina_xadrez",
+      "name": "Idalina",
+      "age": 73,
+      "role": "chess",
+      "festival_art": 2,
+      "atlas": 1,
+      "column": 4,
+      "height": 156,
+      "home": [
+        18570,
+        7770
+      ],
+      "activity": "a desafiar visitantes para uma partida de xadrez",
+      "greeting": "Idalina: A pressa é inimiga do cavalo. Do tabuleiro, claro.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 90,
+      "wait_seconds": 13.1,
+      "purpose": "desafiar visitantes para uma partida de xadrez",
+      "appearance": "older East Asian woman, silver bun, burgundy cardigan, linen skirt, chess knight in hand",
+      "tourist": false,
+      "personality": {
+        "style": "chess",
+        "description": "desafiar visitantes para uma partida de xadrez",
+        "sociability": 0.52,
+        "curiosity": 0.85,
+        "restlessness": 0.5,
+        "stride_length": 49,
+        "idle_hold": [
+          3.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "A pressa é inimiga do cavalo. Do tabuleiro, claro.",
+          "Dizem que jogo devagar. Eu digo que estou a preparar uma surpresa."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "chess",
+          "activity": "a desafiar visitantes para uma partida de xadrez",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "chess",
+          "activity": "a desafiar visitantes para uma partida de xadrez",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "chess",
+          "activity": "a desafiar visitantes para uma partida de xadrez",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "luz_cinefila",
+      "name": "Luz",
+      "age": 45,
+      "role": "cinema",
+      "festival_art": 3,
+      "atlas": 1,
+      "column": 0,
+      "height": 159,
+      "home": [
+        5080,
+        10052
+      ],
+      "activity": "a anotar os pormenores dos filmes e conversar depois da sessão",
+      "greeting": "Luz: Fico sempre até ao último nome dos créditos.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 70,
+      "wait_seconds": 14.8,
+      "purpose": "anotar os pormenores dos filmes e conversar depois da sessão",
+      "appearance": "woman with deep brown skin, short natural hair, turquoise sweater, gray trousers, red film notebook",
+      "tourist": false,
+      "personality": {
+        "style": "cinema",
+        "description": "anotar os pormenores dos filmes e conversar depois da sessão",
+        "sociability": 0.6,
+        "curiosity": 0.45,
+        "restlessness": 0.62,
+        "stride_length": 50,
+        "idle_hold": [
+          4.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "vera_cinema",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "Fico sempre até ao último nome dos créditos.",
+          "Um filme ao ar livre também tem grilos na banda sonora."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "hortensias",
+          "activity": "a anotar os pormenores dos filmes e conversar depois da sessão",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "lawrence",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "kenji_visitante",
+      "name": "Kenji",
+      "age": 43,
+      "role": "cinema",
+      "festival_art": 3,
+      "atlas": 1,
+      "column": 1,
+      "height": 162,
+      "home": [
+        3795,
+        9284
+      ],
+      "activity": "a fotografar a vila e ver cinema com a filha Emi",
+      "greeting": "Kenji: A Emi já escolheu o melhor lugar para ver o ecrã.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 75,
+      "wait_seconds": 16.5,
+      "purpose": "fotografar a vila e ver cinema com a filha Emi",
+      "appearance": "Japanese man, short black hair, sage overshirt, cream chinos, camera strap, folded cinema leaflet",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "fotografar a vila e ver cinema com a filha Emi",
+        "sociability": 0.69,
+        "curiosity": 0.55,
+        "restlessness": 0.74,
+        "stride_length": 51,
+        "idle_hold": [
+          5.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "luz_cinefila",
+          "noor_visitante",
+          "artur_cinema"
+        ],
+        "lines": [
+          "A Emi já escolheu o melhor lugar para ver o ecrã.",
+          "Quero guardar a luz destas ruas, não apenas as fachadas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "lawrence",
+          "activity": "a fotografar a vila e ver cinema com a filha Emi",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "hortensias",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "noor_visitante",
+      "name": "Noor",
+      "age": 29,
+      "role": "cinema",
+      "festival_art": 3,
+      "atlas": 1,
+      "column": 2,
+      "height": 153,
+      "home": [
+        4700,
+        6750
+      ],
+      "activity": "a descobrir os cafés e assistir à curta da noite",
+      "greeting": "Noor: O mapa dos cafés já está mais gasto do que o mapa da vila.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 80,
+      "wait_seconds": 8.0,
+      "purpose": "descobrir os cafés e assistir à curta da noite",
+      "appearance": "young North African woman, terracotta hijab, blue long coat, beige trousers, small popcorn paper bag",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "descobrir os cafés e assistir à curta da noite",
+        "sociability": 0.78,
+        "curiosity": 0.65,
+        "restlessness": 0.14,
+        "stride_length": 52,
+        "idle_hold": [
+          3.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "artur_cinema"
+        ],
+        "lines": [
+          "O mapa dos cafés já está mais gasto do que o mapa da vila.",
+          "Se começar a chover, protejo primeiro as pipocas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "byron",
+          "activity": "a descobrir os cafés e assistir à curta da noite",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "lawrence",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "artur_cinema",
+      "name": "Artur",
+      "age": 79,
+      "role": "cinema",
+      "festival_art": 3,
+      "atlas": 1,
+      "column": 3,
+      "height": 156,
+      "home": [
+        5335,
+        10052
+      ],
+      "activity": "a chegar cedo ao cinema e contar histórias de projeções antigas",
+      "greeting": "Artur: Antes também havia cinema sem teto. Chamávamos-lhe verão.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 85,
+      "wait_seconds": 9.7,
+      "purpose": "chegar cedo ao cinema e contar histórias de projeções antigas",
+      "appearance": "elderly white man, white hair, flat cap, green cardigan, brown corduroy trousers, walking cane",
+      "tourist": false,
+      "personality": {
+        "style": "cinema",
+        "description": "chegar cedo ao cinema e contar histórias de projeções antigas",
+        "sociability": 0.86,
+        "curiosity": 0.75,
+        "restlessness": 0.26,
+        "stride_length": 53,
+        "idle_hold": [
+          4.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "Antes também havia cinema sem teto. Chamávamos-lhe verão.",
+          "Não estou a dormir, estou a ouvir os diálogos de olhos fechados."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "hortensias",
+          "activity": "a chegar cedo ao cinema e contar histórias de projeções antigas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "lawrence",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "emma_visitante",
+      "name": "Emma",
+      "age": 65,
+      "role": "cinema",
+      "festival_art": 3,
+      "atlas": 1,
+      "column": 4,
+      "height": 159,
+      "home": [
+        8640,
+        12234
+      ],
+      "activity": "a passear pelos jardins e descobrir filmes portugueses",
+      "greeting": "Emma: Hoje dei férias ao relógio, mas não ao horário do cinema.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 90,
+      "wait_seconds": 11.4,
+      "purpose": "passear pelos jardins e descobrir filmes portugueses",
+      "appearance": "older white woman, short curly gray hair, lilac raincoat, dark slacks, reading glasses and folded program",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "passear pelos jardins e descobrir filmes portugueses",
+        "sociability": 0.35,
+        "curiosity": 0.85,
+        "restlessness": 0.38,
+        "stride_length": 54,
+        "idle_hold": [
+          5.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "Hoje dei férias ao relógio, mas não ao horário do cinema.",
+          "Trouxe um casaco para mim e outro para quem disser que não tem frio."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "sassetti",
+          "activity": "a passear pelos jardins e descobrir filmes portugueses",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "camilo_cinema",
+      "name": "Camilo",
+      "age": 41,
+      "role": "cinema",
+      "festival_art": 4,
+      "atlas": 1,
+      "column": 0,
+      "height": 162,
+      "home": [
+        9780,
+        9600
+      ],
+      "activity": "a fazer um piquenique com a Yara antes da sessão",
+      "greeting": "Camilo: A manta também serve de mesa, de capa e de reserva de lugares.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 70,
+      "wait_seconds": 13.1,
+      "purpose": "fazer um piquenique com a Yara antes da sessão",
+      "appearance": "Latino father, dark wavy hair, green checked shirt, tan trousers, rolled picnic blanket",
+      "tourist": false,
+      "personality": {
+        "style": "cinema",
+        "description": "fazer um piquenique com a Yara antes da sessão",
+        "sociability": 0.43,
+        "curiosity": 0.45,
+        "restlessness": 0.5,
+        "stride_length": 40,
+        "idle_hold": [
+          3.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "A manta também serve de mesa, de capa e de reserva de lugares.",
+          "A Yara escolhe o lanche; eu escolho quem leva a mochila."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "ferreira",
+          "activity": "a fazer um piquenique com a Yara antes da sessão",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "pipa",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "emi_cinema",
+      "name": "Emi",
+      "age": 12,
+      "role": "cinema",
+      "festival_art": 4,
+      "atlas": 1,
+      "column": 1,
+      "height": 112,
+      "home": [
+        3865,
+        9324
+      ],
+      "activity": "a desenhar os lugares visitados e ir ao cinema com o pai",
+      "greeting": "Emi: O meu desenho do palácio ficou com uma chaminé a mais.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 75,
+      "wait_seconds": 14.8,
+      "purpose": "desenhar os lugares visitados e ir ao cinema com o pai",
+      "appearance": "Japanese girl age twelve, straight black bob, sky blue hoodie, purple leggings, yellow trainers, small juice carton",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "desenhar os lugares visitados e ir ao cinema com o pai",
+        "sociability": 0.52,
+        "curiosity": 0.55,
+        "restlessness": 0.62,
+        "stride_length": 41,
+        "idle_hold": [
+          4.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "O meu desenho do palácio ficou com uma chaminé a mais.",
+          "Já perguntei ao pai se podemos ficar até ao fim. Três vezes."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "lawrence",
+          "activity": "a fotografar a vila e ver cinema com a filha Emi",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "hortensias",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "guardian": "kenji_visitante",
+      "seated": true
+    },
+    {
+      "id": "luca_visitante",
+      "name": "Luca",
+      "age": 23,
+      "role": "cinema",
+      "festival_art": 4,
+      "atlas": 1,
+      "column": 2,
+      "height": 156,
+      "home": [
+        8400,
+        8584
+      ],
+      "activity": "a descobrir fontes, provar doces e conhecer pessoas no cinema",
+      "greeting": "Luca: Vim procurar uma fonte e encontrei três lanches pelo caminho.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 80,
+      "wait_seconds": 16.5,
+      "purpose": "descobrir fontes, provar doces e conhecer pessoas no cinema",
+      "appearance": "young Italian man, tousled dark hair, rust overshirt, navy trousers, cream canvas tote",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "descobrir fontes, provar doces e conhecer pessoas no cinema",
+        "sociability": 0.6,
+        "curiosity": 0.65,
+        "restlessness": 0.74,
+        "stride_length": 42,
+        "idle_hold": [
+          5.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "Vim procurar uma fonte e encontrei três lanches pelo caminho.",
+          "Ainda não sei dizer travesseiro sem pensar numa cama."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "pipa",
+          "activity": "a descobrir fontes, provar doces e conhecer pessoas no cinema",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "deborah_visitante",
+      "name": "Deborah",
+      "age": 58,
+      "role": "cinema",
+      "festival_art": 4,
+      "atlas": 1,
+      "column": 3,
+      "height": 159,
+      "home": [
+        3965,
+        9200
+      ],
+      "activity": "a escrever um diário de viagem e escolher um filme pela conversa",
+      "greeting": "Deborah: O melhor do diário são os nomes das pessoas que conheci.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 85,
+      "wait_seconds": 8.0,
+      "purpose": "escrever um diário de viagem e escolher um filme pela conversa",
+      "appearance": "Black British woman, short silver curls, round red glasses, navy jacket, patterned orange scarf, travel journal",
+      "tourist": true,
+      "personality": {
+        "style": "cinema",
+        "description": "escrever um diário de viagem e escolher um filme pela conversa",
+        "sociability": 0.69,
+        "curiosity": 0.75,
+        "restlessness": 0.14,
+        "stride_length": 43,
+        "idle_hold": [
+          3.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "O melhor do diário são os nomes das pessoas que conheci.",
+          "A minha crítica do filme começa sempre pelo lanche."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "lawrence",
+          "activity": "a escrever um diário de viagem e escolher um filme pela conversa",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "hortensias",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "seated": true
+    },
+    {
+      "id": "yara_cinema",
+      "name": "Yara",
+      "age": 11,
+      "role": "cinema",
+      "festival_art": 4,
+      "atlas": 1,
+      "column": 4,
+      "height": 112,
+      "home": [
+        9850,
+        9640
+      ],
+      "activity": "a brincar com o pai e escolher o lugar no cinema",
+      "greeting": "Yara: Eu guardo os lugares. As pipocas guardam-se sozinhas na minha barriga.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -85,
+          25
+        ],
+        [
+          80,
+          35
+        ]
+      ],
+      "speed": 90,
+      "wait_seconds": 9.7,
+      "purpose": "brincar com o pai e escolher o lugar no cinema",
+      "appearance": "brown-skinned girl age eleven, curly pigtails, pink sweatshirt, denim skirt over leggings, green shoes, popcorn bag",
+      "tourist": false,
+      "personality": {
+        "style": "cinema",
+        "description": "brincar com o pai e escolher o lugar no cinema",
+        "sociability": 0.78,
+        "curiosity": 0.85,
+        "restlessness": 0.26,
+        "stride_length": 44,
+        "idle_hold": [
+          4.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "luz_cinefila",
+          "kenji_visitante",
+          "noor_visitante"
+        ],
+        "lines": [
+          "Eu guardo os lugares. As pipocas guardam-se sozinhas na minha barriga.",
+          "Se houver um dragão no filme, vou precisar de mais pipocas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "ferreira",
+          "activity": "a fazer um piquenique com a Yara antes da sessão",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "pipa",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "cinema",
+          "activity": "a chegar e escolher lugar para o cinema",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "cinema",
+          "activity": "a ver a sessão de cinema ao ar livre",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "cinema",
+          "activity": "a conversar sobre o filme antes de regressar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ],
+      "guardian": "camilo_cinema",
+      "seated": true
+    },
+    {
+      "id": "mateo_turista",
+      "name": "Mateo",
+      "age": 31,
+      "role": "tourist",
+      "festival_art": 5,
+      "atlas": 1,
+      "column": 0,
+      "height": 153,
+      "home": [
+        18830,
+        4924
+      ],
+      "activity": "a procurar padrões de azulejos fora das ruas mais visitadas",
+      "greeting": "Mateo: Achei uma rua bonita por engano. Vou fingir que era o plano.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 70,
+      "wait_seconds": 11.4,
+      "purpose": "procurar padrões de azulejos fora das ruas mais visitadas",
+      "appearance": "Latino man, long dark hair in bun, coral tee, blue hiking shorts, purple backpack, paper map",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "procurar padrões de azulejos fora das ruas mais visitadas",
+        "sociability": 0.86,
+        "curiosity": 0.45,
+        "restlessness": 0.38,
+        "stride_length": 45,
+        "idle_hold": [
+          5.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "zoe_turista",
+          "omar_turista",
+          "greta_turista"
+        ],
+        "lines": [
+          "Achei uma rua bonita por engano. Vou fingir que era o plano.",
+          "Cada azulejo tem uma pequena maneira de se repetir."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:12",
+          "place": "azulejos",
+          "activity": "a procurar padrões de azulejos fora das ruas mais visitadas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:26",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "liberdade",
+          "activity": "a continuar o passeio e procurar padrões de azulejos fora das ruas mais visitadas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "16:50",
+          "place": "azulejos",
+          "activity": "a procurar padrões de azulejos fora das ruas mais visitadas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "azulejos",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "zoe_turista",
+      "name": "Zoé",
+      "age": 26,
+      "role": "tourist",
+      "festival_art": 5,
+      "atlas": 1,
+      "column": 1,
+      "height": 156,
+      "home": [
+        18015,
+        12980
+      ],
+      "activity": "a seguir um roteiro de pátios e falar com moradores",
+      "greeting": "Zoé: O meu roteiro diz para virar à esquerda. A curiosidade diz à direita.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 75,
+      "wait_seconds": 13.1,
+      "purpose": "seguir um roteiro de pátios e falar com moradores",
+      "appearance": "white woman with short ginger hair, green linen shirt, cream shorts, burgundy backpack, sketch map",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "seguir um roteiro de pátios e falar com moradores",
+        "sociability": 0.35,
+        "curiosity": 0.55,
+        "restlessness": 0.5,
+        "stride_length": 46,
+        "idle_hold": [
+          3.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "mateo_turista",
+          "omar_turista",
+          "greta_turista"
+        ],
+        "lines": [
+          "O meu roteiro diz para virar à esquerda. A curiosidade diz à direita.",
+          "A melhor fotografia ainda está depois da próxima esquina."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "portadas",
+          "activity": "a seguir um roteiro de pátios e falar com moradores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:39",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "portadas",
+          "activity": "a continuar o passeio e seguir um roteiro de pátios e falar com moradores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "portadas",
+          "activity": "a seguir um roteiro de pátios e falar com moradores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "portadas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "chika_turista",
+      "name": "Chika",
+      "age": 35,
+      "role": "phone",
+      "festival_art": 5,
+      "atlas": 1,
+      "column": 2,
+      "height": 159,
+      "home": [
+        13000,
+        12542
+      ],
+      "activity": "a gravar mensagens de viagem para a irmã",
+      "greeting": "Chika: Estou a gravar só o som da vila. Sim, também se ouve a minha fome.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 14.8,
+      "purpose": "gravar mensagens de viagem para a irmã",
+      "appearance": "Japanese woman, black ponytail, purple windbreaker, mustard trousers, white sneakers, phone",
+      "tourist": true,
+      "personality": {
+        "style": "phone",
+        "description": "gravar mensagens de viagem para a irmã",
+        "sociability": 0.43,
+        "curiosity": 0.65,
+        "restlessness": 0.62,
+        "stride_length": 47,
+        "idle_hold": [
+          4.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "goncalo_chamada"
+        ],
+        "lines": [
+          "Estou a gravar só o som da vila. Sim, também se ouve a minha fome.",
+          "A minha irmã pediu fotografias e recebeu vinte minutos de áudio."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:12",
+          "place": "jardins",
+          "activity": "a gravar mensagens de viagem para a irmã",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:52",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "jardins",
+          "activity": "a continuar o passeio e gravar mensagens de viagem para a irmã",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:12",
+          "place": "jardins",
+          "activity": "a gravar mensagens de viagem para a irmã",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:40",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "jardins",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "omar_turista",
+      "name": "Omar",
+      "age": 47,
+      "role": "tourist",
+      "festival_art": 5,
+      "atlas": 1,
+      "column": 3,
+      "height": 162,
+      "home": [
+        13785,
+        6714
+      ],
+      "activity": "a comparar as histórias das casas e partilhá-las com outros turistas",
+      "greeting": "Omar: A placa conta uma história, a varanda conta outra.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 85,
+      "wait_seconds": 16.5,
+      "purpose": "comparar as histórias das casas e partilhá-las com outros turistas",
+      "appearance": "Arab man, neat black beard, round glasses, cream Panama hat, cobalt polo, olive trousers, guidebook",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "comparar as histórias das casas e partilhá-las com outros turistas",
+        "sociability": 0.52,
+        "curiosity": 0.75,
+        "restlessness": 0.74,
+        "stride_length": 48,
+        "idle_hold": [
+          5.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "greta_turista"
+        ],
+        "lines": [
+          "A placa conta uma história, a varanda conta outra.",
+          "O meu guia pesa pouco. As perguntas pesam mais."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:24",
+          "place": "valencas",
+          "activity": "a comparar as histórias das casas e partilhá-las com outros turistas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "13:05",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "duche",
+          "activity": "a continuar o passeio e comparar as histórias das casas e partilhá-las com outros turistas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "valencas",
+          "activity": "a comparar as histórias das casas e partilhá-las com outros turistas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "valencas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "greta_turista",
+      "name": "Greta",
+      "age": 63,
+      "role": "tourist",
+      "festival_art": 5,
+      "atlas": 1,
+      "column": 4,
+      "height": 153,
+      "home": [
+        15750,
+        5160
+      ],
+      "activity": "a observar aves e os jardins da Volta do Duche",
+      "greeting": "Greta: Já vi três espécies de pássaros e quatro tipos de bolo.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 90,
+      "wait_seconds": 8.0,
+      "purpose": "observar aves e os jardins da Volta do Duche",
+      "appearance": "older white woman, short gray hair, yellow rain hat, red hiking coat, gray trousers, binoculars",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "observar aves e os jardins da Volta do Duche",
+        "sociability": 0.6,
+        "curiosity": 0.85,
+        "restlessness": 0.14,
+        "stride_length": 49,
+        "idle_hold": [
+          3.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "Já vi três espécies de pássaros e quatro tipos de bolo.",
+          "Os pássaros não posam, mas eu tenho paciência."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:36",
+          "place": "duche",
+          "activity": "a observar aves e os jardins da Volta do Duche",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "valencas",
+          "activity": "a continuar o passeio e observar aves e os jardins da Volta do Duche",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:34",
+          "place": "duche",
+          "activity": "a observar aves e os jardins da Volta do Duche",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "20:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "duche",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "bruno_fotografo",
+      "name": "Bruno",
+      "age": 38,
+      "role": "camera",
+      "festival_art": 6,
+      "atlas": 1,
+      "column": 0,
+      "height": 156,
+      "home": [
+        9800,
+        4642
+      ],
+      "activity": "a fotografar portas e esperar que os turistas saiam do enquadramento",
+      "greeting": "Bruno: A porta está perfeita. Só falta convencer a vila a ficar quieta.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 9.7,
+      "purpose": "fotografar portas e esperar que os turistas saiam do enquadramento",
+      "appearance": "Black man, shaved head, ochre shirt, charcoal trousers, large camera and crossbody bag",
+      "tourist": true,
+      "personality": {
+        "style": "camera",
+        "description": "fotografar portas e esperar que os turistas saiam do enquadramento",
+        "sociability": 0.69,
+        "curiosity": 0.45,
+        "restlessness": 0.26,
+        "stride_length": 50,
+        "idle_hold": [
+          4.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "A porta está perfeita. Só falta convencer a vila a ficar quieta.",
+          "Uma sombra pode fazer metade da fotografia."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:48",
+          "place": "padarias",
+          "activity": "a fotografar portas e esperar que os turistas saiam do enquadramento",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:13",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "martinho",
+          "activity": "a continuar o passeio e fotografar portas e esperar que os turistas saiam do enquadramento",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "16:50",
+          "place": "padarias",
+          "activity": "a fotografar portas e esperar que os turistas saiam do enquadramento",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "padarias",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "dora_turista",
+      "name": "Dora",
+      "age": 30,
+      "role": "tourist",
+      "festival_art": 6,
+      "atlas": 1,
+      "column": 1,
+      "height": 159,
+      "home": [
+        18315,
+        7854
+      ],
+      "activity": "a procurar bancos ao sol e aprender nomes de árvores",
+      "greeting": "Dora: Estou a fazer uma coleção de bancos com boa vista.",
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 75,
+      "wait_seconds": 11.4,
+      "purpose": "procurar bancos ao sol e aprender nomes de árvores",
+      "appearance": "white woman, chestnut bob, red beret, denim jacket, green trousers, vintage compact camera",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "procurar bancos ao sol e aprender nomes de árvores",
+        "sociability": 0.78,
+        "curiosity": 0.55,
+        "restlessness": 0.38,
+        "stride_length": 51,
+        "idle_hold": [
+          5.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "Estou a fazer uma coleção de bancos com boa vista.",
+          "O meu passeio tem paragens obrigatórias para olhar para cima."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "liberdade",
+          "activity": "a procurar bancos ao sol e aprender nomes de árvores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:26",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "azulejos",
+          "activity": "a continuar o passeio e procurar bancos ao sol e aprender nomes de árvores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "liberdade",
+          "activity": "a procurar bancos ao sol e aprender nomes de árvores",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "liberdade",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "salim_turista",
+      "name": "Salim",
+      "age": 71,
+      "role": "tourist",
+      "festival_art": 6,
+      "atlas": 1,
+      "column": 2,
+      "height": 162,
+      "home": [
+        8470,
+        12150
+      ],
+      "activity": "a percorrer os jardins devagar e reconhecer plantas",
+      "greeting": "Salim: O caminho fica mais bonito quando temos tempo para o ver.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 80,
+      "wait_seconds": 13.1,
+      "purpose": "percorrer os jardins devagar e reconhecer plantas",
+      "appearance": "elderly brown-skinned man, white beard, tan brimmed hat, pale blue shirt, brown trousers, carved walking stick",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "percorrer os jardins devagar e reconhecer plantas",
+        "sociability": 0.86,
+        "curiosity": 0.65,
+        "restlessness": 0.5,
+        "stride_length": 52,
+        "idle_hold": [
+          3.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "O caminho fica mais bonito quando temos tempo para o ver.",
+          "Esta planta lembra-me uma conversa antiga."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:12",
+          "place": "sassetti",
+          "activity": "a percorrer os jardins devagar e reconhecer plantas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:39",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "ferreira",
+          "activity": "a continuar o passeio e percorrer os jardins devagar e reconhecer plantas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:12",
+          "place": "sassetti",
+          "activity": "a percorrer os jardins devagar e reconhecer plantas",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:40",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "sassetti",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "eva_historia",
+      "name": "Eva",
+      "age": 28,
+      "role": "reader",
+      "festival_art": 6,
+      "atlas": 1,
+      "column": 3,
+      "height": 153,
+      "home": [
+        11685,
+        7012
+      ],
+      "activity": "a ler histórias de Sintra junto ao miradouro",
+      "greeting": "Eva: Só vim confirmar uma data e já vou no terceiro capítulo.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 14.8,
+      "purpose": "ler histórias de Sintra junto ao miradouro",
+      "appearance": "white woman, long dark braid, round glasses, maroon sweater, black trousers, history book with slips",
+      "tourist": true,
+      "personality": {
+        "style": "reader",
+        "description": "ler histórias de Sintra junto ao miradouro",
+        "sociability": 0.35,
+        "curiosity": 0.75,
+        "restlessness": 0.62,
+        "stride_length": 53,
+        "idle_hold": [
+          4.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [],
+        "lines": [
+          "Só vim confirmar uma data e já vou no terceiro capítulo.",
+          "Uma nota de rodapé também pode levar-nos a uma rua."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "ferraria",
+          "activity": "a ler histórias de Sintra junto ao miradouro",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:52",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "market",
+          "activity": "a continuar o passeio e ler histórias de Sintra junto ao miradouro",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "ferraria",
+          "activity": "a ler histórias de Sintra junto ao miradouro",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "ferraria",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "inga_turista",
+      "name": "Inga",
+      "age": 52,
+      "role": "tourist",
+      "festival_art": 6,
+      "atlas": 1,
+      "column": 4,
+      "height": 156,
+      "home": [
+        13870,
+        6714
+      ],
+      "activity": "a explorar ruas altas e fazer pausas para beber água",
+      "greeting": "Inga: Bebi água. Agora posso negociar mais uma subida.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 90,
+      "wait_seconds": 16.5,
+      "purpose": "explorar ruas altas e fazer pausas para beber água",
+      "appearance": "white woman, cropped blonde hair, teal hiking shirt, orange backpack, charcoal shorts, reusable water bottle",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "explorar ruas altas e fazer pausas para beber água",
+        "sociability": 0.43,
+        "curiosity": 0.85,
+        "restlessness": 0.74,
+        "stride_length": 54,
+        "idle_hold": [
+          5.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "Bebi água. Agora posso negociar mais uma subida.",
+          "O meu mapa tem estrelas nos lugares onde quero voltar."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:12",
+          "place": "valencas",
+          "activity": "a explorar ruas altas e fazer pausas para beber água",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "13:05",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "duche",
+          "activity": "a continuar o passeio e explorar ruas altas e fazer pausas para beber água",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:34",
+          "place": "valencas",
+          "activity": "a explorar ruas altas e fazer pausas para beber água",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "20:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "valencas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "adelia_pombos",
+      "name": "Adélia",
+      "age": 76,
+      "role": "birds",
+      "festival_art": 7,
+      "atlas": 1,
+      "column": 0,
+      "height": 159,
+      "home": [
+        8230,
+        8500
+      ],
+      "activity": "a dar sementes às aves e reconhecer os visitantes habituais",
+      "greeting": "Adélia: Este pombo chega sempre antes de eu abrir o saco.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 8.0,
+      "purpose": "dar sementes às aves e reconhecer os visitantes habituais",
+      "appearance": "older Portuguese woman, white bun, yellow knitted cardigan, long blue floral skirt, small seed pouch",
+      "tourist": false,
+      "personality": {
+        "style": "birds",
+        "description": "dar sementes às aves e reconhecer os visitantes habituais",
+        "sociability": 0.52,
+        "curiosity": 0.45,
+        "restlessness": 0.14,
+        "stride_length": 40,
+        "idle_hold": [
+          3.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "andres_turista"
+        ],
+        "lines": [
+          "Este pombo chega sempre antes de eu abrir o saco.",
+          "Os meus vizinhos com asas não faltam ao encontro."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:24",
+          "place": "pipa",
+          "activity": "a dar sementes às aves e reconhecer os visitantes habituais",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "ferreira",
+          "activity": "a continuar o passeio e dar sementes às aves e reconhecer os visitantes habituais",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "16:50",
+          "place": "pipa",
+          "activity": "a dar sementes às aves e reconhecer os visitantes habituais",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "pipa",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "basilio_guarda_chuva",
+      "name": "Basílio",
+      "age": 64,
+      "role": "umbrella",
+      "festival_art": 7,
+      "atlas": 1,
+      "column": 1,
+      "height": 162,
+      "home": [
+        4615,
+        6792
+      ],
+      "activity": "a procurar um guarda-chuva que leva debaixo do braço",
+      "greeting": "Basílio: Perdi o guarda-chuva. Este? Ah, este é o que eu estava a procurar!",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 75,
+      "wait_seconds": 9.7,
+      "purpose": "procurar um guarda-chuva que leva debaixo do braço",
+      "appearance": "eccentric older man, wild white hair, blue bow tie, plum jacket, plaid trousers, oversized closed green umbrella",
+      "tourist": false,
+      "personality": {
+        "style": "umbrella",
+        "description": "procurar um guarda-chuva que leva debaixo do braço",
+        "sociability": 0.6,
+        "curiosity": 0.55,
+        "restlessness": 0.26,
+        "stride_length": 41,
+        "idle_hold": [
+          4.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [],
+        "lines": [
+          "Perdi o guarda-chuva. Este? Ah, este é o que eu estava a procurar!",
+          "Eu vim preparado para a chuva de amanhã."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:36",
+          "place": "byron",
+          "activity": "a procurar um guarda-chuva que leva debaixo do braço",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:13",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "lawrence",
+          "activity": "a continuar o passeio e procurar um guarda-chuva que leva debaixo do braço",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "byron",
+          "activity": "a procurar um guarda-chuva que leva debaixo do braço",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "byron",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "carolina_aguarela",
+      "name": "Carolina",
+      "age": 33,
+      "role": "painting",
+      "festival_art": 7,
+      "atlas": 1,
+      "column": 2,
+      "height": 153,
+      "home": [
+        18100,
+        13064
+      ],
+      "activity": "a pintar os pátios e trocar desenhos com quem passa",
+      "greeting": "Carolina: A casa não se mexe. A luz é que não para quieta.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 11.4,
+      "purpose": "pintar os pátios e trocar desenhos com quem passa",
+      "appearance": "brown-skinned woman, black curls tied with red scarf, white paint-marked blouse, olive overalls, watercolor pad",
+      "tourist": false,
+      "personality": {
+        "style": "painting",
+        "description": "pintar os pátios e trocar desenhos com quem passa",
+        "sociability": 0.69,
+        "curiosity": 0.65,
+        "restlessness": 0.38,
+        "stride_length": 42,
+        "idle_hold": [
+          5.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "ana_fruta"
+        ],
+        "lines": [
+          "A casa não se mexe. A luz é que não para quieta.",
+          "Posso trocar uma aguarela por uma história desta rua."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:48",
+          "place": "portadas",
+          "activity": "a pintar os pátios e trocar desenhos com quem passa",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:26",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "portadas",
+          "activity": "a continuar o passeio e pintar os pátios e trocar desenhos com quem passa",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:12",
+          "place": "portadas",
+          "activity": "a pintar os pátios e trocar desenhos com quem passa",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:40",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "portadas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "oscar_bolas_sabao",
+      "name": "Óscar",
+      "age": 24,
+      "role": "bubbles",
+      "festival_art": 7,
+      "atlas": 1,
+      "column": 3,
+      "height": 156,
+      "home": [
+        19085,
+        4840
+      ],
+      "activity": "a fazer bolas de sabão gigantes para surpreender visitantes",
+      "greeting": "Óscar: Esta bolha tem mais espaço do que o meu quarto.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 13.1,
+      "purpose": "fazer bolas de sabão gigantes para surpreender visitantes",
+      "appearance": "slim white man, curly brown hair, red braces over striped tee, blue trousers, giant bubble wand",
+      "tourist": false,
+      "personality": {
+        "style": "bubbles",
+        "description": "fazer bolas de sabão gigantes para surpreender visitantes",
+        "sociability": 0.78,
+        "curiosity": 0.75,
+        "restlessness": 0.5,
+        "stride_length": 43,
+        "idle_hold": [
+          3.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Esta bolha tem mais espaço do que o meu quarto.",
+          "Se uma bolha subir até ao castelo, dou-lhe o meu nome."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "azulejos",
+          "activity": "a fazer bolas de sabão gigantes para surpreender visitantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:39",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "liberdade",
+          "activity": "a continuar o passeio e fazer bolas de sabão gigantes para surpreender visitantes",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "azulejos",
+          "activity": "a fazer bolas de sabão gigantes para surpreender visitantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "azulejos",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "cris_magia",
+      "name": "Cris",
+      "age": 36,
+      "role": "magician",
+      "festival_art": 7,
+      "atlas": 1,
+      "column": 4,
+      "height": 159,
+      "home": [
+        12100,
+        8072
+      ],
+      "activity": "a fazer truques de cartas e pedir ao público que escolha uma carta",
+      "greeting": "Cris: Escolhe uma carta. Se eu falhar, dizemos que era uma surpresa.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 90,
+      "wait_seconds": 14.8,
+      "purpose": "fazer truques de cartas e pedir ao público que escolha uma carta",
+      "appearance": "androgynous person, short violet hair, emerald velvet waistcoat, white shirt, black trousers, playing cards",
+      "tourist": false,
+      "personality": {
+        "style": "magic",
+        "description": "fazer truques de cartas e pedir ao público que escolha uma carta",
+        "sociability": 0.86,
+        "curiosity": 0.85,
+        "restlessness": 0.62,
+        "stride_length": 44,
+        "idle_hold": [
+          4.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [],
+        "lines": [
+          "Escolhe uma carta. Se eu falhar, dizemos que era uma surpresa.",
+          "O truque difícil é encontrar os meus bolsos todos."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:12",
+          "place": "market",
+          "activity": "a fazer truques de cartas e pedir ao público que escolha uma carta",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:52",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "ferraria",
+          "activity": "a continuar o passeio e fazer truques de cartas e pedir ao público que escolha uma carta",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:34",
+          "place": "market",
+          "activity": "a fazer truques de cartas e pedir ao público que escolha uma carta",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "market",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "zeca_sapateiro",
+      "name": "Zeca",
+      "age": 59,
+      "role": "repair",
+      "festival_art": 8,
+      "atlas": 1,
+      "column": 0,
+      "height": 162,
+      "home": [
+        9780,
+        9684
+      ],
+      "activity": "a reparar uma sola e conversar sobre os passos da vila",
+      "greeting": "Zeca: Esta sola já sabe mais ruas do que eu.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 16.5,
+      "purpose": "reparar uma sola e conversar sobre os passos da vila",
+      "appearance": "stocky man, dark mustache, navy work cap, brown leather apron over blue shirt, shoe and brush",
+      "tourist": false,
+      "personality": {
+        "style": "repair",
+        "description": "reparar uma sola e conversar sobre os passos da vila",
+        "sociability": 0.35,
+        "curiosity": 0.45,
+        "restlessness": 0.74,
+        "stride_length": 45,
+        "idle_hold": [
+          5.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "camilo_cinema",
+          "susana_bicicletas",
+          "nicolau_reparador"
+        ],
+        "lines": [
+          "Esta sola já sabe mais ruas do que eu.",
+          "Um bom passeio começa por sapatos que não protestam."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "ferreira",
+          "activity": "a reparar uma sola e conversar sobre os passos da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "13:05",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "pipa",
+          "activity": "a continuar o passeio e reparar uma sola e conversar sobre os passos da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "16:50",
+          "place": "ferreira",
+          "activity": "a reparar uma sola e conversar sobre os passos da vila",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "ferreira",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "susana_bicicletas",
+      "name": "Susana",
+      "age": 40,
+      "role": "repair",
+      "festival_art": 8,
+      "atlas": 1,
+      "column": 1,
+      "height": 153,
+      "home": [
+        18315,
+        7770
+      ],
+      "activity": "a afinar bicicletas e ajudar quem perdeu ar no pneu",
+      "greeting": "Susana: Só falta um bocadinho de ar e uma história para o caminho.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 75,
+      "wait_seconds": 8.0,
+      "purpose": "afinar bicicletas e ajudar quem perdeu ar no pneu",
+      "appearance": "athletic Black woman, short twists, red work bandana, blue coveralls, bicycle pump and wrench",
+      "tourist": false,
+      "personality": {
+        "style": "repair",
+        "description": "afinar bicicletas e ajudar quem perdeu ar no pneu",
+        "sociability": 0.43,
+        "curiosity": 0.55,
+        "restlessness": 0.14,
+        "stride_length": 46,
+        "idle_hold": [
+          3.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "dora_turista",
+          "zeca_sapateiro",
+          "nicolau_reparador"
+        ],
+        "lines": [
+          "Só falta um bocadinho de ar e uma história para o caminho.",
+          "As subidas de Sintra também contam como ginásio."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:12",
+          "place": "liberdade",
+          "activity": "a afinar bicicletas e ajudar quem perdeu ar no pneu",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "azulejos",
+          "activity": "a continuar o passeio e afinar bicicletas e ajudar quem perdeu ar no pneu",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "liberdade",
+          "activity": "a afinar bicicletas e ajudar quem perdeu ar no pneu",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "liberdade",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "rita_flores",
+      "name": "Rita",
+      "age": 48,
+      "role": "flowers",
+      "festival_art": 8,
+      "atlas": 1,
+      "column": 2,
+      "height": 156,
+      "home": [
+        19000,
+        4882
+      ],
+      "activity": "a vender ramos e oferecer uma flor aos aniversariantes",
+      "greeting": "Rita: Uma flor no bolso muda a cara do dia.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 9.7,
+      "purpose": "vender ramos e oferecer uma flor aos aniversariantes",
+      "appearance": "white woman, brown bun, green apron over pink shirt, cream trousers, bright bouquet and basket",
+      "tourist": false,
+      "personality": {
+        "style": "garden",
+        "description": "vender ramos e oferecer uma flor aos aniversariantes",
+        "sociability": 0.52,
+        "curiosity": 0.65,
+        "restlessness": 0.26,
+        "stride_length": 47,
+        "idle_hold": [
+          4.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Uma flor no bolso muda a cara do dia.",
+          "Este ramo já está a fazer amigos antes de sair da banca."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "flowers",
+          "activity": "a vender ramos e oferecer uma flor aos aniversariantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "flowers",
+          "activity": "a vender ramos e oferecer uma flor aos aniversariantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "flowers",
+          "activity": "a vender ramos e oferecer uma flor aos aniversariantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "nicolau_reparador",
+      "name": "Nicolau",
+      "age": 54,
+      "role": "repair",
+      "festival_art": 8,
+      "atlas": 1,
+      "column": 3,
+      "height": 159,
+      "home": [
+        3965,
+        9284
+      ],
+      "activity": "a reparar uma caixa de música e ajudar os comerciantes",
+      "greeting": "Nicolau: Se sobrar uma peça, ainda não acabei.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 11.4,
+      "purpose": "reparar uma caixa de música e ajudar os comerciantes",
+      "appearance": "brown-skinned man, salt-and-pepper curls, orange work vest, gray tee, navy trousers, small toolbox",
+      "tourist": false,
+      "personality": {
+        "style": "repair",
+        "description": "reparar uma caixa de música e ajudar os comerciantes",
+        "sociability": 0.6,
+        "curiosity": 0.75,
+        "restlessness": 0.38,
+        "stride_length": 48,
+        "idle_hold": [
+          5.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "deborah_visitante",
+          "zeca_sapateiro",
+          "susana_bicicletas"
+        ],
+        "lines": [
+          "Se sobrar uma peça, ainda não acabei.",
+          "Esta caixa de música toca melhor depois de uma conversa."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:36",
+          "place": "lawrence",
+          "activity": "a reparar uma caixa de música e ajudar os comerciantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:26",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "hortensias",
+          "activity": "a continuar o passeio e reparar uma caixa de música e ajudar os comerciantes",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "lawrence",
+          "activity": "a reparar uma caixa de música e ajudar os comerciantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "lawrence",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "emmanuel_poeta",
+      "name": "Emmanuel",
+      "age": 44,
+      "role": "poet",
+      "festival_art": 8,
+      "atlas": 1,
+      "column": 4,
+      "height": 162,
+      "home": [
+        15750,
+        5160
+      ],
+      "activity": "a ler poemas curtos a quem quiser parar",
+      "greeting": "Emmanuel: Tenho poemas de três linhas para quem só tem um minuto.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 90,
+      "wait_seconds": 13.1,
+      "purpose": "ler poemas curtos a quem quiser parar",
+      "appearance": "Black man, tall lean build, short beard, cream linen jacket, teal trousers, handwritten poetry booklet",
+      "tourist": false,
+      "personality": {
+        "style": "reader",
+        "description": "ler poemas curtos a quem quiser parar",
+        "sociability": 0.69,
+        "curiosity": 0.85,
+        "restlessness": 0.5,
+        "stride_length": 49,
+        "idle_hold": [
+          3.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "greta_turista"
+        ],
+        "lines": [
+          "Tenho poemas de três linhas para quem só tem um minuto.",
+          "A vila emprestou-me uma rima. Ainda estou à procura da outra."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:48",
+          "place": "duche",
+          "activity": "a ler poemas curtos a quem quiser parar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:39",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "valencas",
+          "activity": "a continuar o passeio e ler poemas curtos a quem quiser parar",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:34",
+          "place": "duche",
+          "activity": "a ler poemas curtos a quem quiser parar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "duche",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "hugo_toques",
+      "name": "Hugo",
+      "age": 16,
+      "role": "footballer",
+      "festival_art": 9,
+      "atlas": 1,
+      "column": 0,
+      "height": 142,
+      "home": [
+        12830,
+        12542
+      ],
+      "activity": "a treinar toques para tentar superar o seu recorde",
+      "greeting": "Hugo: O meu recorde cresce quando ninguém está a olhar.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 70,
+      "wait_seconds": 14.8,
+      "purpose": "treinar toques para tentar superar o seu recorde",
+      "appearance": "teenage white boy, dark cropped hair, royal blue football jersey, white sports shorts, red trainers, football near foot",
+      "tourist": false,
+      "personality": {
+        "style": "ball",
+        "description": "treinar toques para tentar superar o seu recorde",
+        "sociability": 0.78,
+        "curiosity": 0.45,
+        "restlessness": 0.62,
+        "stride_length": 50,
+        "idle_hold": [
+          4.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "salma_toques",
+          "bento_toques"
+        ],
+        "lines": [
+          "O meu recorde cresce quando ninguém está a olhar.",
+          "Hoje conto os toques com testemunhas. Assim custa mais inventar."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "jardins",
+          "activity": "a treinar toques para tentar superar o seu recorde",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "jardins",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "football",
+          "activity": "a participar no campeonato de toques",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "salma_toques",
+      "name": "Salma",
+      "age": 20,
+      "role": "footballer",
+      "festival_art": 9,
+      "atlas": 1,
+      "column": 1,
+      "height": 156,
+      "home": [
+        8385,
+        12234
+      ],
+      "activity": "a competir no campeonato e ajudar os mais novos a treinar",
+      "greeting": "Salma: Olha para a bola, não para o número no quadro.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 75,
+      "wait_seconds": 16.5,
+      "purpose": "competir no campeonato e ajudar os mais novos a treinar",
+      "appearance": "athletic North African woman, high dark ponytail, green sports tee, black leggings, orange trainers, football",
+      "tourist": false,
+      "personality": {
+        "style": "ball",
+        "description": "competir no campeonato e ajudar os mais novos a treinar",
+        "sociability": 0.86,
+        "curiosity": 0.55,
+        "restlessness": 0.74,
+        "stride_length": 51,
+        "idle_hold": [
+          5.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "hugo_toques",
+          "bento_toques"
+        ],
+        "lines": [
+          "Olha para a bola, não para o número no quadro.",
+          "Se a bola cair, a próxima tentativa já está a começar."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "sassetti",
+          "activity": "a competir no campeonato e ajudar os mais novos a treinar",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "football",
+          "activity": "a participar no campeonato de toques",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "bento_toques",
+      "name": "Bento",
+      "age": 17,
+      "role": "footballer",
+      "festival_art": 9,
+      "atlas": 1,
+      "column": 2,
+      "height": 142,
+      "home": [
+        9950,
+        9600
+      ],
+      "activity": "a experimentar toques de joelho e comparar técnicas",
+      "greeting": "Bento: De joelho é mais fácil. Digo isto só até a bola cair.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 80,
+      "wait_seconds": 8.0,
+      "purpose": "experimentar toques de joelho e comparar técnicas",
+      "appearance": "teenage brown-skinned boy, short curls, yellow football jersey, navy shorts, black trainers, football",
+      "tourist": false,
+      "personality": {
+        "style": "ball",
+        "description": "experimentar toques de joelho e comparar técnicas",
+        "sociability": 0.35,
+        "curiosity": 0.65,
+        "restlessness": 0.14,
+        "stride_length": 52,
+        "idle_hold": [
+          3.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "hugo_toques",
+          "salma_toques"
+        ],
+        "lines": [
+          "De joelho é mais fácil. Digo isto só até a bola cair.",
+          "O segredo é respirar antes de tentar impressionar toda a gente."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "ferreira",
+          "activity": "a experimentar toques de joelho e comparar técnicas",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "pipa",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "football",
+          "activity": "a participar no campeonato de toques",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "filipe_arbitro",
+      "name": "Filipe",
+      "age": 29,
+      "role": "referee",
+      "festival_art": 9,
+      "atlas": 1,
+      "column": 3,
+      "height": 162,
+      "home": [
+        13085,
+        12542
+      ],
+      "activity": "a arbitrar o campeonato com regras claras e boa disposição",
+      "greeting": "Filipe: Eu conto os toques. As desculpas ficam para o intervalo.",
+      "mirror": true,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 9.7,
+      "purpose": "arbitrar o campeonato com regras claras e boa disposição",
+      "appearance": "young man, fair skin, black hair, black-and-white referee shirt, black shorts, whistle and score card",
+      "tourist": false,
+      "personality": {
+        "style": "notes",
+        "description": "arbitrar o campeonato com regras claras e boa disposição",
+        "sociability": 0.43,
+        "curiosity": 0.75,
+        "restlessness": 0.26,
+        "stride_length": 53,
+        "idle_hold": [
+          4.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "quim_doces"
+        ],
+        "lines": [
+          "Eu conto os toques. As desculpas ficam para o intervalo.",
+          "A calçada não conta como um jogador extra."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "jardins",
+          "activity": "a arbitrar o campeonato com regras claras e boa disposição",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "jardins",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "football",
+          "activity": "a participar no campeonato de toques",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "lia_comentadora",
+      "name": "Lia",
+      "age": 30,
+      "role": "announcer",
+      "festival_art": 9,
+      "atlas": 1,
+      "column": 4,
+      "height": 153,
+      "home": [
+        13170,
+        12584
+      ],
+      "activity": "a comentar as tentativas e entrevistar os participantes",
+      "greeting": "Lia: Há talento, há suspense e há uma bola com muita vontade própria!",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 90,
+      "wait_seconds": 11.4,
+      "purpose": "comentar as tentativas e entrevistar os participantes",
+      "appearance": "young Black woman, short curly hair, orange bomber jacket, jeans, handheld microphone and notebook",
+      "tourist": false,
+      "personality": {
+        "style": "notes",
+        "description": "comentar as tentativas e entrevistar os participantes",
+        "sociability": 0.52,
+        "curiosity": 0.85,
+        "restlessness": 0.38,
+        "stride_length": 54,
+        "idle_hold": [
+          5.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [
+          "rafa_toques"
+        ],
+        "lines": [
+          "Há talento, há suspense e há uma bola com muita vontade própria!",
+          "O público pede mais uma tentativa. O público sou eu, por enquanto."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "jardins",
+          "activity": "a comentar as tentativas e entrevistar os participantes",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "jardins",
+          "activity": "a explorar outro recanto da vila",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "football",
+          "activity": "a participar no campeonato de toques",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "home",
+          "activity": "a jantar e descansar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "lucia_turista",
+      "name": "Lucía",
+      "age": 58,
+      "role": "tourist",
+      "festival_art": 10,
+      "atlas": 1,
+      "column": 0,
+      "height": 156,
+      "home": [
+        9370,
+        3300
+      ],
+      "activity": "a seguir os sons da vila e aprender uma canção portuguesa",
+      "greeting": "Lucía: Eu sigo a música. O meu marido segue os cheiros da padaria.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 70,
+      "wait_seconds": 13.1,
+      "purpose": "seguir os sons da vila e aprender uma canção portuguesa",
+      "appearance": "Latina woman, short black-and-gray curls, cobalt blouse, yellow skirt, red shoulder bag, paper fan",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "seguir os sons da vila e aprender uma canção portuguesa",
+        "sociability": 0.6,
+        "curiosity": 0.45,
+        "restlessness": 0.5,
+        "stride_length": 40,
+        "idle_hold": [
+          3.5,
+          8
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "Eu sigo a música. O meu marido segue os cheiros da padaria.",
+          "Aprendi o refrão. As outras palavras ainda estão de férias."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:36",
+          "place": "republic",
+          "activity": "a seguir os sons da vila e aprender uma canção portuguesa",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:39",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "padarias",
+          "activity": "a continuar o passeio e seguir os sons da vila e aprender uma canção portuguesa",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "16:50",
+          "place": "republic",
+          "activity": "a seguir os sons da vila e aprender uma canção portuguesa",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "republic",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "andres_turista",
+      "name": "Andrés",
+      "age": 47,
+      "role": "birds",
+      "festival_art": 10,
+      "atlas": 1,
+      "column": 1,
+      "height": 159,
+      "home": [
+        11515,
+        7012
+      ],
+      "activity": "a observar aves do miradouro e anotar o que encontra",
+      "greeting": "Andrés: Vim ver o horizonte e fiquei a ver uma alvéola.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 75,
+      "wait_seconds": 14.8,
+      "purpose": "observar aves do miradouro e anotar o que encontra",
+      "appearance": "Latino man, short beard, beige safari vest, olive shirt, brown trousers, binoculars and tiny notebook",
+      "tourist": true,
+      "personality": {
+        "style": "birds",
+        "description": "observar aves do miradouro e anotar o que encontra",
+        "sociability": 0.69,
+        "curiosity": 0.55,
+        "restlessness": 0.62,
+        "stride_length": 41,
+        "idle_hold": [
+          4.5,
+          9
+        ],
+        "gesture_hold": [
+          0.55,
+          1.7000000000000002
+        ],
+        "friends": [
+          "adelia_pombos"
+        ],
+        "lines": [
+          "Vim ver o horizonte e fiquei a ver uma alvéola.",
+          "O meu caderno tem mais pássaros do que paisagens."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:48",
+          "place": "ferraria",
+          "activity": "a observar aves do miradouro e anotar o que encontra",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:52",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:18",
+          "place": "market",
+          "activity": "a continuar o passeio e observar aves do miradouro e anotar o que encontra",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:01",
+          "place": "ferraria",
+          "activity": "a observar aves do miradouro e anotar o que encontra",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:25",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "ferraria",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:05",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "valentina_turista",
+      "name": "Valentina",
+      "age": 36,
+      "role": "tourist",
+      "festival_art": 10,
+      "atlas": 1,
+      "column": 2,
+      "height": 162,
+      "home": [
+        11930,
+        8114
+      ],
+      "activity": "a descobrir fruta, receitas e os sabores do mercado",
+      "greeting": "Valentina: Anoto receitas com medidas muito precisas: um bocadinho e mais um pouco.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 80,
+      "wait_seconds": 16.5,
+      "purpose": "descobrir fruta, receitas e os sabores do mercado",
+      "appearance": "white woman, long red braid, purple blouse, cream linen trousers, wicker shopping bag",
+      "tourist": true,
+      "personality": {
+        "style": "map",
+        "description": "descobrir fruta, receitas e os sabores do mercado",
+        "sociability": 0.78,
+        "curiosity": 0.65,
+        "restlessness": 0.74,
+        "stride_length": 42,
+        "idle_hold": [
+          5.5,
+          10
+        ],
+        "gesture_hold": [
+          0.55,
+          1.9000000000000001
+        ],
+        "friends": [
+          "mateo_turista",
+          "zoe_turista",
+          "omar_turista"
+        ],
+        "lines": [
+          "Anoto receitas com medidas muito precisas: um bocadinho e mais um pouco.",
+          "Esta viagem vai caber primeiro na memória e depois no livro de receitas."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "market",
+          "activity": "a descobrir fruta, receitas e os sabores do mercado",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "13:05",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:27",
+          "place": "ferraria",
+          "activity": "a continuar o passeio e descobrir fruta, receitas e os sabores do mercado",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:12",
+          "place": "market",
+          "activity": "a descobrir fruta, receitas e os sabores do mercado",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "19:40",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "market",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "23:15",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "sam_gaita",
+      "name": "Sam",
+      "age": 66,
+      "role": "piper",
+      "festival_art": 10,
+      "atlas": 1,
+      "column": 3,
+      "height": 153,
+      "home": [
+        4785,
+        6750
+      ],
+      "activity": "a tocar uma gaita de foles e trocar melodias com músicos locais",
+      "greeting": "Sam: A gaita veio comigo. As notas ainda se estão a habituar a Sintra.",
+      "mirror": false,
+      "route_offsets": [],
+      "speed": 85,
+      "wait_seconds": 8.0,
+      "purpose": "tocar uma gaita de foles e trocar melodias com músicos locais",
+      "appearance": "older white man, gray beard, green flat cap, brown waistcoat, blue shirt, dark trousers, small bagpipe",
+      "tourist": true,
+      "personality": {
+        "style": "guitar",
+        "description": "tocar uma gaita de foles e trocar melodias com músicos locais",
+        "sociability": 0.86,
+        "curiosity": 0.75,
+        "restlessness": 0.14,
+        "stride_length": 43,
+        "idle_hold": [
+          3.5,
+          11
+        ],
+        "gesture_hold": [
+          0.55,
+          1.3
+        ],
+        "friends": [],
+        "lines": [
+          "A gaita veio comigo. As notas ainda se estão a habituar a Sintra.",
+          "Se a melodia acordar um pombo, considero isso uma crítica."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "09:12",
+          "place": "byron",
+          "activity": "a tocar uma gaita de foles e trocar melodias com músicos locais",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "lawrence",
+          "activity": "a continuar o passeio e tocar uma gaita de foles e trocar melodias com músicos locais",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:23",
+          "place": "byron",
+          "activity": "a tocar uma gaita de foles e trocar melodias com músicos locais",
+          "mode": "activity",
+          "stroll": false
+        },
+        {
+          "at": "19:55",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "byron",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:45",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    },
+    {
+      "id": "kaz_turista",
+      "name": "Kaz",
+      "age": 29,
+      "role": "cleanup",
+      "festival_art": 10,
+      "atlas": 1,
+      "column": 4,
+      "height": 156,
+      "home": [
+        18270,
+        13022
+      ],
+      "activity": "a passear pelos pátios e apanhar pequenos papéis que encontra",
+      "greeting": "Kaz: Quero deixar este lugar tão bonito como o encontrei.",
+      "mirror": true,
+      "route_offsets": [
+        [
+          -100,
+          25
+        ],
+        [
+          90,
+          45
+        ]
+      ],
+      "speed": 90,
+      "wait_seconds": 9.7,
+      "purpose": "passear pelos pátios e apanhar pequenos papéis que encontra",
+      "appearance": "East Asian nonbinary tourist, short black hair, mint jacket, purple trousers, reusable tote and litter grabber",
+      "tourist": true,
+      "personality": {
+        "style": "cleanup",
+        "description": "passear pelos pátios e apanhar pequenos papéis que encontra",
+        "sociability": 0.35,
+        "curiosity": 0.85,
+        "restlessness": 0.26,
+        "stride_length": 44,
+        "idle_hold": [
+          4.5,
+          12
+        ],
+        "gesture_hold": [
+          0.55,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Quero deixar este lugar tão bonito como o encontrei.",
+          "O meu roteiro inclui fontes e caixotes do lixo."
+        ]
+      },
+      "plan": [
+        {
+          "at": "00:00",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "home",
+          "activity": "a tomar o pequeno-almoço",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "portadas",
+          "activity": "a passear pelos pátios e apanhar pequenos papéis que encontra",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "12:13",
+          "place": "meal",
+          "activity": "a almoçar",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "14:09",
+          "place": "portadas",
+          "activity": "a continuar o passeio e passear pelos pátios e apanhar pequenos papéis que encontra",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "17:34",
+          "place": "portadas",
+          "activity": "a passear pelos pátios e apanhar pequenos papéis que encontra",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "20:10",
+          "place": "meal",
+          "activity": "a jantar sem pressa",
+          "mode": "inside",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "portadas",
+          "activity": "a dar um último passeio antes de recolher",
+          "mode": "activity",
+          "stroll": true
+        },
+        {
+          "at": "22:55",
+          "place": "home",
+          "activity": "a dormir",
+          "mode": "inside",
+          "stroll": false
+        }
+      ]
+    }
+  ]
+}

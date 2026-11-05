@@ -37,6 +37,7 @@ var sleep_button: Button
 var rest_dream: Node
 var day_cycle = preload("res://scripts/day_cycle.gd").new()
 var daylight: ShaderMaterial
+var journey: Node2D
 var climbing_scene: Node2D
 var climbing_sign: Node2D
 var climbing_button: Button
@@ -65,6 +66,11 @@ func _ready() -> void:
 	people[0].partner = people[1]
 	people[1].partner = people[0]
 	world.attach_people(people)
+	journey = preload("res://scripts/shared_journey.gd").new()
+	journey.scene = self
+	add_child(journey)
+	dialogue.completed.connect(journey.dialogue_completed)
+	if region_id=="village": world.synchronize_clock(day_cycle)
 	if is_instance_valid(world.wildlife): world.wildlife.day_cycle = day_cycle
 	world.interactions.discovered.connect(_interaction_discovered)
 	camera = Camera2D.new()
@@ -111,6 +117,10 @@ func _ready() -> void:
 	inventory_panel.people = people
 	layer.add_child(inventory_panel)
 	inventory_panel.drop_requested.connect(_drop_item)
+	inventory_panel.food_requested.connect(journey.open_food)
+	var journey_hud := preload("res://scripts/journey_hud.gd").new()
+	journey_hud.journey = journey; journey_hud.owner_scene = self
+	layer.add_child(journey_hud)
 	puppy_panel = preload("res://scripts/puppy_panel.gd").new()
 	puppy_panel.world = world
 	puppy_panel.scene = self
@@ -129,6 +139,7 @@ func _ready() -> void:
 
 func _toggle_debug_time() -> void:
 	day_cycle.minutes = 1380.0 if day_cycle.minutes>=360 and day_cycle.minutes<1200 else 480.0
+	if region_id=="village": world.synchronize_clock(day_cycle,true)
 	if is_instance_valid(world.wildlife): world.wildlife.sync_debug_time()
 	daylight.set_shader_parameter("daylight",day_cycle.light_color())
 	day_cycle.phase_changed.emit(day_cycle.phase())
@@ -139,6 +150,12 @@ func _input(event: InputEvent) -> void:
 	# Godot marks this node ready before _ready() returns. Rendering child nodes
 	# can pump input while the world, map and HUD are still being constructed.
 	if not _initialization_complete or event.is_echo():
+		return
+	if journey.handle_input(event):
+		get_viewport().set_input_as_handled()
+		return
+	if is_instance_valid(world) and world.get("living_life")!=null and world.living_life.handle_input(event):
+		get_viewport().set_input_as_handled()
 		return
 	if exploration_map.visible:
 		if event.is_action_pressed("map") or event.is_action_pressed("pause"):
@@ -165,6 +182,7 @@ func _input(event: InputEvent) -> void:
 func _select_person(index: int) -> void:
 	if get_tree().paused or dialogue.is_active() or (is_instance_valid(exploration_map) and exploration_map.visible):
 		return
+	if is_instance_valid(journey) and journey.modal_open(): return
 	if people.size()==2 and not people.any(func(person): return person.ground_rest):
 		_reset_rest_wait()
 	selected = index
@@ -214,7 +232,7 @@ func dialogue_context() -> Dictionary:
 		puppy_mood = preload("res://scripts/puppy_art.gd").expression(world.puppy)
 		if puppy_mood=="angry": puppy_mood = "guard"
 	return {"scene":scene_id,"location":location_id,"initiator":selected,"near":nearby,
-		"hour":day_cycle.minutes / 60.0,"day":day_cycle.day,"day_phase":day_cycle.phase(),"puppy_mood":puppy_mood}
+		"hour":day_cycle.minutes / 60.0,"day":day_cycle.day,"day_phase":day_cycle.phase(),"puppy_mood":puppy_mood,"bond":journey.bond}
 
 func _talk() -> void:
 	if get_tree().paused or exploration_map.visible:
@@ -260,6 +278,7 @@ func _camera_target() -> Vector2:
 func _process(delta: float) -> void:
 	if not _initialization_complete:
 		return
+	climbing_button.text = "Escalar o Penedo da Amizade" if journey.can("climbing") else "Escalada · ligação 20/100"
 	if is_instance_valid(climbing_button): climbing_button.visible = get_tree().paused and region_id=="forest"
 	if is_instance_valid(walking_test_button): walking_test_button.visible = get_tree().paused
 	if is_instance_valid(village_button):
@@ -275,6 +294,7 @@ func _process(delta: float) -> void:
 	_advance_seated_posture(delta)
 	day_cycle.advance(delta)
 	world.step_environment(delta,day_cycle)
+	journey.step(delta)
 	daylight.set_shader_parameter("daylight", day_cycle.light_color())
 	camera.position = camera.position.lerp(_camera_target(),1-exp(-5*delta))
 	interaction_clock -= delta
@@ -301,6 +321,10 @@ func _reset_rest_wait() -> void:
 
 func _update_ground_rest(delta: float) -> void:
 	if get_tree().paused or exploration_map.visible: return
+	if world.get("manual_street_rest")!=null: world.manual_street_rest = sleep_requested or people.any(func(p):return p.ground_rest)
+	if journey.modal_open() or (world.get("living_life")!=null and world.living_life.panel.opened):
+		_reset_rest_wait()
+		return
 	if people.size()!=2 or dialogue.is_active():
 		_reset_rest_wait()
 		return
@@ -420,7 +444,7 @@ func _interact() -> void:
 	_update_interaction_focus()
 
 func _drop_item(owner: int, index: int) -> void:
-	if owner!=selected or get_tree().paused or dialogue.is_active() or exploration_map.visible:
+	if owner!=selected or get_tree().paused or dialogue.is_active() or exploration_map.visible or journey.modal_open():
 		return
 	hud.show_comment(world.interactions.drop(people[owner],index))
 	_update_interaction_focus()
@@ -445,7 +469,12 @@ func _setup_climbing_entrance() -> void:
 
 func _enter_climbing() -> void:
 	if region_id!="forest": return
+	if journey.modal_open(): return
 	if dialogue.is_active() or exploration_map.visible or people.any(func(person): return person.jumping): return
+	if not journey.can("climbing"):
+		if get_tree().paused: _toggle_pause()
+		hud.show_comment(journey.requirement("climbing"))
+		return
 	get_tree().paused = false
 	hud.paused = false
 	climbing_button.hide()
@@ -455,6 +484,10 @@ func _enter_climbing() -> void:
 		climbing_scene = load("res://scenes/rock_climbing.tscn").instantiate()
 		get_tree().root.add_child(climbing_scene)
 		climbing_scene.return_requested.connect(_return_from_climbing)
+		climbing_scene.journey = journey
+		var mini_vitals := preload("res://scripts/journey_hud.gd").new()
+		mini_vitals.journey = journey; mini_vitals.owner_scene = climbing_scene; mini_vitals.read_only = true
+		climbing_scene.hud.add_child(mini_vitals)
 	else:
 		climbing_scene.show()
 		climbing_scene.process_mode = Node.PROCESS_MODE_ALWAYS
@@ -477,6 +510,7 @@ func _suspend_exploration() -> void:
 	process_mode = Node.PROCESS_MODE_DISABLED
 
 func _return_from_climbing() -> void:
+	if climbing_scene.completed: journey.award("climb","summit",12,500,true)
 	climbing_scene.hide()
 	climbing_scene.process_mode = Node.PROCESS_MODE_DISABLED
 	for child in climbing_scene.get_children():
@@ -523,6 +557,7 @@ func _setup_sleep_entry() -> void:
 	sleep_button.hide()
 
 func _request_sleep() -> void:
+	if journey.modal_open(): return
 	if dialogue.is_active() or exploration_map.visible or people.any(func(person): return person.jumping or person.collecting_time>0 or person.puppy_recoil_time>0): return
 	if get_tree().paused: _toggle_pause()
 	for person in people:
@@ -617,6 +652,7 @@ func _setup_region_entrance() -> void:
 
 func _travel_region(destination: String, from_menu := false) -> bool:
 	if destination==region_id or destination not in ["forest","village"]: return false
+	if journey.modal_open(): return false
 	if get_tree().paused or dialogue.is_active() or exploration_map.visible or people.any(func(p): return p.is_busy()): return false
 	# Keep the actual world instances, their encounters and pickups. The two people,
 	# their bags, the director and the single clock stay owned by this controller.
@@ -636,6 +672,7 @@ func _travel_region(destination: String, from_menu := false) -> bool:
 		next.interactions.discovered.connect(_interaction_discovered)
 	world = region_worlds[destination]
 	region_id = destination
+	journey.align_calendar(world)
 	if region_states.has(destination):
 		for saved in region_states[destination].modes:
 			if is_instance_valid(saved.node): saved.node.process_mode = saved.mode
@@ -675,10 +712,14 @@ func _travel_region(destination: String, from_menu := false) -> bool:
 	hud.region_title = world.region_title
 	hud.area_title = world.area_at(people[selected].position)
 	hud.comment_time = 0
+	if region_id=="village": world.synchronize_clock(day_cycle)
 	_reset_rest_wait()
 	camera.position = _camera_target()
 	_update_interaction_focus()
 	return true
+
+func record_shared_activity(kind: String,key: String,points: float,at: Vector2,reward := 0,once_ever := false) -> bool:
+	return journey.record_activity(kind,key,points,at,reward,once_ever) if is_instance_valid(journey) else false
 
 func _near_region_exit() -> bool:
 	if people[selected].position.distance_to(region_sign.position)>=160: return false

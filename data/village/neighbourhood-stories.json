@@ -1,0 +1,1281 @@
+{
+  "version": 1,
+  "people": [
+    {
+      "id": "rosario_merenda",
+      "name": "Rosário",
+      "age": 56,
+      "role": "picnic",
+      "zone": "sassetti",
+      "appearance": "stout Portuguese woman, short dark curls, coral cardigan, olive skirt, picnic apron",
+      "actions": "ajoelhada a distribuir sandes; depois ergue a caixa vazia, expressão ofendida",
+      "reactions": "sentada conta talheres com um dedo; depois protege a travessa com ar desconfiado",
+      "story": "Organiza um piquenique para quatro e insiste que trouxe comida para doze. A caixa das sandes vai ficando vazia antes de se sentar.",
+      "height": 151,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "organiza um piquenique para quatro e insiste que trouxe comida para doze",
+      "purpose": "Organiza um piquenique para quatro e insiste que trouxe comida para doze. A caixa das sandes vai ficando vazia antes de se sentar.",
+      "greeting": "Organiza um piquenique para quatro e insiste que trouxe comida para doze.",
+      "wait_seconds": 5,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.35,
+        "curiosity": 0.6,
+        "restlessness": 0.15,
+        "stride_length": 72,
+        "idle_hold": [
+          3,
+          7
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Organiza um piquenique para quatro e insiste que trouxe comida para doze.",
+          "Trouxe comida para doze. Somos quatro. Expliquem-me a caixa vazia."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1.8
+        ],
+        [
+          0,
+          4.5
+        ],
+        [
+          3,
+          1.2
+        ]
+      ]
+    },
+    {
+      "id": "nelson_termos",
+      "name": "Nelson",
+      "age": 59,
+      "role": "picnic",
+      "zone": "sassetti",
+      "appearance": "balding lanky man, thick dark moustache, pale blue short sleeve shirt, beige fishing waistcoat, brown trousers, thermos flask",
+      "actions": "sentado no chão tenta abrir o termo; depois aponta para a tampa com convicção",
+      "reactions": "ajoelhado verte uma gota do termo, desapontado; depois segura uma chávena vazia, incrédulo",
+      "story": "Trouxe um termo de café que ninguém consegue abrir. Dá explicações técnicas enquanto os outros começam a beber sumo.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "trouxe um termo de café que ninguém consegue abrir",
+      "purpose": "Trouxe um termo de café que ninguém consegue abrir. Dá explicações técnicas enquanto os outros começam a beber sumo.",
+      "greeting": "Trouxe um termo de café que ninguém consegue abrir.",
+      "wait_seconds": 6,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.48,
+        "curiosity": 0.6,
+        "restlessness": 0.29000000000000004,
+        "stride_length": 72,
+        "idle_hold": [
+          4,
+          8
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Trouxe um termo de café que ninguém consegue abrir.",
+          "É conservação de pressão. Não é uma tampa presa."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "iris_merenda",
+      "name": "Íris",
+      "age": 22,
+      "role": "picnic",
+      "zone": "sassetti",
+      "appearance": "young Black Portuguese woman, braided bun, mustard dungarees, plum T-shirt, round glasses, small sketchbook",
+      "actions": "sentada de pernas cruzadas desenha a merenda; depois esconde uma sandes atrás do caderno, culpada",
+      "reactions": "ajoelhada apanha um guardanapo; depois observa a caixa vazia sem levantar os olhos do desenho",
+      "story": "Desenha um piquenique impecável enquanto come as sandes que faltam à composição. No desenho aparecem sempre todas.",
+      "height": 159,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "desenha um piquenique impecável enquanto come as sandes que faltam à composição",
+      "purpose": "Desenha um piquenique impecável enquanto come as sandes que faltam à composição. No desenho aparecem sempre todas.",
+      "greeting": "Desenha um piquenique impecável enquanto come as sandes que faltam à composição.",
+      "wait_seconds": 7,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.61,
+        "curiosity": 0.6,
+        "restlessness": 0.43000000000000005,
+        "stride_length": 72,
+        "idle_hold": [
+          5,
+          9
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Desenha um piquenique impecável enquanto come as sandes que faltam à composição.",
+          "No desenho ainda estão as sandes todas."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1.2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          1.6
+        ]
+      ]
+    },
+    {
+      "id": "leo_merenda",
+      "name": "Léo",
+      "age": 9,
+      "role": "picnic",
+      "zone": "sassetti",
+      "appearance": "small mixed-race boy, unruly dark hair, turquoise dinosaur T-shirt, rust shorts, red trainers, magnifying glass",
+      "actions": "agachado segue uma formiga com lupa; depois segura uma migalha como um troféu, concentrado",
+      "reactions": "sentado explica um percurso de formigas com um dedo; depois protege uma sandes, olhos arregalados",
+      "story": "Está a tentar ensinar formigas a transportar as migalhas. Interessa-se imediatamente pelo pombo-correio do Ernesto.",
+      "height": 116,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "está a tentar ensinar formigas a transportar as migalhas",
+      "purpose": "Está a tentar ensinar formigas a transportar as migalhas. Interessa-se imediatamente pelo pombo-correio do Ernesto.",
+      "greeting": "Está a tentar ensinar formigas a transportar as migalhas.",
+      "wait_seconds": 8,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.74,
+        "curiosity": 0.6,
+        "restlessness": 0.5700000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          6,
+          10
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Está a tentar ensinar formigas a transportar as migalhas.",
+          "As formigas não precisam de carimbo para trabalhar."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1.2
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "ernesto_pombos",
+      "name": "Ernesto",
+      "age": 78,
+      "role": "pigeon",
+      "zone": "pipa",
+      "appearance": "thin elderly Portuguese man, bushy white eyebrows, flat cap, moss cardigan, cream shirt, charcoal trousers, worn leather satchel, tiny folded letter",
+      "actions": "curvado estende um bilhete minúsculo na mão, muito sério; depois toma notas numa caderneta, sobrancelha levantada",
+      "reactions": "aponta com solenidade para um destino; depois cruza os braços e observa uma migalha com profunda desilusão",
+      "story": "Avalia cada pombo como funcionário: boa orientação, fraca ética. Os bilhetes chegam à pasteleira porque ela lhes dá migalhas.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "avalia cada pombo como funcionário: boa orientação, fraca ética",
+      "purpose": "Avalia cada pombo como funcionário: boa orientação, fraca ética. Os bilhetes chegam à pasteleira porque ela lhes dá migalhas.",
+      "greeting": "Avalia cada pombo como funcionário: boa orientação, fraca ética.",
+      "wait_seconds": 9,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.35,
+        "curiosity": 0.6,
+        "restlessness": 0.7100000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          3,
+          11
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Avalia cada pombo como funcionário: boa orientação, fraca ética.",
+          "Boa orientação. Fraca ética."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          1,
+          7
+        ],
+        [
+          0,
+          2.5
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "olinda_pasteis",
+      "name": "Olinda",
+      "age": 48,
+      "role": "pigeon",
+      "zone": "pipa",
+      "appearance": "stocky light-brown-skinned baker, greying dark bob, flour-dusted burgundy apron, striped cream shirt, navy trousers, flour on cheek",
+      "actions": "de pé dobra uma resposta em papel, divertida sem sorrir; depois oferece uma migalha de pão",
+      "reactions": "lê um bilhete de óculos na ponta do nariz, cética; depois mostra a conta dos bolos com uma mão na cintura",
+      "story": "Descobriu uma fonte inesgotável de encomendas: os pombos do Ernesto. Responde aos bilhetes e manda-lhe a conta.",
+      "height": 159,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "descobriu uma fonte inesgotável de encomendas: os pombos do ernesto",
+      "purpose": "Descobriu uma fonte inesgotável de encomendas: os pombos do Ernesto. Responde aos bilhetes e manda-lhe a conta.",
+      "greeting": "Descobriu uma fonte inesgotável de encomendas: os pombos do Ernesto.",
+      "wait_seconds": 10,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.48,
+        "curiosity": 0.6,
+        "restlessness": 0.15,
+        "stride_length": 72,
+        "idle_hold": [
+          4,
+          7
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Descobriu uma fonte inesgotável de encomendas: os pombos do Ernesto.",
+          "Se leva migalhas, traz a conta."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          1.2
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "beatriz_fila",
+      "name": "Beatriz · estudante do Técnico",
+      "age": 21,
+      "role": "queue",
+      "zone": "padarias",
+      "appearance": "tall slim young Portuguese woman, dark ponytail, teal Instituto Superior Tecnico hoodie without lettering, black trousers, orange trainers, clipboard with hand drawn queue arrows",
+      "actions": "aponta um diagrama com lápis, concentração intensa; depois mede um intervalo com cronómetro, sobrolho franzido",
+      "reactions": "olha para a fila em choque, mão na testa; depois segura uma encomenda incompleta e confere a folha, envergonhada",
+      "story": "Estudante do Técnico, quer provar que consegue reduzir a espera da Piriquita. Otimiza a entrada e esquece-se de recolher os pedidos dos amigos.",
+      "height": 151,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "quer provar que consegue reduzir a espera da piriquita",
+      "purpose": "Quer provar que consegue reduzir a espera da Piriquita. Otimiza a entrada e esquece-se de recolher os pedidos dos amigos.",
+      "greeting": "Quer provar que consegue reduzir a espera da Piriquita.",
+      "wait_seconds": 11,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.61,
+        "curiosity": 0.6,
+        "restlessness": 0.29000000000000004,
+        "stride_length": 72,
+        "idle_hold": [
+          5,
+          8
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Quer provar que consegue reduzir a espera da Piriquita.",
+          "As setas estão certas. A fila é que não está a colaborar."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "ricardo_tempos",
+      "name": "Ricardo · colega do Técnico",
+      "age": 22,
+      "role": "queue",
+      "zone": "padarias",
+      "appearance": "young South Asian Portuguese man, wavy hair, short beard, square glasses, ochre zip jacket, navy chinos, small stopwatch",
+      "actions": "regista tempos numa folha, impassível; depois ergue o cronómetro e observa uma pessoa que conversa",
+      "reactions": "guarda o cronómetro no bolso, cansado; depois come tranquilamente um travesseiro de papel na mão",
+      "story": "Aceitou medir a fila para ajudar a amiga. Descobre que podia ter comprado os bolos durante o tempo gasto a medir.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "aceitou medir a fila para ajudar a amiga",
+      "purpose": "Aceitou medir a fila para ajudar a amiga. Descobre que podia ter comprado os bolos durante o tempo gasto a medir.",
+      "greeting": "Aceitou medir a fila para ajudar a amiga.",
+      "wait_seconds": 12,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.74,
+        "curiosity": 0.6,
+        "restlessness": 0.43000000000000005,
+        "stride_length": 72,
+        "idle_hold": [
+          6,
+          9
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Aceitou medir a fila para ajudar a amiga.",
+          "Ainda não medimos quanto tempo demora escolher os bolos."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1.6
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "estela_cliente",
+      "name": "Estela",
+      "age": 67,
+      "role": "queue",
+      "zone": "padarias",
+      "appearance": "short older Portuguese woman, short silver hair, turquoise coat, patterned scarf, burgundy handbag, sensible shoes",
+      "actions": "de braços cruzados vigia a fila, impaciente; depois aponta para o seu lugar sem largar a mala",
+      "reactions": "ergue a senha com triunfo contido; depois come um travesseiro muito devagar olhando para os estudantes",
+      "story": "Conhece os horários da fornada e recusa trocar o seu lugar por um diagrama. A sua solução é chegar na hora certa.",
+      "height": 159,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "conhece os horários da fornada e recusa trocar o seu lugar por um diagrama",
+      "purpose": "Conhece os horários da fornada e recusa trocar o seu lugar por um diagrama. A sua solução é chegar na hora certa.",
+      "greeting": "Conhece os horários da fornada e recusa trocar o seu lugar por um diagrama.",
+      "wait_seconds": 13,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.35,
+        "curiosity": 0.6,
+        "restlessness": 0.5700000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          3,
+          10
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Conhece os horários da fornada e recusa trocar o seu lugar por um diagrama.",
+          "A fornada tem horário. O vosso diagrama também devia ter."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          1.4
+        ],
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "odete_janela",
+      "name": "Odete",
+      "age": 74,
+      "role": "window",
+      "zone": "portadas",
+      "appearance": "older Portuguese woman, sharp hazel eyes, dark silver bun, lilac cardigan, white blouse, forest green skirt, gold earrings, little television remote",
+      "actions": "mão apoiada no parapeito imaginário à cintura e indicador em riste, expressão corretiva; depois mão em concha ao ouvido, desconfiada",
+      "reactions": "braços cruzados e olhar lateral penetrante; depois baixa os óculos para ler o comando da televisão, absorta",
+      "story": "Corrige os horários e histórias de todos. Entre as 18:20 e as 18:40 vê a novela; os vizinhos organizam a vida à volta desses vinte minutos.",
+      "height": 151,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "corrige os horários e histórias de todos",
+      "purpose": "Corrige os horários e histórias de todos. Entre as 18:20 e as 18:40 vê a novela; os vizinhos organizam a vida à volta desses vinte minutos.",
+      "greeting": "Corrige os horários e histórias de todos.",
+      "wait_seconds": 5,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.48,
+        "curiosity": 0.6,
+        "restlessness": 0.7100000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          4,
+          11
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Corrige os horários e histórias de todos.",
+          "Não foi terça. Foi quarta. Vi daqui."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          1.5
+        ],
+        [
+          2,
+          8
+        ]
+      ]
+    },
+    {
+      "id": "fausto_merceeiro",
+      "name": "Fausto",
+      "age": 52,
+      "role": "window",
+      "zone": "portadas",
+      "appearance": "broad olive-skinned Portuguese grocer, receding curly dark hair, neat moustache, blue work apron, green shirt, grey trousers, wooden produce crate",
+      "actions": "segura uma caixa de fruta e olha para cima, apreensivo; depois conta discretamente três laranjas",
+      "reactions": "tapa a caixa com um pano, assobia inocentemente; depois acena para uma janela com resignação",
+      "story": "A Odete conta tudo o que ele vende. Espera pela novela para levar um cabaz surpresa à irmã sem o bairro inteiro comentar.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "a odete conta tudo o que ele vende",
+      "purpose": "A Odete conta tudo o que ele vende. Espera pela novela para levar um cabaz surpresa à irmã sem o bairro inteiro comentar.",
+      "greeting": "A Odete conta tudo o que ele vende.",
+      "wait_seconds": 6,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.61,
+        "curiosity": 0.6,
+        "restlessness": 0.15,
+        "stride_length": 72,
+        "idle_hold": [
+          5,
+          7
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "A Odete conta tudo o que ele vende.",
+          "O cabaz é surpresa. A Odete é que não concorda."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "toni_matraquilhos",
+      "name": "Tóni · antigo campeão",
+      "age": 64,
+      "role": "foosball",
+      "zone": "byron",
+      "appearance": "wiry older Portuguese man, slick grey hair, drooping moustache, maroon tracksuit, gold chain, white bandage on right wrist, pointed trainers",
+      "actions": "inclinado para a frente agarra dois punhos de matraquilhos separados, olhar competitivo; depois braços cruzados protege mão ligada",
+      "reactions": "ergue um dedo a contestar um golo, indignado; depois estica cuidadosamente o pulso, preocupado",
+      "story": "Diz que abandonou a competição por lesão. Reconhece cada golo só pelo som e entra no café para explicar porque não contou.",
+      "height": 159,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "diz que abandonou a competição por lesão",
+      "purpose": "Diz que abandonou a competição por lesão. Reconhece cada golo só pelo som e entra no café para explicar porque não contou.",
+      "greeting": "Diz que abandonou a competição por lesão.",
+      "wait_seconds": 7,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.74,
+        "curiosity": 0.6,
+        "restlessness": 0.29000000000000004,
+        "stride_length": 72,
+        "idle_hold": [
+          6,
+          8
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Diz que abandonou a competição por lesão.",
+          "Eu deixei a competição. Não deixei de ter razão."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          1.7
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "dora_matraquilhos",
+      "name": "Dora",
+      "age": 61,
+      "role": "foosball",
+      "zone": "byron",
+      "appearance": "tall athletic older Black woman, close cropped salt and pepper hair, bottle green polo, cream trousers, red canvas shoes, rolled sleeves",
+      "actions": "agarrada aos punhos de matraquilhos, expressão calma e firme; depois afasta as mãos e ergue uma sobrancelha",
+      "reactions": "inclina-se para rematar com precisão, concentrada; depois mostra a bola na palma, desafiante",
+      "story": "Foi ela quem ganhou a final ao Tóni. Nunca menciona a final: limita-se a perguntar se a mão já melhorou.",
+      "height": 151,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "foi ela quem ganhou a final ao tóni",
+      "purpose": "Foi ela quem ganhou a final ao Tóni. Nunca menciona a final: limita-se a perguntar se a mão já melhorou.",
+      "greeting": "Foi ela quem ganhou a final ao Tóni.",
+      "wait_seconds": 8,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.35,
+        "curiosity": 0.6,
+        "restlessness": 0.43000000000000005,
+        "stride_length": 72,
+        "idle_hold": [
+          3,
+          9
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Foi ela quem ganhou a final ao Tóni.",
+          "Já melhorou a mão, Tóni?"
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "simao_marcador",
+      "name": "Simão",
+      "age": 14,
+      "role": "foosball",
+      "zone": "byron",
+      "appearance": "thin freckled teenager, shaggy auburn hair, oversized yellow football shirt, grey shorts, green trainers, pocket score notebook",
+      "actions": "anota o resultado num bloco, língua entre os dentes; depois ergue a mão para assinalar golo",
+      "reactions": "mostra dois números com os dedos, impassível; depois esconde um sorriso atrás do bloco",
+      "story": "Neto do Tóni e árbitro autoproclamado. Guarda duas classificações: a verdadeira e a que o avô aceita.",
+      "height": 143,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "neto do tóni e árbitro autoproclamado",
+      "purpose": "Neto do Tóni e árbitro autoproclamado. Guarda duas classificações: a verdadeira e a que o avô aceita.",
+      "greeting": "Neto do Tóni e árbitro autoproclamado.",
+      "wait_seconds": 9,
+      "personality": {
+        "style": "reader",
+        "sociability": 0.48,
+        "curiosity": 0.6,
+        "restlessness": 0.5700000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          4,
+          10
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Neto do Tóni e árbitro autoproclamado.",
+          "Tenho a classificação verdadeira e a do meu avô."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1.5
+        ]
+      ]
+    },
+    {
+      "id": "vasco_rifas",
+      "name": "Vasco",
+      "age": 16,
+      "role": "raffle",
+      "zone": "martinho",
+      "appearance": "earnest slim teenage scout, curly black hair, beige scout shirt, olive shorts, yellow green neckerchief, long socks, oversized rubber stamp and ledger",
+      "actions": "carimba uma ficha com solenidade, sobrancelhas cerradas; depois procura uma caneta nos bolsos com pânico",
+      "reactions": "apresenta uma ficha de três páginas em pose oficial; depois observa a colega a vender rifas com total incredulidade",
+      "story": "Montou um balcão com senhas e requerimentos para financiar uma atividade de Minecraft. Não consegue concluir a primeira venda sem uma caneta.",
+      "height": 143,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "montou um balcão com senhas e requerimentos para financiar uma atividade de minecraft",
+      "purpose": "Montou um balcão com senhas e requerimentos para financiar uma atividade de Minecraft. Não consegue concluir a primeira venda sem uma caneta.",
+      "greeting": "Montou um balcão com senhas e requerimentos para financiar uma atividade de Minecraft.",
+      "wait_seconds": 10,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.61,
+        "curiosity": 0.6,
+        "restlessness": 0.7100000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          5,
+          11
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Montou um balcão com senhas e requerimentos para financiar uma atividade de Minecraft.",
+          "Quem valida a caneta que valida o requerimento?"
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "lia_rifas",
+      "name": "Lia",
+      "age": 15,
+      "role": "raffle",
+      "zone": "martinho",
+      "appearance": "short East Asian Portuguese teenage scout, straight black bob, beige scout shirt, olive skirt over leggings, red yellow neckerchief, raffle ticket booklet",
+      "actions": "destaca uma rifa com gesto rápido, concentrada; depois aponta para o bloco do colega com ar cético",
+      "reactions": "conta rifas vendidas, satisfeita sem sorriso aberto; depois empresta uma caneta com paciência esgotada",
+      "story": "Vende as rifas ao lado do balcão do Vasco. Cada vez que ele inventa uma regra, ela já concluiu mais uma venda.",
+      "height": 143,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "vende as rifas ao lado do balcão do vasco",
+      "purpose": "Vende as rifas ao lado do balcão do Vasco. Cada vez que ele inventa uma regra, ela já concluiu mais uma venda.",
+      "greeting": "Vende as rifas ao lado do balcão do Vasco.",
+      "wait_seconds": 11,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.74,
+        "curiosity": 0.6,
+        "restlessness": 0.15,
+        "stride_length": 72,
+        "idle_hold": [
+          6,
+          7
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Vende as rifas ao lado do balcão do Vasco.",
+          "A rifa já está vendida. Falta só o Vasco aceitar."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          1.2
+        ]
+      ]
+    },
+    {
+      "id": "raul_comprador",
+      "name": "Raul",
+      "age": 45,
+      "role": "raffle",
+      "zone": "martinho",
+      "appearance": "heavyset middle aged man, dark curly hair, short stubble, purple delivery polo, tan trousers, shopping tote and reading glasses",
+      "actions": "lê uma ficha de olhos semicerrados, perplexo; depois procura a carteira sem largar o saco",
+      "reactions": "segura uma rifa minúscula e uma ficha enorme, incrédulo; depois aponta para o relógio com expressão resignada",
+      "story": "Só queria comprar uma rifa antes do almoço. Acaba encarregado de organizar a fila para poder finalmente sair dela.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "só queria comprar uma rifa antes do almoço",
+      "purpose": "Só queria comprar uma rifa antes do almoço. Acaba encarregado de organizar a fila para poder finalmente sair dela.",
+      "greeting": "Só queria comprar uma rifa antes do almoço.",
+      "wait_seconds": 12,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.35,
+        "curiosity": 0.6,
+        "restlessness": 0.29000000000000004,
+        "stride_length": 72,
+        "idle_hold": [
+          3,
+          8
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Só queria comprar uma rifa antes do almoço.",
+          "Era uma rifa. Não era uma candidatura a emprego."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2.5
+        ],
+        [
+          3,
+          1.5
+        ]
+      ]
+    },
+    {
+      "id": "margarida_testes",
+      "name": "Professora Margarida",
+      "age": 57,
+      "role": "papers",
+      "zone": "valencas",
+      "appearance": "middle aged Portuguese professor, short greying auburn bob, angular red glasses, navy linen jacket, cream blouse, terracotta trousers, red pen, pile of exam papers",
+      "actions": "sentada corrige um teste com caneta vermelha e expressão severa; depois sentada levanta os olhos para corrigir uma conversa alheia",
+      "reactions": "de pé agarra folhas a voar, expressão alarmada; depois de cócoras recolhe um teste amarrotado, constrangida",
+      "story": "Veio para a esplanada concentrar-se, mas corrige todas as conversas à volta. Uma rajada torna as notas públicas.",
+      "height": 159,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "veio para a esplanada concentrar-se, mas corrige todas as conversas à volta",
+      "purpose": "Veio para a esplanada concentrar-se, mas corrige todas as conversas à volta. Uma rajada torna as notas públicas.",
+      "greeting": "Veio para a esplanada concentrar-se, mas corrige todas as conversas à volta.",
+      "wait_seconds": 13,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.48,
+        "curiosity": 0.6,
+        "restlessness": 0.43000000000000005,
+        "stride_length": 72,
+        "idle_hold": [
+          4,
+          9
+        ],
+        "gesture_hold": [
+          0.7,
+          3.5
+        ],
+        "friends": [],
+        "lines": [
+          "Veio para a esplanada concentrar-se, mas corrige todas as conversas à volta.",
+          "Estas notas ainda são provisórias!"
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1.4
+        ],
+        [
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "sara_aluna",
+      "name": "Sara",
+      "age": 20,
+      "role": "papers",
+      "zone": "valencas",
+      "appearance": "young Portuguese woman, curly chestnut hair tied messily, denim jacket, sage T-shirt, black jeans, canvas tote with books",
+      "actions": "lê uma folha de teste e franze o sobrolho; depois aponta discretamente para uma conta com lápis",
+      "reactions": "agacha-se para apanhar uma folha, preocupada; depois mostra uma correção no papel com ar determinado",
+      "story": "Reconhece um teste seu entre as folhas espalhadas. Uma conta foi corrigida duas vezes, com duas notas diferentes.",
+      "height": 151,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "reconhece um teste seu entre as folhas espalhadas",
+      "purpose": "Reconhece um teste seu entre as folhas espalhadas. Uma conta foi corrigida duas vezes, com duas notas diferentes.",
+      "greeting": "Reconhece um teste seu entre as folhas espalhadas.",
+      "wait_seconds": 5,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.61,
+        "curiosity": 0.6,
+        "restlessness": 0.5700000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          5,
+          10
+        ],
+        "gesture_hold": [
+          0.7,
+          1.5
+        ],
+        "friends": [],
+        "lines": [
+          "Reconhece um teste seu entre as folhas espalhadas.",
+          "Aqui tirou meio valor a uma conta que depois usou como exemplo."
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1.5
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "ruben_esplanada",
+      "name": "Rúben",
+      "age": 28,
+      "role": "papers",
+      "zone": "valencas",
+      "appearance": "young Black Portuguese waiter, short twists, clean shaven, white rolled sleeve shirt, deep teal waist apron, charcoal trousers, tray with espresso cup",
+      "actions": "equilibra um tabuleiro e observa folhas na mesa, exausto; depois tenta pousar uma chávena sem espaço",
+      "reactions": "apanha uma folha com a mão livre, olhos arregalados; depois oferece um pisa-papéis improvisado com ar pragmático",
+      "story": "Quer servir uma bica, mas a professora ocupou três mesas com testes. Propõe prender as folhas com as chávenas; ela chama-lhe uma solução pouco rigorosa.",
+      "height": 155,
+      "speed": 70,
+      "mirror": false,
+      "route_offsets": [
+        [
+          -100,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "activity": "quer servir uma bica, mas a professora ocupou três mesas com testes",
+      "purpose": "Quer servir uma bica, mas a professora ocupou três mesas com testes. Propõe prender as folhas com as chávenas; ela chama-lhe uma solução pouco rigorosa.",
+      "greeting": "Quer servir uma bica, mas a professora ocupou três mesas com testes.",
+      "wait_seconds": 6,
+      "personality": {
+        "style": "notes",
+        "sociability": 0.74,
+        "curiosity": 0.6,
+        "restlessness": 0.7100000000000001,
+        "stride_length": 72,
+        "idle_hold": [
+          6,
+          11
+        ],
+        "gesture_hold": [
+          0.7,
+          2.5
+        ],
+        "friends": [],
+        "lines": [
+          "Quer servir uma bica, mas a professora ocupou três mesas com testes.",
+          "Se prendermos as folhas com as chávenas, já posso servir o café?"
+        ],
+        "approach_distance": 80
+      },
+      "beats": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1.2
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    }
+  ]
+}

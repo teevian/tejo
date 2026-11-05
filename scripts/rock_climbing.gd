@@ -16,6 +16,7 @@ var flags: Dictionary = {}
 var visited: Dictionary = {}
 var checkpoint := 0
 var completed := false
+var journey: Node2D
 var camera: Camera2D
 var scenery: Node2D
 var wall: Node2D
@@ -631,6 +632,7 @@ func camera_target() -> Vector2:
 func _process(delta: float) -> void:
 	if not _initialization_complete: return
 	if get_tree().paused: return
+	if is_instance_valid(journey): journey.step_minigame(delta)
 	space.step_turn(delta)
 	# Keep both existing paintings legible when depth projects them onto one point.
 	var dx: float = people[0].position.x-people[1].position.x

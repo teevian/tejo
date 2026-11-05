@@ -12,7 +12,7 @@ Assets iniciais no projeto:
 | `landmarks.png` | 1536×1024, RGBA | Seis silhuetas: igreja, Valenças, Lawrence’s, Piriquita, Sassetti, Fonte Mourisca |
 | `houses.png` | 1774×887, RGBA | Oito famílias de fachadas, sem fundos de terreno |
 | `pavement.png` | 1254×1254 | Calçada com grão pintado; cor e escala ajustadas no material do terreno |
-| `stone-stairs.png` | 1254×1254 | Degraus de granito; UVs orientadas pela direção de cada lanço |
+| `stone-stairs.png` | 1254×1254 | Degraus de granito; um recorte finito por cada novo lanço curto |
 
 Os pedidos indicavam dimensões/grades de produção; a ferramenta devolveu as dimensões acima. Os recortes foram medidos no alfa dos ficheiros finais e são consumidos no Godot através de `data/village/art-regions.json`, sem redimensionar nem voltar a pintar as imagens. `landmarks.png` teve uma passagem de remoção de fundo: o primeiro resultado tinha um mate claro semitransparente. O resultado final tem fundo com alfa zero, verificado antes da integração. As superfícies dos edifícios usam o mesmo material opaco da serra; ficam transparentes apenas os intervalos das silhuetas. Não foi alterado nenhum atlas de personagem.
 
@@ -41,3 +41,28 @@ One square seamless 1024x1024 texture of traditional Portuguese historic village
 ### Escadas (`stylized-concept`)
 
 One production seamless painted ground texture, square 1024x1024, straight overhead. A continuous straight run of traditional aged grey granite stone stairs filling the image, twelve horizontal parallel treads from left edge to right, repeated top to bottom. Broad worn grey limestone, fine gouache grain, occasional warm mottling and moss at joints. Thin subtle dark riser shadow, thin rounded pale nosing; shallow depth and no railings. Horizontal treads, ascent vertically up, slight chipped irregularity. Match reference Tejo painted stone style, cooler granite rather than ochre round cobbles. No perspective, sides, walls, plants, people, text, sky, borders, ladders, planks or empty background. Texture covers a walkable stair segment.
+# Fachadas laterais — revisão de 3 de novembro de 2026
+
+Ficheiro final novo: `side-frontages.png`, 1536 × 1024 RGBA, oito edifícios pintados de esquina e de lado. Gerado com **ImageGen integrada**, usando `urban-frontages.png` e uma captura do jogo como referências de estilo. Origem: `exec-9ee4b117-864c-4f21-b17a-39261dd84827.png`. Copiado sem alterar os píxeis; os recortes nativos estão em `data/village/art-regions.json`. A implantação conserva as bases sólidas e orienta os novos acessos para as ruas próximas. Os 206 edifícios laterais incluem prédios, casas e lojas.
+
+As quatro novas escadas são construídas na geometria do jogo: cada lanço é curto e finito, com patamares, degraus de granito, muros de suporte e desnível de 72 unidades. O atlas anterior de granito é usado uma única vez por lanço, sem repetir a textura ao longo de ruas curvas. Não foram recriadas as antigas escadarias.
+
+## Pedido usado nas fachadas laterais
+
+Use case: stylized-concept.
+Asset type: final 2D environment building sprite atlas for the existing Tejo game, historic Sintra Portugal.
+Primary request: EIGHT genuinely SIDE-VIEW and CORNER buildings. The current game has only flat frontal facades. New buildings must clearly show deep long side elevations facing the narrow street to the LEFT or RIGHT, with shop doors and windows along those side faces. These are NEW buildings in the same painted village, not edits of the existing atlas.
+Input 1 existing building atlas STYLE ONLY (warm gouache, terracotta roofs, Portuguese stone window frames, stucco/azulejo, visible brushwork). Input 2 actual game screenshot for lighting, detail and game camera. Do not copy people or scenery.
+Composition: transparent PNG landscape sheet requested 2400x1600, EXACTLY FOUR COLUMNS by TWO ROWS = eight isolated complete buildings, all on the SAME elevated orthographic/axonometric game camera, no vanishing point. Each entire building inside its own cell, transparent gutters. Roof, walls and foundation all visible and complete. No ground, streets, steps, plants outside footprint, shadows on floor, people, backdrop, captions or labels.
+Crucial architectural change: each building has a dominant long SIDE elevation at 30–45 degrees to screen plane and a narrow secondary END elevation. Not flat front-facing facades with a tiny strip of side. The dominant side must have 3–4 window bays and multiple storeys; corners visibly recede. Ground storefronts turn the corner. Do not rotate a flat front image. Equal overall building scale, natural structural perspective, roofs over both faces.
+TOP ROW, LEFT TO RIGHT:
+1. Three-storey ochre apartment and small ground-floor bakery, dominant side facing screen RIGHT, narrow end face on left. Terracotta ridge roof recedes deeply, cream limestone frames, dark green doors and side-facing shop windows with bread. No readable signs.
+2. Three-storey pale blue tiled corner apartment over pottery shop, dominant side facing screen LEFT, narrow end on right. Deep long side with balconies, blue-white azulejos, dark-blue framed side shop windows containing ceramic vases.
+3. Two-storey cream residential house, almost PROFILE facing screen RIGHT: long side with four shuttered windows, small recessed doorway on long side and a clearly visible short gable end. Steep orange tiled roof receding diagonally, green shutters, real depth.
+4. Three-storey dusty pink corner cafe, dominant side facing screen LEFT, narrow end on right. Long side with green shopfront windows, cafe tables visible INSIDE only, stone door lintels, simple small burgundy awnings attached to side.
+BOTTOM ROW, LEFT TO RIGHT:
+5. Four-storey narrow golden-yellow apartment, dominant side facing RIGHT, narrow gable end on left. Long wall with several windows on each floor, wrought iron balcony, green entrance door along the side. Tall believable town apartment proportions.
+6. Two-storey pale mint grocery shop and home, dominant side facing LEFT, narrow end on right. Long side with open display windows and recessed dark green door, upper white-framed windows, terracotta roof.
+7. Three-storey warm ivory bookshop and home, almost PROFILE facing RIGHT, dominant deep side elevation with side shop door and glass windows containing shelves of books, narrow end on left, green shutters above.
+8. Three-storey blue-and-white tiled corner house, dominant side facing LEFT with long wall and stone-framed windows, narrow end on right, dark blue entry along side, orange tiled roof and chimney.
+All eight as detailed hand-painted opaque architectural sprites with TRUE fully transparent alpha around each silhouette. No brown matte, no checkerboard, no borders, no decorative cards, no scenery or typography. Match game style, no pixel art, no photorealism, no flat vector.

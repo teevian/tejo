@@ -6,7 +6,7 @@
 |---|---:|---|
 | [urban-frontages.png](urban-frontages.png) | 1536 × 1024 RGBA | Oito fachadas altas para quarteirões: ocre, cinzento, azul, rosa, azulejos verdes/azuis e habitação branca |
 | [street-market.png](street-market.png) | 1448 × 1086 RGBA | Doze peças: três bancas, esplanada, hortênsia, floreiras, balaustrada, pelourinho, fonte, quadro, cestos e candeeiro |
-| [calcada-diamonds.png](calcada-diamonds.png) | 1254 × 1254 RGB | Calçada preta e branca em losangos, com UVs contínuas no espaço do mundo |
+| [calcada-diamonds.png](calcada-diamonds.png) | 1254 × 1254 RGB | Calçada preta e branca em losangos, limitada aos painéis emoldurados das praças |
 
 Os atlas foram guardados sem repintura, recorte destrutivo ou redimensionamento. Os recortes medidos no alfa estão em `data/village/art-regions.json`; o Godot lê as regiões nativas. O fundo dos dois atlas tem alfa zero e o material do cenário mantém as superfícies pintadas opacas. Os candeeiros usam o mesmo atlas e ficam presos às fachadas. As bandeirinhas são elementos simples desenhados pelo motor.
 
@@ -32,3 +32,7 @@ Top row: 1) small cream canvas awning on dark green posts sheltering a wooden pr
 Middle row: 5) terracotta pot with lush hydrangea pink flowers; 6) a row of three flower boxes with red geraniums; 7) long cream carved stone balustrade viewed across front with 8 balusters and pillars, straight horizontal top; 8) weathered Sintra stone pillory column with a detailed old carved capital on three concentric octagonal steps, slender and tall, no lettering.
 Bottom row: 9) large round carved limestone historic Portuguese fountain, central narrow multi-level column, scalloped basin, subtle pale green water, matching Sintra main square photographs; 10) wooden street chalkboard on A-frame with tiny abstract chalk strokes no readable words; 11) shallow wicker baskets with colorful ceramic plates and rolled textiles outside shop; 12) curved wrought-iron bracket with a traditional black square hanging lantern, ornate curl.
 Rendering: tactile brush painted stone, terracotta and wood, gentle ambient daylight, architecture-scale game art. No grass or ground slab beneath objects except fountain/pillory bases. True transparent alpha outside silhouettes and in gaps of ironwork and balustrade. Do not add names, captions, watermarks or grid lines.
+
+## Pavimentação orientada — revisão
+
+A textura de pedra existente fornece o grão ao shader `shaders/village_paving.gdshader`. Os fiados são construídos no motor, com juntas gastas e variação discreta entre pedras; o granito central usa coordenadas que seguem o comprimento e a largura do percurso. A calçada clara envolve as fachadas e o bordo do passeio; os losangos do atlas ficam só em dois painéis das praças. Os novos aglomerados reutilizam as pinturas aprovadas de fachadas frontais e laterais. Não houve geração de novas imagens nesta revisão.

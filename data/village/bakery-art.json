@@ -1,0 +1,130 @@
+{
+  "food": [
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        85,
+        44,
+        350,
+        359
+      ],
+      "foot": [
+        82.0,
+        359
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        522,
+        33,
+        340,
+        364
+      ],
+      "foot": [
+        79.0,
+        364
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        951,
+        34,
+        355,
+        361
+      ],
+      "foot": [
+        81.0,
+        361
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        1365,
+        67,
+        355,
+        302
+      ],
+      "foot": [
+        171.5,
+        302
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        49,
+        511,
+        395,
+        297
+      ],
+      "foot": [
+        128.5,
+        297
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        571,
+        423,
+        242,
+        436
+      ],
+      "foot": [
+        105.0,
+        436
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        1031,
+        423,
+        175,
+        435
+      ],
+      "foot": [
+        87.0,
+        435
+      ],
+      "height_ratio": 1
+    },
+    {
+      "path": "res://assets/items/bakery-food.png",
+      "rect": [
+        1458,
+        423,
+        169,
+        431
+      ],
+      "foot": [
+        84.5,
+        431
+      ],
+      "height_ratio": 1
+    }
+  ],
+  "counter": {
+    "path": "res://assets/world/village/bakery-counter.png",
+    "rect": [
+      141,
+      140,
+      1253,
+      809
+    ],
+    "foot": [
+      626.5,
+      809
+    ],
+    "height_ratio": 1
+  }
+}

@@ -1,0 +1,2426 @@
+{
+  "description": "Casas adossadas nos interiores dos quarteirões. Bases sobrepostas fecham os lotes; ruas, largos, entradas públicas e das rotinas, e patamares ficam livres.",
+  "buildings": [
+    {
+      "id": "BlockInfill_000",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        9206,
+        4866
+      ],
+      "width": 362,
+      "bases": [
+        [
+          9032,
+          4641,
+          348,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0004",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_001",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        10622,
+        7895
+      ],
+      "width": 385,
+      "bases": [
+        [
+          10437,
+          7670,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0010"
+    },
+    {
+      "id": "BlockInfill_002",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        8115,
+        7003
+      ],
+      "width": 344,
+      "bases": [
+        [
+          7950,
+          6778,
+          330,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0014",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_003",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        8075,
+        6781
+      ],
+      "width": 404,
+      "bases": [
+        [
+          7881,
+          6556,
+          388,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0014",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_004",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        8954,
+        8353
+      ],
+      "width": 369,
+      "bases": [
+        [
+          8777,
+          8128,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0017",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_005",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        19146,
+        2586
+      ],
+      "width": 316,
+      "bases": [
+        [
+          18994,
+          2361,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0074",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_006",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        10692,
+        4818
+      ],
+      "width": 418,
+      "bases": [
+        [
+          10491,
+          4593,
+          401,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0078",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_007",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        16562,
+        9284
+      ],
+      "width": 344,
+      "bases": [
+        [
+          16397,
+          9059,
+          330,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0092"
+    },
+    {
+      "id": "BlockInfill_008",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        1261,
+        4321
+      ],
+      "width": 396,
+      "bases": [
+        [
+          1071,
+          4096,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0105",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_009",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        1253,
+        4169
+      ],
+      "width": 439,
+      "bases": [
+        [
+          1042,
+          3944,
+          421,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0105",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_010",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        1453,
+        4139
+      ],
+      "width": 387,
+      "bases": [
+        [
+          1267,
+          3914,
+          372,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0105",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_011",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        3616,
+        7237
+      ],
+      "width": 316,
+      "bases": [
+        [
+          3464,
+          7012,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0126",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_012",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        3752,
+        7282
+      ],
+      "width": 339,
+      "bases": [
+        [
+          3589,
+          7057,
+          325,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0126",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_013",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        1342,
+        8393
+      ],
+      "width": 385,
+      "bases": [
+        [
+          1157,
+          8168,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0143",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_014",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        994,
+        6781
+      ],
+      "width": 369,
+      "bases": [
+        [
+          817,
+          6556,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0149",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_015",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        7610,
+        8139
+      ],
+      "width": 385,
+      "bases": [
+        [
+          7425,
+          7914,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0168",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_016",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        13804,
+        10102
+      ],
+      "width": 405,
+      "bases": [
+        [
+          13610,
+          9877,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0188",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_017",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14201,
+        3701
+      ],
+      "width": 362,
+      "bases": [
+        [
+          14027,
+          3476,
+          348,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0229"
+    },
+    {
+      "id": "BlockInfill_018",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        21137,
+        1535
+      ],
+      "width": 339,
+      "bases": [
+        [
+          20974,
+          1310,
+          325,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0238",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_019",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        20577,
+        1345
+      ],
+      "width": 362,
+      "bases": [
+        [
+          20403,
+          1120,
+          348,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0238",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_020",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        19760,
+        2218
+      ],
+      "width": 385,
+      "bases": [
+        [
+          19575,
+          1993,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0251",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_021",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        19785,
+        3778
+      ],
+      "width": 308,
+      "bases": [
+        [
+          19637,
+          3553,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0255",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_022",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        20434,
+        10851
+      ],
+      "width": 404,
+      "bases": [
+        [
+          20240,
+          10626,
+          388,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0280",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_023",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        20390,
+        13309
+      ],
+      "width": 405,
+      "bases": [
+        [
+          20196,
+          13084,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0292"
+    },
+    {
+      "id": "BlockInfill_024",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        20280,
+        13229
+      ],
+      "width": 450,
+      "bases": [
+        [
+          20064,
+          13004,
+          432,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0292"
+    },
+    {
+      "id": "BlockInfill_025",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        16047,
+        11673
+      ],
+      "width": 404,
+      "bases": [
+        [
+          15853,
+          11448,
+          388,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0322",
+      "side_facing": "right",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_026",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14810,
+        10117
+      ],
+      "width": 308,
+      "bases": [
+        [
+          14662,
+          9892,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0356"
+    },
+    {
+      "id": "BlockInfill_027",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        15417,
+        10668
+      ],
+      "width": 404,
+      "bases": [
+        [
+          15223,
+          10443,
+          388,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0359",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_028",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        5745,
+        5142
+      ],
+      "width": 354,
+      "bases": [
+        [
+          5575,
+          4917,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0376"
+    },
+    {
+      "id": "BlockInfill_029",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        5001,
+        5720
+      ],
+      "width": 385,
+      "bases": [
+        [
+          4816,
+          5495,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0380",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_030",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7198,
+        8782
+      ],
+      "width": 414,
+      "bases": [
+        [
+          6999,
+          8557,
+          397,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0384"
+    },
+    {
+      "id": "BlockInfill_031",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        7424,
+        8725
+      ],
+      "width": 369,
+      "bases": [
+        [
+          7247,
+          8500,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0384"
+    },
+    {
+      "id": "BlockInfill_032",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        7390,
+        8600
+      ],
+      "width": 405,
+      "bases": [
+        [
+          7196,
+          8375,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0384"
+    },
+    {
+      "id": "BlockInfill_033",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        2467,
+        9822
+      ],
+      "width": 354,
+      "bases": [
+        [
+          2297,
+          9597,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0386"
+    },
+    {
+      "id": "BlockInfill_034",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        2309,
+        9842
+      ],
+      "width": 308,
+      "bases": [
+        [
+          2161,
+          9617,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0386"
+    },
+    {
+      "id": "BlockInfill_035",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        6587,
+        9765
+      ],
+      "width": 336,
+      "bases": [
+        [
+          6426,
+          9540,
+          323,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0387"
+    },
+    {
+      "id": "BlockInfill_036",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        6723,
+        9810
+      ],
+      "width": 361,
+      "bases": [
+        [
+          6550,
+          9585,
+          347,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0387"
+    },
+    {
+      "id": "BlockInfill_037",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        10704,
+        9820
+      ],
+      "width": 450,
+      "bases": [
+        [
+          10488,
+          9595,
+          432,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0396"
+    },
+    {
+      "id": "BlockInfill_038",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        7490,
+        10160
+      ],
+      "width": 405,
+      "bases": [
+        [
+          7296,
+          9935,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0400"
+    },
+    {
+      "id": "BlockInfill_039",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7140,
+        10362
+      ],
+      "width": 360,
+      "bases": [
+        [
+          6967,
+          10137,
+          346,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0400"
+    },
+    {
+      "id": "BlockInfill_040",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        7380,
+        10080
+      ],
+      "width": 450,
+      "bases": [
+        [
+          7164,
+          9855,
+          432,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0400"
+    },
+    {
+      "id": "BlockInfill_041",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        8145,
+        10342
+      ],
+      "width": 354,
+      "bases": [
+        [
+          7975,
+          10117,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0402"
+    },
+    {
+      "id": "BlockInfill_042",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        8371,
+        10285
+      ],
+      "width": 316,
+      "bases": [
+        [
+          8219,
+          10060,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0402"
+    },
+    {
+      "id": "BlockInfill_043",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        8137,
+        10190
+      ],
+      "width": 393,
+      "bases": [
+        [
+          7948,
+          9965,
+          377,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0402"
+    },
+    {
+      "id": "BlockInfill_044",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        6229,
+        10622
+      ],
+      "width": 328,
+      "bases": [
+        [
+          6072,
+          10397,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0404"
+    },
+    {
+      "id": "BlockInfill_045",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7490,
+        2085
+      ],
+      "width": 369,
+      "bases": [
+        [
+          7313,
+          1860,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0411"
+    },
+    {
+      "id": "BlockInfill_046",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        7456,
+        1960
+      ],
+      "width": 405,
+      "bases": [
+        [
+          7262,
+          1735,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0411"
+    },
+    {
+      "id": "BlockInfill_047",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7626,
+        2130
+      ],
+      "width": 396,
+      "bases": [
+        [
+          7436,
+          1905,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0411"
+    },
+    {
+      "id": "BlockInfill_048",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        8111,
+        2142
+      ],
+      "width": 377,
+      "bases": [
+        [
+          7930,
+          1917,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0413"
+    },
+    {
+      "id": "BlockInfill_049",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        7953,
+        2162
+      ],
+      "width": 328,
+      "bases": [
+        [
+          7796,
+          1937,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0413"
+    },
+    {
+      "id": "BlockInfill_050",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7694,
+        2922
+      ],
+      "width": 414,
+      "bases": [
+        [
+          7495,
+          2697,
+          397,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0420"
+    },
+    {
+      "id": "BlockInfill_051",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        7686,
+        2770
+      ],
+      "width": 459,
+      "bases": [
+        [
+          7466,
+          2545,
+          441,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0420"
+    },
+    {
+      "id": "BlockInfill_052",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        7536,
+        2942
+      ],
+      "width": 360,
+      "bases": [
+        [
+          7363,
+          2717,
+          346,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0420"
+    },
+    {
+      "id": "BlockInfill_053",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        10889,
+        2942
+      ],
+      "width": 328,
+      "bases": [
+        [
+          10732,
+          2717,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0423"
+    },
+    {
+      "id": "BlockInfill_054",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        15140,
+        3962
+      ],
+      "width": 377,
+      "bases": [
+        [
+          14959,
+          3737,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0429"
+    },
+    {
+      "id": "BlockInfill_055",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        14982,
+        3982
+      ],
+      "width": 328,
+      "bases": [
+        [
+          14825,
+          3757,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0429"
+    },
+    {
+      "id": "BlockInfill_056",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14942,
+        3760
+      ],
+      "width": 385,
+      "bases": [
+        [
+          14757,
+          3535,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0429"
+    },
+    {
+      "id": "BlockInfill_057",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14604,
+        6042
+      ],
+      "width": 354,
+      "bases": [
+        [
+          14434,
+          5817,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0432"
+    },
+    {
+      "id": "BlockInfill_058",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        14830,
+        5985
+      ],
+      "width": 316,
+      "bases": [
+        [
+          14678,
+          5760,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0432"
+    },
+    {
+      "id": "BlockInfill_059",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14446,
+        6062
+      ],
+      "width": 308,
+      "bases": [
+        [
+          14298,
+          5837,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0432"
+    },
+    {
+      "id": "BlockInfill_060",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        15120,
+        6562
+      ],
+      "width": 354,
+      "bases": [
+        [
+          14950,
+          6337,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0436"
+    },
+    {
+      "id": "BlockInfill_061",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        15112,
+        6410
+      ],
+      "width": 393,
+      "bases": [
+        [
+          14923,
+          6185,
+          377,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0436"
+    },
+    {
+      "id": "BlockInfill_062",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14962,
+        6582
+      ],
+      "width": 308,
+      "bases": [
+        [
+          14814,
+          6357,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0436"
+    },
+    {
+      "id": "BlockInfill_063",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        12567,
+        6880
+      ],
+      "width": 362,
+      "bases": [
+        [
+          12393,
+          6655,
+          348,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0441",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_064",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        11541,
+        9942
+      ],
+      "width": 414,
+      "bases": [
+        [
+          11342,
+          9717,
+          397,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0447"
+    },
+    {
+      "id": "BlockInfill_065",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        11767,
+        9885
+      ],
+      "width": 369,
+      "bases": [
+        [
+          11590,
+          9660,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0447"
+    },
+    {
+      "id": "BlockInfill_066",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        11903,
+        9930
+      ],
+      "width": 396,
+      "bases": [
+        [
+          11713,
+          9705,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0447"
+    },
+    {
+      "id": "BlockInfill_067",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        15626,
+        2322
+      ],
+      "width": 354,
+      "bases": [
+        [
+          15456,
+          2097,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0458"
+    },
+    {
+      "id": "BlockInfill_068",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        15852,
+        2265
+      ],
+      "width": 316,
+      "bases": [
+        [
+          15700,
+          2040,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0458"
+    },
+    {
+      "id": "BlockInfill_069",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        15618,
+        2170
+      ],
+      "width": 393,
+      "bases": [
+        [
+          15429,
+          1945,
+          377,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0458"
+    },
+    {
+      "id": "BlockInfill_070",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        16645,
+        2140
+      ],
+      "width": 346,
+      "bases": [
+        [
+          16479,
+          1915,
+          332,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0459"
+    },
+    {
+      "id": "BlockInfill_071",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        16535,
+        2060
+      ],
+      "width": 385,
+      "bases": [
+        [
+          16350,
+          1835,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0459"
+    },
+    {
+      "id": "BlockInfill_072",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        16695,
+        4085
+      ],
+      "width": 353,
+      "bases": [
+        [
+          16526,
+          3860,
+          339,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0466"
+    },
+    {
+      "id": "BlockInfill_073",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        16831,
+        4130
+      ],
+      "width": 378,
+      "bases": [
+        [
+          16650,
+          3905,
+          363,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0466"
+    },
+    {
+      "id": "BlockInfill_074",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        20992,
+        5550
+      ],
+      "width": 418,
+      "bases": [
+        [
+          20791,
+          5325,
+          401,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0469",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_075",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        21082,
+        5440
+      ],
+      "width": 410,
+      "bases": [
+        [
+          20885,
+          5215,
+          394,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0469",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_076",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        15994,
+        6962
+      ],
+      "width": 354,
+      "bases": [
+        [
+          15824,
+          6737,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0476"
+    },
+    {
+      "id": "BlockInfill_077",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        16220,
+        6905
+      ],
+      "width": 316,
+      "bases": [
+        [
+          16068,
+          6680,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0476"
+    },
+    {
+      "id": "BlockInfill_078",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        15836,
+        6982
+      ],
+      "width": 308,
+      "bases": [
+        [
+          15688,
+          6757,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0476"
+    },
+    {
+      "id": "BlockInfill_079",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        16866,
+        7482
+      ],
+      "width": 377,
+      "bases": [
+        [
+          16685,
+          7257,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0482"
+    },
+    {
+      "id": "BlockInfill_080",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        16708,
+        7502
+      ],
+      "width": 328,
+      "bases": [
+        [
+          16551,
+          7277,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0482"
+    },
+    {
+      "id": "BlockInfill_081",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        16668,
+        7280
+      ],
+      "width": 385,
+      "bases": [
+        [
+          16483,
+          7055,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0482"
+    },
+    {
+      "id": "BlockInfill_082",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        16811,
+        10082
+      ],
+      "width": 377,
+      "bases": [
+        [
+          16630,
+          9857,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0487"
+    },
+    {
+      "id": "BlockInfill_083",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        16653,
+        10102
+      ],
+      "width": 328,
+      "bases": [
+        [
+          16496,
+          9877,
+          315,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0487"
+    },
+    {
+      "id": "BlockInfill_084",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        16613,
+        9880
+      ],
+      "width": 385,
+      "bases": [
+        [
+          16428,
+          9655,
+          370,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0487"
+    },
+    {
+      "id": "BlockInfill_085",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        14086,
+        10902
+      ],
+      "width": 354,
+      "bases": [
+        [
+          13916,
+          10677,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0493",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_086",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        14312,
+        10845
+      ],
+      "width": 316,
+      "bases": [
+        [
+          14160,
+          10620,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0493",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_087",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        14078,
+        10750
+      ],
+      "width": 393,
+      "bases": [
+        [
+          13889,
+          10525,
+          377,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0493",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_088",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        11585,
+        11422
+      ],
+      "width": 396,
+      "bases": [
+        [
+          11395,
+          11197,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0498"
+    },
+    {
+      "id": "BlockInfill_089",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        11427,
+        11442
+      ],
+      "width": 344,
+      "bases": [
+        [
+          11262,
+          11217,
+          330,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0498"
+    },
+    {
+      "id": "BlockInfill_090",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14963,
+        11422
+      ],
+      "width": 354,
+      "bases": [
+        [
+          14793,
+          11197,
+          340,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0500"
+    },
+    {
+      "id": "BlockInfill_091",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        15189,
+        11365
+      ],
+      "width": 316,
+      "bases": [
+        [
+          15037,
+          11140,
+          303,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0500"
+    },
+    {
+      "id": "BlockInfill_092",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        14955,
+        11270
+      ],
+      "width": 393,
+      "bases": [
+        [
+          14766,
+          11045,
+          377,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0500"
+    },
+    {
+      "id": "BlockInfill_093",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 7,
+      "at": [
+        14308,
+        11625
+      ],
+      "width": 369,
+      "bases": [
+        [
+          14131,
+          11400,
+          354,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0502",
+      "side_facing": "left",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_094",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        14274,
+        11500
+      ],
+      "width": 405,
+      "bases": [
+        [
+          14080,
+          11275,
+          389,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0502",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_095",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 2,
+      "at": [
+        14444,
+        11670
+      ],
+      "width": 396,
+      "bases": [
+        [
+          14254,
+          11445,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0502",
+      "side_facing": "left",
+      "sprite_mirror": true
+    },
+    {
+      "id": "BlockInfill_096",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        15494,
+        11942
+      ],
+      "width": 377,
+      "bases": [
+        [
+          15313,
+          11717,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0510"
+    },
+    {
+      "id": "BlockInfill_097",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        15720,
+        11885
+      ],
+      "width": 336,
+      "bases": [
+        [
+          15559,
+          11660,
+          323,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0510"
+    },
+    {
+      "id": "BlockInfill_098",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        15486,
+        11790
+      ],
+      "width": 418,
+      "bases": [
+        [
+          15285,
+          11565,
+          401,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0510"
+    },
+    {
+      "id": "BlockInfill_099",
+      "label": "Casario interior",
+      "atlas": "side",
+      "type": 4,
+      "at": [
+        12047,
+        12202
+      ],
+      "width": 396,
+      "bases": [
+        [
+          11857,
+          11977,
+          380,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0511",
+      "side_facing": "right",
+      "sprite_mirror": false
+    },
+    {
+      "id": "BlockInfill_100",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        14613,
+        12202
+      ],
+      "width": 377,
+      "bases": [
+        [
+          14432,
+          11977,
+          362,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0512"
+    },
+    {
+      "id": "BlockInfill_101",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        14839,
+        12145
+      ],
+      "width": 336,
+      "bases": [
+        [
+          14678,
+          11920,
+          323,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0512"
+    },
+    {
+      "id": "BlockInfill_102",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        14605,
+        12050
+      ],
+      "width": 418,
+      "bases": [
+        [
+          14404,
+          11825,
+          401,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0512"
+    },
+    {
+      "id": "BlockInfill_103",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        17213,
+        12982
+      ],
+      "width": 414,
+      "bases": [
+        [
+          17014,
+          12757,
+          397,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0515"
+    },
+    {
+      "id": "BlockInfill_104",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 6,
+      "at": [
+        17205,
+        12830
+      ],
+      "width": 459,
+      "bases": [
+        [
+          16985,
+          12605,
+          441,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0515"
+    },
+    {
+      "id": "BlockInfill_105",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        11380,
+        13965
+      ],
+      "width": 336,
+      "bases": [
+        [
+          11219,
+          13740,
+          323,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0521"
+    },
+    {
+      "id": "BlockInfill_106",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        11516,
+        14010
+      ],
+      "width": 361,
+      "bases": [
+        [
+          11343,
+          13785,
+          347,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0521"
+    },
+    {
+      "id": "BlockInfill_107",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 7,
+      "at": [
+        11914,
+        14302
+      ],
+      "width": 344,
+      "bases": [
+        [
+          11749,
+          14077,
+          330,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0526"
+    },
+    {
+      "id": "BlockInfill_108",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        11126,
+        14790
+      ],
+      "width": 378,
+      "bases": [
+        [
+          10945,
+          14565,
+          363,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0531"
+    },
+    {
+      "id": "BlockInfill_109",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 5,
+      "at": [
+        12656,
+        14822
+      ],
+      "width": 308,
+      "bases": [
+        [
+          12508,
+          14597,
+          296,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0536"
+    },
+    {
+      "id": "BlockInfill_110",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        12616,
+        14600
+      ],
+      "width": 362,
+      "bases": [
+        [
+          12442,
+          14375,
+          348,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0536"
+    },
+    {
+      "id": "BlockInfill_111",
+      "label": "Casario interior",
+      "atlas": "urban",
+      "type": 2,
+      "at": [
+        15957,
+        14745
+      ],
+      "width": 336,
+      "bases": [
+        [
+          15796,
+          14520,
+          323,
+          225
+        ]
+      ],
+      "block_infill": true,
+      "cluster": "Frontage_0538"
+    }
+  ],
+  "clusters": 60,
+  "street_clearance": 64,
+  "public_and_routine_doors_preserved": true
+}

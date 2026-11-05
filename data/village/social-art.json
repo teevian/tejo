@@ -1,0 +1,1000 @@
+{
+  "description": "Authored social poses with measured alpha bounds and fixed scale per identity.",
+  "characters": {
+    "farid": {
+      "path": "res://assets/characters/villagers/social-activities.png",
+      "frames": [
+        {
+          "rect": [
+            66,
+            15,
+            139,
+            356
+          ],
+          "foot": [
+            69.5,
+            356
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            24,
+            392,
+            193,
+            336
+          ],
+          "foot": [
+            93.5,
+            336
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            44,
+            753,
+            166,
+            316
+          ],
+          "foot": [
+            64.5,
+            316
+          ],
+          "height_ratio": 0.91
+        },
+        {
+          "rect": [
+            27,
+            1094,
+            190,
+            337
+          ],
+          "foot": [
+            94.5,
+            337
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "teresa": {
+      "path": "res://assets/characters/villagers/social-activities.png",
+      "frames": [
+        {
+          "rect": [
+            263,
+            17,
+            154,
+            354
+          ],
+          "foot": [
+            84.5,
+            354
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            217,
+            398,
+            217,
+            330
+          ],
+          "foot": [
+            121.0,
+            330
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            259,
+            749,
+            146,
+            322
+          ],
+          "foot": [
+            82.5,
+            322
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            256,
+            1096,
+            178,
+            335
+          ],
+          "foot": [
+            82.5,
+            335
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "leonor": {
+      "path": "res://assets/characters/villagers/social-activities.png",
+      "frames": [
+        {
+          "rect": [
+            477,
+            12,
+            140,
+            359
+          ],
+          "foot": [
+            78.5,
+            359
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            469,
+            392,
+            158,
+            336
+          ],
+          "foot": [
+            78.5,
+            336
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            470,
+            741,
+            130,
+            330
+          ],
+          "foot": [
+            75.5,
+            330
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            434,
+            1095,
+            214,
+            336
+          ],
+          "foot": [
+            87.0,
+            336
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "matilde": {
+      "path": "res://assets/characters/villagers/social-activities.png",
+      "frames": [
+        {
+          "rect": [
+            677,
+            60,
+            146,
+            309
+          ],
+          "foot": [
+            80.5,
+            309
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            652,
+            433,
+            202,
+            293
+          ],
+          "foot": [
+            98.0,
+            293
+          ],
+          "height_ratio": 0.94
+        },
+        {
+          "rect": [
+            657,
+            818,
+            174,
+            250
+          ],
+          "foot": [
+            90.5,
+            250
+          ],
+          "height_ratio": 0.82
+        },
+        {
+          "rect": [
+            666,
+            1130,
+            173,
+            301
+          ],
+          "foot": [
+            82.5,
+            301
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "nuno": {
+      "path": "res://assets/characters/villagers/social-activities.png",
+      "frames": [
+        {
+          "rect": [
+            893,
+            14,
+            131,
+            355
+          ],
+          "foot": [
+            71.5,
+            355
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            884,
+            390,
+            184,
+            338
+          ],
+          "foot": [
+            65.0,
+            338
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            881,
+            742,
+            151,
+            327
+          ],
+          "foot": [
+            78.0,
+            327
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            887,
+            1093,
+            150,
+            338
+          ],
+          "foot": [
+            76.0,
+            338
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "ines_escuteira": {
+      "path": "res://assets/characters/villagers/social-service.png",
+      "frames": [
+        {
+          "rect": [
+            65,
+            53,
+            126,
+            311
+          ],
+          "foot": [
+            68.5,
+            311
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            60,
+            420,
+            154,
+            288
+          ],
+          "foot": [
+            64.5,
+            288
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            57,
+            761,
+            144,
+            273
+          ],
+          "foot": [
+            71.0,
+            273
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            57,
+            1083,
+            132,
+            306
+          ],
+          "foot": [
+            69.5,
+            306
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "pedro_escuteiro": {
+      "path": "res://assets/characters/villagers/social-service.png",
+      "frames": [
+        {
+          "rect": [
+            271,
+            56,
+            127,
+            307
+          ],
+          "foot": [
+            62.0,
+            307
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            271,
+            419,
+            133,
+            289
+          ],
+          "foot": [
+            58.0,
+            289
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            267,
+            763,
+            123,
+            271
+          ],
+          "foot": [
+            61.0,
+            271
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            261,
+            1089,
+            115,
+            298
+          ],
+          "foot": [
+            62.0,
+            298
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "enzo_gelados": {
+      "path": "res://assets/characters/villagers/social-service.png",
+      "frames": [
+        {
+          "rect": [
+            468,
+            52,
+            137,
+            312
+          ],
+          "foot": [
+            76.5,
+            312
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            466,
+            413,
+            143,
+            292
+          ],
+          "foot": [
+            61.0,
+            292
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            476,
+            754,
+            117,
+            279
+          ],
+          "foot": [
+            58.5,
+            279
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            449,
+            1085,
+            140,
+            300
+          ],
+          "foot": [
+            78.5,
+            300
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "sofia_policia": {
+      "path": "res://assets/characters/villagers/social-service.png",
+      "frames": [
+        {
+          "rect": [
+            689,
+            51,
+            122,
+            313
+          ],
+          "foot": [
+            57.5,
+            313
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            681,
+            414,
+            158,
+            293
+          ],
+          "foot": [
+            59.5,
+            293
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            686,
+            758,
+            113,
+            275
+          ],
+          "foot": [
+            58.5,
+            275
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            676,
+            1085,
+            125,
+            302
+          ],
+          "foot": [
+            64.0,
+            302
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "clara_violinista": {
+      "path": "res://assets/characters/villagers/social-service.png",
+      "frames": [
+        {
+          "rect": [
+            897,
+            52,
+            124,
+            311
+          ],
+          "foot": [
+            67.0,
+            311
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            879,
+            416,
+            186,
+            289
+          ],
+          "foot": [
+            76.5,
+            289
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            880,
+            769,
+            144,
+            263
+          ],
+          "foot": [
+            69.0,
+            263
+          ],
+          "height_ratio": 0.88
+        },
+        {
+          "rect": [
+            877,
+            1085,
+            181,
+            301
+          ],
+          "foot": [
+            72.0,
+            301
+          ],
+          "height_ratio": 1
+        }
+      ]
+    },
+    "gil": {
+      "path": "res://assets/characters/villagers/social-friends.png",
+      "frames": [
+        {
+          "rect": [
+            53,
+            11,
+            142,
+            354
+          ],
+          "foot": [
+            79.0,
+            354
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            37,
+            376,
+            180,
+            346
+          ],
+          "foot": [
+            84.5,
+            346
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            57,
+            729,
+            147,
+            350
+          ],
+          "foot": [
+            74.0,
+            350
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            56,
+            1088,
+            150,
+            355
+          ],
+          "foot": [
+            72.5,
+            355
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            120,
+            17,
+            187,
+            465
+          ],
+          "foot": [
+            87.5,
+            465
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        },
+        {
+          "rect": [
+            129,
+            524,
+            166,
+            470
+          ],
+          "foot": [
+            83.0,
+            470
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        }
+      ]
+    },
+    "tiago": {
+      "path": "res://assets/characters/villagers/social-friends.png",
+      "frames": [
+        {
+          "rect": [
+            257,
+            11,
+            148,
+            354
+          ],
+          "foot": [
+            84.0,
+            354
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            258,
+            375,
+            158,
+            347
+          ],
+          "foot": [
+            83.5,
+            347
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            263,
+            729,
+            154,
+            349
+          ],
+          "foot": [
+            79.5,
+            349
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            252,
+            1086,
+            165,
+            356
+          ],
+          "foot": [
+            91.0,
+            356
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            385,
+            15,
+            215,
+            466
+          ],
+          "foot": [
+            93.5,
+            466
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        },
+        {
+          "rect": [
+            394,
+            525,
+            174,
+            468
+          ],
+          "foot": [
+            85.5,
+            468
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        }
+      ]
+    },
+    "alexandre": {
+      "path": "res://assets/characters/villagers/social-friends.png",
+      "frames": [
+        {
+          "rect": [
+            456,
+            13,
+            148,
+            351
+          ],
+          "foot": [
+            88.0,
+            351
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            452,
+            375,
+            175,
+            346
+          ],
+          "foot": [
+            90.5,
+            346
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            459,
+            730,
+            159,
+            348
+          ],
+          "foot": [
+            85.0,
+            348
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            461,
+            1087,
+            161,
+            354
+          ],
+          "foot": [
+            83.0,
+            354
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            658,
+            18,
+            221,
+            464
+          ],
+          "foot": [
+            100.0,
+            464
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        },
+        {
+          "rect": [
+            667,
+            528,
+            181,
+            466
+          ],
+          "foot": [
+            92.5,
+            466
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        }
+      ]
+    },
+    "martim": {
+      "path": "res://assets/characters/villagers/social-friends.png",
+      "frames": [
+        {
+          "rect": [
+            667,
+            9,
+            155,
+            356
+          ],
+          "foot": [
+            86.5,
+            356
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            658,
+            373,
+            211,
+            349
+          ],
+          "foot": [
+            96.0,
+            349
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            680,
+            727,
+            157,
+            351
+          ],
+          "foot": [
+            77.0,
+            351
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            671,
+            1083,
+            179,
+            359
+          ],
+          "foot": [
+            88.5,
+            359
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            935,
+            14,
+            234,
+            468
+          ],
+          "foot": [
+            99.5,
+            468
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        },
+        {
+          "rect": [
+            949,
+            525,
+            184,
+            469
+          ],
+          "foot": [
+            88.0,
+            469
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        }
+      ]
+    },
+    "afonso": {
+      "path": "res://assets/characters/villagers/social-friends.png",
+      "frames": [
+        {
+          "rect": [
+            872,
+            15,
+            156,
+            349
+          ],
+          "foot": [
+            92.5,
+            349
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            887,
+            378,
+            178,
+            342
+          ],
+          "foot": [
+            88.0,
+            342
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            891,
+            733,
+            160,
+            345
+          ],
+          "foot": [
+            86.5,
+            345
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            880,
+            1090,
+            176,
+            351
+          ],
+          "foot": [
+            97.0,
+            351
+          ],
+          "height_ratio": 1
+        },
+        {
+          "rect": [
+            1229,
+            20,
+            211,
+            461
+          ],
+          "foot": [
+            79.5,
+            461
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        },
+        {
+          "rect": [
+            1229,
+            531,
+            171,
+            462
+          ],
+          "foot": [
+            81.0,
+            462
+          ],
+          "height_ratio": 1,
+          "path": "res://assets/characters/villagers/social-applause.png"
+        }
+      ]
+    }
+  }
+}

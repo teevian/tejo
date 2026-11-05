@@ -1,0 +1,42 @@
+[
+  {
+    "key": "objects",
+    "file": "assets/world/village/neighbours-objects.png",
+    "prompt": "Use case: illustration-story. Production native painted sprite atlas for the Sintra Portuguese village game. Attached reference is ONLY style and camera reference: warm gouache, fine pencil, aged materials, slightly overhead right three-quarter game view. Genuine transparent alpha background, no floor, no scenery, no shadows or haze. EXACTLY FOUR columns by TWO rows, EIGHT isolated complete objects, one object wholly contained in each equal cell, ample transparent gutters and margins, no text or labels. All furniture legs fully drawn. ROW 1 from left: (1) a red and cream checkered picnic blanket laid flat in perspective with wicker basket and two sandwiches on one edge, low view, no people; (2) a closed olive green old metal thermos with its screw cap, no hands; (3) EXACT SAME green thermos now open with cap beside it and a small empty cup; (4) complete full-size old Portuguese wooden FOOSBALL TABLE with green pitch, red and blue wooden players and metal rods, four sturdy legs visible, no people. ROW 2 left: (5) humble folding scout raffle table with neat blank forms, huge rubber stamp, ticket booklet, two empty paper trays, no people, no legible text; (6) a small stack of exam papers with red handwritten corrections and a red pen, object only, no table or chair; (7) ONE loose cream exam page with faint arithmetic and a small red circled grade, viewed overhead at a slight angle; (8) a small wooden pigeon training perch beside an improvised cardboard mailbox, no birds, no people. Match final handpainted game assets, not flat icons, not photorealism. No cropped edges."
+  },
+  {
+    "key": "pigeon",
+    "file": "assets/world/village/neighbours-pigeon.png",
+    "prompt": "Use case: illustration-story. Transparent animation sprite sheet of ONE consistent plump Lisbon street pigeon, grey body, iridescent green purple neck, one pale wing feather, blue leg band. Painted gouache and fine pencil, warm storybook Sintra game style, semi overhead camera. EXACT FOUR equal columns by TWO rows, eight independent poses in row-major reading order, one bird per cell, generous transparent margins, absolutely no background, no floor, no shadows, no haze, no text. Poses: top-left perched upright looking at tiny folded letter; top-second crouched pecking near a letter; top-third flying right wings fully UP carrying a folded cream paper in beak; top-fourth same bird same angle flying right wings fully DOWN with SAME paper. Bottom-left flying right wings UP with a comically long tiny paper receipt held in beak; bottom-second same bird same angle wings DOWN carrying same receipt; bottom-third landed holding receipt and looking indignant; bottom-fourth pecking a pastry crumb ignoring letter. Each entire wingspan, tail, beak and feet fully fits its cell. Identity and size stay consistent in each animation pair."
+  },
+  {
+    "key": "remove-prop-03",
+    "file": "assets/characters/villagers/neighbours-activity-03.png",
+    "prompt": "Use case: precise-object-edit. Edit this game sprite sheet with ONE narrow correction. Preserve ALL character identities, all faces, hair, clothes, silhouettes, two-row four-column layout, every other character and every expression EXACTLY. In TOP RIGHT cell, the elderly man in maroon tracksuit REMOVE ONLY the miniature foosball table/metal rod/players held in the hands. Leave both hands and arms in the same gripping playing pose, as if operating handles belonging to an external table placed separately by the game. The hands should grip small black handles only; no connecting rod, no table, no players, no furniture in this character's cell. Keep the two hands separate at their current height. Every other cell completely unchanged. Preserve genuine transparent alpha, no background or added halos, remove any low-opacity background noise. Do not crop feet or hands."
+  },
+  {
+    "key": "remove-prop-04",
+    "file": "assets/characters/villagers/neighbours-activity-04.png",
+    "prompt": "Use case: precise-object-edit. Edit this game sprite sheet with ONE narrow correction. Preserve ALL character identities, all faces, hair, clothes, silhouettes, two-row four-column layout, every other character and every expression EXACTLY. In TOP LEFT cell, the older Black woman in green polo REMOVE ONLY the miniature foosball table/metal rod/players held in the hands. Leave both hands and arms in the same gripping playing pose, as if operating handles belonging to an external table placed separately by the game. The hands should grip small black handles only; no connecting rod, no table, no players, no furniture in this character's cell. Keep the two hands separate at their current height. Every other cell completely unchanged. Preserve genuine transparent alpha, no background or added halos, remove any low-opacity background noise. Do not crop feet or hands."
+  },
+  {
+    "key": "stride-01",
+    "file": "assets/characters/villagers/neighbours-walk-01.png"
+  },
+  {
+    "key": "stride-02",
+    "file": "assets/characters/villagers/neighbours-walk-02.png"
+  },
+  {
+    "key": "stride-03",
+    "file": "assets/characters/villagers/neighbours-walk-03.png"
+  },
+  {
+    "key": "stride-04",
+    "file": "assets/characters/villagers/neighbours-walk-04.png"
+  },
+  {
+    "key": "stride-05",
+    "file": "assets/characters/villagers/neighbours-walk-05.png"
+  }
+]

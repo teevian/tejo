@@ -27,6 +27,10 @@ func run() -> void:
 	await frames(5)
 	check(is_instance_valid(garden.climbing_sign),"The lookout must have a visible climbing entrance")
 	check(garden.world.is_walkable(garden.climbing_sign.position,18),"The entrance sign must be reachable on free terrain")
+	garden.journey.bond = 19
+	garden._enter_climbing()
+	check(not is_instance_valid(garden.climbing_scene) and garden.visible,"Climbing remains locked before relationship level one")
+	garden.journey.bond = 20
 	garden.dialogue.flags["climbing_transition_sentinel"] = true
 	garden.people[0].inventory.try_add(preload("res://scripts/item_art.gd").ITEMS[0])
 	var forest_position: Vector2 = garden.people[0].position
@@ -40,7 +44,7 @@ func run() -> void:
 	check(not garden.visible and garden.process_mode==Node.PROCESS_MODE_DISABLED,"The forest must suspend while climbing")
 	var minutes: float = garden.day_cycle.minutes
 	await frames(70)
-	check(garden.people[0].position==forest_position and garden.day_cycle.minutes==minutes,"Forest positions and time must stay frozen")
+	check(garden.people[0].position==forest_position and garden.day_cycle.minutes>minutes,"Forest positions freeze while the shared clock and needs continue during the climb")
 	var wildlife_frozen := true
 	for i in animals.size():
 		if garden.world.wildlife.animals[i].position!=animals[i]: wildlife_frozen = false
@@ -69,5 +73,5 @@ func run() -> void:
 	check(not is_instance_valid(climbing),"Closing the forest must clean up its suspended climbing scene")
 	OS.remove_logger(errors)
 	check(errors.errors.is_empty(),"Scene transition runtime errors: "+str(errors.errors))
-	if not failed: print("PASS: lookout/menu entrance, frozen wildlife/time, preserved forest inventory/dialogues/map and persistent climbing re-entry")
+	if not failed: print("PASS: relationship gate, lookout/menu entrance, suspended wildlife, shared time/needs, preserved forest inventory/dialogues/map and persistent climbing re-entry")
 	quit(1 if failed else 0)

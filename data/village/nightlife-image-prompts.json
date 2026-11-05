@@ -1,0 +1,40 @@
+[
+  {
+    "file": "nightlife-friends.png",
+    "ids": [
+      "gil",
+      "tiago",
+      "alexandre",
+      "martim",
+      "afonso"
+    ],
+    "refs": [
+      "individual-residents-07.png",
+      "individual-residents-08.png"
+    ],
+    "prompt": "Use case: identity-preserve. Asset type: native transparent sprite atlas for the existing Sintra gouache/coloured-pencil RPG. Preserve the EXACT faces, hair, skin, clothes, shoes, proportions and delicately textured painted style of the specified reference characters, now at a small neighbourhood evening bar. FULL bodies including both shoes, complete limbs, generous empty transparent gutters, identical scale across frames. No scenery, floor, text, grid, shadows, background tint or glow. Empty background must have alpha ZERO. Natural varied expressions, closed-mouth attentive looks, no permanent broad grins. Hands anatomically clear. 4 evenly spaced ROWS; same person in each COLUMN. Row1 quiet three-quarter LISTENING with empty hands; row2 conversational SPEAKING small hand gesture; row3 a distinct dance pose with weight on LEFT foot, bent right knee and arms loosely asymmetric; row4 counterpose with weight on RIGHT foot, bent left knee, substantially changed arms and slight turn. Both dance poses must differ in feet, arms and torso angle; clothes and limbs remain intact, not a warped/recoloured duplicate. Not all looking at viewer. No Te or Jo. EXACTLY FIVE columns by FOUR rows, 20 individual figures. Columns in this exact order: Gil (image1 column1 curly light-brown hair, light grey T-shirt, tan trousers, white sneakers; put pastry bag away); Tiago (image1 column2 black polo, tan trousers, glasses and high curly dark hair; map put away); Alexandre (image1 column3 short dark hair, small beard, black T-shirt, grey jeans, camera hung at waist); Martim (image2 column1 swept dark hair, off-white open-collar shirt, dark trousers, brown shoes; put cup away); Afonso (image2 column2 short side-parted dark hair, teal T-shirt, grey trousers, white sneakers; put bag and tile away). Do not copy old activity props. Landscape atlas, ample gutters."
+  },
+  {
+    "file": "nightlife-guests.png",
+    "ids": [
+      "yuki",
+      "camila",
+      "beatriz",
+      "samira"
+    ],
+    "refs": [
+      "individual-residents-05.png",
+      "individual-residents-06.png",
+      "individual-residents-04.png"
+    ],
+    "prompt": "Use case: identity-preserve. Asset type: native transparent sprite atlas for the existing Sintra gouache/coloured-pencil RPG. Preserve the EXACT faces, hair, skin, clothes, shoes, proportions and delicately textured painted style of the specified reference characters, now at a small neighbourhood evening bar. FULL bodies including both shoes, complete limbs, generous empty transparent gutters, identical scale across frames. No scenery, floor, text, grid, shadows, background tint or glow. Empty background must have alpha ZERO. Natural varied expressions, closed-mouth attentive looks, no permanent broad grins. Hands anatomically clear. 4 evenly spaced ROWS; same person in each COLUMN. Row1 quiet three-quarter LISTENING with empty hands; row2 conversational SPEAKING small hand gesture; row3 a distinct dance pose with weight on LEFT foot, bent right knee and arms loosely asymmetric; row4 counterpose with weight on RIGHT foot, bent left knee, substantially changed arms and slight turn. Both dance poses must differ in feet, arms and torso angle; clothes and limbs remain intact, not a warped/recoloured duplicate. Not all looking at viewer. No Te or Jo. EXACTLY FOUR columns by FOUR rows, 16 individual figures. Columns in this exact order: Yuki (image1 column1 East Asian adult woman short black bob glasses denim jacket white blouse dark cropped trousers white trainers, camera at neck); Camila (image1 column5 curly dark ponytail tan skin red sleeveless athletic top charcoal cropped leggings teal trainers); Beatriz (image2 column2 adult woman short dark pixie hair, maroon checked overshirt, black T-shirt, grey jeans, dark sneakers; sketchbook put away); Samira (image3 column5 adult woman teal headscarf, mustard long tunic, maroon loose trousers, black flats; textile put away). Do not include any other reference people. Generous gutters."
+  },
+  {
+    "file": "nightlife-bar.png",
+    "ids": [],
+    "refs": [
+      "individual-residents-04.png"
+    ],
+    "prompt": "Use case: stylized-concept. Native transparent gouache/pencil atlas for an existing warm Sintra painted RPG. EXACTLY 3 columns x 2 rows, six isolated cells with generous empty transparent gutters. Upper row col1 small worn dark wooden outdoor BAR COUNTER, azulejo front, two water/lemonade glasses on top, NO people or stools attached; upper col2 one round dark wood high bar TABLE with two small glasses; upper col3 a small single old wood SPEAKER on tripod. Lower row col1 freestanding chalkboard sign with exact text 'LORD BYRON' then '20:30 — 01:30', hand-lettered warm cream on dark slate with small music note; lower col2 NUNO from image1 column2, same curly dark hair, glasses, blue shirt, cream apron, dark trousers and sneakers, FULL HEAD TO BOTH SHOES, cleaning a clear drinking glass with cloth instead of ceramic jar, neutral concentrated; lower col3 exact same Nuno head-to-toes, arm offering glass to a customer, small natural attentive expression, no broad grin. Preserve Nuno identity/style. No extra figures, no bar behind Nuno, no floor, no scene, no shadows, no haze or background colour. True alpha ZERO background."
+  }
+]

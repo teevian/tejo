@@ -4,7 +4,7 @@
     16000
   ],
   "previous_area": 35840000,
-  "adaptation": "Núcleo baseado nas ligações OSM documentadas. Habitação, pátios e ruas de ligação são uma interpretação jogável das 42 fotografias do utilizador, sem pretensão cadastral.",
+  "adaptation": "Núcleo baseado nas ligações OSM documentadas. Habitação, pátios e ruas de ligação são uma interpretação jogável das 42 fotografias do utilizador, sem pretensão cadastral. Calçada mineral contínua transitável; antigas escadarias extensas substituídas por ruas e novos lanços locais em patamares próprios.",
   "routes": [
     {
       "id": "palace_republic",
@@ -204,7 +204,7 @@
         ]
       ],
       "width": 232,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 60099542
     },
     {
@@ -300,7 +300,7 @@
         ]
       ],
       "width": 232,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 179201294
     },
     {
@@ -354,7 +354,7 @@
         ]
       ],
       "width": 224,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 151662373
     },
     {
@@ -375,7 +375,7 @@
         ]
       ],
       "width": 232,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 142171095
     },
     {
@@ -474,7 +474,7 @@
         ]
       ],
       "width": 224,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 51391749
     },
     {
@@ -491,7 +491,7 @@
         ]
       ],
       "width": 224,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 51391754
     },
     {
@@ -508,7 +508,7 @@
         ]
       ],
       "width": 240,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 50464094
     },
     {
@@ -529,7 +529,7 @@
         ]
       ],
       "width": 240,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 172229296
     },
     {
@@ -657,7 +657,7 @@
         ]
       ],
       "width": 256,
-      "surface": "steps",
+      "surface": "stone",
       "source_way": 685844669
     },
     {
@@ -844,7 +844,7 @@
         ]
       ],
       "width": 210,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -1056,7 +1056,7 @@
         ]
       ],
       "width": 215,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -1119,7 +1119,7 @@
         ]
       ],
       "width": 230,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -1265,7 +1265,7 @@
         ]
       ],
       "width": 220,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -1502,7 +1502,7 @@
         ]
       ],
       "width": 210,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -1734,7 +1734,7 @@
         ]
       ],
       "width": 210,
-      "surface": "steps",
+      "surface": "stone",
       "authored_extension": true
     },
     {
@@ -3833,7 +3833,7 @@
       "width": 450
     }
   ],
-  "building_count": 547,
+  "building_count": 659,
   "benches": [
     [
       8630,

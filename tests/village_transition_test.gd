@@ -79,6 +79,7 @@ func run() -> void:
 	await frames(2)
 	check(garden.region_id=="forest" and not paused and garden.people[0].position.distance_to(before_menu)<30,"Menu return preserves the forest departure position")
 	# The original climbing transition still works after multiple region visits.
+	garden.journey.bond = 20
 	garden._enter_climbing()
 	check(is_instance_valid(garden.climbing_scene) and not garden.visible,"Climbing still opens from the restored forest")
 	garden.climbing_scene.leave()

@@ -1,0 +1,2488 @@
+{
+  "description": "Rotinas ficcionais diárias das 35 pessoas. As horas indicam o início da deslocação; a atividade só começa após a chegada. Refeições e descanso decorrem em interiores representados pelas entradas dos edifícios.",
+  "places": {
+    "palace": {
+      "name": "Largo do Palácio",
+      "at": [
+        9800,
+        2390
+      ],
+      "indoor": false
+    },
+    "republic": {
+      "name": "Praça da República",
+      "at": [
+        9440,
+        3270
+      ],
+      "indoor": false
+    },
+    "bakery": {
+      "name": "Rua das Padarias",
+      "at": [
+        10250,
+        4770
+      ],
+      "indoor": false
+    },
+    "martinho": {
+      "name": "Adro de São Martinho",
+      "at": [
+        6600,
+        4900
+      ],
+      "indoor": false
+    },
+    "viewpoint": {
+      "name": "Miradouro da Ferraria",
+      "at": [
+        11650,
+        6960
+      ],
+      "indoor": false
+    },
+    "market": {
+      "name": "Largo da Feira",
+      "at": [
+        11830,
+        7870
+      ],
+      "indoor": false
+    },
+    "park": {
+      "name": "Parque da Liberdade",
+      "at": [
+        18500,
+        7800
+      ],
+      "indoor": false
+    },
+    "sassetti": {
+      "name": "Jardins da Vila Sassetti",
+      "at": [
+        8470,
+        12220
+      ],
+      "indoor": false
+    },
+    "west": {
+      "name": "Largo das Hortênsias",
+      "at": [
+        5250,
+        10000
+      ],
+      "indoor": false
+    },
+    "tiles": {
+      "name": "Largo dos Azulejos",
+      "at": [
+        18880,
+        4800
+      ],
+      "indoor": false
+    },
+    "portadas": {
+      "name": "Pátio das Portadas",
+      "at": [
+        18200,
+        12800
+      ],
+      "indoor": false
+    },
+    "gardens": {
+      "name": "Largo dos Jardins",
+      "at": [
+        12950,
+        12360
+      ],
+      "indoor": false
+    },
+    "byron": {
+      "name": "Recanto Lord Byron",
+      "at": [
+        4750,
+        6580
+      ],
+      "indoor": false
+    },
+    "duche": {
+      "name": "Casas do Duche",
+      "at": [
+        19600,
+        1600
+      ],
+      "indoor": false
+    },
+    "mourisca": {
+      "name": "Fonte Mourisca",
+      "at": [
+        15780,
+        5240
+      ],
+      "indoor": false
+    },
+    "valencas": {
+      "name": "Palácio Valenças",
+      "at": [
+        13800,
+        6720
+      ],
+      "indoor": false
+    },
+    "friends": {
+      "name": "encontro na Praça da República",
+      "at": [
+        9710,
+        3290
+      ],
+      "indoor": false
+    },
+    "hotel": {
+      "name": "alojamento no Lawrence’s Hotel",
+      "at": [
+        3880,
+        9186
+      ],
+      "indoor": true
+    },
+    "palace_cafe": {
+      "name": "café junto ao Palácio",
+      "at": [
+        9220,
+        2740
+      ],
+      "indoor": true
+    },
+    "padarias_cafe": {
+      "name": "café das Padarias",
+      "at": [
+        10250,
+        4770
+      ],
+      "indoor": true
+    },
+    "martinho_cafe": {
+      "name": "café junto a São Martinho",
+      "at": [
+        6600,
+        4900
+      ],
+      "indoor": true
+    },
+    "feira_cafe": {
+      "name": "café da Feira",
+      "at": [
+        12100,
+        7850
+      ],
+      "indoor": true
+    },
+    "tiles_cafe": {
+      "name": "café do Largo dos Azulejos",
+      "at": [
+        18880,
+        4800
+      ],
+      "indoor": true
+    },
+    "portadas_cafe": {
+      "name": "café do Pátio das Portadas",
+      "at": [
+        18200,
+        12800
+      ],
+      "indoor": true
+    },
+    "gardens_cafe": {
+      "name": "café do Largo dos Jardins",
+      "at": [
+        12950,
+        12360
+      ],
+      "indoor": true
+    },
+    "byron_cafe": {
+      "name": "café do Recanto Lord Byron",
+      "at": [
+        4750,
+        6580
+      ],
+      "indoor": true
+    },
+    "west_cafe": {
+      "name": "café do Largo das Hortênsias",
+      "at": [
+        5250,
+        10000
+      ],
+      "indoor": true
+    },
+    "park_cafe": {
+      "name": "café junto ao Parque da Liberdade",
+      "at": [
+        18500,
+        7800
+      ],
+      "indoor": true
+    },
+    "duche_cafe": {
+      "name": "café do Duche",
+      "at": [
+        19600,
+        1600
+      ],
+      "indoor": true
+    },
+    "ferreira": {
+      "name": "Largo Ferreira de Castro",
+      "at": [
+        9890,
+        9730
+      ],
+      "indoor": false
+    }
+  },
+  "people": {
+    "harry_kane": {
+      "residence": "hotel",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fotografar o Palácio",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "padarias_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "bakery",
+          "mode": "activity",
+          "activity": "a fotografar as ruas",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a fotografar o adro",
+          "stroll": true
+        },
+        {
+          "at": "19:00",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "rogerio_colaco": {
+      "residence": "hotel",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:15",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a consultar o mapa",
+          "stroll": true
+        },
+        {
+          "at": "12:15",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a planear o passeio da tarde",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a consultar o percurso de regresso",
+          "stroll": true
+        },
+        {
+          "at": "19:15",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "22:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "arlindo_oliveira": {
+      "residence": "hotel",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a ler à sombra",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a retomar a leitura",
+          "stroll": false
+        },
+        {
+          "at": "16:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a ler no adro",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "byron",
+          "mode": "activity",
+          "activity": "a ler antes do jantar",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "22:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "ines_lynce": {
+      "residence": "hotel",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:10",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:10",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a tomar notas",
+          "stroll": false
+        },
+        {
+          "at": "12:20",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:10",
+          "place": "valencas",
+          "mode": "activity",
+          "activity": "a apontar pormenores das fachadas",
+          "stroll": false
+        },
+        {
+          "at": "16:30",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a completar o caderno",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a rever as notas do passeio",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "22:20",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "teresa": {
+      "residence": "local",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a orientar visitantes",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "13:30",
+          "place": "bakery",
+          "mode": "activity",
+          "activity": "a mostrar a Rua das Padarias",
+          "stroll": true
+        },
+        {
+          "at": "15:30",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a orientar o passeio da tarde",
+          "stroll": true
+        },
+        {
+          "at": "18:00",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a terminar a visita guiada",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "lurdes": {
+      "residence": "local",
+      "commute_speed": 60,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a tricotar",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em casa",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a tricotar ao ar livre",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a acabar o cachecol antes de recolher",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "antonio": {
+      "residence": "local",
+      "commute_speed": 42,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:15",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a passear de bengala",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em casa",
+          "stroll": false
+        },
+        {
+          "at": "14:30",
+          "place": "west",
+          "mode": "activity",
+          "activity": "a passear devagar à sombra",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "nearby",
+          "mode": "activity",
+          "activity": "a fazer a última volta do dia",
+          "stroll": true
+        },
+        {
+          "at": "18:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "20:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "celeste": {
+      "residence": "local",
+      "commute_speed": 60,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a ler no largo",
+          "stroll": false
+        },
+        {
+          "at": "12:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em casa",
+          "stroll": false
+        },
+        {
+          "at": "14:30",
+          "place": "tiles",
+          "mode": "activity",
+          "activity": "a continuar o livro no largo",
+          "stroll": false
+        },
+        {
+          "at": "17:15",
+          "place": "nearby",
+          "mode": "activity",
+          "activity": "a ler mais um capítulo",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "manuel": {
+      "residence": "local",
+      "commute_speed": 60,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a ler o jornal",
+          "stroll": false
+        },
+        {
+          "at": "12:10",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em casa",
+          "stroll": false
+        },
+        {
+          "at": "14:15",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a reler o jornal no largo",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a consultar as últimas páginas",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:10",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "emilia": {
+      "residence": "local",
+      "commute_speed": 60,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a regar os gerânios",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em casa",
+          "stroll": false
+        },
+        {
+          "at": "15:00",
+          "place": "nearby",
+          "mode": "activity",
+          "activity": "a tratar dos vasos à sombra",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fazer a rega do fim do dia",
+          "stroll": false
+        },
+        {
+          "at": "19:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "matilde": {
+      "residence": "family_republic",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a jogar à macaca",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "padarias_cafe",
+          "mode": "inside",
+          "activity": "a almoçar com a família",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a jogar à macaca",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a jogar à macaca",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em família",
+          "stroll": false
+        },
+        {
+          "at": "20:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "guardian": "leonor"
+    },
+    "leonor": {
+      "residence": "family_republic",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fotografar a família",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "padarias_cafe",
+          "mode": "inside",
+          "activity": "a almoçar com a família",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "republic",
+          "mode": "activity",
+          "activity": "a fotografar a família",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a fotografar a família",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em família",
+          "stroll": false
+        },
+        {
+          "at": "20:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "tomas": {
+      "residence": "family_ferreira",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a brincar com a bola",
+          "stroll": false
+        },
+        {
+          "at": "12:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em família",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "mode": "activity",
+          "activity": "a brincar com a bola",
+          "stroll": false
+        },
+        {
+          "at": "17:15",
+          "place": "sassetti",
+          "mode": "activity",
+          "activity": "a brincar com a bola",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em família",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "guardian": "miguel"
+    },
+    "miguel": {
+      "residence": "family_ferreira",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a desenhar o largo",
+          "stroll": false
+        },
+        {
+          "at": "12:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar em família",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "ferreira",
+          "mode": "activity",
+          "activity": "a desenhar o largo",
+          "stroll": false
+        },
+        {
+          "at": "17:15",
+          "place": "sassetti",
+          "mode": "activity",
+          "activity": "a desenhar o largo",
+          "stroll": false
+        },
+        {
+          "at": "18:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em família",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "aisha": {
+      "residence": "family_park",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fazer bolas de sabão",
+          "stroll": false
+        },
+        {
+          "at": "12:15",
+          "place": "park_cafe",
+          "mode": "inside",
+          "activity": "a almoçar acompanhada",
+          "stroll": false
+        },
+        {
+          "at": "14:15",
+          "place": "park",
+          "mode": "activity",
+          "activity": "a fazer bolas de sabão",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "park",
+          "mode": "activity",
+          "activity": "a fazer bolas de sabão",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "20:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "guardian": "ingrid"
+    },
+    "ingrid": {
+      "residence": "family_park",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a observar aves",
+          "stroll": false
+        },
+        {
+          "at": "12:15",
+          "place": "park_cafe",
+          "mode": "inside",
+          "activity": "a almoçar acompanhada",
+          "stroll": false
+        },
+        {
+          "at": "14:15",
+          "place": "park",
+          "mode": "activity",
+          "activity": "a observar aves",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "park",
+          "mode": "activity",
+          "activity": "a observar aves",
+          "stroll": false
+        },
+        {
+          "at": "18:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "21:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "fatima": {
+      "residence": "local",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "05:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a escolher laranjas",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "13:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a escolher laranjas",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a arrumar as últimas laranjas",
+          "stroll": false
+        },
+        {
+          "at": "19:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "nuno": {
+      "residence": "local",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a limpar uma jarra",
+          "stroll": false
+        },
+        {
+          "at": "13:00",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a limpar uma jarra",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a guardar a cerâmica",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "silvia": {
+      "residence": "local",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a pintar cerâmica",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "13:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a pintar cerâmica",
+          "stroll": false
+        },
+        {
+          "at": "17:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a terminar o último prato",
+          "stroll": false
+        },
+        {
+          "at": "19:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "luis": {
+      "residence": "local",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "04:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "05:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a preparar pão",
+          "stroll": false
+        },
+        {
+          "at": "11:45",
+          "place": "padarias_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "12:45",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a preparar pão",
+          "stroll": false
+        },
+        {
+          "at": "16:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a arrumar o pão do dia",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "20:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "samira": {
+      "residence": "local",
+      "commute_speed": 80,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:45",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a dobrar tecidos",
+          "stroll": false
+        },
+        {
+          "at": "13:15",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "14:15",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a dobrar tecidos",
+          "stroll": false
+        },
+        {
+          "at": "18:15",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a guardar os tecidos da banca",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "yuki": {
+      "residence": "hotel",
+      "commute_speed": 100,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fotografar azulejos",
+          "stroll": true
+        },
+        {
+          "at": "12:15",
+          "place": "tiles_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "tiles",
+          "mode": "activity",
+          "activity": "a fotografar as fachadas",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a fotografar a luz do fim da tarde",
+          "stroll": true
+        },
+        {
+          "at": "20:00",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "amadou": {
+      "residence": "hotel",
+      "commute_speed": 110,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a descobrir o caminho",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "duche_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "13:15",
+          "place": "mourisca",
+          "mode": "activity",
+          "activity": "a consultar o mapa junto à fonte",
+          "stroll": true
+        },
+        {
+          "at": "16:30",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a escolher o caminho de regresso",
+          "stroll": true
+        },
+        {
+          "at": "19:00",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "ravi": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a comparar os mapas",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "martinho_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a explorar com o mapa do telemóvel",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "byron",
+          "mode": "activity",
+          "activity": "a confirmar o percurso para o hotel",
+          "stroll": true
+        },
+        {
+          "at": "19:45",
+          "place": "hotel",
+          "mode": "inside",
+          "activity": "a jantar no alojamento",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "camila": {
+      "residence": "local",
+      "commute_speed": 100,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a alongar antes da corrida",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a almoçar e recuperar",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "sassetti",
+          "mode": "activity",
+          "activity": "a fazer uma corrida leve",
+          "stroll": true
+        },
+        {
+          "at": "17:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a alongar depois da corrida",
+          "stroll": false
+        },
+        {
+          "at": "19:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "duarte": {
+      "residence": "local",
+      "commute_speed": 65,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a ler e passear no pátio",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "portadas_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "portadas",
+          "mode": "activity",
+          "activity": "a ler à sombra do pátio",
+          "stroll": true
+        },
+        {
+          "at": "17:30",
+          "place": "nearby",
+          "mode": "activity",
+          "activity": "a dar uma volta curta antes de recolher",
+          "stroll": true
+        },
+        {
+          "at": "19:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "beatriz": {
+      "residence": "local",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:45",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a desenhar as fachadas",
+          "stroll": false
+        },
+        {
+          "at": "12:45",
+          "place": "byron_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a desenhar a igreja",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "byron",
+          "mode": "activity",
+          "activity": "a acabar os esboços do dia",
+          "stroll": false
+        },
+        {
+          "at": "19:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "farid": {
+      "residence": "local",
+      "commute_speed": 90,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a ensaiar na praça",
+          "stroll": false
+        },
+        {
+          "at": "12:30",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:30",
+          "place": "byron",
+          "mode": "activity",
+          "activity": "a tocar guitarra na rua",
+          "stroll": false
+        },
+        {
+          "at": "17:15",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a preparar o concerto com a Clara",
+          "stroll": false
+        },
+        {
+          "at": "18:00",
+          "place": "martinho",
+          "mode": "activity",
+          "activity": "a tocar guitarra no concerto com a Clara",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar depois de tocar",
+          "stroll": false
+        },
+        {
+          "at": "23:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "rosa": {
+      "residence": "local",
+      "commute_speed": 75,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "05:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a varrer o passeio",
+          "stroll": true
+        },
+        {
+          "at": "12:00",
+          "place": "west_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "13:00",
+          "place": "west",
+          "mode": "activity",
+          "activity": "a cuidar do passeio",
+          "stroll": true
+        },
+        {
+          "at": "16:00",
+          "place": "nearby",
+          "mode": "activity",
+          "activity": "a terminar a limpeza do largo",
+          "stroll": true
+        },
+        {
+          "at": "18:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "21:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "joao": {
+      "residence": "local",
+      "commute_speed": 100,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "06:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a procurar uma morada",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "portadas_cafe",
+          "mode": "inside",
+          "activity": "a fazer a pausa de almoço",
+          "stroll": false
+        },
+        {
+          "at": "13:30",
+          "place": "portadas",
+          "mode": "activity",
+          "activity": "a confirmar a próxima entrega",
+          "stroll": true
+        },
+        {
+          "at": "17:00",
+          "place": "gardens",
+          "mode": "activity",
+          "activity": "a fazer a última entrega",
+          "stroll": true
+        },
+        {
+          "at": "19:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a jantar em casa",
+          "stroll": false
+        },
+        {
+          "at": "22:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ]
+    },
+    "gil": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a provar um travesseiro",
+          "stroll": true
+        },
+        {
+          "at": "12:15",
+          "place": "padarias_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "palace",
+          "mode": "activity",
+          "activity": "a saborear o lanche durante o passeio",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a fazer uma pausa com o saco do lanche",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "friends",
+          "mode": "activity",
+          "activity": "a partilhar o lanche com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "19:45",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a jantar com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "22:30",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "meeting": "friends"
+    },
+    "tiago": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a combinar o percurso",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "valencas",
+          "mode": "activity",
+          "activity": "a consultar o percurso da tarde",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a planear o encontro dos amigos",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "friends",
+          "mode": "activity",
+          "activity": "a combinar o próximo passeio com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a jantar com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "22:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "meeting": "friends"
+    },
+    "alexandre": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:30",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a fotografar o jardim",
+          "stroll": false
+        },
+        {
+          "at": "12:00",
+          "place": "gardens_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "13:00",
+          "place": "ferreira",
+          "mode": "activity",
+          "activity": "a fotografar as ruas do caminho",
+          "stroll": false
+        },
+        {
+          "at": "15:00",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a fotografar a paisagem",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "friends",
+          "mode": "activity",
+          "activity": "a mostrar fotografias aos amigos",
+          "stroll": false
+        },
+        {
+          "at": "20:00",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a jantar com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "23:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "meeting": "friends"
+    },
+    "martim": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "09:00",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a beber um café",
+          "stroll": true
+        },
+        {
+          "at": "12:30",
+          "place": "martinho_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "byron",
+          "mode": "activity",
+          "activity": "a fazer uma pausa para café",
+          "stroll": false
+        },
+        {
+          "at": "15:00",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a apreciar um café com vista",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "friends",
+          "mode": "activity",
+          "activity": "a tomar um café com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "20:15",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a jantar com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "23:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "meeting": "friends"
+    },
+    "afonso": {
+      "residence": "hotel",
+      "commute_speed": 95,
+      "schedule": [
+        {
+          "at": "00:00",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        },
+        {
+          "at": "07:15",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a tomar o pequeno-almoço",
+          "stroll": false
+        },
+        {
+          "at": "08:45",
+          "place": "regular",
+          "mode": "activity",
+          "activity": "a escolher um azulejo",
+          "stroll": true
+        },
+        {
+          "at": "12:45",
+          "place": "feira_cafe",
+          "mode": "inside",
+          "activity": "a almoçar",
+          "stroll": false
+        },
+        {
+          "at": "14:00",
+          "place": "market",
+          "mode": "activity",
+          "activity": "a comparar os desenhos dos azulejos",
+          "stroll": false
+        },
+        {
+          "at": "15:30",
+          "place": "viewpoint",
+          "mode": "activity",
+          "activity": "a observar o azulejo à luz natural",
+          "stroll": false
+        },
+        {
+          "at": "17:00",
+          "place": "friends",
+          "mode": "activity",
+          "activity": "a mostrar o azulejo aos amigos",
+          "stroll": false
+        },
+        {
+          "at": "19:45",
+          "place": "palace_cafe",
+          "mode": "inside",
+          "activity": "a jantar com os amigos",
+          "stroll": false
+        },
+        {
+          "at": "22:45",
+          "place": "residence",
+          "mode": "inside",
+          "activity": "a dormir",
+          "stroll": false
+        }
+      ],
+      "meeting": "friends"
+    }
+  }
+}

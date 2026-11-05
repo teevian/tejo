@@ -1,0 +1,361 @@
+[
+  {
+    "key": "residents-01",
+    "file": "locomotion-residents-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-01.png",
+    "columns": 5,
+    "ids": [
+      "harry_kane",
+      "rogerio_colaco",
+      "arlindo_oliveira",
+      "ines_lynce",
+      "teresa"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-02",
+    "file": "locomotion-residents-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-02.png",
+    "columns": 5,
+    "ids": [
+      "lurdes",
+      "antonio",
+      "celeste",
+      "manuel",
+      "emilia"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-03",
+    "file": "locomotion-residents-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-03.png",
+    "columns": 5,
+    "ids": [
+      "matilde",
+      "tomas",
+      "aisha",
+      "leonor",
+      "miguel"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-04",
+    "file": "locomotion-residents-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-04.png",
+    "columns": 5,
+    "ids": [
+      "fatima",
+      "nuno",
+      "silvia",
+      "luis",
+      "samira"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-05",
+    "file": "locomotion-residents-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-05.png",
+    "columns": 5,
+    "ids": [
+      "yuki",
+      "amadou",
+      "ingrid",
+      "ravi",
+      "camila"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-06",
+    "file": "locomotion-residents-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-06.png",
+    "columns": 5,
+    "ids": [
+      "duarte",
+      "beatriz",
+      "farid",
+      "rosa",
+      "joao"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-07",
+    "file": "locomotion-residents-07.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-07.png",
+    "columns": 3,
+    "ids": [
+      "gil",
+      "tiago",
+      "alexandre"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 3 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 3 equal columns and FOUR equal rows; 12 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "residents-08",
+    "file": "locomotion-residents-08.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/people-08.png",
+    "columns": 2,
+    "ids": [
+      "martim",
+      "afonso"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 2 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 2 equal columns and FOUR equal rows; 8 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "street-01",
+    "file": "locomotion-street-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/street-people-01.png",
+    "columns": 5,
+    "ids": [
+      "ines_escuteira",
+      "pedro_escuteiro",
+      "joana_escuteira",
+      "sofia_policia",
+      "enzo_gelados"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "street-02",
+    "file": "locomotion-street-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/street-people-02.png",
+    "columns": 5,
+    "ids": [
+      "clara_violinista",
+      "oliver_turista",
+      "helena_turista",
+      "mariana_montras",
+      "daniel_familia"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-01",
+    "file": "locomotion-festival-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-01.png",
+    "columns": 5,
+    "ids": [
+      "vera_cinema",
+      "goncalo_chamada",
+      "ana_fruta",
+      "quim_doces",
+      "rafa_toques"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-02",
+    "file": "locomotion-festival-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-02.png",
+    "columns": 5,
+    "ids": [
+      "to_tuktuk",
+      "maya_tuktuk",
+      "joaquim_carruagem",
+      "bea_cao",
+      "idalina_xadrez"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-03",
+    "file": "locomotion-festival-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-03.png",
+    "columns": 5,
+    "ids": [
+      "luz_cinefila",
+      "kenji_visitante",
+      "noor_visitante",
+      "artur_cinema",
+      "emma_visitante"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-04",
+    "file": "locomotion-festival-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-04.png",
+    "columns": 5,
+    "ids": [
+      "camilo_cinema",
+      "emi_cinema",
+      "luca_visitante",
+      "deborah_visitante",
+      "yara_cinema"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-05",
+    "file": "locomotion-festival-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-05.png",
+    "columns": 5,
+    "ids": [
+      "mateo_turista",
+      "zoe_turista",
+      "chika_turista",
+      "omar_turista",
+      "greta_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-06",
+    "file": "locomotion-festival-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-06.png",
+    "columns": 5,
+    "ids": [
+      "bruno_fotografo",
+      "dora_turista",
+      "salim_turista",
+      "eva_historia",
+      "inga_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-07",
+    "file": "locomotion-festival-07.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-07.png",
+    "columns": 5,
+    "ids": [
+      "adelia_pombos",
+      "basilio_guarda_chuva",
+      "carolina_aguarela",
+      "oscar_bolas_sabao",
+      "cris_magia"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-08",
+    "file": "locomotion-festival-08.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-08.png",
+    "columns": 5,
+    "ids": [
+      "zeca_sapateiro",
+      "susana_bicicletas",
+      "rita_flores",
+      "nicolau_reparador",
+      "emmanuel_poeta"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-09",
+    "file": "locomotion-festival-09.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-09.png",
+    "columns": 5,
+    "ids": [
+      "hugo_toques",
+      "salma_toques",
+      "bento_toques",
+      "filipe_arbitro",
+      "lia_comentadora"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "festival-10",
+    "file": "locomotion-festival-10.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/festival-people-10.png",
+    "columns": 5,
+    "ids": [
+      "lucia_turista",
+      "andres_turista",
+      "valentina_turista",
+      "sam_gaita",
+      "kaz_turista"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-01",
+    "file": "locomotion-living-01.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-01.png",
+    "columns": 5,
+    "ids": [
+      "alzira",
+      "augusto",
+      "sven",
+      "dinis",
+      "celso"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-02",
+    "file": "locomotion-living-02.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-02.png",
+    "columns": 5,
+    "ids": [
+      "plutonio",
+      "serafim",
+      "anibal",
+      "ofelia",
+      "baltasar"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-03",
+    "file": "locomotion-living-03.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-03.png",
+    "columns": 5,
+    "ids": [
+      "ema",
+      "amadeu",
+      "dario",
+      "lurdes_sardinha",
+      "horacio"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-04",
+    "file": "locomotion-living-04.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-04.png",
+    "columns": 5,
+    "ids": [
+      "amalia",
+      "vitoria",
+      "nelson",
+      "rute",
+      "irene"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-05",
+    "file": "locomotion-living-05.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-05.png",
+    "columns": 5,
+    "ids": [
+      "jacinta",
+      "alvaro",
+      "teodoro",
+      "milena",
+      "bia"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  },
+  {
+    "key": "living-06",
+    "file": "locomotion-living-06.png",
+    "reference": "/Users/tmvaz/github/tejo/assets/characters/villagers/living-people-06.png",
+    "columns": 5,
+    "ids": [
+      "joana",
+      "joel",
+      "monica",
+      "tomas_postais",
+      "olga"
+    ],
+    "prompt": "Use case: identity-preserve. Create a production WALK CYCLE atlas of the SAME 5 people in this reference, preserving each exact identity, face, clothes, belongings, warm gouache pencil style and body proportions. Exactly 5 equal columns and FOUR equal rows; 20 COMPLETE head-to-toe figures with very generous transparent gutters and bottom margin. No cropped legs, feet, heads or props. No other poses or extra rows.\nCRUCIAL CAMERA LOCK: rows 1 AND 2 BOTH face diagonally DOWN-RIGHT at exactly the SAME three-quarter angle. Row 1 left foot forward/right arm forward; row 2 right foot forward/left arm forward. Only limbs change, NOT the viewing angle. Do NOT turn row 2 towards the viewer. Both rows must show the same side of the face.\nRows 3 AND 4 BOTH face diagonally UP-RIGHT AWAY from camera at exactly the SAME rear three-quarter angle. Row 3 left foot forward; row 4 right foot forward. Only limbs change. Do NOT turn row 4 into a straight back view. Both rear rows must show the same ear/cheek sliver and side of torso.\nEveryone has a candid neutral closed mouth, no smile or grin. Young children run with bent opposing arms and lifted heels, older people shuffle short restrained steps, adults have purposeful moderate steps, cane users lean onto the planted tip, wheelchair user remains in exact same wheelchair and propels the wheels. Keep each individual's same natural gait and unchanged body height in all four rows. No Te or Jo. TRUE alpha transparency: empty pixels alpha ZERO. No background, paper, haze, glow, coloured noise, floor, shadows, text, watermark or grid lines. Entire bodies must fit inside their own cells with ample margin. Portrait sheet."
+  }
+]

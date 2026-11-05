@@ -253,3 +253,28 @@ As corujas têm íris amarelas discretas, com um pequeno reflexo visível à noi
 A região da Vila de Sintra tem **22 400 × 16 000 unidades (10× a área anterior)**, com mais de 500 construções, ruas de comércio e habitação, largos e uma feira de cerâmica, tecidos e fruta, inspirados nas fotografias de Sintra. Entra pelo menu **Esc → Explorar a Vila de Sintra**, junto ao Palácio, e regressa pelo mesmo menu. A rede liga o largo do Palácio Nacional às Padarias/Piriquita, Ferraria, São Martinho, Lawrence’s, Valenças, Volta do Duche e aos jardins da Vila Sassetti. A placa **Vila de Sintra** a sul da entrada da mata abre o percurso reversível; **Espaço** permite seguir juntos. Os mesmos personagens, bolsas, conversas, mapas e relógio atravessam as regiões, com objetos e encontros preservados durante a sessão. A cena principal mantém-se `garden.tscn`; `scenes/sintra_village.tscn` permite revisão direta junto ao Palácio.
 
 [Integração, fontes, simplificações e verificações](docs/VILA_DE_SINTRA.md). [Arte e pedidos de geração](assets/world/village/ART.md). Os testes `village_test.gd`, `village_transition_test.gd`, `village_walking_test.gd` e `village_rendering_test.gd` cobrem os novos percursos, transições, superfícies e profundidade. `village_preview.gd` produz capturas no motor em `output/village-*.png`.
+
+A vila tem **145 personagens no elenco narrativo**, além de circulação ambiente de moradores e visitantes, com atividades animadas e quotidianos próprios: crianças, idosos, comerciantes, turistas, os amigos Gil, Tiago, Alexandre, Martim e Afonso, e quatro participações fictícias conhecidas. Aproxima-te e carrega em **Espaço** para cumprimentar. O elenco inicial está em [Pessoas da Vila](docs/PESSOAS_DA_VILA.md); as novas atividades e os cinquenta nomes adicionais estão em [Cidade viva](docs/CIDADE_VIVA.md).
+
+Cada uma das 35 pessoas tem um quotidiano ligado às horas: trabalho e passeios, refeições em casas/cafés, deslocações por ruas livres e recolher. As crianças são acompanhadas por um adulto; os cinco amigos têm um encontro ao fim da tarde. [Rotinas e horários completos](docs/ROTINAS_DA_VILA.md).
+
+A calçada de todos os quarteirões urbanos é transitável. A vila inclui fachadas de lado, quatro patamares com escadas curtas e 112 casas adossadas em 60 aglomerados. As ruas distinguem uma faixa central de granito e passeios claros; a pedra acompanha as curvas dos percursos. [Revisão da circulação e arquitetura](docs/VILA_DE_SINTRA.md).
+
+A vila inclui agora visitas guiadas, montras, passeios em família, rifas dos escuteiros para a atividade de Minecraft, banca Nannarella, patrulha policial e concerto de guitarra e violino. Candeeiros e janelas respondem à noite. [Atividades, horários e iluminação](docs/VIDA_DA_VILA.md).
+
+As primeiras 45 pessoas têm personalidade, ritmos e gestos próprios. Conversam por turnos, compram entre si, tiram fotografias, pedem indicações e reagem ao concerto sem depender da presença do jogador. Setenta poses adicionais dão expressão a estes encontros; memórias e compromissos do dia orientam o que fazem a seguir.
+
+A expansão anterior levou a vila a **95 pessoas**, incluindo mais 50 vidas individuais e 21 turistas adicionais. Há cinema ao ar livre com público sentado, fruta da Dona Ana, roulotte de doces, campeonato de toques jogável, xadrez, magia, poesia, uma cadela a passear, dois tuk-tuks e uma carroça. O Tó reconhece-nos na rua e pára para meter conversa. [Atividades, elenco e funcionamento da cidade viva](docs/CIDADE_VIVA.md).
+
+
+### Comunidade e pequenas histórias
+
+A expansão [Sintra Living Open World](docs/SINTRA_LIVING_OPEN_WORLD.md) acrescenta trinta identidades (125 no total), dez moradores associados a janelas reais, o carteiro com doze moradas, 28 pombos reativos, o gato Sardinha, chapéu ao vento, campainhas, giz, fonte, trocas, escolhas e memória gravada. Há 24 episódios adicionais ligados aos horários e dias da vila. A documentação distingue o que está funcional e os limites das mecânicas.
+
+A revisão [Individualidade da vila](docs/INDIVIDUALIDADE_DA_VILA.md) dá aos 125 NPCs expressões e vistas de caminhada próprias, ritmos por idade, quatro ciclos de bengala com apoio real e crianças a correr. Seis novas esplanadas e cinco bancos recebem treze pessoas com rotinas visíveis de pequeno-almoço e almoço.
+
+A expansão [Histórias da rua](docs/HISTORIAS_DA_RUA.md) acrescenta vinte personagens desenhadas de novo: um piquenique, correio de pombo, a fila da Piriquita, a janela da Odete, matraquilhos jogáveis, rifas burocráticas e os testes espalhados na esplanada. A circulação ambiente cobre os percursos secundários e responde aos turnos do dia; há entradas nas lojas e rostos apenas nas janelas realmente ocupadas.
+
+A vila tem também [vida noturna no Lord Byron](docs/VIDA_NOTURNA.md), das 20:30 à 01:30: os mesmos habitantes chegam depois do jantar, conversam, dançam, pedem música e regressam a casa em horários diferentes.
+
+A [ligação e as necessidades do Te e do Jo](docs/LIGACAO_E_NECESSIDADES.md) acompanham as atividades, desbloqueiam a escalada, a roda de ritmo e conversas novas, e ligam a fome à Pastelaria do Largo. As bolsas permitem comer ou partilhar, e o cansaço recupera a dormir no chão (×1) ou num banco (×0,25).

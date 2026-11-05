@@ -1,0 +1,72 @@
+[
+  {
+    "key": "walk-01",
+    "file": "neighbours-walk-01.png",
+    "ids": [
+      "rosario_merenda",
+      "nelson_termos",
+      "iris_merenda",
+      "leo_merenda"
+    ],
+    "columns": 4,
+    "rows": 4,
+    "prompt": "Use case: illustration-story. Final game WALKING sprite atlas, match the attached character identity reference exactly: same FOUR people in same four columns, same faces, hair, clothes and proportions. Transparent alpha background. Portrait sheet, FOUR columns by FOUR rows, 16 entirely separate FULL BODY sprites. Very generous empty gutters, no overlap, every head and BOTH shoes fully inside its cell. Camera is slightly overhead like the existing painted Sintra exploration game, warm gouache, fine pencil lines, richly shaded clothes. NO scenery, ground, gradient, halo, text, chair, counter, furniture, foosball rods or game table. These are people walking naturally between their activities, not holding their work equipment in a static pose. Arms counter-swing opposite the leading leg. ROW 1: front right three-quarter WALK left foot forward. ROW 2: exact same front-right three-quarter camera and proportions, WALK right foot forward. ROW 3: rear right three-quarter WALK left foot forward. ROW 4: exact same rear-right three-quarter camera, WALK right foot forward. Never change the camera within a pair. Natural neutral faces, no toothy smiles. Column 1: stout Portuguese woman, short dark curls, coral cardigan, olive skirt, picnic apron; individual ordinary walking stride. Column 2: balding lanky man, thick dark moustache, pale blue short sleeve shirt, beige fishing waistcoat, brown trousers, thermos flask; individual ordinary walking stride. Column 3: young Black Portuguese woman, braided bun, mustard dungarees, plum T-shirt, round glasses, small sketchbook; individual ordinary walking stride. Column 4: small mixed-race boy, unruly dark hair, turquoise dinosaur T-shirt, rust shorts, red trainers, magnifying glass; small child RUNNING, quick lifted knees and swinging arms. ",
+    "reference": "assets/characters/villagers/neighbours-activity-01.png"
+  },
+  {
+    "key": "walk-02",
+    "file": "neighbours-walk-02.png",
+    "ids": [
+      "ernesto_pombos",
+      "olinda_pasteis",
+      "beatriz_fila",
+      "ricardo_tempos"
+    ],
+    "columns": 4,
+    "rows": 4,
+    "prompt": "Use case: illustration-story. Final game WALKING sprite atlas, match the attached character identity reference exactly: same FOUR people in same four columns, same faces, hair, clothes and proportions. Transparent alpha background. Portrait sheet, FOUR columns by FOUR rows, 16 entirely separate FULL BODY sprites. Very generous empty gutters, no overlap, every head and BOTH shoes fully inside its cell. Camera is slightly overhead like the existing painted Sintra exploration game, warm gouache, fine pencil lines, richly shaded clothes. NO scenery, ground, gradient, halo, text, chair, counter, furniture, foosball rods or game table. These are people walking naturally between their activities, not holding their work equipment in a static pose. Arms counter-swing opposite the leading leg. ROW 1: front right three-quarter WALK left foot forward. ROW 2: exact same front-right three-quarter camera and proportions, WALK right foot forward. ROW 3: rear right three-quarter WALK left foot forward. ROW 4: exact same rear-right three-quarter camera, WALK right foot forward. Never change the camera within a pair. Natural neutral faces, no toothy smiles. Column 1: thin elderly Portuguese man, bushy white eyebrows, flat cap, moss cardigan, cream shirt, charcoal trousers, worn leather satchel, tiny folded letter; slow hunched elderly short steps, restrained arm swing. Column 2: stocky light-brown-skinned baker, greying dark bob, flour-dusted burgundy apron, striped cream shirt, navy trousers, flour on cheek; individual ordinary walking stride. Column 3: tall slim young Portuguese woman, dark ponytail, teal Instituto Superior Tecnico hoodie without lettering, black trousers, orange trainers, clipboard with hand drawn queue arrows; individual ordinary walking stride. Column 4: young South Asian Portuguese man, wavy hair, short beard, square glasses, ochre zip jacket, navy chinos, small stopwatch; individual ordinary walking stride. ",
+    "reference": "assets/characters/villagers/neighbours-activity-02.png"
+  },
+  {
+    "key": "walk-03",
+    "file": "neighbours-walk-03.png",
+    "ids": [
+      "estela_cliente",
+      "odete_janela",
+      "fausto_merceeiro",
+      "toni_matraquilhos"
+    ],
+    "columns": 4,
+    "rows": 4,
+    "prompt": "Use case: illustration-story. Final game WALKING sprite atlas, match the attached character identity reference exactly: same FOUR people in same four columns, same faces, hair, clothes and proportions. Transparent alpha background. Portrait sheet, FOUR columns by FOUR rows, 16 entirely separate FULL BODY sprites. Very generous empty gutters, no overlap, every head and BOTH shoes fully inside its cell. Camera is slightly overhead like the existing painted Sintra exploration game, warm gouache, fine pencil lines, richly shaded clothes. NO scenery, ground, gradient, halo, text, chair, counter, furniture, foosball rods or game table. These are people walking naturally between their activities, not holding their work equipment in a static pose. Arms counter-swing opposite the leading leg. ROW 1: front right three-quarter WALK left foot forward. ROW 2: exact same front-right three-quarter camera and proportions, WALK right foot forward. ROW 3: rear right three-quarter WALK left foot forward. ROW 4: exact same rear-right three-quarter camera, WALK right foot forward. Never change the camera within a pair. Natural neutral faces, no toothy smiles. Column 1: short older Portuguese woman, short silver hair, turquoise coat, patterned scarf, burgundy handbag, sensible shoes; individual ordinary walking stride. Column 2: older Portuguese woman, sharp hazel eyes, dark silver bun, lilac cardigan, white blouse, forest green skirt, gold earrings, little television remote; slow hunched elderly short steps, restrained arm swing. Column 3: broad olive-skinned Portuguese grocer, receding curly dark hair, neat moustache, blue work apron, green shirt, grey trousers, wooden produce crate; individual ordinary walking stride. Column 4: wiry older Portuguese man, slick grey hair, drooping moustache, maroon tracksuit, gold chain, white bandage on right wrist, pointed trainers; individual ordinary walking stride. ",
+    "reference": "assets/characters/villagers/neighbours-activity-03.png"
+  },
+  {
+    "key": "walk-04",
+    "file": "neighbours-walk-04.png",
+    "ids": [
+      "dora_matraquilhos",
+      "simao_marcador",
+      "vasco_rifas",
+      "lia_rifas"
+    ],
+    "columns": 4,
+    "rows": 4,
+    "prompt": "Use case: illustration-story. Final game WALKING sprite atlas, match the attached character identity reference exactly: same FOUR people in same four columns, same faces, hair, clothes and proportions. Transparent alpha background. Portrait sheet, FOUR columns by FOUR rows, 16 entirely separate FULL BODY sprites. Very generous empty gutters, no overlap, every head and BOTH shoes fully inside its cell. Camera is slightly overhead like the existing painted Sintra exploration game, warm gouache, fine pencil lines, richly shaded clothes. NO scenery, ground, gradient, halo, text, chair, counter, furniture, foosball rods or game table. These are people walking naturally between their activities, not holding their work equipment in a static pose. Arms counter-swing opposite the leading leg. ROW 1: front right three-quarter WALK left foot forward. ROW 2: exact same front-right three-quarter camera and proportions, WALK right foot forward. ROW 3: rear right three-quarter WALK left foot forward. ROW 4: exact same rear-right three-quarter camera, WALK right foot forward. Never change the camera within a pair. Natural neutral faces, no toothy smiles. Column 1: tall athletic older Black woman, close cropped salt and pepper hair, bottle green polo, cream trousers, red canvas shoes, rolled sleeves; individual ordinary walking stride. Column 2: thin freckled teenager, shaggy auburn hair, oversized yellow football shirt, grey shorts, green trainers, pocket score notebook; quick light teenage steps. Column 3: earnest slim teenage scout, curly black hair, beige scout shirt, olive shorts, yellow green neckerchief, long socks, oversized rubber stamp and ledger; quick light teenage steps. Column 4: short East Asian Portuguese teenage scout, straight black bob, beige scout shirt, olive skirt over leggings, red yellow neckerchief, raffle ticket booklet; quick light teenage steps. ",
+    "reference": "assets/characters/villagers/neighbours-activity-04.png"
+  },
+  {
+    "key": "walk-05",
+    "file": "neighbours-walk-05.png",
+    "ids": [
+      "raul_comprador",
+      "margarida_testes",
+      "sara_aluna",
+      "ruben_esplanada"
+    ],
+    "columns": 4,
+    "rows": 4,
+    "prompt": "Use case: illustration-story. Final game WALKING sprite atlas, match the attached character identity reference exactly: same FOUR people in same four columns, same faces, hair, clothes and proportions. Transparent alpha background. Portrait sheet, FOUR columns by FOUR rows, 16 entirely separate FULL BODY sprites. Very generous empty gutters, no overlap, every head and BOTH shoes fully inside its cell. Camera is slightly overhead like the existing painted Sintra exploration game, warm gouache, fine pencil lines, richly shaded clothes. NO scenery, ground, gradient, halo, text, chair, counter, furniture, foosball rods or game table. These are people walking naturally between their activities, not holding their work equipment in a static pose. Arms counter-swing opposite the leading leg. ROW 1: front right three-quarter WALK left foot forward. ROW 2: exact same front-right three-quarter camera and proportions, WALK right foot forward. ROW 3: rear right three-quarter WALK left foot forward. ROW 4: exact same rear-right three-quarter camera, WALK right foot forward. Never change the camera within a pair. Natural neutral faces, no toothy smiles. Column 1: heavyset middle aged man, dark curly hair, short stubble, purple delivery polo, tan trousers, shopping tote and reading glasses; individual ordinary walking stride. Column 2: middle aged Portuguese professor, short greying auburn bob, angular red glasses, navy linen jacket, cream blouse, terracotta trousers, red pen, pile of exam papers; individual ordinary walking stride. Column 3: young Portuguese woman, curly chestnut hair tied messily, denim jacket, sage T-shirt, black jeans, canvas tote with books; individual ordinary walking stride. Column 4: young Black Portuguese waiter, short twists, clean shaven, white rolled sleeve shirt, deep teal waist apron, charcoal trousers, tray with espresso cup; individual ordinary walking stride. ",
+    "reference": "assets/characters/villagers/neighbours-activity-05.png"
+  }
+]

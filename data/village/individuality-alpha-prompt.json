@@ -1,0 +1,4 @@
+{
+  "file": "locomotion-residents-01.png",
+  "prompt": "Use case: background-extraction. Remove ONLY the background/alpha haze from this final production walk atlas. Keep all TWENTY complete people and their exact positions, size, faces, clothes, colours and four-row/five-column layout unchanged. Remove every white/grey haze and cast shadow between and around sprites. Empty canvas and every gutter must be FULLY transparent alpha ZERO, not semi-transparent white or checkerboard. Preserve painted people and their soft natural cutout edges, including all shoes and props. No floor, background, glow, shadow, text or added content."
+}
